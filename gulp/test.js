@@ -10,7 +10,7 @@ const log = require('fancy-log');
 const mocha = require('gulp-mocha');
 
 const { parse } = require('../lib/plantuml');
-const formats = require('../format');
+const formatters = require('../format');
 
 task('test-run', () =>
   src('test/test.js', {read: false})
@@ -22,9 +22,9 @@ task('test-run', () =>
 task('test-fixtures-update-run', () =>
   src('test/fixtures/**/in.plantuml')
   .pipe(readFiles(function (content, file, stream, cb) {
-    Object.keys(formats).forEach(
+    Object.keys(formatters).forEach(
       (name) => {
-        const formatter = formats[name];
+        const formatter = formatters[name];
         const outfile = join(
           dirname(file.path),
           conf.fixtures.outputFilePrefix + name

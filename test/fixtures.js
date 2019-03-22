@@ -1,5 +1,18 @@
 /*
  * Load test fixtures
+ *
+ * fixtures = [
+ *   {
+ *     directory:,
+ *     src:,
+ *     out: {
+ *       name:,
+ *       format:,
+ *       src: ,
+ *     }
+ *   },
+ *   ...
+ * ]
  */
 const conf = require('../conf');
 
@@ -32,6 +45,12 @@ function getOutputFiles (source) {
         return {
           name: match[0],
           format: match[1],
+          src: readFileSync(
+            match[0],
+            {
+              encoding: conf.encoding,
+            }
+          ),
         }
       }
     )
