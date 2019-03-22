@@ -89,8 +89,8 @@ Stereotype
 
 Member
   = MemberVariable
-  / Method
   / _ "static " _ Member
+  / EndLine   // Catchall for members: Remove once all members are implemented
 
 MemberVariable
   = _ accessor:Accessor? _ name:Name EndLine
@@ -100,30 +100,6 @@ MemberVariable
       name
     );
   }
-
-
-Method
-  = _ field:fielddeclaration "(" parameters:methodparameter* ")" noise
-  { 
-    return new require("./method")(
-      field.getAccessType(),
-      field.getReturnType(),
-      field.getName(),
-      parameters
-    );
-  }
-
-MethodParameter
-  = noise item:returntype membername:([ ] membername)? [,]?
-  {
-    return new require("./parameter")(
-      item,
-      membername ? membername[1] : null
-    );
-  }
-
-returntype
-  = items:[^ ,\n\r\t(){}]+ { return items.join("") }
 
 ///
 /// Shared
