@@ -38,10 +38,10 @@ function testParse(src) {
  * formatters has not changed.
  *
  * 1. Parse & Format
- * 2. If output is Object:
- *   Try decoding fixture from JSON
- *   for a deep comparison, with meaningful
- *   log output. If this does not work
+ * 2. Try decoding fixture and result
+ *   from JSON for a deep and and more
+ *   comparison, with meaningful log
+ *   output. If this does not work
  *   fall back to string comparison.
  */
 function testFormatHasNotChanged(src, out){
