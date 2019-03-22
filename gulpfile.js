@@ -1,6 +1,6 @@
 const { task, series } = require('gulp');
 
-require('require-dir')('./gulp');
+require('./gulp');
 
 task('default',
   series(

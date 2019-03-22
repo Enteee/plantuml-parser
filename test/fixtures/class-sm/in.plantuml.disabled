@@ -1,0 +1,1548 @@
+
+@startuml
+
+set namespaceSeparator none
+
+skinparam linetype ortho
+
+
+
+package ServiceManager {
+
+  abstract CI {
+
+      + ciId
+
+      + ucmdbId
+
+      + company
+
+      + displayName
+
+      + status
+
+      + type
+
+      + subtype
+
+      + 3rdLevelType
+
+      + purpose
+
+      + contactId
+
+      + operationResponsibleGroup
+
+      + briefDescription
+
+      + keywords
+
+      + comments
+
+      + monitoringPlatform
+
+      + monitoringNames
+
+      + monitoringNameComment
+
+      + mainService
+
+      + operationCriticality
+
+      + serviceHours
+
+      + serviceHourPriorityLevel
+
+      + serviceHourHolidays
+
+      + serviceTimeZone
+
+      + lastUpdateTime
+
+      + lastUpdatedBy
+
+  }
+
+
+
+  together {
+
+
+
+    interface Peripheral {
+
+    }
+
+    note left
+
+      Hardware providing
+
+      input/output from/to 
+
+      the physical world
+
+      end note
+
+      Peripheral -up-|> CI
+
+
+
+      together {
+
+
+
+        class Printer {
+
+        }
+
+        Printer -up-|> Peripheral
+
+
+
+          class CCTV {
+
+          }
+
+        CCTV -up-|> Peripheral
+
+
+
+          class MultiFunctionPeripheral {
+
+          }
+
+        note bottom
+
+          * Xerox
+
+          end note
+
+          MultiFunctionPeripheral -up-|> Peripheral
+
+
+
+      }
+
+
+
+  }
+
+
+
+  together {
+
+
+
+    interface NetworkDevice {
+
+      + location
+
+    }
+
+    note left
+
+      Hardware operating in 
+
+      the physical-, network-,
+
+          transport- or application-layer
+
+            end note
+
+            NetworkDevice -up-|> CI
+
+
+
+            class Switch {
+
+            }
+
+    Switch -up-|> NetworkDevice
+
+
+
+      class Router {
+
+      }
+
+    Router -up-|> NetworkDevice
+
+
+
+      class Firewall {
+
+      }
+
+    Firewall -up-|> NetworkDevice
+
+
+
+      class Proxy {
+
+      }
+
+    note bottom
+
+      * Blue Coat
+
+      end note
+
+      Proxy -up-|> NetworkDevice
+
+
+
+      class LoadBalancer {
+
+      }
+
+    LoadBalancer -up-|> NetworkDevice
+
+
+
+      class NetworkManagement
+
+      note bottom
+
+      * Infoblox
+
+      * WAM
+
+      end note
+
+      NetworkManagement -up-|> NetworkDevice
+
+
+
+  }
+
+
+
+  together {
+
+
+
+    interface Infrastructure {
+
+      + location
+
+    }
+
+    note left
+
+      Hardware providing
+
+      auxiliry services
+
+      for IT operations
+
+        end note
+
+          Infrastructure -up-|> CI
+
+
+
+          together {
+
+            class ATS
+
+              note left
+
+              Automatic
+
+              Transfer
+
+              Switch
+
+              end note
+
+              ATS -up-|> Infrastructure
+
+
+
+              class KVM
+
+              note left
+
+              Keyboard
+
+              Video 
+
+              Mouse
+
+              end note
+
+              KVM -up-|> Infrastructure
+
+
+
+              class PDU
+
+              note left
+
+              Power
+
+              Distribution
+
+              Unit
+
+              end note
+
+              PDU -up-|> Infrastructure
+
+
+
+              class UPS
+
+              note left
+
+              Uninterruptable
+
+              Power
+
+              Supply
+
+              end note
+
+              UPS -up-|> Infrastructure
+
+
+
+              class HSM
+
+              note left
+
+              Hardware
+
+              Security
+
+              Module
+
+
+
+              Generates and stores
+
+              keys and certificats
+
+              end note
+
+              HSM -up-|> Infrastructure
+
+
+
+              class AccessControl
+
+              note bottom
+
+              * Badge Reader			
+
+              * Vein Scanner					
+
+              end note
+
+              AccessControl -up-|> Infrastructure
+
+          }
+
+
+
+  }
+
+
+
+  together {
+
+
+
+    interface Telecomdevice {
+
+      + location
+
+    }
+
+    note left
+
+      Hardware connecting
+
+      people
+
+      end note
+
+      Telecomdevice -up-|> CI
+
+
+
+      together {
+
+        class Gateway
+
+          Gateway -up-|> Telecomdevice
+
+
+
+          class Voice
+
+          note bottom
+
+          * Cisco Telephones
+
+          end note
+
+          Voice -up-|> Telecomdevice
+
+
+
+          class Video
+
+          Video -up-|> Telecomdevice
+
+
+
+      }
+
+
+
+  }
+
+
+
+  together {
+
+
+
+    interface Cluster {
+
+      + applicationCluster
+
+        + physicalZone
+
+        + dataCenter
+
+    }
+
+    note left
+
+      Provides a scalable
+
+      and reliable service
+
+      end note
+
+      Cluster -up-|> CI
+
+      ' Cluster --> PhysicalServer: dependsOn
+
+
+
+      together {
+
+
+
+        class SoftwareCluster {
+
+        }
+
+        note left
+
+          Instances: Processes
+
+          end note
+
+          SoftwareCluster -up-|> Cluster
+
+
+
+          class ContainerCluster {
+
+          }
+
+        note left
+
+          Instances: Containers
+
+          end note
+
+          note bottom of ContainerCluster
+
+          * OpenShift
+
+          * Kubernetes
+
+          end note
+
+          ContainerCluster -up-|> Cluster
+
+
+
+          class VMCluster {
+
+          }
+
+        note left
+
+          Instances: Virtual Machines
+
+          end note
+
+          note bottom of VMCluster
+
+          * vSphere
+
+          * IBM PowerHA SystemMirror
+
+          end note
+
+          VMCluster -up-|> Cluster
+
+
+
+          class StorageCluster {
+
+          }
+
+        note left
+
+          Instances: Storage Containers
+
+
+
+          end note
+
+          StorageCluster -up-|> Cluster
+
+          ' StorageCluster --> Storage: dependsOn
+
+
+
+      }
+
+
+
+  }
+
+
+
+  together {
+
+
+
+    interface Storage {
+
+      + location
+
+    }
+
+    note left
+
+      Hardware providing
+
+      long term persistance
+
+      of information
+
+      end note
+
+      Storage -up-|> CI
+
+
+
+      together {
+
+
+
+        class TapeLibrary {
+
+        }
+
+        TapeLibrary -up-|> Storage
+
+
+
+          class NAS {
+
+          }
+
+        note left
+
+          Network
+
+          Attached
+
+          Storage
+
+
+
+          Exports a file system
+
+          Clients communicate with
+
+          the NAS using a NFS-like
+
+          protocol: Operations are
+
+          file system operations
+
+          end note
+
+          NAS -up-|> Storage
+
+
+
+          class SAN {
+
+          }
+
+        note left
+
+          Storage
+
+          Area
+
+          Network
+
+
+
+          Exports a block device
+
+          Clients communicate with
+
+          the SAN using a SCSI-like
+
+          protocol: Operations are
+
+          block device operations
+
+          end note
+
+          SAN -up-|> Storage
+
+
+
+          class StorageSwitch as "Switch" {
+
+          }
+
+        StorageSwitch --|> Storage
+
+
+
+          class StorageController as "Controller" {
+
+          }
+
+        StorageController --|> Storage
+
+
+
+      }
+
+
+
+  }
+
+
+
+
+
+  together {
+
+
+
+    interface Contact {
+
+      + location
+
+        + region
+
+
+
+        - country
+
+        - city
+
+        - building
+
+        - floor
+
+        - room
+
+        - locationDetail
+
+    }
+
+    note right of Contact
+
+      All internal attributes
+
+      are automatically 
+
+      populated by 
+
+      Service Manager
+
+      based on the location
+
+      attribute
+
+      end note
+
+      Contact -up-|> CI
+
+  }
+
+
+
+  together {
+
+
+
+    interface Location {
+
+    }
+
+    Location -up-|> CI
+
+
+
+  }
+
+
+
+  /'
+
+
+
+    together {
+
+
+
+      interface Inventory {
+
+        + assetTag
+
+          + networkName
+
+          + serialNo
+
+          + warrantyEnd
+
+          + model
+
+          + manufacturer
+
+          + model
+
+          + partNo
+
+          + cpuType
+
+          + ram
+
+          + networkDomain
+
+          + location
+
+          + osManufacturer
+
+          + osName
+
+          + osVersion
+
+          + packageBuild
+
+          + underpinningContracts
+
+      }
+
+      Inventory -up-|> CI
+
+    }
+
+
+
+  together {
+
+
+
+    interface Process
+
+      Process -up-|> CI
+
+
+
+      together {
+
+
+
+        class Businessprocess
+
+          Businessprocess -up-|> Process
+
+
+
+          class "Proc-Capability"
+
+          "Proc-Capability" -up-|> Process
+
+
+
+          class "Sub-Businessprocess"
+
+          "Sub-Businessprocess" -up-|> Process
+
+
+
+      }
+
+
+
+  }
+
+
+
+  together {
+
+
+
+    abstract Computer {
+
+      + location
+
+        + osManufacturer
+
+        + osName
+
+        + osVersion
+
+        + networkZone
+
+        + networkZoneV2
+
+        + cpuSpeed
+
+        + cpuType
+
+        + allocatedCores
+
+        + processorCores
+
+        + processors
+
+        + ram
+
+        + sizeDiskSum
+
+        + sizeDisk1
+
+    }
+
+    Computer -up-|> CI
+
+
+
+      together {
+
+
+
+        interface Client {
+
+        }
+
+        Client -up-|> Computer
+
+
+
+          together {
+
+
+
+            class PhysicalClient {
+
+            }
+
+            PhysicalClient -up-|> Client
+
+              'PhysicalClient --> Inventory: runsOn
+
+
+
+              class VirtualClient {
+
+              }
+
+            VirtualClient -up-|> Client
+
+              'VirtualClient --> VMCluster : dependsOn
+
+
+
+          }
+
+
+
+        interface ComputerAppliance as "Appliance" <<remove>> {
+
+        }
+
+        ComputerAppliance -up-|> Computer
+
+
+
+          together {
+
+
+
+            class PhysicalAppliance {
+
+            }
+
+            PhysicalAppliance -up-|> ComputerAppliance
+
+              'PhysicalClient --> Inventory: runsOn
+
+
+
+              class VirtualClient {
+
+              }
+
+            VirtualAppliance -up-|> ComputerAppliance
+
+              'VirtualAppliance --> VMCluster : dependsOn
+
+
+
+          }
+
+
+
+        interface Server {			
+
+          + dataDisc
+
+            + bootDisc
+
+            + architecturePattern
+
+            + antiVirusPolicy
+
+            + backupPolicy
+
+            + governedByEnvironment
+
+            + hasFirewallConfiguration
+
+            + hasUC4Executor
+
+            + passwordManagement
+
+            + centralizedLoggingDeploymentServer
+
+            + monitoringEndpoint2
+
+            + monitoringEndpoint1
+
+            + patchLevel
+
+            + serverRole
+
+            + configParameter
+
+            + configValue
+
+            + configComment
+
+            + configStatus
+
+            + osTimeZone
+
+            + maintWindow
+
+            + maintWindowCycle
+
+            + maintWindowDayOfWeek
+
+            + maintWindowStartTime
+
+            + maintWindowEndTime
+
+            + maintWindowRebootTime
+
+            + maintWindowRecurring
+
+            + maintWindowTimeZone
+
+            + maintWindowActive
+
+            + maintWindowRebootDurationMinutes
+
+            + maintWindowRebootBehaviour
+
+            + offshoreSupportOrganizations
+
+        }
+
+        Server -up-|> Computer
+
+
+
+          together {
+
+
+
+            class VirtualServer {
+
+            }
+
+            VirtualServer -up-|> Server
+
+              ' VirtualServer --> VMCluster: dependsOn
+
+
+
+              class PhysicalServer {
+
+                + cpu type
+
+              }
+
+            PhysicalServer -up-|> Server
+
+              ' PhysicalServer --> Inventory: runsOn
+
+
+
+          }
+
+
+
+      }
+
+
+
+  }
+
+
+
+  together {
+
+
+
+    interface Userinterface
+
+      note left: Low Priority
+
+      Userinterface -up-|> CI
+
+
+
+      together {
+
+
+
+        class Browser
+
+          Browser -up-|> Userinterface
+
+
+
+          class GUI
+
+          GUI -up-|> Userinterface
+
+
+
+          class HostTX
+
+          HostTX -up-|> Userinterface
+
+
+
+          class Notes
+
+          Notes -up-|> Userinterface
+
+
+
+          together {
+
+
+
+            class Default
+
+              Default -up-|> Browser
+
+
+
+              class FatClient
+
+              FatClient -up-|> GUI
+
+
+
+          }
+
+      }
+
+  }
+
+
+
+  together {
+
+
+
+    interface Swinstance {
+
+      + version
+
+        + activePassive
+
+    }
+
+    note left: Not in Scope for Devtype redesign in May
+
+      Swinstance -up-|> CI
+
+      ' Swinstance --> Serviceenvironment: dependsOn
+
+
+
+      together {
+
+
+
+
+
+        class "Application Server"
+
+          "Application Server" -up-|> "Swinstance"
+
+
+
+          together {
+
+
+
+            class "Backend Server"
+
+              "Backend Server" -up-|> "Application Server"
+
+
+
+              class "JBOSS EAP"
+
+              "JBOSS EAP" -up-|> "Application Server"
+
+
+
+              class "JBOSS WildFly"
+
+              "JBOSS WildFly" -up-|> "Application Server"
+
+
+
+              class "ORACLE WebLogic"
+
+              "ORACLE WebLogic" -up-|> "Application Server"
+
+
+
+              class "JBOSS"
+
+              "JBOSS" -up-|> "Application Server Instance"
+
+
+
+          }
+
+
+
+        class "Application Server Instance"
+
+          "Application Server Instance" -up-|> "Swinstance"
+
+
+
+          class "Business Application"
+
+          "Business Application" -up-|> "Swinstance"
+
+
+
+          class "Citrix Server"
+
+          "Citrix Server" -up-|> "Swinstance"
+
+
+
+          class "DB-Instance"
+
+          "DB-Instance" -up-|> "Swinstance"
+
+
+
+          together {
+
+
+
+            class "ORACLE"
+
+              "ORACLE" -up-|> "DB-Instance"
+
+              "ORACLE" -up-|> "DB-Instance ORACLE"
+
+              "ORACLE" -up-|> "DB-Server"
+
+
+
+          }
+
+
+
+        class "DB-Instance MS-SQL"
+
+          "DB-Instance MS-SQL" -up-|> "Swinstance"
+
+
+
+          class "DB-Instance ORACLE"
+
+          "DB-Instance ORACLE" -up-|> "Swinstance"
+
+
+
+          together {
+
+
+
+            class "ORACLE ACTIVE Replication"
+
+              "ORACLE ACTIVE Replication" -up-|> "DB-Instance ORACLE"
+
+
+
+              class "ORACLE ACTIVE replication"
+
+              "ORACLE ACTIVE replication" -up-|> "DB-Instance ORACLE"
+
+
+
+              class "ORACLE STDBY REPLICATION"
+
+              "ORACLE STDBY REPLICATION" -up-|> "DB-Instance ORACLE"
+
+
+
+              class "ORACLE STDBY replication"
+
+              "ORACLE STDBY replication" -up-|> "DB-Instance ORACLE"
+
+
+
+          }
+
+
+
+        class "DB-Instance SYBASE"
+
+          "DB-Instance SYBASE" -up-|> "Swinstance"
+
+
+
+          class "DB-Server"
+
+          "DB-Server" -up-|> "Swinstance"
+
+
+
+          together {
+
+
+
+            class "SYBASE"
+
+              "SYBASE" -up-|> "DB-Server"
+
+
+
+          }
+
+
+
+        class "Database System"
+
+          "Database System" -up-|> "Swinstance"
+
+
+
+          class "File / Component"
+
+          "File / Component" -up-|> "Swinstance"
+
+
+
+          class "Infra Application"
+
+          "Infra Application" -up-|> "Swinstance"
+
+
+
+          together {
+
+
+
+            class "Application"
+
+              "Application" -up-|> "Infra Application"
+
+
+
+              class "Backend Server"
+
+              "Backend Server" -up-|> "Infra Application"
+
+
+
+              class "File Component"
+
+              "File Component" -up-|> "Infra Application"
+
+          }
+
+
+
+        class "Interface"
+
+          "Interface" -up-|> "Swinstance"
+
+
+
+          class "JBOSS-EAP Server"
+
+          "JBOSS-EAP Server" -up-|> "Swinstance"
+
+
+
+          class "JBOSS-Instance"
+
+          "JBOSS-Instance" -up-|> "Swinstance"
+
+
+
+          class "JBOSS-WildFly Server"
+
+          "JBOSS-WildFly Server" -up-|> "Swinstance"
+
+
+
+          class "Jobgroup"
+
+          "Jobgroup" -up-|> "Swinstance"
+
+
+
+          together {
+
+
+
+            class "Jobgroup AWA"
+
+              "Jobgroup AWA" -up-|> "Jobgroup"
+
+
+
+          }
+
+
+
+        class "MS-SQL Database Server"
+
+          "MS-SQL Database Server" -up-|> "Swinstance"
+
+
+
+          class "MYSQL Database Server"
+
+          "MYSQL Database Server" -up-|> "Swinstance"
+
+
+
+          together {
+
+
+
+            class "MYSQL"
+
+              "MYSQL" -up-|> "MYSQL Database Server"
+
+
+
+          }
+
+
+
+        class "Middleware"
+
+          "Middleware" -up-|> "Swinstance"
+
+
+
+          together {
+
+
+
+            class "Backend Server"
+
+              "Backend Server" -up-|> "Middleware"
+
+
+
+          }
+
+
+
+        class "ORACLE Apex Server"
+
+          "ORACLE Apex Server" -up-|> "Swinstance"
+
+
+
+          class "ORACLE Database Server"
+
+          "ORACLE Database Server" -up-|> "Swinstance"
+
+
+
+          class "ORACLE WebLogic Instance"
+
+          "ORACLE WebLogic Instance" -up-|> "Swinstance"
+
+
+
+          class "ORACLE WebLogic Server"
+
+          "ORACLE WebLogic Server" -up-|> "Swinstance"
+
+
+
+          class "Resource"
+
+          "Resource" -up-|> "Swinstance"
+
+
+
+          class "SPRINGBOOT-Instance"
+
+          "SPRINGBOOT-Instance" -up-|> "Swinstance"
+
+
+
+          class "SYBASE Database Server"
+
+          "SYBASE Database Server" -up-|> "Swinstance"
+
+
+
+          class "Virtual Software (cluster/farm)"
+
+          "Virtual Software (cluster/farm)" -up-|> "Swinstance"
+
+
+
+      }
+
+
+
+  }
+
+
+
+  together {
+
+
+
+    interface Service {
+
+    }
+
+    Service -up-|> CI
+
+
+
+      together {
+
+        class "Business Service"
+
+          "Business Service" -up-|> Service
+
+
+
+          class "External Service"
+
+          "External Service" -up-|> Service
+
+
+
+          class "IT Service"
+
+          "IT Service" -up-|> Service
+
+
+
+          'class Infrastructure
+
+          'Infrastructure -up-|> Service
+
+
+
+          class "Workplace only"
+
+          "Workplace only" -up-|> Service
+
+      }
+
+
+
+  }
+
+
+
+  together {
+
+
+
+    interface Serviceenvironment {
+
+    }
+
+    Serviceenvironment -up-|> CI
+
+      ' ServiceEnvironment --> Swinstance : dependsOn
+
+
+
+  }
+
+
+
+  together {
+
+
+
+    interface Servicegroup {
+
+    }
+
+    Servicegroup -up-|> CI
+
+
+
+  }
+
+
+
+  '/
+
+}
+
+@enduml

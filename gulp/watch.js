@@ -5,7 +5,8 @@ require('./build.js');
 task('watch', (cb) => {
   watch([
     'src/**/*.js',
-    'src/**/*.pegjs'
+    'src/**/*.pegjs',
+    'format/**/*.js',
   ], {
     ignoreInitial: false
   }, series(
@@ -16,7 +17,8 @@ task('watch', (cb) => {
 task('watch-test', (cb) => {
   watch([
     'src/**/*.js',
-    'src/**/*.pegjs'
+    'src/**/*.pegjs',
+    'format/**/*.js',
   ], {
     ignoreInitial: false
   }, series(

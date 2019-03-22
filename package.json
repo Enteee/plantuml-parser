@@ -15,6 +15,7 @@
     "mocha": "^6.0.2",
     "pegjs": "^0.10.0",
     "pegjs-backtrace": "^0.1.2",
+    "read-vinyl-file-stream": "^2.0.3",
     "require-dir": "^1.2.0"
   },
   "devDependencies": {},

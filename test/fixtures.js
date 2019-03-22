@@ -1,15 +1,12 @@
 /*
- * Load all test fixtures
+ * Load test fixtures
  */
+const conf = require('../conf');
+
 const { lstatSync, readdirSync, readFileSync } = require('fs')
 const { join } = require('path')
 
 const log = require('fancy-log');
-
-const FIXTURES_DIR = 'test/fixtures';
-const PLANTUML_FILE = 'in.plantuml';
-const OUTPUT_FILE = 'out';
-const OUTPUT_FILE_MATCHER = new RegExp('.*\/' + OUTPUT_FILE + '\.(.+)');
 
 function getDirectories (source) {
   return readdirSync(source)
@@ -24,10 +21,14 @@ function getOutputFiles (source) {
     .map(name => join(source, name))
     .filter(
       (source) => lstatSync(source).isFile()
-        && source.match(OUTPUT_FILE_MATCHER)
+        && source.match(
+          conf.fixtures.outputFileMatcher
+        )
     ).map(
       (source) => {
-        const match = source.match(OUTPUT_FILE_MATCHER);
+        const match = source.match(
+          conf.fixtures.outputFileMatcher
+        );
         return {
           name: match[0],
           format: match[1],
@@ -36,16 +37,16 @@ function getOutputFiles (source) {
     )
 }
 
-module.exports = getDirectories(FIXTURES_DIR).map(
+module.exports = getDirectories(conf.fixtures.dir).map(
   (directory) => {
     var src;
     try {
       src = readFileSync(
         join(
           directory,
-          PLANTUML_FILE
+          conf.fixtures.inputFile
         ),
-        'utf-8'
+        conf.encoding
       );
     } catch(e) {
       log.warn('Skipping: ' + directory);

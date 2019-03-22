@@ -7,8 +7,6 @@ const Tracer = require('pegjs-backtrace');
 
 const { parse } = require('../lib-debug/plantuml');
 
-const fixtures = require('./fixtures');
-
 function testParse(src) {
   const tracer = new Tracer(src);
   try {
@@ -27,7 +25,7 @@ function testParse(src) {
   }
 };
 
-fixtures.forEach((fixture) =>
+require('./fixtures').forEach((fixture) =>
   describe(fixture.directory, () => {
     it('parse', () => testParse(fixture.src))
     fixture.out.forEach(
