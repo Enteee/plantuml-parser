@@ -1,0 +1,26 @@
+@startuml
+title Simple Orthogonal Composite State Model
+[*] --> NeilDiamond
+state NeilDiamond
+
+state "Neil Diamond Onstage" as NeilDiamond {
+  state Dancing
+  state Singing
+  state Smiling
+  Dancing --> Singing
+  Singing --> Smiling
+  Smiling --> Dancing
+}
+
+state NDoff
+state "Neil Diamond in Dressing Room" as NDoff {
+  state ThinkingAboutAmerica
+  state WatchingGlee
+  ThinkingAboutAmerica --> WatchingGlee
+  WatchingGlee --> ThinkingAboutAmerica
+}
+
+NeilDiamond -Right-> NDoff : Walking
+NDoff -Left-> NeilDiamond :Running
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+
+title Package - Use Case Diagram
+
+
+rectangle Features {
+    (Login)
+    (Create / Delete User) as CDU
+}
+
+:Employee:
+:Client:
+:Supervisor:
+
+Employee --> (Login)
+Supervisor --> (Login)
+Client ..> (Login) : NO!!!!
+Supervisor ---> CDU: I am god
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+title Interfaces - Class Diagram
+
+
+class Car
+ICar ()- Car
+ICar2 ()-- Car
+Car -() ICar3
+
+@enduml

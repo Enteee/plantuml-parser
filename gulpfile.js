@@ -4,6 +4,7 @@ require('require-dir')('./gulp');
 
 task('default',
   series(
-    'build'
+    'build',
+    'test'
   )
 );

@@ -25,8 +25,8 @@ UML
 UMLElement
  = Together
  / Note
- / (!"@enduml" EndLine) {}  // Ignore unimplemented one line elements:
-                            //   Remove when all elements are implemeneted
+ / (!( _ "@enduml") EndLine) {}   // Ignore unimplemented one line elements:
+                                  //   Remove when all elements are implemeneted
 
 //
 // Elements
@@ -90,7 +90,7 @@ Stereotype
 Member
   = MemberVariable
   / _ "static " _ Member
-  / EndLine   // Catchall for members: Remove once all members are implemented
+  / (!( _ "}") EndLine)   // Catchall for members: Remove once all members are implemented
 
 MemberVariable
   = _ accessor:Accessor? _ name:Name EndLine

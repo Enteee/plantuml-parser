@@ -1,0 +1,23 @@
+@startuml
+
+Title Concurrent State - C3PO
+[*] --> InDanger
+State "In Danger" as InDanger {
+  [*] -> Worrying
+  Worrying --> Complaining
+  Complaining --> Worrying
+  --
+  state "Having Illusions of Grandeur" as grandeur
+  state "Calculating Odds of Survival" as survival
+  [*] -> grandeur
+  grandeur --> survival
+  survival --> grandeur
+  --
+  state "Being Prissy" as prissy
+  state "Hating Chewbacca" as chewbacca
+  [*] -> prissy
+  prissy --> chewbacca
+  chewbacca --> prissy
+}
+
+@enduml

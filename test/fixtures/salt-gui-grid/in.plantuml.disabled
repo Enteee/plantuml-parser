@@ -1,0 +1,9 @@
+@startsalt
+
+{
+  User Name:| "Justin     "
+  Password: | "****       "
+  [Ok    ]  | [  Close   ]
+}
+
+@endsalt

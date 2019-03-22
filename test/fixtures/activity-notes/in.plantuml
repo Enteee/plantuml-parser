@@ -1,0 +1,26 @@
+@startuml
+
+title Notes - Activity Diagram
+
+
+start
+
+:Eat Hot Wings;
+
+note right
+  This note is on several lines
+  ....
+  //This line is in italics//
+  ----
+  This one contains som <b>HTML</b>
+  ====
+  * This line contains a bullet
+  ____
+  "" This line is in code block""
+end note
+
+:Drink Homebrew;
+
+stop
+
+@enduml

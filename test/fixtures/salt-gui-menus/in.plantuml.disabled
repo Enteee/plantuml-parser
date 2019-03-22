@@ -1,0 +1,20 @@
+@startsalt
+
+{+
+
+{* File | Edit | Source | Refactor
+ Refactor | New | Open File | - | Close | <b>Close All</b> }
+
+    {/ <b>General | Fullscreen | Behavior | Saving }
+
+    {
+    Name         | "                 "
+    Direction:   | { (X) Left | () Right | () Up | () Down }
+    Attending?:  | {  [] Yes | [] No
+                      [] Maybe }
+     [Browse...] }
+    }
+
+}
+
+@endsalt

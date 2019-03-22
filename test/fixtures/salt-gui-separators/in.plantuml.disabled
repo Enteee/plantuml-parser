@@ -1,0 +1,14 @@
+@startsalt
+
+{
+  This is a dotted line
+  ..
+  This is a double line
+  ==
+  This is a thick solid line
+  ~~
+  This is a thin solid line
+  --
+}
+
+@endsalt

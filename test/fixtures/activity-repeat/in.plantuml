@@ -1,0 +1,15 @@
+@startuml
+
+title Repeat - Activity Diagram
+
+
+start
+
+repeat
+  :Eat Hot Wings;
+  :Drink Homebrew;
+repeat while (Still Hungry?)
+
+stop
+
+@enduml

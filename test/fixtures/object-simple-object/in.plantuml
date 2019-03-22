@@ -1,0 +1,29 @@
+@startuml
+
+title Simple Object Diagram
+
+
+object Germany
+object France
+object Spain
+object USA
+object Mexico
+object Russia
+object Canada
+object Japan
+
+Germany <|-- France
+Spain *-- USA
+Mexico o-- Russia
+Canada .. Japan
+
+Germany : Liquor = Jagermeister
+France : Liquor = Wine
+Spain : Liquor = Wine
+USA : Liquor = BudLight
+Mexico : Liquor = Taquilla
+Russia : Liquor = Vodka
+Canada : Liquor = Beer
+Japan : Liquor = Sake
+
+@enduml

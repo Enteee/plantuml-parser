@@ -1,0 +1,13 @@
+@startuml
+
+title Directions - Use Case Diagram
+
+actor :Admin: as A
+
+A -> (Login)
+A --> (Logout)
+A -left-> (Copy / Paste)
+A -up-> (Bulk Upload)
+A ---> (Throw Computer Out Of Window!!!)
+
+@enduml

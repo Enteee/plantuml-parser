@@ -1,0 +1,30 @@
+@startuml
+
+title Packages - Component Diagram
+
+package "Front End" {
+    component [Graphic User\nInterface] as GUI
+}
+
+cloud Internet {
+}
+
+node "Middle Tier" {
+    [Business Logic]
+    [Data Access] as DA
+    interface IMath as Math
+    interface "IItems" as Items
+}
+
+database "PostgreSQL\n" {
+    [Stored Procs]
+}
+
+GUI -down-> Internet
+Internet -down-( Math
+[Business Logic] -up- Math
+DA -- Items
+[Business Logic] --( Items
+DA .. [Stored Procs]
+
+@enduml

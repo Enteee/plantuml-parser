@@ -1,0 +1,22 @@
+@startsalt
+
+{
+    {T
+     + Food
+     ++ Fruit
+     +++ Grape
+     +++ Orange
+     +++ Apple
+     ++++ Honey Crisp
+     ++++ Granny Smith
+     +++ Banana
+     ++ Vegetables
+     +++ Bell pepper
+     +++ Spinach
+     +++ Mushroom
+     ++++ Crimini
+     ++++ Shitaki
+    }
+}
+
+@endsalt

@@ -1,0 +1,11 @@
+@startsalt
+
+{
+Name         | "                 "
+Direction:   | { (X) Left | () Right | () Up | () Down }
+Attending?:  | {  [] Yes | [] No
+                  [] Maybe }
+ [Browse...] }
+}
+
+@endsalt

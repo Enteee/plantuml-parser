@@ -1,0 +1,60 @@
+@startuml
+
+title Types - Class Diagram
+
+
+skinparam componentStyle uml2
+
+abstract class AbstractList {
+
+}
+
+class Test << general >> {
+}
+
+class System << (S,#FF7700) Singleton >>
+class Date << (D,orchid) >>
+
+class Foo1<Generics tag> {
+  You can use
+  several lines
+  ..
+  as you want
+  and group
+  ==
+  things together.
+  __
+  You can have as many groups
+  as you want
+  --
+  End of class
+}
+
+class User {
+  .. Simple Getter ..
+  + getName() : String
+  + getAddress() : Address
+  .. Some setter ..
+  + setName() : String
+  __ private data __
+  -int age
+  -- crypted --
+  -String password
+}
+
+enum TimeUnit {
+  DAYS
+  HOURS
+  MINUTES
+}
+
+interface List {
+
+}
+
+annotation SuppressWarnings
+
+class Object << general >>
+Object <|--- ArrayList
+
+@enduml

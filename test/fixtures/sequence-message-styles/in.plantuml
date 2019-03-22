@@ -1,0 +1,17 @@
+@startuml
+
+title Message Style - Sequence Diagram
+
+Bob -> Alice
+Bob ->> Alice
+Bob -\ Alice
+Bob \- Alice
+Bob //-- Alice
+
+Bob ->o Alice
+Bob o\-- Alice
+
+Bob <-> Alice
+Bob <->o Alice
+
+@enduml

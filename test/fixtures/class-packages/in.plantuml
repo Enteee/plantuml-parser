@@ -1,0 +1,30 @@
+@startuml
+
+title Packages - Class Diagram
+
+
+package Node <<Node>> {
+  class Worker1
+}
+
+package Rectangle <<Rect>> {
+  class Worker2
+}
+
+package Folder <<Folder>> {
+  class Worker3
+}
+
+package Frame <<Frame>> {
+  class Worker4
+}
+
+package Internet <<Cloud>> {
+  class Worker5
+}
+
+package Database <<Database>> {
+  class Worker6
+}
+
+@enduml

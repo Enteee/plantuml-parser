@@ -1,0 +1,21 @@
+@startuml
+
+Title Arrows and Notes
+State Hungry
+State "Eating Burrito" as EatingBurrito
+State Full
+State Sleeping
+
+note left of Hungry : Single line note
+note right of EatingBurrito
+    Notes can also
+    take up multiple
+    lines like this
+end note
+
+Hungry -right-> EatingBurrito
+EatingBurrito -down-> Full
+Full -left-> Sleeping
+Sleeping -up-> Hungry
+
+@enduml

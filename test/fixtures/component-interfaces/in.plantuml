@@ -1,0 +1,15 @@
+@startuml
+
+title Interfaces - Component Diagram
+
+[Business Logic]
+[Data Access] as DA
+component [Graphic User\nInterface] as GUI
+
+interface IMath as Math
+interface "IItems" as Items
+
+[Business Logic] -- Math
+DA .. Items
+
+@enduml
