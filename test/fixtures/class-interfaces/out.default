@@ -1,3 +1,9 @@
 [
-  []
+  [
+    {
+      "name": "Car",
+      "isAbstract": false,
+      "members": {}
+    }
+  ]
 ]

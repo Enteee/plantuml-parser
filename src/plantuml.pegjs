@@ -68,7 +68,6 @@ Note
   }
   / _ "note " _ (!(":" / NewLine) .)+ NewLine text:(!"end note" .)+ "end note" EndLine
   {
-    console.log('======', arguments);
     return new (require('./note'))(
       text.map((c) => c[1]).join('').trim()
     )
@@ -79,18 +78,18 @@ Note
 //
 
 Class
-  = _ abstract:"abstract "? _ "class " _ name:Name _ Generics? _ Stereotype? _ NewLine
+  = _ isAbstract:"abstract "? _ "class " _ name:Name _ Generics? _ Stereotype? _ NewLine
   {
     return new (require("./class"))(
       name.join(''),
-      !!abstract
+      !!isAbstract
     );
   }
-  / _ abstract:"abstract "? _ "class " _ name:Name _ Generics? _ Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
+  / _ isAbstract:"abstract "? _ "class " _ name:Name _ Generics? _ Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new (require("./class"))(
       name.join(''),
-      !!abstract,
+      !!isAbstract,
       members
     );
   }
@@ -102,16 +101,31 @@ Stereotype
   = "<<" _ ( !">>" . )+ _ ">>"
 
 Member
-  = MemberVariable
-  / _ "static " _ Member
+  = Method
+  / MemberVariable
   / (!( _ "}") EndLine)   // Catchall for members: Remove once all members are implemented
 
+Method
+  = _ isStatic:"static "? _ accessor:Accessor? _ type:Name? _ name:Name _ "(" _arguments:(!")" .)* ")" EndLine
+  {
+    return new (require('./method'))(
+      name.join(''),
+      isStatic,
+      accessor,
+      type.join(''),
+      _arguments.join(''),
+    );
+  }
+
+
 MemberVariable
-  = _ accessor:Accessor? _ name:Name EndLine
+  = _ isStatic:"static "? _ accessor:Accessor? _ type:Name? _ name:Name EndLine
   {
     return new (require('./memberVariable'))(
       name.join(''),
-      accessor
+      !!isStatic,
+      accessor,
+      type.join(''),
     );
   }
 
