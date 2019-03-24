@@ -27,6 +27,7 @@ UMLElement
  / Package
  / Note
  / Class
+ / Interface
  / (!( _ "@enduml") EndLine) {}   // Ignore unimplemented one line elements:
                                   //   Remove when all elements are implemeneted
 
@@ -47,11 +48,11 @@ Together
 Package
   = _ "package " _ name:Name _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
-    return require('./package')(name, elements);
+    return new (require('./package'))(name, elements);
   }
   / _ "package " _ name:Name _ NewLine elements:(!"end package" UMLElement)* _ "end package" EndLine
   {
-    return require('./package')(name, elements);
+    return new (require('./package'))(name, elements);
   }
 
 //
@@ -59,8 +60,19 @@ Package
 //
 
 Note
-  = _ "note " _ [^:]+ ":" EndLine
-  / _ "note " _ [^:]+ NewLine (!"end note" .)* "end note" EndLine
+  = _ "note " _ (!(":" / NewLine) .)+ _ ":" _ text:(!NewLine .)+ EndLine
+  {
+    return new (require('./note'))(
+      text.map((c) => c[1]).join('').trim()
+    )
+  }
+  / _ "note " _ (!(":" / NewLine) .)+ NewLine text:(!"end note" .)+ "end note" EndLine
+  {
+    console.log('======', arguments);
+    return new (require('./note'))(
+      text.map((c) => c[1]).join('').trim()
+    )
+  }
 
 //
 // Class
@@ -69,16 +81,15 @@ Note
 Class
   = _ abstract:"abstract "? _ "class " _ name:Name _ Generics? _ Stereotype? _ NewLine
   {
-    console.log(arguments);
-    return new require("./class")(
-      name,
+    return new (require("./class"))(
+      name.join(''),
       !!abstract
     );
   }
   / _ abstract:"abstract "? _ "class " _ name:Name _ Generics? _ Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
-    return new require("./class")(
-      name,
+    return new (require("./class"))(
+      name.join(''),
       !!abstract,
       members
     );
@@ -98,9 +109,27 @@ Member
 MemberVariable
   = _ accessor:Accessor? _ name:Name EndLine
   {
-    return new require("../memberVariable")(
-      accessor || "+",
-      name
+    return new (require('./memberVariable'))(
+      name.join(''),
+      accessor
+    );
+  }
+
+//
+// Interface
+//
+Interface
+  = _ "interface " _ name:Name _ Generics? _ Stereotype? _ NewLine
+  {
+    return new (require('./interface'))(
+      name.join(''),
+    );
+  }
+  / _ "interface " _ name:Name _ Generics? _ Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
+  {
+    return new (require('./interface'))(
+      name.join(''),
+      members
     );
   }
 
