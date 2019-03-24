@@ -1,3 +1,587 @@
 [
-  []
+  [
+    {
+      "name": "AbstractList",
+      "isAbstract": true,
+      "members": [
+        [
+          null,
+          [
+            [],
+            "\n"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Foo1",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "can",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "You"
+        },
+        {
+          "name": "lines",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "several"
+        },
+        [
+          null,
+          [
+            [
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "."
+              ],
+              [
+                null,
+                "."
+              ]
+            ],
+            "\n"
+          ]
+        ],
+        {
+          "name": "you",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "as"
+        },
+        {
+          "name": "group",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "and"
+        },
+        [
+          null,
+          [
+            [
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "="
+              ],
+              [
+                null,
+                "="
+              ]
+            ],
+            "\n"
+          ]
+        ],
+        {
+          "name": "together.",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "things"
+        },
+        [
+          null,
+          [
+            [
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "_"
+              ],
+              [
+                null,
+                "_"
+              ]
+            ],
+            "\n"
+          ]
+        ],
+        {
+          "name": "can",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "You"
+        },
+        {
+          "name": "you",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "as"
+        },
+        [
+          null,
+          [
+            [
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "-"
+              ],
+              [
+                null,
+                "-"
+              ]
+            ],
+            "\n"
+          ]
+        ],
+        {
+          "name": "of",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "End"
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "Simple",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        },
+        [
+          null,
+          [
+            [
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "+"
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "g"
+              ],
+              [
+                null,
+                "e"
+              ],
+              [
+                null,
+                "t"
+              ],
+              [
+                null,
+                "N"
+              ],
+              [
+                null,
+                "a"
+              ],
+              [
+                null,
+                "m"
+              ],
+              [
+                null,
+                "e"
+              ],
+              [
+                null,
+                "("
+              ],
+              [
+                null,
+                ")"
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                ":"
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "S"
+              ],
+              [
+                null,
+                "t"
+              ],
+              [
+                null,
+                "r"
+              ],
+              [
+                null,
+                "i"
+              ],
+              [
+                null,
+                "n"
+              ],
+              [
+                null,
+                "g"
+              ]
+            ],
+            "\n"
+          ]
+        ],
+        [
+          null,
+          [
+            [
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "+"
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "g"
+              ],
+              [
+                null,
+                "e"
+              ],
+              [
+                null,
+                "t"
+              ],
+              [
+                null,
+                "A"
+              ],
+              [
+                null,
+                "d"
+              ],
+              [
+                null,
+                "d"
+              ],
+              [
+                null,
+                "r"
+              ],
+              [
+                null,
+                "e"
+              ],
+              [
+                null,
+                "s"
+              ],
+              [
+                null,
+                "s"
+              ],
+              [
+                null,
+                "("
+              ],
+              [
+                null,
+                ")"
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                ":"
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "A"
+              ],
+              [
+                null,
+                "d"
+              ],
+              [
+                null,
+                "d"
+              ],
+              [
+                null,
+                "r"
+              ],
+              [
+                null,
+                "e"
+              ],
+              [
+                null,
+                "s"
+              ],
+              [
+                null,
+                "s"
+              ]
+            ],
+            "\n"
+          ]
+        ],
+        {
+          "name": "Some",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        },
+        [
+          null,
+          [
+            [
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "+"
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "s"
+              ],
+              [
+                null,
+                "e"
+              ],
+              [
+                null,
+                "t"
+              ],
+              [
+                null,
+                "N"
+              ],
+              [
+                null,
+                "a"
+              ],
+              [
+                null,
+                "m"
+              ],
+              [
+                null,
+                "e"
+              ],
+              [
+                null,
+                "("
+              ],
+              [
+                null,
+                ")"
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                ":"
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "S"
+              ],
+              [
+                null,
+                "t"
+              ],
+              [
+                null,
+                "r"
+              ],
+              [
+                null,
+                "i"
+              ],
+              [
+                null,
+                "n"
+              ],
+              [
+                null,
+                "g"
+              ]
+            ],
+            "\n"
+          ]
+        ],
+        {
+          "name": "private",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "__"
+        },
+        {
+          "name": "age",
+          "isStatic": false,
+          "accessor": "-",
+          "type": "int"
+        },
+        [
+          null,
+          [
+            [
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "-"
+              ],
+              [
+                null,
+                "-"
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "c"
+              ],
+              [
+                null,
+                "r"
+              ],
+              [
+                null,
+                "y"
+              ],
+              [
+                null,
+                "p"
+              ],
+              [
+                null,
+                "t"
+              ],
+              [
+                null,
+                "e"
+              ],
+              [
+                null,
+                "d"
+              ],
+              [
+                null,
+                " "
+              ],
+              [
+                null,
+                "-"
+              ],
+              [
+                null,
+                "-"
+              ]
+            ],
+            "\n"
+          ]
+        ],
+        {
+          "name": "password",
+          "isStatic": false,
+          "accessor": "-",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "List",
+      "members": [
+        [
+          null,
+          [
+            [],
+            "\n"
+          ]
+        ]
+      ]
+    }
+  ]
 ]

@@ -214,7 +214,6 @@ function peg$parse(input, options) {
       peg$c45 = ")",
       peg$c46 = peg$literalExpectation(")", false),
       peg$c47 = function(isStatic, accessor, type, name, _arguments) {
-          console.log(arguments);
           return new (require('./method'))(
             name.join(''),
             isStatic,

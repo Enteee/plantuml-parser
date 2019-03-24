@@ -1,100 +1,10 @@
 [
   [
-    [
-      [],
-      "note ",
-      [],
-      [
-        "l",
-        "e",
-        "f",
-        "t",
-        " ",
-        "o",
-        "f",
-        " ",
-        "H",
-        "u",
-        "n",
-        "g",
-        "r",
-        "y",
-        " "
-      ],
-      ":",
-      [
-        [
-          [
-            null,
-            " "
-          ],
-          [
-            null,
-            "S"
-          ],
-          [
-            null,
-            "i"
-          ],
-          [
-            null,
-            "n"
-          ],
-          [
-            null,
-            "g"
-          ],
-          [
-            null,
-            "l"
-          ],
-          [
-            null,
-            "e"
-          ],
-          [
-            null,
-            " "
-          ],
-          [
-            null,
-            "l"
-          ],
-          [
-            null,
-            "i"
-          ],
-          [
-            null,
-            "n"
-          ],
-          [
-            null,
-            "e"
-          ],
-          [
-            null,
-            " "
-          ],
-          [
-            null,
-            "n"
-          ],
-          [
-            null,
-            "o"
-          ],
-          [
-            null,
-            "t"
-          ],
-          [
-            null,
-            "e"
-          ]
-        ],
-        "\n"
-      ]
-    ]
+    {
+      "text": "Single line note"
+    },
+    {
+      "text": "Notes can also\n    take up multiple\n    lines like this"
+    }
   ]
 ]
