@@ -23,13 +23,28 @@ UML
   }
 
 UMLElement
- = Together
+ = Comment
+ / Together
  / Package
  / Note
  / Class
  / Interface
- / (!( _ "@enduml") EndLine) {}   // Ignore unimplemented one line elements:
-                                  //   Remove when all elements are implemeneted
+ / (!(
+      _ "@enduml"
+      / _ "}"
+      / _ "end "
+    ) EndLine) {} // Ignore unimplemented one line elements:
+                  //   Remove when all elements are implemeneted
+                  //   IMPORTANT:
+                  //    Must add all terminators here of non-terminals
+                  //    which reference UMLElement.
+
+//
+// Comment
+//
+Comment
+  = _ "'" EndLine
+  / _ "/'" (!"'/" .)* EndLine
 
 //
 // Together
@@ -38,7 +53,9 @@ UMLElement
 Together
   = _ "together " _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
-    return elements;
+    return elements.filter(
+      e => e !== undefined
+    );
   }
 
 //
@@ -46,13 +63,23 @@ Together
 //
 
 Package
-  = _ "package " _ name:Name _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
+  = _ "package " _ name:ElementName _ Stereotype? _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
-    return new (require('./package'))(name, elements);
+    return new (require('./package'))(
+      name,
+      elements.filter(
+        e => e !== undefined
+      )
+    );
   }
-  / _ "package " _ name:Name _ NewLine elements:(!"end package" UMLElement)* _ "end package" EndLine
+  / _ "package " _ name:ElementName _ Stereotype? _ NewLine elements:(!"end package" UMLElement)* _ "end package" EndLine
   {
-    return new (require('./package'))(name, elements);
+    return new (require('./package'))(
+      name,
+      elements.filter(
+        e => e !== undefined
+      )
+    );
   }
 
 //
@@ -78,27 +105,21 @@ Note
 //
 
 Class
-  = _ isAbstract:"abstract "? _ "class " _ name:Name _ Generics? _ Stereotype? _ NewLine
+  = _ isAbstract:"abstract "? _ "class " _ name:ElementName _ Generics? _ Stereotype? _ NewLine
   {
     return new (require("./class"))(
-      name.join(''),
+      name,
       !!isAbstract
     );
   }
-  / _ isAbstract:"abstract "? _ "class " _ name:Name _ Generics? _ Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
+  / _ isAbstract:"abstract "? _ "class " _ name:ElementName _ Generics? _ Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new (require("./class"))(
-      name.join(''),
+      name,
       !!isAbstract,
       members
     );
   }
-
-Generics
-  = "<" _ ( !">" . )+ _ ">"
-
-Stereotype
-  = "<<" _ ( !">>" . )+ _ ">>"
 
 Member
   = Method
@@ -106,43 +127,62 @@ Member
   / (!( _ "}") EndLine)   // Catchall for members: Remove once all members are implemented
 
 Method
-  = _ isStatic:"static "? _ accessor:Accessor? _ type:Name? _ name:Name _ "(" _arguments:(!")" .)* ")" EndLine
+  = _ isStatic:"static "? _ accessor:Accessor? _ type:Name _ name:Name _ "(" _arguments:(!")" .)* ")" EndLine
   {
     return new (require('./method'))(
-      name.join(''),
+      name,
       isStatic,
       accessor,
-      type.join(''),
+      type,
+      _arguments.join(''),
+    );
+  }
+  / _ isStatic:"static "? _ accessor:Accessor? _ name:Name _ "(" _arguments:(!")" .)* ")" EndLine
+  {
+    return new (require('./method'))(
+      name,
+      isStatic,
+      accessor,
+      undefined,
       _arguments.join(''),
     );
   }
 
 
 MemberVariable
-  = _ isStatic:"static "? _ accessor:Accessor? _ type:Name? _ name:Name EndLine
+  = _ isStatic:"static "? _ accessor:Accessor? _ type:Name _ name:Name EndLine
   {
     return new (require('./memberVariable'))(
-      name.join(''),
+      name,
       !!isStatic,
       accessor,
-      type.join(''),
+      type,
+    );
+  }
+  / _ isStatic:"static "? _ accessor:Accessor? _ name:Name EndLine
+  {
+    return new (require('./memberVariable'))(
+      name,
+      !!isStatic,
+      accessor
     );
   }
 
 //
 // Interface
 //
+
 Interface
-  = _ "interface " _ name:Name _ Generics? _ Stereotype? _ NewLine
+  = _ "interface " _ name:ElementName _ Generics? _ Stereotype? _ NewLine
   {
     return new (require('./interface'))(
-      name.join(''),
+      name,
     );
   }
-  / _ "interface " _ name:Name _ Generics? _ Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
+  / _ "interface " _ name:ElementName _ Generics? _ Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new (require('./interface'))(
-      name.join(''),
+      name,
       members
     );
   }
@@ -151,12 +191,42 @@ Interface
 /// Shared
 ///
 
-Name
-  = [A-Za-z0-9._]+
-  / "\"" name:([^"]) "\""
+ElementName
+  = _ QuotedString _ "as " _ name:Name _
   {
     return name;
   }
+  / _ name:Name _ "as " _ QuotedString _
+  {
+    return name;
+  }
+  / _ name:QuotedString _
+  {
+    return name;
+  }
+  / _ name:Name _
+  {
+    return name;
+  }
+
+QuotedString
+  = "\"" string:(!("\"" / NewLine) .)+ "\""
+  {
+    return string.join('')
+  }
+
+Name
+  = name:([A-Za-z0-9._]+)
+  {
+    return name.join('');
+  }
+
+Generics
+  = "<" _ ( !">" . )+ _ ">"
+
+Stereotype
+  = "<<" _ ( !">>" . )+ _ ">>"
+
 
 Accessor
   = [+\-#]

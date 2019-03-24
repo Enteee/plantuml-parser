@@ -23,6 +23,7 @@ module.exports ={
     dir: join(__dirname, 'test/fixtures'),
     inputFile: 'in.plantuml',
     outputFilePrefix: 'out.',
+    treeFilePrefix: 'out.',
     get outputFileMatcher () {
       return new RegExp(
       '.*\/' + escapeRegExp(this.outputFilePrefix) + '(.+)'

@@ -21,7 +21,7 @@ function testParse(src) {
   const tracer = new Tracer(
     src,
     {
-      showTrace: true
+      showTrace: true,
     }
   );
   try {
@@ -32,7 +32,6 @@ function testParse(src) {
       }
     );
   } catch (e) {
-    var line;
     try {
       e.message = 'Line ' + e.location.start.line + ': ' + e.message;
       e.message += EOL;
