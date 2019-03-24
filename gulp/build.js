@@ -1,21 +1,26 @@
+const conf = require('../conf');
+
 const { task, parallel, src, dest } = require('gulp');
+const { join } = require('path');
+
 const log = require('fancy-log');
+const rename = require('gulp-rename');
 const pegjs = require('gulp-pegjs');
 
 task('build-optimized',
-  (cb) => src('src/*.pegjs')
+  (cb) => src(join(conf.src.dir, '*.pegjs'))
   .pipe(
     pegjs({
       format: 'commonjs',
     }).on('error', cb)
   )
   .pipe(
-    dest('lib')
+    dest(conf.src.dir)
   )
 );
 
 task('build-debug',
-  (cb) => src('src/*.pegjs')
+  (cb) => src(join(conf.src.dir, '*.pegjs'))
   .pipe(
     pegjs({
       format: 'commonjs',
@@ -23,7 +28,10 @@ task('build-debug',
     }).on('error', cb)
   )
   .pipe(
-    dest('lib-debug')
+    rename('plantuml-trace.js')
+  )
+  .pipe(
+    dest(conf.src.dir)
   )
 );
 

@@ -19,6 +19,8 @@ task('watch-test', (cb) => {
     'src/**/*.js',
     'src/**/*.pegjs',
     'format/**/*.js',
+    '!src/**/plantuml.js',
+    '!src/**/plantuml-trace.js',
   ], {
     ignoreInitial: false
   }, series(

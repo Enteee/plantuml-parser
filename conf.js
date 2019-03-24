@@ -1,6 +1,8 @@
 /**
- * Configuratio
+ * Configuration
  */
+
+const { join } = require('path');
 
 function escapeRegExp(string) {
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
@@ -8,8 +10,17 @@ function escapeRegExp(string) {
 
 module.exports ={
   encoding: 'utf-8',
+  src: {
+    dir: join(__dirname, 'src/'),
+  },
+  test: {
+    dir: join(__dirname, 'test/'),
+  },
+  formatters: {
+    dir: join(__dirname, 'src/formatters/'),
+  },
   fixtures: {
-    dir: 'test/fixtures',
+    dir: join(__dirname, 'test/fixtures'),
     inputFile: 'in.plantuml',
     outputFilePrefix: 'out.',
     get outputFileMatcher () {

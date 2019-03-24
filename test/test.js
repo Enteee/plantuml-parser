@@ -1,3 +1,5 @@
+const conf = require('../conf');
+
 const { lstatSync, readdirSync, readFileSync } = require('fs')
 const { join } = require('path')
 const { EOL } = require('os');
@@ -6,9 +8,9 @@ const { expect } = require('chai');
 const log = require('fancy-log');
 const Tracer = require('pegjs-backtrace');
 
-const { parse } = require('../lib/plantuml');
-const { parse: parseTrace } = require('../lib-debug/plantuml');
-const formatters = require('../format');
+const { parse } = require(join(conf.src.dir, 'plantuml'));
+const { parse: parseTrace } = require(join(conf.src.dir, 'plantuml-trace'));
+const formatters = require(conf.formatters.dir);
 
 
 /**
@@ -16,7 +18,12 @@ const formatters = require('../format');
  * Yields readable output on error
  */
 function testParse(src) {
-  const tracer = new Tracer(src);
+  const tracer = new Tracer(
+    src,
+    {
+      showTrace: true
+    }
+  );
   try {
     const parsed = parseTrace(
       src,
@@ -25,10 +32,14 @@ function testParse(src) {
       }
     );
   } catch (e) {
-    e.message = 'Line ' + e.location.start.line + ': ' + e.message + EOL;
-    e.message += EOL;
-    e.message += tracer.getBacktraceString();
-    e.message += EOL;
+    var line;
+    try {
+      e.message = 'Line ' + e.location.start.line + ': ' + e.message;
+      e.message += EOL;
+      e.message += EOL;
+      e.message += tracer.getBacktraceString();
+      e.message += EOL;
+    } catch (e) { };
     throw e;
   }
 };

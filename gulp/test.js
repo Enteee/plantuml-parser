@@ -9,21 +9,24 @@ const { writeFileSync } = require('fs');
 const log = require('fancy-log');
 const mocha = require('gulp-mocha');
 
-const { parse } = require('../lib/plantuml');
-const formatters = require('../format');
+const formatters = require(conf.formatters.dir);
 
 task('test-run', () =>
-  src('test/test.js', {read: false})
+  src(join(conf.test.dir, 'test.js'), {read: false})
     .pipe(mocha({
       bail: true,
+      grep: "test/fixtures/class-sm",
     }))
 )
 
 task('test-fixtures-update-run', () =>
-  src('test/fixtures/**/in.plantuml')
+  src(join(conf.fixtures.dir, '**/in.plantuml'))
   .pipe(readFiles(function (content, file, stream, cb) {
     Object.keys(formatters).forEach(
       (name) => {
+
+        const { parse } = require(join(conf.src.dir, 'plantuml'));
+
         const formatter = formatters[name];
         const outfile = join(
           dirname(file.path),

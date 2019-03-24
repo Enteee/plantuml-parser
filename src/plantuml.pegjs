@@ -24,18 +24,34 @@ UML
 
 UMLElement
  = Together
+ / Package
  / Note
+ / Class
  / (!( _ "@enduml") EndLine) {}   // Ignore unimplemented one line elements:
                                   //   Remove when all elements are implemeneted
 
 //
-// Elements
+// Together
 //
 
 Together
   = _ "together " _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
     return elements;
+  }
+
+//
+// Package
+//
+
+Package
+  = _ "package " _ name:Name _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
+  {
+    return require('./package')(name, elements);
+  }
+  / _ "package " _ name:Name _ NewLine elements:(!"end package" UMLElement)* _ "end package" EndLine
+  {
+    return require('./package')(name, elements);
   }
 
 //
@@ -47,26 +63,13 @@ Note
   / _ "note " _ [^:]+ NewLine (!"end note" .)* "end note" EndLine
 
 //
-// Package
-//
-
-Package
-  = _ "package " _ Name _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
-  {
-    return elements;
-  }
-  / _ "package " _ Name _ NewLine (!"end package" element:UMLElement)* _ "end package" EndLine
-  {
-    return elements;
-  }
-
-//
-// Class & Interface
+// Class
 //
 
 Class
-  = _ abstract:"abstract "? _ "class " _ name:Name _ Generics? _ Stereotype? EndLine
+  = _ abstract:"abstract "? _ "class " _ name:Name _ Generics? _ Stereotype? _ NewLine
   {
+    console.log(arguments);
     return new require("./class")(
       name,
       !!abstract
@@ -95,7 +98,7 @@ Member
 MemberVariable
   = _ accessor:Accessor? _ name:Name EndLine
   {
-    return new require("./memberVariable")(
+    return new require("../memberVariable")(
       accessor || "+",
       name
     );
