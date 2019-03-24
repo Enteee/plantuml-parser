@@ -1,34 +1,70 @@
 [
   [
     {
-      "name": "Worker1",
-      "isAbstract": false,
-      "members": {}
+      "name": "Node",
+      "type": "package",
+      "elements": [
+        {
+          "name": "Worker1",
+          "isAbstract": false,
+          "members": {}
+        }
+      ]
     },
     {
-      "name": "Worker2",
-      "isAbstract": false,
-      "members": {}
+      "name": "Rectangle",
+      "type": "package",
+      "elements": [
+        {
+          "name": "Worker2",
+          "isAbstract": false,
+          "members": {}
+        }
+      ]
     },
     {
-      "name": "Worker3",
-      "isAbstract": false,
-      "members": {}
+      "name": "Folder",
+      "type": "package",
+      "elements": [
+        {
+          "name": "Worker3",
+          "isAbstract": false,
+          "members": {}
+        }
+      ]
     },
     {
-      "name": "Worker4",
-      "isAbstract": false,
-      "members": {}
+      "name": "Frame",
+      "type": "package",
+      "elements": [
+        {
+          "name": "Worker4",
+          "isAbstract": false,
+          "members": {}
+        }
+      ]
     },
     {
-      "name": "Worker5",
-      "isAbstract": false,
-      "members": {}
+      "name": "Internet",
+      "type": "package",
+      "elements": [
+        {
+          "name": "Worker5",
+          "isAbstract": false,
+          "members": {}
+        }
+      ]
     },
     {
-      "name": "Worker6",
-      "isAbstract": false,
-      "members": {}
+      "name": "Database",
+      "type": "package",
+      "elements": [
+        {
+          "name": "Worker6",
+          "isAbstract": false,
+          "members": {}
+        }
+      ]
     }
   ]
 ]

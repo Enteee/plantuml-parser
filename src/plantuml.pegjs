@@ -24,15 +24,18 @@ UML
 
 UMLElement
  = Comment
+ / SkinParam
  / Together
- / Package
+ / Group
  / Note
  / Class
  / Interface
+ / Enum
+ / NotImplementedBlock
  / (!(
       _ "@enduml"
       / _ "}"
-      / _ "end "
+      / _ "end note"
     ) EndLine) {} // Ignore unimplemented one line elements:
                   //   Remove when all elements are implemeneted
                   //   IMPORTANT:
@@ -42,9 +45,25 @@ UMLElement
 //
 // Comment
 //
+
 Comment
   = _ "'" EndLine
   / _ "/'" (!"'/" .)* EndLine
+
+//
+// SkinParam
+//
+
+SkinParam
+  = _ "skinparam " _ name:Name _ "{" _ NewLine Param* _ "}" EndLine 
+  {
+  }
+  / _ "skinparam " _ Param
+  {
+  }
+
+Param
+  = _ param:Name _ value:Color EndLine
 
 //
 // Together
@@ -59,28 +78,29 @@ Together
   }
 
 //
-// Package
+// Group
 //
 
-Package
-  = _ "package " _ name:ElementName _ Stereotype? _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
+Group
+  = _ type:GroupType " " _ name:ElementName _ Stereotype? _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
-    return new (require('./package'))(
+    return new (require('./group'))(
       name,
+      type,
       elements.filter(
         e => e !== undefined
       )
     );
   }
-  / _ "package " _ name:ElementName _ Stereotype? _ NewLine elements:(!"end package" UMLElement)* _ "end package" EndLine
-  {
-    return new (require('./package'))(
-      name,
-      elements.filter(
-        e => e !== undefined
-      )
-    );
-  }
+
+GroupType
+  = "package"i
+  / "node"i
+  / "folder"i
+  / "frame"i
+  / "cloud"i
+  / "database"i
+  / "rectangle"i
 
 //
 // Note
@@ -105,14 +125,14 @@ Note
 //
 
 Class
-  = _ isAbstract:"abstract "? _ "class " _ name:ElementName _ Generics? _ Stereotype? _ NewLine
+  = _ isAbstract:"abstract "? _ "class " _ name:ElementName _ Decorators? _ NewLine
   {
     return new (require("./class"))(
       name,
       !!isAbstract
     );
   }
-  / _ isAbstract:"abstract "? _ "class " _ name:ElementName _ Generics? _ Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
+  / _ isAbstract:"abstract "? _ "class " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new (require("./class"))(
       name,
@@ -173,19 +193,51 @@ MemberVariable
 //
 
 Interface
-  = _ "interface " _ name:ElementName _ Generics? _ Stereotype? _ NewLine
+  = _ "interface " _ name:ElementName _ Decorators? _ NewLine
   {
     return new (require('./interface'))(
       name,
     );
   }
-  / _ "interface " _ name:ElementName _ Generics? _ Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
+  / _ "interface " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new (require('./interface'))(
       name,
       members
     );
   }
+
+//
+// Enum
+//
+
+Enum
+  = _ "enum " _ name:ElementName _ Decorators? _ NewLine
+  {
+    return new (require('./enum'))(
+      name,
+    );
+  }
+  / _ "enum " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
+  {
+    return new (require('./enum'))(
+      name,
+      members
+    );
+  }
+
+//
+// NotImplementedBlock
+//
+
+NotImplementedBlock
+  = _ NotImplementedBlockType " " _ name:ElementName _ "{" _ NewLine (!( NewLine _ "}" NewLine) .)* NewLine _ "}" EndLine
+  {
+  }
+
+NotImplementedBlockType
+  = "digraph"i
+  / "state"i
 
 ///
 /// Shared
@@ -221,6 +273,11 @@ Name
     return name.join('');
   }
 
+Decorators
+  = Generics _ Stereotype
+  / Stereotype
+  / Generics
+
 Generics
   = "<" _ ( !">" . )+ _ ">"
 
@@ -230,6 +287,12 @@ Stereotype
 
 Accessor
   = [+\-#]
+
+Color
+  = color:([#A-Za-z0-9]+)
+  {
+    return color.join('');
+  }
 
 //
 // Meta

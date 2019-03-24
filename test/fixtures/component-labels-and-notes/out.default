@@ -1,13 +1,38 @@
 [
   [
     {
-      "text": "This is a web\\nService Interface"
+      "name": ",F,r,o,n,t, ,E,n,d",
+      "type": "package",
+      "elements": []
     },
     {
-      "text": "Notice the\\nlabel below"
+      "name": "Internet",
+      "type": "cloud",
+      "elements": []
     },
     {
-      "text": "A note can also\n        be on several lines\n        like this one"
+      "name": ",M,i,d,d,l,e, ,T,i,e,r",
+      "type": "node",
+      "elements": [
+        {
+          "text": "This is a web\\nService Interface"
+        },
+        {
+          "text": "Notice the\\nlabel below"
+        },
+        {
+          "name": "Items",
+          "members": []
+        },
+        {
+          "text": "A note can also\n        be on several lines\n        like this one"
+        }
+      ]
+    },
+    {
+      "name": ",P,o,s,t,g,r,e,S,Q,L,\\,n",
+      "type": "database",
+      "elements": []
     }
   ]
 ]

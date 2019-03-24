@@ -14,6 +14,21 @@
       ]
     },
     {
+      "name": "Test",
+      "isAbstract": false,
+      "members": []
+    },
+    {
+      "name": "System",
+      "isAbstract": false,
+      "members": {}
+    },
+    {
+      "name": "Date",
+      "isAbstract": false,
+      "members": {}
+    },
+    {
       "name": "Foo1",
       "isAbstract": false,
       "members": [
@@ -29,30 +44,12 @@
           "accessor": "+",
           "type": "several"
         },
-        [
-          null,
-          [
-            [
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "."
-              ],
-              [
-                null,
-                "."
-              ]
-            ],
-            "\n"
-          ]
-        ],
+        {
+          "name": "..",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
         {
           "name": "you",
           "isStatic": false,
@@ -95,30 +92,12 @@
           "accessor": "+",
           "type": "things"
         },
-        [
-          null,
-          [
-            [
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "_"
-              ],
-              [
-                null,
-                "_"
-              ]
-            ],
-            "\n"
-          ]
-        ],
+        {
+          "name": "__",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
         {
           "name": "can",
           "isStatic": false,
@@ -173,316 +152,33 @@
           "accessor": "+",
           "type": ".."
         },
-        [
-          null,
-          [
-            [
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "+"
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "g"
-              ],
-              [
-                null,
-                "e"
-              ],
-              [
-                null,
-                "t"
-              ],
-              [
-                null,
-                "N"
-              ],
-              [
-                null,
-                "a"
-              ],
-              [
-                null,
-                "m"
-              ],
-              [
-                null,
-                "e"
-              ],
-              [
-                null,
-                "("
-              ],
-              [
-                null,
-                ")"
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                ":"
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "S"
-              ],
-              [
-                null,
-                "t"
-              ],
-              [
-                null,
-                "r"
-              ],
-              [
-                null,
-                "i"
-              ],
-              [
-                null,
-                "n"
-              ],
-              [
-                null,
-                "g"
-              ]
-            ],
-            "\n"
-          ]
-        ],
-        [
-          null,
-          [
-            [
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "+"
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "g"
-              ],
-              [
-                null,
-                "e"
-              ],
-              [
-                null,
-                "t"
-              ],
-              [
-                null,
-                "A"
-              ],
-              [
-                null,
-                "d"
-              ],
-              [
-                null,
-                "d"
-              ],
-              [
-                null,
-                "r"
-              ],
-              [
-                null,
-                "e"
-              ],
-              [
-                null,
-                "s"
-              ],
-              [
-                null,
-                "s"
-              ],
-              [
-                null,
-                "("
-              ],
-              [
-                null,
-                ")"
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                ":"
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "A"
-              ],
-              [
-                null,
-                "d"
-              ],
-              [
-                null,
-                "d"
-              ],
-              [
-                null,
-                "r"
-              ],
-              [
-                null,
-                "e"
-              ],
-              [
-                null,
-                "s"
-              ],
-              [
-                null,
-                "s"
-              ]
-            ],
-            "\n"
-          ]
-        ],
+        {
+          "name": "getName",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "getAddress",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        },
         {
           "name": "Some",
           "isStatic": false,
           "accessor": "+",
           "type": ".."
         },
-        [
-          null,
-          [
-            [
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "+"
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "s"
-              ],
-              [
-                null,
-                "e"
-              ],
-              [
-                null,
-                "t"
-              ],
-              [
-                null,
-                "N"
-              ],
-              [
-                null,
-                "a"
-              ],
-              [
-                null,
-                "m"
-              ],
-              [
-                null,
-                "e"
-              ],
-              [
-                null,
-                "("
-              ],
-              [
-                null,
-                ")"
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                ":"
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "S"
-              ],
-              [
-                null,
-                "t"
-              ],
-              [
-                null,
-                "r"
-              ],
-              [
-                null,
-                "i"
-              ],
-              [
-                null,
-                "n"
-              ],
-              [
-                null,
-                "g"
-              ]
-            ],
-            "\n"
-          ]
-        ],
+        {
+          "name": "setName",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        },
         {
           "name": "private",
           "isStatic": false,
@@ -572,6 +268,29 @@
       ]
     },
     {
+      "name": "TimeUnit",
+      "members": [
+        {
+          "name": "DAYS",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "HOURS",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "MINUTES",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        }
+      ]
+    },
+    {
       "name": "List",
       "members": [
         [
@@ -582,6 +301,11 @@
           ]
         ]
       ]
+    },
+    {
+      "name": "Object",
+      "isAbstract": false,
+      "members": {}
     }
   ]
 ]
