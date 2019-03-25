@@ -2,19 +2,20 @@ const conf = require('../../conf');
 const { join } = require('path');
 
 const Class = require(join(conf.src.dir, 'class'));
+const Interface = require(join(conf.src.dir, 'interface'));
 const Relationship = require(join(conf.src.dir, 'relationship'));
 
 const nodes = []
 const edges = []
 
 function parseAst(node){
-  if(node instanceof Class){
+  if(node instanceof Class || node instanceof Interface){
     nodes.push({
       id: node.name,
       type: 'Entity',
       label: node.name,
       title: node.name,
-      shape: 'circle',
+      shape: 'box',
       hidden: true
     });
     node.members.forEach(

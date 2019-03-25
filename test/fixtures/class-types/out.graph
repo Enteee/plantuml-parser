@@ -5,7 +5,7 @@
       "type": "Entity",
       "label": "Dwelling",
       "title": "Dwelling",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -29,7 +29,7 @@
       "type": "Entity",
       "label": "Apartment",
       "title": "Apartment",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -37,7 +37,7 @@
       "type": "Entity",
       "label": "House",
       "title": "House",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -45,7 +45,7 @@
       "type": "Entity",
       "label": "Commune",
       "title": "Commune",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -53,7 +53,7 @@
       "type": "Entity",
       "label": "Car",
       "title": "Car",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -61,7 +61,7 @@
       "type": "Entity",
       "label": "Worker1",
       "title": "Worker1",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -69,7 +69,7 @@
       "type": "Entity",
       "label": "Worker2",
       "title": "Worker2",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -77,7 +77,7 @@
       "type": "Entity",
       "label": "Worker3",
       "title": "Worker3",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -85,7 +85,7 @@
       "type": "Entity",
       "label": "Worker4",
       "title": "Worker4",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -93,7 +93,7 @@
       "type": "Entity",
       "label": "Worker5",
       "title": "Worker5",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -101,7 +101,7 @@
       "type": "Entity",
       "label": "Worker6",
       "title": "Worker6",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -109,7 +109,7 @@
       "type": "Entity",
       "label": "Car",
       "title": "Car",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -232,7 +232,7 @@
       "type": "Entity",
       "label": "Car",
       "title": "Car",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -240,7 +240,7 @@
       "type": "Entity",
       "label": "Dwelling",
       "title": "Dwelling",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -264,7 +264,7 @@
       "type": "Entity",
       "label": "Apartment",
       "title": "Apartment",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -272,7 +272,7 @@
       "type": "Entity",
       "label": "House",
       "title": "House",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -280,7 +280,7 @@
       "type": "Entity",
       "label": "Commune",
       "title": "Commune",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -288,7 +288,7 @@
       "type": "Entity",
       "label": "Window",
       "title": "Window",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -296,7 +296,7 @@
       "type": "Entity",
       "label": "Door",
       "title": "Door",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -304,7 +304,7 @@
       "type": "Entity",
       "label": "CI",
       "title": "CI",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -508,11 +508,19 @@
       "hidden": true
     },
     {
+      "id": "Peripheral",
+      "type": "Entity",
+      "label": "Peripheral",
+      "title": "Peripheral",
+      "shape": "box",
+      "hidden": true
+    },
+    {
       "id": "Printer",
       "type": "Entity",
       "label": "Printer",
       "title": "Printer",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -520,7 +528,7 @@
       "type": "Entity",
       "label": "CCTV",
       "title": "CCTV",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -528,6 +536,22 @@
       "type": "Entity",
       "label": "MultiFunctionPeripheral",
       "title": "MultiFunctionPeripheral",
+      "shape": "box",
+      "hidden": true
+    },
+    {
+      "id": "NetworkDevice",
+      "type": "Entity",
+      "label": "NetworkDevice",
+      "title": "NetworkDevice",
+      "shape": "box",
+      "hidden": true
+    },
+    {
+      "id": "location",
+      "type": "Attribute",
+      "label": "location",
+      "title": "location",
       "shape": "circle",
       "hidden": true
     },
@@ -536,7 +560,7 @@
       "type": "Entity",
       "label": "Switch",
       "title": "Switch",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -544,7 +568,7 @@
       "type": "Entity",
       "label": "Router",
       "title": "Router",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -552,7 +576,7 @@
       "type": "Entity",
       "label": "Firewall",
       "title": "Firewall",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -560,7 +584,7 @@
       "type": "Entity",
       "label": "Proxy",
       "title": "Proxy",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -568,7 +592,7 @@
       "type": "Entity",
       "label": "LoadBalancer",
       "title": "LoadBalancer",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -576,6 +600,22 @@
       "type": "Entity",
       "label": "NetworkManagement",
       "title": "NetworkManagement",
+      "shape": "box",
+      "hidden": true
+    },
+    {
+      "id": "Infrastructure",
+      "type": "Entity",
+      "label": "Infrastructure",
+      "title": "Infrastructure",
+      "shape": "box",
+      "hidden": true
+    },
+    {
+      "id": "location",
+      "type": "Attribute",
+      "label": "location",
+      "title": "location",
       "shape": "circle",
       "hidden": true
     },
@@ -584,7 +624,7 @@
       "type": "Entity",
       "label": "ATS",
       "title": "ATS",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -592,7 +632,7 @@
       "type": "Entity",
       "label": "KVM",
       "title": "KVM",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -600,7 +640,7 @@
       "type": "Entity",
       "label": "PDU",
       "title": "PDU",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -608,7 +648,7 @@
       "type": "Entity",
       "label": "UPS",
       "title": "UPS",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -616,7 +656,7 @@
       "type": "Entity",
       "label": "HSM",
       "title": "HSM",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -624,6 +664,22 @@
       "type": "Entity",
       "label": "AccessControl",
       "title": "AccessControl",
+      "shape": "box",
+      "hidden": true
+    },
+    {
+      "id": "Telecomdevice",
+      "type": "Entity",
+      "label": "Telecomdevice",
+      "title": "Telecomdevice",
+      "shape": "box",
+      "hidden": true
+    },
+    {
+      "id": "location",
+      "type": "Attribute",
+      "label": "location",
+      "title": "location",
       "shape": "circle",
       "hidden": true
     },
@@ -632,7 +688,7 @@
       "type": "Entity",
       "label": "Gateway",
       "title": "Gateway",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -640,7 +696,7 @@
       "type": "Entity",
       "label": "Voice",
       "title": "Voice",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -648,6 +704,38 @@
       "type": "Entity",
       "label": "Video",
       "title": "Video",
+      "shape": "box",
+      "hidden": true
+    },
+    {
+      "id": "Cluster",
+      "type": "Entity",
+      "label": "Cluster",
+      "title": "Cluster",
+      "shape": "box",
+      "hidden": true
+    },
+    {
+      "id": "applicationCluster",
+      "type": "Attribute",
+      "label": "applicationCluster",
+      "title": "applicationCluster",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "physicalZone",
+      "type": "Attribute",
+      "label": "physicalZone",
+      "title": "physicalZone",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "dataCenter",
+      "type": "Attribute",
+      "label": "dataCenter",
+      "title": "dataCenter",
       "shape": "circle",
       "hidden": true
     },
@@ -656,7 +744,7 @@
       "type": "Entity",
       "label": "SoftwareCluster",
       "title": "SoftwareCluster",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -664,7 +752,7 @@
       "type": "Entity",
       "label": "ContainerCluster",
       "title": "ContainerCluster",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -672,7 +760,7 @@
       "type": "Entity",
       "label": "VMCluster",
       "title": "VMCluster",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -680,6 +768,22 @@
       "type": "Entity",
       "label": "StorageCluster",
       "title": "StorageCluster",
+      "shape": "box",
+      "hidden": true
+    },
+    {
+      "id": "Storage",
+      "type": "Entity",
+      "label": "Storage",
+      "title": "Storage",
+      "shape": "box",
+      "hidden": true
+    },
+    {
+      "id": "location",
+      "type": "Attribute",
+      "label": "location",
+      "title": "location",
       "shape": "circle",
       "hidden": true
     },
@@ -688,7 +792,7 @@
       "type": "Entity",
       "label": "TapeLibrary",
       "title": "TapeLibrary",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -696,7 +800,7 @@
       "type": "Entity",
       "label": "NAS",
       "title": "NAS",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -704,7 +808,7 @@
       "type": "Entity",
       "label": "SAN",
       "title": "SAN",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -712,7 +816,7 @@
       "type": "Entity",
       "label": "StorageSwitch",
       "title": "StorageSwitch",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -720,7 +824,87 @@
       "type": "Entity",
       "label": "StorageController",
       "title": "StorageController",
+      "shape": "box",
+      "hidden": true
+    },
+    {
+      "id": "Contact",
+      "type": "Entity",
+      "label": "Contact",
+      "title": "Contact",
+      "shape": "box",
+      "hidden": true
+    },
+    {
+      "id": "location",
+      "type": "Attribute",
+      "label": "location",
+      "title": "location",
       "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "region",
+      "type": "Attribute",
+      "label": "region",
+      "title": "region",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "country",
+      "type": "Attribute",
+      "label": "country",
+      "title": "country",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "city",
+      "type": "Attribute",
+      "label": "city",
+      "title": "city",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "building",
+      "type": "Attribute",
+      "label": "building",
+      "title": "building",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "floor",
+      "type": "Attribute",
+      "label": "floor",
+      "title": "floor",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "room",
+      "type": "Attribute",
+      "label": "room",
+      "title": "room",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "locationDetail",
+      "type": "Attribute",
+      "label": "locationDetail",
+      "title": "locationDetail",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Location",
+      "type": "Entity",
+      "label": "Location",
+      "title": "Location",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -728,7 +912,7 @@
       "type": "Entity",
       "label": "AbstractList",
       "title": "AbstractList",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -741,7 +925,7 @@
       "type": "Entity",
       "label": "Test",
       "title": "Test",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -749,7 +933,7 @@
       "type": "Entity",
       "label": "System",
       "title": "System",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -757,7 +941,7 @@
       "type": "Entity",
       "label": "Date",
       "title": "Date",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -765,7 +949,7 @@
       "type": "Entity",
       "label": "Foo1",
       "title": "Foo1",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -863,7 +1047,7 @@
       "type": "Entity",
       "label": "User",
       "title": "User",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -936,11 +1120,24 @@
       "hidden": true
     },
     {
+      "id": "List",
+      "type": "Entity",
+      "label": "List",
+      "title": "List",
+      "shape": "box",
+      "hidden": true
+    },
+    {
+      "type": "Attribute",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
       "id": "Object",
       "type": "Entity",
       "label": "Object",
       "title": "Object",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     }
   ],

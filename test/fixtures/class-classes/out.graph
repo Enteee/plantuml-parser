@@ -5,7 +5,7 @@
       "type": "Entity",
       "label": "Dwelling",
       "title": "Dwelling",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -29,7 +29,7 @@
       "type": "Entity",
       "label": "Apartment",
       "title": "Apartment",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -37,7 +37,7 @@
       "type": "Entity",
       "label": "House",
       "title": "House",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -45,7 +45,7 @@
       "type": "Entity",
       "label": "Commune",
       "title": "Commune",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     }
   ],

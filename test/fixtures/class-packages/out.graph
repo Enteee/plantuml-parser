@@ -5,7 +5,7 @@
       "type": "Entity",
       "label": "Dwelling",
       "title": "Dwelling",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -29,7 +29,7 @@
       "type": "Entity",
       "label": "Apartment",
       "title": "Apartment",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -37,7 +37,7 @@
       "type": "Entity",
       "label": "House",
       "title": "House",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -45,7 +45,7 @@
       "type": "Entity",
       "label": "Commune",
       "title": "Commune",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -53,7 +53,7 @@
       "type": "Entity",
       "label": "Car",
       "title": "Car",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -61,7 +61,7 @@
       "type": "Entity",
       "label": "Worker1",
       "title": "Worker1",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -69,7 +69,7 @@
       "type": "Entity",
       "label": "Worker2",
       "title": "Worker2",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -77,7 +77,7 @@
       "type": "Entity",
       "label": "Worker3",
       "title": "Worker3",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -85,7 +85,7 @@
       "type": "Entity",
       "label": "Worker4",
       "title": "Worker4",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -93,7 +93,7 @@
       "type": "Entity",
       "label": "Worker5",
       "title": "Worker5",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     },
     {
@@ -101,7 +101,7 @@
       "type": "Entity",
       "label": "Worker6",
       "title": "Worker6",
-      "shape": "circle",
+      "shape": "box",
       "hidden": true
     }
   ],
