@@ -25,6 +25,7 @@ module.exports.parseTrace = function (src, options) {
         tracer: tracer,
       }
     );
+    return parsed;
   } catch (e) {
     try {
       e.message = 'Line ' + e.location.start.line + ': ' + e.message;
