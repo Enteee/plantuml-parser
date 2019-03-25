@@ -9,11 +9,11 @@ to be used from within [JavaScript library](#usage) or from the [Command Line](#
 **Important**: The parser is not yet feature-complete. But we focus on writing a
 robust implementation which can parse parts of diagram without knowing the full
 syntax. This means that the parser probably still parses just about enough to get
-you started. If not, please [contibute :octocat: :heart:](#contribute).
+you started. If not, please [contribute :octocat: :heart:](#contribute).
 
 [#PlantUMLParser](https://twitter.com/hashtag/PlantUMLParser)
 
-## Installtion
+## Installation
 
 ```
 $ npm install --save plantuml-parser
@@ -47,7 +47,7 @@ console.log(
 ```
 
 * `parse(data, options)`: Parse PlantUML in `data`. Returns abstract syntax tree.
-* `parseTrace(data, options)`: Parse PlantUML in `data` and proces tracing output for debugging. Returns abstract syntax tree.
+* `parseTrace(data, options)`: Parse PlantUML in `data` and produces tracing output for debugging. Returns abstract syntax tree.
 * `options`: see [PEG.js parser options](https://pegjs.org/documentation#generating-a-parser-javascript-api).
 * `formatters`: A collection of built-in AST formatters.
 
@@ -98,14 +98,14 @@ Every contribution counts! Please,
 * ... submit unparsable diagrams via [new issue](https://github.com/Enteee/plantuml-parser/issues/new).
 * ... extend the parser by [forking](https://github.com/Enteee/plantuml-parser/fork) and [creating a Pull Request](https://github.com/Enteee/plantuml-parser/compare)
 
-When contributin code, always also update the fixtures:
+When contributing code, always also update the fixtures:
 
 ```
 $ npm run fixtures
 $ git commit
 ```
 
-## Similar Porjects
+## Similar Projects
 
 * [PlantUML code generator](https://github.com/bafolts/plantuml-code-generator): Provides a command line utility to generate code in various languages given a plantuml class diagram.
 
