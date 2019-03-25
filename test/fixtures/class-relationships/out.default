@@ -22,27 +22,27 @@
     {
       "name": "Apartment",
       "isAbstract": false,
-      "members": {}
+      "members": []
     },
     {
       "name": "House",
       "isAbstract": false,
-      "members": {}
+      "members": []
     },
     {
       "name": "Commune",
       "isAbstract": false,
-      "members": {}
+      "members": []
     },
     {
       "name": "Window",
       "isAbstract": false,
-      "members": {}
+      "members": []
     },
     {
       "name": "Door",
       "isAbstract": false,
-      "members": {}
+      "members": []
     },
     {
       "left": "Dwelling",

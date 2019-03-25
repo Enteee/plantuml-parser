@@ -741,7 +741,7 @@
     {
       "name": "Car",
       "isAbstract": false,
-      "members": {}
+      "members": []
     },
     {
       "left": "ICar",

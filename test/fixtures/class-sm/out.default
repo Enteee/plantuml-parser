@@ -345,7 +345,7 @@
           {
             "name": "NetworkManagement",
             "isAbstract": false,
-            "members": {}
+            "members": []
           },
           {
             "text": "* Infoblox\n      * WAM"
@@ -392,7 +392,7 @@
             {
               "name": "ATS",
               "isAbstract": false,
-              "members": {}
+              "members": []
             },
             {
               "text": "Automatic\n              Transfer\n              Switch"
@@ -411,7 +411,7 @@
             {
               "name": "KVM",
               "isAbstract": false,
-              "members": {}
+              "members": []
             },
             {
               "text": "Keyboard\n              Video \n              Mouse"
@@ -430,7 +430,7 @@
             {
               "name": "PDU",
               "isAbstract": false,
-              "members": {}
+              "members": []
             },
             {
               "text": "Power\n              Distribution\n              Unit"
@@ -449,7 +449,7 @@
             {
               "name": "UPS",
               "isAbstract": false,
-              "members": {}
+              "members": []
             },
             {
               "text": "Uninterruptable\n              Power\n              Supply"
@@ -468,7 +468,7 @@
             {
               "name": "HSM",
               "isAbstract": false,
-              "members": {}
+              "members": []
             },
             {
               "text": "Hardware\n              Security\n              Module\n              Generates and stores\n              keys and certificats"
@@ -487,7 +487,7 @@
             {
               "name": "AccessControl",
               "isAbstract": false,
-              "members": {}
+              "members": []
             },
             {
               "text": "* Badge Reader\t\t\t\n              * Vein Scanner"
@@ -535,7 +535,7 @@
             {
               "name": "Gateway",
               "isAbstract": false,
-              "members": {}
+              "members": []
             },
             {
               "left": "Gateway",
@@ -551,7 +551,7 @@
             {
               "name": "Voice",
               "isAbstract": false,
-              "members": {}
+              "members": []
             },
             {
               "text": "* Cisco Telephones"
@@ -570,7 +570,7 @@
             {
               "name": "Video",
               "isAbstract": false,
-              "members": {}
+              "members": []
             },
             {
               "left": "Video",

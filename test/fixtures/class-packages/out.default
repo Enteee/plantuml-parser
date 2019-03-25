@@ -7,7 +7,7 @@
         {
           "name": "Worker1",
           "isAbstract": false,
-          "members": {}
+          "members": []
         }
       ]
     },
@@ -18,7 +18,7 @@
         {
           "name": "Worker2",
           "isAbstract": false,
-          "members": {}
+          "members": []
         }
       ]
     },
@@ -29,7 +29,7 @@
         {
           "name": "Worker3",
           "isAbstract": false,
-          "members": {}
+          "members": []
         }
       ]
     },
@@ -40,7 +40,7 @@
         {
           "name": "Worker4",
           "isAbstract": false,
-          "members": {}
+          "members": []
         }
       ]
     },
@@ -51,7 +51,7 @@
         {
           "name": "Worker5",
           "isAbstract": false,
-          "members": {}
+          "members": []
         }
       ]
     },
@@ -62,7 +62,7 @@
         {
           "name": "Worker6",
           "isAbstract": false,
-          "members": {}
+          "members": []
         }
       ]
     }

@@ -21,12 +21,12 @@
     {
       "name": "System",
       "isAbstract": false,
-      "members": {}
+      "members": []
     },
     {
       "name": "Date",
       "isAbstract": false,
-      "members": {}
+      "members": []
     },
     {
       "name": "Foo1",
@@ -305,7 +305,7 @@
     {
       "name": "Object",
       "isAbstract": false,
-      "members": {}
+      "members": []
     },
     {
       "left": "Object",
