@@ -96,6 +96,7 @@ Group
 
 GroupType
   = "package"i
+  / "namespace"i
   / "node"i
   / "folder"i
   / "frame"i
@@ -246,6 +247,20 @@ Relationship
       name,
     );
   }
+  / _ left:ElementName _ leftCardinality:QuotedString? _ leftType:RelationshipType? arrowBody:RelationshipArrowBody rightType:RelationshipType? _ rightCardinality:QuotedString? _ right:ElementName _ name:(RelationshipName)? EndLine
+  {
+    return new (require('./relationship'))(
+      left,
+      right,
+      leftType,
+      rightType,
+      arrowBody,
+      arrowBody,
+      leftCardinality,
+      rightCardinality,
+      name,
+    );
+  }
 
 RelationshipArrowBody
   = [-]+
@@ -267,6 +282,7 @@ RelationshipType
   / "}"
   / "+"
   / "^"
+  / "()"
 
 RelationshipName
   = ":" _ name:(!NewLine .)+
