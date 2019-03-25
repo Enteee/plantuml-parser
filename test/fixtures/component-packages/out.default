@@ -1,7 +1,7 @@
 [
   [
     {
-      "name": ",F,r,o,n,t, ,E,n,d",
+      "name": "Front End",
       "type": "package",
       "elements": []
     },
@@ -11,9 +11,13 @@
       "elements": []
     },
     {
-      "name": ",M,i,d,d,l,e, ,T,i,e,r",
+      "name": "Middle Tier",
       "type": "node",
       "elements": [
+        {
+          "name": "IMath",
+          "members": []
+        },
         {
           "name": "Items",
           "members": []
@@ -21,7 +25,7 @@
       ]
     },
     {
-      "name": ",P,o,s,t,g,r,e,S,Q,L,\\,n",
+      "name": "PostgreSQL\\n",
       "type": "database",
       "elements": []
     }

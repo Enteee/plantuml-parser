@@ -31,6 +31,7 @@ UMLElement
  / Class
  / Interface
  / Enum
+ / Relationship
  / NotImplementedBlock
  / (!(
       _ "@enduml"
@@ -55,7 +56,7 @@ Comment
 //
 
 SkinParam
-  = _ "skinparam " _ name:Name _ "{" _ NewLine Param* _ "}" EndLine 
+  = _ "skinparam " _ name:Name _ "{" _ NewLine Param* _ "}" EndLine
   {
   }
   / _ "skinparam " _ Param
@@ -125,19 +126,19 @@ Note
 //
 
 Class
-  = _ isAbstract:"abstract "? _ "class " _ name:ElementName _ Decorators? _ NewLine
-  {
-    return new (require("./class"))(
-      name,
-      !!isAbstract
-    );
-  }
-  / _ isAbstract:"abstract "? _ "class " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ isAbstract:"abstract "? _ "class " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new (require("./class"))(
       name,
       !!isAbstract,
       members
+    );
+  }
+  / _ isAbstract:"abstract "? _ "class " _ name:ElementName _ Decorators? EndLine
+  {
+    return new (require("./class"))(
+      name,
+      !!isAbstract
     );
   }
 
@@ -193,17 +194,17 @@ MemberVariable
 //
 
 Interface
-  = _ "interface " _ name:ElementName _ Decorators? _ NewLine
-  {
-    return new (require('./interface'))(
-      name,
-    );
-  }
-  / _ "interface " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "interface " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new (require('./interface'))(
       name,
       members
+    );
+  }
+  / _ "interface " _ name:ElementName _ Decorators? _ EndLine
+  {
+    return new (require('./interface'))(
+      name,
     );
   }
 
@@ -212,18 +213,65 @@ Interface
 //
 
 Enum
-  = _ "enum " _ name:ElementName _ Decorators? _ NewLine
-  {
-    return new (require('./enum'))(
-      name,
-    );
-  }
-  / _ "enum " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "enum " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new (require('./enum'))(
       name,
       members
     );
+  }
+  / _ "enum " _ name:ElementName _ Decorators? _ EndLine
+  {
+    return new (require('./enum'))(
+      name,
+    );
+  }
+
+//
+// Relationship
+//
+
+Relationship
+  = _ left:ElementName _ leftCardinality:QuotedString? _ leftType:RelationshipType? leftArrowBody:RelationshipArrowBody Direction? rightArrowBody:RelationshipArrowBody rightType:RelationshipType? _ rightCardinality:QuotedString? _ right:ElementName _ name:(RelationshipName)? EndLine
+  {
+    return new (require('./relationship'))(
+      left,
+      right,
+      leftType,
+      rightType,
+      leftArrowBody,
+      rightArrowBody,
+      leftCardinality,
+      rightCardinality,
+      name,
+    );
+  }
+
+RelationshipArrowBody
+  = [-]+
+  {
+    return '-';
+  }
+  / [.]+
+  {
+    return '.';
+  }
+
+RelationshipType
+  = "<|" { return "Generalization" }
+  / "|>" { return "Generalization" }
+  / "*" { return "Composition" }
+  / "o" { return "Aggregation" }
+  / "#"
+  / "x"
+  / "}"
+  / "+"
+  / "^"
+
+RelationshipName
+  = ":" _ name:(!NewLine .)+
+  {
+    return name.map((c) => c[1]).join('').trim()
   }
 
 //
@@ -264,7 +312,7 @@ ElementName
 QuotedString
   = "\"" string:(!("\"" / NewLine) .)+ "\""
   {
-    return string.join('')
+    return string.map((c) => c[1]).join('').trim();
   }
 
 Name
@@ -293,6 +341,12 @@ Color
   {
     return color.join('');
   }
+
+Direction
+  = "left"i
+  / "right"i
+  / "up"i
+  / "down"i
 
 //
 // Meta

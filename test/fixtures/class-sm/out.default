@@ -168,6 +168,17 @@
           {
             "text": "Hardware providing\n      input/output from/to \n      the physical world"
           },
+          {
+            "left": "Peripheral",
+            "right": "CI",
+            "leftType": "",
+            "rightType": "Generalization",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "name": ""
+          },
           [
             {
               "name": "Printer",
@@ -175,9 +186,31 @@
               "members": []
             },
             {
+              "left": "Printer",
+              "right": "Peripheral",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
+            },
+            {
               "name": "CCTV",
               "isAbstract": false,
               "members": []
+            },
+            {
+              "left": "CCTV",
+              "right": "Peripheral",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
             },
             {
               "name": "MultiFunctionPeripheral",
@@ -186,6 +219,17 @@
             },
             {
               "text": "* Xerox"
+            },
+            {
+              "left": "MultiFunctionPeripheral",
+              "right": "Peripheral",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
             }
           ]
         ],
@@ -205,9 +249,31 @@
             "text": "Hardware operating in \n      the physical-, network-,\n          transport- or application-layer"
           },
           {
+            "left": "NetworkDevice",
+            "right": "CI",
+            "leftType": "",
+            "rightType": "Generalization",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "name": ""
+          },
+          {
             "name": "Switch",
             "isAbstract": false,
             "members": []
+          },
+          {
+            "left": "Switch",
+            "right": "NetworkDevice",
+            "leftType": "",
+            "rightType": "Generalization",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "name": ""
           },
           {
             "name": "Router",
@@ -215,9 +281,31 @@
             "members": []
           },
           {
+            "left": "Router",
+            "right": "NetworkDevice",
+            "leftType": "",
+            "rightType": "Generalization",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "name": ""
+          },
+          {
             "name": "Firewall",
             "isAbstract": false,
             "members": []
+          },
+          {
+            "left": "Firewall",
+            "right": "NetworkDevice",
+            "leftType": "",
+            "rightType": "Generalization",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "name": ""
           },
           {
             "name": "Proxy",
@@ -228,9 +316,31 @@
             "text": "* Blue Coat"
           },
           {
+            "left": "Proxy",
+            "right": "NetworkDevice",
+            "leftType": "",
+            "rightType": "Generalization",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "name": ""
+          },
+          {
             "name": "LoadBalancer",
             "isAbstract": false,
             "members": []
+          },
+          {
+            "left": "LoadBalancer",
+            "right": "NetworkDevice",
+            "leftType": "",
+            "rightType": "Generalization",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "name": ""
           },
           {
             "name": "NetworkManagement",
@@ -239,6 +349,17 @@
           },
           {
             "text": "* Infoblox\n      * WAM"
+          },
+          {
+            "left": "NetworkManagement",
+            "right": "NetworkDevice",
+            "leftType": "",
+            "rightType": "Generalization",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "name": ""
           }
         ],
         [
@@ -256,6 +377,17 @@
           {
             "text": "Hardware providing\n      auxiliry services\n      for IT operations"
           },
+          {
+            "left": "Infrastructure",
+            "right": "CI",
+            "leftType": "",
+            "rightType": "Generalization",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "name": ""
+          },
           [
             {
               "name": "ATS",
@@ -266,12 +398,34 @@
               "text": "Automatic\n              Transfer\n              Switch"
             },
             {
+              "left": "ATS",
+              "right": "Infrastructure",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
+            },
+            {
               "name": "KVM",
               "isAbstract": false,
               "members": {}
             },
             {
               "text": "Keyboard\n              Video \n              Mouse"
+            },
+            {
+              "left": "KVM",
+              "right": "Infrastructure",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
             },
             {
               "name": "PDU",
@@ -282,12 +436,34 @@
               "text": "Power\n              Distribution\n              Unit"
             },
             {
+              "left": "PDU",
+              "right": "Infrastructure",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
+            },
+            {
               "name": "UPS",
               "isAbstract": false,
               "members": {}
             },
             {
               "text": "Uninterruptable\n              Power\n              Supply"
+            },
+            {
+              "left": "UPS",
+              "right": "Infrastructure",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
             },
             {
               "name": "HSM",
@@ -298,12 +474,34 @@
               "text": "Hardware\n              Security\n              Module\n              Generates and stores\n              keys and certificats"
             },
             {
+              "left": "HSM",
+              "right": "Infrastructure",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
+            },
+            {
               "name": "AccessControl",
               "isAbstract": false,
               "members": {}
             },
             {
               "text": "* Badge Reader\t\t\t\n              * Vein Scanner"
+            },
+            {
+              "left": "AccessControl",
+              "right": "Infrastructure",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
             }
           ]
         ],
@@ -322,11 +520,33 @@
           {
             "text": "Hardware connecting\n      people"
           },
+          {
+            "left": "Telecomdevice",
+            "right": "CI",
+            "leftType": "",
+            "rightType": "Generalization",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "name": ""
+          },
           [
             {
               "name": "Gateway",
               "isAbstract": false,
               "members": {}
+            },
+            {
+              "left": "Gateway",
+              "right": "Telecomdevice",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
             },
             {
               "name": "Voice",
@@ -337,9 +557,31 @@
               "text": "* Cisco Telephones"
             },
             {
+              "left": "Voice",
+              "right": "Telecomdevice",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
+            },
+            {
               "name": "Video",
               "isAbstract": false,
               "members": {}
+            },
+            {
+              "left": "Video",
+              "right": "Telecomdevice",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
             }
           ]
         ],
@@ -369,6 +611,17 @@
           },
           {
             "text": "Provides a scalable\n      and reliable service"
+          },
+          {
+            "left": "Cluster",
+            "right": "CI",
+            "leftType": "",
+            "rightType": "Generalization",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "name": ""
           },
           [
             [
@@ -548,6 +801,17 @@
               "text": "Instances: Processes"
             },
             {
+              "left": "SoftwareCluster",
+              "right": "Cluster",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
+            },
+            {
               "name": "ContainerCluster",
               "isAbstract": false,
               "members": []
@@ -557,6 +821,17 @@
             },
             {
               "text": "* OpenShift\n          * Kubernetes"
+            },
+            {
+              "left": "ContainerCluster",
+              "right": "Cluster",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
             },
             {
               "name": "VMCluster",
@@ -570,12 +845,34 @@
               "text": "* vSphere\n          * IBM PowerHA SystemMirror"
             },
             {
+              "left": "VMCluster",
+              "right": "Cluster",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
+            },
+            {
               "name": "StorageCluster",
               "isAbstract": false,
               "members": []
             },
             {
               "text": "Instances: Storage Containers"
+            },
+            {
+              "left": "StorageCluster",
+              "right": "Cluster",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
             },
             [
               [
@@ -766,11 +1063,33 @@
           {
             "text": "Hardware providing\n      long term persistance\n      of information"
           },
+          {
+            "left": "Storage",
+            "right": "CI",
+            "leftType": "",
+            "rightType": "Generalization",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "name": ""
+          },
           [
             {
               "name": "TapeLibrary",
               "isAbstract": false,
               "members": []
+            },
+            {
+              "left": "TapeLibrary",
+              "right": "Storage",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
             },
             {
               "name": "NAS",
@@ -781,12 +1100,34 @@
               "text": "Network\n          Attached\n          Storage\n          Exports a file system\n          Clients communicate with\n          the NAS using a NFS-like\n          protocol: Operations are\n          file system operations"
             },
             {
+              "left": "NAS",
+              "right": "Storage",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
+            },
+            {
               "name": "SAN",
               "isAbstract": false,
               "members": []
             },
             {
               "text": "Storage\n          Area\n          Network\n          Exports a block device\n          Clients communicate with\n          the SAN using a SCSI-like\n          protocol: Operations are\n          block device operations"
+            },
+            {
+              "left": "SAN",
+              "right": "Storage",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
             },
             {
               "name": "StorageSwitch",
@@ -856,12 +1197,34 @@
           },
           {
             "text": "All internal attributes\n      are automatically \n      populated by \n      Service Manager\n      based on the location\n      attribute"
+          },
+          {
+            "left": "Contact",
+            "right": "CI",
+            "leftType": "",
+            "rightType": "Generalization",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "name": ""
           }
         ],
         [
           {
             "name": "Location",
             "members": []
+          },
+          {
+            "left": "Location",
+            "right": "CI",
+            "leftType": "",
+            "rightType": "Generalization",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "name": ""
           }
         ],
         [

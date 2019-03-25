@@ -1,3 +1,37 @@
 [
-  []
+  [
+    {
+      "left": "Employee",
+      "right": "User",
+      "leftType": "",
+      "rightType": "Generalization",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    },
+    {
+      "left": "Client",
+      "right": "User",
+      "leftType": "",
+      "rightType": "Generalization",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    },
+    {
+      "left": "Supervisor",
+      "right": "User",
+      "leftType": "",
+      "rightType": "Generalization",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    }
+  ]
 ]

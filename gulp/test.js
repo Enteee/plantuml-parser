@@ -68,16 +68,19 @@ task('test-fixtures-update-run', () =>
             }
           )
         );
+        /*
+        //Don't write tree they are too big:
         writeFileSync(
           join(
             dirname(file.path),
             conf.fixtures.treeFilePrefix + name
           ),
-          tracer.getParseTree(),
+          tracer.getParseTreeString(),
           {
             encoding: conf.encoding
           }
         );
+        */
         writeFileSync(
           join(
             dirname(file.path),
