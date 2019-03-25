@@ -6,6 +6,7 @@
   "dependencies": {
     "chai": "^4.2.0",
     "fancy-log": "^1.3.3",
+    "get-stdin": "^6.0.0",
     "gulp": "^4.0.0",
     "gulp-mocha": "^6.0.0",
     "gulp-pegjs": "^0.1.0",
@@ -14,9 +15,13 @@
     "pegjs": "^0.10.0",
     "pegjs-backtrace": "^0.1.2",
     "read-vinyl-file-stream": "^2.0.3",
-    "require-dir": "^1.2.0"
+    "require-dir": "^1.2.0",
+    "yars": "^1.2.0"
   },
   "devDependencies": {},
+  "bin": {
+    "plantuml-parser": "src/bin/cli.js"
+  },
   "scripts": {
     "build": "npx gulp build",
     "test": "npx gulp test",

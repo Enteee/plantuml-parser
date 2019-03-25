@@ -13,6 +13,18 @@ $ npm run fixtures
 ```
 This will update all fixtures and create a commit containing all the changes.
 
+## Command Line Interface
+
+```
+Options:
+  --formatter, -f  formatter to use    [choices: "default"] [default: "default"]
+  --input, -i      input file to read                  [string] [default: stdin]
+  --output, -o     output file to write               [string] [default: stdout]
+  --color, -c      colorful output                    [boolean] [default: false]
+  --verbose, -v    print verbose output               [boolean] [default: false]
+  --help           Show help                                           [boolean]
+```
+
 ## Test
 
 ```

@@ -12,7 +12,6 @@ const { parse } = require(join(conf.src.dir, 'plantuml'));
 const { parse: parseTrace } = require(join(conf.src.dir, 'plantuml-trace'));
 const formatters = require(conf.formatters.dir);
 
-
 /**
  * Tests if parsing works
  * Yields readable output on error
