@@ -12,8 +12,6 @@ $ npm run fixtures
 
 ## Test
 
-Run tests by:
-
 ```
 $ npm run test
 ```
