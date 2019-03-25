@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 const conf = require('../../conf.js');
 
-const { createReadStream, readSync, readFileSync, writeSync, writeFileSync } = require('fs');
+const { createReadStream, readFile, writeSync, writeFileSync } = require('fs');
+const { parse, parseTrace, formatters } = require(conf.src.dir);
 
 const getStdin = require('get-stdin');
-const Tracer = require('pegjs-backtrace');
-const formatters = require(conf.formatters.dir);
 
 const DEFAULT = {};
 
@@ -58,6 +57,7 @@ function read(cb){
     cb
   );
 }
+
 function write(data){
   if (argv.output === DEFAULT)
     return writeSync(process.stdout.fd, data);
@@ -70,30 +70,28 @@ function write(data){
   );
 }
 
-const {parse} = (argv.verbose) ? require('../plantuml-trace') : require('../plantuml');
+const useParser = (argv.verbose) ? parseTrace : parse;
 const formatter = formatters[argv.formatter];
 
 read(
   (err, data) => {
     if (err)
       return console.error(err);
-    const tracer = new Tracer(
-      data,
-      {
-        showTrace: argv.verbose,
-        useColor: argv.color,
-      }
-    );
-    write(
-      formatter(
-        parse(
-          data,
-          {
-            tracer: tracer
-          }
-        )
-      ),
-      argv.output,
-    );
+    try {
+      write(
+        formatter(
+          useParser(
+            data,
+            {
+              useColor: argv.color,
+            }
+          )
+        ),
+        argv.output,
+      );
+    } catch (e) {
+      console.error(e.message);
+      process.exit(1);
+    }
   }
 );
