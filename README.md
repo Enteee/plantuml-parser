@@ -3,46 +3,72 @@ _Parse PlantUML Syntax in JavaScript_
 
 The goal of this project is to provide a feature-complete, well tested, and
 maintainable [Parsing Expression Grammer (PEG)](src/plantuml.pegjsrammer)
-for the PlantUML syntax. The parser is designed to be used as a [JavaScript library](#library)
-or from the [Command Line](#command-line-interface)
+for the [PlantUML](http://plantuml.com/) syntax. The parser is designed 
+to be used as a [JavaScript library](#usage) or from the [Command Line](#command-line-interface)
 
-*Important*: The parser is not feature-complete, yet. But we focus on writing a
-robust parser which can parse parts of diagramw without implementing the full
+**Important**: The parser is not yet feature-complete. But we focus on writing a
+robust implementation which can parse parts of diagram without knowing the full
 syntax. This means that the parser probably still parses just about enough to get
-you started. If not, please [contibute](#contribute). [#PlantUMLParser](https://twitter.com/hashtag/PlantUMLParser)
+you started. If not, please [contibute](#contribute) :octocat:. [#PlantUMLParser](https://twitter.com/hashtag/PlantUMLParser)
 
-## Install
+## Installtion
 
 ```
 $ npm install --save plantuml-parser
 ```
 
+## Examples / Fixtures
+
+We keep a set of PlantUML scripts in [test/fixtures/](test/fixtures) (`in.plantuml`) and the corresponding formatted output (`out.<formatter>`).
+
 ## Features
 
 - Diagrams Types:
   - [x] Class
-  - [] Component
-  - [] Use Case
-  - [] Sequence
-  - [] Activity
-  - [] State
-  - [] Object
-  - [] Deployment
-  - [] Timing
+  - [ ] Component
+  - [ ] Use Case
+  - [ ] Sequence
+  - [ ] Activity
+  - [ ] State
+  - [ ] Object
+  - [ ] Deployment
+  - [ ] Timing
 - Formatters:
   - [x] JSON
   - [x] Graph
 - Testing, CI/CD:
   - [x] Fixtures for all formatters
-  - [] Code coverage
-  - [] Code linting
-  - [] Fixture checking for Pull Requests
+  - [ ] Code coverage
+  - [ ] Code linting
+  - [ ] Fixture checking for Pull Requests
 
-## Examples / Fixtures
+## Usage
 
-We keep a set of PlantUML scripts in [test/fixtures/](test/fixtures) (`in.plantuml`) and the corresponding formatted output (`out.<formatter>`).
+```javascript
+const { parse, parseTrace, formatters } = require('plantuml-parser');
 
-## Library
+// Example PlantUML
+const data = `
+@startuml
+  class A
+  class B
+  A --|> B
+@enduml
+`;
+
+// parse PlantUML
+const ast = parse(data);
+
+// Format and print AST
+console.log(
+  formatters.default(ast);
+)
+```
+
+* `parse(data, options)`: Parse PlantUML in (`data`). Returns abstract syntax tree.
+* `parseTrace(data, options)`: Parse PlantUML in (`data`) and proces tracing output for debugging. Returns abstract syntax tree.
+* `options`: see [PEG.js parser options](https://pegjs.org/documentation#generating-a-parser-javascript-api).
+* `formatters`: A collection of built-in AST formatters.
 
 ## Command Line Interface
 
@@ -65,11 +91,11 @@ Options:
 $ npm run test
 ```
 
-## Contribute
+## Contribute :octocat:
 
 Every contribution counts! Please,
 
-* ... submit unparsable diagrams via new [Issue](https://github.com/Enteee/plantuml-parser/issues/new).
+* ... submit unparsable diagrams via [new issue](https://github.com/Enteee/plantuml-parser/issues/new).
 * ... extend the parser by [forking](https://github.com/Enteee/plantuml-parser/fork) and [creating a Pull Request](https://github.com/Enteee/plantuml-parser/compare)
 
 When contributin code, always also update the fixtures:
@@ -81,7 +107,7 @@ $ git commit
 
 ## References / Other
 
-* [PlantUML code generator](https://github.com/bafolts/plantuml-code-generator)
+* [PlantUML code generator](https://github.com/bafolts/plantuml-code-generator): Provides a command line utility to generate code in various languages given a plantuml class diagram.
 
 ## License
 
