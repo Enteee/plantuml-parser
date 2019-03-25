@@ -6,7 +6,6 @@ const { EOL } = require('os');
 const { expect } = require('chai');
 
 const log = require('fancy-log');
-const Tracer = require('pegjs-backtrace');
 
 const { parse, parseTrace, formatters } = require(conf.src.dir);
 
@@ -46,7 +45,7 @@ function testFormatHasNotChanged(src, out){
 require('./fixtures').forEach((fixture) =>
   describe(fixture.directory, () => {
     it('parse',
-      () => parseTrace(fixture.src)
+      () => parse(fixture.src)
     )
     fixture.out.forEach(
       (output) => it('format: ' + output.format,

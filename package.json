@@ -12,23 +12,24 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.0.2",
+    "fancy-log": "^1.3.3",
     "gulp": "^4.0.0",
     "gulp-mocha": "^6.0.0",
     "gulp-pegjs": "^0.1.0",
     "gulp-rename": "^1.4.0",
-    "pegjs": "^0.10.0",
-    "fancy-log": "^1.3.3"
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "pegjs": "^0.10.0"
   },
   "bin": {
     "plantuml-parser": "src/bin/cli.js"
   },
   "scripts": {
     "start": "node src/bin/cli.js",
-    "build": "npx gulp build",
-    "test": "npx gulp test",
-    "watch": "npx gulp watch",
-    "fixtures": "npx gulp test-fixtures-update && git add -u test/fixtures || true"
+    "build": "gulp build",
+    "test": "nyc -n 'src/**/*.js' -x 'src/plantuml-trace.js' gulp test && nyc check-coverage --lines 65 --functions 75 --branches 50",
+    "watch": "gulp watch",
+    "fixtures": "gulp test-fixtures-update && git add -u test/fixtures || true"
   },
   "repository": {
     "type": "git",
