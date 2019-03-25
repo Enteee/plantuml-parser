@@ -1,54 +1,6 @@
 {
   "nodes": [
     {
-      "id": "Dwelling",
-      "type": "Entity",
-      "label": "Dwelling",
-      "title": "Dwelling",
-      "shape": "box",
-      "hidden": true
-    },
-    {
-      "id": "Windows",
-      "type": "Attribute",
-      "label": "Windows",
-      "title": "Windows",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
-      "id": "Lock",
-      "type": "Attribute",
-      "label": "Lock",
-      "title": "Lock",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
-      "id": "Apartment",
-      "type": "Entity",
-      "label": "Apartment",
-      "title": "Apartment",
-      "shape": "box",
-      "hidden": true
-    },
-    {
-      "id": "House",
-      "type": "Entity",
-      "label": "House",
-      "title": "House",
-      "shape": "box",
-      "hidden": true
-    },
-    {
-      "id": "Commune",
-      "type": "Entity",
-      "label": "Commune",
-      "title": "Commune",
-      "shape": "box",
-      "hidden": true
-    },
-    {
       "id": "Car",
       "type": "Entity",
       "label": "Car",
@@ -58,18 +10,6 @@
     }
   ],
   "edges": [
-    {
-      "from": "Dwelling",
-      "to": "Windows",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Dwelling",
-      "to": "Lock",
-      "label": "has",
-      "hidden": true
-    },
     {
       "from": "ICar",
       "to": "Car",

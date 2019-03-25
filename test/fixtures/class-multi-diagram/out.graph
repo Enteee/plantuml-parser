@@ -1,0 +1,78 @@
+{
+  "nodes": [
+    {
+      "id": "Dwelling",
+      "type": "Entity",
+      "label": "Dwelling",
+      "title": "Dwelling",
+      "shape": "box",
+      "hidden": true
+    },
+    {
+      "id": "Windows",
+      "type": "Attribute",
+      "label": "Windows",
+      "title": "Windows",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Lock",
+      "type": "Attribute",
+      "label": "Lock",
+      "title": "Lock",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Dwelling",
+      "type": "Entity",
+      "label": "Dwelling",
+      "title": "Dwelling",
+      "shape": "box",
+      "hidden": true
+    },
+    {
+      "id": "Windows",
+      "type": "Attribute",
+      "label": "Windows",
+      "title": "Windows",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Lock",
+      "type": "Attribute",
+      "label": "Lock",
+      "title": "Lock",
+      "shape": "circle",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "Dwelling",
+      "to": "Windows",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "Lock",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "Windows",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "Lock",
+      "label": "has",
+      "hidden": true
+    }
+  ]
+}

@@ -124,7 +124,7 @@ Options:
 ## Test
 
 ```
-$ npm run test
+$ npm test
 ```
 
 This will run:

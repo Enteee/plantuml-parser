@@ -1,0 +1,23 @@
+This tests if multiple diagrams are supported:
+
+@startuml
+class Dwelling {
+  +Int Windows
+  +void Lock()
+}
+@enduml
+
+
+Some text which should be ignored..
+
+
+.. as ...
+
+-> well
+
+@startuml
+class Dwelling {
+  +Int Windows
+  +void Lock()
+}
+@enduml
