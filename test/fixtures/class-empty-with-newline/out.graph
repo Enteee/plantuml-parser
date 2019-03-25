@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "AbstractList",
+      "type": "Entity",
+      "label": "AbstractList",
+      "title": "AbstractList",
+      "shape": "box",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

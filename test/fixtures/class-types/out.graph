@@ -9,11 +9,6 @@
       "hidden": true
     },
     {
-      "type": "Attribute",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
       "id": "Test",
       "type": "Entity",
       "label": "Test",
@@ -86,11 +81,6 @@
       "hidden": true
     },
     {
-      "type": "Attribute",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
       "id": "together.",
       "type": "Attribute",
       "label": "together.",
@@ -119,11 +109,6 @@
       "type": "Attribute",
       "label": "you",
       "title": "you",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
-      "type": "Attribute",
       "shape": "circle",
       "hidden": true
     },
@@ -200,11 +185,6 @@
       "hidden": true
     },
     {
-      "type": "Attribute",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
       "id": "password",
       "type": "Attribute",
       "label": "password",
@@ -221,11 +201,6 @@
       "hidden": true
     },
     {
-      "type": "Attribute",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
       "id": "Object",
       "type": "Entity",
       "label": "Object",
@@ -235,11 +210,6 @@
     }
   ],
   "edges": [
-    {
-      "from": "AbstractList",
-      "label": "has",
-      "hidden": true
-    },
     {
       "from": "Foo1",
       "to": "can",
@@ -272,11 +242,6 @@
     },
     {
       "from": "Foo1",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Foo1",
       "to": "together.",
       "label": "has",
       "hidden": true
@@ -296,11 +261,6 @@
     {
       "from": "Foo1",
       "to": "you",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Foo1",
       "label": "has",
       "hidden": true
     },
@@ -354,17 +314,7 @@
     },
     {
       "from": "User",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "User",
       "to": "password",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "List",
       "label": "has",
       "hidden": true
     },

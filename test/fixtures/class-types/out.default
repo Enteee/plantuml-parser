@@ -3,15 +3,7 @@
     {
       "name": "AbstractList",
       "isAbstract": true,
-      "members": [
-        [
-          null,
-          [
-            [],
-            "\n"
-          ]
-        ]
-      ]
+      "members": []
     },
     {
       "name": "Test",
@@ -62,30 +54,6 @@
           "accessor": "+",
           "type": "and"
         },
-        [
-          null,
-          [
-            [
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "="
-              ],
-              [
-                null,
-                "="
-              ]
-            ],
-            "\n"
-          ]
-        ],
         {
           "name": "together.",
           "isStatic": false,
@@ -110,30 +78,6 @@
           "accessor": "+",
           "type": "as"
         },
-        [
-          null,
-          [
-            [
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "-"
-              ],
-              [
-                null,
-                "-"
-              ]
-            ],
-            "\n"
-          ]
-        ],
         {
           "name": "of",
           "isStatic": false,
@@ -191,74 +135,6 @@
           "accessor": "-",
           "type": "int"
         },
-        [
-          null,
-          [
-            [
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "-"
-              ],
-              [
-                null,
-                "-"
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "c"
-              ],
-              [
-                null,
-                "r"
-              ],
-              [
-                null,
-                "y"
-              ],
-              [
-                null,
-                "p"
-              ],
-              [
-                null,
-                "t"
-              ],
-              [
-                null,
-                "e"
-              ],
-              [
-                null,
-                "d"
-              ],
-              [
-                null,
-                " "
-              ],
-              [
-                null,
-                "-"
-              ],
-              [
-                null,
-                "-"
-              ]
-            ],
-            "\n"
-          ]
-        ],
         {
           "name": "password",
           "isStatic": false,
@@ -292,15 +168,7 @@
     },
     {
       "name": "List",
-      "members": [
-        [
-          null,
-          [
-            [],
-            "\n"
-          ]
-        ]
-      ]
+      "members": []
     },
     {
       "name": "Object",

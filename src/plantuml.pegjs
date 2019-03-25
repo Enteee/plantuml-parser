@@ -132,7 +132,9 @@ Class
     return new (require("./class"))(
       name,
       !!isAbstract,
-      members
+      members.filter(
+        (m) => m !== undefined
+      )
     );
   }
   / _ isAbstract:"abstract "? _ "class " _ name:ElementName _ Decorators? EndLine
@@ -146,7 +148,7 @@ Class
 Member
   = Method
   / MemberVariable
-  / (!( _ "}") EndLine)   // Catchall for members: Remove once all members are implemented
+  / (!( _ "}") EndLine) {}  // Catchall for members: Remove once all members are implemented
 
 Method
   = _ isStatic:"static "? _ accessor:Accessor? _ type:Name _ name:Name _ "(" _arguments:(!")" .)* ")" EndLine
@@ -199,7 +201,9 @@ Interface
   {
     return new (require('./interface'))(
       name,
-      members
+      members.filter(
+        (m) => m !== undefined
+      )
     );
   }
   / _ "interface " _ name:ElementName _ Decorators? _ EndLine
@@ -218,7 +222,9 @@ Enum
   {
     return new (require('./enum'))(
       name,
-      members
+      members.filter(
+        (m) => m !== undefined
+      )
     );
   }
   / _ "enum " _ name:ElementName _ Decorators? _ EndLine

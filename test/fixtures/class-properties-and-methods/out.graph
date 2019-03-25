@@ -41,16 +41,6 @@
       "hidden": true
     },
     {
-      "type": "Attribute",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
-      "type": "Attribute",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
       "id": "Method",
       "type": "Attribute",
       "label": "Method",
@@ -83,16 +73,6 @@
       "hidden": true
     },
     {
-      "type": "Attribute",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
-      "type": "Attribute",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
       "id": "Static",
       "type": "Attribute",
       "label": "Static",
@@ -101,25 +81,10 @@
       "hidden": true
     },
     {
-      "type": "Attribute",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
-      "type": "Attribute",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
       "id": "Abstract",
       "type": "Attribute",
       "label": "Abstract",
       "title": "Abstract",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
-      "type": "Attribute",
       "shape": "circle",
       "hidden": true
     },
@@ -159,16 +124,6 @@
     },
     {
       "from": "Car",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
       "to": "Method",
       "label": "has",
       "hidden": true
@@ -193,38 +148,13 @@
     },
     {
       "from": "Car",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
       "to": "Static",
       "label": "has",
       "hidden": true
     },
     {
       "from": "Car",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
       "to": "Abstract",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
       "label": "has",
       "hidden": true
     },
