@@ -21,7 +21,7 @@
     "build": "npx gulp build",
     "test": "npx gulp test",
     "watch": "npx gulp watch",
-    "fixtures": "npx gulp test-fixtures-update && git add test/fixtures"
+    "fixtures": "npx gulp test-fixtures-update && git commit -m 'Update Fixtures' test/fixtures || true"
   },
   "repository": {
     "type": "git",
