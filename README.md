@@ -16,7 +16,7 @@ you started. If not, please [contribute :octocat: :heart:](#contribute).
 ## Installation
 
 ```
-$ npm install --save plantuml-parser
+$ npm install --global --save plantuml-parser
 ```
 
 ## Examples / Fixtures
@@ -45,6 +45,40 @@ console.log(
   formatters.default(ast);
 )
 ```
+
+<details><summary>Output</summary>
+<p>
+
+```javascript
+[
+  [
+    {
+      "name": "A",
+      "isAbstract": false,
+      "members": []
+    },
+    {
+      "name": "B",
+      "isAbstract": false,
+      "members": []
+    },
+    {
+      "left": "A",
+      "right": "B",
+      "leftType": "",
+      "rightType": "Generalization",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    }
+  ]
+]
+```
+
+</p>
+</details>
 
 * `parse(data, options)`: Parse PlantUML in `data`. Returns abstract syntax tree.
 * `parseTrace(data, options)`: Parse PlantUML in `data` and produces tracing output for debugging. Returns abstract syntax tree.
