@@ -4,7 +4,7 @@ _Parse PlantUML Syntax in JavaScript_
 The goal of this project is to provide a feature-complete, well tested, and
 maintainable [Parsing Expression Grammar (PEG)](src/plantuml.pegj)
 for the [PlantUML](http://plantuml.com/) syntax. The parser is designed 
-to be used from within [JavaScript library](#usage) or from the [Command Line](#command-line-interface)
+to be used as [JavaScript library](#usage) or from the [Command Line](#command-line-interface)
 
 **Important**: The parser is not yet feature-complete. But we focus on writing a
 robust implementation which can parse parts of diagram without knowing the full
