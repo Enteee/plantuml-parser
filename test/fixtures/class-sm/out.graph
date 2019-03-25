@@ -910,20 +910,14 @@
   ],
   "edges": [
     {
-      "from": "ICar",
-      "to": "Car",
+      "from": "Dwelling",
+      "to": "Windows",
       "label": "has",
       "hidden": true
     },
     {
-      "from": "ICar2",
-      "to": "Car",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
-      "to": "ICar3",
+      "from": "Dwelling",
+      "to": "Lock",
       "label": "has",
       "hidden": true
     },
@@ -942,6 +936,131 @@
     {
       "from": "Car",
       "to": "ICar3",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Field",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Name",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Name",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Name",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Method",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Name",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Name",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Name",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Static",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Abstract",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "ICar",
+      "to": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "ICar2",
+      "to": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "ICar3",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "Windows",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "LockTheDoor",
       "label": "has",
       "hidden": true
     },
@@ -976,6 +1095,156 @@
       "hidden": true
     },
     {
+      "from": "CI",
+      "to": "ciId",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "ucmdbId",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "company",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "displayName",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "status",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "type",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "subtype",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "3rdLevelType",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "purpose",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "contactId",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "operationResponsibleGroup",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "briefDescription",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "keywords",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "comments",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "monitoringPlatform",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "monitoringNames",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "monitoringNameComment",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "mainService",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "operationCriticality",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "serviceHours",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "serviceHourPriorityLevel",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "serviceHourHolidays",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "serviceTimeZone",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "lastUpdateTime",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CI",
+      "to": "lastUpdatedBy",
+      "label": "has",
+      "hidden": true
+    },
+    {
       "from": "Peripheral",
       "to": "CI",
       "label": "has",
@@ -996,6 +1265,12 @@
     {
       "from": "MultiFunctionPeripheral",
       "to": "Peripheral",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "NetworkDevice",
+      "to": "location",
       "label": "has",
       "hidden": true
     },
@@ -1043,6 +1318,12 @@
     },
     {
       "from": "Infrastructure",
+      "to": "location",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Infrastructure",
       "to": "CI",
       "label": "has",
       "hidden": true
@@ -1085,6 +1366,12 @@
     },
     {
       "from": "Telecomdevice",
+      "to": "location",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Telecomdevice",
       "to": "CI",
       "label": "has",
       "hidden": true
@@ -1104,6 +1391,24 @@
     {
       "from": "Video",
       "to": "Telecomdevice",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Cluster",
+      "to": "applicationCluster",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Cluster",
+      "to": "physicalZone",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Cluster",
+      "to": "dataCenter",
       "label": "has",
       "hidden": true
     },
@@ -1134,6 +1439,12 @@
     {
       "from": "StorageCluster",
       "to": "Cluster",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Storage",
+      "to": "location",
       "label": "has",
       "hidden": true
     },
@@ -1170,6 +1481,54 @@
     {
       "from": "StorageController",
       "to": "Storage",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Contact",
+      "to": "location",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Contact",
+      "to": "region",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Contact",
+      "to": "country",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Contact",
+      "to": "city",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Contact",
+      "to": "building",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Contact",
+      "to": "floor",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Contact",
+      "to": "room",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Contact",
+      "to": "locationDetail",
       "label": "has",
       "hidden": true
     },

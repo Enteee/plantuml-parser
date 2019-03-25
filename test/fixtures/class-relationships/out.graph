@@ -302,20 +302,14 @@
   ],
   "edges": [
     {
-      "from": "ICar",
-      "to": "Car",
+      "from": "Dwelling",
+      "to": "Windows",
       "label": "has",
       "hidden": true
     },
     {
-      "from": "ICar2",
-      "to": "Car",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
-      "to": "ICar3",
+      "from": "Dwelling",
+      "to": "Lock",
       "label": "has",
       "hidden": true
     },
@@ -334,6 +328,131 @@
     {
       "from": "Car",
       "to": "ICar3",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Field",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Name",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Name",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Name",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Method",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Name",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Name",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Name",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Static",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Abstract",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "ICar",
+      "to": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "ICar2",
+      "to": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "ICar3",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "Windows",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "LockTheDoor",
       "label": "has",
       "hidden": true
     },

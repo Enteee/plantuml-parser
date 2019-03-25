@@ -19,14 +19,22 @@ function parseAst(node){
       hidden: true
     });
     node.members.forEach(
-      (attribute) => nodes.push({
-        id: attribute.name,
-        type: 'Attribute',
-        label: attribute.name,
-        title: attribute.name,
-        shape: 'circle',
-        hidden: true
-      })
+      (attribute) => {
+          nodes.push({
+          id: attribute.name,
+          type: 'Attribute',
+          label: attribute.name,
+          title: attribute.name,
+          shape: 'circle',
+          hidden: true
+        });
+        edges.push({
+          from: node.name,
+          to: attribute.name,
+          label: 'has',
+          hidden: true
+        });
+      }
     );
   } else if(node instanceof Relationship){
     edges.push({

@@ -107,6 +107,18 @@
   ],
   "edges": [
     {
+      "from": "Dwelling",
+      "to": "Windows",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "Lock",
+      "label": "has",
+      "hidden": true
+    },
+    {
       "from": "ICar",
       "to": "Car",
       "label": "has",
