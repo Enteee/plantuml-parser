@@ -1,6 +1,6 @@
 const conf = require('../conf');
 
-const { join } = require('path')
+const { join } = require('path');
 const { EOL } = require('os');
 
 const Tracer = require('pegjs-backtrace');
@@ -14,7 +14,7 @@ module.exports.parseTrace = function (src, options) {
     src,
     {
       ...options,
-      showTrace: true,
+      showTrace: true
     }
   );
   try {
@@ -22,7 +22,7 @@ module.exports.parseTrace = function (src, options) {
       src,
       {
         ...options,
-        tracer: tracer,
+        tracer: tracer
       }
     );
     return parsed;
@@ -33,7 +33,7 @@ module.exports.parseTrace = function (src, options) {
       e.message += EOL;
       e.message += tracer.getBacktraceString();
       e.message += EOL;
-    } catch (e) { };
+    } catch (e) { }
     throw e;
   }
 };

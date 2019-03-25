@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const conf = require('../../conf.js');
 
-const { createReadStream, readFile, writeSync, writeFileSync } = require('fs');
+const { readFile, writeSync, writeFileSync } = require('fs');
 const { parse, parseTrace, formatters } = require(conf.src.dir);
 
 const getStdin = require('get-stdin');
@@ -13,42 +13,43 @@ const argv = require('yargs') // eslint-disable-line
     alias: 'f',
     describe: 'formatter to use',
     default: 'default',
-    choices: Object.keys(formatters),
+    choices: Object.keys(formatters)
   })
   .option('input', {
     alias: 'i',
     describe: 'input file to read',
     default: DEFAULT,
     defaultDescription: 'stdin',
-    type: 'string',
+    type: 'string'
   })
   .option('output', {
     alias: 'o',
     describe: 'output file to write',
     type: 'string',
     default: DEFAULT,
-    defaultDescription: 'stdout',
+    defaultDescription: 'stdout'
   })
   .option('color', {
     alias: 'c',
     describe: 'colorful output',
     default: false,
-    boolean: true,
+    boolean: true
   })
   .option('verbose', {
     alias: 'v',
     describe: 'print verbose output',
     default: false,
-    boolean: true,
+    boolean: true
   })
   .help()
   .argv;
 
-function read(cb){
-  if (argv.input === DEFAULT)
-      return getStdin().then(
-        (data) => cb(null, data)
-      );
+function read (cb) {
+  if (argv.input === DEFAULT) {
+    return getStdin().then(
+      (data) => cb(null, data)
+    );
+  }
   return readFile(
     argv.input,
     {
@@ -58,9 +59,8 @@ function read(cb){
   );
 }
 
-function write(data){
-  if (argv.output === DEFAULT)
-    return writeSync(process.stdout.fd, data);
+function write (data) {
+  if (argv.output === DEFAULT) { return writeSync(process.stdout.fd, data); }
   return writeFileSync(
     argv.output,
     data,
@@ -75,19 +75,18 @@ const formatter = formatters[argv.formatter];
 
 read(
   (err, data) => {
-    if (err)
-      return console.error(err);
+    if (err) { return console.error(err); }
     try {
       write(
         formatter(
           useParser(
             data,
             {
-              useColor: argv.color,
+              useColor: argv.color
             }
           )
         ),
-        argv.output,
+        argv.output
       );
     } catch (e) {
       console.error(e.message);

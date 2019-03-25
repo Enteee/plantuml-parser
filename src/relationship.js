@@ -1,5 +1,5 @@
 module.exports = class Relationship {
-  constructor(left, right, leftType, rightType, leftArrowBody, rightArrowBody, leftCardinality, rightCardinality, name) {
+  constructor (left, right, leftType, rightType, leftArrowBody, rightArrowBody, leftCardinality, rightCardinality, name) {
     this.left = left;
     this.right = right;
     this.leftType = leftType || '';
@@ -10,4 +10,4 @@ module.exports = class Relationship {
     this.rightCardinality = rightCardinality || '';
     this.name = name || '';
   }
-}
+};

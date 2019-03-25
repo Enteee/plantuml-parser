@@ -1,13 +1,9 @@
 const conf = require('../conf');
 
-const { lstatSync, readdirSync, readFileSync } = require('fs')
-const { join } = require('path')
-const { EOL } = require('os');
+const { describe, it } = require('mocha');
 const { expect } = require('chai');
 
-const log = require('fancy-log');
-
-const { parse, parseTrace, formatters } = require(conf.src.dir);
+const { parse, formatters } = require(conf.src.dir);
 
 /**
  * Test if the output produced by the
@@ -20,10 +16,10 @@ const { parse, parseTrace, formatters } = require(conf.src.dir);
  *   output. If this does not work
  *   fall back to string comparison.
  */
-function testFormatHasNotChanged(src, out){
+function testFormatHasNotChanged (src, out) {
   const formatted = formatters[out.format](
-      parse(src)
-    )
+    parse(src)
+  );
   var expected;
   var result;
   try {
@@ -32,7 +28,7 @@ function testFormatHasNotChanged(src, out){
     result = JSON.parse(formatted);
   } catch (e) {
     // fall back to string comparison
-    expected = out.src
+    expected = out.src;
     result = formatted;
   }
   expect(
@@ -40,17 +36,17 @@ function testFormatHasNotChanged(src, out){
   ).to.deep.equal(
     result
   );
-};
+}
 
 require('./fixtures').forEach((fixture) =>
   describe(fixture.directory, () => {
     it('parse',
       () => parse(fixture.src)
-    )
+    );
     fixture.out.forEach(
       (output) => it('format: ' + output.format,
         () => testFormatHasNotChanged(fixture.src, output)
       )
-    )
+    );
   })
 );

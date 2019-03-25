@@ -6,7 +6,7 @@ task('watch', (cb) => {
     'src/**/*.pegjs',
     'format/**/*.js',
     '!src/**/plantuml.js',
-    '!src/**/plantuml-trace.js',
+    '!src/**/plantuml-trace.js'
   ], {
     ignoreInitial: false
   }, series(

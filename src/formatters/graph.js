@@ -5,11 +5,11 @@ const Class = require(join(conf.src.dir, 'class'));
 const Interface = require(join(conf.src.dir, 'interface'));
 const Relationship = require(join(conf.src.dir, 'relationship'));
 
-const nodes = []
-const edges = []
+const nodes = [];
+const edges = [];
 
-function parseAst(node){
-  if(node instanceof Class || node instanceof Interface){
+function parseAst (node) {
+  if (node instanceof Class || node instanceof Interface) {
     nodes.push({
       id: node.name,
       type: 'Entity',
@@ -20,7 +20,7 @@ function parseAst(node){
     });
     node.members.forEach(
       (attribute) => {
-          nodes.push({
+        nodes.push({
           id: attribute.name,
           type: 'Attribute',
           label: attribute.name,
@@ -36,28 +36,28 @@ function parseAst(node){
         });
       }
     );
-  } else if(node instanceof Relationship){
+  } else if (node instanceof Relationship) {
     edges.push({
       from: node.left,
       to: node.right,
       label: 'has',
       hidden: true
     });
-  } else if(node instanceof Object){
+  } else if (node instanceof Object) {
     Object.keys(node).map(
       (k) => parseAst(node[k])
     );
   }
 }
 
-module.exports = function(ast){
+module.exports = function (ast) {
   parseAst(ast);
   return JSON.stringify(
     {
       nodes: nodes,
-      edges: edges,
+      edges: edges
     },
     null,
     2
   );
-}
+};

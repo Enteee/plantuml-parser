@@ -16,8 +16,8 @@
  */
 const conf = require('../conf');
 
-const { lstatSync, readdirSync, readFileSync } = require('fs')
-const { join } = require('path')
+const { lstatSync, readdirSync, readFileSync } = require('fs');
+const { join } = require('path');
 
 const log = require('fancy-log');
 
@@ -33,8 +33,8 @@ function getOutputFiles (source) {
   return readdirSync(source)
     .map(name => join(source, name))
     .filter(
-      (source) => lstatSync(source).isFile()
-        && source.match(
+      (source) => lstatSync(source).isFile() &&
+        source.match(
           conf.fixtures.outputFileMatcher
         )
     ).map(
@@ -48,12 +48,12 @@ function getOutputFiles (source) {
           src: readFileSync(
             match[0],
             {
-              encoding: conf.encoding,
+              encoding: conf.encoding
             }
-          ),
-        }
+          )
+        };
       }
-    )
+    );
 }
 
 module.exports = getDirectories(conf.fixtures.dir).map(
@@ -67,14 +67,14 @@ module.exports = getDirectories(conf.fixtures.dir).map(
         ),
         conf.encoding
       );
-    } catch(e) {
+    } catch (e) {
       log.warn('Skipping: ' + directory);
       return;
     }
     return {
       directory: directory,
       src: src,
-      out: getOutputFiles(directory),
+      out: getOutputFiles(directory)
     };
   }
 ).filter((i) => i !== undefined);

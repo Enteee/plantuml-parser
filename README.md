@@ -116,6 +116,8 @@ Options:
 - Testing, CI/CD:
   - [x] Fixtures for all formatters
   - [x] Code coverage
+  - [x] Code formatting
+  - [x] Dependency audit
   - [ ] Code linting
   - [ ] Fixture checking for Pull Requests
 
