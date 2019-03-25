@@ -1,0 +1,53 @@
+{
+  "nodes": [
+    {
+      "id": "Dwelling",
+      "type": "Entity",
+      "label": "Dwelling",
+      "title": "Dwelling",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Windows",
+      "type": "Attribute",
+      "label": "Windows",
+      "title": "Windows",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Lock",
+      "type": "Attribute",
+      "label": "Lock",
+      "title": "Lock",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Apartment",
+      "type": "Entity",
+      "label": "Apartment",
+      "title": "Apartment",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "House",
+      "type": "Entity",
+      "label": "House",
+      "title": "House",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Commune",
+      "type": "Entity",
+      "label": "Commune",
+      "title": "Commune",
+      "shape": "circle",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

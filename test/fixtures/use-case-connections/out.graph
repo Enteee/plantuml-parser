@@ -1,0 +1,1351 @@
+{
+  "nodes": [
+    {
+      "id": "Dwelling",
+      "type": "Entity",
+      "label": "Dwelling",
+      "title": "Dwelling",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Windows",
+      "type": "Attribute",
+      "label": "Windows",
+      "title": "Windows",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Lock",
+      "type": "Attribute",
+      "label": "Lock",
+      "title": "Lock",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Apartment",
+      "type": "Entity",
+      "label": "Apartment",
+      "title": "Apartment",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "House",
+      "type": "Entity",
+      "label": "House",
+      "title": "House",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Commune",
+      "type": "Entity",
+      "label": "Commune",
+      "title": "Commune",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Car",
+      "type": "Entity",
+      "label": "Car",
+      "title": "Car",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Worker1",
+      "type": "Entity",
+      "label": "Worker1",
+      "title": "Worker1",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Worker2",
+      "type": "Entity",
+      "label": "Worker2",
+      "title": "Worker2",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Worker3",
+      "type": "Entity",
+      "label": "Worker3",
+      "title": "Worker3",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Worker4",
+      "type": "Entity",
+      "label": "Worker4",
+      "title": "Worker4",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Worker5",
+      "type": "Entity",
+      "label": "Worker5",
+      "title": "Worker5",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Worker6",
+      "type": "Entity",
+      "label": "Worker6",
+      "title": "Worker6",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Car",
+      "type": "Entity",
+      "label": "Car",
+      "title": "Car",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Field",
+      "type": "Attribute",
+      "label": "Field",
+      "title": "Field",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Name",
+      "type": "Attribute",
+      "label": "Name",
+      "title": "Name",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Name",
+      "type": "Attribute",
+      "label": "Name",
+      "title": "Name",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Name",
+      "type": "Attribute",
+      "label": "Name",
+      "title": "Name",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "type": "Attribute",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "type": "Attribute",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Method",
+      "type": "Attribute",
+      "label": "Method",
+      "title": "Method",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Name",
+      "type": "Attribute",
+      "label": "Name",
+      "title": "Name",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Name",
+      "type": "Attribute",
+      "label": "Name",
+      "title": "Name",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Name",
+      "type": "Attribute",
+      "label": "Name",
+      "title": "Name",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "type": "Attribute",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "type": "Attribute",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Static",
+      "type": "Attribute",
+      "label": "Static",
+      "title": "Static",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "type": "Attribute",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "type": "Attribute",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Abstract",
+      "type": "Attribute",
+      "label": "Abstract",
+      "title": "Abstract",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "type": "Attribute",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Car",
+      "type": "Entity",
+      "label": "Car",
+      "title": "Car",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Dwelling",
+      "type": "Entity",
+      "label": "Dwelling",
+      "title": "Dwelling",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Windows",
+      "type": "Attribute",
+      "label": "Windows",
+      "title": "Windows",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "LockTheDoor",
+      "type": "Attribute",
+      "label": "LockTheDoor",
+      "title": "LockTheDoor",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Apartment",
+      "type": "Entity",
+      "label": "Apartment",
+      "title": "Apartment",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "House",
+      "type": "Entity",
+      "label": "House",
+      "title": "House",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Commune",
+      "type": "Entity",
+      "label": "Commune",
+      "title": "Commune",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Window",
+      "type": "Entity",
+      "label": "Window",
+      "title": "Window",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Door",
+      "type": "Entity",
+      "label": "Door",
+      "title": "Door",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "CI",
+      "type": "Entity",
+      "label": "CI",
+      "title": "CI",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "ciId",
+      "type": "Attribute",
+      "label": "ciId",
+      "title": "ciId",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "ucmdbId",
+      "type": "Attribute",
+      "label": "ucmdbId",
+      "title": "ucmdbId",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "company",
+      "type": "Attribute",
+      "label": "company",
+      "title": "company",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "displayName",
+      "type": "Attribute",
+      "label": "displayName",
+      "title": "displayName",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "status",
+      "type": "Attribute",
+      "label": "status",
+      "title": "status",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "type",
+      "type": "Attribute",
+      "label": "type",
+      "title": "type",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "subtype",
+      "type": "Attribute",
+      "label": "subtype",
+      "title": "subtype",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "3rdLevelType",
+      "type": "Attribute",
+      "label": "3rdLevelType",
+      "title": "3rdLevelType",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "purpose",
+      "type": "Attribute",
+      "label": "purpose",
+      "title": "purpose",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "contactId",
+      "type": "Attribute",
+      "label": "contactId",
+      "title": "contactId",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "operationResponsibleGroup",
+      "type": "Attribute",
+      "label": "operationResponsibleGroup",
+      "title": "operationResponsibleGroup",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "briefDescription",
+      "type": "Attribute",
+      "label": "briefDescription",
+      "title": "briefDescription",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "keywords",
+      "type": "Attribute",
+      "label": "keywords",
+      "title": "keywords",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "comments",
+      "type": "Attribute",
+      "label": "comments",
+      "title": "comments",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "monitoringPlatform",
+      "type": "Attribute",
+      "label": "monitoringPlatform",
+      "title": "monitoringPlatform",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "monitoringNames",
+      "type": "Attribute",
+      "label": "monitoringNames",
+      "title": "monitoringNames",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "monitoringNameComment",
+      "type": "Attribute",
+      "label": "monitoringNameComment",
+      "title": "monitoringNameComment",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "mainService",
+      "type": "Attribute",
+      "label": "mainService",
+      "title": "mainService",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "operationCriticality",
+      "type": "Attribute",
+      "label": "operationCriticality",
+      "title": "operationCriticality",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "serviceHours",
+      "type": "Attribute",
+      "label": "serviceHours",
+      "title": "serviceHours",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "serviceHourPriorityLevel",
+      "type": "Attribute",
+      "label": "serviceHourPriorityLevel",
+      "title": "serviceHourPriorityLevel",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "serviceHourHolidays",
+      "type": "Attribute",
+      "label": "serviceHourHolidays",
+      "title": "serviceHourHolidays",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "serviceTimeZone",
+      "type": "Attribute",
+      "label": "serviceTimeZone",
+      "title": "serviceTimeZone",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "lastUpdateTime",
+      "type": "Attribute",
+      "label": "lastUpdateTime",
+      "title": "lastUpdateTime",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "lastUpdatedBy",
+      "type": "Attribute",
+      "label": "lastUpdatedBy",
+      "title": "lastUpdatedBy",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Printer",
+      "type": "Entity",
+      "label": "Printer",
+      "title": "Printer",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "CCTV",
+      "type": "Entity",
+      "label": "CCTV",
+      "title": "CCTV",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "MultiFunctionPeripheral",
+      "type": "Entity",
+      "label": "MultiFunctionPeripheral",
+      "title": "MultiFunctionPeripheral",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Switch",
+      "type": "Entity",
+      "label": "Switch",
+      "title": "Switch",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Router",
+      "type": "Entity",
+      "label": "Router",
+      "title": "Router",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Firewall",
+      "type": "Entity",
+      "label": "Firewall",
+      "title": "Firewall",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Proxy",
+      "type": "Entity",
+      "label": "Proxy",
+      "title": "Proxy",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "LoadBalancer",
+      "type": "Entity",
+      "label": "LoadBalancer",
+      "title": "LoadBalancer",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "NetworkManagement",
+      "type": "Entity",
+      "label": "NetworkManagement",
+      "title": "NetworkManagement",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "ATS",
+      "type": "Entity",
+      "label": "ATS",
+      "title": "ATS",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "KVM",
+      "type": "Entity",
+      "label": "KVM",
+      "title": "KVM",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "PDU",
+      "type": "Entity",
+      "label": "PDU",
+      "title": "PDU",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "UPS",
+      "type": "Entity",
+      "label": "UPS",
+      "title": "UPS",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "HSM",
+      "type": "Entity",
+      "label": "HSM",
+      "title": "HSM",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "AccessControl",
+      "type": "Entity",
+      "label": "AccessControl",
+      "title": "AccessControl",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Gateway",
+      "type": "Entity",
+      "label": "Gateway",
+      "title": "Gateway",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Voice",
+      "type": "Entity",
+      "label": "Voice",
+      "title": "Voice",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Video",
+      "type": "Entity",
+      "label": "Video",
+      "title": "Video",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "SoftwareCluster",
+      "type": "Entity",
+      "label": "SoftwareCluster",
+      "title": "SoftwareCluster",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "ContainerCluster",
+      "type": "Entity",
+      "label": "ContainerCluster",
+      "title": "ContainerCluster",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "VMCluster",
+      "type": "Entity",
+      "label": "VMCluster",
+      "title": "VMCluster",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "StorageCluster",
+      "type": "Entity",
+      "label": "StorageCluster",
+      "title": "StorageCluster",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "TapeLibrary",
+      "type": "Entity",
+      "label": "TapeLibrary",
+      "title": "TapeLibrary",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "NAS",
+      "type": "Entity",
+      "label": "NAS",
+      "title": "NAS",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "SAN",
+      "type": "Entity",
+      "label": "SAN",
+      "title": "SAN",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "StorageSwitch",
+      "type": "Entity",
+      "label": "StorageSwitch",
+      "title": "StorageSwitch",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "StorageController",
+      "type": "Entity",
+      "label": "StorageController",
+      "title": "StorageController",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "AbstractList",
+      "type": "Entity",
+      "label": "AbstractList",
+      "title": "AbstractList",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "type": "Attribute",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Test",
+      "type": "Entity",
+      "label": "Test",
+      "title": "Test",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "System",
+      "type": "Entity",
+      "label": "System",
+      "title": "System",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Date",
+      "type": "Entity",
+      "label": "Date",
+      "title": "Date",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Foo1",
+      "type": "Entity",
+      "label": "Foo1",
+      "title": "Foo1",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "can",
+      "type": "Attribute",
+      "label": "can",
+      "title": "can",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "lines",
+      "type": "Attribute",
+      "label": "lines",
+      "title": "lines",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "..",
+      "type": "Attribute",
+      "label": "..",
+      "title": "..",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "you",
+      "type": "Attribute",
+      "label": "you",
+      "title": "you",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "group",
+      "type": "Attribute",
+      "label": "group",
+      "title": "group",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "type": "Attribute",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "together.",
+      "type": "Attribute",
+      "label": "together.",
+      "title": "together.",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "__",
+      "type": "Attribute",
+      "label": "__",
+      "title": "__",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "can",
+      "type": "Attribute",
+      "label": "can",
+      "title": "can",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "you",
+      "type": "Attribute",
+      "label": "you",
+      "title": "you",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "type": "Attribute",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "of",
+      "type": "Attribute",
+      "label": "of",
+      "title": "of",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "User",
+      "type": "Entity",
+      "label": "User",
+      "title": "User",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Simple",
+      "type": "Attribute",
+      "label": "Simple",
+      "title": "Simple",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "getName",
+      "type": "Attribute",
+      "label": "getName",
+      "title": "getName",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "getAddress",
+      "type": "Attribute",
+      "label": "getAddress",
+      "title": "getAddress",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Some",
+      "type": "Attribute",
+      "label": "Some",
+      "title": "Some",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "setName",
+      "type": "Attribute",
+      "label": "setName",
+      "title": "setName",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "private",
+      "type": "Attribute",
+      "label": "private",
+      "title": "private",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "age",
+      "type": "Attribute",
+      "label": "age",
+      "title": "age",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "type": "Attribute",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "password",
+      "type": "Attribute",
+      "label": "password",
+      "title": "password",
+      "shape": "circle",
+      "hidden": true
+    },
+    {
+      "id": "Object",
+      "type": "Entity",
+      "label": "Object",
+      "title": "Object",
+      "shape": "circle",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "ICar",
+      "to": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "ICar2",
+      "to": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "ICar3",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "ICar",
+      "to": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "ICar2",
+      "to": "Car",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "ICar3",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "Apartment",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "Commune",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "House",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "Window",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "Door",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Peripheral",
+      "to": "CI",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Printer",
+      "to": "Peripheral",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "CCTV",
+      "to": "Peripheral",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "MultiFunctionPeripheral",
+      "to": "Peripheral",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "NetworkDevice",
+      "to": "CI",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Switch",
+      "to": "NetworkDevice",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Router",
+      "to": "NetworkDevice",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Firewall",
+      "to": "NetworkDevice",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Proxy",
+      "to": "NetworkDevice",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "LoadBalancer",
+      "to": "NetworkDevice",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "NetworkManagement",
+      "to": "NetworkDevice",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Infrastructure",
+      "to": "CI",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "ATS",
+      "to": "Infrastructure",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "KVM",
+      "to": "Infrastructure",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "PDU",
+      "to": "Infrastructure",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "UPS",
+      "to": "Infrastructure",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "HSM",
+      "to": "Infrastructure",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "AccessControl",
+      "to": "Infrastructure",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Telecomdevice",
+      "to": "CI",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Gateway",
+      "to": "Telecomdevice",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Voice",
+      "to": "Telecomdevice",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Video",
+      "to": "Telecomdevice",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Cluster",
+      "to": "CI",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "SoftwareCluster",
+      "to": "Cluster",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "ContainerCluster",
+      "to": "Cluster",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "VMCluster",
+      "to": "Cluster",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "StorageCluster",
+      "to": "Cluster",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Storage",
+      "to": "CI",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "TapeLibrary",
+      "to": "Storage",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "NAS",
+      "to": "Storage",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "SAN",
+      "to": "Storage",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "StorageSwitch",
+      "to": "Storage",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "StorageController",
+      "to": "Storage",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Contact",
+      "to": "CI",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Location",
+      "to": "CI",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Object",
+      "to": "ArrayList",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "DA",
+      "to": "Items",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "GUI",
+      "to": "down",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Internet",
+      "to": "down",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "DA",
+      "to": "Items",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "GUI",
+      "to": "down",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Internet",
+      "to": "down",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "DA",
+      "to": "Items",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Germany",
+      "to": "France",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Spain",
+      "to": "USA",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Mexico",
+      "to": "Russia",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Canada",
+      "to": "Japan",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Hungry",
+      "to": "right",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "EatingBurrito",
+      "to": "down",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Full",
+      "to": "left",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Sleeping",
+      "to": "up",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "NeilDiamond",
+      "to": "Right",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "NDoff",
+      "to": "Left",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Employee",
+      "to": "User",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Client",
+      "to": "User",
+      "label": "has",
+      "hidden": true
+    },
+    {
+      "from": "Supervisor",
+      "to": "User",
+      "label": "has",
+      "hidden": true
+    }
+  ]
+}
