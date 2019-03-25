@@ -91,7 +91,7 @@ Options:
 $ npm run test
 ```
 
-## Contribute :octocat:
+## Contribute
 
 Every contribution counts! Please,
 
