@@ -1,6 +1,8 @@
 # plantuml-parser
 _Parse PlantUML Syntax in JavaScript_
 
+* [Parsing Expression Grammer](src/plantuml.pegjs)
+
 ## Examples / Fixtures
 
 We keep a set of PlantUML scripts in [test/fixtures/](test/fixtures) (`in.plantuml`) and the corresponding formatted output (`out.<formatter>`).
