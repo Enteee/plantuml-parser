@@ -2,14 +2,16 @@
 _Parse PlantUML Syntax in JavaScript_
 
 The goal of this project is to provide a feature-complete, well tested, and
-maintainable [Parsing Expression Grammer (PEG)](src/plantuml.pegjsrammer)
+maintainable [Parsing Expression Grammar (PEG)](src/plantuml.pegj)
 for the [PlantUML](http://plantuml.com/) syntax. The parser is designed 
-to be used as a [JavaScript library](#usage) or from the [Command Line](#command-line-interface)
+to be used from within [JavaScript library](#usage) or from the [Command Line](#command-line-interface)
 
 **Important**: The parser is not yet feature-complete. But we focus on writing a
 robust implementation which can parse parts of diagram without knowing the full
 syntax. This means that the parser probably still parses just about enough to get
-you started. If not, please [contibute](#contribute) :octocat:. [#PlantUMLParser](https://twitter.com/hashtag/PlantUMLParser)
+you started. If not, please [contibute](#contribute) :octocat: :heart:.
+
+[#PlantUMLParser](https://twitter.com/hashtag/PlantUMLParser)
 
 ## Installtion
 
@@ -65,8 +67,8 @@ console.log(
 )
 ```
 
-* `parse(data, options)`: Parse PlantUML in (`data`). Returns abstract syntax tree.
-* `parseTrace(data, options)`: Parse PlantUML in (`data`) and proces tracing output for debugging. Returns abstract syntax tree.
+* `parse(data, options)`: Parse PlantUML in `data`. Returns abstract syntax tree.
+* `parseTrace(data, options)`: Parse PlantUML in `data` and proces tracing output for debugging. Returns abstract syntax tree.
 * `options`: see [PEG.js parser options](https://pegjs.org/documentation#generating-a-parser-javascript-api).
 * `formatters`: A collection of built-in AST formatters.
 
@@ -82,8 +84,6 @@ Options:
   --verbose, -v    print verbose output               [boolean] [default: false]
   --help           Show help                                           [boolean]
 ```
-
-# JavaScript API
 
 ## Test
 
