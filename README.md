@@ -127,6 +127,11 @@ Options:
 $ npm run test
 ```
 
+This will run:
+ * unit test
+ * code coverage
+ * eslint
+
 ## Contribute
 
 Every contribution counts! Please,
