@@ -1,3 +1,26 @@
 [
-  []
+  [
+    {
+      "left": "NeilDiamond",
+      "right": "Right",
+      "leftType": "",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    },
+    {
+      "left": "NDoff",
+      "right": "Left",
+      "leftType": "",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    }
+  ]
 ]

@@ -7,6 +7,17 @@
     {
       "name": "Items",
       "members": []
+    },
+    {
+      "left": "DA",
+      "right": "Items",
+      "leftType": "",
+      "rightType": "",
+      "leftArrowBody": ".",
+      "rightArrowBody": ".",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
     }
   ]
 ]

@@ -306,6 +306,17 @@
       "name": "Object",
       "isAbstract": false,
       "members": {}
+    },
+    {
+      "left": "Object",
+      "right": "ArrayList",
+      "leftType": "Generalization",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
     }
   ]
 ]

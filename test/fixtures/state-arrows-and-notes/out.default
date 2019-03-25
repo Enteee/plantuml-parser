@@ -5,6 +5,50 @@
     },
     {
       "text": "Notes can also\n    take up multiple\n    lines like this"
+    },
+    {
+      "left": "Hungry",
+      "right": "right",
+      "leftType": "",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    },
+    {
+      "left": "EatingBurrito",
+      "right": "down",
+      "leftType": "",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    },
+    {
+      "left": "Full",
+      "right": "left",
+      "leftType": "",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    },
+    {
+      "left": "Sleeping",
+      "right": "up",
+      "leftType": "",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
     }
   ]
 ]

@@ -1135,9 +1135,31 @@
               "members": []
             },
             {
+              "left": "StorageSwitch",
+              "right": "Storage",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
+            },
+            {
               "name": "StorageController",
               "isAbstract": false,
               "members": []
+            },
+            {
+              "left": "StorageController",
+              "right": "Storage",
+              "leftType": "",
+              "rightType": "Generalization",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "name": ""
             }
           ]
         ],

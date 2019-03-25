@@ -1,3 +1,48 @@
 [
-  []
+  [
+    {
+      "left": "Germany",
+      "right": "France",
+      "leftType": "Generalization",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    },
+    {
+      "left": "Spain",
+      "right": "USA",
+      "leftType": "Composition",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    },
+    {
+      "left": "Mexico",
+      "right": "Russia",
+      "leftType": "Aggregation",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    },
+    {
+      "left": "Canada",
+      "right": "Japan",
+      "leftType": "",
+      "rightType": "",
+      "leftArrowBody": ".",
+      "rightArrowBody": ".",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    }
+  ]
 ]

@@ -39,6 +39,28 @@
       "elements": []
     },
     {
+      "left": "GUI",
+      "right": "down",
+      "leftType": "",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    },
+    {
+      "left": "Internet",
+      "right": "down",
+      "leftType": "",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    },
+    {
       "left": "DA",
       "right": "Items",
       "leftType": "",

@@ -742,6 +742,39 @@
       "name": "Car",
       "isAbstract": false,
       "members": {}
+    },
+    {
+      "left": "ICar",
+      "right": "Car",
+      "leftType": "()",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    },
+    {
+      "left": "ICar2",
+      "right": "Car",
+      "leftType": "()",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    },
+    {
+      "left": "Car",
+      "right": "ICar3",
+      "leftType": "",
+      "rightType": "()",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
     }
   ]
 ]

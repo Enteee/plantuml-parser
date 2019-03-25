@@ -1,3 +1,26 @@
 [
-  []
+  [
+    {
+      "left": "A",
+      "right": "left",
+      "leftType": "",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    },
+    {
+      "left": "A",
+      "right": "up",
+      "leftType": "",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": ""
+    }
+  ]
 ]
