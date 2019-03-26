@@ -1,211 +1,345 @@
 {
   "nodes": [
     {
+      "name": "AbstractList",
+      "isAbstract": true,
+      "members": [],
       "id": "AbstractList",
-      "type": "Entity",
+      "type": "Class",
       "label": "AbstractList",
       "title": "AbstractList",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Test",
+      "isAbstract": false,
+      "members": [],
       "id": "Test",
-      "type": "Entity",
+      "type": "Class",
       "label": "Test",
       "title": "Test",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "System",
+      "isAbstract": false,
+      "members": [],
       "id": "System",
-      "type": "Entity",
+      "type": "Class",
       "label": "System",
       "title": "System",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Date",
+      "isAbstract": false,
+      "members": [],
       "id": "Date",
-      "type": "Entity",
+      "type": "Class",
       "label": "Date",
       "title": "Date",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Foo1",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "can",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "You"
+        },
+        {
+          "name": "lines",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "several"
+        },
+        {
+          "name": "..",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "you",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "as"
+        },
+        {
+          "name": "group",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "and"
+        },
+        {
+          "name": "together.",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "things"
+        },
+        {
+          "name": "__",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "can",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "You"
+        },
+        {
+          "name": "you",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "as"
+        },
+        {
+          "name": "of",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "End"
+        }
+      ],
       "id": "Foo1",
-      "type": "Entity",
+      "type": "Class",
       "label": "Foo1",
       "title": "Foo1",
-      "shape": "box",
       "hidden": true
     },
     {
-      "id": "can",
+      "name": "can",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "can",
       "label": "can",
       "title": "can",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "lines",
+      "name": "lines",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "lines",
       "label": "lines",
       "title": "lines",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "..",
+      "name": "..",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "..",
       "label": "..",
       "title": "..",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "you",
+      "name": "you",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "you",
       "label": "you",
       "title": "you",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "group",
+      "name": "group",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "group",
       "label": "group",
       "title": "group",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "together.",
+      "name": "together.",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "together.",
       "label": "together.",
       "title": "together.",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "__",
+      "name": "__",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "__",
       "label": "__",
       "title": "__",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "can",
+      "name": "can",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "can",
       "label": "can",
       "title": "can",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "you",
+      "name": "you",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "you",
       "label": "you",
       "title": "you",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "of",
+      "name": "of",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "of",
       "label": "of",
       "title": "of",
-      "shape": "circle",
       "hidden": true
     },
     {
+      "name": "User",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "Simple",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        },
+        {
+          "name": "getName",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "getAddress",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "Some",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        },
+        {
+          "name": "setName",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "private",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "__"
+        },
+        {
+          "name": "age",
+          "isStatic": false,
+          "accessor": "-",
+          "type": "int"
+        },
+        {
+          "name": "password",
+          "isStatic": false,
+          "accessor": "-",
+          "type": "String"
+        }
+      ],
       "id": "User",
-      "type": "Entity",
+      "type": "Class",
       "label": "User",
       "title": "User",
-      "shape": "box",
       "hidden": true
     },
     {
-      "id": "Simple",
+      "name": "Simple",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "Simple",
       "label": "Simple",
       "title": "Simple",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "getName",
+      "name": "Some",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
-      "label": "getName",
-      "title": "getName",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
-      "id": "getAddress",
-      "type": "Attribute",
-      "label": "getAddress",
-      "title": "getAddress",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
       "id": "Some",
-      "type": "Attribute",
       "label": "Some",
       "title": "Some",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "setName",
+      "name": "private",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
-      "label": "setName",
-      "title": "setName",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
       "id": "private",
-      "type": "Attribute",
       "label": "private",
       "title": "private",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "age",
+      "name": "age",
+      "isStatic": false,
+      "accessor": "-",
       "type": "Attribute",
+      "id": "age",
       "label": "age",
       "title": "age",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "password",
+      "name": "password",
+      "isStatic": false,
+      "accessor": "-",
       "type": "Attribute",
+      "id": "password",
       "label": "password",
       "title": "password",
-      "shape": "circle",
       "hidden": true
     },
     {
+      "name": "List",
+      "members": [],
       "id": "List",
-      "type": "Entity",
+      "type": "Interface",
       "label": "List",
       "title": "List",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Object",
+      "isAbstract": false,
+      "members": [],
       "id": "Object",
-      "type": "Entity",
+      "type": "Class",
       "label": "Object",
       "title": "Object",
-      "shape": "box",
       "hidden": true
     }
   ],
@@ -278,25 +412,7 @@
     },
     {
       "from": "User",
-      "to": "getName",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "User",
-      "to": "getAddress",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "User",
       "to": "Some",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "User",
-      "to": "setName",
       "label": "has",
       "hidden": true
     },

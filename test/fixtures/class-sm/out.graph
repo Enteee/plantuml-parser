@@ -1,611 +1,1002 @@
 {
   "nodes": [
     {
+      "name": "CI",
+      "isAbstract": true,
+      "members": [
+        {
+          "name": "ciId",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "ucmdbId",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "company",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "displayName",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "status",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "type",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "subtype",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "3rdLevelType",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "purpose",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "contactId",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "operationResponsibleGroup",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "briefDescription",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "keywords",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "comments",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "monitoringPlatform",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "monitoringNames",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "monitoringNameComment",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "mainService",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "operationCriticality",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "serviceHours",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "serviceHourPriorityLevel",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "serviceHourHolidays",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "serviceTimeZone",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "lastUpdateTime",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "lastUpdatedBy",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        }
+      ],
       "id": "CI",
-      "type": "Entity",
+      "type": "Class",
       "label": "CI",
       "title": "CI",
-      "shape": "box",
       "hidden": true
     },
     {
-      "id": "ciId",
+      "name": "ciId",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "ciId",
       "label": "ciId",
       "title": "ciId",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "ucmdbId",
+      "name": "ucmdbId",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "ucmdbId",
       "label": "ucmdbId",
       "title": "ucmdbId",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "company",
+      "name": "company",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "company",
       "label": "company",
       "title": "company",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "displayName",
+      "name": "displayName",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "displayName",
       "label": "displayName",
       "title": "displayName",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "status",
+      "name": "status",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "status",
       "label": "status",
       "title": "status",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "type",
+      "name": "type",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "type",
       "label": "type",
       "title": "type",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "subtype",
+      "name": "subtype",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "subtype",
       "label": "subtype",
       "title": "subtype",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "3rdLevelType",
+      "name": "3rdLevelType",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "3rdLevelType",
       "label": "3rdLevelType",
       "title": "3rdLevelType",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "purpose",
+      "name": "purpose",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "purpose",
       "label": "purpose",
       "title": "purpose",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "contactId",
+      "name": "contactId",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "contactId",
       "label": "contactId",
       "title": "contactId",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "operationResponsibleGroup",
+      "name": "operationResponsibleGroup",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "operationResponsibleGroup",
       "label": "operationResponsibleGroup",
       "title": "operationResponsibleGroup",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "briefDescription",
+      "name": "briefDescription",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "briefDescription",
       "label": "briefDescription",
       "title": "briefDescription",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "keywords",
+      "name": "keywords",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "keywords",
       "label": "keywords",
       "title": "keywords",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "comments",
+      "name": "comments",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "comments",
       "label": "comments",
       "title": "comments",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "monitoringPlatform",
+      "name": "monitoringPlatform",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "monitoringPlatform",
       "label": "monitoringPlatform",
       "title": "monitoringPlatform",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "monitoringNames",
+      "name": "monitoringNames",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "monitoringNames",
       "label": "monitoringNames",
       "title": "monitoringNames",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "monitoringNameComment",
+      "name": "monitoringNameComment",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "monitoringNameComment",
       "label": "monitoringNameComment",
       "title": "monitoringNameComment",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "mainService",
+      "name": "mainService",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "mainService",
       "label": "mainService",
       "title": "mainService",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "operationCriticality",
+      "name": "operationCriticality",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "operationCriticality",
       "label": "operationCriticality",
       "title": "operationCriticality",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "serviceHours",
+      "name": "serviceHours",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "serviceHours",
       "label": "serviceHours",
       "title": "serviceHours",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "serviceHourPriorityLevel",
+      "name": "serviceHourPriorityLevel",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "serviceHourPriorityLevel",
       "label": "serviceHourPriorityLevel",
       "title": "serviceHourPriorityLevel",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "serviceHourHolidays",
+      "name": "serviceHourHolidays",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "serviceHourHolidays",
       "label": "serviceHourHolidays",
       "title": "serviceHourHolidays",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "serviceTimeZone",
+      "name": "serviceTimeZone",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "serviceTimeZone",
       "label": "serviceTimeZone",
       "title": "serviceTimeZone",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "lastUpdateTime",
+      "name": "lastUpdateTime",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "lastUpdateTime",
       "label": "lastUpdateTime",
       "title": "lastUpdateTime",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "lastUpdatedBy",
+      "name": "lastUpdatedBy",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "lastUpdatedBy",
       "label": "lastUpdatedBy",
       "title": "lastUpdatedBy",
-      "shape": "circle",
       "hidden": true
     },
     {
+      "name": "Peripheral",
+      "members": [],
       "id": "Peripheral",
-      "type": "Entity",
+      "type": "Interface",
       "label": "Peripheral",
       "title": "Peripheral",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Printer",
+      "isAbstract": false,
+      "members": [],
       "id": "Printer",
-      "type": "Entity",
+      "type": "Class",
       "label": "Printer",
       "title": "Printer",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "CCTV",
+      "isAbstract": false,
+      "members": [],
       "id": "CCTV",
-      "type": "Entity",
+      "type": "Class",
       "label": "CCTV",
       "title": "CCTV",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "MultiFunctionPeripheral",
+      "isAbstract": false,
+      "members": [],
       "id": "MultiFunctionPeripheral",
-      "type": "Entity",
+      "type": "Class",
       "label": "MultiFunctionPeripheral",
       "title": "MultiFunctionPeripheral",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "NetworkDevice",
+      "members": [
+        {
+          "name": "location",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        }
+      ],
       "id": "NetworkDevice",
-      "type": "Entity",
+      "type": "Interface",
       "label": "NetworkDevice",
       "title": "NetworkDevice",
-      "shape": "box",
       "hidden": true
     },
     {
-      "id": "location",
+      "name": "location",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "location",
       "label": "location",
       "title": "location",
-      "shape": "circle",
       "hidden": true
     },
     {
+      "name": "Switch",
+      "isAbstract": false,
+      "members": [],
       "id": "Switch",
-      "type": "Entity",
+      "type": "Class",
       "label": "Switch",
       "title": "Switch",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Router",
+      "isAbstract": false,
+      "members": [],
       "id": "Router",
-      "type": "Entity",
+      "type": "Class",
       "label": "Router",
       "title": "Router",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Firewall",
+      "isAbstract": false,
+      "members": [],
       "id": "Firewall",
-      "type": "Entity",
+      "type": "Class",
       "label": "Firewall",
       "title": "Firewall",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Proxy",
+      "isAbstract": false,
+      "members": [],
       "id": "Proxy",
-      "type": "Entity",
+      "type": "Class",
       "label": "Proxy",
       "title": "Proxy",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "LoadBalancer",
+      "isAbstract": false,
+      "members": [],
       "id": "LoadBalancer",
-      "type": "Entity",
+      "type": "Class",
       "label": "LoadBalancer",
       "title": "LoadBalancer",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "NetworkManagement",
+      "isAbstract": false,
+      "members": [],
       "id": "NetworkManagement",
-      "type": "Entity",
+      "type": "Class",
       "label": "NetworkManagement",
       "title": "NetworkManagement",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Infrastructure",
+      "members": [
+        {
+          "name": "location",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        }
+      ],
       "id": "Infrastructure",
-      "type": "Entity",
+      "type": "Interface",
       "label": "Infrastructure",
       "title": "Infrastructure",
-      "shape": "box",
       "hidden": true
     },
     {
-      "id": "location",
+      "name": "location",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "location",
       "label": "location",
       "title": "location",
-      "shape": "circle",
       "hidden": true
     },
     {
+      "name": "ATS",
+      "isAbstract": false,
+      "members": [],
       "id": "ATS",
-      "type": "Entity",
+      "type": "Class",
       "label": "ATS",
       "title": "ATS",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "KVM",
+      "isAbstract": false,
+      "members": [],
       "id": "KVM",
-      "type": "Entity",
+      "type": "Class",
       "label": "KVM",
       "title": "KVM",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "PDU",
+      "isAbstract": false,
+      "members": [],
       "id": "PDU",
-      "type": "Entity",
+      "type": "Class",
       "label": "PDU",
       "title": "PDU",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "UPS",
+      "isAbstract": false,
+      "members": [],
       "id": "UPS",
-      "type": "Entity",
+      "type": "Class",
       "label": "UPS",
       "title": "UPS",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "HSM",
+      "isAbstract": false,
+      "members": [],
       "id": "HSM",
-      "type": "Entity",
+      "type": "Class",
       "label": "HSM",
       "title": "HSM",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "AccessControl",
+      "isAbstract": false,
+      "members": [],
       "id": "AccessControl",
-      "type": "Entity",
+      "type": "Class",
       "label": "AccessControl",
       "title": "AccessControl",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Telecomdevice",
+      "members": [
+        {
+          "name": "location",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        }
+      ],
       "id": "Telecomdevice",
-      "type": "Entity",
+      "type": "Interface",
       "label": "Telecomdevice",
       "title": "Telecomdevice",
-      "shape": "box",
       "hidden": true
     },
     {
-      "id": "location",
+      "name": "location",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "location",
       "label": "location",
       "title": "location",
-      "shape": "circle",
       "hidden": true
     },
     {
+      "name": "Gateway",
+      "isAbstract": false,
+      "members": [],
       "id": "Gateway",
-      "type": "Entity",
+      "type": "Class",
       "label": "Gateway",
       "title": "Gateway",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Voice",
+      "isAbstract": false,
+      "members": [],
       "id": "Voice",
-      "type": "Entity",
+      "type": "Class",
       "label": "Voice",
       "title": "Voice",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Video",
+      "isAbstract": false,
+      "members": [],
       "id": "Video",
-      "type": "Entity",
+      "type": "Class",
       "label": "Video",
       "title": "Video",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Cluster",
+      "members": [
+        {
+          "name": "applicationCluster",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "physicalZone",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "dataCenter",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        }
+      ],
       "id": "Cluster",
-      "type": "Entity",
+      "type": "Interface",
       "label": "Cluster",
       "title": "Cluster",
-      "shape": "box",
       "hidden": true
     },
     {
-      "id": "applicationCluster",
+      "name": "applicationCluster",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "applicationCluster",
       "label": "applicationCluster",
       "title": "applicationCluster",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "physicalZone",
+      "name": "physicalZone",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "physicalZone",
       "label": "physicalZone",
       "title": "physicalZone",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "dataCenter",
+      "name": "dataCenter",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "dataCenter",
       "label": "dataCenter",
       "title": "dataCenter",
-      "shape": "circle",
       "hidden": true
     },
     {
+      "name": "SoftwareCluster",
+      "isAbstract": false,
+      "members": [],
       "id": "SoftwareCluster",
-      "type": "Entity",
+      "type": "Class",
       "label": "SoftwareCluster",
       "title": "SoftwareCluster",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "ContainerCluster",
+      "isAbstract": false,
+      "members": [],
       "id": "ContainerCluster",
-      "type": "Entity",
+      "type": "Class",
       "label": "ContainerCluster",
       "title": "ContainerCluster",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "VMCluster",
+      "isAbstract": false,
+      "members": [],
       "id": "VMCluster",
-      "type": "Entity",
+      "type": "Class",
       "label": "VMCluster",
       "title": "VMCluster",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "StorageCluster",
+      "isAbstract": false,
+      "members": [],
       "id": "StorageCluster",
-      "type": "Entity",
+      "type": "Class",
       "label": "StorageCluster",
       "title": "StorageCluster",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Storage",
+      "members": [
+        {
+          "name": "location",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        }
+      ],
       "id": "Storage",
-      "type": "Entity",
+      "type": "Interface",
       "label": "Storage",
       "title": "Storage",
-      "shape": "box",
       "hidden": true
     },
     {
-      "id": "location",
+      "name": "location",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "location",
       "label": "location",
       "title": "location",
-      "shape": "circle",
       "hidden": true
     },
     {
+      "name": "TapeLibrary",
+      "isAbstract": false,
+      "members": [],
       "id": "TapeLibrary",
-      "type": "Entity",
+      "type": "Class",
       "label": "TapeLibrary",
       "title": "TapeLibrary",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "NAS",
+      "isAbstract": false,
+      "members": [],
       "id": "NAS",
-      "type": "Entity",
+      "type": "Class",
       "label": "NAS",
       "title": "NAS",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "SAN",
+      "isAbstract": false,
+      "members": [],
       "id": "SAN",
-      "type": "Entity",
+      "type": "Class",
       "label": "SAN",
       "title": "SAN",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "StorageSwitch",
+      "isAbstract": false,
+      "members": [],
       "id": "StorageSwitch",
-      "type": "Entity",
+      "type": "Class",
       "label": "StorageSwitch",
       "title": "StorageSwitch",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "StorageController",
+      "isAbstract": false,
+      "members": [],
       "id": "StorageController",
-      "type": "Entity",
+      "type": "Class",
       "label": "StorageController",
       "title": "StorageController",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Contact",
+      "members": [
+        {
+          "name": "location",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "region",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "country",
+          "isStatic": false,
+          "accessor": "-",
+          "type": ""
+        },
+        {
+          "name": "city",
+          "isStatic": false,
+          "accessor": "-",
+          "type": ""
+        },
+        {
+          "name": "building",
+          "isStatic": false,
+          "accessor": "-",
+          "type": ""
+        },
+        {
+          "name": "floor",
+          "isStatic": false,
+          "accessor": "-",
+          "type": ""
+        },
+        {
+          "name": "room",
+          "isStatic": false,
+          "accessor": "-",
+          "type": ""
+        },
+        {
+          "name": "locationDetail",
+          "isStatic": false,
+          "accessor": "-",
+          "type": ""
+        }
+      ],
       "id": "Contact",
-      "type": "Entity",
+      "type": "Interface",
       "label": "Contact",
       "title": "Contact",
-      "shape": "box",
       "hidden": true
     },
     {
-      "id": "location",
+      "name": "location",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "location",
       "label": "location",
       "title": "location",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "region",
+      "name": "region",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "region",
       "label": "region",
       "title": "region",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "country",
+      "name": "country",
+      "isStatic": false,
+      "accessor": "-",
       "type": "Attribute",
+      "id": "country",
       "label": "country",
       "title": "country",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "city",
+      "name": "city",
+      "isStatic": false,
+      "accessor": "-",
       "type": "Attribute",
+      "id": "city",
       "label": "city",
       "title": "city",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "building",
+      "name": "building",
+      "isStatic": false,
+      "accessor": "-",
       "type": "Attribute",
+      "id": "building",
       "label": "building",
       "title": "building",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "floor",
+      "name": "floor",
+      "isStatic": false,
+      "accessor": "-",
       "type": "Attribute",
+      "id": "floor",
       "label": "floor",
       "title": "floor",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "room",
+      "name": "room",
+      "isStatic": false,
+      "accessor": "-",
       "type": "Attribute",
+      "id": "room",
       "label": "room",
       "title": "room",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "locationDetail",
+      "name": "locationDetail",
+      "isStatic": false,
+      "accessor": "-",
       "type": "Attribute",
+      "id": "locationDetail",
       "label": "locationDetail",
       "title": "locationDetail",
-      "shape": "circle",
       "hidden": true
     },
     {
+      "name": "Location",
+      "members": [],
       "id": "Location",
-      "type": "Entity",
+      "type": "Interface",
       "label": "Location",
       "title": "Location",
-      "shape": "box",
       "hidden": true
     }
   ],

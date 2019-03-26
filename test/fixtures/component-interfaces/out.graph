@@ -1,19 +1,21 @@
 {
   "nodes": [
     {
+      "name": "IMath",
+      "members": [],
       "id": "IMath",
-      "type": "Entity",
+      "type": "Interface",
       "label": "IMath",
       "title": "IMath",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Items",
+      "members": [],
       "id": "Items",
-      "type": "Entity",
+      "type": "Interface",
       "label": "Items",
       "title": "Items",
-      "shape": "box",
       "hidden": true
     }
   ],

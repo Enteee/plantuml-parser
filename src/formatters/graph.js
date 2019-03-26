@@ -4,6 +4,7 @@ const { join } = require('path');
 const Class = require(join(conf.src.dir, 'class'));
 const Interface = require(join(conf.src.dir, 'interface'));
 const Relationship = require(join(conf.src.dir, 'relationship'));
+const MemberVariable = require(join(conf.src.dir, 'memberVariable'));
 
 module.exports = function (ast) {
   const nodes = [];
@@ -12,31 +13,35 @@ module.exports = function (ast) {
   function parseAst (node) {
     if (node instanceof Class || node instanceof Interface) {
       nodes.push({
+        ...node,
         id: node.name,
-        type: 'Entity',
+        type: node.constructor.name,
         label: node.name,
         title: node.name,
-        shape: 'box',
         hidden: true
       });
-      node.members.forEach(
+      node.members
+        .filter(
+          (attribute) => attribute instanceof MemberVariable
+        )
+        .forEach(
         (attribute) => {
-          nodes.push({
-            id: attribute.name,
-            type: 'Attribute',
-            label: attribute.name,
-            title: attribute.name,
-            shape: 'circle',
-            hidden: true
-          });
-          edges.push({
-            from: node.name,
-            to: attribute.name,
-            label: 'has',
-            hidden: true
-          });
-        }
-      );
+            nodes.push({
+              ...attribute,
+              id: attribute.name,
+              type: 'Attribute',
+              label: attribute.name,
+              title: attribute.name,
+              hidden: true
+            });
+            edges.push({
+              from: node.name,
+              to: attribute.name,
+              label: 'has',
+              hidden: true
+            });
+          }
+        );
     } else if (node instanceof Relationship) {
       edges.push({
         from: node.left,

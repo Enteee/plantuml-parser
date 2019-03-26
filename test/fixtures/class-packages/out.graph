@@ -1,51 +1,63 @@
 {
   "nodes": [
     {
+      "name": "Worker1",
+      "isAbstract": false,
+      "members": [],
       "id": "Worker1",
-      "type": "Entity",
+      "type": "Class",
       "label": "Worker1",
       "title": "Worker1",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Worker2",
+      "isAbstract": false,
+      "members": [],
       "id": "Worker2",
-      "type": "Entity",
+      "type": "Class",
       "label": "Worker2",
       "title": "Worker2",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Worker3",
+      "isAbstract": false,
+      "members": [],
       "id": "Worker3",
-      "type": "Entity",
+      "type": "Class",
       "label": "Worker3",
       "title": "Worker3",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Worker4",
+      "isAbstract": false,
+      "members": [],
       "id": "Worker4",
-      "type": "Entity",
+      "type": "Class",
       "label": "Worker4",
       "title": "Worker4",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Worker5",
+      "isAbstract": false,
+      "members": [],
       "id": "Worker5",
-      "type": "Entity",
+      "type": "Class",
       "label": "Worker5",
       "title": "Worker5",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Worker6",
+      "isAbstract": false,
+      "members": [],
       "id": "Worker6",
-      "type": "Entity",
+      "type": "Class",
       "label": "Worker6",
       "title": "Worker6",
-      "shape": "box",
       "hidden": true
     }
   ],

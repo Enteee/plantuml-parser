@@ -1,51 +1,67 @@
 {
   "nodes": [
     {
+      "name": "Dwelling",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "Windows",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "Int"
+        },
+        {
+          "name": "Lock",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        }
+      ],
       "id": "Dwelling",
-      "type": "Entity",
+      "type": "Class",
       "label": "Dwelling",
       "title": "Dwelling",
-      "shape": "box",
       "hidden": true
     },
     {
-      "id": "Windows",
+      "name": "Windows",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "Windows",
       "label": "Windows",
       "title": "Windows",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "Lock",
-      "type": "Attribute",
-      "label": "Lock",
-      "title": "Lock",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
+      "name": "Apartment",
+      "isAbstract": false,
+      "members": [],
       "id": "Apartment",
-      "type": "Entity",
+      "type": "Class",
       "label": "Apartment",
       "title": "Apartment",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "House",
+      "isAbstract": false,
+      "members": [],
       "id": "House",
-      "type": "Entity",
+      "type": "Class",
       "label": "House",
       "title": "House",
-      "shape": "box",
       "hidden": true
     },
     {
+      "name": "Commune",
+      "isAbstract": false,
+      "members": [],
       "id": "Commune",
-      "type": "Entity",
+      "type": "Class",
       "label": "Commune",
       "title": "Commune",
-      "shape": "box",
       "hidden": true
     }
   ],
@@ -53,12 +69,6 @@
     {
       "from": "Dwelling",
       "to": "Windows",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Dwelling",
-      "to": "Lock",
       "label": "has",
       "hidden": true
     }

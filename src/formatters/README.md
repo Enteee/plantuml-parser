@@ -40,6 +40,7 @@ abstract class UMLElement {
 }
 
 abstract class Entity {
+  members
 }
 Entity --|> UMLElement
 Entity -- Entity
@@ -61,8 +62,9 @@ Interface -- Component
 (Interface, Component) .. consumes
 
 class Attribute << (N,#00FF00) >> {
+  isStatic
+  accessor
   type
-  format
 }
 Attribute --|> UMLElement
 

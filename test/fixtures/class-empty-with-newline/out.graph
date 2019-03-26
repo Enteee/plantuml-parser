@@ -1,11 +1,13 @@
 {
   "nodes": [
     {
+      "name": "AbstractList",
+      "isAbstract": false,
+      "members": [],
       "id": "AbstractList",
-      "type": "Entity",
+      "type": "Class",
       "label": "AbstractList",
       "title": "AbstractList",
-      "shape": "box",
       "hidden": true
     }
   ],

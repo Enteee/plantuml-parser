@@ -1,11 +1,13 @@
 {
   "nodes": [
     {
+      "name": "Car",
+      "isAbstract": false,
+      "members": [],
       "id": "Car",
-      "type": "Entity",
+      "type": "Class",
       "label": "Car",
       "title": "Car",
-      "shape": "box",
       "hidden": true
     }
   ],

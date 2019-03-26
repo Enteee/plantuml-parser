@@ -1,99 +1,157 @@
 {
   "nodes": [
     {
+      "name": "Car",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "Field",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "-",
+          "type": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "#",
+          "type": ""
+        },
+        {
+          "name": "Method",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "-",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "#",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "Static",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        },
+        {
+          "name": "Abstract",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        }
+      ],
       "id": "Car",
-      "type": "Entity",
+      "type": "Class",
       "label": "Car",
       "title": "Car",
-      "shape": "box",
       "hidden": true
     },
     {
-      "id": "Field",
+      "name": "Field",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "Field",
       "label": "Field",
       "title": "Field",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "Name",
+      "name": "Name",
+      "isStatic": false,
+      "accessor": "-",
       "type": "Attribute",
+      "id": "Name",
       "label": "Name",
       "title": "Name",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "Name",
+      "name": "Name",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "Name",
       "label": "Name",
       "title": "Name",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "Name",
+      "name": "Name",
+      "isStatic": false,
+      "accessor": "#",
       "type": "Attribute",
+      "id": "Name",
       "label": "Name",
       "title": "Name",
-      "shape": "circle",
       "hidden": true
     },
     {
+      "name": "Method",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
       "id": "Method",
-      "type": "Attribute",
       "label": "Method",
       "title": "Method",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "Name",
+      "name": "Static",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
-      "label": "Name",
-      "title": "Name",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
-      "id": "Name",
-      "type": "Attribute",
-      "label": "Name",
-      "title": "Name",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
-      "id": "Name",
-      "type": "Attribute",
-      "label": "Name",
-      "title": "Name",
-      "shape": "circle",
-      "hidden": true
-    },
-    {
       "id": "Static",
-      "type": "Attribute",
       "label": "Static",
       "title": "Static",
-      "shape": "circle",
       "hidden": true
     },
     {
-      "id": "Abstract",
+      "name": "Abstract",
+      "isStatic": false,
+      "accessor": "+",
       "type": "Attribute",
+      "id": "Abstract",
       "label": "Abstract",
       "title": "Abstract",
-      "shape": "circle",
       "hidden": true
     },
     {
+      "name": "Car",
+      "isAbstract": false,
+      "members": [],
       "id": "Car",
-      "type": "Entity",
+      "type": "Class",
       "label": "Car",
       "title": "Car",
-      "shape": "box",
       "hidden": true
     }
   ],
@@ -125,24 +183,6 @@
     {
       "from": "Car",
       "to": "Method",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
-      "to": "Name",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
-      "to": "Name",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
-      "to": "Name",
       "label": "has",
       "hidden": true
     },
