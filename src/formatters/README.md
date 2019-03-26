@@ -33,12 +33,12 @@ Entity -- Entity
 Entity -- Attribute
 (Entity, Attribute) .. has
 
-class Class << (N,#0000FF) >> {
+class Class << (N,#00FF00) >> {
   isAbstract
 }
 Class --|> Entity
 
-class Interface << (N,#0000FF) >> {
+class Interface << (N,#00FF00) >> {
 }
 Interface --|> Entity
 Interface -- Component
@@ -46,19 +46,19 @@ Interface -- Component
 Interface -- Component
 (Interface, Component) .. consumes
 
-class Attribute << (N,#0000FF) >> {
+class Attribute << (N,#00FF00) >> {
   type
   format
 }
 Attribute --|> UMLElement
 
-class File << (N,#0000FF) >> {
+class File << (N,#00FF00) >> {
   path
 }
 File -- UMLElement
 (File, UMLElement) .. storedIn
 
-class Component << (N,#0000FF) >> {
+class Component << (N,#00FF00) >> {
 }
 Component --|> UMLElement
 @enduml
