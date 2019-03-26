@@ -31,6 +31,12 @@
       "hidden": true
     },
     {
+      "from": "Business Logic",
+      "to": "Math",
+      "label": "has",
+      "hidden": true
+    },
+    {
       "from": "DA",
       "to": "Items",
       "label": "has",

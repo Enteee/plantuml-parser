@@ -1,10 +1,12 @@
 [
   [
     {
-      "text": "This is a note to the right"
+      "text": "This is a note to the right",
+      "of": ""
     },
     {
-      "text": "This is a note to the left"
+      "text": "This is a note to the left",
+      "of": ""
     }
   ]
 ]

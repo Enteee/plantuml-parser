@@ -19,17 +19,20 @@
           "members": []
         },
         {
-          "text": "This is a web\\nService Interface"
+          "text": "This is a web\\nService Interface",
+          "of": "Math"
         },
         {
-          "text": "Notice the\\nlabel below"
+          "text": "Notice the\\nlabel below",
+          "of": "Math"
         },
         {
           "name": "Items",
           "members": []
         },
         {
-          "text": "A note can also\n        be on several lines\n        like this one"
+          "text": "A note can also\n        be on several lines\n        like this one",
+          "of": "Business Logic"
         }
       ]
     },
@@ -59,6 +62,17 @@
       "leftCardinality": "",
       "rightCardinality": "",
       "name": ""
+    },
+    {
+      "left": "Business Logic",
+      "right": "Math",
+      "leftType": "",
+      "rightType": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "name": "Web Services"
     },
     {
       "left": "DA",

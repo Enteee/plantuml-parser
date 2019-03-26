@@ -166,7 +166,8 @@
             "members": []
           },
           {
-            "text": "Hardware providing\n      input/output from/to \n      the physical world"
+            "text": "Hardware providing\n      input/output from/to \n      the physical world",
+            "of": ""
           },
           {
             "left": "Peripheral",
@@ -218,7 +219,8 @@
               "members": []
             },
             {
-              "text": "* Xerox"
+              "text": "* Xerox",
+              "of": ""
             },
             {
               "left": "MultiFunctionPeripheral",
@@ -246,7 +248,8 @@
             ]
           },
           {
-            "text": "Hardware operating in \n      the physical-, network-,\n          transport- or application-layer"
+            "text": "Hardware operating in \n      the physical-, network-,\n          transport- or application-layer",
+            "of": ""
           },
           {
             "left": "NetworkDevice",
@@ -313,7 +316,8 @@
             "members": []
           },
           {
-            "text": "* Blue Coat"
+            "text": "* Blue Coat",
+            "of": ""
           },
           {
             "left": "Proxy",
@@ -348,7 +352,8 @@
             "members": []
           },
           {
-            "text": "* Infoblox\n      * WAM"
+            "text": "* Infoblox\n      * WAM",
+            "of": ""
           },
           {
             "left": "NetworkManagement",
@@ -375,7 +380,8 @@
             ]
           },
           {
-            "text": "Hardware providing\n      auxiliry services\n      for IT operations"
+            "text": "Hardware providing\n      auxiliry services\n      for IT operations",
+            "of": ""
           },
           {
             "left": "Infrastructure",
@@ -395,7 +401,8 @@
               "members": []
             },
             {
-              "text": "Automatic\n              Transfer\n              Switch"
+              "text": "Automatic\n              Transfer\n              Switch",
+              "of": ""
             },
             {
               "left": "ATS",
@@ -414,7 +421,8 @@
               "members": []
             },
             {
-              "text": "Keyboard\n              Video \n              Mouse"
+              "text": "Keyboard\n              Video \n              Mouse",
+              "of": ""
             },
             {
               "left": "KVM",
@@ -433,7 +441,8 @@
               "members": []
             },
             {
-              "text": "Power\n              Distribution\n              Unit"
+              "text": "Power\n              Distribution\n              Unit",
+              "of": ""
             },
             {
               "left": "PDU",
@@ -452,7 +461,8 @@
               "members": []
             },
             {
-              "text": "Uninterruptable\n              Power\n              Supply"
+              "text": "Uninterruptable\n              Power\n              Supply",
+              "of": ""
             },
             {
               "left": "UPS",
@@ -471,7 +481,8 @@
               "members": []
             },
             {
-              "text": "Hardware\n              Security\n              Module\n              Generates and stores\n              keys and certificats"
+              "text": "Hardware\n              Security\n              Module\n              Generates and stores\n              keys and certificats",
+              "of": ""
             },
             {
               "left": "HSM",
@@ -490,7 +501,8 @@
               "members": []
             },
             {
-              "text": "* Badge Reader\t\t\t\n              * Vein Scanner"
+              "text": "* Badge Reader\t\t\t\n              * Vein Scanner",
+              "of": ""
             },
             {
               "left": "AccessControl",
@@ -518,7 +530,8 @@
             ]
           },
           {
-            "text": "Hardware connecting\n      people"
+            "text": "Hardware connecting\n      people",
+            "of": ""
           },
           {
             "left": "Telecomdevice",
@@ -554,7 +567,8 @@
               "members": []
             },
             {
-              "text": "* Cisco Telephones"
+              "text": "* Cisco Telephones",
+              "of": ""
             },
             {
               "left": "Voice",
@@ -610,7 +624,8 @@
             ]
           },
           {
-            "text": "Provides a scalable\n      and reliable service"
+            "text": "Provides a scalable\n      and reliable service",
+            "of": ""
           },
           {
             "left": "Cluster",
@@ -798,7 +813,8 @@
               "members": []
             },
             {
-              "text": "Instances: Processes"
+              "text": "Instances: Processes",
+              "of": ""
             },
             {
               "left": "SoftwareCluster",
@@ -817,10 +833,12 @@
               "members": []
             },
             {
-              "text": "Instances: Containers"
+              "text": "Instances: Containers",
+              "of": ""
             },
             {
-              "text": "* OpenShift\n          * Kubernetes"
+              "text": "* OpenShift\n          * Kubernetes",
+              "of": "ContainerCluster"
             },
             {
               "left": "ContainerCluster",
@@ -839,10 +857,12 @@
               "members": []
             },
             {
-              "text": "Instances: Virtual Machines"
+              "text": "Instances: Virtual Machines",
+              "of": ""
             },
             {
-              "text": "* vSphere\n          * IBM PowerHA SystemMirror"
+              "text": "* vSphere\n          * IBM PowerHA SystemMirror",
+              "of": "VMCluster"
             },
             {
               "left": "VMCluster",
@@ -861,7 +881,8 @@
               "members": []
             },
             {
-              "text": "Instances: Storage Containers"
+              "text": "Instances: Storage Containers",
+              "of": ""
             },
             {
               "left": "StorageCluster",
@@ -1061,7 +1082,8 @@
             ]
           },
           {
-            "text": "Hardware providing\n      long term persistance\n      of information"
+            "text": "Hardware providing\n      long term persistance\n      of information",
+            "of": ""
           },
           {
             "left": "Storage",
@@ -1097,7 +1119,8 @@
               "members": []
             },
             {
-              "text": "Network\n          Attached\n          Storage\n          Exports a file system\n          Clients communicate with\n          the NAS using a NFS-like\n          protocol: Operations are\n          file system operations"
+              "text": "Network\n          Attached\n          Storage\n          Exports a file system\n          Clients communicate with\n          the NAS using a NFS-like\n          protocol: Operations are\n          file system operations",
+              "of": ""
             },
             {
               "left": "NAS",
@@ -1116,7 +1139,8 @@
               "members": []
             },
             {
-              "text": "Storage\n          Area\n          Network\n          Exports a block device\n          Clients communicate with\n          the SAN using a SCSI-like\n          protocol: Operations are\n          block device operations"
+              "text": "Storage\n          Area\n          Network\n          Exports a block device\n          Clients communicate with\n          the SAN using a SCSI-like\n          protocol: Operations are\n          block device operations",
+              "of": ""
             },
             {
               "left": "SAN",
@@ -1218,7 +1242,8 @@
             ]
           },
           {
-            "text": "All internal attributes\n      are automatically \n      populated by \n      Service Manager\n      based on the location\n      attribute"
+            "text": "All internal attributes\n      are automatically \n      populated by \n      Service Manager\n      based on the location\n      attribute",
+            "of": "Contact"
           },
           {
             "left": "Contact",

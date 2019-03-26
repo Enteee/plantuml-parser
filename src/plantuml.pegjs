@@ -109,17 +109,38 @@ GroupType
 //
 
 Note
-  = _ "note " _ (!(":" / NewLine) .)+ _ ":" _ text:(!NewLine .)+ EndLine
+  = _ "note " _ Direction _ of:NoteOf? ":" _ text:(!NewLine .)+ EndLine
   {
     return new (require('./note'))(
-      text.map((c) => c[1]).join('').trim()
+      text.map((c) => c[1]).join('').trim(),
+      of
     )
   }
-  / _ "note " _ (!(":" / NewLine) .)+ NewLine text:(!"end note" .)+ "end note" EndLine
+  / _ "note " _ Direction _ of:NoteOf? _ NewLine text:(!(_ "end note" NewLine) .)+ EndLine
   {
     return new (require('./note'))(
-      text.map((c) => c[1]).join('').trim()
+      text.map((c) => c[1]).join('').trim(),
+      of
     )
+  }
+  / _ "note " _ Direction _ of:NoteOf? _ NewLine text:(!(_ "end note" NewLine) .)+ EndLine
+  {
+    return new (require('./note'))(
+      text.map((c) => c[1]).join('').trim(),
+      of
+    )
+  }
+  / _ "note " _ text:QuotedString _ "as " Name EndLine
+  {
+    return new (require('./note'))(
+      text,
+    )
+  }
+
+NoteOf
+  = "of " _ elementName:ElementName
+  {
+    return elementName;
   }
 
 //
@@ -336,9 +357,17 @@ QuotedString
   {
     return string.map((c) => c[1]).join('').trim();
   }
+  / "[" string:(!("]" / NewLine) .)+ "]"
+  {
+    return string.map((c) => c[1]).join('').trim();
+  }
+  / "(" string:(!(")" / NewLine) .)+ ")"
+  {
+    return string.map((c) => c[1]).join('').trim();
+  }
 
 Name
-  = name:([A-Za-z0-9._]+)
+  = [[(]? name:([A-Za-z0-9._]+) [\])]?
   {
     return name.join('');
   }
@@ -369,6 +398,8 @@ Direction
   / "right"i
   / "up"i
   / "down"i
+  / "top"i
+  / "bottom"i
 
 //
 // Meta

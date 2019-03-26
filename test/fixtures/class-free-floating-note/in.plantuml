@@ -1,0 +1,3 @@
+@startuml
+note "This note free floating and has a Name" as FreeFloat
+@enduml

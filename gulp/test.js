@@ -15,7 +15,8 @@ const formatters = require(conf.formatters.dir);
 task('test-run', () =>
   src(join(conf.test.dir, 'test.js'), { read: false })
     .pipe(mocha({
-      bail: true
+      // Stop on first error
+      bail: false
     }))
 );
 

@@ -1,10 +1,12 @@
 [
   [
     {
-      "text": "Single line note"
+      "text": "Single line note",
+      "of": "Hungry"
     },
     {
-      "text": "Notes can also\n    take up multiple\n    lines like this"
+      "text": "Notes can also\n    take up multiple\n    lines like this",
+      "of": "EatingBurrito"
     },
     {
       "left": "Hungry",
