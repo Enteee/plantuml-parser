@@ -10,15 +10,29 @@ class storedIn << (E,#FF0000) >> {
 }
 class implements << (E,#FF0000) >> {
 }
+note top
+  Entity --|> Entity
+end note
 class exposes << (E,#FF0000) >> {
-  type
+  implementation
   availability
 }
+note top
+  Component -- Interface: ...
+  Interface -- Component: ...
+end note
+
 class consumes << (E,#FF0000) >> {
+  direction
+  method
   frequency
   serviceAccount
   criticality
 }
+note top 
+  Interface <.. Component: direction = In, ...
+  Interface ..> Component: direction = Out, ...
+end note
 
 abstract class UMLElement {
   name
