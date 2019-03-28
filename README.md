@@ -140,21 +140,22 @@ $ npm test
 ```
 
 This will run:
- * unit test
+ * unit tests
  * code coverage
  * eslint
 
-## Contribute
+## Contribute :heart:
 
-Every contribution counts! Please,
+Every contribution counts. Please,
 
 * ... submit unparsable diagrams via [new issue](https://github.com/Enteee/plantuml-parser/issues/new).
 * ... extend the parser by [forking](https://github.com/Enteee/plantuml-parser/fork) and [creating a Pull Request](https://github.com/Enteee/plantuml-parser/compare)
 
-When contributing code, always also update the fixtures:
+When contributing code, always also update the fixtures and run tests.
 
 ```
 $ npm run fixtures
+$ npm test
 $ git commit
 ```
 
