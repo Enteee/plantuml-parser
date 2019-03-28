@@ -433,12 +433,6 @@
       "to": "password",
       "label": "has",
       "hidden": true
-    },
-    {
-      "from": "Object",
-      "to": "ArrayList",
-      "label": "has",
-      "hidden": true
     }
   ]
 }

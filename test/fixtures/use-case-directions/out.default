@@ -2,25 +2,68 @@
   [
     {
       "left": "A",
-      "right": "left",
-      "leftType": "",
-      "rightType": "",
+      "right": "Login",
+      "leftType": "Unknown",
+      "rightType": "UseCase",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     },
     {
       "left": "A",
-      "right": "up",
-      "leftType": "",
-      "rightType": "",
+      "right": "Logout",
+      "leftType": "Unknown",
+      "rightType": "UseCase",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
+    },
+    {
+      "left": "A",
+      "right": "Copy / Paste",
+      "leftType": "Unknown",
+      "rightType": "UseCase",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": ""
+    },
+    {
+      "left": "A",
+      "right": "Bulk Upload",
+      "leftType": "Unknown",
+      "rightType": "UseCase",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": ""
+    },
+    {
+      "left": "A",
+      "right": "Throw Computer Out Of Window!!!",
+      "leftType": "Unknown",
+      "rightType": "UseCase",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": ""
     }
   ]
 ]

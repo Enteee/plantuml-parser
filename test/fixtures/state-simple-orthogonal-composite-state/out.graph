@@ -1,17 +1,13 @@
 {
-  "nodes": [],
-  "edges": [
+  "nodes": [
     {
-      "from": "NeilDiamond",
-      "to": "Right",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "NDoff",
-      "to": "Left",
-      "label": "has",
+      "name": "*",
+      "id": "*",
+      "type": "Component",
+      "label": "*",
+      "title": "*",
       "hidden": true
     }
-  ]
+  ],
+  "edges": []
 }

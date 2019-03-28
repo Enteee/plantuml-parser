@@ -1,4 +1,13 @@
 {
-  "nodes": [],
+  "nodes": [
+    {
+      "name": "*",
+      "id": "*",
+      "type": "Component",
+      "label": "*",
+      "title": "*",
+      "hidden": true
+    }
+  ],
   "edges": []
 }

@@ -3,46 +3,54 @@
     {
       "left": "Germany",
       "right": "France",
-      "leftType": "Generalization",
-      "rightType": "",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "<|",
+      "rightArrowHead": "",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     },
     {
       "left": "Spain",
       "right": "USA",
-      "leftType": "Composition",
-      "rightType": "",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "*",
+      "rightArrowHead": "",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     },
     {
       "left": "Mexico",
       "right": "Russia",
-      "leftType": "Aggregation",
-      "rightType": "",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "o",
+      "rightArrowHead": "",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     },
     {
       "left": "Canada",
       "right": "Japan",
-      "leftType": "",
-      "rightType": "",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": "",
       "leftArrowBody": ".",
       "rightArrowBody": ".",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     }
   ]
 ]

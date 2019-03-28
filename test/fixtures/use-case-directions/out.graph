@@ -1,17 +1,4 @@
 {
   "nodes": [],
-  "edges": [
-    {
-      "from": "A",
-      "to": "left",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "A",
-      "to": "up",
-      "label": "has",
-      "hidden": true
-    }
-  ]
+  "edges": []
 }

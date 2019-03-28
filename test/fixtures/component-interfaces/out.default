@@ -1,6 +1,15 @@
 [
   [
     {
+      "name": "Business Logic"
+    },
+    {
+      "name": "Data Access"
+    },
+    {
+      "name": "Graphic User\\nInterface"
+    },
+    {
       "name": "IMath",
       "members": []
     },
@@ -9,26 +18,20 @@
       "members": []
     },
     {
-      "left": "Business Logic",
-      "right": "Math",
-      "leftType": "",
-      "rightType": "",
-      "leftArrowBody": "-",
-      "rightArrowBody": "-",
-      "leftCardinality": "",
-      "rightCardinality": "",
-      "name": ""
+      "name": "Business Logic"
     },
     {
       "left": "DA",
       "right": "Items",
-      "leftType": "",
-      "rightType": "",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": "",
       "leftArrowBody": ".",
       "rightArrowBody": ".",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     }
   ]
 ]

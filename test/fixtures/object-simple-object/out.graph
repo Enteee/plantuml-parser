@@ -1,29 +1,4 @@
 {
   "nodes": [],
-  "edges": [
-    {
-      "from": "Germany",
-      "to": "France",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Spain",
-      "to": "USA",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Mexico",
-      "to": "Russia",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Canada",
-      "to": "Japan",
-      "label": "has",
-      "hidden": true
-    }
-  ]
+  "edges": []
 }

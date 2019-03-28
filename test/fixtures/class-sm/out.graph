@@ -1152,74 +1152,8 @@
       "hidden": true
     },
     {
-      "from": "Peripheral",
-      "to": "CI",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Printer",
-      "to": "Peripheral",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "CCTV",
-      "to": "Peripheral",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "MultiFunctionPeripheral",
-      "to": "Peripheral",
-      "label": "has",
-      "hidden": true
-    },
-    {
       "from": "NetworkDevice",
       "to": "location",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "NetworkDevice",
-      "to": "CI",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Switch",
-      "to": "NetworkDevice",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Router",
-      "to": "NetworkDevice",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Firewall",
-      "to": "NetworkDevice",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Proxy",
-      "to": "NetworkDevice",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "LoadBalancer",
-      "to": "NetworkDevice",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "NetworkManagement",
-      "to": "NetworkDevice",
       "label": "has",
       "hidden": true
     },
@@ -1230,74 +1164,8 @@
       "hidden": true
     },
     {
-      "from": "Infrastructure",
-      "to": "CI",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "ATS",
-      "to": "Infrastructure",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "KVM",
-      "to": "Infrastructure",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "PDU",
-      "to": "Infrastructure",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "UPS",
-      "to": "Infrastructure",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "HSM",
-      "to": "Infrastructure",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "AccessControl",
-      "to": "Infrastructure",
-      "label": "has",
-      "hidden": true
-    },
-    {
       "from": "Telecomdevice",
       "to": "location",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Telecomdevice",
-      "to": "CI",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Gateway",
-      "to": "Telecomdevice",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Voice",
-      "to": "Telecomdevice",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Video",
-      "to": "Telecomdevice",
       "label": "has",
       "hidden": true
     },
@@ -1320,74 +1188,8 @@
       "hidden": true
     },
     {
-      "from": "Cluster",
-      "to": "CI",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "SoftwareCluster",
-      "to": "Cluster",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "ContainerCluster",
-      "to": "Cluster",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "VMCluster",
-      "to": "Cluster",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "StorageCluster",
-      "to": "Cluster",
-      "label": "has",
-      "hidden": true
-    },
-    {
       "from": "Storage",
       "to": "location",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Storage",
-      "to": "CI",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "TapeLibrary",
-      "to": "Storage",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "NAS",
-      "to": "Storage",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "SAN",
-      "to": "Storage",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "StorageSwitch",
-      "to": "Storage",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "StorageController",
-      "to": "Storage",
       "label": "has",
       "hidden": true
     },
@@ -1440,15 +1242,213 @@
       "hidden": true
     },
     {
+      "from": "Peripheral",
+      "to": "CI",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "Printer",
+      "to": "Peripheral",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "CCTV",
+      "to": "Peripheral",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "MultiFunctionPeripheral",
+      "to": "Peripheral",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "NetworkDevice",
+      "to": "CI",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "Switch",
+      "to": "NetworkDevice",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "Router",
+      "to": "NetworkDevice",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "Firewall",
+      "to": "NetworkDevice",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "Proxy",
+      "to": "NetworkDevice",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "LoadBalancer",
+      "to": "NetworkDevice",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "NetworkManagement",
+      "to": "NetworkDevice",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "Infrastructure",
+      "to": "CI",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "ATS",
+      "to": "Infrastructure",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "KVM",
+      "to": "Infrastructure",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "PDU",
+      "to": "Infrastructure",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "UPS",
+      "to": "Infrastructure",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "HSM",
+      "to": "Infrastructure",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "AccessControl",
+      "to": "Infrastructure",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "Telecomdevice",
+      "to": "CI",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "Gateway",
+      "to": "Telecomdevice",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "Voice",
+      "to": "Telecomdevice",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "Video",
+      "to": "Telecomdevice",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "Cluster",
+      "to": "CI",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "SoftwareCluster",
+      "to": "Cluster",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "ContainerCluster",
+      "to": "Cluster",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "VMCluster",
+      "to": "Cluster",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "StorageCluster",
+      "to": "Cluster",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "Storage",
+      "to": "CI",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "TapeLibrary",
+      "to": "Storage",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "NAS",
+      "to": "Storage",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "SAN",
+      "to": "Storage",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "StorageSwitch",
+      "to": "Storage",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "StorageController",
+      "to": "Storage",
+      "name": "extends",
+      "hidden": true
+    },
+    {
       "from": "Contact",
       "to": "CI",
-      "label": "has",
+      "name": "extends",
       "hidden": true
     },
     {
       "from": "Location",
       "to": "CI",
-      "label": "has",
+      "name": "extends",
       "hidden": true
     }
   ]

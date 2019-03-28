@@ -77,35 +77,41 @@
     {
       "left": "ICar",
       "right": "Car",
-      "leftType": "()",
-      "rightType": "",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "()",
+      "rightArrowHead": "",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     },
     {
       "left": "ICar2",
       "right": "Car",
-      "leftType": "()",
-      "rightType": "",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "()",
+      "rightArrowHead": "",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     },
     {
       "left": "Car",
       "right": "ICar3",
-      "leftType": "",
-      "rightType": "()",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": "()",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     }
   ]
 ]

@@ -197,24 +197,6 @@
       "to": "Abstract",
       "label": "has",
       "hidden": true
-    },
-    {
-      "from": "ICar",
-      "to": "Car",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "ICar2",
-      "to": "Car",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
-      "to": "ICar3",
-      "label": "has",
-      "hidden": true
     }
   ]
 }

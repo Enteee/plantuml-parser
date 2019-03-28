@@ -93,33 +93,21 @@
       "hidden": true
     },
     {
-      "from": "Dwelling",
-      "to": "Apartment",
-      "label": "has",
+      "from": "Apartment",
+      "to": "Dwelling",
+      "name": "extends",
       "hidden": true
     },
     {
-      "from": "Dwelling",
-      "to": "Commune",
-      "label": "has",
+      "from": "Commune",
+      "to": "Dwelling",
+      "name": "extends",
       "hidden": true
     },
     {
-      "from": "Dwelling",
-      "to": "House",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Dwelling",
-      "to": "Window",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Dwelling",
-      "to": "Door",
-      "label": "has",
+      "from": "House",
+      "to": "Dwelling",
+      "name": "extends",
       "hidden": true
     }
   ]

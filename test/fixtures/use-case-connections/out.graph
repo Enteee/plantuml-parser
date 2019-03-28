@@ -1,23 +1,4 @@
 {
   "nodes": [],
-  "edges": [
-    {
-      "from": "Employee",
-      "to": "User",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Client",
-      "to": "User",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Supervisor",
-      "to": "User",
-      "label": "has",
-      "hidden": true
-    }
-  ]
+  "edges": []
 }

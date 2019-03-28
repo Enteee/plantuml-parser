@@ -1,6 +1,30 @@
 {
   "nodes": [
     {
+      "name": "Business Logic",
+      "id": "Business Logic",
+      "type": "Component",
+      "label": "Business Logic",
+      "title": "Business Logic",
+      "hidden": true
+    },
+    {
+      "name": "Data Access",
+      "id": "Data Access",
+      "type": "Component",
+      "label": "Data Access",
+      "title": "Data Access",
+      "hidden": true
+    },
+    {
+      "name": "Graphic User\\nInterface",
+      "id": "Graphic User\\nInterface",
+      "type": "Component",
+      "label": "Graphic User\\nInterface",
+      "title": "Graphic User\\nInterface",
+      "hidden": true
+    },
+    {
       "name": "IMath",
       "members": [],
       "id": "IMath",
@@ -17,20 +41,15 @@
       "label": "Items",
       "title": "Items",
       "hidden": true
-    }
-  ],
-  "edges": [
-    {
-      "from": "Business Logic",
-      "to": "Math",
-      "label": "has",
-      "hidden": true
     },
     {
-      "from": "DA",
-      "to": "Items",
-      "label": "has",
+      "name": "Business Logic",
+      "id": "Business Logic",
+      "type": "Component",
+      "label": "Business Logic",
+      "title": "Business Logic",
       "hidden": true
     }
-  ]
+  ],
+  "edges": []
 }

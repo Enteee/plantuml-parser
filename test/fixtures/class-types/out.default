@@ -178,13 +178,15 @@
     {
       "left": "Object",
       "right": "ArrayList",
-      "leftType": "Generalization",
-      "rightType": "",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "<|",
+      "rightArrowHead": "",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     }
   ]
 ]

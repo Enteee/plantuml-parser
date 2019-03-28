@@ -7,6 +7,7 @@ const { join, dirname } = require('path');
 const { writeFileSync } = require('fs');
 
 const mocha = require('gulp-mocha');
+const log = require('fancy-log');
 
 const Tracer = require('pegjs-backtrace');
 
@@ -31,12 +32,18 @@ task('test-fixtures-update-run', () =>
         // import parser here, because it might not exist
           // when outer scope is loaded.
           const { parse } = require(join(conf.src.dir, 'plantuml-trace'));
+          const destination = join(
+            dirname(file.path),
+            conf.fixtures.outputFilePrefix + name
+          );
           const tracer = new Tracer(
             content,
             {
               useColor: false
             }
           );
+
+          log.info('Updating: '+destination);
 
           const formatter = formatters[name];
 
@@ -62,10 +69,7 @@ task('test-fixtures-update-run', () =>
         );
         */
           writeFileSync(
-            join(
-              dirname(file.path),
-              conf.fixtures.outputFilePrefix + name
-            ),
+            destination,
             out,
             {
               encoding: conf.encoding

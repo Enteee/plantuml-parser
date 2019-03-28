@@ -10,47 +10,55 @@
     },
     {
       "left": "Hungry",
-      "right": "right",
-      "leftType": "",
-      "rightType": "",
+      "right": "EatingBurrito",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     },
     {
       "left": "EatingBurrito",
-      "right": "down",
-      "leftType": "",
-      "rightType": "",
+      "right": "Full",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     },
     {
       "left": "Full",
-      "right": "left",
-      "leftType": "",
-      "rightType": "",
+      "right": "Sleeping",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     },
     {
       "left": "Sleeping",
-      "right": "up",
-      "leftType": "",
-      "rightType": "",
+      "right": "Hungry",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     }
   ]
 ]

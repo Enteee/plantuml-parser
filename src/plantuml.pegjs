@@ -31,6 +31,8 @@ UMLElement
  / Class
  / Interface
  / Enum
+ / Component
+ / UseCase
  / Relationship
  / NotImplementedBlock
  / (!(
@@ -138,9 +140,9 @@ Note
   }
 
 NoteOf
-  = "of " _ elementName:ElementName
+  = "of " _ elementName:ElementReference
   {
-    return elementName;
+    return elementName.name;
   }
 
 //
@@ -256,38 +258,106 @@ Enum
   }
 
 //
+// Component
+//
+
+Component
+  = _ "component " _ name:ElementName _ Stereotype? EndLine
+  {
+    return new (require('./component'))(
+      name
+    );
+  }
+  / _ component:ShortComponent EndLine
+  {
+    return component;
+  }
+
+ShortComponent
+  = "[" name:(!("]" / NewLine) .)+ "]"
+  {
+    return new (require('./component'))(
+      name.map((c) => c[1]).join('').trim()
+    );
+  }
+
+//
+// UseCase
+//
+
+UseCase
+  = _ "usecase " _ name:ElementName EndLine
+  {
+    return new (require('./useCase'))(
+      name,
+    );
+  }
+  / _ useCase:ShortUseCase EndLine
+  {
+    return useCase;
+  }
+
+ShortUseCase
+  = "(" name:(!(")" / NewLine) .)+ ")"
+  {
+    return new (require('./useCase'))(
+      name.map((c) => c[1]).join('').trim()
+    );
+  }
+
+//
 // Relationship
 //
 
 Relationship
-  = _ left:ElementName _ leftCardinality:QuotedString? _ leftType:RelationshipType? leftArrowBody:RelationshipArrowBody Direction? rightArrowBody:RelationshipArrowBody rightType:RelationshipType? _ rightCardinality:QuotedString? _ right:ElementName _ name:(RelationshipName)? EndLine
+  = _ left:ElementReference _ leftCardinality:QuotedString? _ leftArrowHead:RelationshipArrowHead? leftArrowBody:RelationshipArrowBody Direction? rightArrowBody:RelationshipArrowBody rightArrowHead:RelationshipArrowHead? _ rightCardinality:QuotedString? _ right:ElementReference _ label:(RelationshipLabel)? EndLine
   {
     return new (require('./relationship'))(
-      left,
-      right,
-      leftType,
-      rightType,
+      left.name,
+      right.name,
+      left.type,
+      right.type,
+      leftArrowHead,
+      rightArrowHead,
       leftArrowBody,
       rightArrowBody,
       leftCardinality,
       rightCardinality,
-      name,
+      label,
     );
   }
-  / _ left:ElementName _ leftCardinality:QuotedString? _ leftType:RelationshipType? arrowBody:RelationshipArrowBody rightType:RelationshipType? _ rightCardinality:QuotedString? _ right:ElementName _ name:(RelationshipName)? EndLine
+  / _ left:ElementReference _ leftCardinality:QuotedString? _ leftArrowHead:RelationshipArrowHead? arrowBody:RelationshipArrowBody rightArrowHead:RelationshipArrowHead? _ rightCardinality:QuotedString? _ right:ElementReference _ label:(RelationshipLabel)? EndLine
   {
     return new (require('./relationship'))(
-      left,
-      right,
-      leftType,
-      rightType,
+      left.name,
+      right.name,
+      left.type,
+      right.type,
+      leftArrowHead,
+      rightArrowHead,
       arrowBody,
       arrowBody,
       leftCardinality,
       rightCardinality,
-      name,
+      label,
     );
   }
+
+RelationshipArrowHead
+  = "<|"
+  / "|>"
+  / "*"
+  / "o"
+  / "<"
+  / ">"
+  / "#"
+  / "x"
+  / "}"
+  / "+"
+  / "^"
+  / "()"
+  / "("
+  / ")"
 
 RelationshipArrowBody
   = [-]+
@@ -299,22 +369,11 @@ RelationshipArrowBody
     return '.';
   }
 
-RelationshipType
-  = "<|" { return "Generalization" }
-  / "|>" { return "Generalization" }
-  / "*" { return "Composition" }
-  / "o" { return "Aggregation" }
-  / "#"
-  / "x"
-  / "}"
-  / "+"
-  / "^"
-  / "()"
 
-RelationshipName
-  = ":" _ name:(!NewLine .)+
+RelationshipLabel
+  = ":" _ label:(!NewLine .)+
   {
-    return name.map((c) => c[1]).join('').trim()
+    return label.map((c) => c[1]).join('').trim()
   }
 
 //
@@ -334,6 +393,29 @@ NotImplementedBlockType
 /// Shared
 ///
 
+ElementReference
+  = element:ShortComponent
+  {
+    return {
+      name: element.name,
+      type: element.constructor.name,
+    }
+  }
+  / element:ShortUseCase
+  {
+    return {
+      name: element.name,
+      type: element.constructor.name,
+    }
+  }
+  / name:ElementName
+  {
+    return {
+      name: name,
+      type: 'Unknown',
+    }
+  }
+
 ElementName
   = _ QuotedString _ "as " _ name:Name _
   {
@@ -347,6 +429,14 @@ ElementName
   {
     return name;
   }
+  / "(" name:(!(")" / NewLine) .)+ ")"
+  {
+    return name.map((c) => c[1]).join('').trim();
+  }
+  / "[" name:(!("]" / NewLine) .)+ "]"
+  {
+    return name.map((c) => c[1]).join('').trim();
+  }
   / _ name:Name _
   {
     return name;
@@ -357,17 +447,9 @@ QuotedString
   {
     return string.map((c) => c[1]).join('').trim();
   }
-  / "[" string:(!("]" / NewLine) .)+ "]"
-  {
-    return string.map((c) => c[1]).join('').trim();
-  }
-  / "(" string:(!(")" / NewLine) .)+ ")"
-  {
-    return string.map((c) => c[1]).join('').trim();
-  }
 
 Name
-  = [[(]? name:([A-Za-z0-9._]+) [\])]?
+  = name:([A-Za-z0-9._]+)
   {
     return name.join('');
   }

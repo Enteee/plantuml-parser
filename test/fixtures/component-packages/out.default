@@ -3,7 +3,11 @@
     {
       "name": "Front End",
       "type": "package",
-      "elements": []
+      "elements": [
+        {
+          "name": "Graphic User\\nInterface"
+        }
+      ]
     },
     {
       "name": "Internet",
@@ -14,6 +18,12 @@
       "name": "Middle Tier",
       "type": "node",
       "elements": [
+        {
+          "name": "Business Logic"
+        },
+        {
+          "name": "Data Access"
+        },
         {
           "name": "IMath",
           "members": []
@@ -27,51 +37,69 @@
     {
       "name": "PostgreSQL\\n",
       "type": "database",
-      "elements": []
+      "elements": [
+        {
+          "name": "Stored Procs"
+        }
+      ]
     },
     {
       "left": "GUI",
-      "right": "down",
-      "leftType": "",
-      "rightType": "",
+      "right": "Internet",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     },
     {
       "left": "Internet",
-      "right": "down",
-      "leftType": "",
-      "rightType": "",
+      "right": "Math",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": "(",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     },
     {
-      "left": "Business Logic",
-      "right": "Math",
-      "leftType": "",
-      "rightType": "",
-      "leftArrowBody": "-",
-      "rightArrowBody": "-",
-      "leftCardinality": "",
-      "rightCardinality": "",
-      "name": ""
+      "name": "Business Logic"
     },
     {
       "left": "DA",
       "right": "Items",
-      "leftType": "",
-      "rightType": "",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": "",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
+    },
+    {
+      "name": "Business Logic"
+    },
+    {
+      "left": "DA",
+      "right": "Stored Procs",
+      "leftType": "Unknown",
+      "rightType": "Component",
+      "leftArrowHead": "",
+      "rightArrowHead": "",
+      "leftArrowBody": ".",
+      "rightArrowBody": ".",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": ""
     }
   ]
 ]

@@ -172,13 +172,15 @@
           {
             "left": "Peripheral",
             "right": "CI",
-            "leftType": "",
-            "rightType": "Generalization",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "|>",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "name": ""
+            "label": ""
           },
           [
             {
@@ -189,13 +191,15 @@
             {
               "left": "Printer",
               "right": "Peripheral",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "CCTV",
@@ -205,13 +209,15 @@
             {
               "left": "CCTV",
               "right": "Peripheral",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "MultiFunctionPeripheral",
@@ -225,13 +231,15 @@
             {
               "left": "MultiFunctionPeripheral",
               "right": "Peripheral",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             }
           ]
         ],
@@ -254,13 +262,15 @@
           {
             "left": "NetworkDevice",
             "right": "CI",
-            "leftType": "",
-            "rightType": "Generalization",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "|>",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "name": ""
+            "label": ""
           },
           {
             "name": "Switch",
@@ -270,13 +280,15 @@
           {
             "left": "Switch",
             "right": "NetworkDevice",
-            "leftType": "",
-            "rightType": "Generalization",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "|>",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "name": ""
+            "label": ""
           },
           {
             "name": "Router",
@@ -286,13 +298,15 @@
           {
             "left": "Router",
             "right": "NetworkDevice",
-            "leftType": "",
-            "rightType": "Generalization",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "|>",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "name": ""
+            "label": ""
           },
           {
             "name": "Firewall",
@@ -302,13 +316,15 @@
           {
             "left": "Firewall",
             "right": "NetworkDevice",
-            "leftType": "",
-            "rightType": "Generalization",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "|>",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "name": ""
+            "label": ""
           },
           {
             "name": "Proxy",
@@ -322,13 +338,15 @@
           {
             "left": "Proxy",
             "right": "NetworkDevice",
-            "leftType": "",
-            "rightType": "Generalization",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "|>",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "name": ""
+            "label": ""
           },
           {
             "name": "LoadBalancer",
@@ -338,13 +356,15 @@
           {
             "left": "LoadBalancer",
             "right": "NetworkDevice",
-            "leftType": "",
-            "rightType": "Generalization",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "|>",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "name": ""
+            "label": ""
           },
           {
             "name": "NetworkManagement",
@@ -358,13 +378,15 @@
           {
             "left": "NetworkManagement",
             "right": "NetworkDevice",
-            "leftType": "",
-            "rightType": "Generalization",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "|>",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "name": ""
+            "label": ""
           }
         ],
         [
@@ -386,13 +408,15 @@
           {
             "left": "Infrastructure",
             "right": "CI",
-            "leftType": "",
-            "rightType": "Generalization",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "|>",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "name": ""
+            "label": ""
           },
           [
             {
@@ -407,13 +431,15 @@
             {
               "left": "ATS",
               "right": "Infrastructure",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "KVM",
@@ -427,13 +453,15 @@
             {
               "left": "KVM",
               "right": "Infrastructure",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "PDU",
@@ -447,13 +475,15 @@
             {
               "left": "PDU",
               "right": "Infrastructure",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "UPS",
@@ -467,13 +497,15 @@
             {
               "left": "UPS",
               "right": "Infrastructure",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "HSM",
@@ -487,13 +519,15 @@
             {
               "left": "HSM",
               "right": "Infrastructure",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "AccessControl",
@@ -507,13 +541,15 @@
             {
               "left": "AccessControl",
               "right": "Infrastructure",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             }
           ]
         ],
@@ -536,13 +572,15 @@
           {
             "left": "Telecomdevice",
             "right": "CI",
-            "leftType": "",
-            "rightType": "Generalization",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "|>",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "name": ""
+            "label": ""
           },
           [
             {
@@ -553,13 +591,15 @@
             {
               "left": "Gateway",
               "right": "Telecomdevice",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "Voice",
@@ -573,13 +613,15 @@
             {
               "left": "Voice",
               "right": "Telecomdevice",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "Video",
@@ -589,13 +631,15 @@
             {
               "left": "Video",
               "right": "Telecomdevice",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             }
           ]
         ],
@@ -630,13 +674,15 @@
           {
             "left": "Cluster",
             "right": "CI",
-            "leftType": "",
-            "rightType": "Generalization",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "|>",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "name": ""
+            "label": ""
           },
           [
             [
@@ -819,13 +865,15 @@
             {
               "left": "SoftwareCluster",
               "right": "Cluster",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "ContainerCluster",
@@ -843,13 +891,15 @@
             {
               "left": "ContainerCluster",
               "right": "Cluster",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "VMCluster",
@@ -867,13 +917,15 @@
             {
               "left": "VMCluster",
               "right": "Cluster",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "StorageCluster",
@@ -887,13 +939,15 @@
             {
               "left": "StorageCluster",
               "right": "Cluster",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             [
               [
@@ -1088,13 +1142,15 @@
           {
             "left": "Storage",
             "right": "CI",
-            "leftType": "",
-            "rightType": "Generalization",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "|>",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "name": ""
+            "label": ""
           },
           [
             {
@@ -1105,13 +1161,15 @@
             {
               "left": "TapeLibrary",
               "right": "Storage",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "NAS",
@@ -1125,13 +1183,15 @@
             {
               "left": "NAS",
               "right": "Storage",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "SAN",
@@ -1145,13 +1205,15 @@
             {
               "left": "SAN",
               "right": "Storage",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "StorageSwitch",
@@ -1161,13 +1223,15 @@
             {
               "left": "StorageSwitch",
               "right": "Storage",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             },
             {
               "name": "StorageController",
@@ -1177,13 +1241,15 @@
             {
               "left": "StorageController",
               "right": "Storage",
-              "leftType": "",
-              "rightType": "Generalization",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "|>",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "name": ""
+              "label": ""
             }
           ]
         ],
@@ -1248,13 +1314,15 @@
           {
             "left": "Contact",
             "right": "CI",
-            "leftType": "",
-            "rightType": "Generalization",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "|>",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "name": ""
+            "label": ""
           }
         ],
         [
@@ -1265,13 +1333,15 @@
           {
             "left": "Location",
             "right": "CI",
-            "leftType": "",
-            "rightType": "Generalization",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "|>",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "name": ""
+            "label": ""
           }
         ],
         [

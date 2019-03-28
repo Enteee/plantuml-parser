@@ -6,18 +6,18 @@
 @startuml
 class has << (E,#FF0000) >> {
 }
-class storedIn << (E,#FF0000) >> {
-}
-class implements << (E,#FF0000) >> {
+
+class extends << (E,#FF0000) >> {
 }
 note top
   Entity --|> Entity
 end note
+
 class exposes << (E,#FF0000) >> {
   implementation
   availability
 }
-note top
+note left
   Component -- Interface: ...
   Interface -- Component: ...
 end note
@@ -29,9 +29,12 @@ class consumes << (E,#FF0000) >> {
   serviceAccount
   criticality
 }
-note top 
-  Interface <.. Component: direction = In, ...
+note right
   Interface ..> Component: direction = Out, ...
+  Interface <.. Component: direction = In, ...
+
+  Component ..> Interface: direction = In, ...
+  Component <.. Interface: direction = Out, ...
 end note
 
 abstract class UMLElement {
@@ -40,11 +43,10 @@ abstract class UMLElement {
 }
 
 abstract class Entity {
-  members
 }
 Entity --|> UMLElement
 Entity -- Entity
-(Entity, Entity) .. implements
+(Entity, Entity) .. extends
 Entity -- Attribute
 (Entity, Attribute) .. has
 
@@ -62,17 +64,10 @@ Interface -- Component
 (Interface, Component) .. consumes
 
 class Attribute << (N,#00FF00) >> {
-  isStatic
-  accessor
   type
+  format
 }
 Attribute --|> UMLElement
-
-class File << (N,#00FF00) >> {
-  path
-}
-File -- UMLElement
-(File, UMLElement) .. storedIn
 
 class Component << (N,#00FF00) >> {
 }

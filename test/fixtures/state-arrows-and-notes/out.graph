@@ -1,29 +1,4 @@
 {
   "nodes": [],
-  "edges": [
-    {
-      "from": "Hungry",
-      "to": "right",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "EatingBurrito",
-      "to": "down",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Full",
-      "to": "left",
-      "label": "has",
-      "hidden": true
-    },
-    {
-      "from": "Sleeping",
-      "to": "up",
-      "label": "has",
-      "hidden": true
-    }
-  ]
+  "edges": []
 }

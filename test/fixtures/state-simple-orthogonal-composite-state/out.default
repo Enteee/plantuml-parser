@@ -1,26 +1,33 @@
 [
   [
     {
+      "name": "*"
+    },
+    {
       "left": "NeilDiamond",
-      "right": "Right",
-      "leftType": "",
-      "rightType": "",
+      "right": "NDoff",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": "Walking"
     },
     {
       "left": "NDoff",
-      "right": "Left",
-      "leftType": "",
-      "rightType": "",
+      "right": "NeilDiamond",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": "Running"
     }
   ]
 ]
