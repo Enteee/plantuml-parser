@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
     "eslint": "^5.15.3",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
@@ -24,6 +25,7 @@
     "gulp-pegjs": "^0.1.0",
     "gulp-rename": "^1.4.0",
     "mocha": "^6.0.2",
+    "mocha-lcov-reporter": "^1.3.0",
     "nyc": "^13.3.0",
     "pegjs": "^0.10.0"
   },
@@ -35,7 +37,7 @@
     "build": "gulp build",
     "test": "nyc -n 'src/**/*.js' -x 'src/plantuml-trace.js' gulp test && nyc check-coverage --lines 65 --functions 75 --branches 50 && eslint '**/*.js'",
     "watch": "gulp watch",
-    "format-fix":  "eslint --fix '**/*.js'",
+    "format-fix": "eslint --fix '**/*.js'",
     "fixtures": "gulp test-fixtures-update && git add -u test/fixtures || true"
   },
   "repository": {
