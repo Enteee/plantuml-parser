@@ -43,7 +43,7 @@ task('test-fixtures-update-run', () =>
             }
           );
 
-          log.info('Updating: '+destination);
+          log.info('Updating: ' + destination);
 
           const formatter = formatters[name];
 

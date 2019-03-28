@@ -26,7 +26,7 @@ module.exports = function (ast) {
           (attribute) => attribute instanceof MemberVariable
         )
         .forEach(
-        (attribute) => {
+          (attribute) => {
             nodes.push({
               ...attribute,
               id: attribute.name,
@@ -60,15 +60,14 @@ module.exports = function (ast) {
   })(ast);
 
   (function extractEdges (node) {
-    function getNodeByName (nodeName){
+    function getNodeByName (nodeName) {
       return nodes.filter(
         (n) => n.name === nodeName
       )[0];
     }
     if (node instanceof Relationship) {
-
-      leftNode = getNodeByName(node.left);
-      rightNode = getNodeByName(node.right);
+      const leftNode = getNodeByName(node.left);
+      const rightNode = getNodeByName(node.right);
 
       if (leftNode === undefined || rightNode === undefined) {
         return;
@@ -86,8 +85,8 @@ module.exports = function (ast) {
         )
       ) {
         if (
-          node.leftArrowHead === '' && node.leftArrowBody === '-'
-          && node.rightArrowBody === '-' && node.rightArrowHead === '|>'
+          node.leftArrowHead === '' && node.leftArrowBody === '-' &&
+          node.rightArrowBody === '-' && node.rightArrowHead === '|>'
         ) {
           edges.push({
             from: node.left,
@@ -96,8 +95,8 @@ module.exports = function (ast) {
             hidden: true
           });
         } else if (
-          node.leftArrowHead === '<|' && node.leftArrowBody === '-'
-          && node.rightArrowBody === '-' && node.rightArrowHead === ''
+          node.leftArrowHead === '<|' && node.leftArrowBody === '-' &&
+          node.rightArrowBody === '-' && node.rightArrowHead === ''
         ) {
           edges.push({
             from: node.right,
@@ -110,8 +109,8 @@ module.exports = function (ast) {
         leftNode.type === 'Component' && rightNode.type === 'Interface'
       ) {
         if (
-          node.leftArrowHead === '' && node.leftArrowBody === '-'
-          && node.rightArrowBody === '-' && node.rightArrowHead === ''
+          node.leftArrowHead === '' && node.leftArrowBody === '-' &&
+          node.rightArrowBody === '-' && node.rightArrowHead === ''
         ) {
           // Component -- Interface
           edges.push({
@@ -123,8 +122,8 @@ module.exports = function (ast) {
             hidden: true
           });
         } else if (
-          node.leftArrowHead === '' && node.leftArrowBody === '.'
-          && node.rightArrowBody === '.' && node.rightArrowHead === '>'
+          node.leftArrowHead === '' && node.leftArrowBody === '.' &&
+          node.rightArrowBody === '.' && node.rightArrowHead === '>'
         ) {
           // Component ..> Interface
           edges.push({
@@ -139,8 +138,8 @@ module.exports = function (ast) {
             hidden: true
           });
         } else if (
-          node.leftArrowHead === '<' && node.leftArrowBody === '.'
-          && node.rightArrowBody === '.' && node.rightArrowHead === ''
+          node.leftArrowHead === '<' && node.leftArrowBody === '.' &&
+          node.rightArrowBody === '.' && node.rightArrowHead === ''
         ) {
           // Component <.. Interface
           edges.push({
@@ -159,8 +158,8 @@ module.exports = function (ast) {
         leftNode.type === 'Interface' && rightNode.type === 'Component'
       ) {
         if (
-          node.leftArrowHead === '' && node.leftArrowBody === '-'
-          && node.rightArrowBody === '-' && node.rightArrowHead === ''
+          node.leftArrowHead === '' && node.leftArrowBody === '-' &&
+          node.rightArrowBody === '-' && node.rightArrowHead === ''
         ) {
           // Interface -- Component
           edges.push({
@@ -172,8 +171,8 @@ module.exports = function (ast) {
             hidden: true
           });
         } else if (
-          node.leftArrowHead === '' && node.leftArrowBody === '.'
-          && node.rightArrowBody === '.' && node.rightArrowHead === '>'
+          node.leftArrowHead === '' && node.leftArrowBody === '.' &&
+          node.rightArrowBody === '.' && node.rightArrowHead === '>'
         ) {
           // Interface ..> Component
           edges.push({
@@ -188,8 +187,8 @@ module.exports = function (ast) {
             hidden: true
           });
         } else if (
-          node.leftArrowHead === '<' && node.leftArrowBody === '.'
-          && node.rightArrowBody === '.' && node.rightArrowHead === ''
+          node.leftArrowHead === '<' && node.leftArrowBody === '.' &&
+          node.rightArrowBody === '.' && node.rightArrowHead === ''
         ) {
           // Interface <.. Component
           edges.push({

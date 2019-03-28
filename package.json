@@ -35,7 +35,7 @@
     "build": "gulp build",
     "test": "nyc -n 'src/**/*.js' -x 'src/plantuml-trace.js' gulp test && nyc check-coverage --lines 65 --functions 75 --branches 50 && eslint '**/*.js'",
     "watch": "gulp watch",
-    "semistandard-fix": "semistandard --fix",
+    "format-fix":  "eslint --fix '**/*.js'",
     "fixtures": "gulp test-fixtures-update && git add -u test/fixtures || true"
   },
   "repository": {
