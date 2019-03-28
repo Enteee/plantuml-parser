@@ -80,10 +80,23 @@ console.log(
 </p>
 </details>
 
-* `parse(data, options)`: Parse PlantUML in `data`. Returns abstract syntax tree.
-* `parseTrace(data, options)`: Parse PlantUML in `data` and produces tracing output for debugging. Returns abstract syntax tree.
-* `options`: see [PEG.js parser options](https://pegjs.org/documentation#generating-a-parser-javascript-api).
-* `formatters`: A collection of built-in AST formatters.
+### `parse(data, options)`
+
+Parse PlantUML in `data`. Returns abstract syntax tree.
+
+* `data`: data to parse
+* `options`: see [PEG.js parser options](https://pegjs.org/documentation#generating-a-parser-javascript-api)..
+
+### `parseTrace(data, options)`
+
+Parse PlantUML in `data`, produces tracing output for debugging. Returns abstract syntax tree.
+
+* `data`: data to parse
+* `options`: see [PEG.js parser options](https://pegjs.org/documentation#generating-a-parser-javascript-api)..
+
+### `formatters`: A collection of built-in AST formatters.
+
+For a detailed description of all the formatters see [src/formatters](src/formatters).
 
 ## Command Line Interface
 
@@ -100,10 +113,10 @@ Options:
 
 ## Features
 
-- Diagrams Types:
+- Diagram Types:
   - [x] Class
-  - [ ] Component
-  - [ ] Use Case
+  - [x] Component
+  - [x] Use Case
   - [ ] Sequence
   - [ ] Activity
   - [ ] State
@@ -117,9 +130,8 @@ Options:
   - [x] Fixtures for all formatters
   - [x] Code coverage
   - [x] Code formatting
+  - [x] Code linting
   - [ ] Dependency audit
-  - [ ] Code linting
-  - [ ] Fixture checking for Pull Requests
 
 ## Test
 
