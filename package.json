@@ -9,7 +9,7 @@
     "pegjs-backtrace": "^0.1.2",
     "read-vinyl-file-stream": "^2.0.3",
     "require-dir": "^1.2.0",
-    "yars": "^1.2.0"
+    "yargs": "^13.2.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",
