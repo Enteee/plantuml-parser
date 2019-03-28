@@ -9,7 +9,7 @@ to be used as [JavaScript library](#usage) or from the [Command Line](#command-l
 **Important**: The parser is not yet feature-complete. But we focus on writing a
 robust implementation which can parse parts of diagram without knowing the full
 syntax. This means that the parser probably still parses just about enough to get
-you started. If not, please [contribute :octocat: :heart:](#contribute).
+you started. If not, please [contribute :octocat: :heart:](#contribute-octocat-heart).
 
 [#PlantUMLParser](https://twitter.com/hashtag/PlantUMLParser)
 
