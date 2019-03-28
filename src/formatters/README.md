@@ -1,76 +1,11 @@
 # Formatters
 
-# Graph
+This folder contains a collection of formatters for the parsed abstract syntax tree.
 
-```plantuml
-@startuml
-class has << (E,#FF0000) >> {
-}
+## Default
 
-class extends << (E,#FF0000) >> {
-}
-note top
-  Entity --|> Entity
-end note
+The default formatter converts the AST to prettified JSON.
 
-class exposes << (E,#FF0000) >> {
-  implementation
-  availability
-}
-note left
-  Component -- Interface: ...
-  Interface -- Component: ...
-end note
+## Graph
 
-class consumes << (E,#FF0000) >> {
-  direction
-  method
-  frequency
-  serviceAccount
-  criticality
-}
-note right
-  Interface ..> Component: direction = Out, ...
-  Interface <.. Component: direction = In, ...
-
-  Component ..> Interface: direction = In, ...
-  Component <.. Interface: direction = Out, ...
-end note
-
-abstract class UMLElement {
-  name
-  description
-}
-
-abstract class Entity {
-}
-Entity --|> UMLElement
-Entity -- Entity
-(Entity, Entity) .. extends
-Entity -- Attribute
-(Entity, Attribute) .. has
-
-class Class << (N,#00FF00) >> {
-  isAbstract
-}
-Class --|> Entity
-
-class Interface << (N,#00FF00) >> {
-}
-Interface --|> Entity
-Interface -- Component
-(Interface, Component) .. exposes
-Interface -- Component
-(Interface, Component) .. consumes
-
-class Attribute << (N,#00FF00) >> {
-  type
-  format
-}
-Attribute --|> UMLElement
-
-class Component << (N,#00FF00) >> {
-}
-Component --|> UMLElement
-@enduml
-```
+![Graph](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/Enteee/plantuml-parser/master/src/formatters/graph.plantuml)
