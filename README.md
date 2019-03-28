@@ -1,4 +1,4 @@
-# plantuml-parser
+# plantuml-parser [![Build Status](https://travis-ci.org/Enteee/plantuml-parser.svg?branch=master)](https://travis-ci.org/Enteee/plantuml-parser)
 _Parse PlantUML Syntax in JavaScript_
 
 The aim of this project is to provide a feature-complete, well tested, and
