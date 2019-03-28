@@ -65,13 +65,15 @@ console.log(
     {
       "left": "A",
       "right": "B",
-      "leftType": "",
-      "rightType": "Generalization",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": "|>",
       "leftArrowBody": "-",
       "rightArrowBody": "-",
       "leftCardinality": "",
       "rightCardinality": "",
-      "name": ""
+      "label": ""
     }
   ]
 ]
