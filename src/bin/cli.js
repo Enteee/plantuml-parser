@@ -3,6 +3,7 @@ const conf = require('../../conf.js');
 
 const { readFile, writeSync, writeFileSync } = require('fs');
 const { parse, parseTrace, formatters } = require(conf.src.dir);
+const { EOL } = require('os');
 
 const getStdin = require('get-stdin');
 
@@ -85,7 +86,7 @@ read(
               useColor: argv.color
             }
           )
-        ),
+        ) + EOL,
         argv.output
       );
     } catch (e) {
