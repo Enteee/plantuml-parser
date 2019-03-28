@@ -4,4 +4,4 @@ node_js:
   - "latest"
   - "8"
 after_success:
-- npx coveralls
+  - npx coveralls
