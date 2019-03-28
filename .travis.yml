@@ -1,7 +1,13 @@
 language: node_js
 node_js:
-  - "stable"
-  - "latest"
-  - "8"
+- stable
+- '8'
 after_success:
-  - npx coveralls
+- npx coveralls
+deploy:
+  on:
+    tags: true
+  provider: npm
+  email: ducksource@duckpond.ch
+  api_key:
+    secure: aMNJGzRdCq68vrwZar1OIG0Mo5JLJ2F4TVk/ZCA+SumXM89pG0QhcJyP7LYCaKwUvM3ZNC1Ytq83bfvt8LqhKLlw0Yg7U7M+k5a4Uoy16WGm9z4LHjO3kLej04Iu0WrPP4KeV2muVruwnWQW5v9XeiwH3gQifRbFivkldTdVONLmND0AFNcn9SoKmh2+XOXtzVhLsQlAV7hs7qDRIeEuxxYzNvhzPInuITas5mZIRDCJqmnax9vZ/edPK0YWA2nWrtnjRLBKSeXJy9F2dLG/aZdqMMYgAPkQ8L9Belb2N12M3/fmIMXOdqygOm4E3Mvn+0RU/IAsujc9AYV/TxBE+Xd2r7cKimMSZMMIb1Iu8ydRe7axYb9AFGbbcA+v6xJ0PYBQXWyT+rYlSvxt1A/truzRjKW9zARAQNDgZnsFQoLOuvxA+Y+kMIWmx6LjJSn2weJJydgXTTcnJRXZqXBhAh1Gu73CjLHxRsdh9yRWWEIuDN9a/XUbxabk3OD5pCXRJCI9HzwHHqnTC8lmBrh+YliKU06xYyEPpou3AgOZFf9f67RzBq27BNap6SOoocKnYAOeNH9Ba6g72ILRUtmiDOmDYLk21MjPlspfQgbnvDUfAZP4/rfsMyJ8MxJdVJOrsQ5+BGWev13eBiOQplj9I+jDoOwvkBihVxJlfy+KpTw=
