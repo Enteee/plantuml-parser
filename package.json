@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Parse PlantUML Syntax in JavaScript",
   "main": "src",
+  "files": "src/**/*.js",
   "dependencies": {
     "get-stdin": "^6.0.0",
     "pegjs-backtrace": "^0.1.2",
