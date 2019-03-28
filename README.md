@@ -144,7 +144,7 @@ This will run:
  * code coverage
  * eslint
 
-## Contribute :heart:
+## Contribute :octocat: :heart:
 
 Every contribution counts. Please,
 
