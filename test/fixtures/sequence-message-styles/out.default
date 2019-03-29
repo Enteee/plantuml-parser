@@ -1,56 +1,58 @@
 [
-  [
-    {
-      "left": "Bob",
-      "right": "Alice",
-      "leftType": "Unknown",
-      "rightType": "Unknown",
-      "leftArrowHead": "",
-      "rightArrowHead": ">",
-      "leftArrowBody": "-",
-      "rightArrowBody": "-",
-      "leftCardinality": "",
-      "rightCardinality": "",
-      "label": ""
-    },
-    {
-      "left": "Bob",
-      "right": "o",
-      "leftType": "Unknown",
-      "rightType": "Unknown",
-      "leftArrowHead": "",
-      "rightArrowHead": ">",
-      "leftArrowBody": "-",
-      "rightArrowBody": "-",
-      "leftCardinality": "",
-      "rightCardinality": "",
-      "label": ""
-    },
-    {
-      "left": "Bob",
-      "right": "Alice",
-      "leftType": "Unknown",
-      "rightType": "Unknown",
-      "leftArrowHead": "<",
-      "rightArrowHead": ">",
-      "leftArrowBody": "-",
-      "rightArrowBody": "-",
-      "leftCardinality": "",
-      "rightCardinality": "",
-      "label": ""
-    },
-    {
-      "left": "Bob",
-      "right": "o",
-      "leftType": "Unknown",
-      "rightType": "Unknown",
-      "leftArrowHead": "<",
-      "rightArrowHead": ">",
-      "leftArrowBody": "-",
-      "rightArrowBody": "-",
-      "leftCardinality": "",
-      "rightCardinality": "",
-      "label": ""
-    }
-  ]
+  {
+    "elements": [
+      {
+        "left": "Bob",
+        "right": "Alice",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": ">",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      },
+      {
+        "left": "Bob",
+        "right": "o",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": ">",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      },
+      {
+        "left": "Bob",
+        "right": "Alice",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "<",
+        "rightArrowHead": ">",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      },
+      {
+        "left": "Bob",
+        "right": "o",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "<",
+        "rightArrowHead": ">",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      }
+    ]
+  }
 ]

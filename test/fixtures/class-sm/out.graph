@@ -157,7 +157,6 @@
       ],
       "id": "CI",
       "type": "Class",
-      "label": "CI",
       "title": "CI",
       "hidden": true
     },
@@ -167,7 +166,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "ciId",
-      "label": "ciId",
       "title": "ciId",
       "hidden": true
     },
@@ -177,7 +175,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "ucmdbId",
-      "label": "ucmdbId",
       "title": "ucmdbId",
       "hidden": true
     },
@@ -187,7 +184,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "company",
-      "label": "company",
       "title": "company",
       "hidden": true
     },
@@ -197,7 +193,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "displayName",
-      "label": "displayName",
       "title": "displayName",
       "hidden": true
     },
@@ -207,7 +202,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "status",
-      "label": "status",
       "title": "status",
       "hidden": true
     },
@@ -217,7 +211,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "type",
-      "label": "type",
       "title": "type",
       "hidden": true
     },
@@ -227,7 +220,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "subtype",
-      "label": "subtype",
       "title": "subtype",
       "hidden": true
     },
@@ -237,7 +229,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "3rdLevelType",
-      "label": "3rdLevelType",
       "title": "3rdLevelType",
       "hidden": true
     },
@@ -247,7 +238,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "purpose",
-      "label": "purpose",
       "title": "purpose",
       "hidden": true
     },
@@ -257,7 +247,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "contactId",
-      "label": "contactId",
       "title": "contactId",
       "hidden": true
     },
@@ -267,7 +256,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "operationResponsibleGroup",
-      "label": "operationResponsibleGroup",
       "title": "operationResponsibleGroup",
       "hidden": true
     },
@@ -277,7 +265,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "briefDescription",
-      "label": "briefDescription",
       "title": "briefDescription",
       "hidden": true
     },
@@ -287,7 +274,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "keywords",
-      "label": "keywords",
       "title": "keywords",
       "hidden": true
     },
@@ -297,7 +283,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "comments",
-      "label": "comments",
       "title": "comments",
       "hidden": true
     },
@@ -307,7 +292,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "monitoringPlatform",
-      "label": "monitoringPlatform",
       "title": "monitoringPlatform",
       "hidden": true
     },
@@ -317,7 +301,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "monitoringNames",
-      "label": "monitoringNames",
       "title": "monitoringNames",
       "hidden": true
     },
@@ -327,7 +310,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "monitoringNameComment",
-      "label": "monitoringNameComment",
       "title": "monitoringNameComment",
       "hidden": true
     },
@@ -337,7 +319,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "mainService",
-      "label": "mainService",
       "title": "mainService",
       "hidden": true
     },
@@ -347,7 +328,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "operationCriticality",
-      "label": "operationCriticality",
       "title": "operationCriticality",
       "hidden": true
     },
@@ -357,7 +337,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "serviceHours",
-      "label": "serviceHours",
       "title": "serviceHours",
       "hidden": true
     },
@@ -367,7 +346,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "serviceHourPriorityLevel",
-      "label": "serviceHourPriorityLevel",
       "title": "serviceHourPriorityLevel",
       "hidden": true
     },
@@ -377,7 +355,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "serviceHourHolidays",
-      "label": "serviceHourHolidays",
       "title": "serviceHourHolidays",
       "hidden": true
     },
@@ -387,7 +364,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "serviceTimeZone",
-      "label": "serviceTimeZone",
       "title": "serviceTimeZone",
       "hidden": true
     },
@@ -397,7 +373,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "lastUpdateTime",
-      "label": "lastUpdateTime",
       "title": "lastUpdateTime",
       "hidden": true
     },
@@ -407,7 +382,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "lastUpdatedBy",
-      "label": "lastUpdatedBy",
       "title": "lastUpdatedBy",
       "hidden": true
     },
@@ -416,7 +390,6 @@
       "members": [],
       "id": "Peripheral",
       "type": "Interface",
-      "label": "Peripheral",
       "title": "Peripheral",
       "hidden": true
     },
@@ -426,7 +399,6 @@
       "members": [],
       "id": "Printer",
       "type": "Class",
-      "label": "Printer",
       "title": "Printer",
       "hidden": true
     },
@@ -436,7 +408,6 @@
       "members": [],
       "id": "CCTV",
       "type": "Class",
-      "label": "CCTV",
       "title": "CCTV",
       "hidden": true
     },
@@ -446,7 +417,6 @@
       "members": [],
       "id": "MultiFunctionPeripheral",
       "type": "Class",
-      "label": "MultiFunctionPeripheral",
       "title": "MultiFunctionPeripheral",
       "hidden": true
     },
@@ -462,7 +432,6 @@
       ],
       "id": "NetworkDevice",
       "type": "Interface",
-      "label": "NetworkDevice",
       "title": "NetworkDevice",
       "hidden": true
     },
@@ -472,7 +441,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "location",
-      "label": "location",
       "title": "location",
       "hidden": true
     },
@@ -482,7 +450,6 @@
       "members": [],
       "id": "Switch",
       "type": "Class",
-      "label": "Switch",
       "title": "Switch",
       "hidden": true
     },
@@ -492,7 +459,6 @@
       "members": [],
       "id": "Router",
       "type": "Class",
-      "label": "Router",
       "title": "Router",
       "hidden": true
     },
@@ -502,7 +468,6 @@
       "members": [],
       "id": "Firewall",
       "type": "Class",
-      "label": "Firewall",
       "title": "Firewall",
       "hidden": true
     },
@@ -512,7 +477,6 @@
       "members": [],
       "id": "Proxy",
       "type": "Class",
-      "label": "Proxy",
       "title": "Proxy",
       "hidden": true
     },
@@ -522,7 +486,6 @@
       "members": [],
       "id": "LoadBalancer",
       "type": "Class",
-      "label": "LoadBalancer",
       "title": "LoadBalancer",
       "hidden": true
     },
@@ -532,7 +495,6 @@
       "members": [],
       "id": "NetworkManagement",
       "type": "Class",
-      "label": "NetworkManagement",
       "title": "NetworkManagement",
       "hidden": true
     },
@@ -548,7 +510,6 @@
       ],
       "id": "Infrastructure",
       "type": "Interface",
-      "label": "Infrastructure",
       "title": "Infrastructure",
       "hidden": true
     },
@@ -558,7 +519,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "location",
-      "label": "location",
       "title": "location",
       "hidden": true
     },
@@ -568,7 +528,6 @@
       "members": [],
       "id": "ATS",
       "type": "Class",
-      "label": "ATS",
       "title": "ATS",
       "hidden": true
     },
@@ -578,7 +537,6 @@
       "members": [],
       "id": "KVM",
       "type": "Class",
-      "label": "KVM",
       "title": "KVM",
       "hidden": true
     },
@@ -588,7 +546,6 @@
       "members": [],
       "id": "PDU",
       "type": "Class",
-      "label": "PDU",
       "title": "PDU",
       "hidden": true
     },
@@ -598,7 +555,6 @@
       "members": [],
       "id": "UPS",
       "type": "Class",
-      "label": "UPS",
       "title": "UPS",
       "hidden": true
     },
@@ -608,7 +564,6 @@
       "members": [],
       "id": "HSM",
       "type": "Class",
-      "label": "HSM",
       "title": "HSM",
       "hidden": true
     },
@@ -618,7 +573,6 @@
       "members": [],
       "id": "AccessControl",
       "type": "Class",
-      "label": "AccessControl",
       "title": "AccessControl",
       "hidden": true
     },
@@ -634,7 +588,6 @@
       ],
       "id": "Telecomdevice",
       "type": "Interface",
-      "label": "Telecomdevice",
       "title": "Telecomdevice",
       "hidden": true
     },
@@ -644,7 +597,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "location",
-      "label": "location",
       "title": "location",
       "hidden": true
     },
@@ -654,7 +606,6 @@
       "members": [],
       "id": "Gateway",
       "type": "Class",
-      "label": "Gateway",
       "title": "Gateway",
       "hidden": true
     },
@@ -664,7 +615,6 @@
       "members": [],
       "id": "Voice",
       "type": "Class",
-      "label": "Voice",
       "title": "Voice",
       "hidden": true
     },
@@ -674,7 +624,6 @@
       "members": [],
       "id": "Video",
       "type": "Class",
-      "label": "Video",
       "title": "Video",
       "hidden": true
     },
@@ -702,7 +651,6 @@
       ],
       "id": "Cluster",
       "type": "Interface",
-      "label": "Cluster",
       "title": "Cluster",
       "hidden": true
     },
@@ -712,7 +660,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "applicationCluster",
-      "label": "applicationCluster",
       "title": "applicationCluster",
       "hidden": true
     },
@@ -722,7 +669,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "physicalZone",
-      "label": "physicalZone",
       "title": "physicalZone",
       "hidden": true
     },
@@ -732,7 +678,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "dataCenter",
-      "label": "dataCenter",
       "title": "dataCenter",
       "hidden": true
     },
@@ -742,7 +687,6 @@
       "members": [],
       "id": "SoftwareCluster",
       "type": "Class",
-      "label": "SoftwareCluster",
       "title": "SoftwareCluster",
       "hidden": true
     },
@@ -752,7 +696,6 @@
       "members": [],
       "id": "ContainerCluster",
       "type": "Class",
-      "label": "ContainerCluster",
       "title": "ContainerCluster",
       "hidden": true
     },
@@ -762,7 +705,6 @@
       "members": [],
       "id": "VMCluster",
       "type": "Class",
-      "label": "VMCluster",
       "title": "VMCluster",
       "hidden": true
     },
@@ -772,7 +714,6 @@
       "members": [],
       "id": "StorageCluster",
       "type": "Class",
-      "label": "StorageCluster",
       "title": "StorageCluster",
       "hidden": true
     },
@@ -788,7 +729,6 @@
       ],
       "id": "Storage",
       "type": "Interface",
-      "label": "Storage",
       "title": "Storage",
       "hidden": true
     },
@@ -798,7 +738,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "location",
-      "label": "location",
       "title": "location",
       "hidden": true
     },
@@ -808,7 +747,6 @@
       "members": [],
       "id": "TapeLibrary",
       "type": "Class",
-      "label": "TapeLibrary",
       "title": "TapeLibrary",
       "hidden": true
     },
@@ -818,7 +756,6 @@
       "members": [],
       "id": "NAS",
       "type": "Class",
-      "label": "NAS",
       "title": "NAS",
       "hidden": true
     },
@@ -828,7 +765,6 @@
       "members": [],
       "id": "SAN",
       "type": "Class",
-      "label": "SAN",
       "title": "SAN",
       "hidden": true
     },
@@ -838,7 +774,6 @@
       "members": [],
       "id": "StorageSwitch",
       "type": "Class",
-      "label": "StorageSwitch",
       "title": "StorageSwitch",
       "hidden": true
     },
@@ -848,7 +783,6 @@
       "members": [],
       "id": "StorageController",
       "type": "Class",
-      "label": "StorageController",
       "title": "StorageController",
       "hidden": true
     },
@@ -906,7 +840,6 @@
       ],
       "id": "Contact",
       "type": "Interface",
-      "label": "Contact",
       "title": "Contact",
       "hidden": true
     },
@@ -916,7 +849,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "location",
-      "label": "location",
       "title": "location",
       "hidden": true
     },
@@ -926,7 +858,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "region",
-      "label": "region",
       "title": "region",
       "hidden": true
     },
@@ -936,7 +867,6 @@
       "accessor": "-",
       "type": "Attribute",
       "id": "country",
-      "label": "country",
       "title": "country",
       "hidden": true
     },
@@ -946,7 +876,6 @@
       "accessor": "-",
       "type": "Attribute",
       "id": "city",
-      "label": "city",
       "title": "city",
       "hidden": true
     },
@@ -956,7 +885,6 @@
       "accessor": "-",
       "type": "Attribute",
       "id": "building",
-      "label": "building",
       "title": "building",
       "hidden": true
     },
@@ -966,7 +894,6 @@
       "accessor": "-",
       "type": "Attribute",
       "id": "floor",
-      "label": "floor",
       "title": "floor",
       "hidden": true
     },
@@ -976,7 +903,6 @@
       "accessor": "-",
       "type": "Attribute",
       "id": "room",
-      "label": "room",
       "title": "room",
       "hidden": true
     },
@@ -986,7 +912,6 @@
       "accessor": "-",
       "type": "Attribute",
       "id": "locationDetail",
-      "label": "locationDetail",
       "title": "locationDetail",
       "hidden": true
     },
@@ -995,7 +920,6 @@
       "members": [],
       "id": "Location",
       "type": "Interface",
-      "label": "Location",
       "title": "Location",
       "hidden": true
     }
@@ -1004,241 +928,241 @@
     {
       "from": "CI",
       "to": "ciId",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "ucmdbId",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "company",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "displayName",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "status",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "type",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "subtype",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "3rdLevelType",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "purpose",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "contactId",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "operationResponsibleGroup",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "briefDescription",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "keywords",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "comments",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "monitoringPlatform",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "monitoringNames",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "monitoringNameComment",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "mainService",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "operationCriticality",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "serviceHours",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "serviceHourPriorityLevel",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "serviceHourHolidays",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "serviceTimeZone",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "lastUpdateTime",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "CI",
       "to": "lastUpdatedBy",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "NetworkDevice",
       "to": "location",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Infrastructure",
       "to": "location",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Telecomdevice",
       "to": "location",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Cluster",
       "to": "applicationCluster",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Cluster",
       "to": "physicalZone",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Cluster",
       "to": "dataCenter",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Storage",
       "to": "location",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Contact",
       "to": "location",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Contact",
       "to": "region",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Contact",
       "to": "country",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Contact",
       "to": "city",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Contact",
       "to": "building",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Contact",
       "to": "floor",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Contact",
       "to": "room",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Contact",
       "to": "locationDetail",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {

@@ -1,192 +1,194 @@
 [
-  [
-    {
-      "name": "AbstractList",
-      "isAbstract": true,
-      "members": []
-    },
-    {
-      "name": "Test",
-      "isAbstract": false,
-      "members": []
-    },
-    {
-      "name": "System",
-      "isAbstract": false,
-      "members": []
-    },
-    {
-      "name": "Date",
-      "isAbstract": false,
-      "members": []
-    },
-    {
-      "name": "Foo1",
-      "isAbstract": false,
-      "members": [
-        {
-          "name": "can",
-          "isStatic": false,
-          "accessor": "+",
-          "type": "You"
-        },
-        {
-          "name": "lines",
-          "isStatic": false,
-          "accessor": "+",
-          "type": "several"
-        },
-        {
-          "name": "..",
-          "isStatic": false,
-          "accessor": "+",
-          "type": ""
-        },
-        {
-          "name": "you",
-          "isStatic": false,
-          "accessor": "+",
-          "type": "as"
-        },
-        {
-          "name": "group",
-          "isStatic": false,
-          "accessor": "+",
-          "type": "and"
-        },
-        {
-          "name": "together.",
-          "isStatic": false,
-          "accessor": "+",
-          "type": "things"
-        },
-        {
-          "name": "__",
-          "isStatic": false,
-          "accessor": "+",
-          "type": ""
-        },
-        {
-          "name": "can",
-          "isStatic": false,
-          "accessor": "+",
-          "type": "You"
-        },
-        {
-          "name": "you",
-          "isStatic": false,
-          "accessor": "+",
-          "type": "as"
-        },
-        {
-          "name": "of",
-          "isStatic": false,
-          "accessor": "+",
-          "type": "End"
-        }
-      ]
-    },
-    {
-      "name": "User",
-      "isAbstract": false,
-      "members": [
-        {
-          "name": "Simple",
-          "isStatic": false,
-          "accessor": "+",
-          "type": ".."
-        },
-        {
-          "name": "getName",
-          "isStatic": false,
-          "accessor": "+",
-          "returnType": "void",
-          "_arguments": ""
-        },
-        {
-          "name": "getAddress",
-          "isStatic": false,
-          "accessor": "+",
-          "returnType": "void",
-          "_arguments": ""
-        },
-        {
-          "name": "Some",
-          "isStatic": false,
-          "accessor": "+",
-          "type": ".."
-        },
-        {
-          "name": "setName",
-          "isStatic": false,
-          "accessor": "+",
-          "returnType": "void",
-          "_arguments": ""
-        },
-        {
-          "name": "private",
-          "isStatic": false,
-          "accessor": "+",
-          "type": "__"
-        },
-        {
-          "name": "age",
-          "isStatic": false,
-          "accessor": "-",
-          "type": "int"
-        },
-        {
-          "name": "password",
-          "isStatic": false,
-          "accessor": "-",
-          "type": "String"
-        }
-      ]
-    },
-    {
-      "name": "TimeUnit",
-      "members": [
-        {
-          "name": "DAYS",
-          "isStatic": false,
-          "accessor": "+",
-          "type": ""
-        },
-        {
-          "name": "HOURS",
-          "isStatic": false,
-          "accessor": "+",
-          "type": ""
-        },
-        {
-          "name": "MINUTES",
-          "isStatic": false,
-          "accessor": "+",
-          "type": ""
-        }
-      ]
-    },
-    {
-      "name": "List",
-      "members": []
-    },
-    {
-      "name": "Object",
-      "isAbstract": false,
-      "members": []
-    },
-    {
-      "left": "Object",
-      "right": "ArrayList",
-      "leftType": "Unknown",
-      "rightType": "Unknown",
-      "leftArrowHead": "<|",
-      "rightArrowHead": "",
-      "leftArrowBody": "-",
-      "rightArrowBody": "-",
-      "leftCardinality": "",
-      "rightCardinality": "",
-      "label": ""
-    }
-  ]
+  {
+    "elements": [
+      {
+        "name": "AbstractList",
+        "isAbstract": true,
+        "members": []
+      },
+      {
+        "name": "Test",
+        "isAbstract": false,
+        "members": []
+      },
+      {
+        "name": "System",
+        "isAbstract": false,
+        "members": []
+      },
+      {
+        "name": "Date",
+        "isAbstract": false,
+        "members": []
+      },
+      {
+        "name": "Foo1",
+        "isAbstract": false,
+        "members": [
+          {
+            "name": "can",
+            "isStatic": false,
+            "accessor": "+",
+            "type": "You"
+          },
+          {
+            "name": "lines",
+            "isStatic": false,
+            "accessor": "+",
+            "type": "several"
+          },
+          {
+            "name": "..",
+            "isStatic": false,
+            "accessor": "+",
+            "type": ""
+          },
+          {
+            "name": "you",
+            "isStatic": false,
+            "accessor": "+",
+            "type": "as"
+          },
+          {
+            "name": "group",
+            "isStatic": false,
+            "accessor": "+",
+            "type": "and"
+          },
+          {
+            "name": "together.",
+            "isStatic": false,
+            "accessor": "+",
+            "type": "things"
+          },
+          {
+            "name": "__",
+            "isStatic": false,
+            "accessor": "+",
+            "type": ""
+          },
+          {
+            "name": "can",
+            "isStatic": false,
+            "accessor": "+",
+            "type": "You"
+          },
+          {
+            "name": "you",
+            "isStatic": false,
+            "accessor": "+",
+            "type": "as"
+          },
+          {
+            "name": "of",
+            "isStatic": false,
+            "accessor": "+",
+            "type": "End"
+          }
+        ]
+      },
+      {
+        "name": "User",
+        "isAbstract": false,
+        "members": [
+          {
+            "name": "Simple",
+            "isStatic": false,
+            "accessor": "+",
+            "type": ".."
+          },
+          {
+            "name": "getName",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": ""
+          },
+          {
+            "name": "getAddress",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": ""
+          },
+          {
+            "name": "Some",
+            "isStatic": false,
+            "accessor": "+",
+            "type": ".."
+          },
+          {
+            "name": "setName",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": ""
+          },
+          {
+            "name": "private",
+            "isStatic": false,
+            "accessor": "+",
+            "type": "__"
+          },
+          {
+            "name": "age",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "int"
+          },
+          {
+            "name": "password",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "String"
+          }
+        ]
+      },
+      {
+        "name": "TimeUnit",
+        "members": [
+          {
+            "name": "DAYS",
+            "isStatic": false,
+            "accessor": "+",
+            "type": ""
+          },
+          {
+            "name": "HOURS",
+            "isStatic": false,
+            "accessor": "+",
+            "type": ""
+          },
+          {
+            "name": "MINUTES",
+            "isStatic": false,
+            "accessor": "+",
+            "type": ""
+          }
+        ]
+      },
+      {
+        "name": "List",
+        "members": []
+      },
+      {
+        "name": "Object",
+        "isAbstract": false,
+        "members": []
+      },
+      {
+        "left": "Object",
+        "right": "ArrayList",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "<|",
+        "rightArrowHead": "",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      }
+    ]
+  }
 ]

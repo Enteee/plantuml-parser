@@ -17,7 +17,6 @@ module.exports = function (ast) {
         ...node,
         id: node.name,
         type: node.constructor.name,
-        label: node.name,
         title: node.name,
         hidden: true
       });
@@ -31,14 +30,13 @@ module.exports = function (ast) {
               ...attribute,
               id: attribute.name,
               type: 'Attribute',
-              label: attribute.name,
               title: attribute.name,
               hidden: true
             });
             edges.push({
               from: node.name,
               to: attribute.name,
-              label: 'has',
+              name: 'has',
               hidden: true
             });
           }
@@ -48,7 +46,6 @@ module.exports = function (ast) {
         ...node,
         id: node.name,
         type: node.constructor.name,
-        label: node.name,
         title: node.name,
         hidden: true
       });

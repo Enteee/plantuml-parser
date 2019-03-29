@@ -70,7 +70,6 @@
       ],
       "id": "Car",
       "type": "Class",
-      "label": "Car",
       "title": "Car",
       "hidden": true
     },
@@ -80,7 +79,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Field",
-      "label": "Field",
       "title": "Field",
       "hidden": true
     },
@@ -90,7 +88,6 @@
       "accessor": "-",
       "type": "Attribute",
       "id": "Name",
-      "label": "Name",
       "title": "Name",
       "hidden": true
     },
@@ -100,7 +97,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Name",
-      "label": "Name",
       "title": "Name",
       "hidden": true
     },
@@ -110,7 +106,6 @@
       "accessor": "#",
       "type": "Attribute",
       "id": "Name",
-      "label": "Name",
       "title": "Name",
       "hidden": true
     },
@@ -120,7 +115,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Method",
-      "label": "Method",
       "title": "Method",
       "hidden": true
     },
@@ -130,7 +124,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Static",
-      "label": "Static",
       "title": "Static",
       "hidden": true
     },
@@ -140,7 +133,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Abstract",
-      "label": "Abstract",
       "title": "Abstract",
       "hidden": true
     },
@@ -150,7 +142,6 @@
       "members": [],
       "id": "Car",
       "type": "Class",
-      "label": "Car",
       "title": "Car",
       "hidden": true
     }
@@ -159,43 +150,43 @@
     {
       "from": "Car",
       "to": "Field",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Car",
       "to": "Name",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Car",
       "to": "Name",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Car",
       "to": "Name",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Car",
       "to": "Method",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Car",
       "to": "Static",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Car",
       "to": "Abstract",
-      "label": "has",
+      "name": "has",
       "hidden": true
     }
   ]

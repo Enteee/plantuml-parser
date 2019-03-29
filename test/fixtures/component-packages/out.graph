@@ -4,7 +4,6 @@
       "name": "Graphic User\\nInterface",
       "id": "Graphic User\\nInterface",
       "type": "Component",
-      "label": "Graphic User\\nInterface",
       "title": "Graphic User\\nInterface",
       "hidden": true
     },
@@ -12,7 +11,6 @@
       "name": "Business Logic",
       "id": "Business Logic",
       "type": "Component",
-      "label": "Business Logic",
       "title": "Business Logic",
       "hidden": true
     },
@@ -20,7 +18,6 @@
       "name": "Data Access",
       "id": "Data Access",
       "type": "Component",
-      "label": "Data Access",
       "title": "Data Access",
       "hidden": true
     },
@@ -29,7 +26,6 @@
       "members": [],
       "id": "IMath",
       "type": "Interface",
-      "label": "IMath",
       "title": "IMath",
       "hidden": true
     },
@@ -38,7 +34,6 @@
       "members": [],
       "id": "Items",
       "type": "Interface",
-      "label": "Items",
       "title": "Items",
       "hidden": true
     },
@@ -46,7 +41,6 @@
       "name": "Stored Procs",
       "id": "Stored Procs",
       "type": "Component",
-      "label": "Stored Procs",
       "title": "Stored Procs",
       "hidden": true
     },
@@ -54,7 +48,6 @@
       "name": "Business Logic",
       "id": "Business Logic",
       "type": "Component",
-      "label": "Business Logic",
       "title": "Business Logic",
       "hidden": true
     },
@@ -62,7 +55,6 @@
       "name": "Business Logic",
       "id": "Business Logic",
       "type": "Component",
-      "label": "Business Logic",
       "title": "Business Logic",
       "hidden": true
     }

@@ -1,33 +1,35 @@
 [
-  [
-    {
-      "name": "*"
-    },
-    {
-      "left": "NeilDiamond",
-      "right": "NDoff",
-      "leftType": "Unknown",
-      "rightType": "Unknown",
-      "leftArrowHead": "",
-      "rightArrowHead": ">",
-      "leftArrowBody": "-",
-      "rightArrowBody": "-",
-      "leftCardinality": "",
-      "rightCardinality": "",
-      "label": "Walking"
-    },
-    {
-      "left": "NDoff",
-      "right": "NeilDiamond",
-      "leftType": "Unknown",
-      "rightType": "Unknown",
-      "leftArrowHead": "",
-      "rightArrowHead": ">",
-      "leftArrowBody": "-",
-      "rightArrowBody": "-",
-      "leftCardinality": "",
-      "rightCardinality": "",
-      "label": "Running"
-    }
-  ]
+  {
+    "elements": [
+      {
+        "name": "*"
+      },
+      {
+        "left": "NeilDiamond",
+        "right": "NDoff",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": ">",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": "Walking"
+      },
+      {
+        "left": "NDoff",
+        "right": "NeilDiamond",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": ">",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": "Running"
+      }
+    ]
+  }
 ]

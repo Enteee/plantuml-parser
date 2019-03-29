@@ -6,7 +6,6 @@
       "members": [],
       "id": "AbstractList",
       "type": "Class",
-      "label": "AbstractList",
       "title": "AbstractList",
       "hidden": true
     },
@@ -16,7 +15,6 @@
       "members": [],
       "id": "Test",
       "type": "Class",
-      "label": "Test",
       "title": "Test",
       "hidden": true
     },
@@ -26,7 +24,6 @@
       "members": [],
       "id": "System",
       "type": "Class",
-      "label": "System",
       "title": "System",
       "hidden": true
     },
@@ -36,7 +33,6 @@
       "members": [],
       "id": "Date",
       "type": "Class",
-      "label": "Date",
       "title": "Date",
       "hidden": true
     },
@@ -107,7 +103,6 @@
       ],
       "id": "Foo1",
       "type": "Class",
-      "label": "Foo1",
       "title": "Foo1",
       "hidden": true
     },
@@ -117,7 +112,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "can",
-      "label": "can",
       "title": "can",
       "hidden": true
     },
@@ -127,7 +121,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "lines",
-      "label": "lines",
       "title": "lines",
       "hidden": true
     },
@@ -137,7 +130,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "..",
-      "label": "..",
       "title": "..",
       "hidden": true
     },
@@ -147,7 +139,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "you",
-      "label": "you",
       "title": "you",
       "hidden": true
     },
@@ -157,7 +148,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "group",
-      "label": "group",
       "title": "group",
       "hidden": true
     },
@@ -167,7 +157,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "together.",
-      "label": "together.",
       "title": "together.",
       "hidden": true
     },
@@ -177,7 +166,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "__",
-      "label": "__",
       "title": "__",
       "hidden": true
     },
@@ -187,7 +175,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "can",
-      "label": "can",
       "title": "can",
       "hidden": true
     },
@@ -197,7 +184,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "you",
-      "label": "you",
       "title": "you",
       "hidden": true
     },
@@ -207,7 +193,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "of",
-      "label": "of",
       "title": "of",
       "hidden": true
     },
@@ -269,7 +254,6 @@
       ],
       "id": "User",
       "type": "Class",
-      "label": "User",
       "title": "User",
       "hidden": true
     },
@@ -279,7 +263,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Simple",
-      "label": "Simple",
       "title": "Simple",
       "hidden": true
     },
@@ -289,7 +272,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Some",
-      "label": "Some",
       "title": "Some",
       "hidden": true
     },
@@ -299,7 +281,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "private",
-      "label": "private",
       "title": "private",
       "hidden": true
     },
@@ -309,7 +290,6 @@
       "accessor": "-",
       "type": "Attribute",
       "id": "age",
-      "label": "age",
       "title": "age",
       "hidden": true
     },
@@ -319,7 +299,6 @@
       "accessor": "-",
       "type": "Attribute",
       "id": "password",
-      "label": "password",
       "title": "password",
       "hidden": true
     },
@@ -328,7 +307,6 @@
       "members": [],
       "id": "List",
       "type": "Interface",
-      "label": "List",
       "title": "List",
       "hidden": true
     },
@@ -338,7 +316,6 @@
       "members": [],
       "id": "Object",
       "type": "Class",
-      "label": "Object",
       "title": "Object",
       "hidden": true
     }
@@ -347,91 +324,91 @@
     {
       "from": "Foo1",
       "to": "can",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Foo1",
       "to": "lines",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Foo1",
       "to": "..",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Foo1",
       "to": "you",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Foo1",
       "to": "group",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Foo1",
       "to": "together.",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Foo1",
       "to": "__",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Foo1",
       "to": "can",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Foo1",
       "to": "you",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "Foo1",
       "to": "of",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "User",
       "to": "Simple",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "User",
       "to": "Some",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "User",
       "to": "private",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "User",
       "to": "age",
-      "label": "has",
+      "name": "has",
       "hidden": true
     },
     {
       "from": "User",
       "to": "password",
-      "label": "has",
+      "name": "has",
       "hidden": true
     }
   ]

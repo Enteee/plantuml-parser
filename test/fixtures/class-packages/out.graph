@@ -6,7 +6,6 @@
       "members": [],
       "id": "Worker1",
       "type": "Class",
-      "label": "Worker1",
       "title": "Worker1",
       "hidden": true
     },
@@ -16,7 +15,6 @@
       "members": [],
       "id": "Worker2",
       "type": "Class",
-      "label": "Worker2",
       "title": "Worker2",
       "hidden": true
     },
@@ -26,7 +24,6 @@
       "members": [],
       "id": "Worker3",
       "type": "Class",
-      "label": "Worker3",
       "title": "Worker3",
       "hidden": true
     },
@@ -36,7 +33,6 @@
       "members": [],
       "id": "Worker4",
       "type": "Class",
-      "label": "Worker4",
       "title": "Worker4",
       "hidden": true
     },
@@ -46,7 +42,6 @@
       "members": [],
       "id": "Worker5",
       "type": "Class",
-      "label": "Worker5",
       "title": "Worker5",
       "hidden": true
     },
@@ -56,7 +51,6 @@
       "members": [],
       "id": "Worker6",
       "type": "Class",
-      "label": "Worker6",
       "title": "Worker6",
       "hidden": true
     }

@@ -20,7 +20,6 @@
       ],
       "id": "Dwelling",
       "type": "Class",
-      "label": "Dwelling",
       "title": "Dwelling",
       "hidden": true
     },
@@ -30,7 +29,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Windows",
-      "label": "Windows",
       "title": "Windows",
       "hidden": true
     },
@@ -40,7 +38,6 @@
       "members": [],
       "id": "Apartment",
       "type": "Class",
-      "label": "Apartment",
       "title": "Apartment",
       "hidden": true
     },
@@ -50,7 +47,6 @@
       "members": [],
       "id": "House",
       "type": "Class",
-      "label": "House",
       "title": "House",
       "hidden": true
     },
@@ -60,7 +56,6 @@
       "members": [],
       "id": "Commune",
       "type": "Class",
-      "label": "Commune",
       "title": "Commune",
       "hidden": true
     }
@@ -69,7 +64,7 @@
     {
       "from": "Dwelling",
       "to": "Windows",
-      "label": "has",
+      "name": "has",
       "hidden": true
     }
   ]
