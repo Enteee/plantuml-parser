@@ -1,66 +1,64 @@
 [
-  {
-    "elements": [
-      {
-        "text": "Single line note",
-        "of": "Hungry"
-      },
-      {
-        "text": "Notes can also\n    take up multiple\n    lines like this",
-        "of": "EatingBurrito"
-      },
-      {
-        "left": "Hungry",
-        "right": "EatingBurrito",
-        "leftType": "Unknown",
-        "rightType": "Unknown",
-        "leftArrowHead": "",
-        "rightArrowHead": ">",
-        "leftArrowBody": "-",
-        "rightArrowBody": "-",
-        "leftCardinality": "",
-        "rightCardinality": "",
-        "label": ""
-      },
-      {
-        "left": "EatingBurrito",
-        "right": "Full",
-        "leftType": "Unknown",
-        "rightType": "Unknown",
-        "leftArrowHead": "",
-        "rightArrowHead": ">",
-        "leftArrowBody": "-",
-        "rightArrowBody": "-",
-        "leftCardinality": "",
-        "rightCardinality": "",
-        "label": ""
-      },
-      {
-        "left": "Full",
-        "right": "Sleeping",
-        "leftType": "Unknown",
-        "rightType": "Unknown",
-        "leftArrowHead": "",
-        "rightArrowHead": ">",
-        "leftArrowBody": "-",
-        "rightArrowBody": "-",
-        "leftCardinality": "",
-        "rightCardinality": "",
-        "label": ""
-      },
-      {
-        "left": "Sleeping",
-        "right": "Hungry",
-        "leftType": "Unknown",
-        "rightType": "Unknown",
-        "leftArrowHead": "",
-        "rightArrowHead": ">",
-        "leftArrowBody": "-",
-        "rightArrowBody": "-",
-        "leftCardinality": "",
-        "rightCardinality": "",
-        "label": ""
-      }
-    ]
-  }
+  [
+    {
+      "text": "Single line note",
+      "of": "Hungry"
+    },
+    {
+      "text": "Notes can also\n    take up multiple\n    lines like this",
+      "of": "EatingBurrito"
+    },
+    {
+      "left": "Hungry",
+      "right": "EatingBurrito",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": ""
+    },
+    {
+      "left": "EatingBurrito",
+      "right": "Full",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": ""
+    },
+    {
+      "left": "Full",
+      "right": "Sleeping",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": ""
+    },
+    {
+      "left": "Sleeping",
+      "right": "Hungry",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": ""
+    }
+  ]
 ]

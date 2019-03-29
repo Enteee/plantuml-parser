@@ -1,51 +1,49 @@
 [
-  {
-    "elements": [
-      {
-        "name": "Login"
-      },
-      {
-        "name": "Upload File"
-      },
-      {
-        "left": "U",
-        "right": "UF",
-        "leftType": "Unknown",
-        "rightType": "Unknown",
-        "leftArrowHead": "",
-        "rightArrowHead": ">",
-        "leftArrowBody": "-",
-        "rightArrowBody": "-",
-        "leftCardinality": "",
-        "rightCardinality": "",
-        "label": ""
-      },
-      {
-        "left": "U",
-        "right": "L",
-        "leftType": "Unknown",
-        "rightType": "UseCase",
-        "leftArrowHead": "",
-        "rightArrowHead": ">",
-        "leftArrowBody": "-",
-        "rightArrowBody": "-",
-        "leftCardinality": "",
-        "rightCardinality": "",
-        "label": ""
-      },
-      {
-        "left": "H",
-        "right": "L",
-        "leftType": "Unknown",
-        "rightType": "UseCase",
-        "leftArrowHead": "<",
-        "rightArrowHead": ">",
-        "leftArrowBody": ".",
-        "rightArrowBody": ".",
-        "leftCardinality": "",
-        "rightCardinality": "",
-        "label": ""
-      }
-    ]
-  }
+  [
+    {
+      "name": "Login"
+    },
+    {
+      "name": "Upload File"
+    },
+    {
+      "left": "U",
+      "right": "UF",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": ""
+    },
+    {
+      "left": "U",
+      "right": "L",
+      "leftType": "Unknown",
+      "rightType": "UseCase",
+      "leftArrowHead": "",
+      "rightArrowHead": ">",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": ""
+    },
+    {
+      "left": "H",
+      "right": "L",
+      "leftType": "Unknown",
+      "rightType": "UseCase",
+      "leftArrowHead": "<",
+      "rightArrowHead": ">",
+      "leftArrowBody": ".",
+      "rightArrowBody": ".",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": ""
+    }
+  ]
 ]

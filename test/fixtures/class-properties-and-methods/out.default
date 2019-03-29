@@ -1,119 +1,117 @@
 [
-  {
-    "elements": [
-      {
-        "name": "Car",
-        "isAbstract": false,
-        "members": [
-          {
-            "name": "Field",
-            "isStatic": false,
-            "accessor": "+",
-            "type": ".."
-          },
-          {
-            "name": "Name",
-            "isStatic": false,
-            "accessor": "-",
-            "type": ""
-          },
-          {
-            "name": "Name",
-            "isStatic": false,
-            "accessor": "+",
-            "type": ""
-          },
-          {
-            "name": "Name",
-            "isStatic": false,
-            "accessor": "#",
-            "type": ""
-          },
-          {
-            "name": "Method",
-            "isStatic": false,
-            "accessor": "+",
-            "type": ".."
-          },
-          {
-            "name": "Name",
-            "isStatic": false,
-            "accessor": "-",
-            "returnType": "void",
-            "_arguments": ""
-          },
-          {
-            "name": "Name",
-            "isStatic": false,
-            "accessor": "+",
-            "returnType": "void",
-            "_arguments": ""
-          },
-          {
-            "name": "Name",
-            "isStatic": false,
-            "accessor": "#",
-            "returnType": "void",
-            "_arguments": ""
-          },
-          {
-            "name": "Static",
-            "isStatic": false,
-            "accessor": "+",
-            "type": ".."
-          },
-          {
-            "name": "Abstract",
-            "isStatic": false,
-            "accessor": "+",
-            "type": ".."
-          }
-        ]
-      },
-      {
-        "name": "Car",
-        "isAbstract": false,
-        "members": []
-      },
-      {
-        "left": "ICar",
-        "right": "Car",
-        "leftType": "Unknown",
-        "rightType": "Unknown",
-        "leftArrowHead": "()",
-        "rightArrowHead": "",
-        "leftArrowBody": "-",
-        "rightArrowBody": "-",
-        "leftCardinality": "",
-        "rightCardinality": "",
-        "label": ""
-      },
-      {
-        "left": "ICar2",
-        "right": "Car",
-        "leftType": "Unknown",
-        "rightType": "Unknown",
-        "leftArrowHead": "()",
-        "rightArrowHead": "",
-        "leftArrowBody": "-",
-        "rightArrowBody": "-",
-        "leftCardinality": "",
-        "rightCardinality": "",
-        "label": ""
-      },
-      {
-        "left": "Car",
-        "right": "ICar3",
-        "leftType": "Unknown",
-        "rightType": "Unknown",
-        "leftArrowHead": "",
-        "rightArrowHead": "()",
-        "leftArrowBody": "-",
-        "rightArrowBody": "-",
-        "leftCardinality": "",
-        "rightCardinality": "",
-        "label": ""
-      }
-    ]
-  }
+  [
+    {
+      "name": "Car",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "Field",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "-",
+          "type": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "#",
+          "type": ""
+        },
+        {
+          "name": "Method",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "-",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "#",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "Static",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        },
+        {
+          "name": "Abstract",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        }
+      ]
+    },
+    {
+      "name": "Car",
+      "isAbstract": false,
+      "members": []
+    },
+    {
+      "left": "ICar",
+      "right": "Car",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "()",
+      "rightArrowHead": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": ""
+    },
+    {
+      "left": "ICar2",
+      "right": "Car",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "()",
+      "rightArrowHead": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": ""
+    },
+    {
+      "left": "Car",
+      "right": "ICar3",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": "()",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": ""
+    }
+  ]
 ]

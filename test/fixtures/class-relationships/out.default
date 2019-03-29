@@ -1,115 +1,113 @@
 [
-  {
-    "elements": [
-      {
-        "name": "Dwelling",
-        "isAbstract": false,
-        "members": [
-          {
-            "name": "Windows",
-            "isStatic": false,
-            "accessor": "+",
-            "type": "Int"
-          },
-          {
-            "name": "LockTheDoor",
-            "isStatic": false,
-            "accessor": "+",
-            "returnType": "void",
-            "_arguments": ""
-          }
-        ]
-      },
-      {
-        "name": "Apartment",
-        "isAbstract": false,
-        "members": []
-      },
-      {
-        "name": "House",
-        "isAbstract": false,
-        "members": []
-      },
-      {
-        "name": "Commune",
-        "isAbstract": false,
-        "members": []
-      },
-      {
-        "name": "Window",
-        "isAbstract": false,
-        "members": []
-      },
-      {
-        "name": "Door",
-        "isAbstract": false,
-        "members": []
-      },
-      {
-        "left": "Dwelling",
-        "right": "Apartment",
-        "leftType": "Unknown",
-        "rightType": "Unknown",
-        "leftArrowHead": "<|",
-        "rightArrowHead": "",
-        "leftArrowBody": "-",
-        "rightArrowBody": "-",
-        "leftCardinality": "",
-        "rightCardinality": "",
-        "label": "Inheritance"
-      },
-      {
-        "left": "Dwelling",
-        "right": "Commune",
-        "leftType": "Unknown",
-        "rightType": "Unknown",
-        "leftArrowHead": "<|",
-        "rightArrowHead": "",
-        "leftArrowBody": "-",
-        "rightArrowBody": "-",
-        "leftCardinality": "",
-        "rightCardinality": "",
-        "label": "Inheritance"
-      },
-      {
-        "left": "Dwelling",
-        "right": "House",
-        "leftType": "Unknown",
-        "rightType": "Unknown",
-        "leftArrowHead": "<|",
-        "rightArrowHead": "",
-        "leftArrowBody": "-",
-        "rightArrowBody": "-",
-        "leftCardinality": "",
-        "rightCardinality": "",
-        "label": "Inheritance"
-      },
-      {
-        "left": "Dwelling",
-        "right": "Window",
-        "leftType": "Unknown",
-        "rightType": "Unknown",
-        "leftArrowHead": "*",
-        "rightArrowHead": "",
-        "leftArrowBody": "-",
-        "rightArrowBody": "-",
-        "leftCardinality": "1",
-        "rightCardinality": "many",
-        "label": "Composition"
-      },
-      {
-        "left": "Dwelling",
-        "right": "Door",
-        "leftType": "Unknown",
-        "rightType": "Unknown",
-        "leftArrowHead": "*",
-        "rightArrowHead": "",
-        "leftArrowBody": "-",
-        "rightArrowBody": "-",
-        "leftCardinality": "1",
-        "rightCardinality": "many",
-        "label": "Composition"
-      }
-    ]
-  }
+  [
+    {
+      "name": "Dwelling",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "Windows",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "Int"
+        },
+        {
+          "name": "LockTheDoor",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        }
+      ]
+    },
+    {
+      "name": "Apartment",
+      "isAbstract": false,
+      "members": []
+    },
+    {
+      "name": "House",
+      "isAbstract": false,
+      "members": []
+    },
+    {
+      "name": "Commune",
+      "isAbstract": false,
+      "members": []
+    },
+    {
+      "name": "Window",
+      "isAbstract": false,
+      "members": []
+    },
+    {
+      "name": "Door",
+      "isAbstract": false,
+      "members": []
+    },
+    {
+      "left": "Dwelling",
+      "right": "Apartment",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "<|",
+      "rightArrowHead": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": "Inheritance"
+    },
+    {
+      "left": "Dwelling",
+      "right": "Commune",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "<|",
+      "rightArrowHead": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": "Inheritance"
+    },
+    {
+      "left": "Dwelling",
+      "right": "House",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "<|",
+      "rightArrowHead": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": "Inheritance"
+    },
+    {
+      "left": "Dwelling",
+      "right": "Window",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "*",
+      "rightArrowHead": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "1",
+      "rightCardinality": "many",
+      "label": "Composition"
+    },
+    {
+      "left": "Dwelling",
+      "right": "Door",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "*",
+      "rightArrowHead": "",
+      "leftArrowBody": "-",
+      "rightArrowBody": "-",
+      "leftCardinality": "1",
+      "rightCardinality": "many",
+      "label": "Composition"
+    }
+  ]
 ]

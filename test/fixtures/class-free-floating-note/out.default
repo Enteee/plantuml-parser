@@ -1,10 +1,8 @@
 [
-  {
-    "elements": [
-      {
-        "text": "This note free floating and has a Name",
-        "of": ""
-      }
-    ]
-  }
+  [
+    {
+      "text": "This note free floating and has a Name",
+      "of": ""
+    }
+  ]
 ]

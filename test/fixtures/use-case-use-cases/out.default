@@ -1,18 +1,16 @@
 [
-  {
-    "elements": [
-      {
-        "name": "Login"
-      },
-      {
-        "name": "Run Process"
-      },
-      {
-        "name": "Undo Process"
-      },
-      {
-        "name": "Log Out"
-      }
-    ]
-  }
+  [
+    {
+      "name": "Login"
+    },
+    {
+      "name": "Run Process"
+    },
+    {
+      "name": "Undo Process"
+    },
+    {
+      "name": "Log Out"
+    }
+  ]
 ]

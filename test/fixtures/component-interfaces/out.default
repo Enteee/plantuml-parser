@@ -1,39 +1,37 @@
 [
-  {
-    "elements": [
-      {
-        "name": "Business Logic"
-      },
-      {
-        "name": "Data Access"
-      },
-      {
-        "name": "Graphic User\\nInterface"
-      },
-      {
-        "name": "IMath",
-        "members": []
-      },
-      {
-        "name": "Items",
-        "members": []
-      },
-      {
-        "name": "Business Logic"
-      },
-      {
-        "left": "DA",
-        "right": "Items",
-        "leftType": "Unknown",
-        "rightType": "Unknown",
-        "leftArrowHead": "",
-        "rightArrowHead": "",
-        "leftArrowBody": ".",
-        "rightArrowBody": ".",
-        "leftCardinality": "",
-        "rightCardinality": "",
-        "label": ""
-      }
-    ]
-  }
+  [
+    {
+      "name": "Business Logic"
+    },
+    {
+      "name": "Data Access"
+    },
+    {
+      "name": "Graphic User\\nInterface"
+    },
+    {
+      "name": "IMath",
+      "members": []
+    },
+    {
+      "name": "Items",
+      "members": []
+    },
+    {
+      "name": "Business Logic"
+    },
+    {
+      "left": "DA",
+      "right": "Items",
+      "leftType": "Unknown",
+      "rightType": "Unknown",
+      "leftArrowHead": "",
+      "rightArrowHead": "",
+      "leftArrowBody": ".",
+      "rightArrowBody": ".",
+      "leftCardinality": "",
+      "rightCardinality": "",
+      "label": ""
+    }
+  ]
 ]

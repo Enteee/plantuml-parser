@@ -1,15 +1,13 @@
 [
-  {
-    "elements": [
-      {
-        "name": "Business Logic"
-      },
-      {
-        "name": "Data Access"
-      },
-      {
-        "name": "Graphic User\\nInterface"
-      }
-    ]
-  }
+  [
+    {
+      "name": "Business Logic"
+    },
+    {
+      "name": "Data Access"
+    },
+    {
+      "name": "Graphic User\\nInterface"
+    }
+  ]
 ]
