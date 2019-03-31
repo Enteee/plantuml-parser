@@ -19,7 +19,7 @@ const argv = require('yargs') // eslint-disable-line
   })
   .option('input', {
     alias: 'i',
-    describe: 'input file to read',
+    describe: 'input file(s) to read, supports globbing',
     default: DEFAULT,
     defaultDescription: 'stdin',
     type: 'string'

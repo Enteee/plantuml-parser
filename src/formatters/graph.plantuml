@@ -1,4 +1,9 @@
 @startuml
+
+//
+// Edges
+//
+
 class has << (E,#FF0000) >> {
 }
 
@@ -31,6 +36,13 @@ note right
   Component ..> Interface: direction = In, ...
   Component <.. Interface: direction = Out, ...
 end note
+
+class contains << (E,#FF0000) >> {
+}
+
+//
+// Nodes
+//
 
 abstract class UMLElement {
   name
@@ -67,4 +79,10 @@ Attribute --|> UMLElement
 class Component << (N,#00FF00) >> {
 }
 Component --|> UMLElement
+
+class File << (N,#00FF00) >> {
+  name
+}
+(File, UMLElement) .. contains
+
 @enduml
