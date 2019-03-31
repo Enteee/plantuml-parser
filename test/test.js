@@ -3,7 +3,7 @@ const conf = require('../conf');
 const { describe, it } = require('mocha');
 const { expect } = require('chai');
 
-const { parse, formatters } = require(conf.src.dir);
+const { parse, parseFile, formatters } = require(conf.src.dir);
 
 /**
  * Test if the output produced by the
@@ -42,6 +42,12 @@ require('./fixtures').forEach((fixture) =>
   describe(fixture.directory, () => {
     it('parse',
       () => parse(fixture.src)
+    );
+    it('parseFile',
+      (cb) => parseFile(fixture.srcFile, null, cb)
+    );
+    it('parseFileSync',
+      () => parseFile(fixture.srcFile)
     );
     fixture.out.forEach(
       (output) => it('format: ' + output.format,

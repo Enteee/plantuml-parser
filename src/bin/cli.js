@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 const conf = require('../../conf.js');
 
-const { readFile, writeSync, writeFileSync } = require('fs');
-const { parse, parseTrace, formatters } = require(conf.src.dir);
+const { writeSync, writeFileSync } = require('fs');
+const { parse, parseFile, formatters } = require(conf.src.dir);
 const { EOL } = require('os');
 
+const colorize = require('json-colorizer');
 const getStdin = require('get-stdin');
 
 const DEFAULT = {};
@@ -38,30 +39,48 @@ const argv = require('yargs') // eslint-disable-line
   })
   .option('verbose', {
     alias: 'v',
-    describe: 'print verbose output',
-    default: false,
-    boolean: true
+    describe: '1x print verbose output, 2x print parser tracing',
+    default: 0,
+    count: true
   })
   .help()
   .argv;
 
+const formatter = formatters[argv.formatter];
+const options = {
+  verbose: argv.verbose,
+  showTrace: argv.verbose > 1,
+  useColor: argv.color
+};
+
 function read (cb) {
   if (argv.input === DEFAULT) {
     return getStdin().then(
-      (data) => cb(null, data)
+      (data) => cb(
+        null,
+        parse(
+          data,
+          options
+        )
+      )
     );
   }
-  return readFile(
+  return parseFile(
     argv.input,
-    {
-      encoding: conf.encoding
-    },
+    options,
     cb
   );
 }
 
 function write (data) {
-  if (argv.output === DEFAULT) { return writeSync(process.stdout.fd, data); }
+  if (argv.color) {
+    try {
+      data = colorize(data);
+    } catch (e) {};
+  }
+  if (argv.output === DEFAULT) {
+    return writeSync(process.stdout.fd, data);
+  }
   return writeFileSync(
     argv.output,
     data,
@@ -71,22 +90,15 @@ function write (data) {
   );
 }
 
-const useParser = (argv.verbose) ? parseTrace : parse;
-const formatter = formatters[argv.formatter];
-
 read(
-  (err, data) => {
-    if (err) { return console.error(err); }
+  (err, ast) => {
+    if (err) {
+      console.error(err);
+      process.exit(1);
+    }
     try {
       write(
-        formatter(
-          useParser(
-            data,
-            {
-              useColor: argv.color
-            }
-          )
-        ) + EOL,
+        formatter(ast) + EOL,
         argv.output
       );
     } catch (e) {

@@ -26,7 +26,7 @@ We keep a set of PlantUML scripts (`in.plantuml`) and the corresponding formatte
 ## Usage
 
 ```javascript
-const { parse, parseTrace, formatters } = require('plantuml-parser');
+const { parse, parseFile, formatters } = require('./src');
 
 // Example PlantUML
 const data = `
@@ -42,8 +42,8 @@ const ast = parse(data);
 
 // Format and print AST
 console.log(
-  formatters.default(ast);
-)
+  formatters.default(ast)
+);
 ```
 
 <details><summary>Output</summary>
@@ -51,31 +51,33 @@ console.log(
 
 ```javascript
 [
-  [
-    {
-      "name": "A",
-      "isAbstract": false,
-      "members": []
-    },
-    {
-      "name": "B",
-      "isAbstract": false,
-      "members": []
-    },
-    {
-      "left": "A",
-      "right": "B",
-      "leftType": "Unknown",
-      "rightType": "Unknown",
-      "leftArrowHead": "",
-      "rightArrowHead": "|>",
-      "leftArrowBody": "-",
-      "rightArrowBody": "-",
-      "leftCardinality": "",
-      "rightCardinality": "",
-      "label": ""
-    }
-  ]
+  {
+    "elements": [
+      {
+        "name": "A",
+        "isAbstract": false,
+        "members": []
+      },
+      {
+        "name": "B",
+        "isAbstract": false,
+        "members": []
+      },
+      {
+        "left": "A",
+        "right": "B",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": "|>",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      }
+    ]
+  }
 ]
 ```
 
@@ -89,12 +91,13 @@ Parse PlantUML in `data`. Returns abstract syntax tree.
 * `data`: data to parse
 * `options`: see [PEG.js parser options](https://pegjs.org/documentation#generating-a-parser-javascript-api)..
 
-### `parseTrace(data, options)`
+### `parseFile(pattern, options, cb)`
 
-Parse PlantUML in `data`, produces tracing output for debugging. Returns abstract syntax tree.
+Parse all PlantUML diagrams in the files mathcing `pattern`. If given, the callback function `cb` will make this function behave asynchronous.
 
-* `data`: data to parse
-* `options`: see [PEG.js parser options](https://pegjs.org/documentation#generating-a-parser-javascript-api)..
+* `pattern`: files to parse, supports globbing, e.g.: `**/*.plantuml'.
+* `options`: see [PEG.js parser options](https://pegjs.org/documentation#generating-a-parser-javascript-api).
+* `cb`: (optional) asynchronous callback. Called with: `cb(err, ast)`
 
 ### `formatters`: A collection of built-in AST formatters.
 
@@ -104,12 +107,14 @@ For a detailed description of all the formatters see [src/formatters](src/format
 
 ```
 Options:
+  --version        Show version number                                 [boolean]
   --formatter, -f  formatter to use
                               [choices: "default", "graph"] [default: "default"]
   --input, -i      input file to read                  [string] [default: stdin]
   --output, -o     output file to write               [string] [default: stdout]
   --color, -c      colorful output                    [boolean] [default: false]
-  --verbose, -v    print verbose output               [boolean] [default: false]
+  --verbose, -v    1x print verbose output, 2x print parser tracing
+                                                            [count] [default: 0]
   --help           Show help                                           [boolean]
 ```
 
@@ -161,7 +166,7 @@ $ npm test
 $ git commit
 ```
 
-## Similar Projects
+## Related
 
 * [PlantUML code generator](https://github.com/bafolts/plantuml-code-generator): Provides a command line utility to generate code in various languages given a plantuml class diagram.
 

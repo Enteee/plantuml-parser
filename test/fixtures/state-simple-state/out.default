@@ -1,50 +1,52 @@
 [
-  [
-    {
-      "name": "*"
-    },
-    {
-      "left": "GlassEmpty",
-      "right": "*",
-      "leftType": "Unknown",
-      "rightType": "Component",
-      "leftArrowHead": "",
-      "rightArrowHead": ">",
-      "leftArrowBody": "-",
-      "rightArrowBody": "-",
-      "leftCardinality": "",
-      "rightCardinality": "",
-      "label": ""
-    },
-    {
-      "left": "GlassEmpty",
-      "right": "GlassFull",
-      "leftType": "Unknown",
-      "rightType": "Unknown",
-      "leftArrowHead": "",
-      "rightArrowHead": ">",
-      "leftArrowBody": "-",
-      "rightArrowBody": "-",
-      "leftCardinality": "",
-      "rightCardinality": "",
-      "label": ""
-    },
-    {
-      "left": "GlassFull",
-      "right": "*",
-      "leftType": "Unknown",
-      "rightType": "Component",
-      "leftArrowHead": "",
-      "rightArrowHead": ">",
-      "leftArrowBody": "-",
-      "rightArrowBody": "-",
-      "leftCardinality": "",
-      "rightCardinality": "",
-      "label": ""
-    },
-    {
-      "text": "this is a note",
-      "of": ""
-    }
-  ]
+  {
+    "elements": [
+      {
+        "name": "*"
+      },
+      {
+        "left": "GlassEmpty",
+        "right": "*",
+        "leftType": "Unknown",
+        "rightType": "Component",
+        "leftArrowHead": "",
+        "rightArrowHead": ">",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      },
+      {
+        "left": "GlassEmpty",
+        "right": "GlassFull",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": ">",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      },
+      {
+        "left": "GlassFull",
+        "right": "*",
+        "leftType": "Unknown",
+        "rightType": "Component",
+        "leftArrowHead": "",
+        "rightArrowHead": ">",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      },
+      {
+        "text": "this is a note",
+        "of": ""
+      }
+    ]
+  }
 ]
