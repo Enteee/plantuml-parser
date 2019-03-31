@@ -16,7 +16,7 @@ you started. If not, please [contribute :heart:](#contribute-heart).
 ## Installation
 
 ```
-$ npm install --global --save plantuml-parser
+$ npm install --save plantuml-parser
 ```
 
 ## Examples / Fixtures
@@ -104,6 +104,14 @@ Parse all PlantUML diagrams in the files matching `pattern`. If given, the callb
 For a detailed description of all the formatters see [src/formatters](src/formatters).
 
 ## Command Line Interface
+
+### Installation
+
+```
+# npm install --global plantuml-parser
+```
+
+### Usage
 
 ```
 Options:
