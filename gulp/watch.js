@@ -4,7 +4,7 @@ task('watch', (cb) => {
   watch([
     'src/**/*.js',
     'src/**/*.pegjs',
-    'format/**/*.js',
+    'test/**/*.js',
     '!src/**/plantuml.js',
     '!src/**/plantuml-trace.js'
   ], {

@@ -1,9 +1,11 @@
 [
-  [
-    {
-      "name": "AbstractList",
-      "isAbstract": false,
-      "members": []
-    }
-  ]
+  {
+    "elements": [
+      {
+        "name": "AbstractList",
+        "isAbstract": false,
+        "members": []
+      }
+    ]
+  }
 ]

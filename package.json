@@ -5,7 +5,10 @@
   "main": "src",
   "files": "src/**/*.js",
   "dependencies": {
+    "async": "^2.6.2",
+    "fast-glob": "^2.2.6",
     "get-stdin": "^6.0.0",
+    "json-colorizer": "^2.1.2",
     "pegjs-backtrace": "^0.1.2",
     "read-vinyl-file-stream": "^2.0.3",
     "require-dir": "^1.2.0",

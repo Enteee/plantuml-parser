@@ -1,13 +1,13 @@
-# plantuml-parser [![Build Status](https://travis-ci.org/Enteee/plantuml-parser.svg?branch=master)](https://travis-ci.org/Enteee/plantuml-parser) [![Coverage Status](https://coveralls.io/repos/github/Enteee/plantuml-parser/badge.svg?branch=master)](https://coveralls.io/github/Enteee/plantuml-parser?branch=master)
+# plantuml-parser [![npm version](https://badge.fury.io/js/plantuml-parser.svg)](https://badge.fury.io/js/plantuml-parser) [![Build Status](https://travis-ci.org/Enteee/plantuml-parser.svg?branch=master)](https://travis-ci.org/Enteee/plantuml-parser) [![Coverage Status](https://coveralls.io/repos/github/Enteee/plantuml-parser/badge.svg?branch=master)](https://coveralls.io/github/Enteee/plantuml-parser?branch=master)
 _Parse PlantUML Syntax in JavaScript_
 
 The aim of this project is to provide a feature-complete, well tested, and
-maintainable [Parsing Expression Grammar (PEG)](src/plantuml.pegjs)
-for the [PlantUML](http://plantuml.com/) syntax. The parser is designed 
-to be used as [JavaScript library](#usage) or from the [Command Line](#command-line-interface)
+maintainable [Parsing Expression Grammar (PEG)](src/plantuml.`egjs)
+for the [PlantUML](http://plantuml.com/) syntax. The parser is designed
+to be used as [JavaScript library](#usage) or from the [Command Line](#command-line-interface).
 
 **Important**: The parser is not yet feature-complete. But we focus on writing a
-robust implementation which can parse parts of diagram without knowing the full
+robust implementation which can parse parts of diagrams without implementing the full
 syntax. This means that the parser probably still parses just about enough to get
 you started. If not, please [contribute :heart:](#contribute-heart).
 
@@ -16,7 +16,7 @@ you started. If not, please [contribute :heart:](#contribute-heart).
 ## Installation
 
 ```
-$ npm install --global --save plantuml-parser
+$ npm install --save plantuml-parser
 ```
 
 ## Examples / Fixtures
@@ -26,7 +26,7 @@ We keep a set of PlantUML scripts (`in.plantuml`) and the corresponding formatte
 ## Usage
 
 ```javascript
-const { parse, parseTrace, formatters } = require('plantuml-parser');
+const { parse, parseFile, formatters } = require('./src');
 
 // Example PlantUML
 const data = `
@@ -42,8 +42,8 @@ const ast = parse(data);
 
 // Format and print AST
 console.log(
-  formatters.default(ast);
-)
+  formatters.default(ast)
+);
 ```
 
 <details><summary>Output</summary>
@@ -51,31 +51,33 @@ console.log(
 
 ```javascript
 [
-  [
-    {
-      "name": "A",
-      "isAbstract": false,
-      "members": []
-    },
-    {
-      "name": "B",
-      "isAbstract": false,
-      "members": []
-    },
-    {
-      "left": "A",
-      "right": "B",
-      "leftType": "Unknown",
-      "rightType": "Unknown",
-      "leftArrowHead": "",
-      "rightArrowHead": "|>",
-      "leftArrowBody": "-",
-      "rightArrowBody": "-",
-      "leftCardinality": "",
-      "rightCardinality": "",
-      "label": ""
-    }
-  ]
+  {
+    "elements": [
+      {
+        "name": "A",
+        "isAbstract": false,
+        "members": []
+      },
+      {
+        "name": "B",
+        "isAbstract": false,
+        "members": []
+      },
+      {
+        "left": "A",
+        "right": "B",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": "|>",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      }
+    ]
+  }
 ]
 ```
 
@@ -87,14 +89,15 @@ console.log(
 Parse PlantUML in `data`. Returns abstract syntax tree.
 
 * `data`: data to parse
-* `options`: see [PEG.js parser options](https://pegjs.org/documentation#generating-a-parser-javascript-api)..
+* `options`: see [PEG.js parser options] and [pegjs-backtrace options]
 
-### `parseTrace(data, options)`
+### `parseFile(pattern, options, cb)`
 
-Parse PlantUML in `data`, produces tracing output for debugging. Returns abstract syntax tree.
+Parse all PlantUML diagrams in the files matching `pattern`. If given, the callback function `cb` will make this function behave asynchronous.
 
-* `data`: data to parse
-* `options`: see [PEG.js parser options](https://pegjs.org/documentation#generating-a-parser-javascript-api)..
+* `pattern`: files to parse, supports globbing, e.g.: `**/*.plantuml`.
+* `options`: see [PEG.js parser options] and [pegjs-backtrace options]
+* `cb`: (optional) asynchronous callback. Called with: `cb(err, ast)`
 
 ### `formatters`: A collection of built-in AST formatters.
 
@@ -102,14 +105,24 @@ For a detailed description of all the formatters see [src/formatters](src/format
 
 ## Command Line Interface
 
+### Installation
+
+```
+# npm install --global plantuml-parser
+```
+
+### Usage
+
 ```
 Options:
+  --version        Show version number                                 [boolean]
   --formatter, -f  formatter to use
                               [choices: "default", "graph"] [default: "default"]
   --input, -i      input file to read                  [string] [default: stdin]
   --output, -o     output file to write               [string] [default: stdout]
   --color, -c      colorful output                    [boolean] [default: false]
-  --verbose, -v    print verbose output               [boolean] [default: false]
+  --verbose, -v    1x print verbose output, 2x print parser tracing
+                                                            [count] [default: 0]
   --help           Show help                                           [boolean]
 ```
 
@@ -161,10 +174,13 @@ $ npm test
 $ git commit
 ```
 
-## Similar Projects
+## Related
 
-* [PlantUML code generator](https://github.com/bafolts/plantuml-code-generator): Provides a command line utility to generate code in various languages given a plantuml class diagram.
+* [PlantUML code generator](https://github.com/bafolts/plantuml-code-generator): Provides a command line utility to generate code in various languages given a PlantUML class diagram.
 
 ## License
 
 * [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+
+[PEG.js parser options]:https://pegjs.org/documentation#generating-a-parser-javascript-api
+[pegjs-backtrace options]:https://github.com/okaxaki/pegjs-backtrace#options

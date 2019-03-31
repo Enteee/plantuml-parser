@@ -17,8 +17,10 @@ PlantUMLFile
 UML
   = elements:UMLElement*
   {
-    return elements.filter(
-      e => e !== undefined
+    return new (require('./uml'))(
+      elements.filter(
+        e => e !== undefined
+      )
     );
   }
 

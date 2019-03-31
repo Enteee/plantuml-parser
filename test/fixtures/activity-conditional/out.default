@@ -1,12 +1,14 @@
 [
-  [
-    {
-      "text": "This is a note to the right",
-      "of": ""
-    },
-    {
-      "text": "This is a note to the left",
-      "of": ""
-    }
-  ]
+  {
+    "elements": [
+      {
+        "text": "This is a note to the right",
+        "of": ""
+      },
+      {
+        "text": "This is a note to the left",
+        "of": ""
+      }
+    ]
+  }
 ]

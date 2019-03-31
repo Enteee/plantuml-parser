@@ -5,6 +5,7 @@ const readFiles = require('read-vinyl-file-stream');
 const { task, src, series } = require('gulp');
 const { join, dirname } = require('path');
 const { writeFileSync } = require('fs');
+const { EOL } = require('os');
 
 const mocha = require('gulp-mocha');
 const log = require('fancy-log');
@@ -54,9 +55,9 @@ task('test-fixtures-update-run', () =>
                 tracer: tracer
               }
             )
-          );
+          ) + EOL;
           /*
-        //Don't write tree they are too big:
+        //Don't write trees they are too big:
         writeFileSync(
           join(
             dirname(file.path),

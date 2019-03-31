@@ -14,7 +14,7 @@
  *   ...
  * ]
  */
-const conf = require('../conf');
+const conf = require('../../conf');
 
 const { lstatSync, readdirSync, readFileSync } = require('fs');
 const { join } = require('path');
@@ -58,13 +58,11 @@ function getOutputFiles (source) {
 
 module.exports = getDirectories(conf.fixtures.dir).map(
   (directory) => {
+    const srcFile = join(directory, conf.fixtures.inputFile);
     var src;
     try {
       src = readFileSync(
-        join(
-          directory,
-          conf.fixtures.inputFile
-        ),
+        srcFile,
         conf.encoding
       );
     } catch (e) {
@@ -73,6 +71,7 @@ module.exports = getDirectories(conf.fixtures.dir).map(
     }
     return {
       directory: directory,
+      srcFile: srcFile,
       src: src,
       out: getOutputFiles(directory)
     };
