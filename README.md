@@ -1,4 +1,4 @@
-# plantuml-parser [![Build Status](https://travis-ci.org/Enteee/plantuml-parser.svg?branch=master)](https://travis-ci.org/Enteee/plantuml-parser) [![Coverage Status](https://coveralls.io/repos/github/Enteee/plantuml-parser/badge.svg?branch=master)](https://coveralls.io/github/Enteee/plantuml-parser?branch=master)
+# plantuml-parser [![npm version](https://badge.fury.io/js/plantuml-parser.svg)](https://badge.fury.io/js/plantuml-parser) [![Build Status](https://travis-ci.org/Enteee/plantuml-parser.svg?branch=master)](https://travis-ci.org/Enteee/plantuml-parser) [![Coverage Status](https://coveralls.io/repos/github/Enteee/plantuml-parser/badge.svg?branch=master)](https://coveralls.io/github/Enteee/plantuml-parser?branch=master)
 _Parse PlantUML Syntax in JavaScript_
 
 The aim of this project is to provide a feature-complete, well tested, and
