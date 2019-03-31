@@ -2,8 +2,8 @@
 _Parse PlantUML Syntax in JavaScript_
 
 The aim of this project is to provide a feature-complete, well tested, and
-maintainable [Parsing Expression Grammar (PEG)](src/plantuml.pegjs)
-for the [PlantUML](http://plantuml.com/) syntax. The parser is designed 
+maintainable [Parsing Expression Grammar (PEG)](src/plantuml.`egjs)
+for the [PlantUML](http://plantuml.com/) syntax. The parser is designed
 to be used as [JavaScript library](#usage) or from the [Command Line](#command-line-interface)
 
 **Important**: The parser is not yet feature-complete. But we focus on writing a
@@ -89,14 +89,14 @@ console.log(
 Parse PlantUML in `data`. Returns abstract syntax tree.
 
 * `data`: data to parse
-* `options`: see [PEG.js parser options](https://pegjs.org/documentation#generating-a-parser-javascript-api)..
+* `options`: see [PEG.js parser options] and [pegjs-backtrace options]
 
 ### `parseFile(pattern, options, cb)`
 
-Parse all PlantUML diagrams in the files mathcing `pattern`. If given, the callback function `cb` will make this function behave asynchronous.
+Parse all PlantUML diagrams in the files matching `pattern`. If given, the callback function `cb` will make this function behave asynchronous.
 
-* `pattern`: files to parse, supports globbing, e.g.: `**/*.plantuml'.
-* `options`: see [PEG.js parser options](https://pegjs.org/documentation#generating-a-parser-javascript-api).
+* `pattern`: files to parse, supports globbing, e.g.: `**/*.plantuml`.
+* `options`: see [PEG.js parser options] and [pegjs-backtrace options]
 * `cb`: (optional) asynchronous callback. Called with: `cb(err, ast)`
 
 ### `formatters`: A collection of built-in AST formatters.
@@ -168,8 +168,11 @@ $ git commit
 
 ## Related
 
-* [PlantUML code generator](https://github.com/bafolts/plantuml-code-generator): Provides a command line utility to generate code in various languages given a plantuml class diagram.
+* [PlantUML code generator](https://github.com/bafolts/plantuml-code-generator): Provides a command line utility to generate code in various languages given a PlantUML class diagram.
 
 ## License
 
 * [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+
+[PEG.js parser options]:https://pegjs.org/documentation#generating-a-parser-javascript-api
+[pegjs-backtrace options]:https://github.com/okaxaki/pegjs-backtrace#options
