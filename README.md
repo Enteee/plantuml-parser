@@ -7,7 +7,7 @@ for the [PlantUML](http://plantuml.com/) syntax. The parser is designed
 to be used as [JavaScript library](#usage) or from the [Command Line](#command-line-interface).
 
 **Important**: The parser is not yet feature-complete. But we focus on writing a
-robust implementation which can parse parts of diagram without implementing the full
+robust implementation which can parse parts of diagrams without implementing the full
 syntax. This means that the parser probably still parses just about enough to get
 you started. If not, please [contribute :heart:](#contribute-heart).
 
