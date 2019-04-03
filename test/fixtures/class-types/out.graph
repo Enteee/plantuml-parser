@@ -6,7 +6,6 @@
       "members": [],
       "id": "AbstractList",
       "type": "Class",
-      "title": "AbstractList",
       "hidden": true
     },
     {
@@ -15,7 +14,6 @@
       "members": [],
       "id": "Test",
       "type": "Class",
-      "title": "Test",
       "hidden": true
     },
     {
@@ -24,7 +22,6 @@
       "members": [],
       "id": "System",
       "type": "Class",
-      "title": "System",
       "hidden": true
     },
     {
@@ -33,7 +30,6 @@
       "members": [],
       "id": "Date",
       "type": "Class",
-      "title": "Date",
       "hidden": true
     },
     {
@@ -103,7 +99,6 @@
       ],
       "id": "Foo1",
       "type": "Class",
-      "title": "Foo1",
       "hidden": true
     },
     {
@@ -112,7 +107,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "can",
-      "title": "can",
       "hidden": true
     },
     {
@@ -121,7 +115,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "lines",
-      "title": "lines",
       "hidden": true
     },
     {
@@ -130,7 +123,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "..",
-      "title": "..",
       "hidden": true
     },
     {
@@ -139,7 +131,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "you",
-      "title": "you",
       "hidden": true
     },
     {
@@ -148,7 +139,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "group",
-      "title": "group",
       "hidden": true
     },
     {
@@ -157,7 +147,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "together.",
-      "title": "together.",
       "hidden": true
     },
     {
@@ -166,7 +155,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "__",
-      "title": "__",
       "hidden": true
     },
     {
@@ -175,7 +163,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "can",
-      "title": "can",
       "hidden": true
     },
     {
@@ -184,7 +171,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "you",
-      "title": "you",
       "hidden": true
     },
     {
@@ -193,7 +179,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "of",
-      "title": "of",
       "hidden": true
     },
     {
@@ -254,7 +239,6 @@
       ],
       "id": "User",
       "type": "Class",
-      "title": "User",
       "hidden": true
     },
     {
@@ -263,7 +247,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Simple",
-      "title": "Simple",
       "hidden": true
     },
     {
@@ -272,7 +255,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Some",
-      "title": "Some",
       "hidden": true
     },
     {
@@ -281,7 +263,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "private",
-      "title": "private",
       "hidden": true
     },
     {
@@ -290,7 +271,6 @@
       "accessor": "-",
       "type": "Attribute",
       "id": "age",
-      "title": "age",
       "hidden": true
     },
     {
@@ -299,7 +279,6 @@
       "accessor": "-",
       "type": "Attribute",
       "id": "password",
-      "title": "password",
       "hidden": true
     },
     {
@@ -307,7 +286,6 @@
       "members": [],
       "id": "List",
       "type": "Interface",
-      "title": "List",
       "hidden": true
     },
     {
@@ -316,7 +294,6 @@
       "members": [],
       "id": "Object",
       "type": "Class",
-      "title": "Object",
       "hidden": true
     }
   ],

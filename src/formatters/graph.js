@@ -1,6 +1,8 @@
 const conf = require('../../conf');
 const { join } = require('path');
 
+const File = require(join(conf.src.dir, 'file'));
+const UML = require(join(conf.src.dir, 'uml'));
 const Class = require(join(conf.src.dir, 'class'));
 const Interface = require(join(conf.src.dir, 'interface'));
 const Relationship = require(join(conf.src.dir, 'relationship'));
@@ -11,15 +13,47 @@ module.exports = function (ast) {
   const nodes = [];
   const edges = [];
 
+  var fileName = "";
+  function linkToFile (node) {
+    if(fileName) {
+      edges.push({
+        from: fileName,
+        to: node.name,
+        name: 'contains',
+        hidden: true
+      });
+    }
+  }
+
   (function extractNodes (node) {
-    if (node instanceof Class || node instanceof Interface) {
+    if (node instanceof File) {
+      fileName = node.name;
+
       nodes.push({
         ...node,
         id: node.name,
         type: node.constructor.name,
-        title: node.name,
         hidden: true
       });
+      node.diagrams
+        .filter(
+          (uml) => uml instanceof UML
+        )
+        .forEach(
+          (uml) => uml.elements.forEach(
+            (element) => extractNodes(element)
+          )
+        );
+    } else if (node instanceof Class || node instanceof Interface) {
+      nodes.push({
+        ...node,
+        id: node.name,
+        type: node.constructor.name,
+        hidden: true
+      });
+
+      linkToFile(node);
+
       node.members
         .filter(
           (attribute) => attribute instanceof MemberVariable
@@ -30,7 +64,6 @@ module.exports = function (ast) {
               ...attribute,
               id: attribute.name,
               type: 'Attribute',
-              title: attribute.name,
               hidden: true
             });
             edges.push({
@@ -39,6 +72,8 @@ module.exports = function (ast) {
               name: 'has',
               hidden: true
             });
+
+            linkToFile(attribute);
           }
         );
     } else if (node instanceof Component) {
@@ -49,9 +84,17 @@ module.exports = function (ast) {
         title: node.name,
         hidden: true
       });
+      edges.push({
+        from: node.name,
+        to: fileName,
+        name: 'contains',
+        hidden: true
+      });
+
+      linkToFile(node);
     } else if (node instanceof Object) {
       Object.keys(node).map(
-        (k) => extractNodes(node[k])
+        (k) => extractNodes (node[k])
       );
     }
   })(ast);

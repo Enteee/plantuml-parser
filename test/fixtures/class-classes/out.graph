@@ -20,7 +20,6 @@
       ],
       "id": "Dwelling",
       "type": "Class",
-      "title": "Dwelling",
       "hidden": true
     },
     {
@@ -29,7 +28,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Windows",
-      "title": "Windows",
       "hidden": true
     },
     {
@@ -38,7 +36,6 @@
       "members": [],
       "id": "Apartment",
       "type": "Class",
-      "title": "Apartment",
       "hidden": true
     },
     {
@@ -47,7 +44,6 @@
       "members": [],
       "id": "House",
       "type": "Class",
-      "title": "House",
       "hidden": true
     },
     {
@@ -56,7 +52,6 @@
       "members": [],
       "id": "Commune",
       "type": "Class",
-      "title": "Commune",
       "hidden": true
     }
   ],

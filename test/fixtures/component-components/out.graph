@@ -22,5 +22,24 @@
       "hidden": true
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "from": "Business Logic",
+      "to": "",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Data Access",
+      "to": "",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Graphic User\\nInterface",
+      "to": "",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
 }

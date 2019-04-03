@@ -70,7 +70,6 @@
       ],
       "id": "Car",
       "type": "Class",
-      "title": "Car",
       "hidden": true
     },
     {
@@ -79,7 +78,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Field",
-      "title": "Field",
       "hidden": true
     },
     {
@@ -88,7 +86,6 @@
       "accessor": "-",
       "type": "Attribute",
       "id": "Name",
-      "title": "Name",
       "hidden": true
     },
     {
@@ -97,7 +94,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Name",
-      "title": "Name",
       "hidden": true
     },
     {
@@ -106,7 +102,6 @@
       "accessor": "#",
       "type": "Attribute",
       "id": "Name",
-      "title": "Name",
       "hidden": true
     },
     {
@@ -115,7 +110,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Method",
-      "title": "Method",
       "hidden": true
     },
     {
@@ -124,7 +118,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Static",
-      "title": "Static",
       "hidden": true
     },
     {
@@ -133,7 +126,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "Abstract",
-      "title": "Abstract",
       "hidden": true
     },
     {
@@ -142,7 +134,6 @@
       "members": [],
       "id": "Car",
       "type": "Class",
-      "title": "Car",
       "hidden": true
     }
   ],
