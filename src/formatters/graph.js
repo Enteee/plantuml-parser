@@ -13,9 +13,9 @@ module.exports = function (ast) {
   const nodes = [];
   const edges = [];
 
-  var fileName = "";
+  var fileName = '';
   function linkToFile (node) {
-    if(fileName) {
+    if (fileName) {
       edges.push({
         from: fileName,
         to: node.name,
@@ -94,7 +94,7 @@ module.exports = function (ast) {
       linkToFile(node);
     } else if (node instanceof Object) {
       Object.keys(node).map(
-        (k) => extractNodes (node[k])
+        (k) => extractNodes(node[k])
       );
     }
   })(ast);
