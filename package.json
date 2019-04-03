@@ -4,6 +4,7 @@
   "description": "Parse PlantUML Syntax in JavaScript",
   "main": "src",
   "files": [
+    "conf.js",
     "src/**/*.js"
   ],
   "dependencies": {
