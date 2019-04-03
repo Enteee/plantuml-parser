@@ -1,0 +1,259 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/component-packages/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "Front End",
+              "type": "package",
+              "elements": [
+                {
+                  "name": "Graphic User\\nInterface"
+                }
+              ]
+            },
+            {
+              "name": "Internet",
+              "type": "cloud",
+              "elements": []
+            },
+            {
+              "name": "Middle Tier",
+              "type": "node",
+              "elements": [
+                {
+                  "name": "Business Logic"
+                },
+                {
+                  "name": "Data Access"
+                },
+                {
+                  "name": "IMath",
+                  "members": []
+                },
+                {
+                  "name": "Items",
+                  "members": []
+                }
+              ]
+            },
+            {
+              "name": "PostgreSQL\\n",
+              "type": "database",
+              "elements": [
+                {
+                  "name": "Stored Procs"
+                }
+              ]
+            },
+            {
+              "left": "GUI",
+              "right": "Internet",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "left": "Internet",
+              "right": "Math",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "(",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "name": "Business Logic"
+            },
+            {
+              "left": "DA",
+              "right": "Items",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "name": "Business Logic"
+            },
+            {
+              "left": "DA",
+              "right": "Stored Procs",
+              "leftType": "Unknown",
+              "rightType": "Component",
+              "leftArrowHead": "",
+              "rightArrowHead": "",
+              "leftArrowBody": ".",
+              "rightArrowBody": ".",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/component-packages/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "Graphic User\\nInterface",
+      "id": "Graphic User\\nInterface",
+      "type": "Component",
+      "title": "Graphic User\\nInterface",
+      "hidden": true
+    },
+    {
+      "name": "Business Logic",
+      "id": "Business Logic",
+      "type": "Component",
+      "title": "Business Logic",
+      "hidden": true
+    },
+    {
+      "name": "Data Access",
+      "id": "Data Access",
+      "type": "Component",
+      "title": "Data Access",
+      "hidden": true
+    },
+    {
+      "name": "IMath",
+      "members": [],
+      "id": "IMath",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "Items",
+      "members": [],
+      "id": "Items",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "Stored Procs",
+      "id": "Stored Procs",
+      "type": "Component",
+      "title": "Stored Procs",
+      "hidden": true
+    },
+    {
+      "name": "Business Logic",
+      "id": "Business Logic",
+      "type": "Component",
+      "title": "Business Logic",
+      "hidden": true
+    },
+    {
+      "name": "Business Logic",
+      "id": "Business Logic",
+      "type": "Component",
+      "title": "Business Logic",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "Graphic User\\nInterface",
+      "to": "test/fixtures/component-packages/in.plantuml",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/component-packages/in.plantuml",
+      "to": "Graphic User\\nInterface",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Business Logic",
+      "to": "test/fixtures/component-packages/in.plantuml",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/component-packages/in.plantuml",
+      "to": "Business Logic",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Data Access",
+      "to": "test/fixtures/component-packages/in.plantuml",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/component-packages/in.plantuml",
+      "to": "Data Access",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/component-packages/in.plantuml",
+      "to": "IMath",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/component-packages/in.plantuml",
+      "to": "Items",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Stored Procs",
+      "to": "test/fixtures/component-packages/in.plantuml",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/component-packages/in.plantuml",
+      "to": "Stored Procs",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Business Logic",
+      "to": "test/fixtures/component-packages/in.plantuml",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/component-packages/in.plantuml",
+      "to": "Business Logic",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Business Logic",
+      "to": "test/fixtures/component-packages/in.plantuml",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/component-packages/in.plantuml",
+      "to": "Business Logic",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

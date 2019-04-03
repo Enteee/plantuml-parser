@@ -1,0 +1,21 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/class-free-floating-note/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "text": "This note free floating and has a Name",
+              "of": ""
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/class-free-floating-note/in.plantuml",
+      "type": "File",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

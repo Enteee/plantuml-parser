@@ -1,0 +1,10 @@
+[
+  {
+    "name": "test/fixtures/graphviz-world-dynamics/in.plantuml",
+    "diagrams": [
+      {
+        "elements": []
+      }
+    ]
+  }
+]

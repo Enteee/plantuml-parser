@@ -1,0 +1,69 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/object-simple-object/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "left": "Germany",
+              "right": "France",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "<|",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "left": "Spain",
+              "right": "USA",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "*",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "left": "Mexico",
+              "right": "Russia",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "o",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "left": "Canada",
+              "right": "Japan",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "",
+              "leftArrowBody": ".",
+              "rightArrowBody": ".",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/object-simple-object/in.plantuml",
+      "type": "File",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

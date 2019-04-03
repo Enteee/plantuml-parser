@@ -1,0 +1,21 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/activity-activity/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "text": "This is a Note...\n    * Activity diagrams can begin with a Start\n    * An activity is colon, some words, and a semicolon\n    * Activity diagrams can end with a stop",
+              "of": ""
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/activity-activity/in.plantuml",
+      "type": "File",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

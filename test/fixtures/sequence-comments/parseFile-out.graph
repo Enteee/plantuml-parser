@@ -1,0 +1,337 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/sequence-comments/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            [
+              [],
+              "'",
+              [
+                [
+                  [
+                    null,
+                    "T"
+                  ],
+                  [
+                    null,
+                    "h"
+                  ],
+                  [
+                    null,
+                    "i"
+                  ],
+                  [
+                    null,
+                    "s"
+                  ],
+                  [
+                    null,
+                    " "
+                  ],
+                  [
+                    null,
+                    "i"
+                  ],
+                  [
+                    null,
+                    "s"
+                  ],
+                  [
+                    null,
+                    " "
+                  ],
+                  [
+                    null,
+                    "a"
+                  ],
+                  [
+                    null,
+                    " "
+                  ],
+                  [
+                    null,
+                    "s"
+                  ],
+                  [
+                    null,
+                    "i"
+                  ],
+                  [
+                    null,
+                    "n"
+                  ],
+                  [
+                    null,
+                    "g"
+                  ],
+                  [
+                    null,
+                    "l"
+                  ],
+                  [
+                    null,
+                    "e"
+                  ],
+                  [
+                    null,
+                    " "
+                  ],
+                  [
+                    null,
+                    "l"
+                  ],
+                  [
+                    null,
+                    "i"
+                  ],
+                  [
+                    null,
+                    "n"
+                  ],
+                  [
+                    null,
+                    "e"
+                  ],
+                  [
+                    null,
+                    " "
+                  ],
+                  [
+                    null,
+                    "c"
+                  ],
+                  [
+                    null,
+                    "o"
+                  ],
+                  [
+                    null,
+                    "m"
+                  ],
+                  [
+                    null,
+                    "m"
+                  ],
+                  [
+                    null,
+                    "e"
+                  ],
+                  [
+                    null,
+                    "n"
+                  ],
+                  [
+                    null,
+                    "t"
+                  ]
+                ],
+                "\n"
+              ]
+            ],
+            [
+              [],
+              "/'",
+              [
+                [
+                  null,
+                  "\n"
+                ],
+                [
+                  null,
+                  "T"
+                ],
+                [
+                  null,
+                  "h"
+                ],
+                [
+                  null,
+                  "i"
+                ],
+                [
+                  null,
+                  "s"
+                ],
+                [
+                  null,
+                  " "
+                ],
+                [
+                  null,
+                  "i"
+                ],
+                [
+                  null,
+                  "s"
+                ],
+                [
+                  null,
+                  " "
+                ],
+                [
+                  null,
+                  "a"
+                ],
+                [
+                  null,
+                  " "
+                ],
+                [
+                  null,
+                  "m"
+                ],
+                [
+                  null,
+                  "u"
+                ],
+                [
+                  null,
+                  "l"
+                ],
+                [
+                  null,
+                  "t"
+                ],
+                [
+                  null,
+                  "i"
+                ],
+                [
+                  null,
+                  "-"
+                ],
+                [
+                  null,
+                  "\n"
+                ],
+                [
+                  null,
+                  "l"
+                ],
+                [
+                  null,
+                  "i"
+                ],
+                [
+                  null,
+                  "n"
+                ],
+                [
+                  null,
+                  "e"
+                ],
+                [
+                  null,
+                  " "
+                ],
+                [
+                  null,
+                  "c"
+                ],
+                [
+                  null,
+                  "o"
+                ],
+                [
+                  null,
+                  "m"
+                ],
+                [
+                  null,
+                  "m"
+                ],
+                [
+                  null,
+                  "e"
+                ],
+                [
+                  null,
+                  "n"
+                ],
+                [
+                  null,
+                  "t"
+                ],
+                [
+                  null,
+                  "\n"
+                ]
+              ],
+              [
+                [
+                  [
+                    null,
+                    "'"
+                  ],
+                  [
+                    null,
+                    "/"
+                  ]
+                ],
+                "\n"
+              ]
+            ],
+            {
+              "left": "User",
+              "right": "GUI",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "To boundary"
+            },
+            {
+              "left": "GUI",
+              "right": "SC",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "To control"
+            },
+            {
+              "left": "SC",
+              "right": "Widget",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "To entity"
+            },
+            {
+              "left": "Widget",
+              "right": "Widgets",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "To database"
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/sequence-comments/in.plantuml",
+      "type": "File",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

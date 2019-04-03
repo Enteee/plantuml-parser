@@ -1,0 +1,19 @@
+[
+  {
+    "name": "test/fixtures/activity-conditional/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "text": "This is a note to the right",
+            "of": ""
+          },
+          {
+            "text": "This is a note to the left",
+            "of": ""
+          }
+        ]
+      }
+    ]
+  }
+]

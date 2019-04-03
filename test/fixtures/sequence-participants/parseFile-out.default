@@ -1,0 +1,10 @@
+[
+  {
+    "name": "test/fixtures/sequence-participants/in.plantuml",
+    "diagrams": [
+      {
+        "elements": []
+      }
+    ]
+  }
+]

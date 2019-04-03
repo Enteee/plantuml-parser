@@ -1,0 +1,14 @@
+[
+  {
+    "name": "test/fixtures/state-simple-composite-state/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "*"
+          }
+        ]
+      }
+    ]
+  }
+]

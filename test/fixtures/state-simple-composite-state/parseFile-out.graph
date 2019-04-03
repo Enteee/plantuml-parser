@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/state-simple-composite-state/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "*"
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/state-simple-composite-state/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "*",
+      "id": "*",
+      "type": "Component",
+      "title": "*",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "*",
+      "to": "test/fixtures/state-simple-composite-state/in.plantuml",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/state-simple-composite-state/in.plantuml",
+      "to": "*",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

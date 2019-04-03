@@ -1,0 +1,15 @@
+[
+  {
+    "name": "test/fixtures/class-free-floating-note/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "text": "This note free floating and has a Name",
+            "of": ""
+          }
+        ]
+      }
+    ]
+  }
+]

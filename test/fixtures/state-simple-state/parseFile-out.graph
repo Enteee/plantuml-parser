@@ -1,0 +1,83 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/state-simple-state/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "*"
+            },
+            {
+              "left": "GlassEmpty",
+              "right": "*",
+              "leftType": "Unknown",
+              "rightType": "Component",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "left": "GlassEmpty",
+              "right": "GlassFull",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "left": "GlassFull",
+              "right": "*",
+              "leftType": "Unknown",
+              "rightType": "Component",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "text": "this is a note",
+              "of": ""
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/state-simple-state/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "*",
+      "id": "*",
+      "type": "Component",
+      "title": "*",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "*",
+      "to": "test/fixtures/state-simple-state/in.plantuml",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/state-simple-state/in.plantuml",
+      "to": "*",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

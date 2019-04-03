@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/class-multi-diagram/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "Dwelling",
+              "isAbstract": false,
+              "members": [
+                {
+                  "name": "Windows",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "type": "Int"
+                },
+                {
+                  "name": "Lock",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "returnType": "void",
+                  "_arguments": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "elements": [
+            {
+              "name": "Dwelling",
+              "isAbstract": false,
+              "members": [
+                {
+                  "name": "Windows",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "type": "Int"
+                },
+                {
+                  "name": "Lock",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "returnType": "void",
+                  "_arguments": ""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/class-multi-diagram/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "Dwelling",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "Windows",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "Int"
+        },
+        {
+          "name": "Lock",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        }
+      ],
+      "id": "Dwelling",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Windows",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "Windows",
+      "hidden": true
+    },
+    {
+      "name": "Dwelling",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "Windows",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "Int"
+        },
+        {
+          "name": "Lock",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        }
+      ],
+      "id": "Dwelling",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Windows",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "Windows",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "test/fixtures/class-multi-diagram/in.plantuml",
+      "to": "Dwelling",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "Windows",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-multi-diagram/in.plantuml",
+      "to": "Windows",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-multi-diagram/in.plantuml",
+      "to": "Dwelling",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "Windows",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-multi-diagram/in.plantuml",
+      "to": "Windows",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

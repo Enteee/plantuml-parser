@@ -1,0 +1,53 @@
+[
+  {
+    "name": "test/fixtures/class-multi-diagram/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "Dwelling",
+            "isAbstract": false,
+            "members": [
+              {
+                "name": "Windows",
+                "isStatic": false,
+                "accessor": "+",
+                "type": "Int"
+              },
+              {
+                "name": "Lock",
+                "isStatic": false,
+                "accessor": "+",
+                "returnType": "void",
+                "_arguments": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "elements": [
+          {
+            "name": "Dwelling",
+            "isAbstract": false,
+            "members": [
+              {
+                "name": "Windows",
+                "isStatic": false,
+                "accessor": "+",
+                "type": "Int"
+              },
+              {
+                "name": "Lock",
+                "isStatic": false,
+                "accessor": "+",
+                "returnType": "void",
+                "_arguments": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

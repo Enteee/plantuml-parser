@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/use-case-package/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "Features",
+              "type": "rectangle",
+              "elements": [
+                {
+                  "name": "Login"
+                },
+                {
+                  "name": "Create / Delete User"
+                }
+              ]
+            },
+            {
+              "left": "Employee",
+              "right": "Login",
+              "leftType": "Unknown",
+              "rightType": "UseCase",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "left": "Supervisor",
+              "right": "Login",
+              "leftType": "Unknown",
+              "rightType": "UseCase",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "left": "Client",
+              "right": "Login",
+              "leftType": "Unknown",
+              "rightType": "UseCase",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": ".",
+              "rightArrowBody": ".",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "NO!!!!"
+            },
+            {
+              "left": "Supervisor",
+              "right": "CDU",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "I am god"
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/use-case-package/in.plantuml",
+      "type": "File",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "test/fixtures/use-case-use-cases/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "Login"
+          },
+          {
+            "name": "Run Process"
+          },
+          {
+            "name": "Undo Process"
+          },
+          {
+            "name": "Log Out"
+          }
+        ]
+      }
+    ]
+  }
+]
