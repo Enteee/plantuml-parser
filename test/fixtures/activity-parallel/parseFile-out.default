@@ -1,0 +1,10 @@
+[
+  {
+    "name": "test/fixtures/activity-parallel/in.plantuml",
+    "diagrams": [
+      {
+        "elements": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,263 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/class-relationships/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "Dwelling",
+              "isAbstract": false,
+              "members": [
+                {
+                  "name": "Windows",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "type": "Int"
+                },
+                {
+                  "name": "LockTheDoor",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "returnType": "void",
+                  "_arguments": ""
+                }
+              ]
+            },
+            {
+              "name": "Apartment",
+              "isAbstract": false,
+              "members": []
+            },
+            {
+              "name": "House",
+              "isAbstract": false,
+              "members": []
+            },
+            {
+              "name": "Commune",
+              "isAbstract": false,
+              "members": []
+            },
+            {
+              "name": "Window",
+              "isAbstract": false,
+              "members": []
+            },
+            {
+              "name": "Door",
+              "isAbstract": false,
+              "members": []
+            },
+            {
+              "left": "Dwelling",
+              "right": "Apartment",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "<|",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "Inheritance"
+            },
+            {
+              "left": "Dwelling",
+              "right": "Commune",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "<|",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "Inheritance"
+            },
+            {
+              "left": "Dwelling",
+              "right": "House",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "<|",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "Inheritance"
+            },
+            {
+              "left": "Dwelling",
+              "right": "Window",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "*",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "1",
+              "rightCardinality": "many",
+              "label": "Composition"
+            },
+            {
+              "left": "Dwelling",
+              "right": "Door",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "*",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "1",
+              "rightCardinality": "many",
+              "label": "Composition"
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/class-relationships/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "Dwelling",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "Windows",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "Int"
+        },
+        {
+          "name": "LockTheDoor",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        }
+      ],
+      "id": "Dwelling",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Windows",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "Windows",
+      "hidden": true
+    },
+    {
+      "name": "Apartment",
+      "isAbstract": false,
+      "members": [],
+      "id": "Apartment",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "House",
+      "isAbstract": false,
+      "members": [],
+      "id": "House",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Commune",
+      "isAbstract": false,
+      "members": [],
+      "id": "Commune",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Window",
+      "isAbstract": false,
+      "members": [],
+      "id": "Window",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Door",
+      "isAbstract": false,
+      "members": [],
+      "id": "Door",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "test/fixtures/class-relationships/in.plantuml",
+      "to": "Dwelling",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "Windows",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-relationships/in.plantuml",
+      "to": "Windows",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-relationships/in.plantuml",
+      "to": "Apartment",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-relationships/in.plantuml",
+      "to": "House",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-relationships/in.plantuml",
+      "to": "Commune",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-relationships/in.plantuml",
+      "to": "Window",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-relationships/in.plantuml",
+      "to": "Door",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Apartment",
+      "to": "Dwelling",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "Commune",
+      "to": "Dwelling",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "House",
+      "to": "Dwelling",
+      "name": "extends",
+      "hidden": true
+    }
+  ]
+}

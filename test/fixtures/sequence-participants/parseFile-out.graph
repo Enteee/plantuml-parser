@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/sequence-participants/in.plantuml",
+      "diagrams": [
+        {
+          "elements": []
+        }
+      ],
+      "id": "test/fixtures/sequence-participants/in.plantuml",
+      "type": "File",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

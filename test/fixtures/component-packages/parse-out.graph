@@ -1,0 +1,98 @@
+{
+  "nodes": [
+    {
+      "name": "Graphic User\\nInterface",
+      "id": "Graphic User\\nInterface",
+      "type": "Component",
+      "title": "Graphic User\\nInterface",
+      "hidden": true
+    },
+    {
+      "name": "Business Logic",
+      "id": "Business Logic",
+      "type": "Component",
+      "title": "Business Logic",
+      "hidden": true
+    },
+    {
+      "name": "Data Access",
+      "id": "Data Access",
+      "type": "Component",
+      "title": "Data Access",
+      "hidden": true
+    },
+    {
+      "name": "IMath",
+      "members": [],
+      "id": "IMath",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "Items",
+      "members": [],
+      "id": "Items",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "Stored Procs",
+      "id": "Stored Procs",
+      "type": "Component",
+      "title": "Stored Procs",
+      "hidden": true
+    },
+    {
+      "name": "Business Logic",
+      "id": "Business Logic",
+      "type": "Component",
+      "title": "Business Logic",
+      "hidden": true
+    },
+    {
+      "name": "Business Logic",
+      "id": "Business Logic",
+      "type": "Component",
+      "title": "Business Logic",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "Graphic User\\nInterface",
+      "to": "",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Business Logic",
+      "to": "",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Data Access",
+      "to": "",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Stored Procs",
+      "to": "",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Business Logic",
+      "to": "",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Business Logic",
+      "to": "",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

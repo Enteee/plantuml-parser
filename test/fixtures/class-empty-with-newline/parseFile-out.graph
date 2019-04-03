@@ -1,0 +1,37 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/class-empty-with-newline/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "AbstractList",
+              "isAbstract": false,
+              "members": []
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/class-empty-with-newline/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "AbstractList",
+      "isAbstract": false,
+      "members": [],
+      "id": "AbstractList",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "test/fixtures/class-empty-with-newline/in.plantuml",
+      "to": "AbstractList",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

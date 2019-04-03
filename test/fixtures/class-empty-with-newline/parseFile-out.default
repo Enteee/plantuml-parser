@@ -1,0 +1,16 @@
+[
+  {
+    "name": "test/fixtures/class-empty-with-newline/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "AbstractList",
+            "isAbstract": false,
+            "members": []
+          }
+        ]
+      }
+    ]
+  }
+]

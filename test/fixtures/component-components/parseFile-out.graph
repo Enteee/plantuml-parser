@@ -1,0 +1,84 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/component-components/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "Business Logic"
+            },
+            {
+              "name": "Data Access"
+            },
+            {
+              "name": "Graphic User\\nInterface"
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/component-components/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "Business Logic",
+      "id": "Business Logic",
+      "type": "Component",
+      "title": "Business Logic",
+      "hidden": true
+    },
+    {
+      "name": "Data Access",
+      "id": "Data Access",
+      "type": "Component",
+      "title": "Data Access",
+      "hidden": true
+    },
+    {
+      "name": "Graphic User\\nInterface",
+      "id": "Graphic User\\nInterface",
+      "type": "Component",
+      "title": "Graphic User\\nInterface",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "Business Logic",
+      "to": "test/fixtures/component-components/in.plantuml",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/component-components/in.plantuml",
+      "to": "Business Logic",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Data Access",
+      "to": "test/fixtures/component-components/in.plantuml",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/component-components/in.plantuml",
+      "to": "Data Access",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Graphic User\\nInterface",
+      "to": "test/fixtures/component-components/in.plantuml",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/component-components/in.plantuml",
+      "to": "Graphic User\\nInterface",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

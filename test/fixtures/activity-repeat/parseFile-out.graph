@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/activity-repeat/in.plantuml",
+      "diagrams": [
+        {
+          "elements": []
+        }
+      ],
+      "id": "test/fixtures/activity-repeat/in.plantuml",
+      "type": "File",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,168 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/class-packages/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "Node",
+              "type": "package",
+              "elements": [
+                {
+                  "name": "Worker1",
+                  "isAbstract": false,
+                  "members": []
+                }
+              ]
+            },
+            {
+              "name": "Rectangle",
+              "type": "package",
+              "elements": [
+                {
+                  "name": "Worker2",
+                  "isAbstract": false,
+                  "members": []
+                }
+              ]
+            },
+            {
+              "name": "Folder",
+              "type": "package",
+              "elements": [
+                {
+                  "name": "Worker3",
+                  "isAbstract": false,
+                  "members": []
+                }
+              ]
+            },
+            {
+              "name": "Frame",
+              "type": "package",
+              "elements": [
+                {
+                  "name": "Worker4",
+                  "isAbstract": false,
+                  "members": []
+                }
+              ]
+            },
+            {
+              "name": "Internet",
+              "type": "package",
+              "elements": [
+                {
+                  "name": "Worker5",
+                  "isAbstract": false,
+                  "members": []
+                }
+              ]
+            },
+            {
+              "name": "Database",
+              "type": "package",
+              "elements": [
+                {
+                  "name": "Worker6",
+                  "isAbstract": false,
+                  "members": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/class-packages/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "Worker1",
+      "isAbstract": false,
+      "members": [],
+      "id": "Worker1",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Worker2",
+      "isAbstract": false,
+      "members": [],
+      "id": "Worker2",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Worker3",
+      "isAbstract": false,
+      "members": [],
+      "id": "Worker3",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Worker4",
+      "isAbstract": false,
+      "members": [],
+      "id": "Worker4",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Worker5",
+      "isAbstract": false,
+      "members": [],
+      "id": "Worker5",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Worker6",
+      "isAbstract": false,
+      "members": [],
+      "id": "Worker6",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "test/fixtures/class-packages/in.plantuml",
+      "to": "Worker1",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-packages/in.plantuml",
+      "to": "Worker2",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-packages/in.plantuml",
+      "to": "Worker3",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-packages/in.plantuml",
+      "to": "Worker4",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-packages/in.plantuml",
+      "to": "Worker5",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-packages/in.plantuml",
+      "to": "Worker6",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/state-concurrent-state-C3PO/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "*"
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/state-concurrent-state-C3PO/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "*",
+      "id": "*",
+      "type": "Component",
+      "title": "*",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "*",
+      "to": "test/fixtures/state-concurrent-state-C3PO/in.plantuml",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/state-concurrent-state-C3PO/in.plantuml",
+      "to": "*",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

@@ -44,7 +44,8 @@ function getOutputFiles (source) {
         );
         return {
           name: match[0],
-          format: match[1],
+          parser: match[1],
+          format: match[2],
           src: readFileSync(
             match[0],
             {

@@ -1,0 +1,392 @@
+{
+  "nodes": [
+    {
+      "name": "AbstractList",
+      "isAbstract": true,
+      "members": [],
+      "id": "AbstractList",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Test",
+      "isAbstract": false,
+      "members": [],
+      "id": "Test",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "System",
+      "isAbstract": false,
+      "members": [],
+      "id": "System",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Date",
+      "isAbstract": false,
+      "members": [],
+      "id": "Date",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Foo1",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "can",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "You"
+        },
+        {
+          "name": "lines",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "several"
+        },
+        {
+          "name": "..",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "you",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "as"
+        },
+        {
+          "name": "group",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "and"
+        },
+        {
+          "name": "together.",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "things"
+        },
+        {
+          "name": "__",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "can",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "You"
+        },
+        {
+          "name": "you",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "as"
+        },
+        {
+          "name": "of",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "End"
+        }
+      ],
+      "id": "Foo1",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "can",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "can",
+      "hidden": true
+    },
+    {
+      "name": "lines",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "lines",
+      "hidden": true
+    },
+    {
+      "name": "..",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "..",
+      "hidden": true
+    },
+    {
+      "name": "you",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "you",
+      "hidden": true
+    },
+    {
+      "name": "group",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "group",
+      "hidden": true
+    },
+    {
+      "name": "together.",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "together.",
+      "hidden": true
+    },
+    {
+      "name": "__",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "__",
+      "hidden": true
+    },
+    {
+      "name": "can",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "can",
+      "hidden": true
+    },
+    {
+      "name": "you",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "you",
+      "hidden": true
+    },
+    {
+      "name": "of",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "of",
+      "hidden": true
+    },
+    {
+      "name": "User",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "Simple",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        },
+        {
+          "name": "getName",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "getAddress",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "Some",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        },
+        {
+          "name": "setName",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "private",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "__"
+        },
+        {
+          "name": "age",
+          "isStatic": false,
+          "accessor": "-",
+          "type": "int"
+        },
+        {
+          "name": "password",
+          "isStatic": false,
+          "accessor": "-",
+          "type": "String"
+        }
+      ],
+      "id": "User",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Simple",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "Simple",
+      "hidden": true
+    },
+    {
+      "name": "Some",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "Some",
+      "hidden": true
+    },
+    {
+      "name": "private",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "private",
+      "hidden": true
+    },
+    {
+      "name": "age",
+      "isStatic": false,
+      "accessor": "-",
+      "type": "Attribute",
+      "id": "age",
+      "hidden": true
+    },
+    {
+      "name": "password",
+      "isStatic": false,
+      "accessor": "-",
+      "type": "Attribute",
+      "id": "password",
+      "hidden": true
+    },
+    {
+      "name": "List",
+      "members": [],
+      "id": "List",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "Object",
+      "isAbstract": false,
+      "members": [],
+      "id": "Object",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "Foo1",
+      "to": "can",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "Foo1",
+      "to": "lines",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "Foo1",
+      "to": "..",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "Foo1",
+      "to": "you",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "Foo1",
+      "to": "group",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "Foo1",
+      "to": "together.",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "Foo1",
+      "to": "__",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "Foo1",
+      "to": "can",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "Foo1",
+      "to": "you",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "Foo1",
+      "to": "of",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "User",
+      "to": "Simple",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "User",
+      "to": "Some",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "User",
+      "to": "private",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "User",
+      "to": "age",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "User",
+      "to": "password",
+      "name": "has",
+      "hidden": true
+    }
+  ]
+}

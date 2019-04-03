@@ -4,10 +4,6 @@
 
 const { join } = require('path');
 
-function escapeRegExp (string) {
-  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
-}
-
 module.exports = {
   encoding: 'utf-8',
   src: {
@@ -22,12 +18,9 @@ module.exports = {
   fixtures: {
     dir: join(__dirname, 'test/fixtures'),
     inputFile: 'in.plantuml',
-    outputFilePrefix: 'out.',
+    parseOutputFilePrefix: 'parse-out.',
+    parseFileOutputFilePrefix: 'parseFile-out.',
     treeFilePrefix: 'tree.',
-    get outputFileMatcher () {
-      return new RegExp(
-        '.*/' + escapeRegExp(this.outputFilePrefix) + '(.+)'
-      );
-    }
+    outputFileMatcher: new RegExp('.*/(parse(?:File)?)-out.(.+)')
   }
 };

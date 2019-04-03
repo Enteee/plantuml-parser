@@ -1,0 +1,20 @@
+[
+  {
+    "name": "test/fixtures/component-components/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "Business Logic"
+          },
+          {
+            "name": "Data Access"
+          },
+          {
+            "name": "Graphic User\\nInterface"
+          }
+        ]
+      }
+    ]
+  }
+]

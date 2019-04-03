@@ -1,0 +1,69 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/sequence-messages/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "left": "User",
+              "right": "GUI",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "To boundary"
+            },
+            {
+              "left": "GUI",
+              "right": "SC",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "To control"
+            },
+            {
+              "left": "SC",
+              "right": "Widget",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "To entity"
+            },
+            {
+              "left": "Widget",
+              "right": "Widgets",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "To database"
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/sequence-messages/in.plantuml",
+      "type": "File",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

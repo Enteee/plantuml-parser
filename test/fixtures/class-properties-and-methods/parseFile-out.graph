@@ -1,0 +1,363 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/class-properties-and-methods/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "Car",
+              "isAbstract": false,
+              "members": [
+                {
+                  "name": "Field",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "type": ".."
+                },
+                {
+                  "name": "Name",
+                  "isStatic": false,
+                  "accessor": "-",
+                  "type": ""
+                },
+                {
+                  "name": "Name",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "type": ""
+                },
+                {
+                  "name": "Name",
+                  "isStatic": false,
+                  "accessor": "#",
+                  "type": ""
+                },
+                {
+                  "name": "Method",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "type": ".."
+                },
+                {
+                  "name": "Name",
+                  "isStatic": false,
+                  "accessor": "-",
+                  "returnType": "void",
+                  "_arguments": ""
+                },
+                {
+                  "name": "Name",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "returnType": "void",
+                  "_arguments": ""
+                },
+                {
+                  "name": "Name",
+                  "isStatic": false,
+                  "accessor": "#",
+                  "returnType": "void",
+                  "_arguments": ""
+                },
+                {
+                  "name": "Static",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "type": ".."
+                },
+                {
+                  "name": "Abstract",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "type": ".."
+                }
+              ]
+            },
+            {
+              "name": "Car",
+              "isAbstract": false,
+              "members": []
+            },
+            {
+              "left": "ICar",
+              "right": "Car",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "()",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "left": "ICar2",
+              "right": "Car",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "()",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "left": "Car",
+              "right": "ICar3",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "()",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/class-properties-and-methods/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "Car",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "Field",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "-",
+          "type": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "#",
+          "type": ""
+        },
+        {
+          "name": "Method",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "-",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "#",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "Static",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        },
+        {
+          "name": "Abstract",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ".."
+        }
+      ],
+      "id": "Car",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Field",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "Field",
+      "hidden": true
+    },
+    {
+      "name": "Name",
+      "isStatic": false,
+      "accessor": "-",
+      "type": "Attribute",
+      "id": "Name",
+      "hidden": true
+    },
+    {
+      "name": "Name",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "Name",
+      "hidden": true
+    },
+    {
+      "name": "Name",
+      "isStatic": false,
+      "accessor": "#",
+      "type": "Attribute",
+      "id": "Name",
+      "hidden": true
+    },
+    {
+      "name": "Method",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "Method",
+      "hidden": true
+    },
+    {
+      "name": "Static",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "Static",
+      "hidden": true
+    },
+    {
+      "name": "Abstract",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "Abstract",
+      "hidden": true
+    },
+    {
+      "name": "Car",
+      "isAbstract": false,
+      "members": [],
+      "id": "Car",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "test/fixtures/class-properties-and-methods/in.plantuml",
+      "to": "Car",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Field",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-properties-and-methods/in.plantuml",
+      "to": "Field",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Name",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-properties-and-methods/in.plantuml",
+      "to": "Name",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Name",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-properties-and-methods/in.plantuml",
+      "to": "Name",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Name",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-properties-and-methods/in.plantuml",
+      "to": "Name",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Method",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-properties-and-methods/in.plantuml",
+      "to": "Method",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Static",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-properties-and-methods/in.plantuml",
+      "to": "Static",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Car",
+      "to": "Abstract",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-properties-and-methods/in.plantuml",
+      "to": "Abstract",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-properties-and-methods/in.plantuml",
+      "to": "Car",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

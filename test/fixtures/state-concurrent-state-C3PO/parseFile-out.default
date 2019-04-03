@@ -1,0 +1,14 @@
+[
+  {
+    "name": "test/fixtures/state-concurrent-state-C3PO/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "*"
+          }
+        ]
+      }
+    ]
+  }
+]

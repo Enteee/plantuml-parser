@@ -1,0 +1,55 @@
+[
+  {
+    "name": "test/fixtures/class-interfaces/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "Car",
+            "isAbstract": false,
+            "members": []
+          },
+          {
+            "left": "ICar",
+            "right": "Car",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "()",
+            "rightArrowHead": "",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "label": ""
+          },
+          {
+            "left": "ICar2",
+            "right": "Car",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "()",
+            "rightArrowHead": "",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "label": ""
+          },
+          {
+            "left": "Car",
+            "right": "ICar3",
+            "leftType": "Unknown",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "()",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "label": ""
+          }
+        ]
+      }
+    ]
+  }
+]

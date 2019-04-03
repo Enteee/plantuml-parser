@@ -1,6 +1,7 @@
 const conf = require('../conf');
 
-const { join } = require('path');
+const { join, relative } = require('path');
+const { cwd } = require('process');
 const { readFileSync } = require('fs');
 const { map } = require('async');
 const { EOL } = require('os');
@@ -51,7 +52,10 @@ module.exports.parseFile = function (globPattern, options, cb) {
           cb(
             null,
             new File(
-              file,
+              relative(
+                cwd(),
+                file
+              ),
               parseSync(
                 readFileSync(file, conf.encoding),
                 options
@@ -67,7 +71,10 @@ module.exports.parseFile = function (globPattern, options, cb) {
   }
   return fastGlob.sync(globPattern).map(
     (file) => new File(
-      file,
+      relative(
+        cwd(),
+        file
+      ),
       parseSync(
         readFileSync(file, conf.encoding),
         options

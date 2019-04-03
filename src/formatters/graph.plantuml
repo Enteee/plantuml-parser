@@ -1,8 +1,8 @@
 @startuml
 
-//
-// Edges
-//
+/'
+ ' Edges
+ '/
 
 class has << (E,#FF0000) >> {
 }
@@ -40,9 +40,9 @@ end note
 class contains << (E,#FF0000) >> {
 }
 
-//
-// Nodes
-//
+/'
+ ' Nodes
+ '/
 
 abstract class UMLElement {
   name

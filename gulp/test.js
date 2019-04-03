@@ -10,8 +10,6 @@ const { EOL } = require('os');
 const mocha = require('gulp-mocha');
 const log = require('fancy-log');
 
-const Tracer = require('pegjs-backtrace');
-
 const formatters = require(conf.formatters.dir);
 
 task('test-run', () =>
@@ -32,46 +30,32 @@ task('test-fixtures-update-run', () =>
         (name) => {
         // import parser here, because it might not exist
           // when outer scope is loaded.
-          const { parse } = require(join(conf.src.dir, 'plantuml-trace'));
-          const destination = join(
-            dirname(file.path),
-            conf.fixtures.outputFilePrefix + name
-          );
-          const tracer = new Tracer(
-            content,
-            {
-              useColor: false
-            }
-          );
-
-          log.info('Updating: ' + destination);
-
+          const { parse, parseFile } = require(join(conf.src.dir));
           const formatter = formatters[name];
 
-          const out = formatter(
-            parse(
-              content,
-              {
-                tracer: tracer
-              }
-            )
-          ) + EOL;
-          /*
-        //Don't write trees they are too big:
-        writeFileSync(
-          join(
-            dirname(file.path),
-            conf.fixtures.treeFilePrefix + name
-          ),
-          tracer.getParseTreeString(),
-          {
-            encoding: conf.encoding
-          }
-        );
-        */
+          log.info('Updating: ' + dirname(file.path));
           writeFileSync(
-            destination,
-            out,
+            join(
+              dirname(file.path),
+              conf.fixtures.parseOutputFilePrefix + name
+            ),
+            formatter(
+              parse(content)
+            ) + EOL,
+            {
+              encoding: conf.encoding
+            }
+          );
+          writeFileSync(
+            join(
+              dirname(file.path),
+              conf.fixtures.parseFileOutputFilePrefix + name
+            ),
+            formatter(
+              parseFile(
+                file.path
+              )
+            ) + EOL,
             {
               encoding: conf.encoding
             }

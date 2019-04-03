@@ -1,7 +1,7 @@
 const conf = require('../conf');
 
 const { describe, it } = require('mocha');
-const { expect } = require('chai');
+const { expect, assert } = require('chai');
 
 const { parse, parseFile, formatters } = require(conf.src.dir);
 
@@ -16,19 +16,32 @@ const { parse, parseFile, formatters } = require(conf.src.dir);
  *   output. If this does not work
  *   fall back to string comparison.
  */
-function testFormatHasNotChanged (src, out) {
-  const formatted = formatters[out.format](
-    parse(src)
-  );
+function testFormatHasNotChanged (fixture, output) {
+  var formatted;
+  switch (output.parser) {
+    case 'parse':
+      formatted = formatters[output.format](
+        parse(fixture.src)
+      );
+      break;
+    case 'parseFile':
+      formatted = formatters[output.format](
+        parseFile(fixture.srcFile)
+      );
+      break;
+    default:
+      assert.fail('Unknown parser: ' + output.parser);
+      break;
+  }
   var expected;
   var result;
   try {
     // Try reading as JSON
-    expected = JSON.parse(out.src);
+    expected = JSON.parse(output.src);
     result = JSON.parse(formatted);
   } catch (e) {
     // fall back to string comparison
-    expected = out.src;
+    expected = output.src;
     result = formatted;
   }
   expect(
@@ -43,15 +56,15 @@ require('./fixtures').forEach((fixture) =>
     it('parse',
       () => parse(fixture.src)
     );
-    it('parseFile',
+    it('parseFile - async',
       (cb) => parseFile(fixture.srcFile, null, cb)
     );
-    it('parseFileSync',
+    it('parseFile',
       () => parseFile(fixture.srcFile)
     );
     fixture.out.forEach(
-      (output) => it('format: ' + output.format,
-        () => testFormatHasNotChanged(fixture.src, output)
+      (output) => it(output.parser + '-output.' + output.format,
+        () => testFormatHasNotChanged(fixture, output)
       )
     );
   })
