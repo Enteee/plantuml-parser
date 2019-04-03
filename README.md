@@ -118,7 +118,8 @@ Options:
   --version        Show version number                                 [boolean]
   --formatter, -f  formatter to use
                               [choices: "default", "graph"] [default: "default"]
-  --input, -i      input file to read                  [string] [default: stdin]
+  --input, -i      input file(s) to read, supports globbing
+                                                       [string] [default: stdin]
   --output, -o     output file to write               [string] [default: stdout]
   --color, -c      colorful output                    [boolean] [default: false]
   --verbose, -v    1x print verbose output, 2x print parser tracing
