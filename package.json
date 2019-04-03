@@ -3,7 +3,9 @@
   "version": "0.0.4",
   "description": "Parse PlantUML Syntax in JavaScript",
   "main": "src",
-  "files": "src/**/*.js",
+  "files": [
+    "src/**/*.js"
+  ],
   "dependencies": {
     "async": "^2.6.2",
     "fast-glob": "^2.2.6",
