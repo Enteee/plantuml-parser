@@ -42,12 +42,6 @@
                   "type": "several"
                 },
                 {
-                  "name": "..",
-                  "isStatic": false,
-                  "accessor": "+",
-                  "type": ""
-                },
-                {
                   "name": "you",
                   "isStatic": false,
                   "accessor": "+",
@@ -64,12 +58,6 @@
                   "isStatic": false,
                   "accessor": "+",
                   "type": "things"
-                },
-                {
-                  "name": "__",
-                  "isStatic": false,
-                  "accessor": "+",
-                  "type": ""
                 },
                 {
                   "name": "can",
@@ -96,12 +84,6 @@
               "isAbstract": false,
               "members": [
                 {
-                  "name": "Simple",
-                  "isStatic": false,
-                  "accessor": "+",
-                  "type": ".."
-                },
-                {
                   "name": "getName",
                   "isStatic": false,
                   "accessor": "+",
@@ -116,23 +98,11 @@
                   "_arguments": ""
                 },
                 {
-                  "name": "Some",
-                  "isStatic": false,
-                  "accessor": "+",
-                  "type": ".."
-                },
-                {
                   "name": "setName",
                   "isStatic": false,
                   "accessor": "+",
                   "returnType": "void",
                   "_arguments": ""
-                },
-                {
-                  "name": "private",
-                  "isStatic": false,
-                  "accessor": "+",
-                  "type": "__"
                 },
                 {
                   "name": "age",
@@ -249,12 +219,6 @@
           "type": "several"
         },
         {
-          "name": "..",
-          "isStatic": false,
-          "accessor": "+",
-          "type": ""
-        },
-        {
           "name": "you",
           "isStatic": false,
           "accessor": "+",
@@ -271,12 +235,6 @@
           "isStatic": false,
           "accessor": "+",
           "type": "things"
-        },
-        {
-          "name": "__",
-          "isStatic": false,
-          "accessor": "+",
-          "type": ""
         },
         {
           "name": "can",
@@ -318,14 +276,6 @@
       "hidden": true
     },
     {
-      "name": "..",
-      "isStatic": false,
-      "accessor": "+",
-      "type": "Attribute",
-      "id": "..",
-      "hidden": true
-    },
-    {
       "name": "you",
       "isStatic": false,
       "accessor": "+",
@@ -347,14 +297,6 @@
       "accessor": "+",
       "type": "Attribute",
       "id": "together.",
-      "hidden": true
-    },
-    {
-      "name": "__",
-      "isStatic": false,
-      "accessor": "+",
-      "type": "Attribute",
-      "id": "__",
       "hidden": true
     },
     {
@@ -386,12 +328,6 @@
       "isAbstract": false,
       "members": [
         {
-          "name": "Simple",
-          "isStatic": false,
-          "accessor": "+",
-          "type": ".."
-        },
-        {
           "name": "getName",
           "isStatic": false,
           "accessor": "+",
@@ -406,23 +342,11 @@
           "_arguments": ""
         },
         {
-          "name": "Some",
-          "isStatic": false,
-          "accessor": "+",
-          "type": ".."
-        },
-        {
           "name": "setName",
           "isStatic": false,
           "accessor": "+",
           "returnType": "void",
           "_arguments": ""
-        },
-        {
-          "name": "private",
-          "isStatic": false,
-          "accessor": "+",
-          "type": "__"
         },
         {
           "name": "age",
@@ -439,30 +363,6 @@
       ],
       "id": "User",
       "type": "Class",
-      "hidden": true
-    },
-    {
-      "name": "Simple",
-      "isStatic": false,
-      "accessor": "+",
-      "type": "Attribute",
-      "id": "Simple",
-      "hidden": true
-    },
-    {
-      "name": "Some",
-      "isStatic": false,
-      "accessor": "+",
-      "type": "Attribute",
-      "id": "Some",
-      "hidden": true
-    },
-    {
-      "name": "private",
-      "isStatic": false,
-      "accessor": "+",
-      "type": "Attribute",
-      "id": "private",
       "hidden": true
     },
     {
@@ -554,18 +454,6 @@
     },
     {
       "from": "Foo1",
-      "to": "..",
-      "name": "has",
-      "hidden": true
-    },
-    {
-      "from": "test/fixtures/class-types/in.plantuml",
-      "to": "..",
-      "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "Foo1",
       "to": "you",
       "name": "has",
       "hidden": true
@@ -597,18 +485,6 @@
     {
       "from": "test/fixtures/class-types/in.plantuml",
       "to": "together.",
-      "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "Foo1",
-      "to": "__",
-      "name": "has",
-      "hidden": true
-    },
-    {
-      "from": "test/fixtures/class-types/in.plantuml",
-      "to": "__",
       "name": "contains",
       "hidden": true
     },
@@ -651,42 +527,6 @@
     {
       "from": "test/fixtures/class-types/in.plantuml",
       "to": "User",
-      "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "User",
-      "to": "Simple",
-      "name": "has",
-      "hidden": true
-    },
-    {
-      "from": "test/fixtures/class-types/in.plantuml",
-      "to": "Simple",
-      "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "User",
-      "to": "Some",
-      "name": "has",
-      "hidden": true
-    },
-    {
-      "from": "test/fixtures/class-types/in.plantuml",
-      "to": "Some",
-      "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "User",
-      "to": "private",
-      "name": "has",
-      "hidden": true
-    },
-    {
-      "from": "test/fixtures/class-types/in.plantuml",
-      "to": "private",
       "name": "contains",
       "hidden": true
     },

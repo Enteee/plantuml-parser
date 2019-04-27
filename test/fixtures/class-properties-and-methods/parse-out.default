@@ -6,12 +6,6 @@
         "isAbstract": false,
         "members": [
           {
-            "name": "Field",
-            "isStatic": false,
-            "accessor": "+",
-            "type": ".."
-          },
-          {
             "name": "Name",
             "isStatic": false,
             "accessor": "-",
@@ -28,12 +22,6 @@
             "isStatic": false,
             "accessor": "#",
             "type": ""
-          },
-          {
-            "name": "Method",
-            "isStatic": false,
-            "accessor": "+",
-            "type": ".."
           },
           {
             "name": "Name",
@@ -55,18 +43,6 @@
             "accessor": "#",
             "returnType": "void",
             "_arguments": ""
-          },
-          {
-            "name": "Static",
-            "isStatic": false,
-            "accessor": "+",
-            "type": ".."
-          },
-          {
-            "name": "Abstract",
-            "isStatic": false,
-            "accessor": "+",
-            "type": ".."
           }
         ]
       },

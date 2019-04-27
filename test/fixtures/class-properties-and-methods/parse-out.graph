@@ -5,12 +5,6 @@
       "isAbstract": false,
       "members": [
         {
-          "name": "Field",
-          "isStatic": false,
-          "accessor": "+",
-          "type": ".."
-        },
-        {
           "name": "Name",
           "isStatic": false,
           "accessor": "-",
@@ -27,12 +21,6 @@
           "isStatic": false,
           "accessor": "#",
           "type": ""
-        },
-        {
-          "name": "Method",
-          "isStatic": false,
-          "accessor": "+",
-          "type": ".."
         },
         {
           "name": "Name",
@@ -54,30 +42,10 @@
           "accessor": "#",
           "returnType": "void",
           "_arguments": ""
-        },
-        {
-          "name": "Static",
-          "isStatic": false,
-          "accessor": "+",
-          "type": ".."
-        },
-        {
-          "name": "Abstract",
-          "isStatic": false,
-          "accessor": "+",
-          "type": ".."
         }
       ],
       "id": "Car",
       "type": "Class",
-      "hidden": true
-    },
-    {
-      "name": "Field",
-      "isStatic": false,
-      "accessor": "+",
-      "type": "Attribute",
-      "id": "Field",
       "hidden": true
     },
     {
@@ -105,30 +73,6 @@
       "hidden": true
     },
     {
-      "name": "Method",
-      "isStatic": false,
-      "accessor": "+",
-      "type": "Attribute",
-      "id": "Method",
-      "hidden": true
-    },
-    {
-      "name": "Static",
-      "isStatic": false,
-      "accessor": "+",
-      "type": "Attribute",
-      "id": "Static",
-      "hidden": true
-    },
-    {
-      "name": "Abstract",
-      "isStatic": false,
-      "accessor": "+",
-      "type": "Attribute",
-      "id": "Abstract",
-      "hidden": true
-    },
-    {
       "name": "Car",
       "isAbstract": false,
       "members": [],
@@ -140,12 +84,6 @@
   "edges": [
     {
       "from": "Car",
-      "to": "Field",
-      "name": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
       "to": "Name",
       "name": "has",
       "hidden": true
@@ -159,24 +97,6 @@
     {
       "from": "Car",
       "to": "Name",
-      "name": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
-      "to": "Method",
-      "name": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
-      "to": "Static",
-      "name": "has",
-      "hidden": true
-    },
-    {
-      "from": "Car",
-      "to": "Abstract",
       "name": "has",
       "hidden": true
     }
