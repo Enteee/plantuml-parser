@@ -1,0 +1,16 @@
+[
+  {
+    "name": "test/fixtures/class-separators/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "Separators",
+            "isAbstract": false,
+            "members": []
+          }
+        ]
+      }
+    ]
+  }
+]

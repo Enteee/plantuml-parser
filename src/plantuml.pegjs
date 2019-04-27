@@ -171,9 +171,20 @@ Class
   }
 
 Member
-  = Method
+  = SeparatorLine
+  / Method
   / MemberVariable
   / (!( _ "}") EndLine) {}  // Catchall for members: Remove once all members are implemented
+
+SeparatorLine
+  = _ Separator _ (!(Separator / NewLine) .)* Separator EndLine {}
+  / _ Separator EndLine {}
+
+Separator
+  = "--" "-"*
+  / ".." "."*
+  / "==" "="*
+  / "__" "_"*
 
 Method
   = _ isStatic:"static "? _ accessor:Accessor? _ type:Name _ name:Name _ "(" _arguments:(!")" .)* ")" EndLine

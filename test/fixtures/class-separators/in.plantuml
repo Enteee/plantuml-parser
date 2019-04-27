@@ -1,0 +1,11 @@
+@startuml
+
+class Separators {
+  ..
+  .. with text ..
+  ==
+  == with text ==
+  __
+  -- with text --
+}
+@enduml

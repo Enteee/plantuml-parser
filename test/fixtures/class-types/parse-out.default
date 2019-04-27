@@ -38,12 +38,6 @@
             "type": "several"
           },
           {
-            "name": "..",
-            "isStatic": false,
-            "accessor": "+",
-            "type": ""
-          },
-          {
             "name": "you",
             "isStatic": false,
             "accessor": "+",
@@ -60,12 +54,6 @@
             "isStatic": false,
             "accessor": "+",
             "type": "things"
-          },
-          {
-            "name": "__",
-            "isStatic": false,
-            "accessor": "+",
-            "type": ""
           },
           {
             "name": "can",
@@ -92,12 +80,6 @@
         "isAbstract": false,
         "members": [
           {
-            "name": "Simple",
-            "isStatic": false,
-            "accessor": "+",
-            "type": ".."
-          },
-          {
             "name": "getName",
             "isStatic": false,
             "accessor": "+",
@@ -112,23 +94,11 @@
             "_arguments": ""
           },
           {
-            "name": "Some",
-            "isStatic": false,
-            "accessor": "+",
-            "type": ".."
-          },
-          {
             "name": "setName",
             "isStatic": false,
             "accessor": "+",
             "returnType": "void",
             "_arguments": ""
-          },
-          {
-            "name": "private",
-            "isStatic": false,
-            "accessor": "+",
-            "type": "__"
           },
           {
             "name": "age",

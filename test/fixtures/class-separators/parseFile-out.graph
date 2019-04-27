@@ -1,0 +1,37 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/class-separators/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "Separators",
+              "isAbstract": false,
+              "members": []
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/class-separators/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "Separators",
+      "isAbstract": false,
+      "members": [],
+      "id": "Separators",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "test/fixtures/class-separators/in.plantuml",
+      "to": "Separators",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}
