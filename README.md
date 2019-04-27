@@ -26,7 +26,7 @@ We keep a set of PlantUML scripts (`in.plantuml`) and the corresponding formatte
 ## Usage
 
 ```javascript
-const { parse, parseFile, formatters } = require('./src');
+const { parse, parseFile, formatters } = require('plantuml-parser');
 
 // Example PlantUML
 const data = `
