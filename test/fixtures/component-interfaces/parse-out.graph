@@ -34,13 +34,6 @@
       "id": "Items",
       "type": "Interface",
       "hidden": true
-    },
-    {
-      "name": "Business Logic",
-      "id": "Business Logic",
-      "type": "Component",
-      "title": "Business Logic",
-      "hidden": true
     }
   ],
   "edges": [
@@ -58,12 +51,6 @@
     },
     {
       "from": "Graphic User\\nInterface",
-      "to": "",
-      "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "Business Logic",
       "to": "",
       "name": "contains",
       "hidden": true

@@ -1,19 +1,4 @@
 {
-  "nodes": [
-    {
-      "name": "*",
-      "id": "*",
-      "type": "Component",
-      "title": "*",
-      "hidden": true
-    }
-  ],
-  "edges": [
-    {
-      "from": "*",
-      "to": "",
-      "name": "contains",
-      "hidden": true
-    }
-  ]
+  "nodes": [],
+  "edges": []
 }

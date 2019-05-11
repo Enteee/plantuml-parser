@@ -1113,25 +1113,25 @@ function peg$parse(input, options) {
 
     s0 = peg$parseComment();
     if (s0 === peg$FAILED) {
-      s0 = peg$parseSkinParam();
+      s0 = peg$parseRelationship();
       if (s0 === peg$FAILED) {
-        s0 = peg$parseTogether();
+        s0 = peg$parseSkinParam();
         if (s0 === peg$FAILED) {
-          s0 = peg$parseGroup();
+          s0 = peg$parseTogether();
           if (s0 === peg$FAILED) {
-            s0 = peg$parseNote();
+            s0 = peg$parseGroup();
             if (s0 === peg$FAILED) {
-              s0 = peg$parseClass();
+              s0 = peg$parseNote();
               if (s0 === peg$FAILED) {
-                s0 = peg$parseInterface();
+                s0 = peg$parseClass();
                 if (s0 === peg$FAILED) {
-                  s0 = peg$parseEnum();
+                  s0 = peg$parseInterface();
                   if (s0 === peg$FAILED) {
-                    s0 = peg$parseComponent();
+                    s0 = peg$parseEnum();
                     if (s0 === peg$FAILED) {
-                      s0 = peg$parseUseCase();
+                      s0 = peg$parseComponent();
                       if (s0 === peg$FAILED) {
-                        s0 = peg$parseRelationship();
+                        s0 = peg$parseUseCase();
                         if (s0 === peg$FAILED) {
                           s0 = peg$parseNotImplementedBlock();
                           if (s0 === peg$FAILED) {

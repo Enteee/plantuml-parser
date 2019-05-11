@@ -2,7 +2,17 @@
   {
     "elements": [
       {
-        "name": "*"
+        "left": "*",
+        "right": "InDanger",
+        "leftType": "Component",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": ">",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
       }
     ]
   }

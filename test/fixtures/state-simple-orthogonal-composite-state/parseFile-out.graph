@@ -6,7 +6,17 @@
         {
           "elements": [
             {
-              "name": "*"
+              "left": "*",
+              "right": "NeilDiamond",
+              "leftType": "Component",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
             },
             {
               "left": "NeilDiamond",
@@ -40,27 +50,7 @@
       "id": "test/fixtures/state-simple-orthogonal-composite-state/in.plantuml",
       "type": "File",
       "hidden": true
-    },
-    {
-      "name": "*",
-      "id": "*",
-      "type": "Component",
-      "title": "*",
-      "hidden": true
     }
   ],
-  "edges": [
-    {
-      "from": "*",
-      "to": "test/fixtures/state-simple-orthogonal-composite-state/in.plantuml",
-      "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "test/fixtures/state-simple-orthogonal-composite-state/in.plantuml",
-      "to": "*",
-      "name": "contains",
-      "hidden": true
-    }
-  ]
+  "edges": []
 }
