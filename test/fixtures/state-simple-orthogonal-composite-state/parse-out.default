@@ -2,7 +2,17 @@
   {
     "elements": [
       {
-        "name": "*"
+        "left": "*",
+        "right": "NeilDiamond",
+        "leftType": "Component",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": ">",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
       },
       {
         "left": "NeilDiamond",

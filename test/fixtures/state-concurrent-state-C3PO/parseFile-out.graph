@@ -6,7 +6,17 @@
         {
           "elements": [
             {
-              "name": "*"
+              "left": "*",
+              "right": "InDanger",
+              "leftType": "Component",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
             }
           ]
         }
@@ -14,27 +24,7 @@
       "id": "test/fixtures/state-concurrent-state-C3PO/in.plantuml",
       "type": "File",
       "hidden": true
-    },
-    {
-      "name": "*",
-      "id": "*",
-      "type": "Component",
-      "title": "*",
-      "hidden": true
     }
   ],
-  "edges": [
-    {
-      "from": "*",
-      "to": "test/fixtures/state-concurrent-state-C3PO/in.plantuml",
-      "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "test/fixtures/state-concurrent-state-C3PO/in.plantuml",
-      "to": "*",
-      "name": "contains",
-      "hidden": true
-    }
-  ]
+  "edges": []
 }

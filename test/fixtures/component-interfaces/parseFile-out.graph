@@ -23,7 +23,17 @@
               "members": []
             },
             {
-              "name": "Business Logic"
+              "left": "Business Logic",
+              "right": "Math",
+              "leftType": "Component",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
             },
             {
               "left": "DA",
@@ -79,13 +89,6 @@
       "id": "Items",
       "type": "Interface",
       "hidden": true
-    },
-    {
-      "name": "Business Logic",
-      "id": "Business Logic",
-      "type": "Component",
-      "title": "Business Logic",
-      "hidden": true
     }
   ],
   "edges": [
@@ -134,18 +137,6 @@
     {
       "from": "test/fixtures/component-interfaces/in.plantuml",
       "to": "Items",
-      "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "Business Logic",
-      "to": "test/fixtures/component-interfaces/in.plantuml",
-      "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "test/fixtures/component-interfaces/in.plantuml",
-      "to": "Business Logic",
       "name": "contains",
       "hidden": true
     }

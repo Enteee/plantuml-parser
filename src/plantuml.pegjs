@@ -26,6 +26,7 @@ UML
 
 UMLElement
  = Comment
+ / Relationship
  / SkinParam
  / Together
  / Group
@@ -35,7 +36,6 @@ UMLElement
  / Enum
  / Component
  / UseCase
- / Relationship
  / NotImplementedBlock
  / (!(
       _ "@enduml"

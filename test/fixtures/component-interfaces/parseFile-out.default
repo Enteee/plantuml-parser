@@ -22,7 +22,17 @@
             "members": []
           },
           {
-            "name": "Business Logic"
+            "left": "Business Logic",
+            "right": "Math",
+            "leftType": "Component",
+            "rightType": "Unknown",
+            "leftArrowHead": "",
+            "rightArrowHead": "",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "label": ""
           },
           {
             "left": "DA",
