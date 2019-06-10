@@ -22,7 +22,7 @@ $ npm install --save plantuml-parser
 ## Examples / Fixtures
 
 We keep a set of PlantUML scripts (`in.plantuml`) and the corresponding
-formatted output (`parse[File]-out.<formatter>` in [test/fixtures/](test/fixtures).
+formatted output (`parse[File]-out.<formatter>`) in [test/fixtures/](test/fixtures).
 
 ## Usage
 
