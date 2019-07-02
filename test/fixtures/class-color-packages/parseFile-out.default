@@ -1,0 +1,22 @@
+[
+  {
+    "name": "test/fixtures/class-color-packages/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "Node",
+            "type": "package",
+            "elements": [
+              {
+                "name": "Worker1",
+                "isAbstract": false,
+                "members": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

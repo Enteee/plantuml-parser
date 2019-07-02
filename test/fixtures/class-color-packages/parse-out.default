@@ -1,0 +1,17 @@
+[
+  {
+    "elements": [
+      {
+        "name": "Node",
+        "type": "package",
+        "elements": [
+          {
+            "name": "Worker1",
+            "isAbstract": false,
+            "members": []
+          }
+        ]
+      }
+    ]
+  }
+]

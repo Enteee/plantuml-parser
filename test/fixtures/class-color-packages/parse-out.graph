@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "name": "Worker1",
+      "isAbstract": false,
+      "members": [],
+      "id": "Worker1",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

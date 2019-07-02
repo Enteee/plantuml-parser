@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/class-color-packages/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "Node",
+              "type": "package",
+              "elements": [
+                {
+                  "name": "Worker1",
+                  "isAbstract": false,
+                  "members": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/class-color-packages/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "Worker1",
+      "isAbstract": false,
+      "members": [],
+      "id": "Worker1",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "test/fixtures/class-color-packages/in.plantuml",
+      "to": "Worker1",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

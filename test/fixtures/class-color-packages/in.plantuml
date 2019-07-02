@@ -1,0 +1,10 @@
+@startuml
+
+title Packages - Class Diagram with Colored Packages
+
+
+package Node <<Node>> #FF00FF {
+  class Worker1
+}
+
+@enduml
