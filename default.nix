@@ -2,8 +2,6 @@ with import <nixpkgs> {};
 
 let
 
-  NPM_GLOBAL_TEMPDIR="$(${mktemp.outPath}/bin/mktemp -d -t npm_XXXXXXX)";
-
 in stdenv.mkDerivation {
   name = "plantuml-parser";
 
@@ -14,12 +12,13 @@ in stdenv.mkDerivation {
   ];
 
   shellHook = ''
-    export NPM_CONFIG_PREFIX=${NPM_GLOBAL_TEMPDIR}
-    npm set prefix "${NPM_GLOBAL_TEMPDIR}/.npm-global"
+    export NPM_CONFIG_PREFIX="$(${mktemp.outPath}/bin/mktemp -d -t npm_XXXXXXX)"
+    export PATH="''${PATH}:''${NPM_CONFIG_PREFIX}/bin"
+    npm set prefix "''${NPM_CONFIG_PREFIX}/.npm-global"
   '';
 
   exitHook = ''
-    rm -rf "${NPM_GLOBAL_TEMPDIR}"
+    rm -rf ''${NPM_CONFIG_PREFIX}
   '';
 
 }
