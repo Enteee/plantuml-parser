@@ -1,6 +1,6 @@
 {
   "name": "plantuml-parser",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Parse PlantUML Syntax in JavaScript",
   "main": "src",
   "files": [
