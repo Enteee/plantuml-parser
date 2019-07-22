@@ -8,21 +8,21 @@
     "src/**/*.js"
   ],
   "dependencies": {
-    "async": "^2.6.2",
+    "async": "^2.6.3",
     "fast-glob": "^2.2.7",
     "get-stdin": "^6.0.0",
     "json-colorizer": "^2.2.1",
     "pegjs-backtrace": "^0.1.2",
     "read-vinyl-file-stream": "^2.0.3",
     "require-dir": "^1.2.0",
-    "yargs": "^13.2.4"
+    "yargs": "^13.3.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "coveralls": "^3.0.4",
+    "coveralls": "^3.0.5",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
@@ -31,7 +31,7 @@
     "gulp-mocha": "^6.0.0",
     "gulp-pegjs": "^0.1.0",
     "gulp-rename": "^1.4.0",
-    "mocha": "^6.1.4",
+    "mocha": "^6.2.0",
     "nyc": "^13.3.0",
     "pegjs": "^0.10.0"
   },
