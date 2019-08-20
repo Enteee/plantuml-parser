@@ -1,0 +1,10 @@
+[
+  {
+    "name": "test/fixtures/ignore-preprocessor-args/in.plantuml",
+    "diagrams": [
+      {
+        "elements": []
+      }
+    ]
+  }
+]
