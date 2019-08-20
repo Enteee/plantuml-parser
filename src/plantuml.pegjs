@@ -441,6 +441,10 @@ ElementName
   {
     return name;
   }
+  / _ Name _ "as " _ name:Name _
+  {
+    return name;
+  }
   / _ name:QuotedString _
   {
     return name;

@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/issue-#10/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "_COMP_EXT1_IF1",
+              "members": []
+            },
+            {
+              "name": "rmf",
+              "type": "package",
+              "elements": [
+                {
+                  "name": "_COMP8"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/issue-#10/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "_COMP_EXT1_IF1",
+      "members": [],
+      "id": "_COMP_EXT1_IF1",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "_COMP8",
+      "id": "_COMP8",
+      "type": "Component",
+      "title": "_COMP8",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "test/fixtures/issue-#10/in.plantuml",
+      "to": "_COMP_EXT1_IF1",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "_COMP8",
+      "to": "test/fixtures/issue-#10/in.plantuml",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/issue-#10/in.plantuml",
+      "to": "_COMP8",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}
