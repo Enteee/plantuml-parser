@@ -1,0 +1,9 @@
+@startuml
+
+interface _COMP_EXT1_IF1
+
+package p1 as rmf{
+  component _COMP8 
+}
+
+@enduml
