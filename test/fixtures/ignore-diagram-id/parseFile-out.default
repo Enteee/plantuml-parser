@@ -1,6 +1,6 @@
 [
   {
-    "name": "test/fixtures/ignore-preprocessor-args/in.plantuml",
+    "name": "test/fixtures/ignore-diagram-id/in.plantuml",
     "diagrams": [
       {
         "elements": []
