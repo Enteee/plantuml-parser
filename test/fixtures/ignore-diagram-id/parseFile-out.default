@@ -1,0 +1,10 @@
+[
+  {
+    "name": "test/fixtures/ignore-diagram-id/in.plantuml",
+    "diagrams": [
+      {
+        "elements": []
+      }
+    ]
+  }
+]

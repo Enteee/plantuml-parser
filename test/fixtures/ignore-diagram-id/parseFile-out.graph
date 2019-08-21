@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/ignore-diagram-id/in.plantuml",
+      "diagrams": [
+        {
+          "elements": []
+        }
+      ],
+      "id": "test/fixtures/ignore-diagram-id/in.plantuml",
+      "type": "File",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

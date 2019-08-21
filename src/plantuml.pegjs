@@ -5,7 +5,7 @@
 PlantUMLFile
   = (
       (!"@startuml" .)*
-      "@startuml" _ NewLine
+      "@startuml" _ DiagramId? _ NewLine
         uml:UML
       "@enduml" _ NewLine?
       (!"@startuml" .)*
@@ -13,6 +13,9 @@ PlantUMLFile
        return uml;
       }
     )*
+
+DiagramId
+  = "(" _ "id" _ "=" Name ")"
 
 UML
   = elements:UMLElement*
