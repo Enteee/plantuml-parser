@@ -3,44 +3,54 @@
     "elements": [
       {
         "name": "Front End",
+        "title": "Front End",
         "type": "package",
         "elements": [
           {
-            "name": "Graphic User\\nInterface"
+            "name": "Graphic User\\nInterface",
+            "title": "Graphic User\\nInterface"
           }
         ]
       },
       {
         "name": "Internet",
+        "title": "Internet",
         "type": "cloud",
         "elements": []
       },
       {
         "name": "Middle Tier",
+        "title": "Middle Tier",
         "type": "node",
         "elements": [
           {
-            "name": "Business Logic"
+            "name": "Business Logic",
+            "title": "Business Logic"
           },
           {
-            "name": "Data Access"
+            "name": "Data Access",
+            "title": "Data Access"
           },
           {
-            "name": "Math",
+            "name": "IMath",
+            "title": "Math",
             "members": []
           },
           {
             "name": "Items",
+            "title": "IItems",
             "members": []
           }
         ]
       },
       {
         "name": "PostgreSQL\\n",
+        "title": "PostgreSQL\\n",
         "type": "database",
         "elements": [
           {
-            "name": "Stored Procs"
+            "name": "Stored Procs",
+            "title": "Stored Procs"
           }
         ]
       },

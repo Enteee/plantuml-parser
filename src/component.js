@@ -1,7 +1,8 @@
 'use strict';
 
 module.exports = class Component {
-  constructor (name) {
+  constructor (name, title) {
     this.name = name;
+    this.title = title;
   }
 };

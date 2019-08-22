@@ -6,10 +6,6 @@
         {
           "elements": [
             {
-              "text": "Single line note",
-              "of": "Hungry"
-            },
-            {
               "text": "Notes can also\n    take up multiple\n    lines like this",
               "of": "EatingBurrito"
             },

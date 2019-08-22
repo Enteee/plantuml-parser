@@ -5,16 +5,20 @@
       {
         "elements": [
           {
-            "name": "Login"
+            "name": "Login",
+            "title": "Login"
           },
           {
-            "name": "Run Process"
+            "name": "Run Process",
+            "title": "Run Process"
           },
           {
-            "name": "Undo Process"
+            "name": "Undo Process",
+            "title": "Undo Process"
           },
           {
-            "name": "Log Out"
+            "name": "Log Out",
+            "title": "Log Out"
           }
         ]
       }

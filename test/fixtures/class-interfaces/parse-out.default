@@ -3,6 +3,7 @@
     "elements": [
       {
         "name": "Car",
+        "title": "Car",
         "isAbstract": false,
         "members": []
       },

@@ -2,10 +2,12 @@
   {
     "elements": [
       {
-        "name": "Login"
+        "name": "Login",
+        "title": "Login"
       },
       {
-        "name": "Upload File"
+        "name": "Upload File",
+        "title": "Upload File"
       },
       {
         "left": "U",

@@ -6,20 +6,25 @@
         {
           "elements": [
             {
-              "name": "Business Logic"
+              "name": "Business Logic",
+              "title": "Business Logic"
             },
             {
-              "name": "Data Access"
+              "name": "Data Access",
+              "title": "Data Access"
             },
             {
-              "name": "Graphic User\\nInterface"
+              "name": "Graphic User\\nInterface",
+              "title": "Graphic User\\nInterface"
             },
             {
-              "name": "Math",
+              "name": "IMath",
+              "title": "Math",
               "members": []
             },
             {
               "name": "Items",
+              "title": "IItems",
               "members": []
             },
             {
@@ -57,34 +62,36 @@
     },
     {
       "name": "Business Logic",
+      "title": "Business Logic",
       "id": "Business Logic",
       "type": "Component",
-      "title": "Business Logic",
       "hidden": true
     },
     {
       "name": "Data Access",
+      "title": "Data Access",
       "id": "Data Access",
       "type": "Component",
-      "title": "Data Access",
       "hidden": true
     },
     {
       "name": "Graphic User\\nInterface",
+      "title": "Graphic User\\nInterface",
       "id": "Graphic User\\nInterface",
       "type": "Component",
-      "title": "Graphic User\\nInterface",
       "hidden": true
     },
     {
-      "name": "Math",
+      "name": "IMath",
+      "title": "Math",
       "members": [],
-      "id": "Math",
+      "id": "IMath",
       "type": "Interface",
       "hidden": true
     },
     {
       "name": "Items",
+      "title": "IItems",
       "members": [],
       "id": "Items",
       "type": "Interface",
@@ -130,7 +137,7 @@
     },
     {
       "from": "test/fixtures/component-interfaces/in.plantuml",
-      "to": "Math",
+      "to": "IMath",
       "name": "contains",
       "hidden": true
     },
@@ -138,13 +145,6 @@
       "from": "test/fixtures/component-interfaces/in.plantuml",
       "to": "Items",
       "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "Business Logic",
-      "to": "Math",
-      "name": "exposes",
-      "type": "",
       "hidden": true
     }
   ]

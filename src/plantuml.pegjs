@@ -93,7 +93,8 @@ Group
   = _ type:GroupType " " _ name:ElementName _ Stereotype? _ Color? _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
     return new (require('./group'))(
-      name,
+      name.name,
+      name.title,
       type,
       elements.filter(
         e => e !== undefined
@@ -158,7 +159,8 @@ Class
   = _ isAbstract:"abstract "? _ "class " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new (require("./class"))(
-      name,
+      name.name,
+      name.title,
       !!isAbstract,
       members.filter(
         (m) => m !== undefined
@@ -168,7 +170,8 @@ Class
   / _ isAbstract:"abstract "? _ "class " _ name:ElementName _ Decorators? EndLine
   {
     return new (require("./class"))(
-      name,
+      name.name,
+      name.title,
       !!isAbstract
     );
   }
@@ -239,7 +242,8 @@ Interface
   = _ "interface " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new (require('./interface'))(
-      name,
+      name.name,
+      name.title,
       members.filter(
         (m) => m !== undefined
       )
@@ -248,7 +252,8 @@ Interface
   / _ "interface " _ name:ElementName _ Decorators? _ EndLine
   {
     return new (require('./interface'))(
-      name,
+      name.name,
+      name.title,
     );
   }
 
@@ -260,7 +265,8 @@ Enum
   = _ "enum " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new (require('./enum'))(
-      name,
+      name.name,
+      name.title,
       members.filter(
         (m) => m !== undefined
       )
@@ -269,7 +275,8 @@ Enum
   / _ "enum " _ name:ElementName _ Decorators? _ EndLine
   {
     return new (require('./enum'))(
-      name,
+      name.name,
+      name.title,
     );
   }
 
@@ -281,7 +288,8 @@ Component
   = _ "component " _ name:ElementName _ Stereotype? EndLine
   {
     return new (require('./component'))(
-      name
+      name.name,
+      name.title,
     );
   }
   / _ component:ShortComponent EndLine
@@ -292,8 +300,10 @@ Component
 ShortComponent
   = "[" name:(!("]" / NewLine) .)+ "]"
   {
+    name = name.map((c) => c[1]).join('').trim();
     return new (require('./component'))(
-      name.map((c) => c[1]).join('').trim()
+      name,
+      name
     );
   }
 
@@ -305,7 +315,8 @@ UseCase
   = _ "usecase " _ name:ElementName EndLine
   {
     return new (require('./useCase'))(
-      name,
+      name.name,
+      name.title,
     );
   }
   / _ useCase:ShortUseCase EndLine
@@ -316,8 +327,10 @@ UseCase
 ShortUseCase
   = "(" name:(!(")" / NewLine) .)+ ")"
   {
+    name = name.map((c) => c[1]).join('').trim();
     return new (require('./useCase'))(
-      name.map((c) => c[1]).join('').trim()
+      name,
+      name
     );
   }
 
@@ -424,7 +437,7 @@ ElementReference
       type: element.constructor.name,
     }
   }
-  / name:ElementName
+  / name:Name
   {
     return {
       name: name,
@@ -433,33 +446,56 @@ ElementReference
   }
 
 ElementName
-  = _ QuotedString _ "as " _ name:Name _
+  = title:QuotedString _ "as " _ name:Name
   {
-    return name;
+    return {
+      name: name,
+      title: title,
+    };
   }
-  / _ name:Name _ "as " _ QuotedString _
+  / name:Name _ "as " _ title:QuotedString
   {
-    return name;
+    return {
+      name: name,
+      title: title,
+    };
   }
-  / _ Name _ "as " _ name:Name _
+  / name:Name _ "as " _ title:Name
   {
-    return name;
+    return {
+      name: name,
+      title: title,
+    };
   }
   / _ name:QuotedString _
   {
-    return name;
+    return {
+      name: name,
+      title: name,
+    };
   }
   / "(" name:(!(")" / NewLine) .)+ ")"
   {
-    return name.map((c) => c[1]).join('').trim();
+    name = name.map((c) => c[1]).join('').trim();
+    return {
+      name: name,
+      title: name,
+    };
   }
   / "[" name:(!("]" / NewLine) .)+ "]"
   {
-    return name.map((c) => c[1]).join('').trim();
+    name = name.map((c) => c[1]).join('').trim();
+    return {
+      name: name,
+      title: name,
+    };
   }
   / _ name:Name _
   {
-    return name;
+    return {
+      name: name,
+      title: name,
+    };
   }
 
 QuotedString

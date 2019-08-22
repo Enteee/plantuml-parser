@@ -6,6 +6,7 @@
         "elements": [
           {
             "name": "Car",
+            "title": "Car",
             "isAbstract": false,
             "members": [
               {
@@ -51,6 +52,7 @@
           },
           {
             "name": "Car",
+            "title": "Car",
             "isAbstract": false,
             "members": []
           },

@@ -6,6 +6,7 @@
         "elements": [
           {
             "name": "Dwelling",
+            "title": "Dwelling",
             "isAbstract": false,
             "members": [
               {
@@ -29,6 +30,7 @@
         "elements": [
           {
             "name": "Dwelling",
+            "title": "Dwelling",
             "isAbstract": false,
             "members": [
               {

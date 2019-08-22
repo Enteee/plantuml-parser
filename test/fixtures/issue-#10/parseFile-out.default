@@ -6,14 +6,17 @@
         "elements": [
           {
             "name": "_COMP_EXT1_IF1",
+            "title": "_COMP_EXT1_IF1",
             "members": []
           },
           {
-            "name": "rmf",
+            "name": "p1",
+            "title": "rmf",
             "type": "package",
             "elements": [
               {
-                "name": "_COMP8"
+                "name": "_COMP8",
+                "title": "_COMP8"
               }
             ]
           }

@@ -6,13 +6,16 @@
         "elements": [
           {
             "name": "Features",
+            "title": "Features",
             "type": "rectangle",
             "elements": [
               {
-                "name": "Login"
+                "name": "Login",
+                "title": "Login"
               },
               {
-                "name": "Create / Delete User"
+                "name": "Create / Delete User",
+                "title": "Create / Delete User"
               }
             ]
           },

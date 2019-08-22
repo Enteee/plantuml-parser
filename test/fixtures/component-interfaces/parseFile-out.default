@@ -5,20 +5,25 @@
       {
         "elements": [
           {
-            "name": "Business Logic"
+            "name": "Business Logic",
+            "title": "Business Logic"
           },
           {
-            "name": "Data Access"
+            "name": "Data Access",
+            "title": "Data Access"
           },
           {
-            "name": "Graphic User\\nInterface"
+            "name": "Graphic User\\nInterface",
+            "title": "Graphic User\\nInterface"
           },
           {
-            "name": "Math",
+            "name": "IMath",
+            "title": "Math",
             "members": []
           },
           {
             "name": "Items",
+            "title": "IItems",
             "members": []
           },
           {

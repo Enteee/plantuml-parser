@@ -6,13 +6,16 @@
         {
           "elements": [
             {
-              "name": "Business Logic"
+              "name": "Business Logic",
+              "title": "Business Logic"
             },
             {
-              "name": "Data Access"
+              "name": "Data Access",
+              "title": "Data Access"
             },
             {
-              "name": "Graphic User\\nInterface"
+              "name": "Graphic User\\nInterface",
+              "title": "Graphic User\\nInterface"
             }
           ]
         }
@@ -23,23 +26,23 @@
     },
     {
       "name": "Business Logic",
+      "title": "Business Logic",
       "id": "Business Logic",
       "type": "Component",
-      "title": "Business Logic",
       "hidden": true
     },
     {
       "name": "Data Access",
+      "title": "Data Access",
       "id": "Data Access",
       "type": "Component",
-      "title": "Data Access",
       "hidden": true
     },
     {
       "name": "Graphic User\\nInterface",
+      "title": "Graphic User\\nInterface",
       "id": "Graphic User\\nInterface",
       "type": "Component",
-      "title": "Graphic User\\nInterface",
       "hidden": true
     }
   ],

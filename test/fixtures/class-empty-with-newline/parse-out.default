@@ -3,6 +3,7 @@
     "elements": [
       {
         "name": "AbstractList",
+        "title": "AbstractList",
         "isAbstract": false,
         "members": []
       }

@@ -2,34 +2,36 @@
   "nodes": [
     {
       "name": "Graphic User\\nInterface",
+      "title": "Graphic User\\nInterface",
       "id": "Graphic User\\nInterface",
       "type": "Component",
-      "title": "Graphic User\\nInterface",
       "hidden": true
     },
     {
       "name": "Business Logic",
+      "title": "Business Logic",
       "id": "Business Logic",
       "type": "Component",
-      "title": "Business Logic",
       "hidden": true
     },
     {
       "name": "Data Access",
+      "title": "Data Access",
       "id": "Data Access",
       "type": "Component",
-      "title": "Data Access",
       "hidden": true
     },
     {
-      "name": "Math",
+      "name": "IMath",
+      "title": "Math",
       "members": [],
-      "id": "Math",
+      "id": "IMath",
       "type": "Interface",
       "hidden": true
     },
     {
       "name": "Items",
+      "title": "IItems",
       "members": [],
       "id": "Items",
       "type": "Interface",
@@ -37,9 +39,9 @@
     },
     {
       "name": "Stored Procs",
+      "title": "Stored Procs",
       "id": "Stored Procs",
       "type": "Component",
-      "title": "Stored Procs",
       "hidden": true
     }
   ],
@@ -66,13 +68,6 @@
       "from": "Stored Procs",
       "to": "",
       "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "Business Logic",
-      "to": "Math",
-      "name": "exposes",
-      "type": "",
       "hidden": true
     }
   ]

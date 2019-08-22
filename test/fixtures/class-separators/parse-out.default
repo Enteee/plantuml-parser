@@ -3,6 +3,7 @@
     "elements": [
       {
         "name": "Separators",
+        "title": "Separators",
         "isAbstract": false,
         "members": []
       }
