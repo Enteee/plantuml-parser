@@ -56,11 +56,13 @@ console.log(
     "elements": [
       {
         "name": "A",
+        "title": "A",
         "isAbstract": false,
         "members": []
       },
       {
         "name": "B",
+        "title": "B",
         "isAbstract": false,
         "members": []
       },
