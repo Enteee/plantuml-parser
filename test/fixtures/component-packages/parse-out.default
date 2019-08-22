@@ -32,8 +32,8 @@
             "title": "Data Access"
           },
           {
-            "name": "IMath",
-            "title": "Math",
+            "name": "Math",
+            "title": "IMath",
             "members": []
           },
           {

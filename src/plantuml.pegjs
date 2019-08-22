@@ -460,7 +460,7 @@ ElementName
       title: title,
     };
   }
-  / name:Name _ "as " _ title:Name
+  / title:Name _ "as " _ name:Name
   {
     return {
       name: name,

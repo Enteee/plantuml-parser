@@ -10,8 +10,8 @@
             "members": []
           },
           {
-            "name": "p1",
-            "title": "rmf",
+            "name": "rmf",
+            "title": "p1",
             "type": "package",
             "elements": [
               {

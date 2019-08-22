@@ -14,8 +14,8 @@
         "title": "Graphic User\\nInterface"
       },
       {
-        "name": "IMath",
-        "title": "Math",
+        "name": "Math",
+        "title": "IMath",
         "members": []
       },
       {

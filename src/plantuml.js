@@ -5470,7 +5470,7 @@ function peg$parse(input, options) {
                 s5 = peg$parseName();
                 if (s5 !== peg$FAILED) {
                   peg$savedPos = s0;
-                  s1 = peg$c151(s1, s5);
+                  s1 = peg$c150(s1, s5);
                   s0 = s1;
                 } else {
                   peg$currPos = s0;
