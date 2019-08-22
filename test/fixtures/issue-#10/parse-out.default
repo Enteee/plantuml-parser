@@ -1,0 +1,19 @@
+[
+  {
+    "elements": [
+      {
+        "name": "_COMP_EXT1_IF1",
+        "members": []
+      },
+      {
+        "name": "rmf",
+        "type": "package",
+        "elements": [
+          {
+            "name": "_COMP8"
+          }
+        ]
+      }
+    ]
+  }
+]

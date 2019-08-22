@@ -22,9 +22,9 @@
       "hidden": true
     },
     {
-      "name": "IMath",
+      "name": "Math",
       "members": [],
-      "id": "IMath",
+      "id": "Math",
       "type": "Interface",
       "hidden": true
     },
@@ -66,6 +66,13 @@
       "from": "Stored Procs",
       "to": "",
       "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Business Logic",
+      "to": "Math",
+      "name": "exposes",
+      "type": "",
       "hidden": true
     }
   ]

@@ -30,7 +30,7 @@
                   "name": "Data Access"
                 },
                 {
-                  "name": "IMath",
+                  "name": "Math",
                   "members": []
                 },
                 {
@@ -167,9 +167,9 @@
       "hidden": true
     },
     {
-      "name": "IMath",
+      "name": "Math",
       "members": [],
-      "id": "IMath",
+      "id": "Math",
       "type": "Interface",
       "hidden": true
     },
@@ -227,7 +227,7 @@
     },
     {
       "from": "test/fixtures/component-labels-and-notes/in.plantuml",
-      "to": "IMath",
+      "to": "Math",
       "name": "contains",
       "hidden": true
     },
@@ -247,6 +247,13 @@
       "from": "test/fixtures/component-labels-and-notes/in.plantuml",
       "to": "Stored Procs",
       "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Business Logic",
+      "to": "Math",
+      "name": "exposes",
+      "type": "Web Services",
       "hidden": true
     }
   ]
