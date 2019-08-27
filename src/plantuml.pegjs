@@ -292,19 +292,29 @@ Component
       name.title,
     );
   }
-  / _ component:ShortComponent EndLine
+  / _ name:ShortComponent EndLine
   {
-    return component;
+    return new (require('./component'))(
+      name.name,
+      name.title,
+    );
   }
 
 ShortComponent
-  = "[" name:(!("]" / NewLine) .)+ "]"
+  = "[" title:(!("]" / NewLine) .)+ "]" _ "as" _ name:Name
+  {
+    return {
+      name: name,
+      title: title.map((c) => c[1]).join('').trim(),
+    };
+  }
+  / "[" name:(!("]" / NewLine) .)+ "]"
   {
     name = name.map((c) => c[1]).join('').trim();
-    return new (require('./component'))(
-      name,
-      name
-    );
+    return {
+      name: name,
+      title: name,
+    };
   }
 
 //
@@ -319,19 +329,29 @@ UseCase
       name.title,
     );
   }
-  / _ useCase:ShortUseCase EndLine
+  / _ name:ShortUseCase EndLine
   {
-    return useCase;
+    return new (require('./useCase'))(
+      name.name,
+      name.title,
+    );
   }
 
 ShortUseCase
-  = "(" name:(!(")" / NewLine) .)+ ")"
+  = "(" title:(!(")" / NewLine) .)+ ")" _ "as" _ name:Name
+  {
+    return {
+      name: name,
+      title: title.map((c) => c[1]).join('').trim(),
+    };
+  }
+  / "(" name:(!(")" / NewLine) .)+ ")"
   {
     name = name.map((c) => c[1]).join('').trim();
-    return new (require('./useCase'))(
-      name,
-      name
-    );
+    return {
+      name: name,
+      title: name,
+    };
   }
 
 //
@@ -427,14 +447,14 @@ ElementReference
   {
     return {
       name: element.name,
-      type: element.constructor.name,
+      type: 'Component',
     }
   }
   / element:ShortUseCase
   {
     return {
       name: element.name,
-      type: element.constructor.name,
+      type: 'UseCase',
     }
   }
   / name:Name
@@ -474,20 +494,18 @@ ElementName
       title: name,
     };
   }
-  / "(" name:(!(")" / NewLine) .)+ ")"
+  / name:ShortUseCase
   {
-    name = name.map((c) => c[1]).join('').trim();
     return {
-      name: name,
-      title: name,
+      name: name.name,
+      title: name.title,
     };
   }
-  / "[" name:(!("]" / NewLine) .)+ "]"
+  / name:ShortComponent
   {
-    name = name.map((c) => c[1]).join('').trim();
     return {
-      name: name,
-      title: name,
+      name: name.name,
+      title: name.title,
     };
   }
   / _ name:Name _

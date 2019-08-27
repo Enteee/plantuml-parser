@@ -10,7 +10,7 @@
             "type": "package",
             "elements": [
               {
-                "name": "Graphic User\\nInterface",
+                "name": "GUI",
                 "title": "Graphic User\\nInterface"
               }
             ]
@@ -31,7 +31,7 @@
                 "title": "Business Logic"
               },
               {
-                "name": "Data Access",
+                "name": "DA",
                 "title": "Data Access"
               },
               {

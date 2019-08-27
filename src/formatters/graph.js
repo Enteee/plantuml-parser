@@ -81,7 +81,7 @@ module.exports = function (ast) {
         ...node,
         id: node.name,
         type: node.constructor.name,
-        title: node.name,
+        title: node.title,
         hidden: true
       });
       edges.push({

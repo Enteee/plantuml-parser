@@ -5,11 +5,11 @@
       {
         "elements": [
           {
-            "name": "Login",
+            "name": "L",
             "title": "Login"
           },
           {
-            "name": "Upload File",
+            "name": "UF",
             "title": "Upload File"
           },
           {

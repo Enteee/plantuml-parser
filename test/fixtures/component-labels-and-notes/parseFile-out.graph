@@ -11,7 +11,7 @@
               "type": "package",
               "elements": [
                 {
-                  "name": "Graphic User\\nInterface",
+                  "name": "GUI",
                   "title": "Graphic User\\nInterface"
                 }
               ]
@@ -32,7 +32,7 @@
                   "title": "Business Logic"
                 },
                 {
-                  "name": "Data Access",
+                  "name": "DA",
                   "title": "Data Access"
                 },
                 {
@@ -148,9 +148,9 @@
       "hidden": true
     },
     {
-      "name": "Graphic User\\nInterface",
+      "name": "GUI",
       "title": "Graphic User\\nInterface",
-      "id": "Graphic User\\nInterface",
+      "id": "GUI",
       "type": "Component",
       "hidden": true
     },
@@ -162,9 +162,9 @@
       "hidden": true
     },
     {
-      "name": "Data Access",
+      "name": "DA",
       "title": "Data Access",
-      "id": "Data Access",
+      "id": "DA",
       "type": "Component",
       "hidden": true
     },
@@ -194,14 +194,14 @@
   ],
   "edges": [
     {
-      "from": "Graphic User\\nInterface",
+      "from": "GUI",
       "to": "test/fixtures/component-labels-and-notes/in.plantuml",
       "name": "contains",
       "hidden": true
     },
     {
       "from": "test/fixtures/component-labels-and-notes/in.plantuml",
-      "to": "Graphic User\\nInterface",
+      "to": "GUI",
       "name": "contains",
       "hidden": true
     },
@@ -218,14 +218,14 @@
       "hidden": true
     },
     {
-      "from": "Data Access",
+      "from": "DA",
       "to": "test/fixtures/component-labels-and-notes/in.plantuml",
       "name": "contains",
       "hidden": true
     },
     {
       "from": "test/fixtures/component-labels-and-notes/in.plantuml",
-      "to": "Data Access",
+      "to": "DA",
       "name": "contains",
       "hidden": true
     },
@@ -258,6 +258,13 @@
       "to": "Math",
       "name": "exposes",
       "type": "Web Services",
+      "hidden": true
+    },
+    {
+      "from": "DA",
+      "to": "Items",
+      "name": "exposes",
+      "type": ".Net",
       "hidden": true
     }
   ]
