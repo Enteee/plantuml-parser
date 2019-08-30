@@ -150,6 +150,7 @@ Options:
   - [x] Code coverage
   - [x] Code formatting
   - [x] Code linting
+  - [x] Error case testing
   - [ ] Dependency audit
 
 ## Test
