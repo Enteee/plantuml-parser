@@ -5,6 +5,7 @@
  *   {
  *     directory:,
  *     src:,
+ *     error:,
  *     out: {
  *       name:,
  *       format:,
@@ -20,6 +21,7 @@ const { lstatSync, readdirSync, readFileSync } = require('fs');
 const { join } = require('path');
 
 const log = require('fancy-log');
+const deserializeError = require('deserialize-error');
 
 function getDirectories (source) {
   return readdirSync(source)
@@ -60,6 +62,7 @@ function getOutputFiles (source) {
 module.exports = getDirectories(conf.fixtures.dir).map(
   (directory) => {
     const srcFile = join(directory, conf.fixtures.inputFile);
+    const errorFile = join(directory, conf.fixtures.errorFile);
     var src;
     try {
       src = readFileSync(
@@ -70,10 +73,22 @@ module.exports = getDirectories(conf.fixtures.dir).map(
       log.warn('Skipping: ' + directory);
       return;
     }
+    var error;
+    try {
+      error = deserializeError(
+        readFileSync(
+          errorFile,
+          conf.encoding
+        )
+      );
+    } catch (e) {
+      // do nothing
+    }
     return {
       directory: directory,
       srcFile: srcFile,
       src: src,
+      error: error,
       out: getOutputFiles(directory)
     };
   }
