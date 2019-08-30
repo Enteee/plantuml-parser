@@ -1,0 +1,491 @@
+{
+  "message": "Expected \"'\", \"(\", \"/'\", \"[\", \"abstract \", \"class \", \"cloud\", \"component \", \"database\", \"digraph\", \"enum \", \"folder\", \"frame\", \"interface \", \"namespace\", \"node\", \"note \", \"package\", \"rectangle\", \"skinparam \", \"state\", \"together \", \"usecase \", [ \\t], or [A-Za-z0-9._] but \"}\" found.",
+  "expected": [
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "'",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "/'",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "[",
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "[",
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "(",
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "(",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        [
+          "A",
+          "Z"
+        ],
+        [
+          "a",
+          "z"
+        ],
+        [
+          "0",
+          "9"
+        ],
+        ".",
+        "_"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "[",
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "[",
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "(",
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "(",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        [
+          "A",
+          "Z"
+        ],
+        [
+          "a",
+          "z"
+        ],
+        [
+          "0",
+          "9"
+        ],
+        ".",
+        "_"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "skinparam ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "skinparam ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "together ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "package",
+      "ignoreCase": true
+    },
+    {
+      "type": "literal",
+      "text": "namespace",
+      "ignoreCase": true
+    },
+    {
+      "type": "literal",
+      "text": "node",
+      "ignoreCase": true
+    },
+    {
+      "type": "literal",
+      "text": "folder",
+      "ignoreCase": true
+    },
+    {
+      "type": "literal",
+      "text": "frame",
+      "ignoreCase": true
+    },
+    {
+      "type": "literal",
+      "text": "cloud",
+      "ignoreCase": true
+    },
+    {
+      "type": "literal",
+      "text": "database",
+      "ignoreCase": true
+    },
+    {
+      "type": "literal",
+      "text": "rectangle",
+      "ignoreCase": true
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "note ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "note ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "note ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "note ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "abstract ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "class ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "abstract ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "class ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "interface ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "interface ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "enum ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "enum ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "component ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "[",
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "[",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "usecase ",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "(",
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "(",
+      "ignoreCase": false
+    },
+    {
+      "type": "class",
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": "digraph",
+      "ignoreCase": true
+    },
+    {
+      "type": "literal",
+      "text": "state",
+      "ignoreCase": true
+    }
+  ],
+  "found": "}",
+  "location": {
+    "start": {
+      "offset": 25,
+      "line": 3,
+      "column": 3
+    },
+    "end": {
+      "offset": 26,
+      "line": 3,
+      "column": 4
+    }
+  },
+  "name": "SyntaxError"
+}
