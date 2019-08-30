@@ -24,7 +24,7 @@ module.exports = {
     parseFileOutputFilePrefix: 'parseFile-out.',
     treeFilePrefix: 'tree.',
     outputFileMatcher: new RegExp('.*/(parse(?:File)?)-out.(.+)'),
-    serializeParseError: function(err) {
+    serializeParseError: function (err) {
       err = serializeError(err);
       delete err.stack;
       return JSON.stringify(
@@ -33,8 +33,8 @@ module.exports = {
         2
       );
     },
-    deserializeParseError: function(err) {
-      return JSON.parse(err)
-    },
-  },
+    deserializeParseError: function (err) {
+      return JSON.parse(err);
+    }
+  }
 };

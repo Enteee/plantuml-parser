@@ -52,7 +52,7 @@ function testFormatHasNotChanged (fixture, output) {
 }
 
 // Happy path testing
-function testFixture(fixture){
+function testFixture (fixture) {
   it('parse',
     () => parse(fixture.src)
   );
@@ -73,9 +73,8 @@ function testFixture(fixture){
 }
 
 // Test for errors
-function testErrorFixture(fixture){
-
-  function expectFixtureError(error){
+function testErrorFixture (fixture) {
+  function expectFixtureError (error) {
     expect(error).to.be.an(
       'object',
       'Error not thrown: ' +
@@ -119,14 +118,13 @@ function testErrorFixture(fixture){
     () => {
       var error;
       try {
-        parseFile(fixture.srcFile)
+        parseFile(fixture.srcFile);
       } catch (e) {
         error = e;
       }
       expectFixtureError(error);
     }
   );
-
 }
 
 require('./fixtures').forEach(

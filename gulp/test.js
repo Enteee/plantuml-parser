@@ -42,15 +42,15 @@ task('test-fixtures-update-run', () =>
 
           log.info('Updating [' +
             name +
-            ((expectError) ? ', error' : '')
-            +']: ' + dirname(file.path)
+            ((expectError) ? ', error' : '') +
+            ']: ' + dirname(file.path)
           );
 
           var astParse, errParse;
           try {
-            var astParse = parse(content)
+            astParse = parse(content);
           } catch (err) {
-            if(!expectError){
+            if (!expectError) {
               throw err;
             }
             errParse = conf.fixtures.serializeParseError(err);
@@ -58,16 +58,16 @@ task('test-fixtures-update-run', () =>
 
           var astParseFile, errParseFile;
           try {
-            var astParseFile = parseFile(file.path)
+            astParseFile = parseFile(file.path);
           } catch (err) {
-            if(!expectError){
+            if (!expectError) {
               throw err;
             }
             errParseFile = conf.fixtures.serializeParseError(err);
           }
 
-          if (JSON.stringify(errParse) != JSON.stringify(errParseFile)){
-            throw Error('inconsistent error ' + errParse +' != ' + errParseFile);
+          if (JSON.stringify(errParse) !== JSON.stringify(errParseFile)) {
+            throw Error('inconsistent error ' + errParse + ' != ' + errParseFile);
           }
 
           const errorOutputFile = join(
