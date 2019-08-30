@@ -6,10 +6,12 @@
         "elements": [
           {
             "name": "ServiceManager",
+            "title": "ServiceManager",
             "type": "package",
             "elements": [
               {
                 "name": "CI",
+                "title": "CI",
                 "isAbstract": true,
                 "members": [
                   {
@@ -167,6 +169,7 @@
               [
                 {
                   "name": "Peripheral",
+                  "title": "Peripheral",
                   "members": []
                 },
                 {
@@ -189,6 +192,7 @@
                 [
                   {
                     "name": "Printer",
+                    "title": "Printer",
                     "isAbstract": false,
                     "members": []
                   },
@@ -207,6 +211,7 @@
                   },
                   {
                     "name": "CCTV",
+                    "title": "CCTV",
                     "isAbstract": false,
                     "members": []
                   },
@@ -225,6 +230,7 @@
                   },
                   {
                     "name": "MultiFunctionPeripheral",
+                    "title": "MultiFunctionPeripheral",
                     "isAbstract": false,
                     "members": []
                   },
@@ -250,6 +256,7 @@
               [
                 {
                   "name": "NetworkDevice",
+                  "title": "NetworkDevice",
                   "members": [
                     {
                       "name": "location",
@@ -278,6 +285,7 @@
                 },
                 {
                   "name": "Switch",
+                  "title": "Switch",
                   "isAbstract": false,
                   "members": []
                 },
@@ -296,6 +304,7 @@
                 },
                 {
                   "name": "Router",
+                  "title": "Router",
                   "isAbstract": false,
                   "members": []
                 },
@@ -314,6 +323,7 @@
                 },
                 {
                   "name": "Firewall",
+                  "title": "Firewall",
                   "isAbstract": false,
                   "members": []
                 },
@@ -332,6 +342,7 @@
                 },
                 {
                   "name": "Proxy",
+                  "title": "Proxy",
                   "isAbstract": false,
                   "members": []
                 },
@@ -354,6 +365,7 @@
                 },
                 {
                   "name": "LoadBalancer",
+                  "title": "LoadBalancer",
                   "isAbstract": false,
                   "members": []
                 },
@@ -372,6 +384,7 @@
                 },
                 {
                   "name": "NetworkManagement",
+                  "title": "NetworkManagement",
                   "isAbstract": false,
                   "members": []
                 },
@@ -396,6 +409,7 @@
               [
                 {
                   "name": "Infrastructure",
+                  "title": "Infrastructure",
                   "members": [
                     {
                       "name": "location",
@@ -425,6 +439,7 @@
                 [
                   {
                     "name": "ATS",
+                    "title": "ATS",
                     "isAbstract": false,
                     "members": []
                   },
@@ -447,6 +462,7 @@
                   },
                   {
                     "name": "KVM",
+                    "title": "KVM",
                     "isAbstract": false,
                     "members": []
                   },
@@ -469,6 +485,7 @@
                   },
                   {
                     "name": "PDU",
+                    "title": "PDU",
                     "isAbstract": false,
                     "members": []
                   },
@@ -491,6 +508,7 @@
                   },
                   {
                     "name": "UPS",
+                    "title": "UPS",
                     "isAbstract": false,
                     "members": []
                   },
@@ -513,6 +531,7 @@
                   },
                   {
                     "name": "HSM",
+                    "title": "HSM",
                     "isAbstract": false,
                     "members": []
                   },
@@ -535,6 +554,7 @@
                   },
                   {
                     "name": "AccessControl",
+                    "title": "AccessControl",
                     "isAbstract": false,
                     "members": []
                   },
@@ -560,6 +580,7 @@
               [
                 {
                   "name": "Telecomdevice",
+                  "title": "Telecomdevice",
                   "members": [
                     {
                       "name": "location",
@@ -589,6 +610,7 @@
                 [
                   {
                     "name": "Gateway",
+                    "title": "Gateway",
                     "isAbstract": false,
                     "members": []
                   },
@@ -607,6 +629,7 @@
                   },
                   {
                     "name": "Voice",
+                    "title": "Voice",
                     "isAbstract": false,
                     "members": []
                   },
@@ -629,6 +652,7 @@
                   },
                   {
                     "name": "Video",
+                    "title": "Video",
                     "isAbstract": false,
                     "members": []
                   },
@@ -650,6 +674,7 @@
               [
                 {
                   "name": "Cluster",
+                  "title": "Cluster",
                   "members": [
                     {
                       "name": "applicationCluster",
@@ -859,6 +884,7 @@
                 [
                   {
                     "name": "SoftwareCluster",
+                    "title": "SoftwareCluster",
                     "isAbstract": false,
                     "members": []
                   },
@@ -881,6 +907,7 @@
                   },
                   {
                     "name": "ContainerCluster",
+                    "title": "ContainerCluster",
                     "isAbstract": false,
                     "members": []
                   },
@@ -907,6 +934,7 @@
                   },
                   {
                     "name": "VMCluster",
+                    "title": "VMCluster",
                     "isAbstract": false,
                     "members": []
                   },
@@ -933,6 +961,7 @@
                   },
                   {
                     "name": "StorageCluster",
+                    "title": "StorageCluster",
                     "isAbstract": false,
                     "members": []
                   },
@@ -1130,6 +1159,7 @@
               [
                 {
                   "name": "Storage",
+                  "title": "Storage",
                   "members": [
                     {
                       "name": "location",
@@ -1159,6 +1189,7 @@
                 [
                   {
                     "name": "TapeLibrary",
+                    "title": "TapeLibrary",
                     "isAbstract": false,
                     "members": []
                   },
@@ -1177,6 +1208,7 @@
                   },
                   {
                     "name": "NAS",
+                    "title": "NAS",
                     "isAbstract": false,
                     "members": []
                   },
@@ -1199,6 +1231,7 @@
                   },
                   {
                     "name": "SAN",
+                    "title": "SAN",
                     "isAbstract": false,
                     "members": []
                   },
@@ -1221,6 +1254,7 @@
                   },
                   {
                     "name": "StorageSwitch",
+                    "title": "Switch",
                     "isAbstract": false,
                     "members": []
                   },
@@ -1239,6 +1273,7 @@
                   },
                   {
                     "name": "StorageController",
+                    "title": "Controller",
                     "isAbstract": false,
                     "members": []
                   },
@@ -1260,6 +1295,7 @@
               [
                 {
                   "name": "Contact",
+                  "title": "Contact",
                   "members": [
                     {
                       "name": "location",
@@ -1332,6 +1368,7 @@
               [
                 {
                   "name": "Location",
+                  "title": "Location",
                   "members": []
                 },
                 {

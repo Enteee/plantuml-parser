@@ -6,6 +6,7 @@
         "elements": [
           {
             "name": "Dwelling",
+            "title": "Dwelling",
             "isAbstract": false,
             "members": [
               {
@@ -25,16 +26,19 @@
           },
           {
             "name": "Apartment",
+            "title": "Apartment",
             "isAbstract": false,
             "members": []
           },
           {
             "name": "House",
+            "title": "House",
             "isAbstract": false,
             "members": []
           },
           {
             "name": "Commune",
+            "title": "Commune",
             "isAbstract": false,
             "members": []
           }

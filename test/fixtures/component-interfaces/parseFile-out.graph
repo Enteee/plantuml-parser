@@ -6,20 +6,25 @@
         {
           "elements": [
             {
-              "name": "Business Logic"
+              "name": "Business Logic",
+              "title": "Business Logic"
             },
             {
-              "name": "Data Access"
+              "name": "DA",
+              "title": "Data Access"
             },
             {
-              "name": "Graphic User\\nInterface"
+              "name": "GUI",
+              "title": "Graphic User\\nInterface"
             },
             {
               "name": "Math",
+              "title": "IMath",
               "members": []
             },
             {
               "name": "Items",
+              "title": "IItems",
               "members": []
             },
             {
@@ -57,27 +62,28 @@
     },
     {
       "name": "Business Logic",
+      "title": "Business Logic",
       "id": "Business Logic",
       "type": "Component",
-      "title": "Business Logic",
       "hidden": true
     },
     {
-      "name": "Data Access",
-      "id": "Data Access",
-      "type": "Component",
+      "name": "DA",
       "title": "Data Access",
+      "id": "DA",
+      "type": "Component",
       "hidden": true
     },
     {
-      "name": "Graphic User\\nInterface",
-      "id": "Graphic User\\nInterface",
-      "type": "Component",
+      "name": "GUI",
       "title": "Graphic User\\nInterface",
+      "id": "GUI",
+      "type": "Component",
       "hidden": true
     },
     {
       "name": "Math",
+      "title": "IMath",
       "members": [],
       "id": "Math",
       "type": "Interface",
@@ -85,6 +91,7 @@
     },
     {
       "name": "Items",
+      "title": "IItems",
       "members": [],
       "id": "Items",
       "type": "Interface",
@@ -105,26 +112,26 @@
       "hidden": true
     },
     {
-      "from": "Data Access",
+      "from": "DA",
       "to": "test/fixtures/component-interfaces/in.plantuml",
       "name": "contains",
       "hidden": true
     },
     {
       "from": "test/fixtures/component-interfaces/in.plantuml",
-      "to": "Data Access",
+      "to": "DA",
       "name": "contains",
       "hidden": true
     },
     {
-      "from": "Graphic User\\nInterface",
+      "from": "GUI",
       "to": "test/fixtures/component-interfaces/in.plantuml",
       "name": "contains",
       "hidden": true
     },
     {
       "from": "test/fixtures/component-interfaces/in.plantuml",
-      "to": "Graphic User\\nInterface",
+      "to": "GUI",
       "name": "contains",
       "hidden": true
     },

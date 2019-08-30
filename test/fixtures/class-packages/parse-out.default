@@ -3,10 +3,12 @@
     "elements": [
       {
         "name": "Node",
+        "title": "Node",
         "type": "package",
         "elements": [
           {
             "name": "Worker1",
+            "title": "Worker1",
             "isAbstract": false,
             "members": []
           }
@@ -14,10 +16,12 @@
       },
       {
         "name": "Rectangle",
+        "title": "Rectangle",
         "type": "package",
         "elements": [
           {
             "name": "Worker2",
+            "title": "Worker2",
             "isAbstract": false,
             "members": []
           }
@@ -25,10 +29,12 @@
       },
       {
         "name": "Folder",
+        "title": "Folder",
         "type": "package",
         "elements": [
           {
             "name": "Worker3",
+            "title": "Worker3",
             "isAbstract": false,
             "members": []
           }
@@ -36,10 +42,12 @@
       },
       {
         "name": "Frame",
+        "title": "Frame",
         "type": "package",
         "elements": [
           {
             "name": "Worker4",
+            "title": "Worker4",
             "isAbstract": false,
             "members": []
           }
@@ -47,10 +55,12 @@
       },
       {
         "name": "Internet",
+        "title": "Internet",
         "type": "package",
         "elements": [
           {
             "name": "Worker5",
+            "title": "Worker5",
             "isAbstract": false,
             "members": []
           }
@@ -58,10 +68,12 @@
       },
       {
         "name": "Database",
+        "title": "Database",
         "type": "package",
         "elements": [
           {
             "name": "Worker6",
+            "title": "Worker6",
             "isAbstract": false,
             "members": []
           }

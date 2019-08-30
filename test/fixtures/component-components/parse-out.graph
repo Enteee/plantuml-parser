@@ -2,23 +2,23 @@
   "nodes": [
     {
       "name": "Business Logic",
+      "title": "Business Logic",
       "id": "Business Logic",
       "type": "Component",
-      "title": "Business Logic",
       "hidden": true
     },
     {
-      "name": "Data Access",
-      "id": "Data Access",
-      "type": "Component",
+      "name": "DA",
       "title": "Data Access",
+      "id": "DA",
+      "type": "Component",
       "hidden": true
     },
     {
-      "name": "Graphic User\\nInterface",
-      "id": "Graphic User\\nInterface",
-      "type": "Component",
+      "name": "GUI",
       "title": "Graphic User\\nInterface",
+      "id": "GUI",
+      "type": "Component",
       "hidden": true
     }
   ],
@@ -30,13 +30,13 @@
       "hidden": true
     },
     {
-      "from": "Data Access",
+      "from": "DA",
       "to": "",
       "name": "contains",
       "hidden": true
     },
     {
-      "from": "Graphic User\\nInterface",
+      "from": "GUI",
       "to": "",
       "name": "contains",
       "hidden": true

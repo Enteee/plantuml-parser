@@ -7,6 +7,7 @@
           "elements": [
             {
               "name": "Dwelling",
+              "title": "Dwelling",
               "isAbstract": false,
               "members": [
                 {
@@ -26,26 +27,31 @@
             },
             {
               "name": "Apartment",
+              "title": "Apartment",
               "isAbstract": false,
               "members": []
             },
             {
               "name": "House",
+              "title": "House",
               "isAbstract": false,
               "members": []
             },
             {
               "name": "Commune",
+              "title": "Commune",
               "isAbstract": false,
               "members": []
             },
             {
               "name": "Window",
+              "title": "Window",
               "isAbstract": false,
               "members": []
             },
             {
               "name": "Door",
+              "title": "Door",
               "isAbstract": false,
               "members": []
             },
@@ -123,6 +129,7 @@
     },
     {
       "name": "Dwelling",
+      "title": "Dwelling",
       "isAbstract": false,
       "members": [
         {
@@ -153,6 +160,7 @@
     },
     {
       "name": "Apartment",
+      "title": "Apartment",
       "isAbstract": false,
       "members": [],
       "id": "Apartment",
@@ -161,6 +169,7 @@
     },
     {
       "name": "House",
+      "title": "House",
       "isAbstract": false,
       "members": [],
       "id": "House",
@@ -169,6 +178,7 @@
     },
     {
       "name": "Commune",
+      "title": "Commune",
       "isAbstract": false,
       "members": [],
       "id": "Commune",
@@ -177,6 +187,7 @@
     },
     {
       "name": "Window",
+      "title": "Window",
       "isAbstract": false,
       "members": [],
       "id": "Window",
@@ -185,6 +196,7 @@
     },
     {
       "name": "Door",
+      "title": "Door",
       "isAbstract": false,
       "members": [],
       "id": "Door",

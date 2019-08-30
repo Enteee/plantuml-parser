@@ -2,6 +2,7 @@
   "nodes": [
     {
       "name": "Separators",
+      "title": "Separators",
       "isAbstract": false,
       "members": [],
       "id": "Separators",

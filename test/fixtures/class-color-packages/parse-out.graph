@@ -2,6 +2,7 @@
   "nodes": [
     {
       "name": "Worker1",
+      "title": "Worker1",
       "isAbstract": false,
       "members": [],
       "id": "Worker1",

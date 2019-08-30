@@ -7,6 +7,7 @@
           "elements": [
             {
               "name": "Separators",
+              "title": "Separators",
               "isAbstract": false,
               "members": []
             }
@@ -19,6 +20,7 @@
     },
     {
       "name": "Separators",
+      "title": "Separators",
       "isAbstract": false,
       "members": [],
       "id": "Separators",

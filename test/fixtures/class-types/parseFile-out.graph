@@ -7,26 +7,31 @@
           "elements": [
             {
               "name": "AbstractList",
+              "title": "AbstractList",
               "isAbstract": true,
               "members": []
             },
             {
               "name": "Test",
+              "title": "Test",
               "isAbstract": false,
               "members": []
             },
             {
               "name": "System",
+              "title": "System",
               "isAbstract": false,
               "members": []
             },
             {
               "name": "Date",
+              "title": "Date",
               "isAbstract": false,
               "members": []
             },
             {
               "name": "Foo1",
+              "title": "Foo1",
               "isAbstract": false,
               "members": [
                 {
@@ -81,6 +86,7 @@
             },
             {
               "name": "User",
+              "title": "User",
               "isAbstract": false,
               "members": [
                 {
@@ -120,6 +126,7 @@
             },
             {
               "name": "TimeUnit",
+              "title": "TimeUnit",
               "members": [
                 {
                   "name": "DAYS",
@@ -143,10 +150,12 @@
             },
             {
               "name": "List",
+              "title": "List",
               "members": []
             },
             {
               "name": "Object",
+              "title": "Object",
               "isAbstract": false,
               "members": []
             },
@@ -172,6 +181,7 @@
     },
     {
       "name": "AbstractList",
+      "title": "AbstractList",
       "isAbstract": true,
       "members": [],
       "id": "AbstractList",
@@ -180,6 +190,7 @@
     },
     {
       "name": "Test",
+      "title": "Test",
       "isAbstract": false,
       "members": [],
       "id": "Test",
@@ -188,6 +199,7 @@
     },
     {
       "name": "System",
+      "title": "System",
       "isAbstract": false,
       "members": [],
       "id": "System",
@@ -196,6 +208,7 @@
     },
     {
       "name": "Date",
+      "title": "Date",
       "isAbstract": false,
       "members": [],
       "id": "Date",
@@ -204,6 +217,7 @@
     },
     {
       "name": "Foo1",
+      "title": "Foo1",
       "isAbstract": false,
       "members": [
         {
@@ -325,6 +339,7 @@
     },
     {
       "name": "User",
+      "title": "User",
       "isAbstract": false,
       "members": [
         {
@@ -383,6 +398,7 @@
     },
     {
       "name": "List",
+      "title": "List",
       "members": [],
       "id": "List",
       "type": "Interface",
@@ -390,6 +406,7 @@
     },
     {
       "name": "Object",
+      "title": "Object",
       "isAbstract": false,
       "members": [],
       "id": "Object",

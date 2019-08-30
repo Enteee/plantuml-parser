@@ -1,7 +1,8 @@
 'use strict';
 
 module.exports = class UseCase {
-  constructor (name) {
+  constructor (name, title) {
     this.name = name;
+    this.title = title;
   }
 };

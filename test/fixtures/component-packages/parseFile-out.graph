@@ -7,44 +7,54 @@
           "elements": [
             {
               "name": "Front End",
+              "title": "Front End",
               "type": "package",
               "elements": [
                 {
-                  "name": "Graphic User\\nInterface"
+                  "name": "GUI",
+                  "title": "Graphic User\\nInterface"
                 }
               ]
             },
             {
               "name": "Internet",
+              "title": "Internet",
               "type": "cloud",
               "elements": []
             },
             {
               "name": "Middle Tier",
+              "title": "Middle Tier",
               "type": "node",
               "elements": [
                 {
-                  "name": "Business Logic"
+                  "name": "Business Logic",
+                  "title": "Business Logic"
                 },
                 {
-                  "name": "Data Access"
+                  "name": "DA",
+                  "title": "Data Access"
                 },
                 {
                   "name": "Math",
+                  "title": "IMath",
                   "members": []
                 },
                 {
                   "name": "Items",
+                  "title": "IItems",
                   "members": []
                 }
               ]
             },
             {
               "name": "PostgreSQL\\n",
+              "title": "PostgreSQL\\n",
               "type": "database",
               "elements": [
                 {
-                  "name": "Stored Procs"
+                  "name": "Stored Procs",
+                  "title": "Stored Procs"
                 }
               ]
             },
@@ -134,28 +144,29 @@
       "hidden": true
     },
     {
-      "name": "Graphic User\\nInterface",
-      "id": "Graphic User\\nInterface",
-      "type": "Component",
+      "name": "GUI",
       "title": "Graphic User\\nInterface",
+      "id": "GUI",
+      "type": "Component",
       "hidden": true
     },
     {
       "name": "Business Logic",
+      "title": "Business Logic",
       "id": "Business Logic",
       "type": "Component",
-      "title": "Business Logic",
       "hidden": true
     },
     {
-      "name": "Data Access",
-      "id": "Data Access",
-      "type": "Component",
+      "name": "DA",
       "title": "Data Access",
+      "id": "DA",
+      "type": "Component",
       "hidden": true
     },
     {
       "name": "Math",
+      "title": "IMath",
       "members": [],
       "id": "Math",
       "type": "Interface",
@@ -163,6 +174,7 @@
     },
     {
       "name": "Items",
+      "title": "IItems",
       "members": [],
       "id": "Items",
       "type": "Interface",
@@ -170,22 +182,22 @@
     },
     {
       "name": "Stored Procs",
+      "title": "Stored Procs",
       "id": "Stored Procs",
       "type": "Component",
-      "title": "Stored Procs",
       "hidden": true
     }
   ],
   "edges": [
     {
-      "from": "Graphic User\\nInterface",
+      "from": "GUI",
       "to": "test/fixtures/component-packages/in.plantuml",
       "name": "contains",
       "hidden": true
     },
     {
       "from": "test/fixtures/component-packages/in.plantuml",
-      "to": "Graphic User\\nInterface",
+      "to": "GUI",
       "name": "contains",
       "hidden": true
     },
@@ -202,14 +214,14 @@
       "hidden": true
     },
     {
-      "from": "Data Access",
+      "from": "DA",
       "to": "test/fixtures/component-packages/in.plantuml",
       "name": "contains",
       "hidden": true
     },
     {
       "from": "test/fixtures/component-packages/in.plantuml",
-      "to": "Data Access",
+      "to": "DA",
       "name": "contains",
       "hidden": true
     },
@@ -240,6 +252,13 @@
     {
       "from": "Business Logic",
       "to": "Math",
+      "name": "exposes",
+      "type": "",
+      "hidden": true
+    },
+    {
+      "from": "DA",
+      "to": "Items",
       "name": "exposes",
       "type": "",
       "hidden": true

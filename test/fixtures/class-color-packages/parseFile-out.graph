@@ -7,10 +7,12 @@
           "elements": [
             {
               "name": "Node",
+              "title": "Node",
               "type": "package",
               "elements": [
                 {
                   "name": "Worker1",
+                  "title": "Worker1",
                   "isAbstract": false,
                   "members": []
                 }
@@ -25,6 +27,7 @@
     },
     {
       "name": "Worker1",
+      "title": "Worker1",
       "isAbstract": false,
       "members": [],
       "id": "Worker1",

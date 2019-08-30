@@ -2,6 +2,7 @@
   "nodes": [
     {
       "name": "Dwelling",
+      "title": "Dwelling",
       "isAbstract": false,
       "members": [
         {
@@ -32,6 +33,7 @@
     },
     {
       "name": "Dwelling",
+      "title": "Dwelling",
       "isAbstract": false,
       "members": [
         {
