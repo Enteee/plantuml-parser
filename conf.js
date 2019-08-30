@@ -33,5 +33,8 @@ module.exports = {
         2
       );
     },
+    deserializeParseError: function(err) {
+      return JSON.parse(err)
+    },
   },
 };

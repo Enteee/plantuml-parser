@@ -21,7 +21,6 @@ const { lstatSync, readdirSync, readFileSync } = require('fs');
 const { join } = require('path');
 
 const log = require('fancy-log');
-const deserializeError = require('deserialize-error');
 
 function getDirectories (source) {
   return readdirSync(source)
@@ -75,7 +74,7 @@ module.exports = getDirectories(conf.fixtures.dir).map(
     }
     var error;
     try {
-      error = deserializeError(
+      error = conf.fixtures.deserializeParseError(
         readFileSync(
           errorFile,
           conf.encoding
