@@ -3,16 +3,26 @@
 //
 
 PlantUMLFile
-  = (
-      (!"@startuml" .)*
-      "@startuml" _ DiagramId? _ NewLine
-        uml:UML
-      "@enduml" _ NewLine?
-      (!"@startuml" .)*
-      {
-       return uml;
-      }
-    )*
+  = diagrams:Diagrams
+  {
+    return diagrams;
+  }
+  / (!"@startuml" .)*
+  {
+    return []
+  }
+
+Diagrams
+ = (
+    (!"@startuml" .)*
+    "@startuml" _ DiagramId? _ NewLine
+      uml:UML
+    "@enduml" _ NewLine?
+    (!"@startuml" .)*
+    {
+     return uml;
+    }
+  )+
 
 DiagramId
   = "(" _ "id" _ "=" Name ")"
