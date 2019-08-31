@@ -73,10 +73,10 @@ Comment
 //
 
 SkinParam
-  = _ "skinparam " _ name:Name _ "{" _ NewLine Param* _ "}" EndLine
+  = _ "skinparam "i _ name:Name _ "{" _ NewLine Param* _ "}" EndLine
   {
   }
-  / _ "skinparam " _ Param
+  / _ "skinparam "i _ Param
   {
   }
 
@@ -88,7 +88,7 @@ Param
 //
 
 Together
-  = _ "together " _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
+  = _ "together "i _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
     return elements.filter(
       e => e !== undefined
@@ -127,28 +127,28 @@ GroupType
 //
 
 Note
-  = _ "note " _ Direction _ of:NoteOf? ":" _ text:(!NewLine .)+ EndLine
+  = _ "note "i _ Direction _ of:NoteOf? ":" _ text:(!NewLine .)+ EndLine
   {
     return new (require('./note'))(
       text.map((c) => c[1]).join('').trim(),
       of
     )
   }
-  / _ "note " _ Direction _ of:NoteOf? _ NewLine text:(!(_ "end note" NewLine) .)+ EndLine
+  / _ "note "i _ Direction _ of:NoteOf? _ NewLine text:(!(_ "end note" NewLine) .)+ EndLine
   {
     return new (require('./note'))(
       text.map((c) => c[1]).join('').trim(),
       of
     )
   }
-  / _ "note " _ Direction _ of:NoteOf? _ NewLine text:(!(_ "end note" NewLine) .)+ EndLine
+  / _ "note "i _ Direction _ of:NoteOf? _ NewLine text:(!(_ "end note" NewLine) .)+ EndLine
   {
     return new (require('./note'))(
       text.map((c) => c[1]).join('').trim(),
       of
     )
   }
-  / _ "note " _ text:QuotedString _ "as " Name EndLine
+  / _ "note "i _ text:QuotedString _ "as " Name EndLine
   {
     return new (require('./note'))(
       text,
@@ -156,7 +156,7 @@ Note
   }
 
 NoteOf
-  = "of " _ elementName:ElementReference
+  = "of "i _ elementName:ElementReference
   {
     return elementName.name;
   }
@@ -166,7 +166,7 @@ NoteOf
 //
 
 Class
-  = _ isAbstract:"abstract "? _ "class " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new (require("./class"))(
       name.name,
@@ -177,7 +177,7 @@ Class
       )
     );
   }
-  / _ isAbstract:"abstract "? _ "class " _ name:ElementName _ Decorators? EndLine
+  / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? EndLine
   {
     return new (require("./class"))(
       name.name,
@@ -203,7 +203,7 @@ Separator
   / "__" "_"*
 
 Method
-  = _ isStatic:"static "? _ accessor:Accessor? _ type:Name _ name:Name _ "(" _arguments:(!")" .)* ")" EndLine
+  = _ isStatic:"static "i? _ accessor:Accessor? _ type:Name _ name:Name _ "(" _arguments:(!")" .)* ")" EndLine
   {
     return new (require('./method'))(
       name,
@@ -213,7 +213,7 @@ Method
       _arguments.join(''),
     );
   }
-  / _ isStatic:"static "? _ accessor:Accessor? _ name:Name _ "(" _arguments:(!")" .)* ")" EndLine
+  / _ isStatic:"static "i? _ accessor:Accessor? _ name:Name _ "(" _arguments:(!")" .)* ")" EndLine
   {
     return new (require('./method'))(
       name,
@@ -226,7 +226,7 @@ Method
 
 
 MemberVariable
-  = _ isStatic:"static "? _ accessor:Accessor? _ type:Name _ name:Name EndLine
+  = _ isStatic:"static "i? _ accessor:Accessor? _ type:Name _ name:Name EndLine
   {
     return new (require('./memberVariable'))(
       name,
@@ -235,7 +235,7 @@ MemberVariable
       type,
     );
   }
-  / _ isStatic:"static "? _ accessor:Accessor? _ name:Name EndLine
+  / _ isStatic:"static "i? _ accessor:Accessor? _ name:Name EndLine
   {
     return new (require('./memberVariable'))(
       name,
@@ -249,7 +249,7 @@ MemberVariable
 //
 
 Interface
-  = _ "interface " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "interface "i _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new (require('./interface'))(
       name.name,
@@ -259,7 +259,7 @@ Interface
       )
     );
   }
-  / _ "interface " _ name:ElementName _ Decorators? _ EndLine
+  / _ "interface "i _ name:ElementName _ Decorators? _ EndLine
   {
     return new (require('./interface'))(
       name.name,
@@ -272,7 +272,7 @@ Interface
 //
 
 Enum
-  = _ "enum " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "enum "i _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new (require('./enum'))(
       name.name,
@@ -282,7 +282,7 @@ Enum
       )
     );
   }
-  / _ "enum " _ name:ElementName _ Decorators? _ EndLine
+  / _ "enum "i _ name:ElementName _ Decorators? _ EndLine
   {
     return new (require('./enum'))(
       name.name,
@@ -295,7 +295,7 @@ Enum
 //
 
 Component
-  = _ "component " _ name:ElementName _ Stereotype? EndLine
+  = _ "component "i _ name:ElementName _ Stereotype? EndLine
   {
     return new (require('./component'))(
       name.name,
@@ -332,7 +332,7 @@ ShortComponent
 //
 
 UseCase
-  = _ "usecase " _ name:ElementName EndLine
+  = _ "usecase "i _ name:ElementName EndLine
   {
     return new (require('./useCase'))(
       name.name,
@@ -476,21 +476,21 @@ ElementReference
   }
 
 ElementName
-  = title:QuotedString _ "as " _ name:Name
+  = title:QuotedString _ "as "i _ name:Name
   {
     return {
       name: name,
       title: title,
     };
   }
-  / name:Name _ "as " _ title:QuotedString
+  / name:Name _ "as "i _ title:QuotedString
   {
     return {
       name: name,
       title: title,
     };
   }
-  / title:Name _ "as " _ name:Name
+  / title:Name _ "as "i _ name:Name
   {
     return {
       name: name,
