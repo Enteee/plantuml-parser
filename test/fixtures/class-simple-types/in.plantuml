@@ -1,0 +1,8 @@
+@startuml
+class C
+abstract class AC
+
+interface I
+
+enum E
+@enduml

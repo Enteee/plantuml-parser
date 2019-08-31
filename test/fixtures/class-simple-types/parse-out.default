@@ -1,0 +1,28 @@
+[
+  {
+    "elements": [
+      {
+        "name": "C",
+        "title": "C",
+        "isAbstract": false,
+        "members": []
+      },
+      {
+        "name": "AC",
+        "title": "AC",
+        "isAbstract": true,
+        "members": []
+      },
+      {
+        "name": "I",
+        "title": "I",
+        "members": []
+      },
+      {
+        "name": "E",
+        "title": "E",
+        "members": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {
+      "name": "C",
+      "title": "C",
+      "isAbstract": false,
+      "members": [],
+      "id": "C",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "AC",
+      "title": "AC",
+      "isAbstract": true,
+      "members": [],
+      "id": "AC",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "I",
+      "title": "I",
+      "members": [],
+      "id": "I",
+      "type": "Interface",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}
