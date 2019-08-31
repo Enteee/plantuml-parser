@@ -1,0 +1,217 @@
+This file contains diagrams with all different kind of broken identifiers
+
+@startuml
+skinparam
+skinpara
+skinpar
+skinpa
+skinp
+skin
+ski
+sk
+s
+
+together
+togethe
+togeth
+toget
+toge
+tog
+to
+t
+
+package
+packag
+packa
+pack
+pac
+pa
+p
+
+namespace
+namespac
+namespa
+namesp
+names
+name
+nam
+na
+n
+
+node
+nod
+no
+n
+
+folder
+folde
+fold
+fol
+fo
+f
+
+frame
+fram
+fra
+fr
+f
+
+cloud
+clou
+clo
+cl
+c
+
+database
+databas
+databa
+datab
+data
+dat
+da
+d
+
+rectangle
+rectangl
+rectang
+rectan
+recta
+rect
+rec
+re
+r
+
+note left
+note lef
+note le
+note l
+note 
+note
+not
+no
+n
+
+note right
+note righ
+note rig
+note ri
+note r
+note 
+note
+not
+no
+n
+
+note up
+note u
+note 
+note
+not
+no
+n
+
+note down
+note dow
+note do
+note d
+note 
+note
+not
+no
+n
+
+note top
+note to
+note t
+note 
+note
+not
+no
+n
+
+note bottom
+note botto
+note bott
+note bot
+note bo
+note b
+note 
+note
+not
+no
+n
+
+class
+clas
+cla
+cl
+c
+
+abstract class
+abstract clas
+abstract cla
+abstract cl
+abstract c
+abstract 
+abstract
+abstrac
+abstra
+abstr
+abst
+abs
+ab
+a
+
+interface
+interfac
+interfa
+interf
+inter
+inte
+int
+in
+i
+
+abstract interface
+abstract interfac
+abstract interfa
+abstract interf
+abstract inter
+abstract inte
+abstract int
+abstract in
+abstract i
+abstract 
+abstract
+abstrac
+abstra
+abstr
+abst
+abs
+ab
+a
+
+enum
+enu
+en
+e
+
+component
+componen
+compone
+compon
+compo
+comp
+com
+co
+c
+
+usecase
+usecas
+useca
+usec
+use
+us
+u
+
+@enduml
