@@ -1,0 +1,184 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/component-consume-interface/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "C",
+              "title": "C"
+            },
+            {
+              "name": "I",
+              "title": "I",
+              "members": []
+            },
+            {
+              "left": "C",
+              "right": "I",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "left": "C",
+              "right": "I",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": ".",
+              "rightArrowBody": ".",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "left": "C",
+              "right": "I",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "<",
+              "rightArrowHead": "",
+              "leftArrowBody": ".",
+              "rightArrowBody": ".",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "left": "I",
+              "right": "C",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "left": "I",
+              "right": "C",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": ">",
+              "leftArrowBody": ".",
+              "rightArrowBody": ".",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            },
+            {
+              "left": "I",
+              "right": "C",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "<",
+              "rightArrowHead": "",
+              "leftArrowBody": ".",
+              "rightArrowBody": ".",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/component-consume-interface/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "C",
+      "title": "C",
+      "id": "C",
+      "type": "Component",
+      "hidden": true
+    },
+    {
+      "name": "I",
+      "title": "I",
+      "members": [],
+      "id": "I",
+      "type": "Interface",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "C",
+      "to": "test/fixtures/component-consume-interface/in.plantuml",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/component-consume-interface/in.plantuml",
+      "to": "C",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/component-consume-interface/in.plantuml",
+      "to": "I",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "C",
+      "to": "I",
+      "name": "exposes",
+      "type": "",
+      "hidden": true
+    },
+    {
+      "from": "C",
+      "to": "I",
+      "name": "consumes",
+      "direction": "In",
+      "method": "",
+      "hidden": true
+    },
+    {
+      "from": "C",
+      "to": "I",
+      "name": "consumes",
+      "direction": "Out",
+      "method": "",
+      "hidden": true
+    },
+    {
+      "from": "C",
+      "to": "I",
+      "name": "exposes",
+      "type": "",
+      "hidden": true
+    },
+    {
+      "from": "C",
+      "to": "I",
+      "name": "consumes",
+      "direction": "Out",
+      "method": "",
+      "hidden": true
+    },
+    {
+      "from": "I",
+      "to": "C",
+      "name": "consumes",
+      "direction": "In",
+      "method": "",
+      "hidden": true
+    }
+  ]
+}
