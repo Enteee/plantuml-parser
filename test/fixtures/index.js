@@ -5,6 +5,7 @@
  *   {
  *     directory:,
  *     src:,
+ *     error:,
  *     out: {
  *       name:,
  *       format:,
@@ -60,6 +61,7 @@ function getOutputFiles (source) {
 module.exports = getDirectories(conf.fixtures.dir).map(
   (directory) => {
     const srcFile = join(directory, conf.fixtures.inputFile);
+    const errorFile = join(directory, conf.fixtures.errorFile);
     var src;
     try {
       src = readFileSync(
@@ -70,10 +72,22 @@ module.exports = getDirectories(conf.fixtures.dir).map(
       log.warn('Skipping: ' + directory);
       return;
     }
+    var error;
+    try {
+      error = conf.fixtures.deserializeParseError(
+        readFileSync(
+          errorFile,
+          conf.encoding
+        )
+      );
+    } catch (e) {
+      // do nothing
+    }
     return {
       directory: directory,
       srcFile: srcFile,
       src: src,
+      error: error,
       out: getOutputFiles(directory)
     };
   }

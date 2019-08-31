@@ -1,0 +1,45 @@
+{
+  "message": "Expected \")\" or [A-Za-z0-9._] but \"\\n\" found.",
+  "expected": [
+    {
+      "type": "class",
+      "parts": [
+        [
+          "A",
+          "Z"
+        ],
+        [
+          "a",
+          "z"
+        ],
+        [
+          "0",
+          "9"
+        ],
+        ".",
+        "_"
+      ],
+      "inverted": false,
+      "ignoreCase": false
+    },
+    {
+      "type": "literal",
+      "text": ")",
+      "ignoreCase": false
+    }
+  ],
+  "found": "\n",
+  "location": {
+    "start": {
+      "offset": 22,
+      "line": 1,
+      "column": 23
+    },
+    "end": {
+      "offset": 23,
+      "line": 2,
+      "column": 1
+    }
+  },
+  "name": "SyntaxError"
+}

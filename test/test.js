@@ -51,21 +51,94 @@ function testFormatHasNotChanged (fixture, output) {
   );
 }
 
-require('./fixtures').forEach((fixture) =>
-  describe(fixture.directory, () => {
-    it('parse',
-      () => parse(fixture.src)
+// Happy path testing
+function testFixture (fixture) {
+  it('parse',
+    () => parse(fixture.src)
+  );
+
+  it('parseFile - async',
+    (cb) => parseFile(fixture.srcFile, null, cb)
+  );
+
+  it('parseFile',
+    () => parseFile(fixture.srcFile)
+  );
+
+  fixture.out.forEach(
+    (output) => it(output.parser + '-output.' + output.format,
+      () => testFormatHasNotChanged(fixture, output)
+    )
+  );
+}
+
+// Test for errors
+function testErrorFixture (fixture) {
+  function expectFixtureError (error) {
+    expect(error).to.be.an(
+      'object',
+      'Error not thrown: ' +
+      conf.fixtures.serializeParseError(fixture.error)
     );
-    it('parseFile - async',
-      (cb) => parseFile(fixture.srcFile, null, cb)
-    );
-    it('parseFile',
-      () => parseFile(fixture.srcFile)
-    );
-    fixture.out.forEach(
-      (output) => it(output.parser + '-output.' + output.format,
-        () => testFormatHasNotChanged(fixture, output)
+    expect(
+      conf.fixtures.deserializeParseError(
+        conf.fixtures.serializeParseError(error)
       )
+    ).to.deep.equals(
+      fixture.error
     );
-  })
+  }
+
+  it('parse',
+    () => {
+      var error;
+      try {
+        parse(fixture.src);
+      } catch (e) {
+        error = e;
+      }
+      expectFixtureError(error);
+    }
+  );
+
+  it('parseFile - async',
+    (cb) => parseFile(fixture.srcFile, null,
+      (err, fixture) => {
+        try {
+          expectFixtureError(err);
+        } catch (e) {
+          return cb(e);
+        }
+        return cb();
+      }
+    )
+  );
+
+  it('parseFile',
+    () => {
+      var error;
+      try {
+        parseFile(fixture.srcFile);
+      } catch (e) {
+        error = e;
+      }
+      expectFixtureError(error);
+    }
+  );
+}
+
+require('./fixtures').forEach(
+  (fixture) => {
+    if (fixture.error) {
+      describe(
+        'Error - ' + fixture.directory,
+        () => testErrorFixture(fixture)
+      );
+    } else {
+      describe(
+        fixture.directory,
+        () => testFixture(fixture)
+      );
+    }
+  }
 );
