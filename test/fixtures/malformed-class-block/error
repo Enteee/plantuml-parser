@@ -141,7 +141,7 @@
     {
       "type": "literal",
       "text": "skinparam ",
-      "ignoreCase": false
+      "ignoreCase": true
     },
     {
       "type": "class",
@@ -155,7 +155,7 @@
     {
       "type": "literal",
       "text": "skinparam ",
-      "ignoreCase": false
+      "ignoreCase": true
     },
     {
       "type": "class",
@@ -169,7 +169,7 @@
     {
       "type": "literal",
       "text": "together ",
-      "ignoreCase": false
+      "ignoreCase": true
     },
     {
       "type": "class",
@@ -232,7 +232,7 @@
     {
       "type": "literal",
       "text": "note ",
-      "ignoreCase": false
+      "ignoreCase": true
     },
     {
       "type": "class",
@@ -246,7 +246,7 @@
     {
       "type": "literal",
       "text": "note ",
-      "ignoreCase": false
+      "ignoreCase": true
     },
     {
       "type": "class",
@@ -260,7 +260,7 @@
     {
       "type": "literal",
       "text": "note ",
-      "ignoreCase": false
+      "ignoreCase": true
     },
     {
       "type": "class",
@@ -274,7 +274,7 @@
     {
       "type": "literal",
       "text": "note ",
-      "ignoreCase": false
+      "ignoreCase": true
     },
     {
       "type": "class",
@@ -288,7 +288,7 @@
     {
       "type": "literal",
       "text": "abstract ",
-      "ignoreCase": false
+      "ignoreCase": true
     },
     {
       "type": "class",
@@ -316,7 +316,7 @@
     {
       "type": "literal",
       "text": "abstract ",
-      "ignoreCase": false
+      "ignoreCase": true
     },
     {
       "type": "class",
@@ -344,7 +344,7 @@
     {
       "type": "literal",
       "text": "interface ",
-      "ignoreCase": false
+      "ignoreCase": true
     },
     {
       "type": "class",
@@ -358,7 +358,7 @@
     {
       "type": "literal",
       "text": "interface ",
-      "ignoreCase": false
+      "ignoreCase": true
     },
     {
       "type": "class",
@@ -372,7 +372,7 @@
     {
       "type": "literal",
       "text": "enum ",
-      "ignoreCase": false
+      "ignoreCase": true
     },
     {
       "type": "class",
@@ -386,7 +386,7 @@
     {
       "type": "literal",
       "text": "enum ",
-      "ignoreCase": false
+      "ignoreCase": true
     },
     {
       "type": "class",
@@ -400,7 +400,7 @@
     {
       "type": "literal",
       "text": "component ",
-      "ignoreCase": false
+      "ignoreCase": true
     },
     {
       "type": "class",
@@ -433,7 +433,7 @@
     {
       "type": "literal",
       "text": "usecase ",
-      "ignoreCase": false
+      "ignoreCase": true
     },
     {
       "type": "class",

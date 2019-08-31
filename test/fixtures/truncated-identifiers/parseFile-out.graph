@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/truncated-identifiers/in.plantuml",
+      "diagrams": [
+        {
+          "elements": []
+        }
+      ],
+      "id": "test/fixtures/truncated-identifiers/in.plantuml",
+      "type": "File",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

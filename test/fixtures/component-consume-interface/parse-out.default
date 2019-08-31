@@ -1,0 +1,93 @@
+[
+  {
+    "elements": [
+      {
+        "name": "C",
+        "title": "C"
+      },
+      {
+        "name": "I",
+        "title": "I",
+        "members": []
+      },
+      {
+        "left": "C",
+        "right": "I",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": "",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      },
+      {
+        "left": "C",
+        "right": "I",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": ">",
+        "leftArrowBody": ".",
+        "rightArrowBody": ".",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      },
+      {
+        "left": "C",
+        "right": "I",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "<",
+        "rightArrowHead": "",
+        "leftArrowBody": ".",
+        "rightArrowBody": ".",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      },
+      {
+        "left": "I",
+        "right": "C",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": "",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      },
+      {
+        "left": "I",
+        "right": "C",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": ">",
+        "leftArrowBody": ".",
+        "rightArrowBody": ".",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      },
+      {
+        "left": "I",
+        "right": "C",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "<",
+        "rightArrowHead": "",
+        "leftArrowBody": ".",
+        "rightArrowBody": ".",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": ""
+      }
+    ]
+  }
+]

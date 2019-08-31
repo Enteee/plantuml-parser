@@ -1,0 +1,8 @@
+@startuml
+class C0
+note left:
+
+class C1
+note left
+  this is a note
+@enduml
