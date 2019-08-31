@@ -88,7 +88,6 @@ task('test-fixtures-update-run', () =>
               throw Error('Expected error, but got: ' + errParse);
             }
 
-            console.log(errorOutputFile);
             writeFileSync(
               errorOutputFile,
               errParse,
