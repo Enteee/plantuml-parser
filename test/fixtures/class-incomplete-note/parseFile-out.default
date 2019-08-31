@@ -1,0 +1,23 @@
+[
+  {
+    "name": "test/fixtures/class-incomplete-note/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "C0",
+            "title": "C0",
+            "isAbstract": false,
+            "members": []
+          },
+          {
+            "name": "C1",
+            "title": "C1",
+            "isAbstract": false,
+            "members": []
+          }
+        ]
+      }
+    ]
+  }
+]

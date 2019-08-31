@@ -1,0 +1,60 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/class-incomplete-note/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "C0",
+              "title": "C0",
+              "isAbstract": false,
+              "members": []
+            },
+            {
+              "name": "C1",
+              "title": "C1",
+              "isAbstract": false,
+              "members": []
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/class-incomplete-note/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "C0",
+      "title": "C0",
+      "isAbstract": false,
+      "members": [],
+      "id": "C0",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "C1",
+      "title": "C1",
+      "isAbstract": false,
+      "members": [],
+      "id": "C1",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "test/fixtures/class-incomplete-note/in.plantuml",
+      "to": "C0",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-incomplete-note/in.plantuml",
+      "to": "C1",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}
