@@ -31,7 +31,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "left": "Supervisor",
@@ -44,7 +45,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "left": "Client",
@@ -57,7 +59,8 @@
               "rightArrowBody": ".",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": "NO!!!!"
+              "label": "NO!!!!",
+              "hidden": false
             },
             {
               "left": "Supervisor",
@@ -70,7 +73,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": "I am god"
+              "label": "I am god",
+              "hidden": false
             }
           ]
         }

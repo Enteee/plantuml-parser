@@ -25,7 +25,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "left": "C",
@@ -38,7 +39,8 @@
               "rightArrowBody": ".",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "left": "C",
@@ -51,7 +53,8 @@
               "rightArrowBody": ".",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "left": "I",
@@ -64,7 +67,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "left": "I",
@@ -77,7 +81,8 @@
               "rightArrowBody": ".",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "left": "I",
@@ -90,7 +95,8 @@
               "rightArrowBody": ".",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             }
           ]
         }

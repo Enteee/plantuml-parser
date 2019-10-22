@@ -1,68 +1,64 @@
 [
   {
-    "name": "test/fixtures/state-simple-state/in.plantuml",
+    "name": "test/fixtures/component-hidden-links/in.plantuml",
     "diagrams": [
       {
         "elements": [
           {
-            "left": "*",
-            "right": "GlassEmpty",
+            "left": "x",
+            "right": "down",
             "leftType": "Component",
-            "rightType": "Unknown",
-            "leftArrowHead": "",
-            "rightArrowHead": ">",
-            "leftArrowBody": "-",
-            "rightArrowBody": "-",
-            "leftCardinality": "",
-            "rightCardinality": "",
-            "label": "",
-            "hidden": false
-          },
-          {
-            "left": "GlassEmpty",
-            "right": "*",
-            "leftType": "Unknown",
             "rightType": "Component",
             "leftArrowHead": "",
-            "rightArrowHead": ">",
+            "rightArrowHead": "",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
             "label": "",
-            "hidden": false
+            "hidden": true
           },
           {
-            "left": "GlassEmpty",
-            "right": "GlassFull",
-            "leftType": "Unknown",
-            "rightType": "Unknown",
-            "leftArrowHead": "",
-            "rightArrowHead": ">",
-            "leftArrowBody": "-",
-            "rightArrowBody": "-",
-            "leftCardinality": "",
-            "rightCardinality": "",
-            "label": "",
-            "hidden": false
-          },
-          {
-            "left": "GlassFull",
-            "right": "*",
-            "leftType": "Unknown",
+            "left": "x",
+            "right": "up",
+            "leftType": "Component",
             "rightType": "Component",
             "leftArrowHead": "",
-            "rightArrowHead": ">",
+            "rightArrowHead": "",
             "leftArrowBody": "-",
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
             "label": "",
-            "hidden": false
+            "hidden": true
           },
           {
-            "text": "this is a note",
-            "of": ""
+            "left": "x",
+            "right": "left",
+            "leftType": "Component",
+            "rightType": "Component",
+            "leftArrowHead": "",
+            "rightArrowHead": "",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "label": "",
+            "hidden": true
+          },
+          {
+            "left": "x",
+            "right": "right",
+            "leftType": "Component",
+            "rightType": "Component",
+            "leftArrowHead": "",
+            "rightArrowHead": "",
+            "leftArrowBody": "-",
+            "rightArrowBody": "-",
+            "leftCardinality": "",
+            "rightCardinality": "",
+            "label": "",
+            "hidden": true
           }
         ]
       }

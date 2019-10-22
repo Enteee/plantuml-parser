@@ -72,7 +72,8 @@
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "label": ""
+            "label": "",
+            "hidden": false
           },
           {
             "left": "Internet",
@@ -85,7 +86,8 @@
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "label": ""
+            "label": "",
+            "hidden": false
           },
           {
             "left": "Business Logic",
@@ -98,7 +100,8 @@
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "label": "Web Services"
+            "label": "Web Services",
+            "hidden": false
           },
           {
             "left": "DA",
@@ -111,7 +114,8 @@
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "label": ".Net"
+            "label": ".Net",
+            "hidden": false
           },
           {
             "left": "Business Logic",
@@ -124,7 +128,8 @@
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "label": ""
+            "label": "",
+            "hidden": false
           },
           {
             "left": "DA",
@@ -137,7 +142,8 @@
             "rightArrowBody": ".",
             "leftCardinality": "",
             "rightCardinality": "",
-            "label": ""
+            "label": "",
+            "hidden": false
           }
         ]
       }

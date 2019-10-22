@@ -62,7 +62,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": "Inheritance"
+        "label": "Inheritance",
+        "hidden": false
       },
       {
         "left": "Dwelling",
@@ -75,7 +76,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": "Inheritance"
+        "label": "Inheritance",
+        "hidden": false
       },
       {
         "left": "Dwelling",
@@ -88,7 +90,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": "Inheritance"
+        "label": "Inheritance",
+        "hidden": false
       },
       {
         "left": "Dwelling",
@@ -101,7 +104,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "1",
         "rightCardinality": "many",
-        "label": "Composition"
+        "label": "Composition",
+        "hidden": false
       },
       {
         "left": "Dwelling",
@@ -114,7 +118,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "1",
         "rightCardinality": "many",
-        "label": "Composition"
+        "label": "Composition",
+        "hidden": false
       }
     ]
   }

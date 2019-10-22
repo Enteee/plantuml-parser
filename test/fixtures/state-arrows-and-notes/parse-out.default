@@ -16,7 +16,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": ""
+        "label": "",
+        "hidden": false
       },
       {
         "left": "EatingBurrito",
@@ -29,7 +30,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": ""
+        "label": "",
+        "hidden": false
       },
       {
         "left": "Full",
@@ -42,7 +44,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": ""
+        "label": "",
+        "hidden": false
       },
       {
         "left": "Sleeping",
@@ -55,7 +58,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": ""
+        "label": "",
+        "hidden": false
       }
     ]
   }

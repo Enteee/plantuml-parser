@@ -67,7 +67,8 @@
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "label": ""
+            "label": "",
+            "hidden": false
           },
           {
             "left": "ICar2",
@@ -80,7 +81,8 @@
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "label": ""
+            "label": "",
+            "hidden": false
           },
           {
             "left": "Car",
@@ -93,7 +95,8 @@
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "label": ""
+            "label": "",
+            "hidden": false
           }
         ]
       }

@@ -369,7 +369,7 @@ ShortUseCase
 //
 
 Relationship
-  = _ left:ElementReference _ leftCardinality:QuotedString? _ leftArrowHead:RelationshipArrowHead? leftArrowBody:RelationshipArrowBody Direction? rightArrowBody:RelationshipArrowBody rightArrowHead:RelationshipArrowHead? _ rightCardinality:QuotedString? _ right:ElementReference _ label:(RelationshipLabel)? EndLine
+  = _ left:ElementReference _ leftCardinality:QuotedString? _ leftArrowHead:RelationshipArrowHead? leftArrowBody:RelationshipArrowBody hidden:RelationshipHidden? Direction? rightArrowBody:RelationshipArrowBody rightArrowHead:RelationshipArrowHead? _ rightCardinality:QuotedString? _ right:ElementReference _ label:(RelationshipLabel)? EndLine
   {
     return new (require('./relationship'))(
       left.name,
@@ -383,6 +383,7 @@ Relationship
       leftCardinality,
       rightCardinality,
       label,
+      hidden,
     );
   }
   / _ left:ElementReference _ leftCardinality:QuotedString? _ leftArrowHead:RelationshipArrowHead? arrowBody:RelationshipArrowBody rightArrowHead:RelationshipArrowHead? _ rightCardinality:QuotedString? _ right:ElementReference _ label:(RelationshipLabel)? EndLine
@@ -399,6 +400,7 @@ Relationship
       leftCardinality,
       rightCardinality,
       label,
+      false,
     );
   }
 
@@ -434,6 +436,9 @@ RelationshipLabel
   {
     return label.map((c) => c[1]).join('').trim()
   }
+
+RelationshipHidden
+  = "[hidden]"
 
 //
 // NotImplementedBlock

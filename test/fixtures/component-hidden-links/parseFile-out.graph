@@ -1,74 +1,70 @@
 {
   "nodes": [
     {
-      "name": "test/fixtures/state-arrows-and-notes/in.plantuml",
+      "name": "test/fixtures/component-hidden-links/in.plantuml",
       "diagrams": [
         {
           "elements": [
             {
-              "text": "Notes can also\n    take up multiple\n    lines like this",
-              "of": "EatingBurrito"
-            },
-            {
-              "left": "Hungry",
-              "right": "EatingBurrito",
-              "leftType": "Unknown",
-              "rightType": "Unknown",
+              "left": "x",
+              "right": "down",
+              "leftType": "Component",
+              "rightType": "Component",
               "leftArrowHead": "",
-              "rightArrowHead": ">",
+              "rightArrowHead": "",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": true
             },
             {
-              "left": "EatingBurrito",
-              "right": "Full",
-              "leftType": "Unknown",
-              "rightType": "Unknown",
+              "left": "x",
+              "right": "up",
+              "leftType": "Component",
+              "rightType": "Component",
               "leftArrowHead": "",
-              "rightArrowHead": ">",
+              "rightArrowHead": "",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": true
             },
             {
-              "left": "Full",
-              "right": "Sleeping",
-              "leftType": "Unknown",
-              "rightType": "Unknown",
+              "left": "x",
+              "right": "left",
+              "leftType": "Component",
+              "rightType": "Component",
               "leftArrowHead": "",
-              "rightArrowHead": ">",
+              "rightArrowHead": "",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": true
             },
             {
-              "left": "Sleeping",
-              "right": "Hungry",
-              "leftType": "Unknown",
-              "rightType": "Unknown",
+              "left": "x",
+              "right": "right",
+              "leftType": "Component",
+              "rightType": "Component",
               "leftArrowHead": "",
-              "rightArrowHead": ">",
+              "rightArrowHead": "",
               "leftArrowBody": "-",
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": true
             }
           ]
         }
       ],
-      "id": "test/fixtures/state-arrows-and-notes/in.plantuml",
+      "id": "test/fixtures/component-hidden-links/in.plantuml",
       "type": "File",
       "hidden": true
     }

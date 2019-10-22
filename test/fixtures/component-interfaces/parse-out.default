@@ -34,7 +34,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": ""
+        "label": "",
+        "hidden": false
       },
       {
         "left": "DA",
@@ -47,7 +48,8 @@
         "rightArrowBody": ".",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": ""
+        "label": "",
+        "hidden": false
       }
     ]
   }
