@@ -16,7 +16,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "left": "Spain",
@@ -29,7 +30,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "left": "Mexico",
@@ -42,7 +44,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "left": "Canada",
@@ -55,7 +58,8 @@
               "rightArrowBody": ".",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             }
           ]
         }

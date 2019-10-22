@@ -15,7 +15,8 @@
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "label": "To boundary"
+            "label": "To boundary",
+            "hidden": false
           },
           {
             "left": "GUI",
@@ -28,7 +29,8 @@
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "label": "To control"
+            "label": "To control",
+            "hidden": false
           },
           {
             "left": "SC",
@@ -41,7 +43,8 @@
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "label": "To entity"
+            "label": "To entity",
+            "hidden": false
           },
           {
             "left": "Widget",
@@ -54,7 +57,8 @@
             "rightArrowBody": "-",
             "leftCardinality": "",
             "rightCardinality": "",
-            "label": "To database"
+            "label": "To database",
+            "hidden": false
           }
         ]
       }

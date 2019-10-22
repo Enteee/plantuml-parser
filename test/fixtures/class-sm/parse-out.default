@@ -184,7 +184,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             [
               {
@@ -204,7 +205,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "CCTV",
@@ -223,7 +225,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "MultiFunctionPeripheral",
@@ -246,7 +249,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               }
             ]
           ],
@@ -278,7 +282,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "name": "Switch",
@@ -297,7 +302,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "name": "Router",
@@ -316,7 +322,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "name": "Firewall",
@@ -335,7 +342,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "name": "Proxy",
@@ -358,7 +366,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "name": "LoadBalancer",
@@ -377,7 +386,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "name": "NetworkManagement",
@@ -400,7 +410,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             }
           ],
           [
@@ -431,7 +442,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             [
               {
@@ -455,7 +467,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "KVM",
@@ -478,7 +491,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "PDU",
@@ -501,7 +515,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "UPS",
@@ -524,7 +539,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "HSM",
@@ -547,7 +563,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "AccessControl",
@@ -570,7 +587,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               }
             ]
           ],
@@ -602,7 +620,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             [
               {
@@ -622,7 +641,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "Voice",
@@ -645,7 +665,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "Video",
@@ -664,7 +685,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               }
             ]
           ],
@@ -708,7 +730,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             [
               [
@@ -900,7 +923,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "ContainerCluster",
@@ -927,7 +951,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "VMCluster",
@@ -954,7 +979,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "StorageCluster",
@@ -977,7 +1003,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               [
                 [
@@ -1181,7 +1208,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             [
               {
@@ -1201,7 +1229,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "NAS",
@@ -1224,7 +1253,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "SAN",
@@ -1247,7 +1277,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "StorageSwitch",
@@ -1266,7 +1297,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               },
               {
                 "name": "StorageController",
@@ -1285,7 +1317,8 @@
                 "rightArrowBody": "-",
                 "leftCardinality": "",
                 "rightCardinality": "",
-                "label": ""
+                "label": "",
+                "hidden": false
               }
             ]
           ],
@@ -1359,7 +1392,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             }
           ],
           [
@@ -1379,7 +1413,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             }
           ],
           [

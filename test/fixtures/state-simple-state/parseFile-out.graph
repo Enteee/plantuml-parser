@@ -16,7 +16,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "left": "GlassEmpty",
@@ -29,7 +30,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "left": "GlassEmpty",
@@ -42,7 +44,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "left": "GlassFull",
@@ -55,7 +58,8 @@
               "rightArrowBody": "-",
               "leftCardinality": "",
               "rightCardinality": "",
-              "label": ""
+              "label": "",
+              "hidden": false
             },
             {
               "text": "this is a note",

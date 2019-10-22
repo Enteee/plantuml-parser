@@ -12,7 +12,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": ""
+        "label": "",
+        "hidden": false
       },
       {
         "left": "Bob",
@@ -25,7 +26,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": ""
+        "label": "",
+        "hidden": false
       },
       {
         "left": "Bob",
@@ -38,7 +40,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": ""
+        "label": "",
+        "hidden": false
       },
       {
         "left": "Bob",
@@ -51,7 +54,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": ""
+        "label": "",
+        "hidden": false
       }
     ]
   }

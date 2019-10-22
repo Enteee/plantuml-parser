@@ -12,7 +12,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": ""
+        "label": "",
+        "hidden": false
       },
       {
         "left": "NeilDiamond",
@@ -25,7 +26,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": "Walking"
+        "label": "Walking",
+        "hidden": false
       },
       {
         "left": "NDoff",
@@ -38,7 +40,8 @@
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": "Running"
+        "label": "Running",
+        "hidden": false
       }
     ]
   }
