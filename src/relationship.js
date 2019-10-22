@@ -1,5 +1,5 @@
 module.exports = class Relationship {
-  constructor (left, right, leftType, rightType, leftArrowHead, rightArrowHead, leftArrowBody, rightArrowBody, leftCardinality, rightCardinality, label) {
+  constructor (left, right, leftType, rightType, leftArrowHead, rightArrowHead, leftArrowBody, rightArrowBody, leftCardinality, rightCardinality, label, hidden) {
     this.left = left;
     this.right = right;
     this.leftType = leftType || '';
@@ -11,5 +11,6 @@ module.exports = class Relationship {
     this.leftCardinality = leftCardinality || '';
     this.rightCardinality = rightCardinality || '';
     this.label = label || '';
+    this.hidden = !!(hidden || false);
   }
 };
