@@ -1,0 +1,5 @@
+@startuml
+
+title this contains only B and D
+!includesub file1.puml!BASIC
+@enduml

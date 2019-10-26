@@ -1,0 +1,9 @@
+@startuml
+!function $go()
+ Bob -> Alice : hello
+!endfunction
+
+!$wrapper = "$go"
+
+%invoke_void_func($wrapper)
+@enduml

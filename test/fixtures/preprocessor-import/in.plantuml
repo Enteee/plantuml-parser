@@ -1,0 +1,10 @@
+@startuml
+
+!import /path/to/customLibrary.zip
+' This just adds "customLibrary.zip" in the search path
+
+!include myFolder/myFile.iuml
+' Assuming that myFolder/myFile.iuml is located somewhere
+' either inside "customLibrary.zip" or on the local filesystem
+
+@enduml

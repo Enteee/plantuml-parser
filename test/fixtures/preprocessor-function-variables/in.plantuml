@@ -1,0 +1,12 @@
+@startuml
+!function $dummy()
+!local $ijk = "local"
+Alice -> Bob : $ijk
+!endfunction
+
+!global $ijk = "foo"
+
+Alice -> Bob : $ijk
+$dummy()
+Alice -> Bob : $ijk
+@enduml
