@@ -1,0 +1,10 @@
+[
+  {
+    "name": "test/fixtures/preprocessor-includeurl/in.plantuml",
+    "diagrams": [
+      {
+        "elements": []
+      }
+    ]
+  }
+]
