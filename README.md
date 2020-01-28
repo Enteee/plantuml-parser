@@ -41,7 +41,7 @@ const data = `
 // parse PlantUML
 const ast = parse(data);
 
-// Format and print AST
+// Format and print parse result
 console.log(
   formatters.default(ast)
 );
@@ -89,20 +89,24 @@ console.log(
 
 ### `parse(data, options)`
 
-Parse PlantUML in `data`. Returns abstract syntax tree.
+Parse PlantUML in `data`. Returns the a parse result.
 
 * `data`: data to parse
-* `options`: see [PEG.js parser options] and [pegjs-backtrace options]
+* `options`: supports all [PEG.js parser options]. Enable tracing with
+`options.verbose = true`. If tracing is enabled, `options` is also forwardet to the
+tracer object. See [pegjs-backtrace options] for a full list of supported tracer options.
 
 ### `parseFile(pattern, options, cb)`
 
 Parse all PlantUML diagrams in the files matching `pattern`. If given, the callback function `cb` will make this function behave asynchronous.
 
 * `pattern`: files to parse, supports globbing, e.g.: `**/*.plantuml`.
-* `options`: see [PEG.js parser options] and [pegjs-backtrace options]
+* `options`: supports all [PEG.js parser options]. Enable tracing with
+`options.verbose = true`. If tracing is enabled, `options` is also forwardet to the
+tracer object. See [pegjs-backtrace options] for a full list of supported tracer options.
 * `cb`: (optional) asynchronous callback. Called with: `cb(err, ast)`
 
-### `formatters`: A collection of built-in AST formatters.
+### `formatters`: A collection of built-in parse result formatters.
 
 For a detailed description of all the formatters see [src/formatters](src/formatters).
 
@@ -187,5 +191,5 @@ $ git commit
 
 * [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
-[PEG.js parser options]:https://pegjs.org/documentation#generating-a-parser-javascript-api
+[PEG.js parser options]:https://pegjs.org/documentation#using-the-parser
 [pegjs-backtrace options]:https://github.com/okaxaki/pegjs-backtrace#options
