@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/preprocessor-include/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "left": "List",
+              "right": "ArrayList",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "<|",
+              "rightArrowHead": "",
+              "leftArrowBody": ".",
+              "rightArrowBody": ".",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "",
+              "hidden": false
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/preprocessor-include/in.plantuml",
+      "type": "File",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

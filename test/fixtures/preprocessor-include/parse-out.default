@@ -1,0 +1,20 @@
+[
+  {
+    "elements": [
+      {
+        "left": "List",
+        "right": "ArrayList",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "<|",
+        "rightArrowHead": "",
+        "leftArrowBody": ".",
+        "rightArrowBody": ".",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": "",
+        "hidden": false
+      }
+    ]
+  }
+]
