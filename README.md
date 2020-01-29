@@ -39,11 +39,11 @@ const data = `
 `;
 
 // parse PlantUML
-const ast = parse(data);
+const result = parse(data);
 
 // Format and print parse result
 console.log(
-  formatters.default(ast)
+  formatters.default(result)
 );
 ```
 
@@ -89,7 +89,7 @@ console.log(
 
 ### `parse(data, options)`
 
-Parse PlantUML in `data`. Returns the a parse result.
+Parse PlantUML in `data`. Returns the parse result.
 
 * `data`: data to parse
 * `options`: supports all [PEG.js parser options]. Enable tracing with
@@ -104,7 +104,7 @@ Parse all PlantUML diagrams in the files matching `pattern`. If given, the callb
 * `options`: supports all [PEG.js parser options]. Enable tracing with
 `options.verbose = true`. If tracing is enabled, `options` is also forwardet to the
 tracer object. See [pegjs-backtrace options] for a full list of supported tracer options.
-* `cb`: (optional) asynchronous callback. Called with: `cb(err, ast)`
+* `cb`: (optional) asynchronous callback. Called with: `cb(err, result)`
 
 ### `formatters`: A collection of built-in parse result formatters.
 
