@@ -45,9 +45,9 @@ function testFormatHasNotChanged (fixture, output) {
     result = formatted;
   }
   expect(
-    expected
-  ).to.deep.equal(
     result
+  ).to.deep.equal(
+    expected
   );
 }
 
