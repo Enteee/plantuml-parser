@@ -5,17 +5,20 @@
   "main": "src",
   "files": [
     "conf.js",
-    "src/**/*.js"
+    "src/**/*.js",
+    "dist/**/*.js"
   ],
   "dependencies": {
     "async": "^2.6.3",
     "fast-glob": "^2.2.7",
     "get-stdin": "^6.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "json-colorizer": "^2.2.1",
     "pegjs-backtrace": "^0.1.2",
     "read-vinyl-file-stream": "^2.0.3",
     "require-dir": "^1.2.0",
     "serialize-error": "^4.1.0",
+    "typescript": "^3.7.5",
     "yargs": "^13.3.0"
   },
   "devDependencies": {

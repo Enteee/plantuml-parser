@@ -1,6 +1,9 @@
 // PlantUML Grammer
 // ===============
 //
+{
+  const types = require("../dist/types.js");
+}
 
 PlantUMLFile
   = diagrams:Diagrams
@@ -129,28 +132,28 @@ GroupType
 Note
   = _ "note "i _ Direction _ of:NoteOf? ":" _ text:(!NewLine .)+ EndLine
   {
-    return new (require('./note'))(
+    return new types.Note(
       text.map((c) => c[1]).join('').trim(),
       of
     )
   }
   / _ "note "i _ Direction _ of:NoteOf? _ NewLine text:(!(_ "end note" NewLine) .)+ EndLine
   {
-    return new (require('./note'))(
+    return new types.Note(
       text.map((c) => c[1]).join('').trim(),
       of
     )
   }
   / _ "note "i _ Direction _ of:NoteOf? _ NewLine text:(!(_ "end note" NewLine) .)+ EndLine
   {
-    return new (require('./note'))(
+    return new types.Note(
       text.map((c) => c[1]).join('').trim(),
       of
     )
   }
   / _ "note "i _ text:QuotedString _ "as " Name EndLine
   {
-    return new (require('./note'))(
+    return new types.Note(
       text,
     )
   }

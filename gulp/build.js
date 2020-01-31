@@ -1,10 +1,20 @@
 const conf = require('../conf');
 
-const { task, parallel, src, dest } = require('gulp');
+const { task, series, parallel, src, dest } = require('gulp');
 const { join } = require('path');
 
 const rename = require('gulp-rename');
 const pegjs = require('gulp-pegjs');
+const ts = require('gulp-typescript');
+const tsProject = ts.createProject('tsconfig.json');
+
+task('build-typescript',
+  (cb) => tsProject.src()
+    .pipe(tsProject())
+    .pipe(
+      dest('dist')
+    )
+);
 
 task('build-optimized',
   (cb) => src(join(conf.src.dir, '*.pegjs'))
@@ -34,7 +44,13 @@ task('build-debug',
     )
 );
 
-task('build', parallel(
-  'build-optimized',
-  'build-debug'
-));
+task(
+  'build',
+  series(
+    'build-typescript',
+    parallel(
+      'build-optimized',
+      'build-debug'
+    )
+  )
+);

@@ -282,7 +282,7 @@ function peg$parse(input, options) {
       peg$c58 = ":",
       peg$c59 = peg$literalExpectation(":", false),
       peg$c60 = function(of, text) {
-          return new (require('./note'))(
+          return new types.Note(
             text.map((c) => c[1]).join('').trim(),
             of
           )
@@ -290,7 +290,7 @@ function peg$parse(input, options) {
       peg$c61 = "as ",
       peg$c62 = peg$literalExpectation("as ", false),
       peg$c63 = function(text) {
-          return new (require('./note'))(
+          return new types.Note(
             text,
           )
         },
@@ -7744,6 +7744,10 @@ function peg$parse(input, options) {
 
     return s0;
   }
+
+
+    const types = require("../dist/types.js");
+
 
   peg$result = peg$startRuleFunction();
 

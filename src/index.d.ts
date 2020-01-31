@@ -1,3 +1,5 @@
+import * as resultTypes from "./types";
+
 declare namespace PlantUMLParser {
   export class Class {
     constructor(name: string, title: string, isAbstract: boolean, members: object[]);
@@ -29,10 +31,6 @@ declare namespace PlantUMLParser {
 
   export class Method {
     constructor(name: string, isStatic: boolean, accessor: string, returnType: string, _arguments?: string);
-  }
-
-  export class Note {
-    constructor(text: string, of: string);
   }
 
   export class Relationship {
