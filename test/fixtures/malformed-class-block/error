@@ -1,5 +1,5 @@
 {
-  "message": "Expected \"'\", \"(\", \"/'\", \"[\", \"abstract \", \"class \", \"cloud\", \"component \", \"database\", \"digraph\", \"enum \", \"folder\", \"frame\", \"interface \", \"namespace\", \"node\", \"note \", \"package\", \"rectangle\", \"skinparam \", \"state\", \"together \", \"usecase \", [ \\t], or [A-Za-z0-9._] but \"}\" found.",
+  "message": "Expected \"'\", \"(\", \"/'\", \"[\", \"abstract \", \"class \", \"cloud\", \"component \", \"database\", \"digraph\", \"enum \", \"folder\", \"frame\", \"interface \", \"namespace\", \"node\", \"note \", \"package\", \"rectangle\", \"skinparam \", \"state\", \"together \", \"usecase \", [ ,\\t], or [A-Z,a-z,0-9,.,_] but \"}\" found.",
   "expected": [
     {
       "type": "class",

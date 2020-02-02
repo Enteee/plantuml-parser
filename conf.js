@@ -10,11 +10,19 @@ module.exports = {
   src: {
     dir: join(__dirname, 'src/')
   },
+  dist: {
+    dir: join(__dirname, 'dist/')
+  },
   test: {
     dir: join(__dirname, 'test/')
   },
   formatters: {
     dir: join(__dirname, 'src/formatters/')
+  },
+  build: {
+    tspegjs: {
+      customHeader: '// import types\nimport * as types from \'./types\';'
+    }
   },
   fixtures: {
     dir: join(__dirname, 'test/fixtures'),

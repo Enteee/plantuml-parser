@@ -2,7 +2,44 @@
 // ===============
 //
 {
-  const types = require("../dist/types.js");
+
+/**
+ * Extract the actual text when matched using negative subexpression matching.
+ * Example:
+ *  text:(!NewLine .)+ EndLine
+ * Input:
+ *  [
+ *    [
+ *      [null]
+ *      "f"
+ *    ]
+ *    [
+ *      [null]
+ *      "o"
+ *    ]
+ *    [
+ *      [null]
+ *      "o"
+ *    ]
+ *  ]
+ * Output:
+ *  "foo"
+ */
+function extractText(text: Array<Array<string>>){
+  return text.map((c) => c[1]).join('').trim();
+}
+
+/**
+ * Remove all undefined elements in an array
+ * Input: [1, 2, undefined, 3]
+ * Output: [1, 2, 3]
+ */
+function removeUndefined(array: Array<any>){
+  return array.filter(
+    e => e !== undefined
+  );
+}
+
 }
 
 PlantUMLFile
@@ -33,10 +70,8 @@ DiagramId
 UML
   = elements:UMLElement*
   {
-    return new (require('./uml'))(
-      elements.filter(
-        e => e !== undefined
-      )
+    return new types.UML(
+      removeUndefined(elements)
     );
   }
 
@@ -93,9 +128,7 @@ Param
 Together
   = _ "together "i _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
-    return elements.filter(
-      e => e !== undefined
-    );
+    return removeUndefined(elements);
   }
 
 //
@@ -109,9 +142,7 @@ Group
       name.name,
       name.title,
       type,
-      elements.filter(
-        e => e !== undefined
-      )
+      removeUndefined(elements),
     );
   }
 
@@ -133,21 +164,21 @@ Note
   = _ "note "i _ Direction _ of:NoteOf? ":" _ text:(!NewLine .)+ EndLine
   {
     return new types.Note(
-      text.map((c) => c[1]).join('').trim(),
+      extractText(text),
       of
     )
   }
   / _ "note "i _ Direction _ of:NoteOf? _ NewLine text:(!(_ "end note" NewLine) .)+ EndLine
   {
     return new types.Note(
-      text.map((c) => c[1]).join('').trim(),
+      extractText(text),
       of
     )
   }
   / _ "note "i _ Direction _ of:NoteOf? _ NewLine text:(!(_ "end note" NewLine) .)+ EndLine
   {
     return new types.Note(
-      text.map((c) => c[1]).join('').trim(),
+      extractText(text),
       of
     )
   }
@@ -175,9 +206,7 @@ Class
       name.name,
       name.title,
       !!isAbstract,
-      members.filter(
-        (m) => m !== undefined
-      )
+      removeUndefined(members),
     );
   }
   / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? EndLine
@@ -257,9 +286,7 @@ Interface
     return new (require('./interface'))(
       name.name,
       name.title,
-      members.filter(
-        (m) => m !== undefined
-      )
+      removeUndefined(members),
     );
   }
   / _ "interface "i _ name:ElementName _ Decorators? _ EndLine
@@ -280,9 +307,7 @@ Enum
     return new (require('./enum'))(
       name.name,
       name.title,
-      members.filter(
-        (m) => m !== undefined
-      )
+      removeUndefined(members),
     );
   }
   / _ "enum "i _ name:ElementName _ Decorators? _ EndLine
@@ -318,12 +343,12 @@ ShortComponent
   {
     return {
       name: name,
-      title: title.map((c) => c[1]).join('').trim(),
+      title: extractText(title),
     };
   }
   / "[" name:(!("]" / NewLine) .)+ "]"
   {
-    name = name.map((c) => c[1]).join('').trim();
+    name = extractText(name);
     return {
       name: name,
       title: name,
@@ -355,12 +380,12 @@ ShortUseCase
   {
     return {
       name: name,
-      title: title.map((c) => c[1]).join('').trim(),
+      title: extractText(title),
     };
   }
   / "(" name:(!(")" / NewLine) .)+ ")"
   {
-    name = name.map((c) => c[1]).join('').trim();
+    name = extractText(name);
     return {
       name: name,
       title: name,
@@ -437,7 +462,7 @@ RelationshipArrowBody
 RelationshipLabel
   = ":" _ label:(!NewLine .)+
   {
-    return label.map((c) => c[1]).join('').trim()
+    return extractText(label);
   }
 
 RelationshipHidden
@@ -537,7 +562,7 @@ ElementName
 QuotedString
   = "\"" string:(!("\"" / NewLine) .)+ "\""
   {
-    return string.map((c) => c[1]).join('').trim();
+    return extractText(string);
   }
 
 Name

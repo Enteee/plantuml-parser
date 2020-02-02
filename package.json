@@ -37,6 +37,7 @@
     "mocha": "^6.2.2",
     "nyc": "^13.3.0",
     "pegjs": "^0.10.0",
+    "ts-pegjs": "^0.2.6",
     "typescript": "^3.7.5"
   },
   "bin": {
@@ -45,7 +46,7 @@
   "scripts": {
     "start": "node src/bin/cli.js",
     "build": "gulp build",
-    "test": "nyc -n 'src/**/*.js' -x 'src/plantuml-trace.js' gulp test && nyc check-coverage --lines 65 --functions 75 --branches 50 && eslint '**/*.js'",
+    "test": "nyc gulp test && nyc check-coverage --lines 65 --functions 75 --branches 50 && eslint '**/*.js'",
     "watch": "gulp watch",
     "format-fix": "eslint --fix '**/*.js'",
     "fixtures": "gulp test-fixtures-update && git add -u test/fixtures || true",
@@ -63,5 +64,15 @@
   "bugs": {
     "url": "https://github.com/Enteee/plantuml-parser/issues"
   },
-  "homepage": "https://github.com/Enteee/plantuml-parser#readme"
+  "homepage": "https://github.com/Enteee/plantuml-parser#readme",
+  "nyc": {
+    "all": true,
+    "include": [
+      "src/**/*.js",
+      "dist/**/*.js"
+    ],
+    "exclude": [
+      "dist/plantuml-trace.js"
+    ]
+  }
 }

@@ -5,23 +5,21 @@ const { join } = require('path');
 
 const rename = require('gulp-rename');
 const pegjs = require('gulp-pegjs');
+const tspegjs = require('ts-pegjs');
 const ts = require('gulp-typescript');
 const tsProject = ts.createProject('tsconfig.json');
-
-task('build-typescript',
-  (cb) => tsProject.src()
-    .pipe(tsProject())
-    .pipe(
-      dest('dist')
-    )
-);
 
 task('build-optimized',
   (cb) => src(join(conf.src.dir, '*.pegjs'))
     .pipe(
       pegjs({
-        format: 'commonjs'
+        format: 'commonjs',
+        plugins: [tspegjs],
+        tspegjs: conf.build.tspegjs
       }).on('error', cb)
+    )
+    .pipe(
+      rename('plantuml.ts')
     )
     .pipe(
       dest(conf.src.dir)
@@ -33,24 +31,34 @@ task('build-debug',
     .pipe(
       pegjs({
         format: 'commonjs',
-        trace: true
+        trace: true,
+        plugins: [tspegjs],
+        tspegjs: conf.build.tspegjs
       }).on('error', cb)
     )
     .pipe(
-      rename('plantuml-trace.js')
+      rename('plantuml-trace.ts')
     )
     .pipe(
       dest(conf.src.dir)
     )
 );
 
+task('build-typescript',
+  (cb) => tsProject.src()
+    .pipe(tsProject())
+    .pipe(
+      dest(conf.dist.dir)
+    )
+);
+
 task(
   'build',
   series(
-    'build-typescript',
     parallel(
       'build-optimized',
       'build-debug'
-    )
+    ),
+    'build-typescript'
   )
 );

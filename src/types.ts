@@ -7,3 +7,12 @@ export class Note {
     this.of = of || '';
   }
 };
+
+export type UMLElement = (Note);
+
+export class UML {
+  constructor (
+    public elements: Array<UMLElement>
+  ) { }
+};
+

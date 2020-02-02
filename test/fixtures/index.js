@@ -8,6 +8,7 @@
  *     error:,
  *     out: {
  *       name:,
+ *       parser:,
  *       format:,
  *       src: ,
  *     }

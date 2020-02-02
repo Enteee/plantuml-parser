@@ -1,13 +1,14 @@
 const conf = require('../../conf');
 const { join } = require('path');
 
-const File = require(join(conf.src.dir, 'file'));
-const UML = require(join(conf.src.dir, 'uml'));
-const Class = require(join(conf.src.dir, 'class'));
-const Interface = require(join(conf.src.dir, 'interface'));
-const Relationship = require(join(conf.src.dir, 'relationship'));
-const MemberVariable = require(join(conf.src.dir, 'memberVariable'));
-const Component = require(join(conf.src.dir, 'component'));
+const { UML } = require(join(conf.dist.dir, 'types'));
+
+const File = require(join(conf.dist.dir, 'file'));
+const Class = require(join(conf.dist.dir, 'class'));
+const Interface = require(join(conf.dist.dir, 'interface'));
+const Relationship = require(join(conf.dist.dir, 'relationship'));
+const MemberVariable = require(join(conf.dist.dir, 'memberVariable'));
+const Component = require(join(conf.dist.dir, 'component'));
 
 module.exports = function (ast) {
   const nodes = [];

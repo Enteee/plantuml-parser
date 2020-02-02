@@ -75,11 +75,6 @@ function testFixture (fixture) {
 // Test for errors
 function testErrorFixture (fixture) {
   function expectFixtureError (error) {
-    expect(error).to.be.an(
-      'object',
-      'Error not thrown: ' +
-      conf.fixtures.serializeParseError(fixture.error)
-    );
     expect(
       conf.fixtures.deserializeParseError(
         conf.fixtures.serializeParseError(error)
