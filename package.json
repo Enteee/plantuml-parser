@@ -12,13 +12,11 @@
     "async": "^2.6.3",
     "fast-glob": "^2.2.7",
     "get-stdin": "^6.0.0",
-    "gulp-typescript": "^6.0.0-alpha.1",
     "json-colorizer": "^2.2.1",
     "pegjs-backtrace": "^0.1.2",
     "read-vinyl-file-stream": "^2.0.3",
     "require-dir": "^1.2.0",
     "serialize-error": "^4.1.0",
-    "typescript": "^3.7.5",
     "yargs": "^13.3.0"
   },
   "devDependencies": {
@@ -35,9 +33,11 @@
     "gulp-mocha": "^6.0.0",
     "gulp-pegjs": "^0.1.0",
     "gulp-rename": "^1.4.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "mocha": "^6.2.2",
     "nyc": "^13.3.0",
-    "pegjs": "^0.10.0"
+    "pegjs": "^0.10.0",
+    "typescript": "^3.7.5"
   },
   "bin": {
     "plantuml-parser": "src/bin/cli.js"
