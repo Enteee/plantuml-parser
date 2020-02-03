@@ -2,10 +2,9 @@
   "name": "plantuml-parser",
   "version": "0.0.9",
   "description": "Parse PlantUML Syntax in JavaScript",
-  "main": "src",
+  "main": "dist",
   "files": [
     "conf.js",
-    "src/**/*.js",
     "dist/**/*.js"
   ],
   "dependencies": {
@@ -42,10 +41,10 @@
     "typescript": "^3.7.5"
   },
   "bin": {
-    "plantuml-parser": "src/bin/cli.js"
+    "plantuml-parser": "dist/bin/cli.js"
   },
   "scripts": {
-    "start": "node src/bin/cli.js",
+    "start": "node dist/bin/cli.js",
     "build": "gulp build",
     "test": "nyc gulp test && nyc check-coverage --lines 65 --functions 75 --branches 50 && eslint '**/*.js'",
     "watch": "gulp watch",
