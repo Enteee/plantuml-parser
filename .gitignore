@@ -61,7 +61,11 @@ typings/
 .next
 
 # Ignore distribution folder
-dist/**/*
+dist/
+
+# Generated plantuml typescript filtes
+src/plantuml-trace.ts
+src/plantuml.ts
 
 # vim
 *.swp
