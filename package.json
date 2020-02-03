@@ -20,6 +20,7 @@
     "yargs": "^13.3.0"
   },
   "devDependencies": {
+    "@types/node": "^13.7.0",
     "chai": "^4.2.0",
     "coveralls": "^3.0.7",
     "eslint": "^5.16.0",
