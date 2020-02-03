@@ -60,7 +60,7 @@ typings/
 # next.js build output
 .next
 
-# Ignore built ts files
+# Ignore distribution folder
 dist/**/*
 
 # vim
