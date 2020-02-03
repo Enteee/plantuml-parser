@@ -1,6 +1,6 @@
 const conf = require('../conf');
 
-const { join, relative } = require('path');
+const { relative } = require('path');
 const { cwd } = require('process');
 const { readFileSync } = require('fs');
 const { map } = require('async');
@@ -9,8 +9,8 @@ const { EOL } = require('os');
 const Tracer = require('pegjs-backtrace');
 const fastGlob = require('fast-glob');
 
-const { parse } = require(join(conf.dist.dir, 'plantuml'));
-const { parse: parseTrace } = require(join(conf.dist.dir, 'plantuml-trace'));
+const { parse } = require('./plantuml');
+const { parse: parseTrace } = require('./plantuml-trace');
 
 import { File, UML } from './types';
 
@@ -115,6 +115,4 @@ type Formatter = (result: UML) => any;
 export const formatters: {
   defalt: Formatter,
   graph: Formatter,
-} = require(
-  join(conf.src.dir, 'formatters')
-);
+} = require('./formatters');

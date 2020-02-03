@@ -17,9 +17,6 @@ module.exports = {
   test: {
     dir: join(__dirname, 'test/')
   },
-  formatters: {
-    dir: join(__dirname, 'src/formatters/')
-  },
   build: {
     options: {
       format: 'commonjs',

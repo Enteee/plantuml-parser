@@ -10,8 +10,6 @@ const { EOL } = require('os');
 const mocha = require('gulp-mocha');
 const log = require('fancy-log');
 
-const formatters = require(conf.formatters.dir);
-
 task('test-run', () =>
   src(join(conf.test.dir, 'test.js'), { read: false })
     .pipe(mocha({
@@ -26,6 +24,8 @@ task('test-run', () =>
 task('test-fixtures-update-run', () =>
   src(join(conf.fixtures.dir, '**/', conf.fixtures.inputFile))
     .pipe(readFiles(function (content, file, stream, cb) {
+
+      const { formatters } = require(conf.dist.dir);
       Object.keys(formatters).forEach(
         (name) => {
           // import parser here, because it might not exist
