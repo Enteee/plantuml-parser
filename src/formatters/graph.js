@@ -1,5 +1,3 @@
-const conf = require('../../conf');
-
 const { File, UML } = require('../types');
 
 const Class = require('../class');

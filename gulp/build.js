@@ -5,7 +5,6 @@ const { join } = require('path');
 
 const rename = require('gulp-rename');
 const pegjs = require('gulp-pegjs');
-const tspegjs = require('ts-pegjs');
 const ts = require('gulp-typescript');
 const tsProject = ts.createProject('tsconfig.json');
 
@@ -63,6 +62,6 @@ task(
       'build-optimized',
       'build-debug'
     ),
-    'build-typescript',
+    'build-typescript'
   )
 );

@@ -22,11 +22,11 @@ module.exports = {
       format: 'commonjs',
       plugins: [tspegjs],
       tspegjs: {
-        customHeader: '// import types\nimport * as types from \'./types\';',
+        customHeader: '// import types\nimport * as types from \'./types\';'
       },
       returnTypes: {
-        "PlantUMLFile": 'types.UML[]',
-      },
+        'PlantUMLFile': 'types.UML[]'
+      }
     }
   },
   fixtures: {

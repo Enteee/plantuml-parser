@@ -24,7 +24,6 @@ task('test-run', () =>
 task('test-fixtures-update-run', () =>
   src(join(conf.fixtures.dir, '**/', conf.fixtures.inputFile))
     .pipe(readFiles(function (content, file, stream, cb) {
-
       const { formatters } = require(conf.dist.dir);
       Object.keys(formatters).forEach(
         (name) => {
