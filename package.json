@@ -69,7 +69,6 @@
   "nyc": {
     "all": true,
     "include": [
-      "src/**/*.js",
       "dist/**/*.js"
     ],
     "exclude": [
