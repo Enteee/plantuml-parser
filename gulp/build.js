@@ -13,9 +13,7 @@ task('build-optimized',
   (cb) => src(join(conf.src.dir, '*.pegjs'))
     .pipe(
       pegjs({
-        format: 'commonjs',
-        plugins: [tspegjs],
-        tspegjs: conf.build.tspegjs
+        ...conf.build.options
       }).on('error', cb)
     )
     .pipe(
@@ -30,10 +28,8 @@ task('build-debug',
   (cb) => src(join(conf.src.dir, '*.pegjs'))
     .pipe(
       pegjs({
-        format: 'commonjs',
         trace: true,
-        plugins: [tspegjs],
-        tspegjs: conf.build.tspegjs
+        ...conf.build.options
       }).on('error', cb)
     )
     .pipe(
@@ -41,6 +37,13 @@ task('build-debug',
     )
     .pipe(
       dest(conf.src.dir)
+    )
+);
+
+task('build-copy-js',
+  (cb) => src(join(conf.src.dir, '**', '*.js'))
+    .pipe(
+      dest(conf.dist.dir)
     )
 );
 
@@ -59,6 +62,9 @@ task(
       'build-optimized',
       'build-debug'
     ),
-    'build-typescript'
+    parallel(
+      'build-typescript',
+      'build-copy-js',
+    )
   )
 );

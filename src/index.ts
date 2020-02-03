@@ -12,9 +12,21 @@ const fastGlob = require('fast-glob');
 const { parse } = require(join(conf.dist.dir, 'plantuml'));
 const { parse: parseTrace } = require(join(conf.dist.dir, 'plantuml-trace'));
 
-const File = require(join(conf.dist.dir, 'file'));
+import { File, UML } from './types';
 
-function parseSync (src, options) {
+export interface IParseOptions {
+  hiddenPaths?: string[];
+  matchesNode?: boolean;
+  maxPathLength?: number;
+  maxSourceLines?: number;
+  useColor?: boolean;
+  verbose?: boolean;
+}
+
+function parseSync (
+  src: string,
+  options: IParseOptions
+): UML[] {
   options = options || {};
 
   if (options.verbose) {
@@ -42,35 +54,51 @@ function parseSync (src, options) {
   return parse(src, options);
 };
 
-module.exports.parse = parseSync;
-module.exports.parseFile = function (globPattern, options, cb) {
+export { parseSync as parse };
+export function parseFile(
+  globPattern: (string | string[]),
+  options: IParseOptions,
+  cb : (error: Error, result: File) => void = null
+): File {
+
+  // callback given
   if (cb) {
     return map(
       fastGlob.sync(globPattern),
-      (file, cb) => {
+      (
+        file: string,
+        cb: (error: Error, file: File) => void
+      ) => {
+
+        let parseResult = null;
         try {
-          cb(
-            null,
-            new File(
-              relative(
-                cwd(),
-                file
-              ),
-              parseSync(
-                readFileSync(file, conf.encoding),
-                options
-              )
-            )
-          );
+          parseResult = parseSync(
+            readFileSync(file, conf.encoding),
+            options
+          )
         } catch (e) {
-          cb(e);
+          return cb(e, null);
         }
+
+        return cb(
+          null,
+          new File(
+            relative(
+              cwd(),
+              file
+            ),
+            parseResult
+          )
+        );
+
       },
       cb
     );
   }
+
+  // no callback given
   return fastGlob.sync(globPattern).map(
-    (file) => new File(
+    (file: string) => new File(
       relative(
         cwd(),
         file
@@ -83,4 +111,10 @@ module.exports.parseFile = function (globPattern, options, cb) {
   );
 };
 
-module.exports.formatters = require('./formatters');
+type Formatter = (result: UML) => any;
+export const formatters: {
+  defalt: Formatter,
+  graph: Formatter,
+} = require(
+  join(conf.src.dir, 'formatters')
+);

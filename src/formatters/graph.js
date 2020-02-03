@@ -1,9 +1,8 @@
 const conf = require('../../conf');
 const { join } = require('path');
 
-const { UML } = require(join(conf.dist.dir, 'types'));
+const { File, UML } = require(join(conf.dist.dir, 'types'));
 
-const File = require(join(conf.dist.dir, 'file'));
 const Class = require(join(conf.dist.dir, 'class'));
 const Interface = require(join(conf.dist.dir, 'interface'));
 const Relationship = require(join(conf.dist.dir, 'relationship'));

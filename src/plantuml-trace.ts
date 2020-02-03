@@ -772,7 +772,7 @@ function peg$parse(input: string, options?: IParseOptions) {
     );
   }
 
-  function peg$parsePlantUMLFile(): any {
+  function peg$parsePlantUMLFile(): types.UML[] {
     const startPos = peg$currPos;
     let s0, s1, s2, s3, s4;
 

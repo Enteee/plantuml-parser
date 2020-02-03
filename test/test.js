@@ -3,7 +3,7 @@ const conf = require('../conf');
 const { describe, it } = require('mocha');
 const { expect, assert } = require('chai');
 
-const { parse, parseFile, formatters } = require(conf.src.dir);
+const { parse, parseFile, formatters } = require(conf.dist.dir);
 
 /**
  * Test if the output produced by the

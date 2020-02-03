@@ -12,7 +12,15 @@ export type UMLElement = (Note);
 
 export class UML {
   constructor (
-    public elements: Array<UMLElement>
+    public elements: UMLElement[]
   ) { }
 };
 
+export class File {
+  constructor (
+    public name: string,
+    public diagrams: UML[]
+  ) {
+    this.diagrams = diagrams || [];
+  }
+};

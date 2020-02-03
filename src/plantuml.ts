@@ -706,7 +706,7 @@ function peg$parse(input: string, options?: IParseOptions) {
     );
   }
 
-  function peg$parsePlantUMLFile(): any {
+  function peg$parsePlantUMLFile(): types.UML[] {
     let s0, s1, s2, s3, s4;
 
     s0 = peg$currPos;

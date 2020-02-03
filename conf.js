@@ -3,6 +3,7 @@
  */
 
 const { join } = require('path');
+const tspegjs = require('ts-pegjs');
 const serializeError = require('serialize-error');
 
 module.exports = {
@@ -20,8 +21,15 @@ module.exports = {
     dir: join(__dirname, 'src/formatters/')
   },
   build: {
-    tspegjs: {
-      customHeader: '// import types\nimport * as types from \'./types\';'
+    options: {
+      format: 'commonjs',
+      plugins: [tspegjs],
+      tspegjs: {
+        customHeader: '// import types\nimport * as types from \'./types\';',
+      },
+      returnTypes: {
+        "PlantUMLFile": 'types.UML[]',
+      },
     }
   },
   fixtures: {

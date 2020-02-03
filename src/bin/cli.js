@@ -2,7 +2,7 @@
 const conf = require('../../conf.js');
 
 const { writeSync, writeFileSync } = require('fs');
-const { parse, parseFile, formatters } = require(conf.src.dir);
+const { parse, parseFile, formatters } = require(conf.dist.dir);
 const { EOL } = require('os');
 
 const colorize = require('json-colorizer');
