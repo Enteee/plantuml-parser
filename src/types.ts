@@ -37,12 +37,12 @@ export class MemberVariable {
   }
 };
 
-export type Member = ( Method )
+export type Member = ( Method | MemberVariable )
 export class Enum {
   constructor (
     public name: string,
     public title: string,
-    public members: string[] = []
+    public members: Member[] = []
   ) {
     this.members = members || [];
   }
