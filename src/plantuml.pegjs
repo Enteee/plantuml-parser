@@ -400,7 +400,7 @@ ShortUseCase
 Relationship
   = _ left:ElementReference _ leftCardinality:QuotedString? _ leftArrowHead:RelationshipArrowHead? leftArrowBody:RelationshipArrowBody hidden:RelationshipHidden? Direction? rightArrowBody:RelationshipArrowBody rightArrowHead:RelationshipArrowHead? _ rightCardinality:QuotedString? _ right:ElementReference _ label:(RelationshipLabel)? EndLine
   {
-    return new (require('./relationship'))(
+    return new types.Relationship(
       left.name,
       right.name,
       left.type,
@@ -412,12 +412,12 @@ Relationship
       leftCardinality,
       rightCardinality,
       label,
-      hidden,
+      !!hidden,
     );
   }
   / _ left:ElementReference _ leftCardinality:QuotedString? _ leftArrowHead:RelationshipArrowHead? arrowBody:RelationshipArrowBody rightArrowHead:RelationshipArrowHead? _ rightCardinality:QuotedString? _ right:ElementReference _ label:(RelationshipLabel)? EndLine
   {
-    return new (require('./relationship'))(
+    return new types.Relationship(
       left.name,
       right.name,
       left.type,

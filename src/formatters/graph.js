@@ -1,6 +1,4 @@
-const { File, UML, Component, MemberVariable, Interface, Class } = require('../types');
-
-const Relationship = require('../relationship');
+const { File, UML, Component, MemberVariable, Interface, Class, Relationship } = require('../types');
 
 module.exports = function (ast) {
   const nodes = [];

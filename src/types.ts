@@ -97,6 +97,55 @@ export class Group {
   }
 };
 
+export type RelationshipArrowHead = (
+  | ""
+  | "<|"
+  | "|>"
+  | "*"
+  | "o"
+  | "<"
+  | ">"
+  | "#"
+  | "x"
+  | "}"
+  | "+"
+  | "^"
+  | "()"
+  | "("
+  | ")"
+);
+export type RelationshipArrowBody = (
+  | "-"
+  | "."
+);
+export class Relationship {
+  constructor (
+    public left: string,
+    public right: string,
+    public leftType: string,
+    public rightType: string,
+    public leftArrowHead: RelationshipArrowHead,
+    public rightArrowHead: RelationshipArrowHead,
+    public leftArrowBody: RelationshipArrowBody,
+    public rightArrowBody: RelationshipArrowBody,
+    public leftCardinality: string,
+    public rightCardinality: string,
+    public label: string,
+    public hidden: boolean,
+  ) {
+    this.leftType = leftType || '';
+    this.rightType = rightType || '';
+    this.leftArrowHead = leftArrowHead || '';
+    this.rightArrowHead = rightArrowHead || '';
+    this.leftArrowBody = leftArrowBody || '-';
+    this.rightArrowBody = rightArrowBody || '-';
+    this.leftCardinality = leftCardinality || '';
+    this.rightCardinality = rightCardinality || '';
+    this.label = label || '';
+    this.hidden = !!hidden;
+  }
+};
+
 export type UMLElement = (Note | Enum | Group);
 export class UML {
   constructor (
