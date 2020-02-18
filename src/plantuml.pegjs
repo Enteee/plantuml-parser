@@ -363,14 +363,14 @@ ShortComponent
 UseCase
   = _ "usecase "i _ name:ElementName EndLine
   {
-    return new (require('./useCase'))(
+    return new types.UseCase(
       name.name,
       name.title,
     );
   }
   / _ name:ShortUseCase EndLine
   {
-    return new (require('./useCase'))(
+    return new types.UseCase(
       name.name,
       name.title,
     );
