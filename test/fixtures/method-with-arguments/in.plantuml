@@ -1,0 +1,8 @@
+@startuml
+
+class Dummy {
+ ~method1(int i, boolean b, char c)
+ +method2(int i, boolean b, char c)
+}
+
+@enduml

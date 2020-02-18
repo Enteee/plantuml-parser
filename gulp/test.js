@@ -29,7 +29,7 @@ task('test-fixtures-update-run', () =>
         (name) => {
           // import parser here, because it might not exist
           // when outer scope is loaded.
-          const { parse, parseFile } = require(join(conf.src.dir));
+          const { parse, parseFile } = require(join(conf.dist.dir));
           const formatter = formatters[name];
 
           const expectError = existsSync(

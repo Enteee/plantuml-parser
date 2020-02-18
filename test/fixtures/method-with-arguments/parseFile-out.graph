@@ -1,0 +1,69 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/method-with-arguments/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "Dummy",
+              "title": "Dummy",
+              "isAbstract": false,
+              "members": [
+                {
+                  "name": "method1",
+                  "isStatic": false,
+                  "accessor": "~",
+                  "returnType": "void",
+                  "_arguments": "int i, boolean b, char c"
+                },
+                {
+                  "name": "method2",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "returnType": "void",
+                  "_arguments": "int i, boolean b, char c"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/method-with-arguments/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "Dummy",
+      "title": "Dummy",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "method1",
+          "isStatic": false,
+          "accessor": "~",
+          "returnType": "void",
+          "_arguments": "int i, boolean b, char c"
+        },
+        {
+          "name": "method2",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": "int i, boolean b, char c"
+        }
+      ],
+      "id": "Dummy",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "test/fixtures/method-with-arguments/in.plantuml",
+      "to": "Dummy",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

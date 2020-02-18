@@ -54,7 +54,7 @@ PlantUMLFile
   }
 
 Diagrams
- = (
+  = diagrams:(
     (!"@startuml" .)*
     "@startuml" _ DiagramId? _ NewLine
       uml:UML
@@ -139,7 +139,7 @@ Together
 Group
   = _ type:GroupType " " _ name:ElementName _ Stereotype? _ Color? _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
-    return new (require('./group'))(
+    return new types.Group(
       name.name,
       name.title,
       type,
@@ -238,22 +238,22 @@ Separator
 Method
   = _ isStatic:"static "i? _ accessor:Accessor? _ type:Name _ name:Name _ "(" _arguments:(!")" .)* ")" EndLine
   {
-    return new (require('./method'))(
+    return new types.Method(
       name,
       isStatic,
       accessor,
       type,
-      _arguments.join(''),
+      extractText(_arguments),
     );
   }
   / _ isStatic:"static "i? _ accessor:Accessor? _ name:Name _ "(" _arguments:(!")" .)* ")" EndLine
   {
-    return new (require('./method'))(
+    return new types.Method(
       name,
       isStatic,
       accessor,
       undefined,
-      _arguments.join(''),
+      extractText(_arguments),
     );
   }
 
@@ -305,7 +305,7 @@ Interface
 Enum
   = _ "enum "i _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
-    return new (require('./enum'))(
+    return new types.Enum(
       name.name,
       name.title,
       removeUndefined(members),
@@ -313,7 +313,7 @@ Enum
   }
   / _ "enum "i _ name:ElementName _ Decorators? _ EndLine
   {
-    return new (require('./enum'))(
+    return new types.Enum(
       name.name,
       name.title,
     );
@@ -585,7 +585,7 @@ Stereotype
 
 
 Accessor
-  = [+\-#]
+  = [\-#~+]
 
 Color
   = color:([#A-Za-z0-9]+)

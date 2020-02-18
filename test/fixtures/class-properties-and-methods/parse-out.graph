@@ -26,6 +26,12 @@
         {
           "name": "Name",
           "isStatic": false,
+          "accessor": "~",
+          "type": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
           "accessor": "-",
           "returnType": "void",
           "_arguments": ""
@@ -41,6 +47,13 @@
           "name": "Name",
           "isStatic": false,
           "accessor": "#",
+          "returnType": "void",
+          "_arguments": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "~",
           "returnType": "void",
           "_arguments": ""
         }
@@ -74,6 +87,14 @@
       "hidden": true
     },
     {
+      "name": "Name",
+      "isStatic": false,
+      "accessor": "~",
+      "type": "Attribute",
+      "id": "Name",
+      "hidden": true
+    },
+    {
       "name": "Car",
       "title": "Car",
       "isAbstract": false,
@@ -84,6 +105,12 @@
     }
   ],
   "edges": [
+    {
+      "from": "Car",
+      "to": "Name",
+      "name": "has",
+      "hidden": true
+    },
     {
       "from": "Car",
       "to": "Name",
