@@ -240,7 +240,7 @@ Method
   {
     return new types.Method(
       name,
-      isStatic,
+      !!isStatic,
       accessor,
       type,
       extractText(_arguments),
@@ -250,7 +250,7 @@ Method
   {
     return new types.Method(
       name,
-      isStatic,
+      !!isStatic,
       accessor,
       undefined,
       extractText(_arguments),
@@ -261,7 +261,7 @@ Method
 MemberVariable
   = _ isStatic:"static "i? _ accessor:Accessor? _ type:Name _ name:Name EndLine
   {
-    return new (require('./memberVariable'))(
+    return new types.MemberVariable(
       name,
       !!isStatic,
       accessor,
@@ -270,7 +270,7 @@ MemberVariable
   }
   / _ isStatic:"static "i? _ accessor:Accessor? _ name:Name EndLine
   {
-    return new (require('./memberVariable'))(
+    return new types.MemberVariable(
       name,
       !!isStatic,
       accessor

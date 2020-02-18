@@ -24,6 +24,19 @@ export class Method {
   }
 };
 
+export class MemberVariable {
+  constructor (
+    public name: string,
+    public isStatic: boolean,
+    public accessor: Accessor,
+    public type: string = ''
+  ) {
+    this.isStatic = !!isStatic;
+    this.accessor = accessor || '+';
+    this.type = type || '';
+  }
+};
+
 export type Member = ( Method )
 export class Enum {
   constructor (
