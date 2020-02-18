@@ -284,7 +284,7 @@ MemberVariable
 Interface
   = _ "interface "i _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
-    return new (require('./interface'))(
+    return new types.Interface(
       name.name,
       name.title,
       removeUndefined(members),
@@ -292,7 +292,7 @@ Interface
   }
   / _ "interface "i _ name:ElementName _ Decorators? _ EndLine
   {
-    return new (require('./interface'))(
+    return new types.Interface(
       name.name,
       name.title,
     );

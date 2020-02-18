@@ -48,6 +48,16 @@ export class Enum {
   }
 };
 
+export class Interface {
+  constructor (
+    public name: string,
+    public title: string,
+    public members: Member[] = []
+  ) {
+    this.members = members || [];
+  }
+};
+
 export type GroupType = ( 'package' | 'node' | 'folder' | 'frame' | 'cloud' | 'database' )
 export class Group {
   constructor (
