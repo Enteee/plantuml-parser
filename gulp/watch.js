@@ -4,11 +4,10 @@ task('watch', (cb) => {
   watch([
     '**/*.ts',
     '**/*.js',
-    'src/**/*.pegjs',
-    'test/**/*.js',
+    '**/*.pegjs',
     '!src/**/plantuml.ts',
     '!src/**/plantuml-trace.ts',
-    '!dist/**/*.js'
+    '!dist/**'
   ], {
     ignoreInitial: false
   }, series(
