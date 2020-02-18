@@ -8,6 +8,14 @@ export class Note {
   }
 };
 
+export class Component {
+  constructor (
+    public name: string,
+    public title: string
+  ) {
+  }
+};
+
 export type Accessor = ( '-' | '#' | '~' | '+' )
 export class Method {
   constructor (

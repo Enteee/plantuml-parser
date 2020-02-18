@@ -326,14 +326,14 @@ Enum
 Component
   = _ "component "i _ name:ElementName _ Stereotype? EndLine
   {
-    return new (require('./component'))(
+    return new types.Component(
       name.name,
       name.title,
     );
   }
   / _ name:ShortComponent EndLine
   {
-    return new (require('./component'))(
+    return new types.Component(
       name.name,
       name.title,
     );
