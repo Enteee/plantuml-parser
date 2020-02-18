@@ -1,6 +1,5 @@
-const { File, UML, MemberVariable, Interface } = require('../types');
+const { File, UML, MemberVariable, Interface, Class } = require('../types');
 
-const Class = require('../class');
 const Relationship = require('../relationship');
 const Component = require('../component');
 

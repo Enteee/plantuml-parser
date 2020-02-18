@@ -203,7 +203,7 @@ NoteOf
 Class
   = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
-    return new (require("./class"))(
+    return new types.Class(
       name.name,
       name.title,
       !!isAbstract,
@@ -212,7 +212,7 @@ Class
   }
   / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? EndLine
   {
-    return new (require("./class"))(
+    return new types.Class(
       name.name,
       name.title,
       !!isAbstract

@@ -58,6 +58,18 @@ export class Interface {
   }
 };
 
+export class Class {
+  constructor (
+    public name: string,
+    public title: string,
+    public isAbstract: boolean,
+    public members: Member[] = []
+  ) {
+    this.isAbstract = !!isAbstract;
+    this.members = members || [];
+  }
+};
+
 export type GroupType = ( 'package' | 'node' | 'folder' | 'frame' | 'cloud' | 'database' )
 export class Group {
   constructor (
