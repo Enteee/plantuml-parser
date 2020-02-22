@@ -2,12 +2,12 @@ const { task, watch, series } = require('gulp');
 
 task('watch', (cb) => {
   watch([
-    '**/*.ts',
-    '**/*.js',
-    '**/*.pegjs',
+    'src/**/*.ts',
+    'src/**/*.js',
+    'src/**/*.pegjs',
     '!src/**/plantuml.ts',
     '!src/**/plantuml-trace.ts',
-    '!dist/**'
+    '!dist/'
   ], {
     ignoreInitial: false
   }, series(

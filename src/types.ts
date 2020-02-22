@@ -24,14 +24,14 @@ export class UseCase {
   }
 };
 
-export type Accessor = ( '-' | '#' | '~' | '+' )
+export type Accessor = ('-' | '#' | '~' | '+')
 export class Method {
   constructor (
     public name: string,
     public isStatic: boolean,
     public accessor: Accessor,
     public returnType: string,
-    public _arguments: string,
+    public _arguments: string
   ) {
     this.isStatic = !!isStatic;
     this.accessor = accessor || '+';
@@ -53,7 +53,7 @@ export class MemberVariable {
   }
 };
 
-export type Member = ( Method | MemberVariable )
+export type Member = (Method | MemberVariable)
 export class Enum {
   constructor (
     public name: string,
@@ -86,7 +86,7 @@ export class Class {
   }
 };
 
-export type GroupType = ( 'package' | 'node' | 'folder' | 'frame' | 'cloud' | 'database' )
+export type GroupType = ('package' | 'node' | 'folder' | 'frame' | 'cloud' | 'database')
 export class Group {
   constructor (
     public name: string,
@@ -98,25 +98,25 @@ export class Group {
 };
 
 export type RelationshipArrowHead = (
-  | ""
-  | "<|"
-  | "|>"
-  | "*"
-  | "o"
-  | "<"
-  | ">"
-  | "#"
-  | "x"
-  | "}"
-  | "+"
-  | "^"
-  | "()"
-  | "("
-  | ")"
+  | ''
+  | '<|'
+  | '|>'
+  | '*'
+  | 'o'
+  | '<'
+  | '>'
+  | '#'
+  | 'x'
+  | '}'
+  | '+'
+  | '^'
+  | '()'
+  | '('
+  | ')'
 );
 export type RelationshipArrowBody = (
-  | "-"
-  | "."
+  | '-'
+  | '.'
 );
 export class Relationship {
   constructor (
@@ -131,7 +131,7 @@ export class Relationship {
     public leftCardinality: string,
     public rightCardinality: string,
     public label: string,
-    public hidden: boolean,
+    public hidden: boolean
   ) {
     this.leftType = leftType || '';
     this.rightType = rightType || '';
@@ -146,7 +146,16 @@ export class Relationship {
   }
 };
 
-export type UMLElement = (Note | Enum | Group);
+export type UMLElement = (
+  | Note
+  | Component
+  | UseCase
+  | Enum
+  | Interface
+  | Class
+  | Group
+  | Relationship
+);
 export class UML {
   constructor (
     public elements: UMLElement[]

@@ -1,3 +1,8 @@
+import { File, UML } from './types';
+
+import defaultFormatter from './formatters/default';
+import graphFormatter from './formatters/graph';
+
 const conf = require('../conf');
 
 const { relative } = require('path');
@@ -11,8 +16,6 @@ const fastGlob = require('fast-glob');
 
 const { parse } = require('./plantuml');
 const { parse: parseTrace } = require('./plantuml-trace');
-
-import { File, UML } from './types';
 
 export interface IParseOptions {
   hiddenPaths?: string[];
@@ -55,12 +58,11 @@ function parseSync (
 };
 
 export { parseSync as parse };
-export function parseFile(
+export function parseFile (
   globPattern: (string | string[]),
   options: IParseOptions,
   cb : (error: Error, result: File) => void = null
 ): File {
-
   // callback given
   if (cb) {
     return map(
@@ -69,13 +71,12 @@ export function parseFile(
         file: string,
         cb: (error: Error, file: File) => void
       ) => {
-
         let parseResult = null;
         try {
           parseResult = parseSync(
             readFileSync(file, conf.encoding),
             options
-          )
+          );
         } catch (e) {
           return cb(e, null);
         }
@@ -90,7 +91,6 @@ export function parseFile(
             parseResult
           )
         );
-
       },
       cb
     );
@@ -111,8 +111,13 @@ export function parseFile(
   );
 };
 
-type Formatter = (result: UML) => any;
-export const formatters: {
-  defalt: Formatter,
-  graph: Formatter,
-} = require('./formatters');
+type Formatter = (parseResult: (File | UML[])) => any;
+type Formatters = {
+  default:Formatter;
+  graph:Formatter;
+}
+
+export const formatters: Formatters = {
+  default: defaultFormatter,
+  graph: graphFormatter
+};

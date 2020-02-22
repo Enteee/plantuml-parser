@@ -1,11 +1,15 @@
-const { File, UML, Component, MemberVariable, Interface, Class, Relationship } = require('../types');
+import { File, UML, Component, MemberVariable, Interface, Class, Relationship } from '../types';
 
-module.exports = function (ast) {
-  const nodes = [];
-  const edges = [];
+/**
+ * TODO: make this propertly typed
+ */
+
+export default function graphFormatter (parseResult: (File | UML[])) : string {
+  const nodes:any[] = [];
+  const edges:any[] = [];
 
   var fileName = '';
-  function linkToFile (node) {
+  function linkToFile (node:any) {
     if (fileName) {
       edges.push({
         from: fileName,
@@ -16,7 +20,7 @@ module.exports = function (ast) {
     }
   }
 
-  (function extractNodes (node) {
+  (function extractNodes (node: any) {
     if (node instanceof File) {
       fileName = node.name;
 
@@ -88,10 +92,10 @@ module.exports = function (ast) {
         (k) => extractNodes(node[k])
       );
     }
-  })(ast);
+  })(parseResult);
 
-  (function extractEdges (node) {
-    function getNodeByName (nodeName) {
+  (function extractEdges (node: any) {
+    function getNodeByName (nodeName:string) {
       return nodes.filter(
         (n) => n.name === nodeName
       )[0];
@@ -240,7 +244,7 @@ module.exports = function (ast) {
         (k) => extractEdges(node[k])
       );
     }
-  })(ast);
+  })(parseResult);
 
   return JSON.stringify(
     {
