@@ -21,12 +21,12 @@ function testFormatHasNotChanged (fixture, output) {
   switch (output.parser) {
     case 'parse':
       formatted = formatters[output.format](
-        parse(fixture.src)
+        parse(fixture.src),
       );
       break;
     case 'parseFile':
       formatted = formatters[output.format](
-        parseFile(fixture.srcFile)
+        parseFile(fixture.srcFile),
       );
       break;
     default:
@@ -45,30 +45,30 @@ function testFormatHasNotChanged (fixture, output) {
     result = formatted;
   }
   expect(
-    result
+    result,
   ).to.deep.equal(
-    expected
+    expected,
   );
 }
 
 // Happy path testing
 function testFixture (fixture) {
   it('parse',
-    () => parse(fixture.src)
+    () => parse(fixture.src),
   );
 
   it('parseFile - async',
-    (cb) => parseFile(fixture.srcFile, null, cb)
+    (cb) => parseFile(fixture.srcFile, null, cb),
   );
 
   it('parseFile',
-    () => parseFile(fixture.srcFile)
+    () => parseFile(fixture.srcFile),
   );
 
   fixture.out.forEach(
     (output) => it(output.parser + '-output.' + output.format,
-      () => testFormatHasNotChanged(fixture, output)
-    )
+      () => testFormatHasNotChanged(fixture, output),
+    ),
   );
 }
 
@@ -77,10 +77,10 @@ function testErrorFixture (fixture) {
   function expectFixtureError (error) {
     expect(
       conf.fixtures.deserializeParseError(
-        conf.fixtures.serializeParseError(error)
-      )
+        conf.fixtures.serializeParseError(error),
+      ),
     ).to.deep.equals(
-      fixture.error
+      fixture.error,
     );
   }
 
@@ -93,20 +93,20 @@ function testErrorFixture (fixture) {
         error = e;
       }
       expectFixtureError(error);
-    }
+    },
   );
 
   it('parseFile - async',
     (cb) => parseFile(fixture.srcFile, null,
-      (err, fixture) => {
+      (err) => {
         try {
           expectFixtureError(err);
         } catch (e) {
           return cb(e);
         }
         return cb();
-      }
-    )
+      },
+    ),
   );
 
   it('parseFile',
@@ -118,7 +118,7 @@ function testErrorFixture (fixture) {
         error = e;
       }
       expectFixtureError(error);
-    }
+    },
   );
 }
 
@@ -127,13 +127,13 @@ require('./fixtures').forEach(
     if (fixture.error) {
       describe(
         'Error - ' + fixture.directory,
-        () => testErrorFixture(fixture)
+        () => testErrorFixture(fixture),
       );
     } else {
       describe(
         fixture.directory,
-        () => testFixture(fixture)
+        () => testFixture(fixture),
       );
     }
-  }
+  },
 );

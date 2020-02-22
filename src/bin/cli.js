@@ -15,33 +15,33 @@ const argv = require('yargs') // eslint-disable-line
     alias: 'f',
     describe: 'formatter to use',
     default: 'default',
-    choices: Object.keys(formatters)
+    choices: Object.keys(formatters),
   })
   .option('input', {
     alias: 'i',
     describe: 'input file(s) to read, supports globbing',
     default: DEFAULT,
     defaultDescription: 'stdin',
-    type: 'string'
+    type: 'string',
   })
   .option('output', {
     alias: 'o',
     describe: 'output file to write',
     type: 'string',
     default: DEFAULT,
-    defaultDescription: 'stdout'
+    defaultDescription: 'stdout',
   })
   .option('color', {
     alias: 'c',
     describe: 'colorful output',
     default: false,
-    boolean: true
+    boolean: true,
   })
   .option('verbose', {
     alias: 'v',
     describe: '1x print verbose output, 2x print parser tracing',
     default: 0,
-    count: true
+    count: true,
   })
   .help()
   .argv;
@@ -50,7 +50,7 @@ const formatter = formatters[argv.formatter];
 const options = {
   verbose: argv.verbose,
   showTrace: argv.verbose > 1,
-  useColor: argv.color
+  useColor: argv.color,
 };
 
 function read (cb) {
@@ -60,15 +60,15 @@ function read (cb) {
         null,
         parse(
           data,
-          options
-        )
-      )
+          options,
+        ),
+      ),
     );
   }
   return parseFile(
     argv.input,
     options,
-    cb
+    cb,
   );
 }
 
@@ -76,7 +76,9 @@ function write (data) {
   if (argv.color) {
     try {
       data = colorize(data);
-    } catch (e) {};
+    } catch (e) {
+      // continue without colors
+    }
   }
   if (argv.output === DEFAULT) {
     return writeSync(process.stdout.fd, data);
@@ -85,8 +87,8 @@ function write (data) {
     argv.output,
     data,
     {
-      encoding: conf.encoding
-    }
+      encoding: conf.encoding,
+    },
   );
 }
 
@@ -99,11 +101,11 @@ read(
     try {
       write(
         formatter(ast) + EOL,
-        argv.output
+        argv.output,
       );
     } catch (e) {
       console.error(e.message);
       process.exit(1);
     }
-  }
+  },
 );

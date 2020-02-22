@@ -14,8 +14,8 @@ task('test-run', () =>
   src(join(conf.test.dir, 'test.js'), { read: false })
     .pipe(mocha({
       // Stop on first error
-      bail: false
-    }))
+      bail: false,
+    })),
 );
 
 /**
@@ -35,14 +35,14 @@ task('test-fixtures-update-run', () =>
           const expectError = existsSync(
             join(
               dirname(file.path),
-              conf.fixtures.errorFile
-            )
+              conf.fixtures.errorFile,
+            ),
           );
 
           log.info('Updating [' +
             name +
             ((expectError) ? ', error' : '') +
-            ']: ' + dirname(file.path)
+            ']: ' + dirname(file.path),
           );
 
           var astParse, errParse;
@@ -71,15 +71,15 @@ task('test-fixtures-update-run', () =>
 
           const errorOutputFile = join(
             dirname(file.path),
-            conf.fixtures.errorFile
+            conf.fixtures.errorFile,
           );
           const parseOutputFile = join(
             dirname(file.path),
-            conf.fixtures.parseOutputFilePrefix + name
+            conf.fixtures.parseOutputFilePrefix + name,
           );
           const parseFileOutputFile = join(
             dirname(file.path),
-            conf.fixtures.parseFileOutputFilePrefix + name
+            conf.fixtures.parseFileOutputFilePrefix + name,
           );
 
           if (expectError) {
@@ -91,8 +91,8 @@ task('test-fixtures-update-run', () =>
               errorOutputFile,
               errParse,
               {
-                encoding: conf.encoding
-              }
+                encoding: conf.encoding,
+              },
             );
 
             // remove output files if they exist
@@ -111,28 +111,28 @@ task('test-fixtures-update-run', () =>
             parseOutputFile,
             formatter(astParse) + EOL,
             {
-              encoding: conf.encoding
-            }
+              encoding: conf.encoding,
+            },
           );
           writeFileSync(
             parseFileOutputFile,
             formatter(astParseFile) + EOL,
             {
-              encoding: conf.encoding
-            }
+              encoding: conf.encoding,
+            },
           );
-        }
+        },
       );
       cb();
-    }))
+    })),
 );
 
 task('test-fixtures-update', series(
   'build',
-  'test-fixtures-update-run'
+  'test-fixtures-update-run',
 ));
 
 task('test', series(
   'build',
-  'test-run'
+  'test-run',
 ));

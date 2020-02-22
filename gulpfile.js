@@ -5,6 +5,6 @@ require('./gulp');
 task('default',
   series(
     'build',
-    'test'
-  )
+    'test',
+  ),
 );

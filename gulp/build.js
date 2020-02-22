@@ -9,25 +9,25 @@ const ts = require('gulp-typescript');
 const tsProject = ts.createProject('tsconfig.json');
 
 task('build-copy-js',
-  (cb) => src(join(conf.src.dir, '**', '*.js'))
+  () => src(join(conf.src.dir, '**', '*.js'))
     .pipe(
-      dest(conf.dist.dir)
-    )
+      dest(conf.dist.dir),
+    ),
 );
 
 task('build-optimized',
   (cb) => src(join(conf.src.dir, '*.pegjs'))
     .pipe(
       pegjs({
-        ...conf.build.options
-      }).on('error', cb)
+        ...conf.build.options,
+      }).on('error', cb),
     )
     .pipe(
-      rename('plantuml.ts')
+      rename('plantuml.ts'),
     )
     .pipe(
-      dest(conf.src.dir)
-    )
+      dest(conf.src.dir),
+    ),
 );
 
 task('build-debug',
@@ -35,23 +35,23 @@ task('build-debug',
     .pipe(
       pegjs({
         trace: true,
-        ...conf.build.options
-      }).on('error', cb)
+        ...conf.build.options,
+      }).on('error', cb),
     )
     .pipe(
-      rename('plantuml-trace.ts')
+      rename('plantuml-trace.ts'),
     )
     .pipe(
-      dest(conf.src.dir)
-    )
+      dest(conf.src.dir),
+    ),
 );
 
 task('build-typescript',
-  (cb) => tsProject.src()
+  () => tsProject.src()
     .pipe(tsProject())
     .pipe(
-      dest(conf.dist.dir)
-    )
+      dest(conf.dist.dir),
+    ),
 );
 
 task(
@@ -60,8 +60,8 @@ task(
     'build-copy-js',
     parallel(
       'build-optimized',
-      'build-debug'
+      'build-debug',
     ),
-    'build-typescript'
-  )
+    'build-typescript',
+  ),
 );

@@ -3,6 +3,8 @@ import { File, UML } from './types';
 import defaultFormatter from './formatters/default';
 import graphFormatter from './formatters/graph';
 
+/* eslint-disable @typescript-eslint/no-var-requires */
+//TODO : use import here
 const conf = require('../conf');
 
 const { relative } = require('path');
@@ -16,8 +18,9 @@ const fastGlob = require('fast-glob');
 
 const { parse } = require('./plantuml');
 const { parse: parseTrace } = require('./plantuml-trace');
+/* eslint-enable @typescript-eslint/no-var-requires */
 
-export interface IParseOptions {
+export interface ParseOptions {
   hiddenPaths?: string[];
   matchesNode?: boolean;
   maxPathLength?: number;
@@ -28,7 +31,7 @@ export interface IParseOptions {
 
 function parseSync (
   src: string,
-  options: IParseOptions
+  options: ParseOptions,
 ): UML[] {
   options = options || {};
 
@@ -39,8 +42,8 @@ function parseSync (
         src,
         {
           ...options,
-          tracer: tracer
-        }
+          tracer: tracer,
+        },
       );
       return parsed;
     } catch (e) {
@@ -50,18 +53,20 @@ function parseSync (
         e.message += EOL;
         e.message += tracer.getBacktraceString();
         e.message += EOL;
-      } catch (e) { }
+      } catch (e) {
+        // do nothing
+      }
       throw e;
     }
   }
   return parse(src, options);
-};
+}
 
 export { parseSync as parse };
 export function parseFile (
   globPattern: (string | string[]),
-  options: IParseOptions,
-  cb : (error: Error, result: File) => void = null
+  options: ParseOptions,
+  cb: (error: Error, result: File) => void = null,
 ): File {
   // callback given
   if (cb) {
@@ -69,13 +74,13 @@ export function parseFile (
       fastGlob.sync(globPattern),
       (
         file: string,
-        cb: (error: Error, file: File) => void
+        cb: (error: Error, file: File) => void,
       ) => {
         let parseResult = null;
         try {
           parseResult = parseSync(
             readFileSync(file, conf.encoding),
-            options
+            options,
           );
         } catch (e) {
           return cb(e, null);
@@ -86,13 +91,13 @@ export function parseFile (
           new File(
             relative(
               cwd(),
-              file
+              file,
             ),
-            parseResult
-          )
+            parseResult,
+          ),
         );
       },
-      cb
+      cb,
     );
   }
 
@@ -101,23 +106,23 @@ export function parseFile (
     (file: string) => new File(
       relative(
         cwd(),
-        file
+        file,
       ),
       parseSync(
         readFileSync(file, conf.encoding),
-        options
-      )
-    )
+        options,
+      ),
+    ),
   );
-};
+}
 
 type Formatter = (parseResult: (File | UML[])) => any;
 type Formatters = {
-  default:Formatter;
-  graph:Formatter;
+  default: Formatter;
+  graph: Formatter;
 }
 
 export const formatters: Formatters = {
   default: defaultFormatter,
-  graph: graphFormatter
+  graph: graphFormatter,
 };

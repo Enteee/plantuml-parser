@@ -1,16 +1,16 @@
 const { task, watch, series } = require('gulp');
 
-task('watch', (cb) => {
+task('watch', () => {
   watch([
     'src/**/*.ts',
     'src/**/*.js',
     'src/**/*.pegjs',
     '!src/**/plantuml.ts',
     '!src/**/plantuml-trace.ts',
-    '!dist/'
+    '!dist/',
   ], {
-    ignoreInitial: false
+    ignoreInitial: false,
   }, series(
-    'test'
+    'test',
   ));
 });

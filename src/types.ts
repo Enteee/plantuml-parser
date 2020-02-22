@@ -1,28 +1,28 @@
 export class Note {
   constructor (
     public text: string,
-    public of: string = ''
+    public of: string = '',
   ) {
     this.text = text || '';
     this.of = of || '';
   }
-};
+}
 
 export class Component {
   constructor (
     public name: string,
-    public title: string
+    public title: string,
   ) {
   }
-};
+}
 
 export class UseCase {
   constructor (
     public name: string,
-    public title: string
+    public title: string,
   ) {
   }
-};
+}
 
 export type Accessor = ('-' | '#' | '~' | '+')
 export class Method {
@@ -31,60 +31,60 @@ export class Method {
     public isStatic: boolean,
     public accessor: Accessor,
     public returnType: string,
-    public _arguments: string
+    public _arguments: string,
   ) {
     this.isStatic = !!isStatic;
     this.accessor = accessor || '+';
     this.returnType = returnType || 'void';
     this._arguments = _arguments || '';
   }
-};
+}
 
 export class MemberVariable {
   constructor (
     public name: string,
     public isStatic: boolean,
     public accessor: Accessor,
-    public type: string = ''
+    public type: string = '',
   ) {
     this.isStatic = !!isStatic;
     this.accessor = accessor || '+';
     this.type = type || '';
   }
-};
+}
 
 export type Member = (Method | MemberVariable)
 export class Enum {
   constructor (
     public name: string,
     public title: string,
-    public members: Member[] = []
+    public members: Member[] = [],
   ) {
     this.members = members || [];
   }
-};
+}
 
 export class Interface {
   constructor (
     public name: string,
     public title: string,
-    public members: Member[] = []
+    public members: Member[] = [],
   ) {
     this.members = members || [];
   }
-};
+}
 
 export class Class {
   constructor (
     public name: string,
     public title: string,
     public isAbstract: boolean,
-    public members: Member[] = []
+    public members: Member[] = [],
   ) {
     this.isAbstract = !!isAbstract;
     this.members = members || [];
   }
-};
+}
 
 export type GroupType = ('package' | 'node' | 'folder' | 'frame' | 'cloud' | 'database')
 export class Group {
@@ -92,10 +92,10 @@ export class Group {
     public name: string,
     public title: string,
     public type: GroupType,
-    public elements: UMLElement[]
+    public elements: UMLElement[],
   ) {
   }
-};
+}
 
 export type RelationshipArrowHead = (
   | ''
@@ -131,7 +131,7 @@ export class Relationship {
     public leftCardinality: string,
     public rightCardinality: string,
     public label: string,
-    public hidden: boolean
+    public hidden: boolean,
   ) {
     this.leftType = leftType || '';
     this.rightType = rightType || '';
@@ -144,7 +144,7 @@ export class Relationship {
     this.label = label || '';
     this.hidden = !!hidden;
   }
-};
+}
 
 export type UMLElement = (
   | Note
@@ -158,15 +158,15 @@ export type UMLElement = (
 );
 export class UML {
   constructor (
-    public elements: UMLElement[]
+    public elements: UMLElement[],
   ) { }
-};
+}
 
 export class File {
   constructor (
     public name: string,
-    public diagrams: UML[]
+    public diagrams: UML[],
   ) {
     this.diagrams = diagrams || [];
   }
-};
+}

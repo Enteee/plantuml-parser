@@ -4,18 +4,18 @@ import { File, UML, Component, MemberVariable, Interface, Class, Relationship } 
  * TODO: make this propertly typed
  */
 
-export default function graphFormatter (parseResult: (File | UML[])) : string {
-  const nodes:any[] = [];
-  const edges:any[] = [];
+export default function graphFormatter (parseResult: (File | UML[])): string {
+  const nodes: any[] = [];
+  const edges: any[] = [];
 
-  var fileName = '';
-  function linkToFile (node:any) {
+  let fileName = '';
+  function linkToFile (node: any) {
     if (fileName) {
       edges.push({
         from: fileName,
         to: node.name,
         name: 'contains',
-        hidden: true
+        hidden: true,
       });
     }
   }
@@ -28,30 +28,30 @@ export default function graphFormatter (parseResult: (File | UML[])) : string {
         ...node,
         id: node.name,
         type: node.constructor.name,
-        hidden: true
+        hidden: true,
       });
       node.diagrams
         .filter(
-          (uml) => uml instanceof UML
+          (uml) => uml instanceof UML,
         )
         .forEach(
           (uml) => uml.elements.forEach(
-            (element) => extractNodes(element)
-          )
+            (element) => extractNodes(element),
+          ),
         );
     } else if (node instanceof Class || node instanceof Interface) {
       nodes.push({
         ...node,
         id: node.name,
         type: node.constructor.name,
-        hidden: true
+        hidden: true,
       });
 
       linkToFile(node);
 
       node.members
         .filter(
-          (attribute) => attribute instanceof MemberVariable
+          (attribute) => attribute instanceof MemberVariable,
         )
         .forEach(
           (attribute) => {
@@ -59,17 +59,17 @@ export default function graphFormatter (parseResult: (File | UML[])) : string {
               ...attribute,
               id: attribute.name,
               type: 'Attribute',
-              hidden: true
+              hidden: true,
             });
             edges.push({
               from: node.name,
               to: attribute.name,
               name: 'has',
-              hidden: true
+              hidden: true,
             });
 
             linkToFile(attribute);
-          }
+          },
         );
     } else if (node instanceof Component) {
       nodes.push({
@@ -77,27 +77,27 @@ export default function graphFormatter (parseResult: (File | UML[])) : string {
         id: node.name,
         type: node.constructor.name,
         title: node.title,
-        hidden: true
+        hidden: true,
       });
       edges.push({
         from: node.name,
         to: fileName,
         name: 'contains',
-        hidden: true
+        hidden: true,
       });
 
       linkToFile(node);
     } else if (node instanceof Object) {
       Object.keys(node).map(
-        (k) => extractNodes(node[k])
+        (k) => extractNodes(node[k]),
       );
     }
   })(parseResult);
 
   (function extractEdges (node: any) {
-    function getNodeByName (nodeName:string) {
+    function getNodeByName (nodeName: string) {
       return nodes.filter(
-        (n) => n.name === nodeName
+        (n) => n.name === nodeName,
       )[0];
     }
     if (node instanceof Relationship) {
@@ -127,7 +127,7 @@ export default function graphFormatter (parseResult: (File | UML[])) : string {
             from: node.left,
             to: node.right,
             name: 'extends',
-            hidden: true
+            hidden: true,
           });
         } else if (
           node.leftArrowHead === '<|' && node.leftArrowBody === '-' &&
@@ -137,7 +137,7 @@ export default function graphFormatter (parseResult: (File | UML[])) : string {
             from: node.right,
             to: node.left,
             name: 'extends',
-            hidden: true
+            hidden: true,
           });
         }
       } else if (
@@ -154,7 +154,7 @@ export default function graphFormatter (parseResult: (File | UML[])) : string {
             name: 'exposes',
             type: node.label.split(',')[0],
             availability: node.label.split(',')[1],
-            hidden: true
+            hidden: true,
           });
         } else if (
           node.leftArrowHead === '' && node.leftArrowBody === '.' &&
@@ -170,7 +170,7 @@ export default function graphFormatter (parseResult: (File | UML[])) : string {
             frequency: node.label.split(',')[1],
             serviceAccount: node.label.split(',')[2],
             criticality: node.label.split(',')[3],
-            hidden: true
+            hidden: true,
           });
         } else if (
           node.leftArrowHead === '<' && node.leftArrowBody === '.' &&
@@ -186,7 +186,7 @@ export default function graphFormatter (parseResult: (File | UML[])) : string {
             frequency: node.label.split(',')[1],
             serviceAccount: node.label.split(',')[2],
             criticality: node.label.split(',')[3],
-            hidden: true
+            hidden: true,
           });
         }
       } else if (
@@ -203,7 +203,7 @@ export default function graphFormatter (parseResult: (File | UML[])) : string {
             name: 'exposes',
             type: node.label.split(',')[0],
             availability: node.label.split(',')[1],
-            hidden: true
+            hidden: true,
           });
         } else if (
           node.leftArrowHead === '' && node.leftArrowBody === '.' &&
@@ -219,7 +219,7 @@ export default function graphFormatter (parseResult: (File | UML[])) : string {
             frequency: node.label.split(',')[1],
             serviceAccount: node.label.split(',')[2],
             criticality: node.label.split(',')[3],
-            hidden: true
+            hidden: true,
           });
         } else if (
           node.leftArrowHead === '<' && node.leftArrowBody === '.' &&
@@ -235,13 +235,13 @@ export default function graphFormatter (parseResult: (File | UML[])) : string {
             frequency: node.label.split(',')[1],
             serviceAccount: node.label.split(',')[2],
             criticality: node.label.split(',')[3],
-            hidden: true
+            hidden: true,
           });
         }
       }
     } else if (node instanceof Object) {
       Object.keys(node).map(
-        (k) => extractEdges(node[k])
+        (k) => extractEdges(node[k]),
       );
     }
   })(parseResult);
@@ -249,9 +249,9 @@ export default function graphFormatter (parseResult: (File | UML[])) : string {
   return JSON.stringify(
     {
       nodes: nodes,
-      edges: edges
+      edges: edges,
     },
     null,
-    2
+    2,
   );
-};
+}
