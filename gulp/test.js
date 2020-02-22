@@ -12,10 +12,16 @@ const log = require('fancy-log');
 
 task('test-run', () =>
   src(join(conf.test.dir, 'test.js'), { read: false })
-    .pipe(mocha({
-      // Stop on first error
-      bail: false,
-    })),
+    .pipe(
+      mocha({
+        // Stop on first error
+        bail: false,
+        require: [
+          'ts-node/register',
+          'source-map-support/register',
+        ],
+      }),
+    ),
 );
 
 /**
