@@ -2,7 +2,8 @@
   "name": "plantuml-parser",
   "version": "0.0.9",
   "description": "Parse PlantUML Syntax in JavaScript",
-  "main": "dist",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "conf.js",
     "dist/**/*.js"
@@ -49,6 +50,7 @@
     "plantuml-parser": "dist/bin/cli.js"
   },
   "scripts": {
+    "prepublish": "git clean -f -d -x -- ':!node_modules' && npm run build",
     "start": "node dist/bin/cli.js",
     "build": "gulp build",
     "test": "nyc gulp test && nyc check-coverage --lines 65 --functions 75 --branches 50 && eslint '**/*.js' '**/*.ts'",
