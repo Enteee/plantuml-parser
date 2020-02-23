@@ -129,4 +129,3 @@ export const formatters: Formatters = {
   graph: graphFormatter,
 };
 
-
