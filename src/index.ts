@@ -1,4 +1,5 @@
-import { File, UML } from './types';
+import * as types from './types';
+export * from './types';
 
 import defaultFormatter from './formatters/default';
 import graphFormatter from './formatters/graph';
@@ -31,8 +32,8 @@ export interface ParseOptions {
 
 function parseSync (
   src: string,
-  options: ParseOptions,
-): UML[] {
+  options: ParseOptions = {},
+): types.UML[] {
   options = options || {};
 
   if (options.verbose) {
@@ -65,16 +66,17 @@ function parseSync (
 export { parseSync as parse };
 export function parseFile (
   globPattern: (string | string[]),
-  options: ParseOptions,
-  cb: (error: Error, result: File) => void = null,
-): File {
+  options: ParseOptions = {},
+  cb: (error: Error, result: types.File) => void = null,
+): types.File {
+  options = options || {};
   // callback given
   if (cb) {
     return map(
       fastGlob.sync(globPattern),
       (
         file: string,
-        cb: (error: Error, file: File) => void,
+        cb: (error: Error, file: types.File) => void,
       ) => {
         let parseResult = null;
         try {
@@ -88,7 +90,7 @@ export function parseFile (
 
         return cb(
           null,
-          new File(
+          new types.File(
             relative(
               cwd(),
               file,
@@ -103,7 +105,7 @@ export function parseFile (
 
   // no callback given
   return fastGlob.sync(globPattern).map(
-    (file: string) => new File(
+    (file: string) => new types.File(
       relative(
         cwd(),
         file,
@@ -116,7 +118,7 @@ export function parseFile (
   );
 }
 
-type Formatter = (parseResult: (File | UML[])) => any;
+type Formatter = (parseResult: (types.File | types.UML[])) => any;
 type Formatters = {
   default: Formatter;
   graph: Formatter;
@@ -126,3 +128,5 @@ export const formatters: Formatters = {
   default: defaultFormatter,
   graph: graphFormatter,
 };
+
+
