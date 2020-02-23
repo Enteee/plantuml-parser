@@ -1,5 +1,5 @@
-# plantuml-parser [![npm version](https://badge.fury.io/js/plantuml-parser.svg)](https://badge.fury.io/js/plantuml-parser) [![Build Status](https://travis-ci.com/Enteee/plantuml-parser.svg?branch=master)](https://travis-ci.com/Enteee/plantuml-parser) [![Coverage Status](https://coveralls.io/repos/github/Enteee/plantuml-parser/badge.svg?branch=master)](https://coveralls.io/github/Enteee/plantuml-parser?branch=master) ![Twitter URL](https://img.shields.io/twitter/url?label=%23PlantUMLParser&url=https%3A%2F%2Fgithub.com%2FEnteee%2Fplantuml-parser)
-_Parse PlantUML Syntax in JavaScript_
+# plantuml-parser [![npm version](https://badge.fury.io/js/plantuml-parser.svg)](https://badge.fury.io/js/plantuml-parser) [![Build Status](https://travis-ci.com/Enteee/plantuml-parser.svg?branch=master)](https://travis-ci.com/Enteee/plantuml-parser) [![Coverage Status](https://coveralls.io/repos/github/Enteee/plantuml-parser/badge.svg?branch=master)](https://coveralls.io/github/Enteee/plantuml-parser?branch=master) [![Twitter URL](https://img.shields.io/twitter/url?label=%23PlantUMLParser&url=https%3A%2F%2Fgithub.com%2FEnteee%2Fplantuml-parser)](https://twitter.com/intent/tweet?text=Parse%20PlantUML%20with%20JavaScript%20or%20TypeScript%20%F0%9F%9A%80&hashtags=PlantUMLParser,JavaScript,TypeScript&url=https%3A%2F%2Fgithub.com%2FEnteee%2Fplantuml-parser)
+_Parse PlantUML Syntax with JavaScript or TypeScript_
 
 The aim of this project is to provide a feature-complete, well tested and
 maintainable [Parsing Expression Grammar (PEG)](src/plantuml.pegjs)
