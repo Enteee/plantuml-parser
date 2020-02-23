@@ -80,7 +80,8 @@ console.log(
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": ""
+        "label": "",
+        "hidden": false
       }
     ]
   }
