@@ -2,6 +2,47 @@
 // ===============
 //
 
+{
+
+/**
+ * Extract the actual text when matched using negative subexpression matching.
+ * Example:
+ *  text:(!NewLine .)+ EndLine
+ * Input:
+ *  [
+ *    [
+ *      [null]
+ *      "f"
+ *    ]
+ *    [
+ *      [null]
+ *      "o"
+ *    ]
+ *    [
+ *      [null]
+ *      "o"
+ *    ]
+ *  ]
+ * Output:
+ *  "foo"
+ */
+function extractText(text: Array<Array<string>>){
+  return text.map((c) => c[1]).join('').trim();
+}
+
+/**
+ * Remove all undefined elements in an array
+ * Input: [1, 2, undefined, 3]
+ * Output: [1, 2, 3]
+ */
+function removeUndefined(array: Array<any>){
+  return array.filter(
+    e => e !== undefined
+  );
+}
+
+}
+
 PlantUMLFile
   = diagrams:Diagrams
   {
@@ -13,7 +54,7 @@ PlantUMLFile
   }
 
 Diagrams
- = (
+  = diagrams:(
     (!"@startuml" .)*
     "@startuml" _ DiagramId? _ NewLine
       uml:UML
@@ -30,10 +71,8 @@ DiagramId
 UML
   = elements:UMLElement*
   {
-    return new (require('./uml'))(
-      elements.filter(
-        e => e !== undefined
-      )
+    return new types.UML(
+      removeUndefined(elements)
     );
   }
 
@@ -90,9 +129,7 @@ Param
 Together
   = _ "together "i _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
-    return elements.filter(
-      e => e !== undefined
-    );
+    return removeUndefined(elements);
   }
 
 //
@@ -102,13 +139,11 @@ Together
 Group
   = _ type:GroupType " " _ name:ElementName _ Stereotype? _ Color? _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
-    return new (require('./group'))(
+    return new types.Group(
       name.name,
       name.title,
       type,
-      elements.filter(
-        e => e !== undefined
-      )
+      removeUndefined(elements),
     );
   }
 
@@ -129,28 +164,28 @@ GroupType
 Note
   = _ "note "i _ Direction _ of:NoteOf? ":" _ text:(!NewLine .)+ EndLine
   {
-    return new (require('./note'))(
-      text.map((c) => c[1]).join('').trim(),
+    return new types.Note(
+      extractText(text),
       of
     )
   }
   / _ "note "i _ Direction _ of:NoteOf? _ NewLine text:(!(_ "end note" NewLine) .)+ EndLine
   {
-    return new (require('./note'))(
-      text.map((c) => c[1]).join('').trim(),
+    return new types.Note(
+      extractText(text),
       of
     )
   }
   / _ "note "i _ Direction _ of:NoteOf? _ NewLine text:(!(_ "end note" NewLine) .)+ EndLine
   {
-    return new (require('./note'))(
-      text.map((c) => c[1]).join('').trim(),
+    return new types.Note(
+      extractText(text),
       of
     )
   }
   / _ "note "i _ text:QuotedString _ "as " Name EndLine
   {
-    return new (require('./note'))(
+    return new types.Note(
       text,
     )
   }
@@ -168,18 +203,16 @@ NoteOf
 Class
   = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
-    return new (require("./class"))(
+    return new types.Class(
       name.name,
       name.title,
       !!isAbstract,
-      members.filter(
-        (m) => m !== undefined
-      )
+      removeUndefined(members),
     );
   }
   / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? EndLine
   {
-    return new (require("./class"))(
+    return new types.Class(
       name.name,
       name.title,
       !!isAbstract
@@ -205,22 +238,22 @@ Separator
 Method
   = _ isStatic:"static "i? _ accessor:Accessor? _ type:Name _ name:Name _ "(" _arguments:(!")" .)* ")" EndLine
   {
-    return new (require('./method'))(
+    return new types.Method(
       name,
-      isStatic,
+      !!isStatic,
       accessor,
       type,
-      _arguments.join(''),
+      extractText(_arguments),
     );
   }
   / _ isStatic:"static "i? _ accessor:Accessor? _ name:Name _ "(" _arguments:(!")" .)* ")" EndLine
   {
-    return new (require('./method'))(
+    return new types.Method(
       name,
-      isStatic,
+      !!isStatic,
       accessor,
       undefined,
-      _arguments.join(''),
+      extractText(_arguments),
     );
   }
 
@@ -228,7 +261,7 @@ Method
 MemberVariable
   = _ isStatic:"static "i? _ accessor:Accessor? _ type:Name _ name:Name EndLine
   {
-    return new (require('./memberVariable'))(
+    return new types.MemberVariable(
       name,
       !!isStatic,
       accessor,
@@ -237,7 +270,7 @@ MemberVariable
   }
   / _ isStatic:"static "i? _ accessor:Accessor? _ name:Name EndLine
   {
-    return new (require('./memberVariable'))(
+    return new types.MemberVariable(
       name,
       !!isStatic,
       accessor
@@ -251,17 +284,15 @@ MemberVariable
 Interface
   = _ "interface "i _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
-    return new (require('./interface'))(
+    return new types.Interface(
       name.name,
       name.title,
-      members.filter(
-        (m) => m !== undefined
-      )
+      removeUndefined(members),
     );
   }
   / _ "interface "i _ name:ElementName _ Decorators? _ EndLine
   {
-    return new (require('./interface'))(
+    return new types.Interface(
       name.name,
       name.title,
     );
@@ -274,17 +305,15 @@ Interface
 Enum
   = _ "enum "i _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
-    return new (require('./enum'))(
+    return new types.Enum(
       name.name,
       name.title,
-      members.filter(
-        (m) => m !== undefined
-      )
+      removeUndefined(members),
     );
   }
   / _ "enum "i _ name:ElementName _ Decorators? _ EndLine
   {
-    return new (require('./enum'))(
+    return new types.Enum(
       name.name,
       name.title,
     );
@@ -297,14 +326,14 @@ Enum
 Component
   = _ "component "i _ name:ElementName _ Stereotype? EndLine
   {
-    return new (require('./component'))(
+    return new types.Component(
       name.name,
       name.title,
     );
   }
   / _ name:ShortComponent EndLine
   {
-    return new (require('./component'))(
+    return new types.Component(
       name.name,
       name.title,
     );
@@ -315,12 +344,12 @@ ShortComponent
   {
     return {
       name: name,
-      title: title.map((c) => c[1]).join('').trim(),
+      title: extractText(title),
     };
   }
   / "[" name:(!("]" / NewLine) .)+ "]"
   {
-    name = name.map((c) => c[1]).join('').trim();
+    name = extractText(name);
     return {
       name: name,
       title: name,
@@ -334,14 +363,14 @@ ShortComponent
 UseCase
   = _ "usecase "i _ name:ElementName EndLine
   {
-    return new (require('./useCase'))(
+    return new types.UseCase(
       name.name,
       name.title,
     );
   }
   / _ name:ShortUseCase EndLine
   {
-    return new (require('./useCase'))(
+    return new types.UseCase(
       name.name,
       name.title,
     );
@@ -352,12 +381,12 @@ ShortUseCase
   {
     return {
       name: name,
-      title: title.map((c) => c[1]).join('').trim(),
+      title: extractText(title),
     };
   }
   / "(" name:(!(")" / NewLine) .)+ ")"
   {
-    name = name.map((c) => c[1]).join('').trim();
+    name = extractText(name);
     return {
       name: name,
       title: name,
@@ -371,7 +400,7 @@ ShortUseCase
 Relationship
   = _ left:ElementReference _ leftCardinality:QuotedString? _ leftArrowHead:RelationshipArrowHead? leftArrowBody:RelationshipArrowBody hidden:RelationshipHidden? Direction? rightArrowBody:RelationshipArrowBody rightArrowHead:RelationshipArrowHead? _ rightCardinality:QuotedString? _ right:ElementReference _ label:(RelationshipLabel)? EndLine
   {
-    return new (require('./relationship'))(
+    return new types.Relationship(
       left.name,
       right.name,
       left.type,
@@ -383,12 +412,12 @@ Relationship
       leftCardinality,
       rightCardinality,
       label,
-      hidden,
+      !!hidden,
     );
   }
   / _ left:ElementReference _ leftCardinality:QuotedString? _ leftArrowHead:RelationshipArrowHead? arrowBody:RelationshipArrowBody rightArrowHead:RelationshipArrowHead? _ rightCardinality:QuotedString? _ right:ElementReference _ label:(RelationshipLabel)? EndLine
   {
-    return new (require('./relationship'))(
+    return new types.Relationship(
       left.name,
       right.name,
       left.type,
@@ -434,7 +463,7 @@ RelationshipArrowBody
 RelationshipLabel
   = ":" _ label:(!NewLine .)+
   {
-    return label.map((c) => c[1]).join('').trim()
+    return extractText(label);
   }
 
 RelationshipHidden
@@ -534,7 +563,7 @@ ElementName
 QuotedString
   = "\"" string:(!("\"" / NewLine) .)+ "\""
   {
-    return string.map((c) => c[1]).join('').trim();
+    return extractText(string);
   }
 
 Name
@@ -556,7 +585,7 @@ Stereotype
 
 
 Accessor
-  = [+\-#]
+  = [\-#~+]
 
 Color
   = color:([#A-Za-z0-9]+)

@@ -1,17 +1,15 @@
-# plantuml-parser [![npm version](https://badge.fury.io/js/plantuml-parser.svg)](https://badge.fury.io/js/plantuml-parser) [![Build Status](https://travis-ci.com/Enteee/plantuml-parser.svg?branch=master)](https://travis-ci.com/Enteee/plantuml-parser) [![Coverage Status](https://coveralls.io/repos/github/Enteee/plantuml-parser/badge.svg?branch=master)](https://coveralls.io/github/Enteee/plantuml-parser?branch=master)
-_Parse PlantUML Syntax in JavaScript_
+# plantuml-parser [![npm version](https://badge.fury.io/js/plantuml-parser.svg)](https://badge.fury.io/js/plantuml-parser) [![Build Status](https://travis-ci.com/Enteee/plantuml-parser.svg?branch=master)](https://travis-ci.com/Enteee/plantuml-parser) [![Coverage Status](https://coveralls.io/repos/github/Enteee/plantuml-parser/badge.svg?branch=master)](https://coveralls.io/github/Enteee/plantuml-parser?branch=master) [![Twitter URL](https://img.shields.io/twitter/url?label=%23PlantUMLParser&url=https%3A%2F%2Fgithub.com%2FEnteee%2Fplantuml-parser)](https://twitter.com/intent/tweet?text=Parse%20PlantUML%20with%20JavaScript%20or%20TypeScript%20%F0%9F%9A%80&hashtags=PlantUMLParser,JavaScript,TypeScript&url=https%3A%2F%2Fgithub.com%2FEnteee%2Fplantuml-parser)
+_Parse PlantUML with JavaScript or TypeScript_
 
-The aim of this project is to provide a feature-complete, well tested, and
+The aim of this project is to provide a feature-complete, well tested and
 maintainable [Parsing Expression Grammar (PEG)](src/plantuml.pegjs)
 for the [PlantUML](http://plantuml.com/) syntax. The parser is designed
 to be used as [JavaScript library](#usage) or from the [Command Line](#command-line-interface).
 
 **Important**: The parser is not yet feature-complete. But we focus on writing a
-robust implementation which can parse parts of diagrams without implementing the full
+robust implementation which can parse parts of diagrams without knowing the full
 syntax. This means that the parser probably still parses just about enough to get
 you started. If not, please [contribute :heart:](#contribute-heart).
-
-[#PlantUMLParser](https://twitter.com/hashtag/PlantUMLParser)
 
 ## Installation
 
@@ -21,8 +19,13 @@ $ npm install --save plantuml-parser
 
 ## Examples / Fixtures
 
-We keep a set of PlantUML scripts (`in.plantuml`) and the corresponding
-formatted output (`parse[File]-out.<formatter>`) in [test/fixtures/](test/fixtures).
+PlantUML is not a formally defined language - something we would like to change.
+This means we have to build this parser by reverse engineering from examples.
+For this reason we keep a large set of PlantUML diagrams (`in.plantuml`) and the corresponding
+formatted output (`parse[File]-out.<formatter>`) in [test/fixtures/](test/fixtures). 
+We even have diagrams which exposed bugs in the parser or diagrams which contain known
+broken PlantUML syntax. Please help us expand that collection by [contributing](#contribute-heart)
+your own diagrams. Every diagram counts :rocket:.
 
 ## Usage
 
@@ -77,7 +80,8 @@ console.log(
         "rightArrowBody": "-",
         "leftCardinality": "",
         "rightCardinality": "",
-        "label": ""
+        "label": "",
+        "hidden": false
       }
     ]
   }
@@ -93,7 +97,7 @@ Parse PlantUML in `data`. Returns the parse result.
 
 * `data`: data to parse
 * `options`: supports all [PEG.js parser options]. Enable tracing with
-`options.verbose = true`. If tracing is enabled, `options` is also forwardet to the
+`options.verbose = true`. If tracing is enabled, `options` is also forwarded to the
 tracer object. See [pegjs-backtrace options] for a full list of supported tracer options.
 
 ### `parseFile(pattern, options, cb)`
@@ -102,7 +106,7 @@ Parse all PlantUML diagrams in the files matching `pattern`. If given, the callb
 
 * `pattern`: files to parse, supports globbing, e.g.: `**/*.plantuml`.
 * `options`: supports all [PEG.js parser options]. Enable tracing with
-`options.verbose = true`. If tracing is enabled, `options` is also forwardet to the
+`options.verbose = true`. If tracing is enabled, `options` is also forwarded to the
 tracer object. See [pegjs-backtrace options] for a full list of supported tracer options.
 * `cb`: (optional) asynchronous callback. Called with: `cb(err, result)`
 
@@ -156,6 +160,10 @@ Options:
   - [x] Code linting
   - [x] Error case testing
   - [ ] Dependency audit
+- Misc
+  - [x] Typescript support
+  - [x] Fully typed parser result
+  - [ ] [Internally typed parser](https://github.com/Enteee/plantuml-parser/issues/34)
 
 ## Test
 
@@ -185,6 +193,8 @@ $ git commit
 
 ## Related
 
+* [PEG.js](https://pegjs.org): Parser Generator for JavaScript
+* [ts-pegjs](https://github.com/metadevpro/ts-pegjs): Plugin for pegjs to generate TypeScript parsers
 * [PlantUML code generator](https://github.com/bafolts/plantuml-code-generator): Provides a command line utility to generate code in various languages given a PlantUML class diagram.
 
 ## License

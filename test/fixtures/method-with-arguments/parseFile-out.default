@@ -1,0 +1,32 @@
+[
+  {
+    "name": "test/fixtures/method-with-arguments/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "Dummy",
+            "title": "Dummy",
+            "isAbstract": false,
+            "members": [
+              {
+                "name": "method1",
+                "isStatic": false,
+                "accessor": "~",
+                "returnType": "void",
+                "_arguments": "int i, boolean b, char c"
+              },
+              {
+                "name": "method2",
+                "isStatic": false,
+                "accessor": "+",
+                "returnType": "void",
+                "_arguments": "int i, boolean b, char c"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

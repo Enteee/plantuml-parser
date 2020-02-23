@@ -60,6 +60,12 @@ typings/
 # next.js build output
 .next
 
+# Ignore distribution folder
+dist/
+
+# Generated plantuml typescript filtes
+src/plantuml-trace.ts
+src/plantuml.ts
 
 # vim
 *.swp

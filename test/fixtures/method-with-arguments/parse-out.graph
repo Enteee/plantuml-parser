@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "name": "Dummy",
+      "title": "Dummy",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "method1",
+          "isStatic": false,
+          "accessor": "~",
+          "returnType": "void",
+          "_arguments": "int i, boolean b, char c"
+        },
+        {
+          "name": "method2",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": "int i, boolean b, char c"
+        }
+      ],
+      "id": "Dummy",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

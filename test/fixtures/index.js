@@ -8,6 +8,7 @@
  *     error:,
  *     out: {
  *       name:,
+ *       parser:,
  *       format:,
  *       src: ,
  *     }
@@ -26,7 +27,7 @@ function getDirectories (source) {
   return readdirSync(source)
     .map(name => join(source, name))
     .filter(
-      (source) => lstatSync(source).isDirectory()
+      (source) => lstatSync(source).isDirectory(),
     );
 }
 
@@ -36,12 +37,12 @@ function getOutputFiles (source) {
     .filter(
       (source) => lstatSync(source).isFile() &&
         source.match(
-          conf.fixtures.outputFileMatcher
-        )
+          conf.fixtures.outputFileMatcher,
+        ),
     ).map(
       (source) => {
         const match = source.match(
-          conf.fixtures.outputFileMatcher
+          conf.fixtures.outputFileMatcher,
         );
         return {
           name: match[0],
@@ -50,11 +51,11 @@ function getOutputFiles (source) {
           src: readFileSync(
             match[0],
             {
-              encoding: conf.encoding
-            }
-          )
+              encoding: conf.encoding,
+            },
+          ),
         };
-      }
+      },
     );
 }
 
@@ -66,7 +67,7 @@ module.exports = getDirectories(conf.fixtures.dir).map(
     try {
       src = readFileSync(
         srcFile,
-        conf.encoding
+        conf.encoding,
       );
     } catch (e) {
       log.warn('Skipping: ' + directory);
@@ -77,8 +78,8 @@ module.exports = getDirectories(conf.fixtures.dir).map(
       error = conf.fixtures.deserializeParseError(
         readFileSync(
           errorFile,
-          conf.encoding
-        )
+          conf.encoding,
+        ),
       );
     } catch (e) {
       // do nothing
@@ -88,7 +89,7 @@ module.exports = getDirectories(conf.fixtures.dir).map(
       srcFile: srcFile,
       src: src,
       error: error,
-      out: getOutputFiles(directory)
+      out: getOutputFiles(directory),
     };
-  }
+  },
 ).filter((i) => i !== undefined);

@@ -30,6 +30,12 @@
               {
                 "name": "Name",
                 "isStatic": false,
+                "accessor": "~",
+                "type": ""
+              },
+              {
+                "name": "Name",
+                "isStatic": false,
                 "accessor": "-",
                 "returnType": "void",
                 "_arguments": ""
@@ -45,6 +51,13 @@
                 "name": "Name",
                 "isStatic": false,
                 "accessor": "#",
+                "returnType": "void",
+                "_arguments": ""
+              },
+              {
+                "name": "Name",
+                "isStatic": false,
+                "accessor": "~",
                 "returnType": "void",
                 "_arguments": ""
               }

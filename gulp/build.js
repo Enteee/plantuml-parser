@@ -1,40 +1,79 @@
 const conf = require('../conf');
 
-const { task, parallel, src, dest } = require('gulp');
+const { task, series, parallel, src, dest } = require('gulp');
 const { join } = require('path');
+
 
 const rename = require('gulp-rename');
 const pegjs = require('gulp-pegjs');
+const ts = require('gulp-typescript');
+const sourcemaps = require('gulp-sourcemaps');
+const tsProject = ts.createProject('tsconfig.json');
+
+task('build-copy-js',
+  () => src(join(conf.src.dir, '**', '*.js'))
+    .pipe(
+      dest(conf.dist.dir),
+    ),
+);
 
 task('build-optimized',
   (cb) => src(join(conf.src.dir, '*.pegjs'))
     .pipe(
       pegjs({
-        format: 'commonjs'
-      }).on('error', cb)
+        ...conf.build.options,
+      }).on('error', cb),
     )
     .pipe(
-      dest(conf.src.dir)
+      rename('plantuml.ts'),
     )
+    .pipe(
+      dest(conf.src.dir),
+    ),
 );
 
 task('build-debug',
   (cb) => src(join(conf.src.dir, '*.pegjs'))
     .pipe(
       pegjs({
-        format: 'commonjs',
-        trace: true
-      }).on('error', cb)
+        trace: true,
+        ...conf.build.options,
+      }).on('error', cb),
     )
     .pipe(
-      rename('plantuml-trace.js')
+      rename('plantuml-trace.ts'),
     )
     .pipe(
-      dest(conf.src.dir)
-    )
+      dest(conf.src.dir),
+    ),
 );
 
-task('build', parallel(
-  'build-optimized',
-  'build-debug'
-));
+task('build-typescript',
+  () => tsProject.src()
+    .pipe(sourcemaps.init())
+    .pipe(tsProject())
+    .pipe(
+      sourcemaps.write(
+        '.',
+        {
+          includeContent: false,
+          sourceRoot: '../src',
+        },
+      ),
+    )
+    .pipe(
+      dest(conf.dist.dir),
+    ),
+);
+
+task(
+  'build',
+  series(
+    'build-copy-js',
+    parallel(
+      'build-optimized',
+      'build-debug',
+    ),
+    'build-typescript',
+  ),
+);

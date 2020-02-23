@@ -22,7 +22,7 @@ const IDENTIFIERS = [
   'abstract interface',
   'enum',
   'component',
-  'usecase'
+  'usecase',
 ];
 
 const { writeFileSync, appendFileSync } = require('fs');
@@ -45,6 +45,6 @@ out('This file contains diagrams with all different kind of broken identifiers')
 out('');
 out('@startuml');
 IDENTIFIERS.forEach(
-  (i) => getAllTruncatedStrings(i).forEach(out)
+  (i) => getAllTruncatedStrings(i).forEach(out),
 );
 out('@enduml');

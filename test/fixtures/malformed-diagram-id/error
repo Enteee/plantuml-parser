@@ -1,5 +1,5 @@
 {
-  "message": "Expected \")\" or [A-Za-z0-9._] but \"\\n\" found.",
+  "message": "Expected \")\" or [A-Z,a-z,0-9,.,_] but \"\\n\" found.",
   "expected": [
     {
       "type": "class",
