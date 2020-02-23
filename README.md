@@ -96,7 +96,7 @@ Parse PlantUML in `data`. Returns the parse result.
 
 * `data`: data to parse
 * `options`: supports all [PEG.js parser options]. Enable tracing with
-`options.verbose = true`. If tracing is enabled, `options` is also forwardet to the
+`options.verbose = true`. If tracing is enabled, `options` is also forwarded to the
 tracer object. See [pegjs-backtrace options] for a full list of supported tracer options.
 
 ### `parseFile(pattern, options, cb)`
@@ -105,7 +105,7 @@ Parse all PlantUML diagrams in the files matching `pattern`. If given, the callb
 
 * `pattern`: files to parse, supports globbing, e.g.: `**/*.plantuml`.
 * `options`: supports all [PEG.js parser options]. Enable tracing with
-`options.verbose = true`. If tracing is enabled, `options` is also forwardet to the
+`options.verbose = true`. If tracing is enabled, `options` is also forwarded to the
 tracer object. See [pegjs-backtrace options] for a full list of supported tracer options.
 * `cb`: (optional) asynchronous callback. Called with: `cb(err, result)`
 
