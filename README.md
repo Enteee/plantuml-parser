@@ -1,17 +1,15 @@
-# plantuml-parser [![npm version](https://badge.fury.io/js/plantuml-parser.svg)](https://badge.fury.io/js/plantuml-parser) [![Build Status](https://travis-ci.com/Enteee/plantuml-parser.svg?branch=master)](https://travis-ci.com/Enteee/plantuml-parser) [![Coverage Status](https://coveralls.io/repos/github/Enteee/plantuml-parser/badge.svg?branch=master)](https://coveralls.io/github/Enteee/plantuml-parser?branch=master)
+# plantuml-parser [![npm version](https://badge.fury.io/js/plantuml-parser.svg)](https://badge.fury.io/js/plantuml-parser) [![Build Status](https://travis-ci.com/Enteee/plantuml-parser.svg?branch=master)](https://travis-ci.com/Enteee/plantuml-parser) [![Coverage Status](https://coveralls.io/repos/github/Enteee/plantuml-parser/badge.svg?branch=master)](https://coveralls.io/github/Enteee/plantuml-parser?branch=master) ![Twitter URL](https://img.shields.io/twitter/url?label=%23PlantUMLParser&url=https%3A%2F%2Fgithub.com%2FEnteee%2Fplantuml-parser)
 _Parse PlantUML Syntax in JavaScript_
 
-The aim of this project is to provide a feature-complete, well tested, and
+The aim of this project is to provide a feature-complete, well tested and
 maintainable [Parsing Expression Grammar (PEG)](src/plantuml.pegjs)
 for the [PlantUML](http://plantuml.com/) syntax. The parser is designed
 to be used as [JavaScript library](#usage) or from the [Command Line](#command-line-interface).
 
 **Important**: The parser is not yet feature-complete. But we focus on writing a
-robust implementation which can parse parts of diagrams without implementing the full
+robust implementation which can parse parts of diagrams without knowing the full
 syntax. This means that the parser probably still parses just about enough to get
 you started. If not, please [contribute :heart:](#contribute-heart).
-
-[#PlantUMLParser](https://twitter.com/hashtag/PlantUMLParser)
 
 ## Installation
 
@@ -21,7 +19,7 @@ $ npm install --save plantuml-parser
 
 ## Examples / Fixtures
 
-We keep a set of PlantUML scripts (`in.plantuml`) and the corresponding
+We keep a large set of PlantUML scripts (`in.plantuml`) and the corresponding
 formatted output (`parse[File]-out.<formatter>`) in [test/fixtures/](test/fixtures).
 
 ## Usage
@@ -156,6 +154,10 @@ Options:
   - [x] Code linting
   - [x] Error case testing
   - [ ] Dependency audit
+- Misc
+  - [x] Typescript support
+  - [x] Fully typed parser result
+  - [ ] [Internally typed parser](https://github.com/Enteee/plantuml-parser/issues/34)
 
 ## Test
 
@@ -185,6 +187,8 @@ $ git commit
 
 ## Related
 
+* [PEG.js](https://pegjs.org): Parser Generator for JavaScript](
+* [ts-pegjs](https://github.com/metadevpro/ts-pegjs): Plugin for pegjs to generate TypeScript parsers
 * [PlantUML code generator](https://github.com/bafolts/plantuml-code-generator): Provides a command line utility to generate code in various languages given a PlantUML class diagram.
 
 ## License
