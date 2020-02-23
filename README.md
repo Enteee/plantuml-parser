@@ -187,7 +187,7 @@ $ git commit
 
 ## Related
 
-* [PEG.js](https://pegjs.org): Parser Generator for JavaScript](
+* [PEG.js](https://pegjs.org): Parser Generator for JavaScript
 * [ts-pegjs](https://github.com/metadevpro/ts-pegjs): Plugin for pegjs to generate TypeScript parsers
 * [PlantUML code generator](https://github.com/bafolts/plantuml-code-generator): Provides a command line utility to generate code in various languages given a PlantUML class diagram.
 
