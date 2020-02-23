@@ -3,7 +3,6 @@
  */
 
 const { join } = require('path');
-const tspegjs = require('ts-pegjs');
 const serializeError = require('serialize-error');
 
 module.exports = {
@@ -16,18 +15,6 @@ module.exports = {
   },
   test: {
     dir: join(__dirname, 'test/'),
-  },
-  build: {
-    options: {
-      format: 'commonjs',
-      plugins: [tspegjs],
-      tspegjs: {
-        customHeader: '// import types\nimport * as types from \'./types\';',
-      },
-      returnTypes: {
-        'PlantUMLFile': 'types.UML[]',
-      },
-    },
   },
   fixtures: {
     dir: join(__dirname, 'test/fixtures'),

@@ -7,8 +7,20 @@ const { join } = require('path');
 const rename = require('gulp-rename');
 const pegjs = require('gulp-pegjs');
 const ts = require('gulp-typescript');
+const tspegjs = require('ts-pegjs');
 const sourcemaps = require('gulp-sourcemaps');
 const tsProject = ts.createProject('tsconfig.json');
+
+const buildOptions = {
+  format: 'commonjs',
+  plugins: [tspegjs],
+  tspegjs: {
+    customHeader: '// import types\nimport * as types from \'./types\';',
+  },
+  returnTypes: {
+    'PlantUMLFile': 'types.UML[]',
+  },
+};
 
 task('build-copy-js',
   () => src(join(conf.src.dir, '**', '*.js'))
@@ -21,7 +33,7 @@ task('build-optimized',
   (cb) => src(join(conf.src.dir, '*.pegjs'))
     .pipe(
       pegjs({
-        ...conf.build.options,
+        ...buildOptions,
       }).on('error', cb),
     )
     .pipe(
@@ -37,7 +49,7 @@ task('build-debug',
     .pipe(
       pegjs({
         trace: true,
-        ...conf.build.options,
+        ...buildOptions,
       }).on('error', cb),
     )
     .pipe(
