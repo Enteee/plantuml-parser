@@ -1,12 +1,12 @@
 {
   "name": "plantuml-parser",
-  "version": "0.0.9",
-  "description": "Parse PlantUML Syntax in JavaScript",
+  "version": "0.0.10",
+  "description": "Parse PlantUML with JavaScript or TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "conf.js",
-    "dist/**/*.js"
+    "dist/**/*"
   ],
   "dependencies": {
     "async": "^3.1.1",
