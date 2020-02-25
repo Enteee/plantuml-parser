@@ -1,0 +1,24 @@
+[
+  {
+    "elements": [
+      {
+        "name": "Alice",
+        "title": "Alice",
+        "isAbstract": false,
+        "members": [
+          {
+            "name": "cry",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": ""
+          }
+        ]
+      },
+      {
+        "text": "Untype. She does\nnot like types.",
+        "of": "Alice::cry"
+      }
+    ]
+  }
+]

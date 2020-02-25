@@ -191,7 +191,11 @@ Note
   }
 
 NoteOf
-  = "of "i _ elementName:ElementReference
+  = "of "i _ elementName:ElementReference "::"i memberName:MemberReference
+  {
+    return elementName.name + "::" + memberName.name;
+  }
+  / "of "i _ elementName:ElementReference
   {
     return elementName.name;
   }
@@ -502,6 +506,15 @@ ElementReference
     }
   }
   / name:Name
+  {
+    return {
+      name: name,
+      type: 'Unknown',
+    }
+  }
+
+MemberReference
+  = name:Name
   {
     return {
       name: name,
