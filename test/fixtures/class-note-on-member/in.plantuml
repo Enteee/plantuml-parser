@@ -1,0 +1,9 @@
+@startuml
+class Alice <<single>> {
+  + cry(): any
+}
+note left of Alice::cry
+Untype. She does
+not like types.
+end note
+@enduml
