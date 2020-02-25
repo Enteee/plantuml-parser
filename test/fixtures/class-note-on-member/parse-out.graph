@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "name": "Alice",
+      "title": "Alice",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "cry",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        }
+      ],
+      "id": "Alice",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}
