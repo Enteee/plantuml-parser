@@ -1,0 +1,11 @@
+@startuml
+
+title Relationships - Class Diagram with Crowfeet
+
+class A
+class B
+
+A }-- B: Crowfeet left
+A --{ B: Crowfeet right
+
+@enduml

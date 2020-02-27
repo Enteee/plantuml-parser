@@ -1,0 +1,46 @@
+[
+  {
+    "elements": [
+      {
+        "name": "A",
+        "title": "A",
+        "isAbstract": false,
+        "members": []
+      },
+      {
+        "name": "B",
+        "title": "B",
+        "isAbstract": false,
+        "members": []
+      },
+      {
+        "left": "A",
+        "right": "B",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "}",
+        "rightArrowHead": "",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": "Crowfeet left",
+        "hidden": false
+      },
+      {
+        "left": "A",
+        "right": "B",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": "{",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": "Crowfeet right",
+        "hidden": false
+      }
+    ]
+  }
+]

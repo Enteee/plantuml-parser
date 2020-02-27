@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "name": "A",
+      "title": "A",
+      "isAbstract": false,
+      "members": [],
+      "id": "A",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "B",
+      "title": "B",
+      "isAbstract": false,
+      "members": [],
+      "id": "B",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}
