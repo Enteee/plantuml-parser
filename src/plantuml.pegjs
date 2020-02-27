@@ -447,6 +447,7 @@ RelationshipArrowHead
   / "#"
   / "x"
   / "}"
+  / "{"
   / "+"
   / "^"
   / "()"

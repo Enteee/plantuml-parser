@@ -1,0 +1,280 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/class-relationships-crowfeet/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "Dwelling",
+              "title": "Dwelling",
+              "isAbstract": false,
+              "members": [
+                {
+                  "name": "Windows",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "type": "Int"
+                },
+                {
+                  "name": "LockTheDoor",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "returnType": "void",
+                  "_arguments": ""
+                }
+              ]
+            },
+            {
+              "name": "Apartment",
+              "title": "Apartment",
+              "isAbstract": false,
+              "members": []
+            },
+            {
+              "name": "House",
+              "title": "House",
+              "isAbstract": false,
+              "members": []
+            },
+            {
+              "name": "Commune",
+              "title": "Commune",
+              "isAbstract": false,
+              "members": []
+            },
+            {
+              "name": "Window",
+              "title": "Window",
+              "isAbstract": false,
+              "members": []
+            },
+            {
+              "name": "Door",
+              "title": "Door",
+              "isAbstract": false,
+              "members": []
+            },
+            {
+              "left": "Dwelling",
+              "right": "Apartment",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "<|",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "Inheritance",
+              "hidden": false
+            },
+            {
+              "left": "Dwelling",
+              "right": "Commune",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "<|",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "Inheritance",
+              "hidden": false
+            },
+            {
+              "left": "Dwelling",
+              "right": "House",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "<|",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "Inheritance",
+              "hidden": false
+            },
+            {
+              "left": "Window",
+              "right": "Dwelling",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "}",
+              "rightArrowHead": "",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "Composition",
+              "hidden": false
+            },
+            {
+              "left": "Dwelling",
+              "right": "Door",
+              "leftType": "Unknown",
+              "rightType": "Unknown",
+              "leftArrowHead": "",
+              "rightArrowHead": "{",
+              "leftArrowBody": "-",
+              "rightArrowBody": "-",
+              "leftCardinality": "",
+              "rightCardinality": "",
+              "label": "Composition",
+              "hidden": false
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/class-relationships-crowfeet/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "Dwelling",
+      "title": "Dwelling",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "Windows",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "Int"
+        },
+        {
+          "name": "LockTheDoor",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        }
+      ],
+      "id": "Dwelling",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Windows",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "Windows",
+      "hidden": true
+    },
+    {
+      "name": "Apartment",
+      "title": "Apartment",
+      "isAbstract": false,
+      "members": [],
+      "id": "Apartment",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "House",
+      "title": "House",
+      "isAbstract": false,
+      "members": [],
+      "id": "House",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Commune",
+      "title": "Commune",
+      "isAbstract": false,
+      "members": [],
+      "id": "Commune",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Window",
+      "title": "Window",
+      "isAbstract": false,
+      "members": [],
+      "id": "Window",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Door",
+      "title": "Door",
+      "isAbstract": false,
+      "members": [],
+      "id": "Door",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "test/fixtures/class-relationships-crowfeet/in.plantuml",
+      "to": "Dwelling",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Dwelling",
+      "to": "Windows",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-relationships-crowfeet/in.plantuml",
+      "to": "Windows",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-relationships-crowfeet/in.plantuml",
+      "to": "Apartment",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-relationships-crowfeet/in.plantuml",
+      "to": "House",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-relationships-crowfeet/in.plantuml",
+      "to": "Commune",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-relationships-crowfeet/in.plantuml",
+      "to": "Window",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-relationships-crowfeet/in.plantuml",
+      "to": "Door",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Apartment",
+      "to": "Dwelling",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "Commune",
+      "to": "Dwelling",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "House",
+      "to": "Dwelling",
+      "name": "extends",
+      "hidden": true
+    }
+  ]
+}

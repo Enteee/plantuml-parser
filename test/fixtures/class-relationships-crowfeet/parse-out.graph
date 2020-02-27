@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "name": "Dwelling",
+      "title": "Dwelling",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "Windows",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "Int"
+        },
+        {
+          "name": "LockTheDoor",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "_arguments": ""
+        }
+      ],
+      "id": "Dwelling",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Windows",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "Windows",
+      "hidden": true
+    },
+    {
+      "name": "Apartment",
+      "title": "Apartment",
+      "isAbstract": false,
+      "members": [],
+      "id": "Apartment",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "House",
+      "title": "House",
+      "isAbstract": false,
+      "members": [],
+      "id": "House",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Commune",
+      "title": "Commune",
+      "isAbstract": false,
+      "members": [],
+      "id": "Commune",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Window",
+      "title": "Window",
+      "isAbstract": false,
+      "members": [],
+      "id": "Window",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Door",
+      "title": "Door",
+      "isAbstract": false,
+      "members": [],
+      "id": "Door",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "Dwelling",
+      "to": "Windows",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "Apartment",
+      "to": "Dwelling",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "Commune",
+      "to": "Dwelling",
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "House",
+      "to": "Dwelling",
+      "name": "extends",
+      "hidden": true
+    }
+  ]
+}

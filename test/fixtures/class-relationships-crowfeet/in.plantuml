@@ -1,0 +1,22 @@
+@startuml
+
+title Relationships - Class Diagram with Crowfeet
+
+class Dwelling {
+  +Int Windows
+  +void LockTheDoor()
+}
+
+class Apartment
+class House
+class Commune
+class Window
+class Door
+
+Dwelling <|-down- Apartment: Inheritance
+Dwelling <|-down- Commune: Inheritance
+Dwelling <|-down- House: Inheritance
+Window }-- Dwelling: Composition
+Dwelling --{ Door: Composition
+
+@enduml
