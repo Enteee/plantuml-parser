@@ -108,6 +108,7 @@ export type RelationshipArrowHead = (
   | '#'
   | 'x'
   | '}'
+  | '{'
   | '+'
   | '^'
   | '()'
