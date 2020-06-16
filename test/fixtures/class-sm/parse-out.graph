@@ -156,6 +156,7 @@
           "type": ""
         }
       ],
+      "inherits": null,
       "id": "CI",
       "type": "Class",
       "hidden": true
@@ -364,6 +365,7 @@
       "name": "Peripheral",
       "title": "Peripheral",
       "members": [],
+      "inherits": null,
       "id": "Peripheral",
       "type": "Interface",
       "hidden": true
@@ -373,6 +375,7 @@
       "title": "Printer",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Printer",
       "type": "Class",
       "hidden": true
@@ -382,6 +385,7 @@
       "title": "CCTV",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "CCTV",
       "type": "Class",
       "hidden": true
@@ -391,6 +395,7 @@
       "title": "MultiFunctionPeripheral",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "MultiFunctionPeripheral",
       "type": "Class",
       "hidden": true
@@ -406,6 +411,7 @@
           "type": ""
         }
       ],
+      "inherits": null,
       "id": "NetworkDevice",
       "type": "Interface",
       "hidden": true
@@ -423,6 +429,7 @@
       "title": "Switch",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Switch",
       "type": "Class",
       "hidden": true
@@ -432,6 +439,7 @@
       "title": "Router",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Router",
       "type": "Class",
       "hidden": true
@@ -441,6 +449,7 @@
       "title": "Firewall",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Firewall",
       "type": "Class",
       "hidden": true
@@ -450,6 +459,7 @@
       "title": "Proxy",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Proxy",
       "type": "Class",
       "hidden": true
@@ -459,6 +469,7 @@
       "title": "LoadBalancer",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "LoadBalancer",
       "type": "Class",
       "hidden": true
@@ -468,6 +479,7 @@
       "title": "NetworkManagement",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "NetworkManagement",
       "type": "Class",
       "hidden": true
@@ -483,6 +495,7 @@
           "type": ""
         }
       ],
+      "inherits": null,
       "id": "Infrastructure",
       "type": "Interface",
       "hidden": true
@@ -500,6 +513,7 @@
       "title": "ATS",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "ATS",
       "type": "Class",
       "hidden": true
@@ -509,6 +523,7 @@
       "title": "KVM",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "KVM",
       "type": "Class",
       "hidden": true
@@ -518,6 +533,7 @@
       "title": "PDU",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "PDU",
       "type": "Class",
       "hidden": true
@@ -527,6 +543,7 @@
       "title": "UPS",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "UPS",
       "type": "Class",
       "hidden": true
@@ -536,6 +553,7 @@
       "title": "HSM",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "HSM",
       "type": "Class",
       "hidden": true
@@ -545,6 +563,7 @@
       "title": "AccessControl",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "AccessControl",
       "type": "Class",
       "hidden": true
@@ -560,6 +579,7 @@
           "type": ""
         }
       ],
+      "inherits": null,
       "id": "Telecomdevice",
       "type": "Interface",
       "hidden": true
@@ -577,6 +597,7 @@
       "title": "Gateway",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Gateway",
       "type": "Class",
       "hidden": true
@@ -586,6 +607,7 @@
       "title": "Voice",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Voice",
       "type": "Class",
       "hidden": true
@@ -595,6 +617,7 @@
       "title": "Video",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Video",
       "type": "Class",
       "hidden": true
@@ -622,6 +645,7 @@
           "type": ""
         }
       ],
+      "inherits": null,
       "id": "Cluster",
       "type": "Interface",
       "hidden": true
@@ -655,6 +679,7 @@
       "title": "SoftwareCluster",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "SoftwareCluster",
       "type": "Class",
       "hidden": true
@@ -664,6 +689,7 @@
       "title": "ContainerCluster",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "ContainerCluster",
       "type": "Class",
       "hidden": true
@@ -673,6 +699,7 @@
       "title": "VMCluster",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "VMCluster",
       "type": "Class",
       "hidden": true
@@ -682,6 +709,7 @@
       "title": "StorageCluster",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "StorageCluster",
       "type": "Class",
       "hidden": true
@@ -697,6 +725,7 @@
           "type": ""
         }
       ],
+      "inherits": null,
       "id": "Storage",
       "type": "Interface",
       "hidden": true
@@ -714,6 +743,7 @@
       "title": "TapeLibrary",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "TapeLibrary",
       "type": "Class",
       "hidden": true
@@ -723,6 +753,7 @@
       "title": "NAS",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "NAS",
       "type": "Class",
       "hidden": true
@@ -732,6 +763,7 @@
       "title": "SAN",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "SAN",
       "type": "Class",
       "hidden": true
@@ -741,6 +773,7 @@
       "title": "Switch",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "StorageSwitch",
       "type": "Class",
       "hidden": true
@@ -750,6 +783,7 @@
       "title": "Controller",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "StorageController",
       "type": "Class",
       "hidden": true
@@ -807,6 +841,7 @@
           "type": ""
         }
       ],
+      "inherits": null,
       "id": "Contact",
       "type": "Interface",
       "hidden": true
@@ -879,6 +914,7 @@
       "name": "Location",
       "title": "Location",
       "members": [],
+      "inherits": null,
       "id": "Location",
       "type": "Interface",
       "hidden": true

@@ -164,13 +164,15 @@
                     "accessor": "+",
                     "type": ""
                   }
-                ]
+                ],
+                "inherits": null
               },
               [
                 {
                   "name": "Peripheral",
                   "title": "Peripheral",
-                  "members": []
+                  "members": [],
+                  "inherits": null
                 },
                 {
                   "text": "Hardware providing\n      input/output from/to \n      the physical world",
@@ -195,7 +197,8 @@
                     "name": "Printer",
                     "title": "Printer",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "left": "Printer",
@@ -215,7 +218,8 @@
                     "name": "CCTV",
                     "title": "CCTV",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "left": "CCTV",
@@ -235,7 +239,8 @@
                     "name": "MultiFunctionPeripheral",
                     "title": "MultiFunctionPeripheral",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "text": "* Xerox",
@@ -268,7 +273,8 @@
                       "accessor": "+",
                       "type": ""
                     }
-                  ]
+                  ],
+                  "inherits": null
                 },
                 {
                   "text": "Hardware operating in \n      the physical-, network-,\n          transport- or application-layer",
@@ -292,7 +298,8 @@
                   "name": "Switch",
                   "title": "Switch",
                   "isAbstract": false,
-                  "members": []
+                  "members": [],
+                  "inherits": null
                 },
                 {
                   "left": "Switch",
@@ -312,7 +319,8 @@
                   "name": "Router",
                   "title": "Router",
                   "isAbstract": false,
-                  "members": []
+                  "members": [],
+                  "inherits": null
                 },
                 {
                   "left": "Router",
@@ -332,7 +340,8 @@
                   "name": "Firewall",
                   "title": "Firewall",
                   "isAbstract": false,
-                  "members": []
+                  "members": [],
+                  "inherits": null
                 },
                 {
                   "left": "Firewall",
@@ -352,7 +361,8 @@
                   "name": "Proxy",
                   "title": "Proxy",
                   "isAbstract": false,
-                  "members": []
+                  "members": [],
+                  "inherits": null
                 },
                 {
                   "text": "* Blue Coat",
@@ -376,7 +386,8 @@
                   "name": "LoadBalancer",
                   "title": "LoadBalancer",
                   "isAbstract": false,
-                  "members": []
+                  "members": [],
+                  "inherits": null
                 },
                 {
                   "left": "LoadBalancer",
@@ -396,7 +407,8 @@
                   "name": "NetworkManagement",
                   "title": "NetworkManagement",
                   "isAbstract": false,
-                  "members": []
+                  "members": [],
+                  "inherits": null
                 },
                 {
                   "text": "* Infoblox\n      * WAM",
@@ -428,7 +440,8 @@
                       "accessor": "+",
                       "type": ""
                     }
-                  ]
+                  ],
+                  "inherits": null
                 },
                 {
                   "text": "Hardware providing\n      auxiliry services\n      for IT operations",
@@ -453,7 +466,8 @@
                     "name": "ATS",
                     "title": "ATS",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "text": "Automatic\n              Transfer\n              Switch",
@@ -477,7 +491,8 @@
                     "name": "KVM",
                     "title": "KVM",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "text": "Keyboard\n              Video \n              Mouse",
@@ -501,7 +516,8 @@
                     "name": "PDU",
                     "title": "PDU",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "text": "Power\n              Distribution\n              Unit",
@@ -525,7 +541,8 @@
                     "name": "UPS",
                     "title": "UPS",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "text": "Uninterruptable\n              Power\n              Supply",
@@ -549,7 +566,8 @@
                     "name": "HSM",
                     "title": "HSM",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "text": "Hardware\n              Security\n              Module\n              Generates and stores\n              keys and certificats",
@@ -573,7 +591,8 @@
                     "name": "AccessControl",
                     "title": "AccessControl",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "text": "* Badge Reader\t\t\t\n              * Vein Scanner",
@@ -606,7 +625,8 @@
                       "accessor": "+",
                       "type": ""
                     }
-                  ]
+                  ],
+                  "inherits": null
                 },
                 {
                   "text": "Hardware connecting\n      people",
@@ -631,7 +651,8 @@
                     "name": "Gateway",
                     "title": "Gateway",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "left": "Gateway",
@@ -651,7 +672,8 @@
                     "name": "Voice",
                     "title": "Voice",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "text": "* Cisco Telephones",
@@ -675,7 +697,8 @@
                     "name": "Video",
                     "title": "Video",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "left": "Video",
@@ -716,7 +739,8 @@
                       "accessor": "+",
                       "type": ""
                     }
-                  ]
+                  ],
+                  "inherits": null
                 },
                 {
                   "text": "Provides a scalable\n      and reliable service",
@@ -909,7 +933,8 @@
                     "name": "SoftwareCluster",
                     "title": "SoftwareCluster",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "text": "Instances: Processes",
@@ -933,7 +958,8 @@
                     "name": "ContainerCluster",
                     "title": "ContainerCluster",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "text": "Instances: Containers",
@@ -961,7 +987,8 @@
                     "name": "VMCluster",
                     "title": "VMCluster",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "text": "Instances: Virtual Machines",
@@ -989,7 +1016,8 @@
                     "name": "StorageCluster",
                     "title": "StorageCluster",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "text": "Instances: Storage Containers",
@@ -1194,7 +1222,8 @@
                       "accessor": "+",
                       "type": ""
                     }
-                  ]
+                  ],
+                  "inherits": null
                 },
                 {
                   "text": "Hardware providing\n      long term persistance\n      of information",
@@ -1219,7 +1248,8 @@
                     "name": "TapeLibrary",
                     "title": "TapeLibrary",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "left": "TapeLibrary",
@@ -1239,7 +1269,8 @@
                     "name": "NAS",
                     "title": "NAS",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "text": "Network\n          Attached\n          Storage\n          Exports a file system\n          Clients communicate with\n          the NAS using a NFS-like\n          protocol: Operations are\n          file system operations",
@@ -1263,7 +1294,8 @@
                     "name": "SAN",
                     "title": "SAN",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "text": "Storage\n          Area\n          Network\n          Exports a block device\n          Clients communicate with\n          the SAN using a SCSI-like\n          protocol: Operations are\n          block device operations",
@@ -1287,7 +1319,8 @@
                     "name": "StorageSwitch",
                     "title": "Switch",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "left": "StorageSwitch",
@@ -1307,7 +1340,8 @@
                     "name": "StorageController",
                     "title": "Controller",
                     "isAbstract": false,
-                    "members": []
+                    "members": [],
+                    "inherits": null
                   },
                   {
                     "left": "StorageController",
@@ -1378,7 +1412,8 @@
                       "accessor": "-",
                       "type": ""
                     }
-                  ]
+                  ],
+                  "inherits": null
                 },
                 {
                   "text": "All internal attributes\n      are automatically \n      populated by \n      Service Manager\n      based on the location\n      attribute",
@@ -1403,7 +1438,8 @@
                 {
                   "name": "Location",
                   "title": "Location",
-                  "members": []
+                  "members": [],
+                  "inherits": null
                 },
                 {
                   "left": "Location",

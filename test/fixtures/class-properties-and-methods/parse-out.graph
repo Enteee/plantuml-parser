@@ -58,6 +58,7 @@
           "_arguments": ""
         }
       ],
+      "inherits": null,
       "id": "Car",
       "type": "Class",
       "hidden": true
@@ -99,6 +100,7 @@
       "title": "Car",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Car",
       "type": "Class",
       "hidden": true

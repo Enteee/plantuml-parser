@@ -19,6 +19,7 @@
           "_arguments": ""
         }
       ],
+      "inherits": null,
       "id": "Dwelling",
       "type": "Class",
       "hidden": true
@@ -36,6 +37,7 @@
       "title": "Apartment",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Apartment",
       "type": "Class",
       "hidden": true
@@ -45,6 +47,7 @@
       "title": "House",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "House",
       "type": "Class",
       "hidden": true
@@ -54,6 +57,7 @@
       "title": "Commune",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Commune",
       "type": "Class",
       "hidden": true
@@ -63,6 +67,7 @@
       "title": "Window",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Window",
       "type": "Class",
       "hidden": true
@@ -72,6 +77,7 @@
       "title": "Door",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Door",
       "type": "Class",
       "hidden": true

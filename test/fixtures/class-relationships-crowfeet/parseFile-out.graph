@@ -9,13 +9,15 @@
               "name": "A",
               "title": "A",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "inherits": null
             },
             {
               "name": "B",
               "title": "B",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "inherits": null
             },
             {
               "left": "A",
@@ -57,6 +59,7 @@
       "title": "A",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "A",
       "type": "Class",
       "hidden": true
@@ -66,6 +69,7 @@
       "title": "B",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "B",
       "type": "Class",
       "hidden": true

@@ -205,23 +205,30 @@ NoteOf
 //
 
 Class
-  = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? _ inherits:ExtendsImplements? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Class(
       name.name,
       name.title,
       !!isAbstract,
       removeUndefined(members),
+      inherits
     );
   }
-  / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? EndLine
+  / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators?_ inherits:ExtendsImplements? EndLine
   {
     return new types.Class(
       name.name,
       name.title,
-      !!isAbstract
+      !!isAbstract,
+      [],
+      inherits
     );
   }
+
+ExtendsImplements
+  = "extends" _ name:Name { return name; }
+  / "implements" _ name:Name { return name; }
 
 Member
   = SeparatorLine
@@ -286,19 +293,22 @@ MemberVariable
 //
 
 Interface
-  = _ "interface "i _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "interface "i _ name:ElementName _ Decorators? _ inherits:ExtendsImplements? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Interface(
       name.name,
       name.title,
       removeUndefined(members),
+      inherits
     );
   }
-  / _ "interface "i _ name:ElementName _ Decorators? _ EndLine
+  / _ "interface "i _ name:ElementName _ Decorators? _ inherits:ExtendsImplements? _ EndLine
   {
     return new types.Interface(
       name.name,
       name.title,
+      [],
+      inherits
     );
   }
 

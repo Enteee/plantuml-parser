@@ -5,13 +5,15 @@
         "name": "A",
         "title": "A",
         "isAbstract": false,
-        "members": []
+        "members": [],
+        "inherits": null
       },
       {
         "name": "B",
         "title": "B",
         "isAbstract": false,
-        "members": []
+        "members": [],
+        "inherits": null
       },
       {
         "left": "A",

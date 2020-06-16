@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/class-extends-implements/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "HasDoor",
+              "title": "HasDoor",
+              "members": [],
+              "inherits": null
+            },
+            {
+              "name": "Dwelling",
+              "title": "Dwelling",
+              "isAbstract": false,
+              "members": [],
+              "inherits": "HasDoor"
+            },
+            {
+              "name": "Apartment",
+              "title": "Apartment",
+              "isAbstract": false,
+              "members": [],
+              "inherits": "Dwelling"
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/class-extends-implements/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "HasDoor",
+      "title": "HasDoor",
+      "members": [],
+      "inherits": null,
+      "id": "HasDoor",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "Dwelling",
+      "title": "Dwelling",
+      "isAbstract": false,
+      "members": [],
+      "inherits": "HasDoor",
+      "id": "Dwelling",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Apartment",
+      "title": "Apartment",
+      "isAbstract": false,
+      "members": [],
+      "inherits": "Dwelling",
+      "id": "Apartment",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "test/fixtures/class-extends-implements/in.plantuml",
+      "to": "HasDoor",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": {
+        "name": "Dwelling",
+        "title": "Dwelling",
+        "isAbstract": false,
+        "members": [],
+        "inherits": "HasDoor"
+      },
+      "to": {
+        "name": "HasDoor",
+        "title": "HasDoor",
+        "members": [],
+        "inherits": null,
+        "id": "HasDoor",
+        "type": "Interface",
+        "hidden": true
+      },
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-extends-implements/in.plantuml",
+      "to": "Dwelling",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": {
+        "name": "Apartment",
+        "title": "Apartment",
+        "isAbstract": false,
+        "members": [],
+        "inherits": "Dwelling"
+      },
+      "to": {
+        "name": "Dwelling",
+        "title": "Dwelling",
+        "isAbstract": false,
+        "members": [],
+        "inherits": "HasDoor",
+        "id": "Dwelling",
+        "type": "Class",
+        "hidden": true
+      },
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-extends-implements/in.plantuml",
+      "to": "Apartment",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

@@ -5,6 +5,7 @@
       "title": "Worker1",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Worker1",
       "type": "Class",
       "hidden": true

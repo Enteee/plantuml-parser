@@ -9,7 +9,8 @@
               "name": "Separators",
               "title": "Separators",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "inherits": null
             }
           ]
         }
@@ -23,6 +24,7 @@
       "title": "Separators",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Separators",
       "type": "Class",
       "hidden": true

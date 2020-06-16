@@ -5,6 +5,7 @@
       "title": "AbstractList",
       "isAbstract": true,
       "members": [],
+      "inherits": null,
       "id": "AbstractList",
       "type": "Class",
       "hidden": true
@@ -14,6 +15,7 @@
       "title": "Test",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Test",
       "type": "Class",
       "hidden": true
@@ -23,6 +25,7 @@
       "title": "System",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "System",
       "type": "Class",
       "hidden": true
@@ -32,6 +35,7 @@
       "title": "Date",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Date",
       "type": "Class",
       "hidden": true
@@ -90,6 +94,7 @@
           "type": "End"
         }
       ],
+      "inherits": null,
       "id": "Foo1",
       "type": "Class",
       "hidden": true
@@ -197,6 +202,7 @@
           "type": "String"
         }
       ],
+      "inherits": null,
       "id": "User",
       "type": "Class",
       "hidden": true
@@ -221,6 +227,7 @@
       "name": "List",
       "title": "List",
       "members": [],
+      "inherits": null,
       "id": "List",
       "type": "Interface",
       "hidden": true
@@ -230,6 +237,7 @@
       "title": "Object",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Object",
       "type": "Class",
       "hidden": true

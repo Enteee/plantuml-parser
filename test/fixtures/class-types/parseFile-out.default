@@ -8,25 +8,29 @@
             "name": "AbstractList",
             "title": "AbstractList",
             "isAbstract": true,
-            "members": []
+            "members": [],
+            "inherits": null
           },
           {
             "name": "Test",
             "title": "Test",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "inherits": null
           },
           {
             "name": "System",
             "title": "System",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "inherits": null
           },
           {
             "name": "Date",
             "title": "Date",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "inherits": null
           },
           {
             "name": "Foo1",
@@ -81,7 +85,8 @@
                 "accessor": "+",
                 "type": "End"
               }
-            ]
+            ],
+            "inherits": null
           },
           {
             "name": "User",
@@ -121,7 +126,8 @@
                 "accessor": "-",
                 "type": "String"
               }
-            ]
+            ],
+            "inherits": null
           },
           {
             "name": "TimeUnit",
@@ -150,13 +156,15 @@
           {
             "name": "List",
             "title": "List",
-            "members": []
+            "members": [],
+            "inherits": null
           },
           {
             "name": "Object",
             "title": "Object",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "inherits": null
           },
           {
             "left": "Object",

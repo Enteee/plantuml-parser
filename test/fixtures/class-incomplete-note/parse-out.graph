@@ -5,6 +5,7 @@
       "title": "C0",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "C0",
       "type": "Class",
       "hidden": true
@@ -14,6 +15,7 @@
       "title": "C1",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "C1",
       "type": "Class",
       "hidden": true

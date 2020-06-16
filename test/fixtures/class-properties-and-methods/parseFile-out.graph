@@ -62,13 +62,15 @@
                   "returnType": "void",
                   "_arguments": ""
                 }
-              ]
+              ],
+              "inherits": null
             },
             {
               "name": "Car",
               "title": "Car",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "inherits": null
             },
             {
               "left": "ICar",
@@ -177,6 +179,7 @@
           "_arguments": ""
         }
       ],
+      "inherits": null,
       "id": "Car",
       "type": "Class",
       "hidden": true
@@ -218,6 +221,7 @@
       "title": "Car",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Car",
       "type": "Class",
       "hidden": true

@@ -4,7 +4,8 @@
       {
         "name": "_COMP_EXT1_IF1",
         "title": "_COMP_EXT1_IF1",
-        "members": []
+        "members": [],
+        "inherits": null
       },
       {
         "name": "rmf",

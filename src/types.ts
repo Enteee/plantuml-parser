@@ -69,6 +69,7 @@ export class Interface {
     public name: string,
     public title: string,
     public members: Member[] = [],
+    public inherits?: string,
   ) {
     this.members = members || [];
   }
@@ -80,6 +81,7 @@ export class Class {
     public title: string,
     public isAbstract: boolean,
     public members: Member[] = [],
+    public inherits?: string,
   ) {
     this.isAbstract = !!isAbstract;
     this.members = members || [];

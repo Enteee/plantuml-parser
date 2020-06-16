@@ -8,13 +8,15 @@
             "name": "C0",
             "title": "C0",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "inherits": null
           },
           {
             "name": "C1",
             "title": "C1",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "inherits": null
           }
         ]
       }

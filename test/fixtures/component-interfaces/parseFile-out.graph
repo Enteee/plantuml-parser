@@ -20,12 +20,14 @@
             {
               "name": "Math",
               "title": "IMath",
-              "members": []
+              "members": [],
+              "inherits": null
             },
             {
               "name": "Items",
               "title": "IItems",
-              "members": []
+              "members": [],
+              "inherits": null
             },
             {
               "left": "Business Logic",
@@ -87,6 +89,7 @@
       "name": "Math",
       "title": "IMath",
       "members": [],
+      "inherits": null,
       "id": "Math",
       "type": "Interface",
       "hidden": true
@@ -95,6 +98,7 @@
       "name": "Items",
       "title": "IItems",
       "members": [],
+      "inherits": null,
       "id": "Items",
       "type": "Interface",
       "hidden": true

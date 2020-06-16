@@ -13,7 +13,8 @@
             "returnType": "void",
             "_arguments": ""
           }
-        ]
+        ],
+        "inherits": null
       },
       {
         "text": "Untype. She does\nnot like types.",

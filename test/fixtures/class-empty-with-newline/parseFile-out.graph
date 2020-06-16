@@ -9,7 +9,8 @@
               "name": "AbstractList",
               "title": "AbstractList",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "inherits": null
             }
           ]
         }
@@ -23,6 +24,7 @@
       "title": "AbstractList",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "AbstractList",
       "type": "Class",
       "hidden": true

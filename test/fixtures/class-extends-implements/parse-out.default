@@ -1,0 +1,26 @@
+[
+  {
+    "elements": [
+      {
+        "name": "HasDoor",
+        "title": "HasDoor",
+        "members": [],
+        "inherits": null
+      },
+      {
+        "name": "Dwelling",
+        "title": "Dwelling",
+        "isAbstract": false,
+        "members": [],
+        "inherits": "HasDoor"
+      },
+      {
+        "name": "Apartment",
+        "title": "Apartment",
+        "isAbstract": false,
+        "members": [],
+        "inherits": "Dwelling"
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+@startuml
+
+title Extends and implements - Class Diagram
+
+interface HasDoor
+
+class Dwelling implements HasDoor
+class Apartment extends Dwelling
+
+@enduml

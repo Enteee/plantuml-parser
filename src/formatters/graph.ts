@@ -47,6 +47,20 @@ export default function graphFormatter (parseResult: (File | UML[])): string {
         hidden: true,
       });
 
+      if (node.inherits) {
+        // Add an edge to represent the relatioship
+        const parentNode = nodes.find((item) => item.name === node.inherits);
+
+        if (parentNode) {
+          edges.push({
+            from: node,
+            to: parentNode,
+            name: 'extends',
+            hidden: true,
+          });
+        }
+      }
+
       linkToFile(node);
 
       node.members

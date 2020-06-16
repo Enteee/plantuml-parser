@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "name": "HasDoor",
+      "title": "HasDoor",
+      "members": [],
+      "inherits": null,
+      "id": "HasDoor",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "Dwelling",
+      "title": "Dwelling",
+      "isAbstract": false,
+      "members": [],
+      "inherits": "HasDoor",
+      "id": "Dwelling",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Apartment",
+      "title": "Apartment",
+      "isAbstract": false,
+      "members": [],
+      "inherits": "Dwelling",
+      "id": "Apartment",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": {
+        "name": "Dwelling",
+        "title": "Dwelling",
+        "isAbstract": false,
+        "members": [],
+        "inherits": "HasDoor"
+      },
+      "to": {
+        "name": "HasDoor",
+        "title": "HasDoor",
+        "members": [],
+        "inherits": null,
+        "id": "HasDoor",
+        "type": "Interface",
+        "hidden": true
+      },
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": {
+        "name": "Apartment",
+        "title": "Apartment",
+        "isAbstract": false,
+        "members": [],
+        "inherits": "Dwelling"
+      },
+      "to": {
+        "name": "Dwelling",
+        "title": "Dwelling",
+        "isAbstract": false,
+        "members": [],
+        "inherits": "HasDoor",
+        "id": "Dwelling",
+        "type": "Class",
+        "hidden": true
+      },
+      "name": "extends",
+      "hidden": true
+    }
+  ]
+}

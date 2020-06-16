@@ -8,7 +8,8 @@
             "name": "AbstractList",
             "title": "AbstractList",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "inherits": null
           }
         ]
       }

@@ -5,18 +5,21 @@
         "name": "C",
         "title": "C",
         "isAbstract": false,
-        "members": []
+        "members": [],
+        "inherits": null
       },
       {
         "name": "AC",
         "title": "AC",
         "isAbstract": true,
-        "members": []
+        "members": [],
+        "inherits": null
       },
       {
         "name": "I",
         "title": "I",
-        "members": []
+        "members": [],
+        "inherits": null
       },
       {
         "name": "E",

@@ -13,7 +13,8 @@
                 "name": "Worker1",
                 "title": "Worker1",
                 "isAbstract": false,
-                "members": []
+                "members": [],
+                "inherits": null
               }
             ]
           }

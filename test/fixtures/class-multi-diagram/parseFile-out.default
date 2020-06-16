@@ -22,7 +22,8 @@
                 "returnType": "void",
                 "_arguments": ""
               }
-            ]
+            ],
+            "inherits": null
           }
         ]
       },
@@ -46,7 +47,8 @@
                 "returnType": "void",
                 "_arguments": ""
               }
-            ]
+            ],
+            "inherits": null
           }
         ]
       }

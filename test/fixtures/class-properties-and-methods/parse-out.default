@@ -58,13 +58,15 @@
             "returnType": "void",
             "_arguments": ""
           }
-        ]
+        ],
+        "inherits": null
       },
       {
         "name": "Car",
         "title": "Car",
         "isAbstract": false,
-        "members": []
+        "members": [],
+        "inherits": null
       },
       {
         "left": "ICar",

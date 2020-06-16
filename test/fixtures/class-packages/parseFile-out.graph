@@ -14,7 +14,8 @@
                   "name": "Worker1",
                   "title": "Worker1",
                   "isAbstract": false,
-                  "members": []
+                  "members": [],
+                  "inherits": null
                 }
               ]
             },
@@ -27,7 +28,8 @@
                   "name": "Worker2",
                   "title": "Worker2",
                   "isAbstract": false,
-                  "members": []
+                  "members": [],
+                  "inherits": null
                 }
               ]
             },
@@ -40,7 +42,8 @@
                   "name": "Worker3",
                   "title": "Worker3",
                   "isAbstract": false,
-                  "members": []
+                  "members": [],
+                  "inherits": null
                 }
               ]
             },
@@ -53,7 +56,8 @@
                   "name": "Worker4",
                   "title": "Worker4",
                   "isAbstract": false,
-                  "members": []
+                  "members": [],
+                  "inherits": null
                 }
               ]
             },
@@ -66,7 +70,8 @@
                   "name": "Worker5",
                   "title": "Worker5",
                   "isAbstract": false,
-                  "members": []
+                  "members": [],
+                  "inherits": null
                 }
               ]
             },
@@ -79,7 +84,8 @@
                   "name": "Worker6",
                   "title": "Worker6",
                   "isAbstract": false,
-                  "members": []
+                  "members": [],
+                  "inherits": null
                 }
               ]
             }
@@ -95,6 +101,7 @@
       "title": "Worker1",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Worker1",
       "type": "Class",
       "hidden": true
@@ -104,6 +111,7 @@
       "title": "Worker2",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Worker2",
       "type": "Class",
       "hidden": true
@@ -113,6 +121,7 @@
       "title": "Worker3",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Worker3",
       "type": "Class",
       "hidden": true
@@ -122,6 +131,7 @@
       "title": "Worker4",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Worker4",
       "type": "Class",
       "hidden": true
@@ -131,6 +141,7 @@
       "title": "Worker5",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Worker5",
       "type": "Class",
       "hidden": true
@@ -140,6 +151,7 @@
       "title": "Worker6",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Worker6",
       "type": "Class",
       "hidden": true

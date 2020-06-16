@@ -5,6 +5,7 @@
       "title": "Separators",
       "isAbstract": false,
       "members": [],
+      "inherits": null,
       "id": "Separators",
       "type": "Class",
       "hidden": true

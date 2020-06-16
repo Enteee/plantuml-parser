@@ -13,7 +13,8 @@
                 "name": "Worker1",
                 "title": "Worker1",
                 "isAbstract": false,
-                "members": []
+                "members": [],
+                "inherits": null
               }
             ]
           },
@@ -26,7 +27,8 @@
                 "name": "Worker2",
                 "title": "Worker2",
                 "isAbstract": false,
-                "members": []
+                "members": [],
+                "inherits": null
               }
             ]
           },
@@ -39,7 +41,8 @@
                 "name": "Worker3",
                 "title": "Worker3",
                 "isAbstract": false,
-                "members": []
+                "members": [],
+                "inherits": null
               }
             ]
           },
@@ -52,7 +55,8 @@
                 "name": "Worker4",
                 "title": "Worker4",
                 "isAbstract": false,
-                "members": []
+                "members": [],
+                "inherits": null
               }
             ]
           },
@@ -65,7 +69,8 @@
                 "name": "Worker5",
                 "title": "Worker5",
                 "isAbstract": false,
-                "members": []
+                "members": [],
+                "inherits": null
               }
             ]
           },
@@ -78,7 +83,8 @@
                 "name": "Worker6",
                 "title": "Worker6",
                 "isAbstract": false,
-                "members": []
+                "members": [],
+                "inherits": null
               }
             ]
           }

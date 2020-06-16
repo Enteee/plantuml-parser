@@ -23,7 +23,8 @@
                   "returnType": "void",
                   "_arguments": ""
                 }
-              ]
+              ],
+              "inherits": null
             }
           ]
         },
@@ -47,7 +48,8 @@
                   "returnType": "void",
                   "_arguments": ""
                 }
-              ]
+              ],
+              "inherits": null
             }
           ]
         }
@@ -75,6 +77,7 @@
           "_arguments": ""
         }
       ],
+      "inherits": null,
       "id": "Dwelling",
       "type": "Class",
       "hidden": true
@@ -106,6 +109,7 @@
           "_arguments": ""
         }
       ],
+      "inherits": null,
       "id": "Dwelling",
       "type": "Class",
       "hidden": true

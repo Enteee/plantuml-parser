@@ -12,7 +12,8 @@
             {
               "name": "I",
               "title": "I",
-              "members": []
+              "members": [],
+              "inherits": null
             },
             {
               "left": "C",
@@ -116,6 +117,7 @@
       "name": "I",
       "title": "I",
       "members": [],
+      "inherits": null,
       "id": "I",
       "type": "Interface",
       "hidden": true

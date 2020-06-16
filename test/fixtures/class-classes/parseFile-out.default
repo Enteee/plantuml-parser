@@ -22,25 +22,29 @@
                 "returnType": "void",
                 "_arguments": ""
               }
-            ]
+            ],
+            "inherits": null
           },
           {
             "name": "Apartment",
             "title": "Apartment",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "inherits": null
           },
           {
             "name": "House",
             "title": "House",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "inherits": null
           },
           {
             "name": "Commune",
             "title": "Commune",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "inherits": null
           }
         ]
       }
