@@ -21,7 +21,7 @@
             "_arguments": "int i, boolean b, char c"
           }
         ],
-        "inherits": null
+        "inherits": []
       }
     ]
   }

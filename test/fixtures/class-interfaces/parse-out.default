@@ -6,7 +6,7 @@
         "title": "Car",
         "isAbstract": false,
         "members": [],
-        "inherits": null
+        "inherits": []
       },
       {
         "left": "ICar",

@@ -205,30 +205,26 @@ NoteOf
 //
 
 Class
-  = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? _ inherits:ExtendsImplements? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? _ extended:Extends? _ implemented:Implements? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Class(
       name.name,
       name.title,
       !!isAbstract,
       removeUndefined(members),
-      inherits
+      (extended && removeUndefined(extended) || []).concat(implemented && removeUndefined(implemented) || [])
     );
   }
-  / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators?_ inherits:ExtendsImplements? EndLine
+  / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? _ extended:Extends? _ implemented:Implements? _ EndLine
   {
     return new types.Class(
       name.name,
       name.title,
       !!isAbstract,
       [],
-      inherits
+      (extended && removeUndefined(extended) || []).concat(implemented && removeUndefined(implemented) || [])
     );
   }
-
-ExtendsImplements
-  = "extends" _ name:Name { return name; }
-  / "implements" _ name:Name { return name; }
 
 Member
   = SeparatorLine
@@ -293,22 +289,22 @@ MemberVariable
 //
 
 Interface
-  = _ "interface "i _ name:ElementName _ Decorators? _ inherits:ExtendsImplements? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "interface "i _ name:ElementName _ Decorators? _ extended:Extends? _ implemented:Implements? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Interface(
       name.name,
       name.title,
       removeUndefined(members),
-      inherits
+      (extended && removeUndefined(extended) || []).concat(implemented && removeUndefined(implemented) || [])
     );
   }
-  / _ "interface "i _ name:ElementName _ Decorators? _ inherits:ExtendsImplements? _ EndLine
+  / _ "interface "i _ name:ElementName _ Decorators? _ extended:Extends? _ implemented:Implements? _ EndLine
   {
     return new types.Interface(
       name.name,
       name.title,
       [],
-      inherits
+      (extended && removeUndefined(extended) || []).concat(implemented && removeUndefined(implemented) || [])
     );
   }
 
@@ -317,19 +313,22 @@ Interface
 //
 
 Enum
-  = _ "enum "i _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "enum "i _ name:ElementName _ Decorators? _ extended:Extends? _ implemented:Implements? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Enum(
       name.name,
       name.title,
       removeUndefined(members),
+      (extended && removeUndefined(extended) || []).concat(implemented && removeUndefined(implemented) || [])
     );
   }
-  / _ "enum "i _ name:ElementName _ Decorators? _ EndLine
+  / _ "enum "i _ name:ElementName _ Decorators? _ extended:Extends? _ implemented:Implements? _ EndLine
   {
     return new types.Enum(
       name.name,
       name.title,
+      [],
+      (extended && removeUndefined(extended) || []).concat(implemented && removeUndefined(implemented) || [])
     );
   }
 
@@ -483,6 +482,15 @@ RelationshipLabel
 
 RelationshipHidden
   = "[hidden]"
+
+InheritanceListItem
+  = _ !"implements" name:Name ","? { return name; }
+
+Extends
+  = "extends" parents:InheritanceListItem* { return parents; }
+
+Implements
+  = "implements" parents:InheritanceListItem* { return parents; }
 
 //
 // NotImplementedBlock

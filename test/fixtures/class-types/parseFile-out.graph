@@ -10,28 +10,28 @@
               "title": "AbstractList",
               "isAbstract": true,
               "members": [],
-              "inherits": null
+              "inherits": []
             },
             {
               "name": "Test",
               "title": "Test",
               "isAbstract": false,
               "members": [],
-              "inherits": null
+              "inherits": []
             },
             {
               "name": "System",
               "title": "System",
               "isAbstract": false,
               "members": [],
-              "inherits": null
+              "inherits": []
             },
             {
               "name": "Date",
               "title": "Date",
               "isAbstract": false,
               "members": [],
-              "inherits": null
+              "inherits": []
             },
             {
               "name": "Foo1",
@@ -87,7 +87,7 @@
                   "type": "End"
                 }
               ],
-              "inherits": null
+              "inherits": []
             },
             {
               "name": "User",
@@ -128,7 +128,7 @@
                   "type": "String"
                 }
               ],
-              "inherits": null
+              "inherits": []
             },
             {
               "name": "TimeUnit",
@@ -152,20 +152,21 @@
                   "accessor": "+",
                   "type": ""
                 }
-              ]
+              ],
+              "inherits": []
             },
             {
               "name": "List",
               "title": "List",
               "members": [],
-              "inherits": null
+              "inherits": []
             },
             {
               "name": "Object",
               "title": "Object",
               "isAbstract": false,
               "members": [],
-              "inherits": null
+              "inherits": []
             },
             {
               "left": "Object",
@@ -193,7 +194,7 @@
       "title": "AbstractList",
       "isAbstract": true,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "AbstractList",
       "type": "Class",
       "hidden": true
@@ -203,7 +204,7 @@
       "title": "Test",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Test",
       "type": "Class",
       "hidden": true
@@ -213,7 +214,7 @@
       "title": "System",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "System",
       "type": "Class",
       "hidden": true
@@ -223,7 +224,7 @@
       "title": "Date",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Date",
       "type": "Class",
       "hidden": true
@@ -282,7 +283,7 @@
           "type": "End"
         }
       ],
-      "inherits": null,
+      "inherits": [],
       "id": "Foo1",
       "type": "Class",
       "hidden": true
@@ -390,7 +391,7 @@
           "type": "String"
         }
       ],
-      "inherits": null,
+      "inherits": [],
       "id": "User",
       "type": "Class",
       "hidden": true
@@ -415,7 +416,7 @@
       "name": "List",
       "title": "List",
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "List",
       "type": "Interface",
       "hidden": true
@@ -425,7 +426,7 @@
       "title": "Object",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Object",
       "type": "Class",
       "hidden": true

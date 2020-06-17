@@ -20,7 +20,7 @@
             "_arguments": ""
           }
         ],
-        "inherits": null
+        "inherits": []
       }
     ]
   },
@@ -45,7 +45,7 @@
             "_arguments": ""
           }
         ],
-        "inherits": null
+        "inherits": []
       }
     ]
   }

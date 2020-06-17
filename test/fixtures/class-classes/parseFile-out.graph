@@ -24,28 +24,28 @@
                   "_arguments": ""
                 }
               ],
-              "inherits": null
+              "inherits": []
             },
             {
               "name": "Apartment",
               "title": "Apartment",
               "isAbstract": false,
               "members": [],
-              "inherits": null
+              "inherits": []
             },
             {
               "name": "House",
               "title": "House",
               "isAbstract": false,
               "members": [],
-              "inherits": null
+              "inherits": []
             },
             {
               "name": "Commune",
               "title": "Commune",
               "isAbstract": false,
               "members": [],
-              "inherits": null
+              "inherits": []
             }
           ]
         }
@@ -73,7 +73,7 @@
           "_arguments": ""
         }
       ],
-      "inherits": null,
+      "inherits": [],
       "id": "Dwelling",
       "type": "Class",
       "hidden": true
@@ -91,7 +91,7 @@
       "title": "Apartment",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Apartment",
       "type": "Class",
       "hidden": true
@@ -101,7 +101,7 @@
       "title": "House",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "House",
       "type": "Class",
       "hidden": true
@@ -111,7 +111,7 @@
       "title": "Commune",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Commune",
       "type": "Class",
       "hidden": true

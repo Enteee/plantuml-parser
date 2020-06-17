@@ -35,13 +35,13 @@
             "name": "Math",
             "title": "IMath",
             "members": [],
-            "inherits": null
+            "inherits": []
           },
           {
             "name": "Items",
             "title": "IItems",
             "members": [],
-            "inherits": null
+            "inherits": []
           },
           {
             "text": "A note can also\n        be on several lines\n        like this one",

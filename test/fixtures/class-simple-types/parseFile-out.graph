@@ -10,25 +10,26 @@
               "title": "C",
               "isAbstract": false,
               "members": [],
-              "inherits": null
+              "inherits": []
             },
             {
               "name": "AC",
               "title": "AC",
               "isAbstract": true,
               "members": [],
-              "inherits": null
+              "inherits": []
             },
             {
               "name": "I",
               "title": "I",
               "members": [],
-              "inherits": null
+              "inherits": []
             },
             {
               "name": "E",
               "title": "E",
-              "members": []
+              "members": [],
+              "inherits": []
             }
           ]
         }
@@ -42,7 +43,7 @@
       "title": "C",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "C",
       "type": "Class",
       "hidden": true
@@ -52,7 +53,7 @@
       "title": "AC",
       "isAbstract": true,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "AC",
       "type": "Class",
       "hidden": true
@@ -61,7 +62,7 @@
       "name": "I",
       "title": "I",
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "I",
       "type": "Interface",
       "hidden": true

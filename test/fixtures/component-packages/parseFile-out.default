@@ -38,13 +38,13 @@
                 "name": "Math",
                 "title": "IMath",
                 "members": [],
-                "inherits": null
+                "inherits": []
               },
               {
                 "name": "Items",
                 "title": "IItems",
                 "members": [],
-                "inherits": null
+                "inherits": []
               }
             ]
           },

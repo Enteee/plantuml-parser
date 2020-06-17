@@ -63,14 +63,14 @@
                   "_arguments": ""
                 }
               ],
-              "inherits": null
+              "inherits": []
             },
             {
               "name": "Car",
               "title": "Car",
               "isAbstract": false,
               "members": [],
-              "inherits": null
+              "inherits": []
             },
             {
               "left": "ICar",
@@ -179,7 +179,7 @@
           "_arguments": ""
         }
       ],
-      "inherits": null,
+      "inherits": [],
       "id": "Car",
       "type": "Class",
       "hidden": true
@@ -221,7 +221,7 @@
       "title": "Car",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Car",
       "type": "Class",
       "hidden": true

@@ -5,7 +5,7 @@
       "title": "AbstractList",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "AbstractList",
       "type": "Class",
       "hidden": true

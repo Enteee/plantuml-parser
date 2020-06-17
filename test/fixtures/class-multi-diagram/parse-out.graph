@@ -19,7 +19,7 @@
           "_arguments": ""
         }
       ],
-      "inherits": null,
+      "inherits": [],
       "id": "Dwelling",
       "type": "Class",
       "hidden": true
@@ -51,7 +51,7 @@
           "_arguments": ""
         }
       ],
-      "inherits": null,
+      "inherits": [],
       "id": "Dwelling",
       "type": "Class",
       "hidden": true

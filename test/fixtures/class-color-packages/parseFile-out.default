@@ -14,7 +14,7 @@
                 "title": "Worker1",
                 "isAbstract": false,
                 "members": [],
-                "inherits": null
+                "inherits": []
               }
             ]
           }

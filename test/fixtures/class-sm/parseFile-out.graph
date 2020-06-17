@@ -166,14 +166,14 @@
                       "type": ""
                     }
                   ],
-                  "inherits": null
+                  "inherits": []
                 },
                 [
                   {
                     "name": "Peripheral",
                     "title": "Peripheral",
                     "members": [],
-                    "inherits": null
+                    "inherits": []
                   },
                   {
                     "text": "Hardware providing\n      input/output from/to \n      the physical world",
@@ -199,7 +199,7 @@
                       "title": "Printer",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "left": "Printer",
@@ -220,7 +220,7 @@
                       "title": "CCTV",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "left": "CCTV",
@@ -241,7 +241,7 @@
                       "title": "MultiFunctionPeripheral",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "text": "* Xerox",
@@ -275,7 +275,7 @@
                         "type": ""
                       }
                     ],
-                    "inherits": null
+                    "inherits": []
                   },
                   {
                     "text": "Hardware operating in \n      the physical-, network-,\n          transport- or application-layer",
@@ -300,7 +300,7 @@
                     "title": "Switch",
                     "isAbstract": false,
                     "members": [],
-                    "inherits": null
+                    "inherits": []
                   },
                   {
                     "left": "Switch",
@@ -321,7 +321,7 @@
                     "title": "Router",
                     "isAbstract": false,
                     "members": [],
-                    "inherits": null
+                    "inherits": []
                   },
                   {
                     "left": "Router",
@@ -342,7 +342,7 @@
                     "title": "Firewall",
                     "isAbstract": false,
                     "members": [],
-                    "inherits": null
+                    "inherits": []
                   },
                   {
                     "left": "Firewall",
@@ -363,7 +363,7 @@
                     "title": "Proxy",
                     "isAbstract": false,
                     "members": [],
-                    "inherits": null
+                    "inherits": []
                   },
                   {
                     "text": "* Blue Coat",
@@ -388,7 +388,7 @@
                     "title": "LoadBalancer",
                     "isAbstract": false,
                     "members": [],
-                    "inherits": null
+                    "inherits": []
                   },
                   {
                     "left": "LoadBalancer",
@@ -409,7 +409,7 @@
                     "title": "NetworkManagement",
                     "isAbstract": false,
                     "members": [],
-                    "inherits": null
+                    "inherits": []
                   },
                   {
                     "text": "* Infoblox\n      * WAM",
@@ -442,7 +442,7 @@
                         "type": ""
                       }
                     ],
-                    "inherits": null
+                    "inherits": []
                   },
                   {
                     "text": "Hardware providing\n      auxiliry services\n      for IT operations",
@@ -468,7 +468,7 @@
                       "title": "ATS",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "text": "Automatic\n              Transfer\n              Switch",
@@ -493,7 +493,7 @@
                       "title": "KVM",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "text": "Keyboard\n              Video \n              Mouse",
@@ -518,7 +518,7 @@
                       "title": "PDU",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "text": "Power\n              Distribution\n              Unit",
@@ -543,7 +543,7 @@
                       "title": "UPS",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "text": "Uninterruptable\n              Power\n              Supply",
@@ -568,7 +568,7 @@
                       "title": "HSM",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "text": "Hardware\n              Security\n              Module\n              Generates and stores\n              keys and certificats",
@@ -593,7 +593,7 @@
                       "title": "AccessControl",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "text": "* Badge Reader\t\t\t\n              * Vein Scanner",
@@ -627,7 +627,7 @@
                         "type": ""
                       }
                     ],
-                    "inherits": null
+                    "inherits": []
                   },
                   {
                     "text": "Hardware connecting\n      people",
@@ -653,7 +653,7 @@
                       "title": "Gateway",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "left": "Gateway",
@@ -674,7 +674,7 @@
                       "title": "Voice",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "text": "* Cisco Telephones",
@@ -699,7 +699,7 @@
                       "title": "Video",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "left": "Video",
@@ -741,7 +741,7 @@
                         "type": ""
                       }
                     ],
-                    "inherits": null
+                    "inherits": []
                   },
                   {
                     "text": "Provides a scalable\n      and reliable service",
@@ -935,7 +935,7 @@
                       "title": "SoftwareCluster",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "text": "Instances: Processes",
@@ -960,7 +960,7 @@
                       "title": "ContainerCluster",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "text": "Instances: Containers",
@@ -989,7 +989,7 @@
                       "title": "VMCluster",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "text": "Instances: Virtual Machines",
@@ -1018,7 +1018,7 @@
                       "title": "StorageCluster",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "text": "Instances: Storage Containers",
@@ -1224,7 +1224,7 @@
                         "type": ""
                       }
                     ],
-                    "inherits": null
+                    "inherits": []
                   },
                   {
                     "text": "Hardware providing\n      long term persistance\n      of information",
@@ -1250,7 +1250,7 @@
                       "title": "TapeLibrary",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "left": "TapeLibrary",
@@ -1271,7 +1271,7 @@
                       "title": "NAS",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "text": "Network\n          Attached\n          Storage\n          Exports a file system\n          Clients communicate with\n          the NAS using a NFS-like\n          protocol: Operations are\n          file system operations",
@@ -1296,7 +1296,7 @@
                       "title": "SAN",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "text": "Storage\n          Area\n          Network\n          Exports a block device\n          Clients communicate with\n          the SAN using a SCSI-like\n          protocol: Operations are\n          block device operations",
@@ -1321,7 +1321,7 @@
                       "title": "Switch",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "left": "StorageSwitch",
@@ -1342,7 +1342,7 @@
                       "title": "Controller",
                       "isAbstract": false,
                       "members": [],
-                      "inherits": null
+                      "inherits": []
                     },
                     {
                       "left": "StorageController",
@@ -1414,7 +1414,7 @@
                         "type": ""
                       }
                     ],
-                    "inherits": null
+                    "inherits": []
                   },
                   {
                     "text": "All internal attributes\n      are automatically \n      populated by \n      Service Manager\n      based on the location\n      attribute",
@@ -1440,7 +1440,7 @@
                     "name": "Location",
                     "title": "Location",
                     "members": [],
-                    "inherits": null
+                    "inherits": []
                   },
                   {
                     "left": "Location",
@@ -38748,7 +38748,7 @@
           "type": ""
         }
       ],
-      "inherits": null,
+      "inherits": [],
       "id": "CI",
       "type": "Class",
       "hidden": true
@@ -38957,7 +38957,7 @@
       "name": "Peripheral",
       "title": "Peripheral",
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Peripheral",
       "type": "Interface",
       "hidden": true
@@ -38967,7 +38967,7 @@
       "title": "Printer",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Printer",
       "type": "Class",
       "hidden": true
@@ -38977,7 +38977,7 @@
       "title": "CCTV",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "CCTV",
       "type": "Class",
       "hidden": true
@@ -38987,7 +38987,7 @@
       "title": "MultiFunctionPeripheral",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "MultiFunctionPeripheral",
       "type": "Class",
       "hidden": true
@@ -39003,7 +39003,7 @@
           "type": ""
         }
       ],
-      "inherits": null,
+      "inherits": [],
       "id": "NetworkDevice",
       "type": "Interface",
       "hidden": true
@@ -39021,7 +39021,7 @@
       "title": "Switch",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Switch",
       "type": "Class",
       "hidden": true
@@ -39031,7 +39031,7 @@
       "title": "Router",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Router",
       "type": "Class",
       "hidden": true
@@ -39041,7 +39041,7 @@
       "title": "Firewall",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Firewall",
       "type": "Class",
       "hidden": true
@@ -39051,7 +39051,7 @@
       "title": "Proxy",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Proxy",
       "type": "Class",
       "hidden": true
@@ -39061,7 +39061,7 @@
       "title": "LoadBalancer",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "LoadBalancer",
       "type": "Class",
       "hidden": true
@@ -39071,7 +39071,7 @@
       "title": "NetworkManagement",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "NetworkManagement",
       "type": "Class",
       "hidden": true
@@ -39087,7 +39087,7 @@
           "type": ""
         }
       ],
-      "inherits": null,
+      "inherits": [],
       "id": "Infrastructure",
       "type": "Interface",
       "hidden": true
@@ -39105,7 +39105,7 @@
       "title": "ATS",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "ATS",
       "type": "Class",
       "hidden": true
@@ -39115,7 +39115,7 @@
       "title": "KVM",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "KVM",
       "type": "Class",
       "hidden": true
@@ -39125,7 +39125,7 @@
       "title": "PDU",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "PDU",
       "type": "Class",
       "hidden": true
@@ -39135,7 +39135,7 @@
       "title": "UPS",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "UPS",
       "type": "Class",
       "hidden": true
@@ -39145,7 +39145,7 @@
       "title": "HSM",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "HSM",
       "type": "Class",
       "hidden": true
@@ -39155,7 +39155,7 @@
       "title": "AccessControl",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "AccessControl",
       "type": "Class",
       "hidden": true
@@ -39171,7 +39171,7 @@
           "type": ""
         }
       ],
-      "inherits": null,
+      "inherits": [],
       "id": "Telecomdevice",
       "type": "Interface",
       "hidden": true
@@ -39189,7 +39189,7 @@
       "title": "Gateway",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Gateway",
       "type": "Class",
       "hidden": true
@@ -39199,7 +39199,7 @@
       "title": "Voice",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Voice",
       "type": "Class",
       "hidden": true
@@ -39209,7 +39209,7 @@
       "title": "Video",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Video",
       "type": "Class",
       "hidden": true
@@ -39237,7 +39237,7 @@
           "type": ""
         }
       ],
-      "inherits": null,
+      "inherits": [],
       "id": "Cluster",
       "type": "Interface",
       "hidden": true
@@ -39271,7 +39271,7 @@
       "title": "SoftwareCluster",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "SoftwareCluster",
       "type": "Class",
       "hidden": true
@@ -39281,7 +39281,7 @@
       "title": "ContainerCluster",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "ContainerCluster",
       "type": "Class",
       "hidden": true
@@ -39291,7 +39291,7 @@
       "title": "VMCluster",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "VMCluster",
       "type": "Class",
       "hidden": true
@@ -39301,7 +39301,7 @@
       "title": "StorageCluster",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "StorageCluster",
       "type": "Class",
       "hidden": true
@@ -39317,7 +39317,7 @@
           "type": ""
         }
       ],
-      "inherits": null,
+      "inherits": [],
       "id": "Storage",
       "type": "Interface",
       "hidden": true
@@ -39335,7 +39335,7 @@
       "title": "TapeLibrary",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "TapeLibrary",
       "type": "Class",
       "hidden": true
@@ -39345,7 +39345,7 @@
       "title": "NAS",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "NAS",
       "type": "Class",
       "hidden": true
@@ -39355,7 +39355,7 @@
       "title": "SAN",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "SAN",
       "type": "Class",
       "hidden": true
@@ -39365,7 +39365,7 @@
       "title": "Switch",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "StorageSwitch",
       "type": "Class",
       "hidden": true
@@ -39375,7 +39375,7 @@
       "title": "Controller",
       "isAbstract": false,
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "StorageController",
       "type": "Class",
       "hidden": true
@@ -39433,7 +39433,7 @@
           "type": ""
         }
       ],
-      "inherits": null,
+      "inherits": [],
       "id": "Contact",
       "type": "Interface",
       "hidden": true
@@ -39506,7 +39506,7 @@
       "name": "Location",
       "title": "Location",
       "members": [],
-      "inherits": null,
+      "inherits": [],
       "id": "Location",
       "type": "Interface",
       "hidden": true

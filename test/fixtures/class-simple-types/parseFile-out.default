@@ -9,25 +9,26 @@
             "title": "C",
             "isAbstract": false,
             "members": [],
-            "inherits": null
+            "inherits": []
           },
           {
             "name": "AC",
             "title": "AC",
             "isAbstract": true,
             "members": [],
-            "inherits": null
+            "inherits": []
           },
           {
             "name": "I",
             "title": "I",
             "members": [],
-            "inherits": null
+            "inherits": []
           },
           {
             "name": "E",
             "title": "E",
-            "members": []
+            "members": [],
+            "inherits": []
           }
         ]
       }

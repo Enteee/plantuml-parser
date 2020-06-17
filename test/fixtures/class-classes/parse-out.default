@@ -20,28 +20,28 @@
             "_arguments": ""
           }
         ],
-        "inherits": null
+        "inherits": []
       },
       {
         "name": "Apartment",
         "title": "Apartment",
         "isAbstract": false,
         "members": [],
-        "inherits": null
+        "inherits": []
       },
       {
         "name": "House",
         "title": "House",
         "isAbstract": false,
         "members": [],
-        "inherits": null
+        "inherits": []
       },
       {
         "name": "Commune",
         "title": "Commune",
         "isAbstract": false,
         "members": [],
-        "inherits": null
+        "inherits": []
       }
     ]
   }

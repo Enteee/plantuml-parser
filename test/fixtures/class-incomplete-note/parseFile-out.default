@@ -9,14 +9,14 @@
             "title": "C0",
             "isAbstract": false,
             "members": [],
-            "inherits": null
+            "inherits": []
           },
           {
             "name": "C1",
             "title": "C1",
             "isAbstract": false,
             "members": [],
-            "inherits": null
+            "inherits": []
           }
         ]
       }

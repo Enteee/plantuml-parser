@@ -18,7 +18,7 @@
                   "_arguments": ""
                 }
               ],
-              "inherits": null
+              "inherits": []
             },
             {
               "text": "Untype. She does\nnot like types.",
@@ -44,7 +44,7 @@
           "_arguments": ""
         }
       ],
-      "inherits": null,
+      "inherits": [],
       "id": "Alice",
       "type": "Class",
       "hidden": true

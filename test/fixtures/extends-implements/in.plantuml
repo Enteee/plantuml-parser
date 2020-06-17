@@ -1,0 +1,18 @@
+@startuml
+
+title Extends and implements - Class Diagram
+
+interface HasDoor
+interface HasFloor
+class Dwelling
+class ForRent
+
+class Apartment extends Dwelling, ForRent implements HasFloor, HasDoor
+
+interface Interface extends HasDoor implements HasFloor
+
+enum OtherEnum
+interface EnumInterface
+enum Enum extends OtherEnum implements EnumInterface
+
+@enduml

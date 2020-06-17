@@ -1,0 +1,348 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/extends-implements/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "HasDoor",
+              "title": "HasDoor",
+              "members": [],
+              "inherits": []
+            },
+            {
+              "name": "HasFloor",
+              "title": "HasFloor",
+              "members": [],
+              "inherits": []
+            },
+            {
+              "name": "Dwelling",
+              "title": "Dwelling",
+              "isAbstract": false,
+              "members": [],
+              "inherits": []
+            },
+            {
+              "name": "ForRent",
+              "title": "ForRent",
+              "isAbstract": false,
+              "members": [],
+              "inherits": []
+            },
+            {
+              "name": "Apartment",
+              "title": "Apartment",
+              "isAbstract": false,
+              "members": [],
+              "inherits": [
+                "Dwelling",
+                "ForRent",
+                "HasFloor",
+                "HasDoor"
+              ]
+            },
+            {
+              "name": "Interface",
+              "title": "Interface",
+              "members": [],
+              "inherits": [
+                "HasDoor",
+                "HasFloor"
+              ]
+            },
+            {
+              "name": "OtherEnum",
+              "title": "OtherEnum",
+              "members": [],
+              "inherits": []
+            },
+            {
+              "name": "EnumInterface",
+              "title": "EnumInterface",
+              "members": [],
+              "inherits": []
+            },
+            {
+              "name": "Enum",
+              "title": "Enum",
+              "members": [],
+              "inherits": [
+                "OtherEnum",
+                "EnumInterface"
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/extends-implements/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "HasDoor",
+      "title": "HasDoor",
+      "members": [],
+      "inherits": [],
+      "id": "HasDoor",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "HasFloor",
+      "title": "HasFloor",
+      "members": [],
+      "inherits": [],
+      "id": "HasFloor",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "Dwelling",
+      "title": "Dwelling",
+      "isAbstract": false,
+      "members": [],
+      "inherits": [],
+      "id": "Dwelling",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "ForRent",
+      "title": "ForRent",
+      "isAbstract": false,
+      "members": [],
+      "inherits": [],
+      "id": "ForRent",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Apartment",
+      "title": "Apartment",
+      "isAbstract": false,
+      "members": [],
+      "inherits": [
+        "Dwelling",
+        "ForRent",
+        "HasFloor",
+        "HasDoor"
+      ],
+      "id": "Apartment",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Interface",
+      "title": "Interface",
+      "members": [],
+      "inherits": [
+        "HasDoor",
+        "HasFloor"
+      ],
+      "id": "Interface",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "EnumInterface",
+      "title": "EnumInterface",
+      "members": [],
+      "inherits": [],
+      "id": "EnumInterface",
+      "type": "Interface",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "test/fixtures/extends-implements/in.plantuml",
+      "to": "HasDoor",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/extends-implements/in.plantuml",
+      "to": "HasFloor",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/extends-implements/in.plantuml",
+      "to": "Dwelling",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/extends-implements/in.plantuml",
+      "to": "ForRent",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": {
+        "name": "Apartment",
+        "title": "Apartment",
+        "isAbstract": false,
+        "members": [],
+        "inherits": [
+          "Dwelling",
+          "ForRent",
+          "HasFloor",
+          "HasDoor"
+        ]
+      },
+      "to": {
+        "name": "Dwelling",
+        "title": "Dwelling",
+        "isAbstract": false,
+        "members": [],
+        "inherits": [],
+        "id": "Dwelling",
+        "type": "Class",
+        "hidden": true
+      },
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": {
+        "name": "Apartment",
+        "title": "Apartment",
+        "isAbstract": false,
+        "members": [],
+        "inherits": [
+          "Dwelling",
+          "ForRent",
+          "HasFloor",
+          "HasDoor"
+        ]
+      },
+      "to": {
+        "name": "ForRent",
+        "title": "ForRent",
+        "isAbstract": false,
+        "members": [],
+        "inherits": [],
+        "id": "ForRent",
+        "type": "Class",
+        "hidden": true
+      },
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": {
+        "name": "Apartment",
+        "title": "Apartment",
+        "isAbstract": false,
+        "members": [],
+        "inherits": [
+          "Dwelling",
+          "ForRent",
+          "HasFloor",
+          "HasDoor"
+        ]
+      },
+      "to": {
+        "name": "HasFloor",
+        "title": "HasFloor",
+        "members": [],
+        "inherits": [],
+        "id": "HasFloor",
+        "type": "Interface",
+        "hidden": true
+      },
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": {
+        "name": "Apartment",
+        "title": "Apartment",
+        "isAbstract": false,
+        "members": [],
+        "inherits": [
+          "Dwelling",
+          "ForRent",
+          "HasFloor",
+          "HasDoor"
+        ]
+      },
+      "to": {
+        "name": "HasDoor",
+        "title": "HasDoor",
+        "members": [],
+        "inherits": [],
+        "id": "HasDoor",
+        "type": "Interface",
+        "hidden": true
+      },
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/extends-implements/in.plantuml",
+      "to": "Apartment",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": {
+        "name": "Interface",
+        "title": "Interface",
+        "members": [],
+        "inherits": [
+          "HasDoor",
+          "HasFloor"
+        ]
+      },
+      "to": {
+        "name": "HasDoor",
+        "title": "HasDoor",
+        "members": [],
+        "inherits": [],
+        "id": "HasDoor",
+        "type": "Interface",
+        "hidden": true
+      },
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": {
+        "name": "Interface",
+        "title": "Interface",
+        "members": [],
+        "inherits": [
+          "HasDoor",
+          "HasFloor"
+        ]
+      },
+      "to": {
+        "name": "HasFloor",
+        "title": "HasFloor",
+        "members": [],
+        "inherits": [],
+        "id": "HasFloor",
+        "type": "Interface",
+        "hidden": true
+      },
+      "name": "extends",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/extends-implements/in.plantuml",
+      "to": "Interface",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/extends-implements/in.plantuml",
+      "to": "EnumInterface",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

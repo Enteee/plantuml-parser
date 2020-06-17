@@ -6,7 +6,7 @@
         "title": "AbstractList",
         "isAbstract": false,
         "members": [],
-        "inherits": null
+        "inherits": []
       }
     ]
   }

@@ -1,0 +1,79 @@
+[
+  {
+    "name": "test/fixtures/extends-implements/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "HasDoor",
+            "title": "HasDoor",
+            "members": [],
+            "inherits": []
+          },
+          {
+            "name": "HasFloor",
+            "title": "HasFloor",
+            "members": [],
+            "inherits": []
+          },
+          {
+            "name": "Dwelling",
+            "title": "Dwelling",
+            "isAbstract": false,
+            "members": [],
+            "inherits": []
+          },
+          {
+            "name": "ForRent",
+            "title": "ForRent",
+            "isAbstract": false,
+            "members": [],
+            "inherits": []
+          },
+          {
+            "name": "Apartment",
+            "title": "Apartment",
+            "isAbstract": false,
+            "members": [],
+            "inherits": [
+              "Dwelling",
+              "ForRent",
+              "HasFloor",
+              "HasDoor"
+            ]
+          },
+          {
+            "name": "Interface",
+            "title": "Interface",
+            "members": [],
+            "inherits": [
+              "HasDoor",
+              "HasFloor"
+            ]
+          },
+          {
+            "name": "OtherEnum",
+            "title": "OtherEnum",
+            "members": [],
+            "inherits": []
+          },
+          {
+            "name": "EnumInterface",
+            "title": "EnumInterface",
+            "members": [],
+            "inherits": []
+          },
+          {
+            "name": "Enum",
+            "title": "Enum",
+            "members": [],
+            "inherits": [
+              "OtherEnum",
+              "EnumInterface"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
