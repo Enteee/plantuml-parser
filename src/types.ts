@@ -59,8 +59,12 @@ export class Enum {
     public name: string,
     public title: string,
     public members: Member[] = [],
+    public extends_: string[] = [],
+    public implements_: string[] = [],
   ) {
     this.members = members || [];
+    this.extends_ = extends_ || [];
+    this.implements_ = implements_ || [];
   }
 }
 
@@ -69,8 +73,12 @@ export class Interface {
     public name: string,
     public title: string,
     public members: Member[] = [],
+    public extends_: string[] = [],
+    public implements_: string[] = [],
   ) {
     this.members = members || [];
+    this.extends_ = extends_ || [];
+    this.implements_ = implements_ || [];
   }
 }
 
@@ -80,9 +88,13 @@ export class Class {
     public title: string,
     public isAbstract: boolean,
     public members: Member[] = [],
+    public extends_: string[] = [],
+    public implements_: string[] = [],
   ) {
     this.isAbstract = !!isAbstract;
     this.members = members || [];
+    this.extends_ = extends_ || [];
+    this.implements_ = implements_ || [];
   }
 }
 

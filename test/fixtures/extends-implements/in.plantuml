@@ -1,0 +1,20 @@
+@startuml
+
+title Extends and implements - Class Diagram
+
+class ParentClass
+interface ParentInterface
+
+class ExtendsClass extends ParentClass
+class ImplementsClass implements ParentInterface
+class ExtendsImplementsClass extends ParentClass implements ParentInterface
+
+interface OnlyExtendsInterface extends ParentClass
+interface OnlyImplementsInterface implements ParentInterface
+interface ExtendsImplementsInterface extends ParentClass implements ParentInterface
+
+enum OnlyExtendsEnum extends ParentClass
+enum OnlyImplementsEnum implements ParentInterface
+enum ExtendsImplementsEnum extends ParentClass implements ParentInterface
+
+@enduml

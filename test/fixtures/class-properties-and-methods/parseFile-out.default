@@ -61,13 +61,17 @@
                 "returnType": "void",
                 "_arguments": ""
               }
-            ]
+            ],
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "Car",
             "title": "Car",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "extends_": [],
+            "implements_": []
           },
           {
             "left": "ICar",

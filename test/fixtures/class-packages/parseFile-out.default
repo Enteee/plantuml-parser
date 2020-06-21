@@ -13,7 +13,9 @@
                 "name": "Worker1",
                 "title": "Worker1",
                 "isAbstract": false,
-                "members": []
+                "members": [],
+                "extends_": [],
+                "implements_": []
               }
             ]
           },
@@ -26,7 +28,9 @@
                 "name": "Worker2",
                 "title": "Worker2",
                 "isAbstract": false,
-                "members": []
+                "members": [],
+                "extends_": [],
+                "implements_": []
               }
             ]
           },
@@ -39,7 +43,9 @@
                 "name": "Worker3",
                 "title": "Worker3",
                 "isAbstract": false,
-                "members": []
+                "members": [],
+                "extends_": [],
+                "implements_": []
               }
             ]
           },
@@ -52,7 +58,9 @@
                 "name": "Worker4",
                 "title": "Worker4",
                 "isAbstract": false,
-                "members": []
+                "members": [],
+                "extends_": [],
+                "implements_": []
               }
             ]
           },
@@ -65,7 +73,9 @@
                 "name": "Worker5",
                 "title": "Worker5",
                 "isAbstract": false,
-                "members": []
+                "members": [],
+                "extends_": [],
+                "implements_": []
               }
             ]
           },
@@ -78,7 +88,9 @@
                 "name": "Worker6",
                 "title": "Worker6",
                 "isAbstract": false,
-                "members": []
+                "members": [],
+                "extends_": [],
+                "implements_": []
               }
             ]
           }

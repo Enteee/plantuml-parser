@@ -1,0 +1,134 @@
+{
+  "nodes": [
+    {
+      "name": "ParentClass",
+      "title": "ParentClass",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "id": "ParentClass",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "OtherParentClass",
+      "title": "OtherParentClass",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "id": "OtherParentClass",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "ParentInterface",
+      "title": "ParentInterface",
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "id": "ParentInterface",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "OtherParentInterface",
+      "title": "OtherParentInterface",
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "id": "OtherParentInterface",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "ExtendsClass",
+      "title": "ExtendsClass",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [
+        "ParentClass",
+        "OtherParentClass"
+      ],
+      "implements_": [],
+      "id": "ExtendsClass",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "ImplementsClass",
+      "title": "ImplementsClass",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [
+        "ParentInterface",
+        "OtherParentInterface"
+      ],
+      "id": "ImplementsClass",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "ExtendsImplementsClass",
+      "title": "ExtendsImplementsClass",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [
+        "ParentClass",
+        "OtherParentClass"
+      ],
+      "implements_": [
+        "ParentInterface",
+        "OtherParentInterface"
+      ],
+      "id": "ExtendsImplementsClass",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "ExtendsInterface",
+      "title": "ExtendsInterface",
+      "members": [],
+      "extends_": [
+        "ParentClass",
+        "OtherParentClass"
+      ],
+      "implements_": [],
+      "id": "ExtendsInterface",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "ImplementsInterface",
+      "title": "ImplementsInterface",
+      "members": [],
+      "extends_": [],
+      "implements_": [
+        "ParentInterface",
+        "OtherParentInterface"
+      ],
+      "id": "ImplementsInterface",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "ExtendsImplementsInterface",
+      "title": "ExtendsImplementsInterface",
+      "members": [],
+      "extends_": [
+        "ParentClass",
+        "OtherParentClass"
+      ],
+      "implements_": [
+        "ParentInterface",
+        "OtherParentInterface"
+      ],
+      "id": "ExtendsImplementsInterface",
+      "type": "Interface",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

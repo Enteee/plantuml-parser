@@ -11,6 +11,8 @@
       "name": "I",
       "title": "I",
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "I",
       "type": "Interface",
       "hidden": true

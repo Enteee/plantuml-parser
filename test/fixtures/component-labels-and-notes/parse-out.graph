@@ -25,6 +25,8 @@
       "name": "Math",
       "title": "IMath",
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Math",
       "type": "Interface",
       "hidden": true
@@ -33,6 +35,8 @@
       "name": "Items",
       "title": "IItems",
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Items",
       "type": "Interface",
       "hidden": true

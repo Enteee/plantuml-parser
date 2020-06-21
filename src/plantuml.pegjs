@@ -205,21 +205,26 @@ NoteOf
 //
 
 Class
-  = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? _ extends_:Extends? _ implements_:Implements? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Class(
       name.name,
       name.title,
       !!isAbstract,
       removeUndefined(members),
+      extends_,
+      implements_
     );
   }
-  / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? EndLine
+  / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? _ extends_:Extends? _ implements_:Implements? _ EndLine
   {
     return new types.Class(
       name.name,
       name.title,
-      !!isAbstract
+      !!isAbstract,
+      [],
+      extends_,
+      implements_
     );
   }
 
@@ -286,19 +291,24 @@ MemberVariable
 //
 
 Interface
-  = _ "interface "i _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "interface "i _ name:ElementName _ Decorators? _ extends_:Extends? _ implements_:Implements? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Interface(
       name.name,
       name.title,
       removeUndefined(members),
+      extends_,
+      implements_
     );
   }
-  / _ "interface "i _ name:ElementName _ Decorators? _ EndLine
+  / _ "interface "i _ name:ElementName _ Decorators? _ extends_:Extends? _ implements_:Implements? _ EndLine
   {
     return new types.Interface(
       name.name,
       name.title,
+      [],
+      extends_,
+      implements_
     );
   }
 
@@ -307,19 +317,24 @@ Interface
 //
 
 Enum
-  = _ "enum "i _ name:ElementName _ Decorators? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "enum "i _ name:ElementName _ Decorators? _ extends_:Extends? _ implements_:Implements? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Enum(
       name.name,
       name.title,
       removeUndefined(members),
+      extends_,
+      implements_
     );
   }
-  / _ "enum "i _ name:ElementName _ Decorators? _ EndLine
+  / _ "enum "i _ name:ElementName _ Decorators? _ extends_:Extends? _ implements_:Implements? _ EndLine
   {
     return new types.Enum(
       name.name,
       name.title,
+      [],
+      extends_,
+      implements_
     );
   }
 
@@ -474,6 +489,18 @@ RelationshipLabel
 RelationshipHidden
   = "[hidden]"
 
+Extends
+  = "extends "i _ parents:NameList
+  {
+    return parents;
+  }
+
+Implements
+  = "implements "i _ parents:NameList
+  {
+    return parents;
+  }
+
 //
 // NotImplementedBlock
 //
@@ -584,6 +611,20 @@ Name
   = name:([A-Za-z0-9._]+)
   {
     return name.join('');
+  }
+
+NameList
+  = nameListItems:NameListItem* _ lastNameListItem:Name
+  {
+    return removeUndefined(
+      nameListItems.concat(lastNameListItem)
+    );
+  }
+
+NameListItem
+  = _ name:Name _ ","
+  {
+    return name;
   }
 
 Decorators

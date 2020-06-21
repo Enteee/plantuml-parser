@@ -5,6 +5,8 @@
       "title": "Car",
       "isAbstract": false,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Car",
       "type": "Class",
       "hidden": true

@@ -8,7 +8,9 @@
       {
         "name": "I",
         "title": "I",
-        "members": []
+        "members": [],
+        "extends_": [],
+        "implements_": []
       },
       {
         "left": "C",

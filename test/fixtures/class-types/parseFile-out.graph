@@ -9,25 +9,33 @@
               "name": "AbstractList",
               "title": "AbstractList",
               "isAbstract": true,
-              "members": []
+              "members": [],
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "Test",
               "title": "Test",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "System",
               "title": "System",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "Date",
               "title": "Date",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "Foo1",
@@ -82,7 +90,9 @@
                   "accessor": "+",
                   "type": "End"
                 }
-              ]
+              ],
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "User",
@@ -122,7 +132,9 @@
                   "accessor": "-",
                   "type": "String"
                 }
-              ]
+              ],
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "TimeUnit",
@@ -146,18 +158,24 @@
                   "accessor": "+",
                   "type": ""
                 }
-              ]
+              ],
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "List",
               "title": "List",
-              "members": []
+              "members": [],
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "Object",
               "title": "Object",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "extends_": [],
+              "implements_": []
             },
             {
               "left": "Object",
@@ -185,6 +203,8 @@
       "title": "AbstractList",
       "isAbstract": true,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "AbstractList",
       "type": "Class",
       "hidden": true
@@ -194,6 +214,8 @@
       "title": "Test",
       "isAbstract": false,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Test",
       "type": "Class",
       "hidden": true
@@ -203,6 +225,8 @@
       "title": "System",
       "isAbstract": false,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "System",
       "type": "Class",
       "hidden": true
@@ -212,6 +236,8 @@
       "title": "Date",
       "isAbstract": false,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Date",
       "type": "Class",
       "hidden": true
@@ -270,6 +296,8 @@
           "type": "End"
         }
       ],
+      "extends_": [],
+      "implements_": [],
       "id": "Foo1",
       "type": "Class",
       "hidden": true
@@ -377,6 +405,8 @@
           "type": "String"
         }
       ],
+      "extends_": [],
+      "implements_": [],
       "id": "User",
       "type": "Class",
       "hidden": true
@@ -401,6 +431,8 @@
       "name": "List",
       "title": "List",
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "List",
       "type": "Interface",
       "hidden": true
@@ -410,6 +442,8 @@
       "title": "Object",
       "isAbstract": false,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Object",
       "type": "Class",
       "hidden": true

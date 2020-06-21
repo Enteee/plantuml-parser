@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "name": "ParentClass",
+      "title": "ParentClass",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "id": "ParentClass",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "ParentInterface",
+      "title": "ParentInterface",
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "id": "ParentInterface",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "ExtendsClass",
+      "title": "ExtendsClass",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [
+        "ParentClass"
+      ],
+      "implements_": [],
+      "id": "ExtendsClass",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "ImplementsClass",
+      "title": "ImplementsClass",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [
+        "ParentInterface"
+      ],
+      "id": "ImplementsClass",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "ExtendsImplementsClass",
+      "title": "ExtendsImplementsClass",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [
+        "ParentClass"
+      ],
+      "implements_": [
+        "ParentInterface"
+      ],
+      "id": "ExtendsImplementsClass",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "OnlyExtendsInterface",
+      "title": "OnlyExtendsInterface",
+      "members": [],
+      "extends_": [
+        "ParentClass"
+      ],
+      "implements_": [],
+      "id": "OnlyExtendsInterface",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "OnlyImplementsInterface",
+      "title": "OnlyImplementsInterface",
+      "members": [],
+      "extends_": [],
+      "implements_": [
+        "ParentInterface"
+      ],
+      "id": "OnlyImplementsInterface",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "ExtendsImplementsInterface",
+      "title": "ExtendsImplementsInterface",
+      "members": [],
+      "extends_": [
+        "ParentClass"
+      ],
+      "implements_": [
+        "ParentInterface"
+      ],
+      "id": "ExtendsImplementsInterface",
+      "type": "Interface",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

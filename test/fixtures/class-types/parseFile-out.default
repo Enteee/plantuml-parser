@@ -8,25 +8,33 @@
             "name": "AbstractList",
             "title": "AbstractList",
             "isAbstract": true,
-            "members": []
+            "members": [],
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "Test",
             "title": "Test",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "System",
             "title": "System",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "Date",
             "title": "Date",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "Foo1",
@@ -81,7 +89,9 @@
                 "accessor": "+",
                 "type": "End"
               }
-            ]
+            ],
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "User",
@@ -121,7 +131,9 @@
                 "accessor": "-",
                 "type": "String"
               }
-            ]
+            ],
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "TimeUnit",
@@ -145,18 +157,24 @@
                 "accessor": "+",
                 "type": ""
               }
-            ]
+            ],
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "List",
             "title": "List",
-            "members": []
+            "members": [],
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "Object",
             "title": "Object",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "extends_": [],
+            "implements_": []
           },
           {
             "left": "Object",

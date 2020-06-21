@@ -34,12 +34,16 @@
           {
             "name": "Math",
             "title": "IMath",
-            "members": []
+            "members": [],
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "Items",
             "title": "IItems",
-            "members": []
+            "members": [],
+            "extends_": [],
+            "implements_": []
           },
           {
             "text": "A note can also\n        be on several lines\n        like this one",

@@ -23,25 +23,33 @@
                   "returnType": "void",
                   "_arguments": ""
                 }
-              ]
+              ],
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "Apartment",
               "title": "Apartment",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "House",
               "title": "House",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "Commune",
               "title": "Commune",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "extends_": [],
+              "implements_": []
             }
           ]
         }
@@ -69,6 +77,8 @@
           "_arguments": ""
         }
       ],
+      "extends_": [],
+      "implements_": [],
       "id": "Dwelling",
       "type": "Class",
       "hidden": true
@@ -86,6 +96,8 @@
       "title": "Apartment",
       "isAbstract": false,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Apartment",
       "type": "Class",
       "hidden": true
@@ -95,6 +107,8 @@
       "title": "House",
       "isAbstract": false,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "House",
       "type": "Class",
       "hidden": true
@@ -104,6 +118,8 @@
       "title": "Commune",
       "isAbstract": false,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Commune",
       "type": "Class",
       "hidden": true

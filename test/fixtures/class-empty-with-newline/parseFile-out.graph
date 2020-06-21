@@ -9,7 +9,9 @@
               "name": "AbstractList",
               "title": "AbstractList",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "extends_": [],
+              "implements_": []
             }
           ]
         }
@@ -23,6 +25,8 @@
       "title": "AbstractList",
       "isAbstract": false,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "AbstractList",
       "type": "Class",
       "hidden": true

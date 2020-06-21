@@ -1,0 +1,143 @@
+[
+  {
+    "name": "test/fixtures/extends-implements-multi/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "ParentClass",
+            "title": "ParentClass",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [],
+            "implements_": []
+          },
+          {
+            "name": "OtherParentClass",
+            "title": "OtherParentClass",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [],
+            "implements_": []
+          },
+          {
+            "name": "ParentInterface",
+            "title": "ParentInterface",
+            "members": [],
+            "extends_": [],
+            "implements_": []
+          },
+          {
+            "name": "OtherParentInterface",
+            "title": "OtherParentInterface",
+            "members": [],
+            "extends_": [],
+            "implements_": []
+          },
+          {
+            "name": "ExtendsClass",
+            "title": "ExtendsClass",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [
+              "ParentClass",
+              "OtherParentClass"
+            ],
+            "implements_": []
+          },
+          {
+            "name": "ImplementsClass",
+            "title": "ImplementsClass",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [],
+            "implements_": [
+              "ParentInterface",
+              "OtherParentInterface"
+            ]
+          },
+          {
+            "name": "ExtendsImplementsClass",
+            "title": "ExtendsImplementsClass",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [
+              "ParentClass",
+              "OtherParentClass"
+            ],
+            "implements_": [
+              "ParentInterface",
+              "OtherParentInterface"
+            ]
+          },
+          {
+            "name": "ExtendsInterface",
+            "title": "ExtendsInterface",
+            "members": [],
+            "extends_": [
+              "ParentClass",
+              "OtherParentClass"
+            ],
+            "implements_": []
+          },
+          {
+            "name": "ImplementsInterface",
+            "title": "ImplementsInterface",
+            "members": [],
+            "extends_": [],
+            "implements_": [
+              "ParentInterface",
+              "OtherParentInterface"
+            ]
+          },
+          {
+            "name": "ExtendsImplementsInterface",
+            "title": "ExtendsImplementsInterface",
+            "members": [],
+            "extends_": [
+              "ParentClass",
+              "OtherParentClass"
+            ],
+            "implements_": [
+              "ParentInterface",
+              "OtherParentInterface"
+            ]
+          },
+          {
+            "name": "ExtendsEnum",
+            "title": "ExtendsEnum",
+            "members": [],
+            "extends_": [
+              "ParentClass",
+              "OtherParentClass"
+            ],
+            "implements_": []
+          },
+          {
+            "name": "ImplementsEnum",
+            "title": "ImplementsEnum",
+            "members": [],
+            "extends_": [],
+            "implements_": [
+              "ParentInterface",
+              "OtherParentInterface"
+            ]
+          },
+          {
+            "name": "ExtendsImplementsEnum",
+            "title": "ExtendsImplementsEnum",
+            "members": [],
+            "extends_": [
+              "ParentClass",
+              "OtherParentClass"
+            ],
+            "implements_": [
+              "ParentInterface",
+              "OtherParentInterface"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

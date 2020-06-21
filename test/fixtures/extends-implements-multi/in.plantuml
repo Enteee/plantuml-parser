@@ -1,0 +1,22 @@
+@startuml
+
+title Extends and implements Multiple Times - Class Diagram
+
+class ParentClass
+class OtherParentClass
+interface ParentInterface
+interface OtherParentInterface
+
+class ExtendsClass extends ParentClass, OtherParentClass
+class ImplementsClass implements ParentInterface, OtherParentInterface
+class ExtendsImplementsClass extends ParentClass, OtherParentClass implements ParentInterface, OtherParentInterface
+
+interface ExtendsInterface extends ParentClass, OtherParentClass
+interface ImplementsInterface  implements ParentInterface, OtherParentInterface
+interface ExtendsImplementsInterface extends ParentClass, OtherParentClass implements ParentInterface, OtherParentInterface
+
+enum ExtendsEnum extends ParentClass, OtherParentClass
+enum ImplementsEnum  implements ParentInterface, OtherParentInterface
+enum ExtendsImplementsEnum extends ParentClass, OtherParentClass implements ParentInterface, OtherParentInterface
+
+@enduml

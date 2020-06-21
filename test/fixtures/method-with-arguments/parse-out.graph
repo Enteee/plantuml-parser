@@ -20,6 +20,8 @@
           "_arguments": "int i, boolean b, char c"
         }
       ],
+      "extends_": [],
+      "implements_": [],
       "id": "Dummy",
       "type": "Class",
       "hidden": true

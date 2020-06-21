@@ -62,13 +62,17 @@
                   "returnType": "void",
                   "_arguments": ""
                 }
-              ]
+              ],
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "Car",
               "title": "Car",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "extends_": [],
+              "implements_": []
             },
             {
               "left": "ICar",
@@ -177,6 +181,8 @@
           "_arguments": ""
         }
       ],
+      "extends_": [],
+      "implements_": [],
       "id": "Car",
       "type": "Class",
       "hidden": true
@@ -218,6 +224,8 @@
       "title": "Car",
       "isAbstract": false,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Car",
       "type": "Class",
       "hidden": true

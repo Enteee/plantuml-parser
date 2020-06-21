@@ -19,6 +19,8 @@
           "_arguments": ""
         }
       ],
+      "extends_": [],
+      "implements_": [],
       "id": "Dwelling",
       "type": "Class",
       "hidden": true
@@ -50,6 +52,8 @@
           "_arguments": ""
         }
       ],
+      "extends_": [],
+      "implements_": [],
       "id": "Dwelling",
       "type": "Class",
       "hidden": true

@@ -19,25 +19,33 @@
             "returnType": "void",
             "_arguments": ""
           }
-        ]
+        ],
+        "extends_": [],
+        "implements_": []
       },
       {
         "name": "Apartment",
         "title": "Apartment",
         "isAbstract": false,
-        "members": []
+        "members": [],
+        "extends_": [],
+        "implements_": []
       },
       {
         "name": "House",
         "title": "House",
         "isAbstract": false,
-        "members": []
+        "members": [],
+        "extends_": [],
+        "implements_": []
       },
       {
         "name": "Commune",
         "title": "Commune",
         "isAbstract": false,
-        "members": []
+        "members": [],
+        "extends_": [],
+        "implements_": []
       }
     ]
   }

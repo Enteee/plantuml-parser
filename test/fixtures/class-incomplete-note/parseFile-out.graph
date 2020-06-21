@@ -9,13 +9,17 @@
               "name": "C0",
               "title": "C0",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "C1",
               "title": "C1",
               "isAbstract": false,
-              "members": []
+              "members": [],
+              "extends_": [],
+              "implements_": []
             }
           ]
         }
@@ -29,6 +33,8 @@
       "title": "C0",
       "isAbstract": false,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "C0",
       "type": "Class",
       "hidden": true
@@ -38,6 +44,8 @@
       "title": "C1",
       "isAbstract": false,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "C1",
       "type": "Class",
       "hidden": true

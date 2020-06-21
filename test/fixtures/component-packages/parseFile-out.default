@@ -37,12 +37,16 @@
               {
                 "name": "Math",
                 "title": "IMath",
-                "members": []
+                "members": [],
+                "extends_": [],
+                "implements_": []
               },
               {
                 "name": "Items",
                 "title": "IItems",
-                "members": []
+                "members": [],
+                "extends_": [],
+                "implements_": []
               }
             ]
           },

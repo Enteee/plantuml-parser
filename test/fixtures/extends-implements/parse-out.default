@@ -1,0 +1,111 @@
+[
+  {
+    "elements": [
+      {
+        "name": "ParentClass",
+        "title": "ParentClass",
+        "isAbstract": false,
+        "members": [],
+        "extends_": [],
+        "implements_": []
+      },
+      {
+        "name": "ParentInterface",
+        "title": "ParentInterface",
+        "members": [],
+        "extends_": [],
+        "implements_": []
+      },
+      {
+        "name": "ExtendsClass",
+        "title": "ExtendsClass",
+        "isAbstract": false,
+        "members": [],
+        "extends_": [
+          "ParentClass"
+        ],
+        "implements_": []
+      },
+      {
+        "name": "ImplementsClass",
+        "title": "ImplementsClass",
+        "isAbstract": false,
+        "members": [],
+        "extends_": [],
+        "implements_": [
+          "ParentInterface"
+        ]
+      },
+      {
+        "name": "ExtendsImplementsClass",
+        "title": "ExtendsImplementsClass",
+        "isAbstract": false,
+        "members": [],
+        "extends_": [
+          "ParentClass"
+        ],
+        "implements_": [
+          "ParentInterface"
+        ]
+      },
+      {
+        "name": "OnlyExtendsInterface",
+        "title": "OnlyExtendsInterface",
+        "members": [],
+        "extends_": [
+          "ParentClass"
+        ],
+        "implements_": []
+      },
+      {
+        "name": "OnlyImplementsInterface",
+        "title": "OnlyImplementsInterface",
+        "members": [],
+        "extends_": [],
+        "implements_": [
+          "ParentInterface"
+        ]
+      },
+      {
+        "name": "ExtendsImplementsInterface",
+        "title": "ExtendsImplementsInterface",
+        "members": [],
+        "extends_": [
+          "ParentClass"
+        ],
+        "implements_": [
+          "ParentInterface"
+        ]
+      },
+      {
+        "name": "OnlyExtendsEnum",
+        "title": "OnlyExtendsEnum",
+        "members": [],
+        "extends_": [
+          "ParentClass"
+        ],
+        "implements_": []
+      },
+      {
+        "name": "OnlyImplementsEnum",
+        "title": "OnlyImplementsEnum",
+        "members": [],
+        "extends_": [],
+        "implements_": [
+          "ParentInterface"
+        ]
+      },
+      {
+        "name": "ExtendsImplementsEnum",
+        "title": "ExtendsImplementsEnum",
+        "members": [],
+        "extends_": [
+          "ParentClass"
+        ],
+        "implements_": [
+          "ParentInterface"
+        ]
+      }
+    ]
+  }
+]

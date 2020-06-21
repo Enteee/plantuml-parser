@@ -5,6 +5,8 @@
       "title": "A",
       "isAbstract": false,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "A",
       "type": "Class",
       "hidden": true
@@ -14,6 +16,8 @@
       "title": "B",
       "isAbstract": false,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "B",
       "type": "Class",
       "hidden": true

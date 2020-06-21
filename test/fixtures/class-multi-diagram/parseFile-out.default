@@ -22,7 +22,9 @@
                 "returnType": "void",
                 "_arguments": ""
               }
-            ]
+            ],
+            "extends_": [],
+            "implements_": []
           }
         ]
       },
@@ -46,7 +48,9 @@
                 "returnType": "void",
                 "_arguments": ""
               }
-            ]
+            ],
+            "extends_": [],
+            "implements_": []
           }
         ]
       }

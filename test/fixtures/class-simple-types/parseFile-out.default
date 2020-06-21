@@ -8,23 +8,31 @@
             "name": "C",
             "title": "C",
             "isAbstract": false,
-            "members": []
+            "members": [],
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "AC",
             "title": "AC",
             "isAbstract": true,
-            "members": []
+            "members": [],
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "I",
             "title": "I",
-            "members": []
+            "members": [],
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "E",
             "title": "E",
-            "members": []
+            "members": [],
+            "extends_": [],
+            "implements_": []
           }
         ]
       }

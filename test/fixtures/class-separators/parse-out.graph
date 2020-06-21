@@ -5,6 +5,8 @@
       "title": "Separators",
       "isAbstract": false,
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Separators",
       "type": "Class",
       "hidden": true

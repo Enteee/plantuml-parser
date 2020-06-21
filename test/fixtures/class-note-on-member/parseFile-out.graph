@@ -17,7 +17,9 @@
                   "returnType": "void",
                   "_arguments": ""
                 }
-              ]
+              ],
+              "extends_": [],
+              "implements_": []
             },
             {
               "text": "Untype. She does\nnot like types.",
@@ -43,6 +45,8 @@
           "_arguments": ""
         }
       ],
+      "extends_": [],
+      "implements_": [],
       "id": "Alice",
       "type": "Class",
       "hidden": true

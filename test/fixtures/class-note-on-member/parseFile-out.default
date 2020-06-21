@@ -16,7 +16,9 @@
                 "returnType": "void",
                 "_arguments": ""
               }
-            ]
+            ],
+            "extends_": [],
+            "implements_": []
           },
           {
             "text": "Untype. She does\nnot like types.",

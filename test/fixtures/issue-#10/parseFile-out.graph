@@ -8,7 +8,9 @@
             {
               "name": "_COMP_EXT1_IF1",
               "title": "_COMP_EXT1_IF1",
-              "members": []
+              "members": [],
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "rmf",
@@ -32,6 +34,8 @@
       "name": "_COMP_EXT1_IF1",
       "title": "_COMP_EXT1_IF1",
       "members": [],
+      "extends_": [],
+      "implements_": [],
       "id": "_COMP_EXT1_IF1",
       "type": "Interface",
       "hidden": true
