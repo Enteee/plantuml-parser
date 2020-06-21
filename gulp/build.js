@@ -3,6 +3,7 @@ const conf = require('../conf');
 const { task, series, parallel, src, dest } = require('gulp');
 const { join } = require('path');
 
+const log = require('fancy-log');
 
 const rename = require('gulp-rename');
 const pegjs = require('gulp-pegjs');
@@ -34,7 +35,10 @@ task('build-optimized',
     .pipe(
       pegjs({
         ...buildOptions,
-      }).on('error', cb),
+      }).on('error', (e) => {
+        log.error(e);
+        cb(e.message);
+      }),
     )
     .pipe(
       rename('plantuml.ts'),
@@ -50,7 +54,10 @@ task('build-debug',
       pegjs({
         trace: true,
         ...buildOptions,
-      }).on('error', cb),
+      }).on('error', (e) => {
+        log.error(e);
+        cb(e.message);
+      }),
     )
     .pipe(
       rename('plantuml-trace.ts'),
