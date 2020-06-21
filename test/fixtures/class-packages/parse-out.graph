@@ -5,7 +5,8 @@
       "title": "Worker1",
       "isAbstract": false,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Worker1",
       "type": "Class",
       "hidden": true
@@ -15,7 +16,8 @@
       "title": "Worker2",
       "isAbstract": false,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Worker2",
       "type": "Class",
       "hidden": true
@@ -25,7 +27,8 @@
       "title": "Worker3",
       "isAbstract": false,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Worker3",
       "type": "Class",
       "hidden": true
@@ -35,7 +38,8 @@
       "title": "Worker4",
       "isAbstract": false,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Worker4",
       "type": "Class",
       "hidden": true
@@ -45,7 +49,8 @@
       "title": "Worker5",
       "isAbstract": false,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Worker5",
       "type": "Class",
       "hidden": true
@@ -55,7 +60,8 @@
       "title": "Worker6",
       "isAbstract": false,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Worker6",
       "type": "Class",
       "hidden": true

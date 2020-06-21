@@ -9,7 +9,8 @@
             "title": "Car",
             "isAbstract": false,
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           },
           {
             "left": "ICar",

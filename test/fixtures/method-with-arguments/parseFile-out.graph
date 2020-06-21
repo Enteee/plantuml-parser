@@ -25,7 +25,8 @@
                   "_arguments": "int i, boolean b, char c"
                 }
               ],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             }
           ]
         }
@@ -54,7 +55,8 @@
           "_arguments": "int i, boolean b, char c"
         }
       ],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Dummy",
       "type": "Class",
       "hidden": true

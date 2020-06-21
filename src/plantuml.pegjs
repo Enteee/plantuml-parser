@@ -205,24 +205,26 @@ NoteOf
 //
 
 Class
-  = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? _ extended:Extends? _ implemented:Implements? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? _ extends_:Extends? _ implements_:Implements? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Class(
       name.name,
       name.title,
       !!isAbstract,
       removeUndefined(members),
-      (extended && removeUndefined(extended) || []).concat(implemented && removeUndefined(implemented) || [])
+      extends_,
+      implements_
     );
   }
-  / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? _ extended:Extends? _ implemented:Implements? _ EndLine
+  / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ Decorators? _ extends_:Extends? _ implements_:Implements? _ EndLine
   {
     return new types.Class(
       name.name,
       name.title,
       !!isAbstract,
       [],
-      (extended && removeUndefined(extended) || []).concat(implemented && removeUndefined(implemented) || [])
+      extends_,
+      implements_
     );
   }
 
@@ -289,22 +291,24 @@ MemberVariable
 //
 
 Interface
-  = _ "interface "i _ name:ElementName _ Decorators? _ extended:Extends? _ implemented:Implements? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "interface "i _ name:ElementName _ Decorators? _ extends_:Extends? _ implements_:Implements? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Interface(
       name.name,
       name.title,
       removeUndefined(members),
-      (extended && removeUndefined(extended) || []).concat(implemented && removeUndefined(implemented) || [])
+      extends_,
+      implements_
     );
   }
-  / _ "interface "i _ name:ElementName _ Decorators? _ extended:Extends? _ implemented:Implements? _ EndLine
+  / _ "interface "i _ name:ElementName _ Decorators? _ extends_:Extends? _ implements_:Implements? _ EndLine
   {
     return new types.Interface(
       name.name,
       name.title,
       [],
-      (extended && removeUndefined(extended) || []).concat(implemented && removeUndefined(implemented) || [])
+      extends_,
+      implements_
     );
   }
 
@@ -313,22 +317,24 @@ Interface
 //
 
 Enum
-  = _ "enum "i _ name:ElementName _ Decorators? _ extended:Extends? _ implemented:Implements? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "enum "i _ name:ElementName _ Decorators? _ extends_:Extends? _ implements_:Implements? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Enum(
       name.name,
       name.title,
       removeUndefined(members),
-      (extended && removeUndefined(extended) || []).concat(implemented && removeUndefined(implemented) || [])
+      extends_,
+      implements_
     );
   }
-  / _ "enum "i _ name:ElementName _ Decorators? _ extended:Extends? _ implemented:Implements? _ EndLine
+  / _ "enum "i _ name:ElementName _ Decorators? _ extends_:Extends? _ implements_:Implements? _ EndLine
   {
     return new types.Enum(
       name.name,
       name.title,
       [],
-      (extended && removeUndefined(extended) || []).concat(implemented && removeUndefined(implemented) || [])
+      extends_,
+      implements_
     );
   }
 
@@ -483,14 +489,17 @@ RelationshipLabel
 RelationshipHidden
   = "[hidden]"
 
-InheritanceListItem
-  = _ !"implements" name:Name ","? { return name; }
-
 Extends
-  = "extends" parents:InheritanceListItem* { return parents; }
+  = "extends "i _ parents:NameList
+  {
+    return parents;
+  }
 
 Implements
-  = "implements" parents:InheritanceListItem* { return parents; }
+  = "implements "i _ parents:NameList
+  {
+    return parents;
+  }
 
 //
 // NotImplementedBlock
@@ -602,6 +611,20 @@ Name
   = name:([A-Za-z0-9._]+)
   {
     return name.join('');
+  }
+
+NameList
+  = nameListItems:NameListItem* _ lastNameListItem:Name
+  {
+    return removeUndefined(
+      nameListItems.concat(lastNameListItem)
+    );
+  }
+
+NameListItem
+  = _ name:Name _ ","
+  {
+    return name;
   }
 
 Decorators

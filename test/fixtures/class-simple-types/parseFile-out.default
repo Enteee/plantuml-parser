@@ -9,26 +9,30 @@
             "title": "C",
             "isAbstract": false,
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "AC",
             "title": "AC",
             "isAbstract": true,
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "I",
             "title": "I",
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "E",
             "title": "E",
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           }
         ]
       }

@@ -62,14 +62,16 @@
                 "_arguments": ""
               }
             ],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "Car",
             "title": "Car",
             "isAbstract": false,
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           },
           {
             "left": "ICar",

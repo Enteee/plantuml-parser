@@ -10,26 +10,30 @@
               "title": "C",
               "isAbstract": false,
               "members": [],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "AC",
               "title": "AC",
               "isAbstract": true,
               "members": [],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "I",
               "title": "I",
               "members": [],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "name": "E",
               "title": "E",
               "members": [],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             }
           ]
         }
@@ -43,7 +47,8 @@
       "title": "C",
       "isAbstract": false,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "C",
       "type": "Class",
       "hidden": true
@@ -53,7 +58,8 @@
       "title": "AC",
       "isAbstract": true,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "AC",
       "type": "Class",
       "hidden": true
@@ -62,7 +68,8 @@
       "name": "I",
       "title": "I",
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "I",
       "type": "Interface",
       "hidden": true

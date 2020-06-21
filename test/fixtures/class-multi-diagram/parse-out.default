@@ -20,7 +20,8 @@
             "_arguments": ""
           }
         ],
-        "inherits": []
+        "extends_": [],
+        "implements_": []
       }
     ]
   },
@@ -45,7 +46,8 @@
             "_arguments": ""
           }
         ],
-        "inherits": []
+        "extends_": [],
+        "implements_": []
       }
     ]
   }

@@ -20,13 +20,15 @@
             "name": "Math",
             "title": "IMath",
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "Items",
             "title": "IItems",
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           },
           {
             "left": "Business Logic",

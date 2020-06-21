@@ -12,7 +12,8 @@
             "name": "I",
             "title": "I",
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           },
           {
             "left": "C",

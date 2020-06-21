@@ -24,7 +24,8 @@
                   "_arguments": ""
                 }
               ],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             }
           ]
         },
@@ -49,7 +50,8 @@
                   "_arguments": ""
                 }
               ],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             }
           ]
         }
@@ -77,7 +79,8 @@
           "_arguments": ""
         }
       ],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Dwelling",
       "type": "Class",
       "hidden": true
@@ -109,7 +112,8 @@
           "_arguments": ""
         }
       ],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Dwelling",
       "type": "Class",
       "hidden": true

@@ -6,7 +6,8 @@
         "title": "Separators",
         "isAbstract": false,
         "members": [],
-        "inherits": []
+        "extends_": [],
+        "implements_": []
       }
     ]
   }

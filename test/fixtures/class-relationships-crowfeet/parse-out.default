@@ -6,14 +6,16 @@
         "title": "A",
         "isAbstract": false,
         "members": [],
-        "inherits": []
+        "extends_": [],
+        "implements_": []
       },
       {
         "name": "B",
         "title": "B",
         "isAbstract": false,
         "members": [],
-        "inherits": []
+        "extends_": [],
+        "implements_": []
       },
       {
         "left": "A",

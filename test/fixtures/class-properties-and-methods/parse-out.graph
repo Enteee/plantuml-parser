@@ -58,7 +58,8 @@
           "_arguments": ""
         }
       ],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Car",
       "type": "Class",
       "hidden": true
@@ -100,7 +101,8 @@
       "title": "Car",
       "isAbstract": false,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Car",
       "type": "Class",
       "hidden": true

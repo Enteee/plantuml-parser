@@ -5,7 +5,8 @@
       "title": "AbstractList",
       "isAbstract": true,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "AbstractList",
       "type": "Class",
       "hidden": true
@@ -15,7 +16,8 @@
       "title": "Test",
       "isAbstract": false,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Test",
       "type": "Class",
       "hidden": true
@@ -25,7 +27,8 @@
       "title": "System",
       "isAbstract": false,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "System",
       "type": "Class",
       "hidden": true
@@ -35,7 +38,8 @@
       "title": "Date",
       "isAbstract": false,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Date",
       "type": "Class",
       "hidden": true
@@ -94,7 +98,8 @@
           "type": "End"
         }
       ],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Foo1",
       "type": "Class",
       "hidden": true
@@ -202,7 +207,8 @@
           "type": "String"
         }
       ],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "User",
       "type": "Class",
       "hidden": true
@@ -227,7 +233,8 @@
       "name": "List",
       "title": "List",
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "List",
       "type": "Interface",
       "hidden": true
@@ -237,7 +244,8 @@
       "title": "Object",
       "isAbstract": false,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Object",
       "type": "Class",
       "hidden": true

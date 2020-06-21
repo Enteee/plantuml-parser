@@ -21,7 +21,8 @@
             "_arguments": "int i, boolean b, char c"
           }
         ],
-        "inherits": []
+        "extends_": [],
+        "implements_": []
       }
     ]
   }

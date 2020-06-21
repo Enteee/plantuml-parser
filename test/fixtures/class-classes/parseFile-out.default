@@ -23,28 +23,32 @@
                 "_arguments": ""
               }
             ],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "Apartment",
             "title": "Apartment",
             "isAbstract": false,
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "House",
             "title": "House",
             "isAbstract": false,
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "Commune",
             "title": "Commune",
             "isAbstract": false,
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           }
         ]
       }

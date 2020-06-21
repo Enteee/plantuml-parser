@@ -162,14 +162,16 @@
                 "type": ""
               }
             ],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           },
           [
             {
               "name": "Peripheral",
               "title": "Peripheral",
               "members": [],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "text": "Hardware providing\n      input/output from/to \n      the physical world",
@@ -195,7 +197,8 @@
                 "title": "Printer",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "left": "Printer",
@@ -216,7 +219,8 @@
                 "title": "CCTV",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "left": "CCTV",
@@ -237,7 +241,8 @@
                 "title": "MultiFunctionPeripheral",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "text": "* Xerox",
@@ -271,7 +276,8 @@
                   "type": ""
                 }
               ],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "text": "Hardware operating in \n      the physical-, network-,\n          transport- or application-layer",
@@ -296,7 +302,8 @@
               "title": "Switch",
               "isAbstract": false,
               "members": [],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "left": "Switch",
@@ -317,7 +324,8 @@
               "title": "Router",
               "isAbstract": false,
               "members": [],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "left": "Router",
@@ -338,7 +346,8 @@
               "title": "Firewall",
               "isAbstract": false,
               "members": [],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "left": "Firewall",
@@ -359,7 +368,8 @@
               "title": "Proxy",
               "isAbstract": false,
               "members": [],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "text": "* Blue Coat",
@@ -384,7 +394,8 @@
               "title": "LoadBalancer",
               "isAbstract": false,
               "members": [],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "left": "LoadBalancer",
@@ -405,7 +416,8 @@
               "title": "NetworkManagement",
               "isAbstract": false,
               "members": [],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "text": "* Infoblox\n      * WAM",
@@ -438,7 +450,8 @@
                   "type": ""
                 }
               ],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "text": "Hardware providing\n      auxiliry services\n      for IT operations",
@@ -464,7 +477,8 @@
                 "title": "ATS",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "text": "Automatic\n              Transfer\n              Switch",
@@ -489,7 +503,8 @@
                 "title": "KVM",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "text": "Keyboard\n              Video \n              Mouse",
@@ -514,7 +529,8 @@
                 "title": "PDU",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "text": "Power\n              Distribution\n              Unit",
@@ -539,7 +555,8 @@
                 "title": "UPS",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "text": "Uninterruptable\n              Power\n              Supply",
@@ -564,7 +581,8 @@
                 "title": "HSM",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "text": "Hardware\n              Security\n              Module\n              Generates and stores\n              keys and certificats",
@@ -589,7 +607,8 @@
                 "title": "AccessControl",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "text": "* Badge Reader\t\t\t\n              * Vein Scanner",
@@ -623,7 +642,8 @@
                   "type": ""
                 }
               ],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "text": "Hardware connecting\n      people",
@@ -649,7 +669,8 @@
                 "title": "Gateway",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "left": "Gateway",
@@ -670,7 +691,8 @@
                 "title": "Voice",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "text": "* Cisco Telephones",
@@ -695,7 +717,8 @@
                 "title": "Video",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "left": "Video",
@@ -737,7 +760,8 @@
                   "type": ""
                 }
               ],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "text": "Provides a scalable\n      and reliable service",
@@ -931,7 +955,8 @@
                 "title": "SoftwareCluster",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "text": "Instances: Processes",
@@ -956,7 +981,8 @@
                 "title": "ContainerCluster",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "text": "Instances: Containers",
@@ -985,7 +1011,8 @@
                 "title": "VMCluster",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "text": "Instances: Virtual Machines",
@@ -1014,7 +1041,8 @@
                 "title": "StorageCluster",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "text": "Instances: Storage Containers",
@@ -1220,7 +1248,8 @@
                   "type": ""
                 }
               ],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "text": "Hardware providing\n      long term persistance\n      of information",
@@ -1246,7 +1275,8 @@
                 "title": "TapeLibrary",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "left": "TapeLibrary",
@@ -1267,7 +1297,8 @@
                 "title": "NAS",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "text": "Network\n          Attached\n          Storage\n          Exports a file system\n          Clients communicate with\n          the NAS using a NFS-like\n          protocol: Operations are\n          file system operations",
@@ -1292,7 +1323,8 @@
                 "title": "SAN",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "text": "Storage\n          Area\n          Network\n          Exports a block device\n          Clients communicate with\n          the SAN using a SCSI-like\n          protocol: Operations are\n          block device operations",
@@ -1317,7 +1349,8 @@
                 "title": "Switch",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "left": "StorageSwitch",
@@ -1338,7 +1371,8 @@
                 "title": "Controller",
                 "isAbstract": false,
                 "members": [],
-                "inherits": []
+                "extends_": [],
+                "implements_": []
               },
               {
                 "left": "StorageController",
@@ -1410,7 +1444,8 @@
                   "type": ""
                 }
               ],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "text": "All internal attributes\n      are automatically \n      populated by \n      Service Manager\n      based on the location\n      attribute",
@@ -1436,7 +1471,8 @@
               "name": "Location",
               "title": "Location",
               "members": [],
-              "inherits": []
+              "extends_": [],
+              "implements_": []
             },
             {
               "left": "Location",

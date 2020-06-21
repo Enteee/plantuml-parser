@@ -9,14 +9,16 @@
             "title": "C0",
             "isAbstract": false,
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           },
           {
             "name": "C1",
             "title": "C1",
             "isAbstract": false,
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           }
         ]
       }

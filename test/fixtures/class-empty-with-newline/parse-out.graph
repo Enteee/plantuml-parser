@@ -5,7 +5,8 @@
       "title": "AbstractList",
       "isAbstract": false,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "AbstractList",
       "type": "Class",
       "hidden": true

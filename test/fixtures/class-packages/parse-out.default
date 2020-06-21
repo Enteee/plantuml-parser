@@ -11,7 +11,8 @@
             "title": "Worker1",
             "isAbstract": false,
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           }
         ]
       },
@@ -25,7 +26,8 @@
             "title": "Worker2",
             "isAbstract": false,
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           }
         ]
       },
@@ -39,7 +41,8 @@
             "title": "Worker3",
             "isAbstract": false,
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           }
         ]
       },
@@ -53,7 +56,8 @@
             "title": "Worker4",
             "isAbstract": false,
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           }
         ]
       },
@@ -67,7 +71,8 @@
             "title": "Worker5",
             "isAbstract": false,
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           }
         ]
       },
@@ -81,7 +86,8 @@
             "title": "Worker6",
             "isAbstract": false,
             "members": [],
-            "inherits": []
+            "extends_": [],
+            "implements_": []
           }
         ]
       }

@@ -1,12 +1,20 @@
 [
   {
-    "name": "test/fixtures/extends-implements/in.plantuml",
+    "name": "test/fixtures/extends-implements-multi/in.plantuml",
     "diagrams": [
       {
         "elements": [
           {
             "name": "ParentClass",
             "title": "ParentClass",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [],
+            "implements_": []
+          },
+          {
+            "name": "OtherParentClass",
+            "title": "OtherParentClass",
             "isAbstract": false,
             "members": [],
             "extends_": [],
@@ -20,12 +28,20 @@
             "implements_": []
           },
           {
+            "name": "OtherParentInterface",
+            "title": "OtherParentInterface",
+            "members": [],
+            "extends_": [],
+            "implements_": []
+          },
+          {
             "name": "ExtendsClass",
             "title": "ExtendsClass",
             "isAbstract": false,
             "members": [],
             "extends_": [
-              "ParentClass"
+              "ParentClass",
+              "OtherParentClass"
             ],
             "implements_": []
           },
@@ -36,7 +52,8 @@
             "members": [],
             "extends_": [],
             "implements_": [
-              "ParentInterface"
+              "ParentInterface",
+              "OtherParentInterface"
             ]
           },
           {
@@ -45,28 +62,32 @@
             "isAbstract": false,
             "members": [],
             "extends_": [
-              "ParentClass"
+              "ParentClass",
+              "OtherParentClass"
             ],
             "implements_": [
-              "ParentInterface"
+              "ParentInterface",
+              "OtherParentInterface"
             ]
           },
           {
-            "name": "OnlyExtendsInterface",
-            "title": "OnlyExtendsInterface",
+            "name": "ExtendsInterface",
+            "title": "ExtendsInterface",
             "members": [],
             "extends_": [
-              "ParentClass"
+              "ParentClass",
+              "OtherParentClass"
             ],
             "implements_": []
           },
           {
-            "name": "OnlyImplementsInterface",
-            "title": "OnlyImplementsInterface",
+            "name": "ImplementsInterface",
+            "title": "ImplementsInterface",
             "members": [],
             "extends_": [],
             "implements_": [
-              "ParentInterface"
+              "ParentInterface",
+              "OtherParentInterface"
             ]
           },
           {
@@ -74,28 +95,32 @@
             "title": "ExtendsImplementsInterface",
             "members": [],
             "extends_": [
-              "ParentClass"
+              "ParentClass",
+              "OtherParentClass"
             ],
             "implements_": [
-              "ParentInterface"
+              "ParentInterface",
+              "OtherParentInterface"
             ]
           },
           {
-            "name": "OnlyExtendsEnum",
-            "title": "OnlyExtendsEnum",
+            "name": "ExtendsEnum",
+            "title": "ExtendsEnum",
             "members": [],
             "extends_": [
-              "ParentClass"
+              "ParentClass",
+              "OtherParentClass"
             ],
             "implements_": []
           },
           {
-            "name": "OnlyImplementsEnum",
-            "title": "OnlyImplementsEnum",
+            "name": "ImplementsEnum",
+            "title": "ImplementsEnum",
             "members": [],
             "extends_": [],
             "implements_": [
-              "ParentInterface"
+              "ParentInterface",
+              "OtherParentInterface"
             ]
           },
           {
@@ -103,10 +128,12 @@
             "title": "ExtendsImplementsEnum",
             "members": [],
             "extends_": [
-              "ParentClass"
+              "ParentClass",
+              "OtherParentClass"
             ],
             "implements_": [
-              "ParentInterface"
+              "ParentInterface",
+              "OtherParentInterface"
             ]
           }
         ]

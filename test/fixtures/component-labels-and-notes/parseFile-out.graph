@@ -39,13 +39,15 @@
                   "name": "Math",
                   "title": "IMath",
                   "members": [],
-                  "inherits": []
+                  "extends_": [],
+                  "implements_": []
                 },
                 {
                   "name": "Items",
                   "title": "IItems",
                   "members": [],
-                  "inherits": []
+                  "extends_": [],
+                  "implements_": []
                 },
                 {
                   "text": "A note can also\n        be on several lines\n        like this one",
@@ -180,7 +182,8 @@
       "name": "Math",
       "title": "IMath",
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Math",
       "type": "Interface",
       "hidden": true
@@ -189,7 +192,8 @@
       "name": "Items",
       "title": "IItems",
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "Items",
       "type": "Interface",
       "hidden": true

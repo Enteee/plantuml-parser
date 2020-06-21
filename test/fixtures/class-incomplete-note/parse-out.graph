@@ -5,7 +5,8 @@
       "title": "C0",
       "isAbstract": false,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "C0",
       "type": "Class",
       "hidden": true
@@ -15,7 +16,8 @@
       "title": "C1",
       "isAbstract": false,
       "members": [],
-      "inherits": [],
+      "extends_": [],
+      "implements_": [],
       "id": "C1",
       "type": "Class",
       "hidden": true
