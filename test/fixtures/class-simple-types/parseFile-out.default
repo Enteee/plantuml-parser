@@ -10,7 +10,9 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "AC",
@@ -18,21 +20,27 @@
             "isAbstract": true,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "I",
             "title": "I",
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "E",
             "title": "E",
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           }
         ]
       }

@@ -15,7 +15,9 @@
           }
         ],
         "extends_": [],
-        "implements_": []
+        "implements_": [],
+        "generics_": null,
+        "stereotype_": "single"
       },
       {
         "text": "Untype. She does\nnot like types.",

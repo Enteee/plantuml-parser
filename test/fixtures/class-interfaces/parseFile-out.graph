@@ -11,7 +11,9 @@
               "isAbstract": false,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics_": null,
+              "stereotype_": null
             },
             {
               "left": "ICar",
@@ -69,6 +71,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "Car",
       "type": "Class",
       "hidden": true

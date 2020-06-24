@@ -25,7 +25,9 @@
                 }
               ],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics_": null,
+              "stereotype_": null
             },
             {
               "name": "Apartment",
@@ -33,7 +35,9 @@
               "isAbstract": false,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics_": null,
+              "stereotype_": null
             },
             {
               "name": "House",
@@ -41,7 +45,9 @@
               "isAbstract": false,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics_": null,
+              "stereotype_": null
             },
             {
               "name": "Commune",
@@ -49,7 +55,9 @@
               "isAbstract": false,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics_": null,
+              "stereotype_": null
             }
           ]
         }
@@ -79,6 +87,8 @@
       ],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "Dwelling",
       "type": "Class",
       "hidden": true
@@ -98,6 +108,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "Apartment",
       "type": "Class",
       "hidden": true
@@ -109,6 +121,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "House",
       "type": "Class",
       "hidden": true
@@ -120,6 +134,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "Commune",
       "type": "Class",
       "hidden": true

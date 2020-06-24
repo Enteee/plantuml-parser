@@ -7,14 +7,18 @@
         "isAbstract": false,
         "members": [],
         "extends_": [],
-        "implements_": []
+        "implements_": [],
+        "generics_": null,
+        "stereotype_": null
       },
       {
         "name": "ParentInterface",
         "title": "ParentInterface",
         "members": [],
         "extends_": [],
-        "implements_": []
+        "implements_": [],
+        "generics_": null,
+        "stereotype_": null
       },
       {
         "name": "ExtendsClass",
@@ -24,7 +28,9 @@
         "extends_": [
           "ParentClass"
         ],
-        "implements_": []
+        "implements_": [],
+        "generics_": null,
+        "stereotype_": null
       },
       {
         "name": "ImplementsClass",
@@ -34,7 +40,9 @@
         "extends_": [],
         "implements_": [
           "ParentInterface"
-        ]
+        ],
+        "generics_": null,
+        "stereotype_": null
       },
       {
         "name": "ExtendsImplementsClass",
@@ -46,7 +54,9 @@
         ],
         "implements_": [
           "ParentInterface"
-        ]
+        ],
+        "generics_": null,
+        "stereotype_": null
       },
       {
         "name": "OnlyExtendsInterface",
@@ -55,7 +65,9 @@
         "extends_": [
           "ParentClass"
         ],
-        "implements_": []
+        "implements_": [],
+        "generics_": null,
+        "stereotype_": null
       },
       {
         "name": "OnlyImplementsInterface",
@@ -64,7 +76,9 @@
         "extends_": [],
         "implements_": [
           "ParentInterface"
-        ]
+        ],
+        "generics_": null,
+        "stereotype_": null
       },
       {
         "name": "ExtendsImplementsInterface",
@@ -75,7 +89,9 @@
         ],
         "implements_": [
           "ParentInterface"
-        ]
+        ],
+        "generics_": null,
+        "stereotype_": null
       },
       {
         "name": "OnlyExtendsEnum",
@@ -84,7 +100,9 @@
         "extends_": [
           "ParentClass"
         ],
-        "implements_": []
+        "implements_": [],
+        "generics_": null,
+        "stereotype_": null
       },
       {
         "name": "OnlyImplementsEnum",
@@ -93,7 +111,9 @@
         "extends_": [],
         "implements_": [
           "ParentInterface"
-        ]
+        ],
+        "generics_": null,
+        "stereotype_": null
       },
       {
         "name": "ExtendsImplementsEnum",
@@ -104,7 +124,9 @@
         ],
         "implements_": [
           "ParentInterface"
-        ]
+        ],
+        "generics_": null,
+        "stereotype_": null
       }
     ]
   }

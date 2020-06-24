@@ -10,7 +10,9 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "OtherParentClass",
@@ -18,21 +20,27 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "ParentInterface",
             "title": "ParentInterface",
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "OtherParentInterface",
             "title": "OtherParentInterface",
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "ExtendsClass",
@@ -43,7 +51,9 @@
               "ParentClass",
               "OtherParentClass"
             ],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "ImplementsClass",
@@ -54,7 +64,9 @@
             "implements_": [
               "ParentInterface",
               "OtherParentInterface"
-            ]
+            ],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "ExtendsImplementsClass",
@@ -68,7 +80,9 @@
             "implements_": [
               "ParentInterface",
               "OtherParentInterface"
-            ]
+            ],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "ExtendsInterface",
@@ -78,7 +92,9 @@
               "ParentClass",
               "OtherParentClass"
             ],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "ImplementsInterface",
@@ -88,7 +104,9 @@
             "implements_": [
               "ParentInterface",
               "OtherParentInterface"
-            ]
+            ],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "ExtendsImplementsInterface",
@@ -101,7 +119,9 @@
             "implements_": [
               "ParentInterface",
               "OtherParentInterface"
-            ]
+            ],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "ExtendsEnum",
@@ -111,7 +131,9 @@
               "ParentClass",
               "OtherParentClass"
             ],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "ImplementsEnum",
@@ -121,7 +143,9 @@
             "implements_": [
               "ParentInterface",
               "OtherParentInterface"
-            ]
+            ],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "ExtendsImplementsEnum",
@@ -134,7 +158,9 @@
             "implements_": [
               "ParentInterface",
               "OtherParentInterface"
-            ]
+            ],
+            "generics_": null,
+            "stereotype_": null
           }
         ]
       }

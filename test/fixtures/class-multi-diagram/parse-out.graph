@@ -21,6 +21,8 @@
       ],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "Dwelling",
       "type": "Class",
       "hidden": true
@@ -54,6 +56,8 @@
       ],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "Dwelling",
       "type": "Class",
       "hidden": true

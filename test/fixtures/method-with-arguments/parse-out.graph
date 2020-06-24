@@ -22,6 +22,8 @@
       ],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "Dummy",
       "type": "Class",
       "hidden": true

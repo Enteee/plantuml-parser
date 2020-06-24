@@ -11,7 +11,9 @@
               "isAbstract": true,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics_": null,
+              "stereotype_": null
             },
             {
               "name": "Test",
@@ -19,7 +21,29 @@
               "isAbstract": false,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics_": "general",
+              "stereotype_": "stereo"
+            },
+            {
+              "name": "Test",
+              "title": "Test",
+              "isAbstract": false,
+              "members": [],
+              "extends_": [],
+              "implements_": [],
+              "generics_": "general only",
+              "stereotype_": null
+            },
+            {
+              "name": "Test",
+              "title": "Test",
+              "isAbstract": false,
+              "members": [],
+              "extends_": [],
+              "implements_": [],
+              "generics_": null,
+              "stereotype_": "stereo only"
             },
             {
               "name": "System",
@@ -27,7 +51,9 @@
               "isAbstract": false,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics_": null,
+              "stereotype_": "(S,#FF7700) Singleton"
             },
             {
               "name": "Date",
@@ -35,7 +61,9 @@
               "isAbstract": false,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics_": null,
+              "stereotype_": "(D,orchid)"
             },
             {
               "name": "Foo1",
@@ -92,7 +120,9 @@
                 }
               ],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics_": "Generics tag",
+              "stereotype_": null
             },
             {
               "name": "User",
@@ -134,7 +164,9 @@
                 }
               ],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics_": null,
+              "stereotype_": null
             },
             {
               "name": "TimeUnit",
@@ -160,14 +192,18 @@
                 }
               ],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics_": null,
+              "stereotype_": null
             },
             {
               "name": "List",
               "title": "List",
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics_": null,
+              "stereotype_": null
             },
             {
               "name": "Object",
@@ -175,7 +211,9 @@
               "isAbstract": false,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics_": null,
+              "stereotype_": "general"
             },
             {
               "left": "Object",
@@ -205,6 +243,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "AbstractList",
       "type": "Class",
       "hidden": true
@@ -216,6 +256,34 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": "general",
+      "stereotype_": "stereo",
+      "id": "Test",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Test",
+      "title": "Test",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics_": "general only",
+      "stereotype_": null,
+      "id": "Test",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "Test",
+      "title": "Test",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics_": null,
+      "stereotype_": "stereo only",
       "id": "Test",
       "type": "Class",
       "hidden": true
@@ -227,6 +295,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": "(S,#FF7700) Singleton",
       "id": "System",
       "type": "Class",
       "hidden": true
@@ -238,6 +308,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": "(D,orchid)",
       "id": "Date",
       "type": "Class",
       "hidden": true
@@ -298,6 +370,8 @@
       ],
       "extends_": [],
       "implements_": [],
+      "generics_": "Generics tag",
+      "stereotype_": null,
       "id": "Foo1",
       "type": "Class",
       "hidden": true
@@ -407,6 +481,8 @@
       ],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "User",
       "type": "Class",
       "hidden": true
@@ -433,6 +509,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "List",
       "type": "Interface",
       "hidden": true
@@ -444,6 +522,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": "general",
       "id": "Object",
       "type": "Class",
       "hidden": true
@@ -453,6 +533,18 @@
     {
       "from": "test/fixtures/class-types/in.plantuml",
       "to": "AbstractList",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-types/in.plantuml",
+      "to": "Test",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-types/in.plantuml",
+      "to": "Test",
       "name": "contains",
       "hidden": true
     },

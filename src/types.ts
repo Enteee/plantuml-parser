@@ -61,6 +61,8 @@ export class Enum {
     public members: Member[] = [],
     public extends_: string[] = [],
     public implements_: string[] = [],
+    public generics_?: string,
+    public stereotype_?: string,
   ) {
     this.members = members || [];
     this.extends_ = extends_ || [];
@@ -75,6 +77,8 @@ export class Interface {
     public members: Member[] = [],
     public extends_: string[] = [],
     public implements_: string[] = [],
+    public generics_?: string,
+    public stereotype_?: string,
   ) {
     this.members = members || [];
     this.extends_ = extends_ || [];
@@ -90,6 +94,8 @@ export class Class {
     public members: Member[] = [],
     public extends_: string[] = [],
     public implements_: string[] = [],
+    public generics_?: string,
+    public stereotype_?: string,
   ) {
     this.isAbstract = !!isAbstract;
     this.members = members || [];

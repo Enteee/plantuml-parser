@@ -9,7 +9,9 @@
             "title": "_COMP_EXT1_IF1",
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "rmf",

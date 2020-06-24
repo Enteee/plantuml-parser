@@ -9,7 +9,13 @@ abstract class AbstractList {
 
 }
 
-class Test << general >> {
+class Test < general > << stereo >> {
+}
+
+class Test < general only > {
+}
+
+class Test<<stereo only>>{
 }
 
 class System << (S,#FF7700) Singleton >>

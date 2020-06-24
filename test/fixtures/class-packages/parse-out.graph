@@ -7,6 +7,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "Worker1",
       "type": "Class",
       "hidden": true
@@ -18,6 +20,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "Worker2",
       "type": "Class",
       "hidden": true
@@ -29,6 +33,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "Worker3",
       "type": "Class",
       "hidden": true
@@ -40,6 +46,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "Worker4",
       "type": "Class",
       "hidden": true
@@ -51,6 +59,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "Worker5",
       "type": "Class",
       "hidden": true
@@ -62,6 +72,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "Worker6",
       "type": "Class",
       "hidden": true

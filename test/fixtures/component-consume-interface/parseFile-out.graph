@@ -14,7 +14,9 @@
               "title": "I",
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics_": null,
+              "stereotype_": null
             },
             {
               "left": "C",
@@ -120,6 +122,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "I",
       "type": "Interface",
       "hidden": true

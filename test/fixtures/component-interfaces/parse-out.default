@@ -18,14 +18,18 @@
         "title": "IMath",
         "members": [],
         "extends_": [],
-        "implements_": []
+        "implements_": [],
+        "generics_": null,
+        "stereotype_": null
       },
       {
         "name": "Items",
         "title": "IItems",
         "members": [],
         "extends_": [],
-        "implements_": []
+        "implements_": [],
+        "generics_": null,
+        "stereotype_": null
       },
       {
         "left": "Business Logic",

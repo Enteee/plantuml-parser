@@ -10,7 +10,9 @@
             "isAbstract": true,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "Test",
@@ -18,7 +20,29 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": "general",
+            "stereotype_": "stereo"
+          },
+          {
+            "name": "Test",
+            "title": "Test",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [],
+            "implements_": [],
+            "generics_": "general only",
+            "stereotype_": null
+          },
+          {
+            "name": "Test",
+            "title": "Test",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [],
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": "stereo only"
           },
           {
             "name": "System",
@@ -26,7 +50,9 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": "(S,#FF7700) Singleton"
           },
           {
             "name": "Date",
@@ -34,7 +60,9 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": "(D,orchid)"
           },
           {
             "name": "Foo1",
@@ -91,7 +119,9 @@
               }
             ],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": "Generics tag",
+            "stereotype_": null
           },
           {
             "name": "User",
@@ -133,7 +163,9 @@
               }
             ],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "TimeUnit",
@@ -159,14 +191,18 @@
               }
             ],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "List",
             "title": "List",
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": null
           },
           {
             "name": "Object",
@@ -174,7 +210,9 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics_": null,
+            "stereotype_": "general"
           },
           {
             "left": "Object",

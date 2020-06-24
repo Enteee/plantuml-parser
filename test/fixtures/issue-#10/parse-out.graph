@@ -6,6 +6,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics_": null,
+      "stereotype_": null,
       "id": "_COMP_EXT1_IF1",
       "type": "Interface",
       "hidden": true
