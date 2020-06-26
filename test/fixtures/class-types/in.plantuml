@@ -9,13 +9,13 @@ abstract class AbstractList {
 
 }
 
-class Test < general > << stereo >> {
+class TestGenericsAndStereotype < general > << stereo >> {
 }
 
-class Test < general only > {
+class TestOnlyGenerics < general only > {
 }
 
-class Test<<stereo only>>{
+class TestOnlyStereotype<<stereo only>>{
 }
 
 class System << (S,#FF7700) Singleton >>

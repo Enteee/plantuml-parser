@@ -15,8 +15,8 @@
             "stereotype": ""
           },
           {
-            "name": "Test",
-            "title": "Test",
+            "name": "TestGenericsAndStereotype",
+            "title": "TestGenericsAndStereotype",
             "isAbstract": false,
             "members": [],
             "extends_": [],
@@ -25,8 +25,8 @@
             "stereotype": "stereo"
           },
           {
-            "name": "Test",
-            "title": "Test",
+            "name": "TestOnlyGenerics",
+            "title": "TestOnlyGenerics",
             "isAbstract": false,
             "members": [],
             "extends_": [],
@@ -35,8 +35,8 @@
             "stereotype": ""
           },
           {
-            "name": "Test",
-            "title": "Test",
+            "name": "TestOnlyStereotype",
+            "title": "TestOnlyStereotype",
             "isAbstract": false,
             "members": [],
             "extends_": [],

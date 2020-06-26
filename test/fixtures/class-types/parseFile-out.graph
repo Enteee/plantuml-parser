@@ -16,8 +16,8 @@
               "stereotype": ""
             },
             {
-              "name": "Test",
-              "title": "Test",
+              "name": "TestGenericsAndStereotype",
+              "title": "TestGenericsAndStereotype",
               "isAbstract": false,
               "members": [],
               "extends_": [],
@@ -26,8 +26,8 @@
               "stereotype": "stereo"
             },
             {
-              "name": "Test",
-              "title": "Test",
+              "name": "TestOnlyGenerics",
+              "title": "TestOnlyGenerics",
               "isAbstract": false,
               "members": [],
               "extends_": [],
@@ -36,8 +36,8 @@
               "stereotype": ""
             },
             {
-              "name": "Test",
-              "title": "Test",
+              "name": "TestOnlyStereotype",
+              "title": "TestOnlyStereotype",
               "isAbstract": false,
               "members": [],
               "extends_": [],
@@ -250,41 +250,41 @@
       "hidden": true
     },
     {
-      "name": "Test",
-      "title": "Test",
+      "name": "TestGenericsAndStereotype",
+      "title": "TestGenericsAndStereotype",
       "isAbstract": false,
       "members": [],
       "extends_": [],
       "implements_": [],
       "generics": "general",
       "stereotype": "stereo",
-      "id": "Test",
+      "id": "TestGenericsAndStereotype",
       "type": "Class",
       "hidden": true
     },
     {
-      "name": "Test",
-      "title": "Test",
+      "name": "TestOnlyGenerics",
+      "title": "TestOnlyGenerics",
       "isAbstract": false,
       "members": [],
       "extends_": [],
       "implements_": [],
       "generics": "general only",
       "stereotype": "",
-      "id": "Test",
+      "id": "TestOnlyGenerics",
       "type": "Class",
       "hidden": true
     },
     {
-      "name": "Test",
-      "title": "Test",
+      "name": "TestOnlyStereotype",
+      "title": "TestOnlyStereotype",
       "isAbstract": false,
       "members": [],
       "extends_": [],
       "implements_": [],
       "generics": "",
       "stereotype": "stereo only",
-      "id": "Test",
+      "id": "TestOnlyStereotype",
       "type": "Class",
       "hidden": true
     },
@@ -538,19 +538,19 @@
     },
     {
       "from": "test/fixtures/class-types/in.plantuml",
-      "to": "Test",
+      "to": "TestGenericsAndStereotype",
       "name": "contains",
       "hidden": true
     },
     {
       "from": "test/fixtures/class-types/in.plantuml",
-      "to": "Test",
+      "to": "TestOnlyGenerics",
       "name": "contains",
       "hidden": true
     },
     {
       "from": "test/fixtures/class-types/in.plantuml",
-      "to": "Test",
+      "to": "TestOnlyStereotype",
       "name": "contains",
       "hidden": true
     },
