@@ -61,8 +61,8 @@
         ],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": null
+        "generics": "",
+        "stereotype": ""
       },
       {
         "name": "Car",
@@ -71,8 +71,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": null
+        "generics": "",
+        "stereotype": ""
       },
       {
         "left": "ICar",

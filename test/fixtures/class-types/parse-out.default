@@ -8,8 +8,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": null
+        "generics": "",
+        "stereotype": ""
       },
       {
         "name": "Test",
@@ -18,8 +18,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics_": "general",
-        "stereotype_": "stereo"
+        "generics": "general",
+        "stereotype": "stereo"
       },
       {
         "name": "Test",
@@ -28,8 +28,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics_": "general only",
-        "stereotype_": null
+        "generics": "general only",
+        "stereotype": ""
       },
       {
         "name": "Test",
@@ -38,8 +38,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": "stereo only"
+        "generics": "",
+        "stereotype": "stereo only"
       },
       {
         "name": "System",
@@ -48,8 +48,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": "(S,#FF7700) Singleton"
+        "generics": "",
+        "stereotype": "(S,#FF7700) Singleton"
       },
       {
         "name": "Date",
@@ -58,8 +58,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": "(D,orchid)"
+        "generics": "",
+        "stereotype": "(D,orchid)"
       },
       {
         "name": "Foo1",
@@ -117,8 +117,8 @@
         ],
         "extends_": [],
         "implements_": [],
-        "generics_": "Generics tag",
-        "stereotype_": null
+        "generics": "Generics tag",
+        "stereotype": ""
       },
       {
         "name": "User",
@@ -161,8 +161,8 @@
         ],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": null
+        "generics": "",
+        "stereotype": ""
       },
       {
         "name": "TimeUnit",
@@ -189,8 +189,8 @@
         ],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": null
+        "generics": "",
+        "stereotype": ""
       },
       {
         "name": "List",
@@ -198,8 +198,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": null
+        "generics": "",
+        "stereotype": ""
       },
       {
         "name": "Object",
@@ -208,8 +208,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": "general"
+        "generics": "",
+        "stereotype": "general"
       },
       {
         "left": "Object",

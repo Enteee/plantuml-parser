@@ -7,8 +7,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "ParentClass",
       "type": "Class",
       "hidden": true
@@ -19,8 +19,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "ParentInterface",
       "type": "Interface",
       "hidden": true
@@ -34,8 +34,8 @@
         "ParentClass"
       ],
       "implements_": [],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "ExtendsClass",
       "type": "Class",
       "hidden": true
@@ -49,8 +49,8 @@
       "implements_": [
         "ParentInterface"
       ],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "ImplementsClass",
       "type": "Class",
       "hidden": true
@@ -66,8 +66,8 @@
       "implements_": [
         "ParentInterface"
       ],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "ExtendsImplementsClass",
       "type": "Class",
       "hidden": true
@@ -80,8 +80,8 @@
         "ParentClass"
       ],
       "implements_": [],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "OnlyExtendsInterface",
       "type": "Interface",
       "hidden": true
@@ -94,8 +94,8 @@
       "implements_": [
         "ParentInterface"
       ],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "OnlyImplementsInterface",
       "type": "Interface",
       "hidden": true
@@ -110,8 +110,8 @@
       "implements_": [
         "ParentInterface"
       ],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "ExtendsImplementsInterface",
       "type": "Interface",
       "hidden": true

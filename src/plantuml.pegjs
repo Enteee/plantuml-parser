@@ -205,7 +205,7 @@ NoteOf
 //
 
 Class
-  = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ generics_:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype_:Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype:Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Class(
       name.name,
@@ -214,11 +214,11 @@ Class
       removeUndefined(members),
       extends_,
       implements_,
-      generics_,
-      stereotype_
+      generics,
+      stereotype
     );
   }
-  / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ generics_:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype_:Stereotype? _ EndLine
+  / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype:Stereotype? _ EndLine
   {
     return new types.Class(
       name.name,
@@ -227,8 +227,8 @@ Class
       [],
       extends_,
       implements_,
-      generics_,
-      stereotype_
+      generics,
+      stereotype
     );
   }
 
@@ -295,7 +295,7 @@ MemberVariable
 //
 
 Interface
-  = _ "interface "i _ name:ElementName _ generics_:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype_:Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "interface "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype:Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Interface(
       name.name,
@@ -303,11 +303,11 @@ Interface
       removeUndefined(members),
       extends_,
       implements_,
-      generics_,
-      stereotype_
+      generics,
+      stereotype
     );
   }
-  / _ "interface "i _ name:ElementName _ generics_:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype_:Stereotype? _ EndLine
+  / _ "interface "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype:Stereotype? _ EndLine
   {
     return new types.Interface(
       name.name,
@@ -315,8 +315,8 @@ Interface
       [],
       extends_,
       implements_,
-      generics_,
-      stereotype_
+      generics,
+      stereotype
     );
   }
 
@@ -325,7 +325,7 @@ Interface
 //
 
 Enum
-  = _ "enum "i _ name:ElementName _ generics_:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype_:Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "enum "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype:Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Enum(
       name.name,
@@ -333,11 +333,11 @@ Enum
       removeUndefined(members),
       extends_,
       implements_,
-      generics_,
-      stereotype_
+      generics,
+      stereotype
     );
   }
-  / _ "enum "i _ name:ElementName _ generics_:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype_:Stereotype? _ EndLine
+  / _ "enum "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype:Stereotype? _ EndLine
   {
     return new types.Enum(
       name.name,
@@ -345,8 +345,8 @@ Enum
       [],
       extends_,
       implements_,
-      generics_,
-      stereotype_
+      generics,
+      stereotype
     );
   }
 
@@ -505,13 +505,13 @@ RelationshipHidden
 Generics
   = !"<<" "<" _ generics:(( !">" . )+) _ ">"
   {
-    return generics.map(removeUndefined).join('').trim();
+    return extractText(generics);
   }
 
 Stereotype
   = "<<" _ stereotype:(( !">>" . )+) _ ">>"
   {
-    return stereotype.map(removeUndefined).join('').trim();
+    return extractText(stereotype);
   }
 
 Extends

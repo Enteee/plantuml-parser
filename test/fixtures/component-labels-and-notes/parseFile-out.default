@@ -40,8 +40,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "name": "Items",
@@ -49,8 +49,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "text": "A note can also\n        be on several lines\n        like this one",

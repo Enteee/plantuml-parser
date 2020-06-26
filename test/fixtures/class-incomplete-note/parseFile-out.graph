@@ -12,8 +12,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "name": "C1",
@@ -22,8 +22,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             }
           ]
         }
@@ -39,8 +39,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "C0",
       "type": "Class",
       "hidden": true
@@ -52,8 +52,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "C1",
       "type": "Class",
       "hidden": true

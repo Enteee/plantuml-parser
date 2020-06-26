@@ -8,8 +8,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": null
+        "generics": "",
+        "stereotype": ""
       },
       {
         "name": "AC",
@@ -18,8 +18,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": null
+        "generics": "",
+        "stereotype": ""
       },
       {
         "name": "I",
@@ -27,8 +27,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": null
+        "generics": "",
+        "stereotype": ""
       },
       {
         "name": "E",
@@ -36,8 +36,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": null
+        "generics": "",
+        "stereotype": ""
       }
     ]
   }

@@ -25,8 +25,8 @@
             ],
             "extends_": [],
             "implements_": [],
-            "generics_": null,
-            "stereotype_": null
+            "generics": "",
+            "stereotype": ""
           },
           {
             "name": "Apartment",
@@ -35,8 +35,8 @@
             "members": [],
             "extends_": [],
             "implements_": [],
-            "generics_": null,
-            "stereotype_": null
+            "generics": "",
+            "stereotype": ""
           },
           {
             "name": "House",
@@ -45,8 +45,8 @@
             "members": [],
             "extends_": [],
             "implements_": [],
-            "generics_": null,
-            "stereotype_": null
+            "generics": "",
+            "stereotype": ""
           },
           {
             "name": "Commune",
@@ -55,8 +55,8 @@
             "members": [],
             "extends_": [],
             "implements_": [],
-            "generics_": null,
-            "stereotype_": null
+            "generics": "",
+            "stereotype": ""
           },
           {
             "name": "Window",
@@ -65,8 +65,8 @@
             "members": [],
             "extends_": [],
             "implements_": [],
-            "generics_": null,
-            "stereotype_": null
+            "generics": "",
+            "stereotype": ""
           },
           {
             "name": "Door",
@@ -75,8 +75,8 @@
             "members": [],
             "extends_": [],
             "implements_": [],
-            "generics_": null,
-            "stereotype_": null
+            "generics": "",
+            "stereotype": ""
           },
           {
             "left": "Dwelling",

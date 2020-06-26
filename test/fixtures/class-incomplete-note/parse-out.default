@@ -8,8 +8,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": null
+        "generics": "",
+        "stereotype": ""
       },
       {
         "name": "C1",
@@ -18,8 +18,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics_": null,
-        "stereotype_": null
+        "generics": "",
+        "stereotype": ""
       }
     ]
   }

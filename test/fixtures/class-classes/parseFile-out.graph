@@ -26,8 +26,8 @@
               ],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "name": "Apartment",
@@ -36,8 +36,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "name": "House",
@@ -46,8 +46,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "name": "Commune",
@@ -56,8 +56,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             }
           ]
         }
@@ -87,8 +87,8 @@
       ],
       "extends_": [],
       "implements_": [],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "Dwelling",
       "type": "Class",
       "hidden": true
@@ -108,8 +108,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "Apartment",
       "type": "Class",
       "hidden": true
@@ -121,8 +121,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "House",
       "type": "Class",
       "hidden": true
@@ -134,8 +134,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "Commune",
       "type": "Class",
       "hidden": true

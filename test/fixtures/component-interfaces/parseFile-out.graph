@@ -23,8 +23,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "name": "Items",
@@ -32,8 +32,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "left": "Business Logic",
@@ -97,8 +97,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "Math",
       "type": "Interface",
       "hidden": true
@@ -109,8 +109,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics_": null,
-      "stereotype_": null,
+      "generics": "",
+      "stereotype": "",
       "id": "Items",
       "type": "Interface",
       "hidden": true

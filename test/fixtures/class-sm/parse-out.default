@@ -164,8 +164,8 @@
             ],
             "extends_": [],
             "implements_": [],
-            "generics_": null,
-            "stereotype_": null
+            "generics": "",
+            "stereotype": ""
           },
           [
             {
@@ -174,8 +174,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "text": "Hardware providing\n      input/output from/to \n      the physical world",
@@ -203,8 +203,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "left": "Printer",
@@ -227,8 +227,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "left": "CCTV",
@@ -251,8 +251,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "text": "* Xerox",
@@ -288,8 +288,8 @@
               ],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "text": "Hardware operating in \n      the physical-, network-,\n          transport- or application-layer",
@@ -316,8 +316,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "left": "Switch",
@@ -340,8 +340,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "left": "Router",
@@ -364,8 +364,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "left": "Firewall",
@@ -388,8 +388,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "text": "* Blue Coat",
@@ -416,8 +416,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "left": "LoadBalancer",
@@ -440,8 +440,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "text": "* Infoblox\n      * WAM",
@@ -476,8 +476,8 @@
               ],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "text": "Hardware providing\n      auxiliry services\n      for IT operations",
@@ -505,8 +505,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "text": "Automatic\n              Transfer\n              Switch",
@@ -533,8 +533,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "text": "Keyboard\n              Video \n              Mouse",
@@ -561,8 +561,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "text": "Power\n              Distribution\n              Unit",
@@ -589,8 +589,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "text": "Uninterruptable\n              Power\n              Supply",
@@ -617,8 +617,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "text": "Hardware\n              Security\n              Module\n              Generates and stores\n              keys and certificats",
@@ -645,8 +645,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "text": "* Badge Reader\t\t\t\n              * Vein Scanner",
@@ -682,8 +682,8 @@
               ],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "text": "Hardware connecting\n      people",
@@ -711,8 +711,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "left": "Gateway",
@@ -735,8 +735,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "text": "* Cisco Telephones",
@@ -763,8 +763,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "left": "Video",
@@ -808,8 +808,8 @@
               ],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "text": "Provides a scalable\n      and reliable service",
@@ -1005,8 +1005,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "text": "Instances: Processes",
@@ -1033,8 +1033,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "text": "Instances: Containers",
@@ -1065,8 +1065,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "text": "Instances: Virtual Machines",
@@ -1097,8 +1097,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "text": "Instances: Storage Containers",
@@ -1306,8 +1306,8 @@
               ],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "text": "Hardware providing\n      long term persistance\n      of information",
@@ -1335,8 +1335,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "left": "TapeLibrary",
@@ -1359,8 +1359,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "text": "Network\n          Attached\n          Storage\n          Exports a file system\n          Clients communicate with\n          the NAS using a NFS-like\n          protocol: Operations are\n          file system operations",
@@ -1387,8 +1387,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "text": "Storage\n          Area\n          Network\n          Exports a block device\n          Clients communicate with\n          the SAN using a SCSI-like\n          protocol: Operations are\n          block device operations",
@@ -1415,8 +1415,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "left": "StorageSwitch",
@@ -1439,8 +1439,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics_": null,
-                "stereotype_": null
+                "generics": "",
+                "stereotype": ""
               },
               {
                 "left": "StorageController",
@@ -1514,8 +1514,8 @@
               ],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "text": "All internal attributes\n      are automatically \n      populated by \n      Service Manager\n      based on the location\n      attribute",
@@ -1543,8 +1543,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics_": null,
-              "stereotype_": null
+              "generics": "",
+              "stereotype": ""
             },
             {
               "left": "Location",
