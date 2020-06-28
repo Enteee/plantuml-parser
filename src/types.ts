@@ -1,3 +1,11 @@
+export class Comment {
+  constructor (
+    public comment: string,
+  ) {
+    this.comment = comment || '';
+  }
+}
+
 export class Note {
   constructor (
     public text: string,
