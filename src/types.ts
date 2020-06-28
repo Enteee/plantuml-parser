@@ -1,6 +1,6 @@
 export class Comment {
   constructor (
-    public comment: string
+    public comment: string,
   ) {
     this.comment = comment || '';
   }
