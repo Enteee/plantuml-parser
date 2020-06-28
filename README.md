@@ -61,13 +61,17 @@ console.log(
         "name": "A",
         "title": "A",
         "isAbstract": false,
-        "members": []
+        "members": [],
+        "extends_": [],
+        "implements_": []
       },
       {
         "name": "B",
         "title": "B",
         "isAbstract": false,
-        "members": []
+        "members": [],
+        "extends_": [],
+        "implements_": []
       },
       {
         "left": "A",
@@ -190,6 +194,8 @@ $ npm run fixtures
 $ npm test
 $ git commit
 ```
+
+For more information see our [contribution guidelines](/CONTRIBUTING.md).
 
 ## Related
 
