@@ -191,6 +191,8 @@ $ npm test
 $ git commit
 ```
 
+For more information see our [contribution guidelines](/CONTRIBUTING.md).
+
 ## Related
 
 * [PEG.js](https://pegjs.org): Parser Generator for JavaScript
