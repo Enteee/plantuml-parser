@@ -61,13 +61,17 @@ console.log(
         "name": "A",
         "title": "A",
         "isAbstract": false,
-        "members": []
+        "members": [],
+        "extends_": [],
+        "implements_": []
       },
       {
         "name": "B",
         "title": "B",
         "isAbstract": false,
-        "members": []
+        "members": [],
+        "extends_": [],
+        "implements_": []
       },
       {
         "left": "A",
