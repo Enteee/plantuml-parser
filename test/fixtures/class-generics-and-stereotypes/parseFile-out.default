@@ -5,74 +5,685 @@
       {
         "elements": [
           {
-            "name": "TestGenericsAndStereotype",
-            "title": "TestGenericsAndStereotype",
-            "isAbstract": false,
-            "members": [],
-            "extends_": [],
-            "implements_": [],
-            "generics": "G1",
-            "stereotype": "S1"
+            "name": "Generics",
+            "title": "Generics",
+            "type": "package",
+            "elements": [
+              {
+                "name": "TestOnlyGenerics",
+                "title": "TestOnlyGenerics",
+                "isAbstract": false,
+                "members": [],
+                "extends_": [],
+                "implements_": [],
+                "generics": "G1",
+                "stereotype": ""
+              },
+              [
+                [],
+                "'",
+                [
+                  [
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      "c"
+                    ],
+                    [
+                      null,
+                      "l"
+                    ],
+                    [
+                      null,
+                      "a"
+                    ],
+                    [
+                      null,
+                      "s"
+                    ],
+                    [
+                      null,
+                      "s"
+                    ],
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      "T"
+                    ],
+                    [
+                      null,
+                      "e"
+                    ],
+                    [
+                      null,
+                      "s"
+                    ],
+                    [
+                      null,
+                      "t"
+                    ],
+                    [
+                      null,
+                      "M"
+                    ],
+                    [
+                      null,
+                      "u"
+                    ],
+                    [
+                      null,
+                      "l"
+                    ],
+                    [
+                      null,
+                      "t"
+                    ],
+                    [
+                      null,
+                      "i"
+                    ],
+                    [
+                      null,
+                      "p"
+                    ],
+                    [
+                      null,
+                      "l"
+                    ],
+                    [
+                      null,
+                      "e"
+                    ],
+                    [
+                      null,
+                      "G"
+                    ],
+                    [
+                      null,
+                      "e"
+                    ],
+                    [
+                      null,
+                      "n"
+                    ],
+                    [
+                      null,
+                      "e"
+                    ],
+                    [
+                      null,
+                      "r"
+                    ],
+                    [
+                      null,
+                      "i"
+                    ],
+                    [
+                      null,
+                      "c"
+                    ],
+                    [
+                      null,
+                      "s"
+                    ],
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      "<"
+                    ],
+                    [
+                      null,
+                      "G"
+                    ],
+                    [
+                      null,
+                      "1"
+                    ],
+                    [
+                      null,
+                      ">"
+                    ],
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      "<"
+                    ],
+                    [
+                      null,
+                      "G"
+                    ],
+                    [
+                      null,
+                      "2"
+                    ],
+                    [
+                      null,
+                      ">"
+                    ],
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      "#"
+                    ],
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      "N"
+                    ],
+                    [
+                      null,
+                      "o"
+                    ],
+                    [
+                      null,
+                      "t"
+                    ],
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      "s"
+                    ],
+                    [
+                      null,
+                      "u"
+                    ],
+                    [
+                      null,
+                      "p"
+                    ],
+                    [
+                      null,
+                      "p"
+                    ],
+                    [
+                      null,
+                      "o"
+                    ],
+                    [
+                      null,
+                      "r"
+                    ],
+                    [
+                      null,
+                      "t"
+                    ],
+                    [
+                      null,
+                      "e"
+                    ],
+                    [
+                      null,
+                      "d"
+                    ]
+                  ],
+                  "\n"
+                ]
+              ],
+              {
+                "name": "TestGenericsWithAngleBrackets",
+                "title": "TestGenericsWithAngleBrackets",
+                "isAbstract": false,
+                "members": [],
+                "extends_": [],
+                "implements_": [],
+                "generics": "<G1",
+                "stereotype": ""
+              },
+              {
+                "name": "TestGenericsWithDoubleAngleBrackets",
+                "title": "TestGenericsWithDoubleAngleBrackets",
+                "isAbstract": false,
+                "members": [],
+                "extends_": [],
+                "implements_": [],
+                "generics": "<<G1",
+                "stereotype": ""
+              }
+            ]
           },
           {
-            "name": "TestOnlyGenerics",
-            "title": "TestOnlyGenerics",
-            "isAbstract": false,
-            "members": [],
-            "extends_": [],
-            "implements_": [],
-            "generics": "G1",
-            "stereotype": ""
+            "name": "Stereotypes",
+            "title": "Stereotypes",
+            "type": "package",
+            "elements": [
+              {
+                "name": "TestOnlyStereotype",
+                "title": "TestOnlyStereotype",
+                "isAbstract": false,
+                "members": [],
+                "extends_": [],
+                "implements_": [],
+                "generics": "",
+                "stereotype": "S1"
+              },
+              {
+                "name": "TestMultipleStereotypes",
+                "title": "TestMultipleStereotypes",
+                "isAbstract": false,
+                "members": [],
+                "extends_": [],
+                "implements_": [],
+                "generics": "",
+                "stereotype": "S1"
+              },
+              {
+                "name": "TestStereotypeWithAngleBrackets",
+                "title": "TestStereotypeWithAngleBrackets",
+                "isAbstract": false,
+                "members": [],
+                "extends_": [],
+                "implements_": [],
+                "generics": "",
+                "stereotype": "<S1>"
+              },
+              {
+                "name": "TestStereotypeWithDoubleAngleBrackets",
+                "title": "TestStereotypeWithDoubleAngleBrackets",
+                "isAbstract": false,
+                "members": [],
+                "extends_": [],
+                "implements_": [],
+                "generics": "",
+                "stereotype": "<<S1"
+              }
+            ]
           },
           {
-            "name": "TestGenericsWithAngleBrackets",
-            "title": "TestGenericsWithAngleBrackets",
-            "isAbstract": false,
-            "members": [],
-            "extends_": [],
-            "implements_": [],
-            "generics": "<<G1",
-            "stereotype": ""
-          },
-          {
-            "name": "TestOnlyStereotype",
-            "title": "TestOnlyStereotype",
-            "isAbstract": false,
-            "members": [],
-            "extends_": [],
-            "implements_": [],
-            "generics": "",
-            "stereotype": "S1"
-          },
-          {
-            "name": "TestMultipleStereotypes",
-            "title": "TestMultipleStereotypes",
-            "isAbstract": false,
-            "members": [],
-            "extends_": [],
-            "implements_": [],
-            "generics": "",
-            "stereotype": "S1"
-          },
-          {
-            "name": "TestStereotypeWithAngleBrackets",
-            "title": "TestStereotypeWithAngleBrackets",
-            "isAbstract": false,
-            "members": [],
-            "extends_": [],
-            "implements_": [],
-            "generics": "",
-            "stereotype": "<S1>"
-          },
-          {
-            "name": "TestStereotypeWithDoubleAngleBrackets",
-            "title": "TestStereotypeWithDoubleAngleBrackets",
-            "isAbstract": false,
-            "members": [],
-            "extends_": [],
-            "implements_": [],
-            "generics": "",
-            "stereotype": "<<S1"
+            "name": "mixed",
+            "title": "mixed",
+            "type": "package",
+            "elements": [
+              {
+                "name": "TestGenericsAndStereotype",
+                "title": "TestGenericsAndStereotype",
+                "isAbstract": false,
+                "members": [],
+                "extends_": [],
+                "implements_": [],
+                "generics": "G1",
+                "stereotype": "S1"
+              },
+              [
+                [],
+                "'",
+                [
+                  [
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      "c"
+                    ],
+                    [
+                      null,
+                      "l"
+                    ],
+                    [
+                      null,
+                      "a"
+                    ],
+                    [
+                      null,
+                      "s"
+                    ],
+                    [
+                      null,
+                      "s"
+                    ],
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      "T"
+                    ],
+                    [
+                      null,
+                      "e"
+                    ],
+                    [
+                      null,
+                      "s"
+                    ],
+                    [
+                      null,
+                      "t"
+                    ],
+                    [
+                      null,
+                      "M"
+                    ],
+                    [
+                      null,
+                      "u"
+                    ],
+                    [
+                      null,
+                      "l"
+                    ],
+                    [
+                      null,
+                      "t"
+                    ],
+                    [
+                      null,
+                      "i"
+                    ],
+                    [
+                      null,
+                      "p"
+                    ],
+                    [
+                      null,
+                      "l"
+                    ],
+                    [
+                      null,
+                      "e"
+                    ],
+                    [
+                      null,
+                      "G"
+                    ],
+                    [
+                      null,
+                      "e"
+                    ],
+                    [
+                      null,
+                      "n"
+                    ],
+                    [
+                      null,
+                      "e"
+                    ],
+                    [
+                      null,
+                      "r"
+                    ],
+                    [
+                      null,
+                      "i"
+                    ],
+                    [
+                      null,
+                      "c"
+                    ],
+                    [
+                      null,
+                      "s"
+                    ],
+                    [
+                      null,
+                      "A"
+                    ],
+                    [
+                      null,
+                      "n"
+                    ],
+                    [
+                      null,
+                      "d"
+                    ],
+                    [
+                      null,
+                      "S"
+                    ],
+                    [
+                      null,
+                      "t"
+                    ],
+                    [
+                      null,
+                      "e"
+                    ],
+                    [
+                      null,
+                      "r"
+                    ],
+                    [
+                      null,
+                      "e"
+                    ],
+                    [
+                      null,
+                      "o"
+                    ],
+                    [
+                      null,
+                      "t"
+                    ],
+                    [
+                      null,
+                      "y"
+                    ],
+                    [
+                      null,
+                      "p"
+                    ],
+                    [
+                      null,
+                      "e"
+                    ],
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      "<"
+                    ],
+                    [
+                      null,
+                      "G"
+                    ],
+                    [
+                      null,
+                      "1"
+                    ],
+                    [
+                      null,
+                      ">"
+                    ],
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      "<"
+                    ],
+                    [
+                      null,
+                      "G"
+                    ],
+                    [
+                      null,
+                      "2"
+                    ],
+                    [
+                      null,
+                      ">"
+                    ],
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      "<"
+                    ],
+                    [
+                      null,
+                      "<"
+                    ],
+                    [
+                      null,
+                      "S"
+                    ],
+                    [
+                      null,
+                      "1"
+                    ],
+                    [
+                      null,
+                      ">"
+                    ],
+                    [
+                      null,
+                      ">"
+                    ],
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      "#"
+                    ],
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      "N"
+                    ],
+                    [
+                      null,
+                      "o"
+                    ],
+                    [
+                      null,
+                      "t"
+                    ],
+                    [
+                      null,
+                      " "
+                    ],
+                    [
+                      null,
+                      "s"
+                    ],
+                    [
+                      null,
+                      "u"
+                    ],
+                    [
+                      null,
+                      "p"
+                    ],
+                    [
+                      null,
+                      "p"
+                    ],
+                    [
+                      null,
+                      "o"
+                    ],
+                    [
+                      null,
+                      "r"
+                    ],
+                    [
+                      null,
+                      "t"
+                    ],
+                    [
+                      null,
+                      "e"
+                    ],
+                    [
+                      null,
+                      "d"
+                    ]
+                  ],
+                  "\n"
+                ]
+              ],
+              {
+                "name": "TestGenericsWithAngleBracketsAndStereotype",
+                "title": "TestGenericsWithAngleBracketsAndStereotype",
+                "isAbstract": false,
+                "members": [],
+                "extends_": [],
+                "implements_": [],
+                "generics": "<G1",
+                "stereotype": ""
+              },
+              {
+                "name": "TestGenericsWithDoubleAngleBracketsAndStereotype",
+                "title": "TestGenericsWithDoubleAngleBracketsAndStereotype",
+                "isAbstract": false,
+                "members": [],
+                "extends_": [],
+                "implements_": [],
+                "generics": "<<G1",
+                "stereotype": ""
+              },
+              {
+                "name": "TestGenericsAndMultipleStereotypes",
+                "title": "TestGenericsAndMultipleStereotypes",
+                "isAbstract": false,
+                "members": [],
+                "extends_": [],
+                "implements_": [],
+                "generics": "G1",
+                "stereotype": "S1"
+              },
+              {
+                "name": "TestGenericsAndStereotypeWithAngleBrackets",
+                "title": "TestGenericsAndStereotypeWithAngleBrackets",
+                "isAbstract": false,
+                "members": [],
+                "extends_": [],
+                "implements_": [],
+                "generics": "G1",
+                "stereotype": "<S1>"
+              },
+              {
+                "name": "TestGenericsAndStereotypeWithDoubleAngleBrackets",
+                "title": "TestGenericsAndStereotypeWithDoubleAngleBrackets",
+                "isAbstract": false,
+                "members": [],
+                "extends_": [],
+                "implements_": [],
+                "generics": "G1",
+                "stereotype": "<<S1"
+              }
+            ]
           }
         ]
       }

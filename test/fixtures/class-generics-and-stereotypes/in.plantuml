@@ -1,15 +1,31 @@
 @startuml
-
 title Generics and Stereotypes
 
-class TestGenericsAndStereotype <G1> <<S1>>
+package Generics {
+  class TestOnlyGenerics <G1>
 
-class TestOnlyGenerics <G1>
-class TestGenericsWithAngleBrackets < <<G1>> >
+'  class TestMultipleGenerics <G1> <G2> # Not supported
+  class TestGenericsWithAngleBrackets < <G1> >
+  class TestGenericsWithDoubleAngleBrackets < <<G1>> >
+}
 
-class TestOnlyStereotype <<S1>>
-class TestMultipleStereotypes <<S1>> <<S2>> <<S3>>
-class TestStereotypeWithAngleBrackets << <S1> >>
-class TestStereotypeWithDoubleAngleBrackets << <<S1>> >>
+package Stereotypes {
+  class TestOnlyStereotype <<S1>>
 
+  class TestMultipleStereotypes <<S1>> <<S2>> <<S3>>
+  class TestStereotypeWithAngleBrackets << <S1> >>
+  class TestStereotypeWithDoubleAngleBrackets << <<S1>> >>
+}
+
+package mixed {
+  class TestGenericsAndStereotype <G1> <<S1>>
+
+'  class TestMultipleGenericsAndStereotype <G1> <G2> <<S1>> # Not supported
+  class TestGenericsWithAngleBracketsAndStereotype < <G1> > <<S1>>
+  class TestGenericsWithDoubleAngleBracketsAndStereotype < <<G1>> > <<S1>>
+
+  class TestGenericsAndMultipleStereotypes <G1> <<S1>> <<S2>>
+  class TestGenericsAndStereotypeWithAngleBrackets <G1> << <S1> >>
+  class TestGenericsAndStereotypeWithDoubleAngleBrackets <G1> << <<S1>> >>
+}
 @enduml
