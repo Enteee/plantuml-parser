@@ -50,7 +50,7 @@ PlantUMLFile
   }
   / (!"@startuml" .)*
   {
-    return []
+    return [];
   }
 
 Diagrams
@@ -104,8 +104,18 @@ UMLElement
 //
 
 Comment
-  = _ "'" EndLine
-  / _ "/'" (!"'/" .)* EndLine
+  = _ "'" _ comment:(!NewLine .)+ EndLine
+  {
+    return new types.Comment(
+      extractText(comment)
+    );
+  }
+  / _ "/'" _ comment:(!"'/" .)* EndLine
+  {
+    return new types.Comment(
+      extractText(comment)
+    );
+  }
 
 //
 // SkinParam
@@ -167,27 +177,27 @@ Note
     return new types.Note(
       extractText(text),
       of
-    )
+    );
   }
   / _ "note "i _ Direction _ of:NoteOf? _ NewLine text:(!(_ "end note" NewLine) .)+ EndLine
   {
     return new types.Note(
       extractText(text),
       of
-    )
+    );
   }
   / _ "note "i _ Direction _ of:NoteOf? _ NewLine text:(!(_ "end note" NewLine) .)+ EndLine
   {
     return new types.Note(
       extractText(text),
       of
-    )
+    );
   }
   / _ "note "i _ text:QuotedString _ "as " Name EndLine
   {
     return new types.Note(
       text,
-    )
+    );
   }
 
 NoteOf
@@ -524,21 +534,21 @@ ElementReference
     return {
       name: element.name,
       type: 'Component',
-    }
+    };
   }
   / element:ShortUseCase
   {
     return {
       name: element.name,
       type: 'UseCase',
-    }
+    };
   }
   / name:Name
   {
     return {
       name: name,
       type: 'Unknown',
-    }
+    };
   }
 
 MemberReference
@@ -547,7 +557,7 @@ MemberReference
     return {
       name: name,
       type: 'Unknown',
-    }
+    };
   }
 
 ElementName
