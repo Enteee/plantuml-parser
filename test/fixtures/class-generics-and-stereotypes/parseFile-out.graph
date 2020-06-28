@@ -1,0 +1,221 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/class-generics-and-stereotypes/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "TestGenericsAndStereotype",
+              "title": "TestGenericsAndStereotype",
+              "isAbstract": false,
+              "members": [],
+              "extends_": [],
+              "implements_": [],
+              "generics": "G1",
+              "stereotype": "S1"
+            },
+            {
+              "name": "TestOnlyGenerics",
+              "title": "TestOnlyGenerics",
+              "isAbstract": false,
+              "members": [],
+              "extends_": [],
+              "implements_": [],
+              "generics": "G1",
+              "stereotype": ""
+            },
+            {
+              "name": "TestGenericsWithAngleBrackets",
+              "title": "TestGenericsWithAngleBrackets",
+              "isAbstract": false,
+              "members": [],
+              "extends_": [],
+              "implements_": [],
+              "generics": "<<G1",
+              "stereotype": ""
+            },
+            {
+              "name": "TestOnlyStereotype",
+              "title": "TestOnlyStereotype",
+              "isAbstract": false,
+              "members": [],
+              "extends_": [],
+              "implements_": [],
+              "generics": "",
+              "stereotype": "S1"
+            },
+            {
+              "name": "TestMultipleStereotypes",
+              "title": "TestMultipleStereotypes",
+              "isAbstract": false,
+              "members": [],
+              "extends_": [],
+              "implements_": [],
+              "generics": "",
+              "stereotype": "S1"
+            },
+            {
+              "name": "TestStereotypeWithAngleBrackets",
+              "title": "TestStereotypeWithAngleBrackets",
+              "isAbstract": false,
+              "members": [],
+              "extends_": [],
+              "implements_": [],
+              "generics": "",
+              "stereotype": "<S1>"
+            },
+            {
+              "name": "TestStereotypeWithDoubleAngleBrackets",
+              "title": "TestStereotypeWithDoubleAngleBrackets",
+              "isAbstract": false,
+              "members": [],
+              "extends_": [],
+              "implements_": [],
+              "generics": "",
+              "stereotype": "<<S1"
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/class-generics-and-stereotypes/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "TestGenericsAndStereotype",
+      "title": "TestGenericsAndStereotype",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": "G1",
+      "stereotype": "S1",
+      "id": "TestGenericsAndStereotype",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "TestOnlyGenerics",
+      "title": "TestOnlyGenerics",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": "G1",
+      "stereotype": "",
+      "id": "TestOnlyGenerics",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "TestGenericsWithAngleBrackets",
+      "title": "TestGenericsWithAngleBrackets",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": "<<G1",
+      "stereotype": "",
+      "id": "TestGenericsWithAngleBrackets",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "TestOnlyStereotype",
+      "title": "TestOnlyStereotype",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": "",
+      "stereotype": "S1",
+      "id": "TestOnlyStereotype",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "TestMultipleStereotypes",
+      "title": "TestMultipleStereotypes",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": "",
+      "stereotype": "S1",
+      "id": "TestMultipleStereotypes",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "TestStereotypeWithAngleBrackets",
+      "title": "TestStereotypeWithAngleBrackets",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": "",
+      "stereotype": "<S1>",
+      "id": "TestStereotypeWithAngleBrackets",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "TestStereotypeWithDoubleAngleBrackets",
+      "title": "TestStereotypeWithDoubleAngleBrackets",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": "",
+      "stereotype": "<<S1",
+      "id": "TestStereotypeWithDoubleAngleBrackets",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "test/fixtures/class-generics-and-stereotypes/in.plantuml",
+      "to": "TestGenericsAndStereotype",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-generics-and-stereotypes/in.plantuml",
+      "to": "TestOnlyGenerics",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-generics-and-stereotypes/in.plantuml",
+      "to": "TestGenericsWithAngleBrackets",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-generics-and-stereotypes/in.plantuml",
+      "to": "TestOnlyStereotype",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-generics-and-stereotypes/in.plantuml",
+      "to": "TestMultipleStereotypes",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-generics-and-stereotypes/in.plantuml",
+      "to": "TestStereotypeWithAngleBrackets",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-generics-and-stereotypes/in.plantuml",
+      "to": "TestStereotypeWithDoubleAngleBrackets",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

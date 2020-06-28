@@ -1,0 +1,81 @@
+[
+  {
+    "name": "test/fixtures/class-generics-and-stereotypes/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "TestGenericsAndStereotype",
+            "title": "TestGenericsAndStereotype",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [],
+            "implements_": [],
+            "generics": "G1",
+            "stereotype": "S1"
+          },
+          {
+            "name": "TestOnlyGenerics",
+            "title": "TestOnlyGenerics",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [],
+            "implements_": [],
+            "generics": "G1",
+            "stereotype": ""
+          },
+          {
+            "name": "TestGenericsWithAngleBrackets",
+            "title": "TestGenericsWithAngleBrackets",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [],
+            "implements_": [],
+            "generics": "<<G1",
+            "stereotype": ""
+          },
+          {
+            "name": "TestOnlyStereotype",
+            "title": "TestOnlyStereotype",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [],
+            "implements_": [],
+            "generics": "",
+            "stereotype": "S1"
+          },
+          {
+            "name": "TestMultipleStereotypes",
+            "title": "TestMultipleStereotypes",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [],
+            "implements_": [],
+            "generics": "",
+            "stereotype": "S1"
+          },
+          {
+            "name": "TestStereotypeWithAngleBrackets",
+            "title": "TestStereotypeWithAngleBrackets",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [],
+            "implements_": [],
+            "generics": "",
+            "stereotype": "<S1>"
+          },
+          {
+            "name": "TestStereotypeWithDoubleAngleBrackets",
+            "title": "TestStereotypeWithDoubleAngleBrackets",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [],
+            "implements_": [],
+            "generics": "",
+            "stereotype": "<<S1"
+          }
+        ]
+      }
+    ]
+  }
+]

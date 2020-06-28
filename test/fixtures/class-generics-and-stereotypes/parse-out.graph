@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "name": "TestGenericsAndStereotype",
+      "title": "TestGenericsAndStereotype",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": "G1",
+      "stereotype": "S1",
+      "id": "TestGenericsAndStereotype",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "TestOnlyGenerics",
+      "title": "TestOnlyGenerics",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": "G1",
+      "stereotype": "",
+      "id": "TestOnlyGenerics",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "TestGenericsWithAngleBrackets",
+      "title": "TestGenericsWithAngleBrackets",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": "<<G1",
+      "stereotype": "",
+      "id": "TestGenericsWithAngleBrackets",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "TestOnlyStereotype",
+      "title": "TestOnlyStereotype",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": "",
+      "stereotype": "S1",
+      "id": "TestOnlyStereotype",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "TestMultipleStereotypes",
+      "title": "TestMultipleStereotypes",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": "",
+      "stereotype": "S1",
+      "id": "TestMultipleStereotypes",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "TestStereotypeWithAngleBrackets",
+      "title": "TestStereotypeWithAngleBrackets",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": "",
+      "stereotype": "<S1>",
+      "id": "TestStereotypeWithAngleBrackets",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "TestStereotypeWithDoubleAngleBrackets",
+      "title": "TestStereotypeWithDoubleAngleBrackets",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": "",
+      "stereotype": "<<S1",
+      "id": "TestStereotypeWithDoubleAngleBrackets",
+      "type": "Class",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

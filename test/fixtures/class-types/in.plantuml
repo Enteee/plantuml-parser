@@ -9,15 +9,6 @@ abstract class AbstractList {
 
 }
 
-class TestGenericsAndStereotype < general > << stereo >> {
-}
-
-class TestOnlyGenerics < general only > {
-}
-
-class TestOnlyStereotype<<stereo only>>{
-}
-
 class System << (S,#FF7700) Singleton >>
 class Date << (D,orchid) >>
 

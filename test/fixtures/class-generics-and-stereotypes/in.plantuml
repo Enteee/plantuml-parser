@@ -1,0 +1,15 @@
+@startuml
+
+title Generics and Stereotypes
+
+class TestGenericsAndStereotype <G1> <<S1>>
+
+class TestOnlyGenerics <G1>
+class TestGenericsWithAngleBrackets < <<G1>> >
+
+class TestOnlyStereotype <<S1>>
+class TestMultipleStereotypes <<S1>> <<S2>> <<S3>>
+class TestStereotypeWithAngleBrackets << <S1> >>
+class TestStereotypeWithDoubleAngleBrackets << <<S1>> >>
+
+@enduml

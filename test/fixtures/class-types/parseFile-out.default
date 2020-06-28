@@ -15,36 +15,6 @@
             "stereotype": ""
           },
           {
-            "name": "TestGenericsAndStereotype",
-            "title": "TestGenericsAndStereotype",
-            "isAbstract": false,
-            "members": [],
-            "extends_": [],
-            "implements_": [],
-            "generics": "general",
-            "stereotype": "stereo"
-          },
-          {
-            "name": "TestOnlyGenerics",
-            "title": "TestOnlyGenerics",
-            "isAbstract": false,
-            "members": [],
-            "extends_": [],
-            "implements_": [],
-            "generics": "general only",
-            "stereotype": ""
-          },
-          {
-            "name": "TestOnlyStereotype",
-            "title": "TestOnlyStereotype",
-            "isAbstract": false,
-            "members": [],
-            "extends_": [],
-            "implements_": [],
-            "generics": "",
-            "stereotype": "stereo only"
-          },
-          {
             "name": "System",
             "title": "System",
             "isAbstract": false,

@@ -16,36 +16,6 @@
               "stereotype": ""
             },
             {
-              "name": "TestGenericsAndStereotype",
-              "title": "TestGenericsAndStereotype",
-              "isAbstract": false,
-              "members": [],
-              "extends_": [],
-              "implements_": [],
-              "generics": "general",
-              "stereotype": "stereo"
-            },
-            {
-              "name": "TestOnlyGenerics",
-              "title": "TestOnlyGenerics",
-              "isAbstract": false,
-              "members": [],
-              "extends_": [],
-              "implements_": [],
-              "generics": "general only",
-              "stereotype": ""
-            },
-            {
-              "name": "TestOnlyStereotype",
-              "title": "TestOnlyStereotype",
-              "isAbstract": false,
-              "members": [],
-              "extends_": [],
-              "implements_": [],
-              "generics": "",
-              "stereotype": "stereo only"
-            },
-            {
               "name": "System",
               "title": "System",
               "isAbstract": false,
@@ -246,45 +216,6 @@
       "generics": "",
       "stereotype": "",
       "id": "AbstractList",
-      "type": "Class",
-      "hidden": true
-    },
-    {
-      "name": "TestGenericsAndStereotype",
-      "title": "TestGenericsAndStereotype",
-      "isAbstract": false,
-      "members": [],
-      "extends_": [],
-      "implements_": [],
-      "generics": "general",
-      "stereotype": "stereo",
-      "id": "TestGenericsAndStereotype",
-      "type": "Class",
-      "hidden": true
-    },
-    {
-      "name": "TestOnlyGenerics",
-      "title": "TestOnlyGenerics",
-      "isAbstract": false,
-      "members": [],
-      "extends_": [],
-      "implements_": [],
-      "generics": "general only",
-      "stereotype": "",
-      "id": "TestOnlyGenerics",
-      "type": "Class",
-      "hidden": true
-    },
-    {
-      "name": "TestOnlyStereotype",
-      "title": "TestOnlyStereotype",
-      "isAbstract": false,
-      "members": [],
-      "extends_": [],
-      "implements_": [],
-      "generics": "",
-      "stereotype": "stereo only",
-      "id": "TestOnlyStereotype",
       "type": "Class",
       "hidden": true
     },
@@ -533,24 +464,6 @@
     {
       "from": "test/fixtures/class-types/in.plantuml",
       "to": "AbstractList",
-      "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "test/fixtures/class-types/in.plantuml",
-      "to": "TestGenericsAndStereotype",
-      "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "test/fixtures/class-types/in.plantuml",
-      "to": "TestOnlyGenerics",
-      "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "test/fixtures/class-types/in.plantuml",
-      "to": "TestOnlyStereotype",
       "name": "contains",
       "hidden": true
     },
