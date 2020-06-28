@@ -104,8 +104,18 @@ UMLElement
 //
 
 Comment
-  = _ "'" EndLine
-  / _ "/'" (!"'/" .)* EndLine
+  = _ "'" _ comment:(!NewLine .)+ EndLine
+  {
+    return new types.Comment(
+      extractText(comment)
+    );
+  }
+  / _ "/'" _ comment:(!"'/" .)* EndLine
+  {
+    return new types.Comment(
+      extractText(comment)
+    );
+  }
 
 //
 // SkinParam
