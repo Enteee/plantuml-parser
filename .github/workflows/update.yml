@@ -1,4 +1,4 @@
-name: Node.js Update
+name: Update Dependencies
 
 on:
   schedule:
