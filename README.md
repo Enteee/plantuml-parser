@@ -22,7 +22,7 @@ $ npm install --save plantuml-parser
 PlantUML is not a formally defined language - something we would like to change.
 This means we have to build this parser by reverse engineering from examples.
 For this reason we keep a large set of PlantUML diagrams (`in.plantuml`) and the corresponding
-formatted output (`parse[File]-out.<formatter>`) in [test/fixtures/](test/fixtures). 
+formatted output (`parse[File]-out.<formatter>`) in [test/fixtures/](test/fixtures).
 We even have diagrams which exposed bugs in the parser or diagrams which contain known
 broken PlantUML syntax. Please help us expand that collection by [contributing](#contribute-heart)
 your own diagrams. Every diagram counts :rocket:.

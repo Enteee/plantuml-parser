@@ -128,4 +128,3 @@ export const formatters: Formatters = {
   default: defaultFormatter,
   graph: graphFormatter,
 };
-
