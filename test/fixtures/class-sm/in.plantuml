@@ -34,7 +34,7 @@ package ServiceManager {
     }
     note left
       Hardware providing
-      input/output from/to 
+      input/output from/to
       the physical world
       end note
       Peripheral -up-|> CI
@@ -58,7 +58,7 @@ package ServiceManager {
       + location
     }
     note left
-      Hardware operating in 
+      Hardware operating in
       the physical-, network-,
           transport- or application-layer
             end note
@@ -109,7 +109,7 @@ package ServiceManager {
               class KVM
               note left
               Keyboard
-              Video 
+              Video
               Mouse
               end note
               KVM -up-|> Infrastructure
@@ -138,8 +138,8 @@ package ServiceManager {
               HSM -up-|> Infrastructure
               class AccessControl
               note bottom
-              * Badge Reader			
-              * Vein Scanner					
+              * Badge Reader
+              * Vein Scanner
               end note
               AccessControl -up-|> Infrastructure
           }
@@ -274,8 +274,8 @@ package ServiceManager {
     }
     note right of Contact
       All internal attributes
-      are automatically 
-      populated by 
+      are automatically
+      populated by
       Service Manager
       based on the location
       attribute
@@ -367,7 +367,7 @@ package ServiceManager {
             VirtualAppliance -up-|> ComputerAppliance
               'VirtualAppliance --> VMCluster : dependsOn
           }
-        interface Server {			
+        interface Server {
           + dataDisc
             + bootDisc
             + architecturePattern
