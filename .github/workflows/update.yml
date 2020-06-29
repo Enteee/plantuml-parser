@@ -37,7 +37,10 @@ jobs:
         echo "::set-output name=ncu::${report}"
 
     - run: npm update --save-dev
+
     - run: npm update
+
+    - run: npm test
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v2 
