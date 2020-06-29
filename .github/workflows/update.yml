@@ -2,6 +2,10 @@ name: Update
 
 on: [push, pull_request]
 
+#on:
+#  schedule:
+#  - cron: 0 0 * * 3
+
 jobs:
   build:
 
