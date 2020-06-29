@@ -47,4 +47,4 @@ jobs:
         title: "Update dependencies"
         body: ${{ steps.update.outputs.ncu }}
         branch: feature/update-dependencies
-        GITHUB_TOKEN: ${{ secrets.PR_CREATE_TOKEN }}
+        token: ${{ secrets.PR_CREATE_TOKEN }}
