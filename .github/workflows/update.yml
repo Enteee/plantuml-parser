@@ -24,9 +24,14 @@ jobs:
 
     - run: npm install -g npm-check-updates
 
-    - name: Updaet packages
+    - name: Update packages
       id: update
-      run: echo "##[set-output name=ncu;]$(ncu -u)"
+      run: |
+        report="$(ncu)"
+        report="${report//'%'/'%25'}"
+        report="${report//$'\n'/'%0A'}"
+        report="${report//$'\r'/'%0D'}"
+        echo "::set-output name=ncu::${report}"
 
     - run: npm update --save-dev
     - run: npm update
