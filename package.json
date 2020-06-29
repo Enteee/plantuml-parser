@@ -50,10 +50,10 @@
     "plantuml-parser": "dist/bin/cli.js"
   },
   "scripts": {
-    "prepublishOnly": "git clean -f -d -x -- ':!node_modules' && npm run build",
+    "prepublishOnly": "git clean -f -f -d -x -e 'node_modules' && npm run build",
     "start": "node dist/bin/cli.js",
     "build": "gulp build",
-    "test": "nyc gulp test && nyc check-coverage --lines 65 --functions 75 --branches 50 && eslint '**/*.js' '**/*.ts'",
+    "test": "nyc gulp test && nyc check-coverage --lines 65 --functions 75 --branches 50 && eslint '**/*.js' '**/*.ts' && git diff --check $(git hash-object -t tree /dev/null)",
     "watch": "gulp watch",
     "format-fix": "eslint --fix '**/*.js' '**/*.ts'",
     "fixtures": "gulp test-fixtures-update && git add -u test/fixtures || true",

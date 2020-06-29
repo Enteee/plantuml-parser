@@ -1,6 +1,6 @@
 @startuml
 [x] -[hidden]down- [down]
-[x] -[hidden]up- [up] 
+[x] -[hidden]up- [up]
 [x] -[hidden]left- [left]
 [x] -[hidden]right- [right]
 @enduml
