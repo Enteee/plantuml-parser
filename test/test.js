@@ -3,6 +3,7 @@ const conf = require('../conf');
 const { expect, assert } = require('chai');
 
 const { parse, parseFile, formatters } = require(conf.dist.dir);
+
 /**
  * Test if the output produced by the
  * formatters has not changed.
