@@ -1,4 +1,4 @@
-name: Update
+name: Node.js Update
 
 on: [push, pull_request]
 
@@ -27,7 +27,7 @@ jobs:
     - name: Update packages
       id: update
       run: |
-        report="$(ncu)"
+        report="$(ncu -u)"
         report="${report//'%'/'%25'}"
         report="${report//$'\n'/'%0A'}"
         report="${report//$'\r'/'%0D'}"
