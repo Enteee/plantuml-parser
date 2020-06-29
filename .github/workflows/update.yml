@@ -1,8 +1,8 @@
-name: Update
+name: Update Dependencies
 
 on:
   schedule:
-  - cron: 0 0 * * 3
+  - cron: 0 0 * * *
 
 jobs:
   build:
@@ -22,16 +22,28 @@ jobs:
 
     - run: npm install -g npm-check-updates
 
-    - name: Updaet packages
+    - name: Update packages
       id: update
-      run: echo "##[set-output name=ncu;]$(ncu -u)"
+      run: |
+        report="$(ncu -u)"
+        report="\`\`\`
+        ${report}
+        \`\`\`"
+        report="${report//'%'/'%25'}"
+        report="${report//$'\n'/'%0A'}"
+        report="${report//$'\r'/'%0D'}"
+        echo "::set-output name=ncu::${report}"
 
     - run: npm update --save-dev
+
     - run: npm update
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v2 
       with:
+        commit-message: "Update dependencies"
         title: "Update dependencies"
         body: ${{ steps.update.outputs.ncu }}
         branch: feature/update-dependencies
+        token: ${{ secrets.PR_CREATE_TOKEN }}
+        labels: dependencies
