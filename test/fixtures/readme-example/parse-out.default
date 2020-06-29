@@ -1,0 +1,36 @@
+[
+  {
+    "elements": [
+      {
+        "name": "A",
+        "title": "A",
+        "isAbstract": false,
+        "members": [],
+        "extends_": [],
+        "implements_": []
+      },
+      {
+        "name": "B",
+        "title": "B",
+        "isAbstract": false,
+        "members": [],
+        "extends_": [],
+        "implements_": []
+      },
+      {
+        "left": "A",
+        "right": "B",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": "|>",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "",
+        "rightCardinality": "",
+        "label": "",
+        "hidden": false
+      }
+    ]
+  }
+]
