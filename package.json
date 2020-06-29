@@ -57,7 +57,7 @@
     "watch": "gulp watch",
     "format-fix": "eslint --fix '**/*.js' '**/*.ts'",
     "fixtures": "gulp test-fixtures-update && git add -u test/fixtures || true",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+    "coverage-report": "nyc report --reporter=lcov"
   },
   "repository": {
     "type": "git",
