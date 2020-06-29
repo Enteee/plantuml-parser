@@ -1,6 +1,5 @@
 const conf = require('../conf');
 
-const { describe, it } = require('mocha');
 const { expect, assert } = require('chai');
 
 const { parse, parseFile, formatters } = require(conf.dist.dir);
