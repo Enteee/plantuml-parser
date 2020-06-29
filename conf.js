@@ -3,7 +3,7 @@
  */
 
 const { join } = require('path');
-const serializeError = require('serialize-error');
+const { serializeError } = require('serialize-error');
 
 module.exports = {
   encoding: 'utf-8',
