@@ -28,6 +28,7 @@ jobs:
       id: update
       run: |
         report="$(ncu -u)"
+        report="\`\`\`${report}\`\`\`"
         report="${report//'%'/'%25'}"
         report="${report//$'\n'/'%0A'}"
         report="${report//$'\r'/'%0D'}"
