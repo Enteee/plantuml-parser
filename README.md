@@ -63,7 +63,9 @@ console.log(
         "isAbstract": false,
         "members": [],
         "extends_": [],
-        "implements_": []
+        "implements_": [],
+        "generics": [],
+        "stereotypes": []
       },
       {
         "name": "B",
@@ -71,7 +73,9 @@ console.log(
         "isAbstract": false,
         "members": [],
         "extends_": [],
-        "implements_": []
+        "implements_": [],
+        "generics": [],
+        "stereotypes": []
       },
       {
         "left": "A",
