@@ -522,9 +522,9 @@ Generics
   }
 
 Generic
-  = !"<<" "<" _ generics:(( !">" . )+) _ ">"
+  = !"<<" "<" _ generic:(( !">" . )+) _ ">"
   {
-    return extractText(generics);
+    return extractText(generic);
   }
 
 Stereotypes
