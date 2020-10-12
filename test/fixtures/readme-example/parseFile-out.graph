@@ -11,7 +11,9 @@
               "isAbstract": false,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics": [],
+              "stereotypes": []
             },
             {
               "name": "B",
@@ -19,7 +21,9 @@
               "isAbstract": false,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics": [],
+              "stereotypes": []
             },
             {
               "left": "A",
@@ -49,6 +53,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "A",
       "type": "Class",
       "hidden": true
@@ -60,6 +66,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "B",
       "type": "Class",
       "hidden": true

@@ -10,15 +10,9 @@
             "isAbstract": true,
             "members": [],
             "extends_": [],
-            "implements_": []
-          },
-          {
-            "name": "Test",
-            "title": "Test",
-            "isAbstract": false,
-            "members": [],
-            "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
           },
           {
             "name": "System",
@@ -26,7 +20,11 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": [
+              "(S,#FF7700) Singleton"
+            ]
           },
           {
             "name": "Date",
@@ -34,7 +32,11 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": [
+              "(D,orchid)"
+            ]
           },
           {
             "name": "Foo1",
@@ -91,7 +93,11 @@
               }
             ],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [
+              "Generics tag"
+            ],
+            "stereotypes": []
           },
           {
             "name": "User",
@@ -133,7 +139,9 @@
               }
             ],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
           },
           {
             "name": "TimeUnit",
@@ -159,14 +167,18 @@
               }
             ],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
           },
           {
             "name": "List",
             "title": "List",
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
           },
           {
             "name": "Object",
@@ -174,7 +186,11 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": [
+              "general"
+            ]
           },
           {
             "left": "Object",

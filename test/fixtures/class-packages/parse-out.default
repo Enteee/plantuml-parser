@@ -12,7 +12,9 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
           }
         ]
       },
@@ -27,7 +29,9 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
           }
         ]
       },
@@ -42,7 +46,9 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
           }
         ]
       },
@@ -57,7 +63,9 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
           }
         ]
       },
@@ -72,7 +80,9 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
           }
         ]
       },
@@ -87,7 +97,9 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
           }
         ]
       }

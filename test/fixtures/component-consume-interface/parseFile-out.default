@@ -13,7 +13,9 @@
             "title": "I",
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
           },
           {
             "left": "C",

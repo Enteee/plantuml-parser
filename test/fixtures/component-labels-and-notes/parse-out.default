@@ -36,14 +36,18 @@
             "title": "IMath",
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
           },
           {
             "name": "Items",
             "title": "IItems",
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
           },
           {
             "text": "A note can also\n        be on several lines\n        like this one",

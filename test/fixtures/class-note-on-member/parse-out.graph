@@ -15,6 +15,10 @@
       ],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [
+        "single"
+      ],
       "id": "Alice",
       "type": "Class",
       "hidden": true

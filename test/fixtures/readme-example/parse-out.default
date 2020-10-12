@@ -7,7 +7,9 @@
         "isAbstract": false,
         "members": [],
         "extends_": [],
-        "implements_": []
+        "implements_": [],
+        "generics": [],
+        "stereotypes": []
       },
       {
         "name": "B",
@@ -15,7 +17,9 @@
         "isAbstract": false,
         "members": [],
         "extends_": [],
-        "implements_": []
+        "implements_": [],
+        "generics": [],
+        "stereotypes": []
       },
       {
         "left": "A",

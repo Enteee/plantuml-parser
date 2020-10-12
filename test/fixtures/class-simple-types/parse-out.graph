@@ -7,6 +7,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "C",
       "type": "Class",
       "hidden": true
@@ -18,6 +20,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "AC",
       "type": "Class",
       "hidden": true
@@ -28,6 +32,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "I",
       "type": "Interface",
       "hidden": true

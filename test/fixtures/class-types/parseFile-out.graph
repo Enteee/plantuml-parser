@@ -11,15 +11,9 @@
               "isAbstract": true,
               "members": [],
               "extends_": [],
-              "implements_": []
-            },
-            {
-              "name": "Test",
-              "title": "Test",
-              "isAbstract": false,
-              "members": [],
-              "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics": [],
+              "stereotypes": []
             },
             {
               "name": "System",
@@ -27,7 +21,11 @@
               "isAbstract": false,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics": [],
+              "stereotypes": [
+                "(S,#FF7700) Singleton"
+              ]
             },
             {
               "name": "Date",
@@ -35,7 +33,11 @@
               "isAbstract": false,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics": [],
+              "stereotypes": [
+                "(D,orchid)"
+              ]
             },
             {
               "name": "Foo1",
@@ -92,7 +94,11 @@
                 }
               ],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics": [
+                "Generics tag"
+              ],
+              "stereotypes": []
             },
             {
               "name": "User",
@@ -134,7 +140,9 @@
                 }
               ],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics": [],
+              "stereotypes": []
             },
             {
               "name": "TimeUnit",
@@ -160,14 +168,18 @@
                 }
               ],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics": [],
+              "stereotypes": []
             },
             {
               "name": "List",
               "title": "List",
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics": [],
+              "stereotypes": []
             },
             {
               "name": "Object",
@@ -175,7 +187,11 @@
               "isAbstract": false,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics": [],
+              "stereotypes": [
+                "general"
+              ]
             },
             {
               "left": "Object",
@@ -205,18 +221,9 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "AbstractList",
-      "type": "Class",
-      "hidden": true
-    },
-    {
-      "name": "Test",
-      "title": "Test",
-      "isAbstract": false,
-      "members": [],
-      "extends_": [],
-      "implements_": [],
-      "id": "Test",
       "type": "Class",
       "hidden": true
     },
@@ -227,6 +234,10 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [
+        "(S,#FF7700) Singleton"
+      ],
       "id": "System",
       "type": "Class",
       "hidden": true
@@ -238,6 +249,10 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [
+        "(D,orchid)"
+      ],
       "id": "Date",
       "type": "Class",
       "hidden": true
@@ -298,6 +313,10 @@
       ],
       "extends_": [],
       "implements_": [],
+      "generics": [
+        "Generics tag"
+      ],
+      "stereotypes": [],
       "id": "Foo1",
       "type": "Class",
       "hidden": true
@@ -407,6 +426,8 @@
       ],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "User",
       "type": "Class",
       "hidden": true
@@ -433,6 +454,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "List",
       "type": "Interface",
       "hidden": true
@@ -444,6 +467,10 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [
+        "general"
+      ],
       "id": "Object",
       "type": "Class",
       "hidden": true
@@ -453,12 +480,6 @@
     {
       "from": "test/fixtures/class-types/in.plantuml",
       "to": "AbstractList",
-      "name": "contains",
-      "hidden": true
-    },
-    {
-      "from": "test/fixtures/class-types/in.plantuml",
-      "to": "Test",
       "name": "contains",
       "hidden": true
     },

@@ -16,7 +16,9 @@
                   "isAbstract": false,
                   "members": [],
                   "extends_": [],
-                  "implements_": []
+                  "implements_": [],
+                  "generics": [],
+                  "stereotypes": []
                 }
               ]
             },
@@ -31,7 +33,9 @@
                   "isAbstract": false,
                   "members": [],
                   "extends_": [],
-                  "implements_": []
+                  "implements_": [],
+                  "generics": [],
+                  "stereotypes": []
                 }
               ]
             },
@@ -46,7 +50,9 @@
                   "isAbstract": false,
                   "members": [],
                   "extends_": [],
-                  "implements_": []
+                  "implements_": [],
+                  "generics": [],
+                  "stereotypes": []
                 }
               ]
             },
@@ -61,7 +67,9 @@
                   "isAbstract": false,
                   "members": [],
                   "extends_": [],
-                  "implements_": []
+                  "implements_": [],
+                  "generics": [],
+                  "stereotypes": []
                 }
               ]
             },
@@ -76,7 +84,9 @@
                   "isAbstract": false,
                   "members": [],
                   "extends_": [],
-                  "implements_": []
+                  "implements_": [],
+                  "generics": [],
+                  "stereotypes": []
                 }
               ]
             },
@@ -91,7 +101,9 @@
                   "isAbstract": false,
                   "members": [],
                   "extends_": [],
-                  "implements_": []
+                  "implements_": [],
+                  "generics": [],
+                  "stereotypes": []
                 }
               ]
             }
@@ -109,6 +121,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "Worker1",
       "type": "Class",
       "hidden": true
@@ -120,6 +134,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "Worker2",
       "type": "Class",
       "hidden": true
@@ -131,6 +147,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "Worker3",
       "type": "Class",
       "hidden": true
@@ -142,6 +160,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "Worker4",
       "type": "Class",
       "hidden": true
@@ -153,6 +173,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "Worker5",
       "type": "Class",
       "hidden": true
@@ -164,6 +186,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "Worker6",
       "type": "Class",
       "hidden": true

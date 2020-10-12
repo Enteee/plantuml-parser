@@ -69,3 +69,4 @@ src/plantuml.ts
 
 # vim
 *.swp
+*.swo

@@ -7,6 +7,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "AbstractList",
       "type": "Class",
       "hidden": true

@@ -21,6 +21,8 @@
       ],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "Dwelling",
       "type": "Class",
       "hidden": true
@@ -40,6 +42,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "Apartment",
       "type": "Class",
       "hidden": true
@@ -51,6 +55,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "House",
       "type": "Class",
       "hidden": true
@@ -62,6 +68,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "Commune",
       "type": "Class",
       "hidden": true
