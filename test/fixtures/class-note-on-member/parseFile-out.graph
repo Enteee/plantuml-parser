@@ -19,7 +19,11 @@
                 }
               ],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics": [],
+              "stereotypes": [
+                "single"
+              ]
             },
             {
               "text": "Untype. She does\nnot like types.",
@@ -47,6 +51,10 @@
       ],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [
+        "single"
+      ],
       "id": "Alice",
       "type": "Class",
       "hidden": true

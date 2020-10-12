@@ -11,7 +11,9 @@
               "isAbstract": false,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics": [],
+              "stereotypes": []
             },
             {
               "name": "AC",
@@ -19,21 +21,27 @@
               "isAbstract": true,
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics": [],
+              "stereotypes": []
             },
             {
               "name": "I",
               "title": "I",
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics": [],
+              "stereotypes": []
             },
             {
               "name": "E",
               "title": "E",
               "members": [],
               "extends_": [],
-              "implements_": []
+              "implements_": [],
+              "generics": [],
+              "stereotypes": []
             }
           ]
         }
@@ -49,6 +57,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "C",
       "type": "Class",
       "hidden": true
@@ -60,6 +70,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "AC",
       "type": "Class",
       "hidden": true
@@ -70,6 +82,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "I",
       "type": "Interface",
       "hidden": true

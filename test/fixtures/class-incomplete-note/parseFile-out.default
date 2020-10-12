@@ -10,7 +10,9 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
           },
           {
             "name": "C1",
@@ -18,7 +20,9 @@
             "isAbstract": false,
             "members": [],
             "extends_": [],
-            "implements_": []
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
           }
         ]
       }

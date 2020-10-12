@@ -7,6 +7,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "ParentClass",
       "type": "Class",
       "hidden": true
@@ -18,6 +20,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "OtherParentClass",
       "type": "Class",
       "hidden": true
@@ -28,6 +32,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "ParentInterface",
       "type": "Interface",
       "hidden": true
@@ -38,6 +44,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "OtherParentInterface",
       "type": "Interface",
       "hidden": true
@@ -52,6 +60,8 @@
         "OtherParentClass"
       ],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "ExtendsClass",
       "type": "Class",
       "hidden": true
@@ -66,6 +76,8 @@
         "ParentInterface",
         "OtherParentInterface"
       ],
+      "generics": [],
+      "stereotypes": [],
       "id": "ImplementsClass",
       "type": "Class",
       "hidden": true
@@ -83,6 +95,8 @@
         "ParentInterface",
         "OtherParentInterface"
       ],
+      "generics": [],
+      "stereotypes": [],
       "id": "ExtendsImplementsClass",
       "type": "Class",
       "hidden": true
@@ -96,6 +110,8 @@
         "OtherParentClass"
       ],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "ExtendsInterface",
       "type": "Interface",
       "hidden": true
@@ -109,6 +125,8 @@
         "ParentInterface",
         "OtherParentInterface"
       ],
+      "generics": [],
+      "stereotypes": [],
       "id": "ImplementsInterface",
       "type": "Interface",
       "hidden": true
@@ -125,6 +143,8 @@
         "ParentInterface",
         "OtherParentInterface"
       ],
+      "generics": [],
+      "stereotypes": [],
       "id": "ExtendsImplementsInterface",
       "type": "Interface",
       "hidden": true

@@ -13,6 +13,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
+      "generics": [],
+      "stereotypes": [],
       "id": "I",
       "type": "Interface",
       "hidden": true

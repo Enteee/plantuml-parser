@@ -9,9 +9,6 @@ abstract class AbstractList {
 
 }
 
-class Test << general >> {
-}
-
 class System << (S,#FF7700) Singleton >>
 class Date << (D,orchid) >>
 
