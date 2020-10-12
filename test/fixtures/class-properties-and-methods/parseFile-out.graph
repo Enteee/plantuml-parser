@@ -65,8 +65,8 @@
               ],
               "extends_": [],
               "implements_": [],
-              "generics": "",
-              "stereotype": ""
+              "generics": [],
+              "stereotypes": []
             },
             {
               "name": "Car",
@@ -75,8 +75,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics": "",
-              "stereotype": ""
+              "generics": [],
+              "stereotypes": []
             },
             {
               "left": "ICar",
@@ -187,8 +187,8 @@
       ],
       "extends_": [],
       "implements_": [],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "Car",
       "type": "Class",
       "hidden": true
@@ -232,8 +232,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "Car",
       "type": "Class",
       "hidden": true

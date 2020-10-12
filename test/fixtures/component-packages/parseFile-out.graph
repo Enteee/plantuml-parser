@@ -41,8 +41,8 @@
                   "members": [],
                   "extends_": [],
                   "implements_": [],
-                  "generics": "",
-                  "stereotype": ""
+                  "generics": [],
+                  "stereotypes": []
                 },
                 {
                   "name": "Items",
@@ -50,8 +50,8 @@
                   "members": [],
                   "extends_": [],
                   "implements_": [],
-                  "generics": "",
-                  "stereotype": ""
+                  "generics": [],
+                  "stereotypes": []
                 }
               ]
             },
@@ -184,8 +184,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "Math",
       "type": "Interface",
       "hidden": true
@@ -196,8 +196,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "Items",
       "type": "Interface",
       "hidden": true

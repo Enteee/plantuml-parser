@@ -40,8 +40,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics": "",
-                "stereotype": ""
+                "generics": [],
+                "stereotypes": []
               },
               {
                 "name": "Items",
@@ -49,8 +49,8 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics": "",
-                "stereotype": ""
+                "generics": [],
+                "stereotypes": []
               }
             ]
           },

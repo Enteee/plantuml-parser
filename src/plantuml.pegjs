@@ -147,7 +147,7 @@ Together
 //
 
 Group
-  = _ type:GroupType " " _ name:ElementName _ Stereotype? _ Color? _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
+  = _ type:GroupType " " _ name:ElementName _ Stereotypes? _ Color? _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
     return new types.Group(
       name.name,
@@ -215,7 +215,7 @@ NoteOf
 //
 
 Class
-  = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype:Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotypes:Stereotypes? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Class(
       name.name,
@@ -225,10 +225,10 @@ Class
       extends_,
       implements_,
       generics,
-      stereotype
+      stereotypes
     );
   }
-  / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype:Stereotype? _ EndLine
+  / _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotypes:Stereotypes? _ EndLine
   {
     return new types.Class(
       name.name,
@@ -238,7 +238,7 @@ Class
       extends_,
       implements_,
       generics,
-      stereotype
+      stereotypes
     );
   }
 
@@ -305,7 +305,7 @@ MemberVariable
 //
 
 Interface
-  = _ "interface "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype:Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "interface "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotypes:Stereotypes? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Interface(
       name.name,
@@ -314,10 +314,10 @@ Interface
       extends_,
       implements_,
       generics,
-      stereotype
+      stereotypes
     );
   }
-  / _ "interface "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype:Stereotype? _ EndLine
+  / _ "interface "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotypes:Stereotypes? _ EndLine
   {
     return new types.Interface(
       name.name,
@@ -326,7 +326,7 @@ Interface
       extends_,
       implements_,
       generics,
-      stereotype
+      stereotypes
     );
   }
 
@@ -335,7 +335,7 @@ Interface
 //
 
 Enum
-  = _ "enum "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype:Stereotype? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "enum "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotypes:Stereotypes? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Enum(
       name.name,
@@ -344,10 +344,10 @@ Enum
       extends_,
       implements_,
       generics,
-      stereotype
+      stereotypes
     );
   }
-  / _ "enum "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotype:Stereotype? _ EndLine
+  / _ "enum "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotypes:Stereotypes? _ EndLine
   {
     return new types.Enum(
       name.name,
@@ -356,7 +356,7 @@ Enum
       extends_,
       implements_,
       generics,
-      stereotype
+      stereotypes
     );
   }
 
@@ -365,7 +365,7 @@ Enum
 //
 
 Component
-  = _ "component "i _ name:ElementName _ Stereotype? EndLine
+  = _ "component "i _ name:ElementName _ Stereotypes? EndLine
   {
     return new types.Component(
       name.name,
@@ -511,11 +511,30 @@ RelationshipLabel
 RelationshipHidden
   = "[hidden]"
 
-
 Generics
+  = generics:( Generic _ )*
+  {
+    return removeUndefined(
+      generics.map(
+        (generic:string[]) => generic[0]
+      )
+    );
+  }
+
+Generic
   = !"<<" "<" _ generics:(( !">" . )+) _ ">"
   {
     return extractText(generics);
+  }
+
+Stereotypes
+  = stereotypes:( Stereotype _ )*
+  {
+    return removeUndefined(
+      stereotypes.map(
+        (stereotype:string[]) => stereotype[0]
+      )
+    );
   }
 
 Stereotype

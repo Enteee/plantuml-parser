@@ -60,8 +60,8 @@
       ],
       "extends_": [],
       "implements_": [],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "Car",
       "type": "Class",
       "hidden": true
@@ -105,8 +105,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "Car",
       "type": "Class",
       "hidden": true

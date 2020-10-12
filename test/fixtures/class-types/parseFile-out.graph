@@ -12,8 +12,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics": "",
-              "stereotype": ""
+              "generics": [],
+              "stereotypes": []
             },
             {
               "name": "System",
@@ -22,8 +22,10 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics": "",
-              "stereotype": "(S,#FF7700) Singleton"
+              "generics": [],
+              "stereotypes": [
+                "(S,#FF7700) Singleton"
+              ]
             },
             {
               "name": "Date",
@@ -32,8 +34,10 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics": "",
-              "stereotype": "(D,orchid)"
+              "generics": [],
+              "stereotypes": [
+                "(D,orchid)"
+              ]
             },
             {
               "name": "Foo1",
@@ -91,8 +95,10 @@
               ],
               "extends_": [],
               "implements_": [],
-              "generics": "Generics tag",
-              "stereotype": ""
+              "generics": [
+                "Generics tag"
+              ],
+              "stereotypes": []
             },
             {
               "name": "User",
@@ -135,8 +141,8 @@
               ],
               "extends_": [],
               "implements_": [],
-              "generics": "",
-              "stereotype": ""
+              "generics": [],
+              "stereotypes": []
             },
             {
               "name": "TimeUnit",
@@ -163,8 +169,8 @@
               ],
               "extends_": [],
               "implements_": [],
-              "generics": "",
-              "stereotype": ""
+              "generics": [],
+              "stereotypes": []
             },
             {
               "name": "List",
@@ -172,8 +178,8 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics": "",
-              "stereotype": ""
+              "generics": [],
+              "stereotypes": []
             },
             {
               "name": "Object",
@@ -182,8 +188,10 @@
               "members": [],
               "extends_": [],
               "implements_": [],
-              "generics": "",
-              "stereotype": "general"
+              "generics": [],
+              "stereotypes": [
+                "general"
+              ]
             },
             {
               "left": "Object",
@@ -213,8 +221,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "AbstractList",
       "type": "Class",
       "hidden": true
@@ -226,8 +234,10 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics": "",
-      "stereotype": "(S,#FF7700) Singleton",
+      "generics": [],
+      "stereotypes": [
+        "(S,#FF7700) Singleton"
+      ],
       "id": "System",
       "type": "Class",
       "hidden": true
@@ -239,8 +249,10 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics": "",
-      "stereotype": "(D,orchid)",
+      "generics": [],
+      "stereotypes": [
+        "(D,orchid)"
+      ],
       "id": "Date",
       "type": "Class",
       "hidden": true
@@ -301,8 +313,10 @@
       ],
       "extends_": [],
       "implements_": [],
-      "generics": "Generics tag",
-      "stereotype": "",
+      "generics": [
+        "Generics tag"
+      ],
+      "stereotypes": [],
       "id": "Foo1",
       "type": "Class",
       "hidden": true
@@ -412,8 +426,8 @@
       ],
       "extends_": [],
       "implements_": [],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "User",
       "type": "Class",
       "hidden": true
@@ -440,8 +454,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "List",
       "type": "Interface",
       "hidden": true
@@ -453,8 +467,10 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics": "",
-      "stereotype": "general",
+      "generics": [],
+      "stereotypes": [
+        "general"
+      ],
       "id": "Object",
       "type": "Class",
       "hidden": true

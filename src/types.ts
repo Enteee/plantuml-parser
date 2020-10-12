@@ -69,14 +69,14 @@ export class Enum {
     public members: Member[] = [],
     public extends_: string[] = [],
     public implements_: string[] = [],
-    public generics: string = '',
-    public stereotype: string = '',
+    public generics: string[] = [],
+    public stereotypes: string[] = [],
   ) {
     this.members = members || [];
     this.extends_ = extends_ || [];
     this.implements_ = implements_ || [];
-    this.generics = generics || '';
-    this.stereotype = stereotype || '';
+    this.generics = generics || [];
+    this.stereotypes = stereotypes || [];
   }
 }
 
@@ -87,14 +87,14 @@ export class Interface {
     public members: Member[] = [],
     public extends_: string[] = [],
     public implements_: string[] = [],
-    public generics: string = '',
-    public stereotype: string = '',
+    public generics: string[] = [],
+    public stereotypes: string[] = [],
   ) {
     this.members = members || [];
     this.extends_ = extends_ || [];
     this.implements_ = implements_ || [];
-    this.generics = generics || '';
-    this.stereotype = stereotype || '';
+    this.generics = generics || [];
+    this.stereotypes = stereotypes || [];
   }
 }
 
@@ -106,15 +106,15 @@ export class Class {
     public members: Member[] = [],
     public extends_: string[] = [],
     public implements_: string[] = [],
-    public generics: string = '',
-    public stereotype: string = '',
+    public generics: string[] = [],
+    public stereotypes: string[] = [],
   ) {
     this.isAbstract = !!isAbstract;
     this.members = members || [];
     this.extends_ = extends_ || [];
     this.implements_ = implements_ || [];
-    this.generics = generics || '';
-    this.stereotype = stereotype || '';
+    this.generics = generics || [];
+    this.stereotypes = stereotypes || [];
   }
 }
 

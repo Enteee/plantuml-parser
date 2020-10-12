@@ -14,8 +14,8 @@
             "members": [],
             "extends_": [],
             "implements_": [],
-            "generics": "",
-            "stereotype": ""
+            "generics": [],
+            "stereotypes": []
           },
           {
             "left": "C",

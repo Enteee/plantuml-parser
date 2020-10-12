@@ -25,8 +25,8 @@
             ],
             "extends_": [],
             "implements_": [],
-            "generics": "",
-            "stereotype": ""
+            "generics": [],
+            "stereotypes": []
           }
         ]
       },
@@ -53,8 +53,8 @@
             ],
             "extends_": [],
             "implements_": [],
-            "generics": "",
-            "stereotype": ""
+            "generics": [],
+            "stereotypes": []
           }
         ]
       }

@@ -8,8 +8,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics": "",
-        "stereotype": ""
+        "generics": [],
+        "stereotypes": []
       },
       {
         "name": "System",
@@ -18,8 +18,10 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics": "",
-        "stereotype": "(S,#FF7700) Singleton"
+        "generics": [],
+        "stereotypes": [
+          "(S,#FF7700) Singleton"
+        ]
       },
       {
         "name": "Date",
@@ -28,8 +30,10 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics": "",
-        "stereotype": "(D,orchid)"
+        "generics": [],
+        "stereotypes": [
+          "(D,orchid)"
+        ]
       },
       {
         "name": "Foo1",
@@ -87,8 +91,10 @@
         ],
         "extends_": [],
         "implements_": [],
-        "generics": "Generics tag",
-        "stereotype": ""
+        "generics": [
+          "Generics tag"
+        ],
+        "stereotypes": []
       },
       {
         "name": "User",
@@ -131,8 +137,8 @@
         ],
         "extends_": [],
         "implements_": [],
-        "generics": "",
-        "stereotype": ""
+        "generics": [],
+        "stereotypes": []
       },
       {
         "name": "TimeUnit",
@@ -159,8 +165,8 @@
         ],
         "extends_": [],
         "implements_": [],
-        "generics": "",
-        "stereotype": ""
+        "generics": [],
+        "stereotypes": []
       },
       {
         "name": "List",
@@ -168,8 +174,8 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics": "",
-        "stereotype": ""
+        "generics": [],
+        "stereotypes": []
       },
       {
         "name": "Object",
@@ -178,8 +184,10 @@
         "members": [],
         "extends_": [],
         "implements_": [],
-        "generics": "",
-        "stereotype": "general"
+        "generics": [],
+        "stereotypes": [
+          "general"
+        ]
       },
       {
         "left": "Object",

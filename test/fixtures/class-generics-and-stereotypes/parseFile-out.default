@@ -16,8 +16,10 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics": "G1",
-                "stereotype": ""
+                "generics": [
+                  "G1"
+                ],
+                "stereotypes": []
               },
               {
                 "comment": "class TestMultipleGenerics <G1> <G2> # Not supported"
@@ -29,8 +31,10 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics": "<G1",
-                "stereotype": ""
+                "generics": [
+                  "<G1"
+                ],
+                "stereotypes": []
               },
               {
                 "name": "TestGenericsWithDoubleAngleBrackets",
@@ -39,8 +43,10 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics": "<<G1",
-                "stereotype": ""
+                "generics": [
+                  "<<G1"
+                ],
+                "stereotypes": []
               }
             ]
           },
@@ -56,8 +62,10 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics": "",
-                "stereotype": "S1"
+                "generics": [],
+                "stereotypes": [
+                  "S1"
+                ]
               },
               {
                 "name": "TestMultipleStereotypes",
@@ -66,8 +74,12 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics": "",
-                "stereotype": "S1"
+                "generics": [],
+                "stereotypes": [
+                  "S1",
+                  "S2",
+                  "S3"
+                ]
               },
               {
                 "name": "TestStereotypeWithAngleBrackets",
@@ -76,8 +88,10 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics": "",
-                "stereotype": "<S1>"
+                "generics": [],
+                "stereotypes": [
+                  "<S1>"
+                ]
               },
               {
                 "name": "TestStereotypeWithDoubleAngleBrackets",
@@ -86,8 +100,10 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics": "",
-                "stereotype": "<<S1"
+                "generics": [],
+                "stereotypes": [
+                  "<<S1"
+                ]
               }
             ]
           },
@@ -103,8 +119,12 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics": "G1",
-                "stereotype": "S1"
+                "generics": [
+                  "G1"
+                ],
+                "stereotypes": [
+                  "S1"
+                ]
               },
               {
                 "comment": "class TestMultipleGenericsAndStereotype <G1> <G2> <<S1>> # Not supported"
@@ -116,8 +136,10 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics": "<G1",
-                "stereotype": ""
+                "generics": [
+                  "<G1"
+                ],
+                "stereotypes": []
               },
               {
                 "name": "TestGenericsWithDoubleAngleBracketsAndStereotype",
@@ -126,8 +148,10 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics": "<<G1",
-                "stereotype": ""
+                "generics": [
+                  "<<G1"
+                ],
+                "stereotypes": []
               },
               {
                 "name": "TestGenericsAndMultipleStereotypes",
@@ -136,8 +160,13 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics": "G1",
-                "stereotype": "S1"
+                "generics": [
+                  "G1"
+                ],
+                "stereotypes": [
+                  "S1",
+                  "S2"
+                ]
               },
               {
                 "name": "TestGenericsAndStereotypeWithAngleBrackets",
@@ -146,8 +175,12 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics": "G1",
-                "stereotype": "<S1>"
+                "generics": [
+                  "G1"
+                ],
+                "stereotypes": [
+                  "<S1>"
+                ]
               },
               {
                 "name": "TestGenericsAndStereotypeWithDoubleAngleBrackets",
@@ -156,8 +189,12 @@
                 "members": [],
                 "extends_": [],
                 "implements_": [],
-                "generics": "G1",
-                "stereotype": "<<S1"
+                "generics": [
+                  "G1"
+                ],
+                "stereotypes": [
+                  "<<S1"
+                ]
               }
             ]
           }

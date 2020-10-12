@@ -7,8 +7,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "ParentClass",
       "type": "Class",
       "hidden": true
@@ -19,8 +19,8 @@
       "members": [],
       "extends_": [],
       "implements_": [],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "ParentInterface",
       "type": "Interface",
       "hidden": true
@@ -34,8 +34,8 @@
         "ParentClass"
       ],
       "implements_": [],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "ExtendsClass",
       "type": "Class",
       "hidden": true
@@ -49,8 +49,8 @@
       "implements_": [
         "ParentInterface"
       ],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "ImplementsClass",
       "type": "Class",
       "hidden": true
@@ -66,8 +66,8 @@
       "implements_": [
         "ParentInterface"
       ],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "ExtendsImplementsClass",
       "type": "Class",
       "hidden": true
@@ -80,8 +80,8 @@
         "ParentClass"
       ],
       "implements_": [],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "OnlyExtendsInterface",
       "type": "Interface",
       "hidden": true
@@ -94,8 +94,8 @@
       "implements_": [
         "ParentInterface"
       ],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "OnlyImplementsInterface",
       "type": "Interface",
       "hidden": true
@@ -110,8 +110,8 @@
       "implements_": [
         "ParentInterface"
       ],
-      "generics": "",
-      "stereotype": "",
+      "generics": [],
+      "stereotypes": [],
       "id": "ExtendsImplementsInterface",
       "type": "Interface",
       "hidden": true
