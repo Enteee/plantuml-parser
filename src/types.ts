@@ -179,6 +179,58 @@ export class Relationship {
   }
 }
 
+export type Stdlib_C4_Context_Type = ('Person' | 'Person_Ext' | 'System' | 'System_Ext' | 'SystemDb' | 'SystemQueue' | 'SystemDb_Ext' | 'SystemQueue_Ext');
+export class Stdlib_C4_Context {
+  constructor (
+    public alias: string,
+    public label: string,
+    public descr: string,
+    public descr_: {'name': string, 'label': string},
+    public type: Stdlib_C4_Context_Type,
+    public type_: { source: string, name: string },
+  ) {
+    this.descr = descr_ ? descr_.name : '';
+    this.descr_ = undefined;
+    this.type = undefined;
+    this.type_ = { source: 'Stdlib_C4', name: type };
+  }
+}
+
+export type Stdlib_C4_Container_Component_Type = ('ContainerQueue_Ext' | 'ContainerQueue' | 'ContainerDb_Ext' | 'ContainerDb' | 'Container_Ext' | 'Container' | 'ComponentQueue_Ext' | 'ComponentQueue' | 'ComponentDb_Ext' | 'ComponentDb' | 'Component_Ext' | 'Component');
+export class Stdlib_C4_Container_Component {
+  constructor (
+    public alias: string,
+    public label: string,
+    public techn: string,
+    public techn_: {name: string, label: string},
+    public descr: string,
+    public descr_: {name: string, label: string},
+    public type: Stdlib_C4_Container_Component_Type,
+    public type_: { source: string, name: string },
+  ) {
+    this.techn = techn_ ? techn_.name : '';
+    this.techn_ = undefined;
+    this.descr = descr_ ? descr_.name : '';
+    this.descr_ = undefined;
+    this.type = undefined;
+    this.type_ = { source: 'Stdlib_C4', name: type };
+  }
+}
+
+export type Stdlib_C4_Boundary_Type = ('Enterprise_Boundary' | 'System_Boundary' | 'Container_Boundary' );
+export class Stdlib_C4_Boundary {
+  constructor (
+    public alias: string,
+    public label: string,
+    public elements: UMLElement[],
+    public type: Stdlib_C4_Container_Component_Type,
+    public type_: { source: string, name: string },
+  ) {
+    this.type = undefined;
+    this.type_ = { source: 'Stdlib_C4', name: type };
+  }
+}
+
 export type UMLElement = (
   | Note
   | Component
@@ -188,6 +240,9 @@ export type UMLElement = (
   | Class
   | Group
   | Relationship
+  | Stdlib_C4_Context
+  | Stdlib_C4_Container_Component
+  | Stdlib_C4_Boundary
 );
 export class UML {
   constructor (
