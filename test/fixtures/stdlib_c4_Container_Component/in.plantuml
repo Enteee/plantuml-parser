@@ -1,0 +1,22 @@
+@startuml
+
+("C4 - Container & Component")
+
+Container(container, "Container::label", "Container::techn", "Container::descr")
+ContainerQueue(containerQueue, "ContainerQueue::label", "ContainerQueue::techn", "ContainerQueue::descr")
+ContainerDb(containerDb, "ContainerDb::label", "ContainerDb::techn", "ContainerDb::descr")
+
+Container_Ext(container_Ext, "Container_Ext::label", "Container_Ext::techn", "Container_Ext::descr")
+ContainerQueue_Ext(containerQueue_Ext, "ContainerQueue_Ext::label", "ContainerQueue_Ext::techn", "ContainerQueue_Ext::descr")
+ContainerDb_Ext(containerDb_Ext, "ContainerDb_Ext::label", "ContainerDb_Ext::techn", "ContainerDb_Ext::descr")
+
+Component(component, "Component::label", "Component::techn", "Component::descr")
+ComponentQueue(componentQueue, "ComponentQueue::label", "ComponentQueue::techn", "ComponentQueue::descr")
+ComponentDb(componentDb, "ComponentDb::label", "ComponentDb::techn", "ComponentDb::descr")
+
+Component_Ext(component_Ext, "Component_Ext::label", "Component_Ext::techn", "Component_Ext::descr")
+ComponentQueue_Ext(componentQueue_Ext, "ComponentQueue_Ext::label", "ComponentQueue_Ext::techn", "ComponentQueue_Ext::descr")
+ComponentDb_Ext(componentDb_Ext, "ComponentDb_Ext::label", "ComponentDb_Ext::techn", "ComponentDb_Ext::descr")
+
+
+@enduml

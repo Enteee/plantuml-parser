@@ -1,5 +1,5 @@
 {
-  "message": "Expected \"'\", \"(\", \"/'\", \"[\", \"abstract \", \"class \", \"cloud\", \"component \", \"database\", \"digraph\", \"enum \", \"folder\", \"frame\", \"interface \", \"namespace\", \"node\", \"note \", \"package\", \"rectangle\", \"skinparam \", \"state\", \"together \", \"usecase \", [ ,\\t], or [A-Z,a-z,0-9,.,_] but \"}\" found.",
+  "message": "Expected \"'\", \"(\", \"/'\", \"Component\", \"ComponentDb\", \"ComponentDb_Ext\", \"ComponentQueue\", \"ComponentQueue_Ext\", \"Component_Ext\", \"Container\", \"ContainerDb\", \"ContainerDb_Ext\", \"ContainerQueue\", \"ContainerQueue_Ext\", \"Container_Boundary\", \"Container_Ext\", \"Enterprise_Boundary\", \"Person\", \"Person_Ext\", \"System\", \"SystemDb\", \"SystemDb_Ext\", \"SystemQueue\", \"SystemQueue_Ext\", \"System_Boundary\", \"System_Ext\", \"[\", \"abstract \", \"class \", \"cloud\", \"component \", \"database\", \"digraph\", \"enum \", \"folder\", \"frame\", \"interface \", \"namespace\", \"node\", \"note \", \"package\", \"rectangle\", \"skinparam \", \"state\", \"together \", \"usecase \", [ ,\\t], or [A-Z,a-z,0-9,.,_] but \"}\" found.",
   "expected": [
     {
       "type": "class",
@@ -462,6 +462,286 @@
       ],
       "inverted": false,
       "ignoreCase": false
+    },
+    {
+      "ignoreCase": true,
+      "text": "Person_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "SystemDb_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "SystemQueue_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Person",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "System_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "SystemDb",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "SystemQueue",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "System",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": false,
+      "inverted": false,
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "type": "class"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ContainerQueue_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ContainerQueue",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ContainerDb_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ContainerDb",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Container_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Container",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ComponentQueue_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ComponentQueue",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ComponentDb_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ComponentDb",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Component_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Component",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": false,
+      "inverted": false,
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "type": "class"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ContainerQueue_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ContainerQueue",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ContainerDb_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ContainerDb",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Container_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Container",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ComponentQueue_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ComponentQueue",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ComponentDb_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ComponentDb",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Component_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Component",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": false,
+      "inverted": false,
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "type": "class"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ContainerQueue_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ContainerQueue",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ContainerDb_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ContainerDb",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Container_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Container",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ComponentQueue_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ComponentQueue",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ComponentDb_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "ComponentDb",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Component_Ext",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Component",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": false,
+      "inverted": false,
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "type": "class"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Enterprise_Boundary",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "System_Boundary",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Container_Boundary",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": false,
+      "inverted": false,
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "type": "class"
     },
     {
       "type": "literal",

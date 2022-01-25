@@ -1,0 +1,19 @@
+@startuml
+
+("C4 - Person & System")
+
+Person(person, "Person::label", "Person::descr")
+Person_Ext (person_ext, "Person_Ext::label", "Person_Ext::descr")
+
+System(system, "System::label", "System::descr")
+System_Ext (system_ext, "System_Ext::label", "System_Ext::descr")
+
+SystemDb (systemDb, "SystemDb::label", "SystemDb::descr")
+SystemDb_Ext (systemDb_ext, "SystemDb_Ext::label", "SystemDb_Ext::descr")
+
+SystemQueue (systemQueue, "SystemQueue::label", "SystemQueue::descr")
+SystemQueue_Ext (systemQueue_ext, "SystemQueue_Ext::label", "SystemQueue_Ext::descr")
+
+System (system_no_descr, "system_no_descr::label")
+
+@enduml

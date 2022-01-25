@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/stdlib_c4_Container_Component/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "\"C4 - Container & Component\"",
+              "title": "\"C4 - Container & Component\""
+            },
+            {
+              "alias": "container",
+              "techn": "Container::techn",
+              "descr": "Container::descr",
+              "label": "Container::label",
+              "type_": {"source": "Stdlib_C4", "name": "Container"}
+            },
+            {
+              "alias": "containerQueue",
+              "techn": "ContainerQueue::techn",
+              "descr": "ContainerQueue::descr",
+              "label": "ContainerQueue::label",
+              "type_": {"source": "Stdlib_C4", "name": "ContainerQueue"}
+            },
+            {
+              "alias": "containerDb",
+              "techn": "ContainerDb::techn",
+              "descr": "ContainerDb::descr",
+              "label": "ContainerDb::label",
+              "type_": {"source": "Stdlib_C4", "name": "ContainerDb"}
+            },
+            {
+              "alias": "container_Ext",
+              "techn": "Container_Ext::techn",
+              "descr": "Container_Ext::descr",
+              "label": "Container_Ext::label",
+              "type_": {"source": "Stdlib_C4", "name": "Container_Ext"}
+            },
+            {
+              "alias": "containerQueue_Ext",
+              "techn": "ContainerQueue_Ext::techn",
+              "descr": "ContainerQueue_Ext::descr",
+              "label": "ContainerQueue_Ext::label",
+              "type_": {"source": "Stdlib_C4", "name": "ContainerQueue_Ext"}
+            },
+            {
+              "alias": "containerDb_Ext",
+              "techn": "ContainerDb_Ext::techn",
+              "descr": "ContainerDb_Ext::descr",
+              "label": "ContainerDb_Ext::label",
+              "type_": {"source": "Stdlib_C4", "name": "ContainerDb_Ext"}
+            },
+
+            {
+              "alias": "component",
+              "techn": "Component::techn",
+              "descr": "Component::descr",
+              "label": "Component::label",
+              "type_": {"source": "Stdlib_C4", "name": "Component"}
+            },
+            {
+              "alias": "componentQueue",
+              "techn": "ComponentQueue::techn",
+              "descr": "ComponentQueue::descr",
+              "label": "ComponentQueue::label",
+              "type_": {"source": "Stdlib_C4", "name": "ComponentQueue"}
+            },
+            {
+              "alias": "componentDb",
+              "techn": "ComponentDb::techn",
+              "descr": "ComponentDb::descr",
+              "label": "ComponentDb::label",
+              "type_": {"source": "Stdlib_C4", "name": "ComponentDb"}
+            },
+            {
+              "alias": "component_Ext",
+              "techn": "Component_Ext::techn",
+              "descr": "Component_Ext::descr",
+              "label": "Component_Ext::label",
+              "type_": {"source": "Stdlib_C4", "name": "Component_Ext"}
+            },
+            {
+              "alias": "componentQueue_Ext",
+              "techn": "ComponentQueue_Ext::techn",
+              "descr": "ComponentQueue_Ext::descr",
+              "label": "ComponentQueue_Ext::label",
+              "type_": {"source": "Stdlib_C4", "name": "ComponentQueue_Ext"}
+            },
+            {
+              "alias": "componentDb_Ext",
+              "techn": "ComponentDb_Ext::techn",
+              "descr": "ComponentDb_Ext::descr",
+              "label": "ComponentDb_Ext::label",
+              "type_": {"source": "Stdlib_C4", "name": "ComponentDb_Ext"}
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/stdlib_c4_Container_Component/in.plantuml",
+      "type": "File",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}
