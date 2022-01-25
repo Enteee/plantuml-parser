@@ -1,0 +1,69 @@
+[
+  {
+    "name": "test/fixtures/stdlib_c4/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "\"C4 - Person & System\"",
+            "title": "\"C4 - Person & System\""
+          },
+          {
+            "alias": "person",
+            "descr": "Person::descr",
+            "label": "Person::label",
+            "type_": {"source": "Stdlib_C4", "name": "Person"}
+          },
+          {
+            "alias": "person_ext",
+            "descr": "Person_Ext::descr",
+            "label": "Person_Ext::label",
+            "type_": {"source": "Stdlib_C4", "name": "Person_Ext"}
+          },
+          {
+            "alias": "system",
+            "descr": "System::descr",
+            "label": "System::label",
+            "type_": {"source": "Stdlib_C4", "name": "System"}
+          },
+          {
+            "alias": "system_ext",
+            "descr": "System_Ext::descr",
+            "label": "System_Ext::label",
+            "type_": {"source": "Stdlib_C4", "name": "System_Ext"}
+          },
+          {
+            "alias": "systemDb",
+            "descr": "SystemDb::descr",
+            "label": "SystemDb::label",
+            "type_": {"source": "Stdlib_C4", "name": "SystemDb"}
+          },
+          {
+            "alias": "systemDb_ext",
+            "descr": "SystemDb_Ext::descr",
+            "label": "SystemDb_Ext::label",
+            "type_": {"source": "Stdlib_C4", "name": "SystemDb_Ext"}
+          },
+          {
+            "alias": "systemQueue",
+            "descr": "SystemQueue::descr",
+            "label": "SystemQueue::label",
+            "type_": {"source": "Stdlib_C4", "name": "SystemQueue"}
+          },
+          {
+            "alias": "systemQueue_ext",
+            "descr": "SystemQueue_Ext::descr",
+            "label": "SystemQueue_Ext::label",
+            "type_": {"source": "Stdlib_C4", "name": "SystemQueue_Ext"}
+          },
+          {
+            "alias": "system_no_descr",
+            "descr": "",
+            "label": "system_no_descr::label",
+            "type_": {"source": "Stdlib_C4", "name": "System"}
+          }
+        ]
+      }
+    ]
+  }
+]

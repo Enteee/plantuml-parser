@@ -88,6 +88,9 @@ UMLElement
  / Enum
  / Component
  / UseCase
+ / Stdlib_C4_Context
+ / Stdlib_C4_Container_Component
+ / Stdlib_C4_Boundary
  / NotImplementedBlock
  / (!(
       _ "@enduml"
@@ -713,3 +716,110 @@ NewLine
 
 EndLine
   = (!NewLine .)* NewLine
+
+
+//
+// Stdlib C4 Context
+//
+
+Stdlib_C4_Context
+  = _ type:Stdlib_C4_Context_Types _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ descr_:ElementName? ")" EndLine
+  {
+    return new types.Stdlib_C4_Context(
+      alias.name,
+      label.name,
+      "",
+      descr_,
+      type,
+      undefined,
+    );
+  }
+
+// Order matters - currently unclear to me why
+Stdlib_C4_Context_Types = "Person_Ext"i
+  / "SystemDb_Ext"i
+  / "SystemQueue_Ext"i
+  / "Person"i
+  / "System_Ext"i
+  / "SystemDb"i
+  / "SystemQueue"i
+  / "System"i
+
+//
+// Stdlib C4 Container & Components
+//
+
+Stdlib_C4_Container_Component
+  = _ type:Stdlib_C4_Container_Component_Type _ "(" _ alias:ElementName _ "," _ label:ElementName ")" EndLine
+  {
+    return new types.Stdlib_C4_Container_Component(
+      alias.name,
+      label.name,
+      "",
+      undefined,
+      "",
+      undefined,
+      type,
+      undefined,
+    );
+  }
+  / _ type:Stdlib_C4_Container_Component_Type _ "(" _ alias:ElementName _ "," _ label:ElementName _ "," _ techn_:ElementName ")" EndLine
+  {
+    return new types.Stdlib_C4_Container_Component(
+      alias.name,
+      label.name,
+      "",
+      techn_,
+      "",
+      undefined,
+      type,
+      undefined,
+    );
+  }
+  / _ type:Stdlib_C4_Container_Component_Type _ "(" _ alias:ElementName _ "," _ label:ElementName _ "," _ techn_:ElementName _ "," _ descr_:ElementName ")" EndLine
+  {
+    return new types.Stdlib_C4_Container_Component(
+      alias.name,
+      label.name,
+      "",
+      techn_,
+      "",
+      descr_,
+      type,
+      undefined,
+    );
+  }
+
+// Order matters
+Stdlib_C4_Container_Component_Type = "ContainerQueue_Ext"i
+  / "ContainerQueue"i
+  / "ContainerDb_Ext"i
+  / "ContainerDb"i
+  / "Container_Ext"i
+  / "Container"i
+  / "ComponentQueue_Ext"i
+  / "ComponentQueue"i
+  / "ComponentDb_Ext"i
+  / "ComponentDb"i
+  / "Component_Ext"i
+  / "Component"i
+
+//
+// Stdlib C4 Boundaries
+//
+
+Stdlib_C4_Boundary
+  = _ type:Stdlib_C4_Boundary_Type _ "(" _ alias:ElementName _ "," _ label:ElementName ")" _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
+  {
+    return new types.Stdlib_C4_Boundary(
+      alias.name,
+      label.name,
+      removeUndefined(elements),
+      type,
+      undefined,
+    );
+  }
+
+Stdlib_C4_Boundary_Type = "Enterprise_Boundary"i
+  / "System_Boundary"i
+  / "Container_Boundary"i
