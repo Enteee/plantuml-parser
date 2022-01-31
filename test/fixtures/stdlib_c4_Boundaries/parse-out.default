@@ -6,32 +6,45 @@
         "title": "\"C4 - Boundaries\""
       },
       {
-        "alias": "enterprise_boundary",
-        "label": "Enterprise_Boundary::label",
+        "alias": "boundary",
+        "label": "Boundary::label",
         "elements": [
           {
-            "alias": "system_boundary",
+            "alias": "enterprise_boundary",
+            "label": "Enterprise_Boundary::label",
             "elements": [
               {
-                "alias": "container_boundary",
+                "alias": "system_boundary",
                 "elements": [
                   {
-                    "alias": "component",
-                    "techn": "Component::techn",
-                    "descr": "Component::descr",
-                    "label": "Component::label",
-                    "type_": {"source": "Stdlib_C4", "name": "Component"}
+                    "alias": "container_boundary",
+                    "elements": [
+                      {
+                        "alias": "component",
+                        "techn": "Component::techn",
+                        "descr": "Component::descr",
+                        "label": "Component::label",
+                        "type_": {"source": "Stdlib_C4", "name": "Component"}
+                      }
+                    ],
+                  "label": "Container_Boundary::label",
+                  "type_": {"source": "Stdlib_C4", "name": "Container_Boundary"}
                   }
                 ],
-              "label": "Container_Boundary::label",
-              "type_": {"source": "Stdlib_C4", "name": "Container_Boundary"}
+                "label": "System_Boundary::label",
+                "type_": {"source": "Stdlib_C4", "name": "System_Boundary"}
               }
             ],
-            "label": "System_Boundary::label",
-            "type_": {"source": "Stdlib_C4", "name": "System_Boundary"}
+            "type_": {"source": "Stdlib_C4", "name": "Enterprise_Boundary"}
           }
         ],
-        "type_": {"source": "Stdlib_C4", "name": "Enterprise_Boundary"}
+        "type_": {"source": "Stdlib_C4", "name": "Boundary"}
+      },
+      {
+        "alias": "namedBoundary",
+        "label": "Boundary::label",
+        "elements": [],
+        "type_": {"source": "Stdlib_C4", "name": "named"}
       }
     ]
   }

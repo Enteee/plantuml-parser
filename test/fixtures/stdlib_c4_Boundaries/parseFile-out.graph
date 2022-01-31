@@ -4,40 +4,53 @@
       "name": "test/fixtures/stdlib_c4_Boundaries/in.plantuml",
       "diagrams": [
         {
-    "elements": [
-      {
-        "name": "\"C4 - Boundaries\"",
-        "title": "\"C4 - Boundaries\""
-      },
-      {
-        "alias": "enterprise_boundary",
-        "label": "Enterprise_Boundary::label",
-        "elements": [
-          {
-            "alias": "system_boundary",
-            "elements": [
-              {
-                "alias": "container_boundary",
-                "elements": [
-                  {
-                    "alias": "component",
-                    "techn": "Component::techn",
-                    "descr": "Component::descr",
-                    "label": "Component::label",
-                    "type_": {"source": "Stdlib_C4", "name": "Component"}
-                  }
-                ],
-              "label": "Container_Boundary::label",
-              "type_": {"source": "Stdlib_C4", "name": "Container_Boundary"}
-              }
-            ],
-            "label": "System_Boundary::label",
-            "type_": {"source": "Stdlib_C4", "name": "System_Boundary"}
-          }
-        ],
-        "type_": {"source": "Stdlib_C4", "name": "Enterprise_Boundary"}
-      }
-    ]
+          "elements": [
+            {
+              "name": "\"C4 - Boundaries\"",
+              "title": "\"C4 - Boundaries\""
+            },
+            {
+              "alias": "boundary",
+              "label": "Boundary::label",
+              "elements": [
+                {
+                  "alias": "enterprise_boundary",
+                  "label": "Enterprise_Boundary::label",
+                  "elements": [
+                    {
+                      "alias": "system_boundary",
+                      "elements": [
+                        {
+                          "alias": "container_boundary",
+                          "elements": [
+                            {
+                              "alias": "component",
+                              "techn": "Component::techn",
+                              "descr": "Component::descr",
+                              "label": "Component::label",
+                              "type_": {"source": "Stdlib_C4", "name": "Component"}
+                            }
+                          ],
+                        "label": "Container_Boundary::label",
+                        "type_": {"source": "Stdlib_C4", "name": "Container_Boundary"}
+                        }
+                      ],
+                      "label": "System_Boundary::label",
+                      "type_": {"source": "Stdlib_C4", "name": "System_Boundary"}
+                    }
+                  ],
+                  "type_": {"source": "Stdlib_C4", "name": "Enterprise_Boundary"}
+                }
+              ],
+              "type_": {"source": "Stdlib_C4", "name": "Boundary"}
+            },
+            {
+              "alias": "namedBoundary",
+              "label": "Boundary::label",
+              "elements": [],
+              "type_": {"source": "Stdlib_C4", "name": "named"}
+            }
+          ]
         }
       ],
       "id": "test/fixtures/stdlib_c4_Boundaries/in.plantuml",

@@ -58,7 +58,6 @@
           },
           {
             "alias": "system_no_descr",
-            "descr": "",
             "label": "system_no_descr::label",
             "type_": {"source": "Stdlib_C4", "name": "System"}
           }

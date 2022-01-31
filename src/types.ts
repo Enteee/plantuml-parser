@@ -205,7 +205,7 @@ export class Stdlib_C4_Container_Component {
   }
 }
 
-export type Stdlib_C4_Boundary_Type = ('Enterprise_Boundary' | 'System_Boundary' | 'Container_Boundary' );
+export type Stdlib_C4_Boundary_Type = ('Boundary' | 'Enterprise_Boundary' | 'System_Boundary' | 'Container_Boundary');
 export class Stdlib_C4_Boundary {
   constructor (
     public type_: { source: string, name: Stdlib_C4_Boundary_Type },

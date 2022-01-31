@@ -2,12 +2,18 @@
 
 ("C4 - Boundaries")
 
-Enterprise_Boundary(enterprise_boundary, "Enterprise_Boundary::label") {
-    System_Boundary (system_boundary, "System_Boundary::label") {
-        Container_Boundary(container_boundary, "Container_Boundary::label"){
-            Component(component, "Component::label", "Component::techn", "Component::descr")
+Boundary(boundary, "Boundary::label") {
+    Enterprise_Boundary(enterprise_boundary, "Enterprise_Boundary::label") {
+        System_Boundary (system_boundary, "System_Boundary::label") {
+            Container_Boundary(container_boundary, "Container_Boundary::label"){
+                Component(component, "Component::label", "Component::techn", "Component::descr")
+            }
         }
     }
+}
+
+Boundary(namedBoundary, "Boundary::label", "named"){
+
 }
 
 @enduml
