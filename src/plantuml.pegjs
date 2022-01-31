@@ -723,19 +723,17 @@ EndLine
 //
 
 Stdlib_C4_Context
-  = _ type:Stdlib_C4_Context_Types _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ descr_:ElementName? ")" EndLine
+  = _ type:Stdlib_C4_Context_Types _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ descr:ElementName? ")" EndLine
   {
     return new types.Stdlib_C4_Context(
+      { source: 'Stdlib_C4', name: type },
       alias.name,
       label.name,
-      "",
-      descr_,
-      type,
-      undefined,
+      descr ? descr.name : ''
     );
   }
 
-// Order matters - currently unclear to me why
+// Order matters
 Stdlib_C4_Context_Types = "Person_Ext"i
   / "SystemDb_Ext"i
   / "SystemQueue_Ext"i
@@ -750,43 +748,14 @@ Stdlib_C4_Context_Types = "Person_Ext"i
 //
 
 Stdlib_C4_Container_Component
-  = _ type:Stdlib_C4_Container_Component_Type _ "(" _ alias:ElementName _ "," _ label:ElementName ")" EndLine
+  = _ type:Stdlib_C4_Container_Component_Type _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ techn:ElementName? _ ","? _ descr:ElementName? ")" EndLine
   {
     return new types.Stdlib_C4_Container_Component(
+      { source: 'Stdlib_C4', name: type },
       alias.name,
       label.name,
-      "",
-      undefined,
-      "",
-      undefined,
-      type,
-      undefined,
-    );
-  }
-  / _ type:Stdlib_C4_Container_Component_Type _ "(" _ alias:ElementName _ "," _ label:ElementName _ "," _ techn_:ElementName ")" EndLine
-  {
-    return new types.Stdlib_C4_Container_Component(
-      alias.name,
-      label.name,
-      "",
-      techn_,
-      "",
-      undefined,
-      type,
-      undefined,
-    );
-  }
-  / _ type:Stdlib_C4_Container_Component_Type _ "(" _ alias:ElementName _ "," _ label:ElementName _ "," _ techn_:ElementName _ "," _ descr_:ElementName ")" EndLine
-  {
-    return new types.Stdlib_C4_Container_Component(
-      alias.name,
-      label.name,
-      "",
-      techn_,
-      "",
-      descr_,
-      type,
-      undefined,
+      techn ? techn.name : '',
+      descr ? descr.name : ''
     );
   }
 
@@ -812,11 +781,10 @@ Stdlib_C4_Boundary
   = _ type:Stdlib_C4_Boundary_Type _ "(" _ alias:ElementName _ "," _ label:ElementName ")" _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
     return new types.Stdlib_C4_Boundary(
+      { source: 'Stdlib_C4', name: type },
       alias.name,
       label.name,
-      removeUndefined(elements),
-      type,
-      undefined,
+      removeUndefined(elements)
     );
   }
 
