@@ -54,8 +54,38 @@
         "type_": {"source": "Stdlib_C4", "name": "SystemQueue_Ext"}
       },
       {
-        "alias": "system_no_descr",
-        "label": "system_no_descr::label",
+        "alias": "system",
+        "label": "System::label",
+        "type_": {"source": "Stdlib_C4", "name": "System"}
+      },
+      {
+        "alias": "systemDescr",
+        "descr": "System::descr",
+        "label": "System::label",
+        "type_": {"source": "Stdlib_C4", "name": "System"}
+      },
+      {
+        "alias": "systemDescrSprite",
+        "descr": "System::descr",
+        "label": "System::label",
+        "sprite": "System::sprite",
+        "type_": {"source": "Stdlib_C4", "name": "System"}
+      },
+      {
+        "alias": "systemDescrSpriteTags",
+        "descr": "System::descr",
+        "label": "System::label",
+        "sprite": "System::sprite",
+        "tags": "System::tags",
+        "type_": {"source": "Stdlib_C4", "name": "System"}
+      },
+      {
+        "alias": "systemDescrSpriteTagsLink",
+        "descr": "System::descr",
+        "label": "System::label",
+        "sprite": "System::sprite",
+        "tags": "System::tags",
+        "link": "System::link",
         "type_": {"source": "Stdlib_C4", "name": "System"}
       }
     ]

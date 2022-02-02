@@ -723,13 +723,16 @@ EndLine
 //
 
 Stdlib_C4_Context
-  = _ type:Stdlib_C4_Context_Types _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ descr:ElementName? ")" EndLine
+  = _ type:Stdlib_C4_Context_Types _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ descr:ElementName? _ ","? _ sprite:ElementName? _ ","? _ tags:ElementName? _ ","? _ link:ElementName? ")" EndLine
   {
     return new types.Stdlib_C4_Context(
       { source: 'Stdlib_C4', name: type },
       alias.name,
       label.name,
-      descr ? descr.name : ''
+      descr ? descr.name : '',
+      sprite ? sprite.name : '',
+      tags ? tags.name : '',
+      link ? link.name : '',
     );
   }
 

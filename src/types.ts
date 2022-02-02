@@ -186,8 +186,14 @@ export class Stdlib_C4_Context {
     public alias: string,
     public label: string,
     public descr: string = '',
+    public sprite: string = '',
+    public tags: string = '',
+    public link: string = '',
   ) {
     this.descr = descr || undefined;
+    this.sprite = sprite || undefined;
+    this.tags = tags || undefined;
+    this.link = link || undefined;
   }
 }
 
