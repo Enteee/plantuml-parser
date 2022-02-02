@@ -13,7 +13,17 @@ Boundary(boundary, "Boundary::label") {
 }
 
 Boundary(namedBoundary, "Boundary::label", "named"){
-
 }
 
+Boundary(namedTaggedBoundary, "Boundary::label", "named-tagged", "Boundary::tags"){
+}
+
+Boundary(namedTaggedLinkBoundary, "Boundary::label", "named-tagged-link", "Boundary::tags", "Boundary::link"){
+}
+
+Enterprise_Boundary(enterprise_boundary_tags, "Enterprise_Boundary::label", "Enterprise_Boundary::tags") {
+}
+
+Enterprise_Boundary(enterprise_boundary_tags_link, "Enterprise_Boundary::label", "Enterprise_Boundary::tags", "Enterprise_Boundary::link") {
+}
 @enduml

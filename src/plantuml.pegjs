@@ -778,21 +778,25 @@ Stdlib_C4_Container_Component_Type = "ContainerQueue_Ext"i
 //
 
 Stdlib_C4_Boundary
-  = _ "Boundary" _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ type:ElementName? ")" _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
+  = _ "Boundary" _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ type:ElementName? _ ","? _ tags:ElementName? _ ","? _ link:ElementName? ")" _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
     return new types.Stdlib_C4_Boundary(
       { source: 'Stdlib_C4', name: type ? type.name : 'Boundary' },
       alias.name,
       label.name,
+      tags ? tags.name : '',
+      link ? link.name : '',
       removeUndefined(elements)
     );
   }
-  / _ type:Stdlib_C4_Boundary_Type _ "(" _ alias:ElementName _ "," _ label:ElementName ")" _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
+  / _ type:Stdlib_C4_Boundary_Type _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ tags:ElementName? _ ","? _ link:ElementName? ")" _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
     return new types.Stdlib_C4_Boundary(
       { source: 'Stdlib_C4', name: type },
       alias.name,
       label.name,
+      tags ? tags.name : '',
+      link ? link.name : '',
       removeUndefined(elements)
     );
   }

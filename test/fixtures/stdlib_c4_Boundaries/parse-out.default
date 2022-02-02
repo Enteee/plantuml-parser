@@ -45,6 +45,36 @@
         "label": "Boundary::label",
         "elements": [],
         "type_": {"source": "Stdlib_C4", "name": "named"}
+      },
+      {
+        "alias": "namedTaggedBoundary",
+        "label": "Boundary::label",
+        "tags": "Boundary::tags",
+        "elements": [],
+        "type_": {"source": "Stdlib_C4", "name": "named-tagged"}
+      },
+      {
+        "alias": "namedTaggedLinkBoundary",
+        "label": "Boundary::label",
+        "tags": "Boundary::tags",
+        "link": "Boundary::link",
+        "elements": [],
+        "type_": {"source": "Stdlib_C4", "name": "named-tagged-link"}
+      },
+      {
+        "alias": "enterprise_boundary_tags",
+        "label": "Enterprise_Boundary::label",
+        "tags": "Enterprise_Boundary::tags",
+        "elements": [],
+        "type_": {"source": "Stdlib_C4", "name": "Enterprise_Boundary"}
+      },
+      {
+        "alias": "enterprise_boundary_tags_link",
+        "label": "Enterprise_Boundary::label",
+        "tags": "Enterprise_Boundary::tags",
+        "link": "Enterprise_Boundary::link",
+        "elements": [],
+        "type_": {"source": "Stdlib_C4", "name": "Enterprise_Boundary"}
       }
     ]
   }

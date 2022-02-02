@@ -211,8 +211,13 @@ export class Stdlib_C4_Boundary {
     public type_: { source: string, name: Stdlib_C4_Boundary_Type },
     public alias: string,
     public label: string,
+    public tags: string,
+    public link: string,
     public elements: UMLElement[],
-  ) {}
+  ) {
+    this.tags = tags || undefined;
+    this.link = link || undefined;
+  }
 }
 
 export type UMLElement = (
