@@ -748,14 +748,17 @@ Stdlib_C4_Context_Types = "Person_Ext"i
 //
 
 Stdlib_C4_Container_Component
-  = _ type:Stdlib_C4_Container_Component_Type _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ techn:ElementName? _ ","? _ descr:ElementName? ")" EndLine
+  = _ type:Stdlib_C4_Container_Component_Type _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ techn:ElementName? _ ","? _ descr:ElementName? _ ","? _ sprite:ElementName? _ ","? _ tags:ElementName? _ ","? _ link:ElementName? ")" EndLine
   {
     return new types.Stdlib_C4_Container_Component(
       { source: 'Stdlib_C4', name: type },
       alias.name,
       label.name,
       techn ? techn.name : '',
-      descr ? descr.name : ''
+      descr ? descr.name : '',
+      sprite ? sprite.name : '',
+      tags ? tags.name : '',
+      link ? link.name : '',
     );
   }
 

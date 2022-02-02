@@ -93,6 +93,46 @@
               "descr": "ComponentDb_Ext::descr",
               "label": "ComponentDb_Ext::label",
               "type_": {"source": "Stdlib_C4", "name": "ComponentDb_Ext"}
+            },
+            {
+              "alias": "containerTechn",
+              "techn": "Container::techn",
+              "label": "Container::label",
+              "type_": {"source": "Stdlib_C4", "name": "Container"}
+            },
+            {
+              "alias": "containerTechnDescr",
+              "techn": "Container::techn",
+              "descr": "Container::descr",
+              "label": "Container::label",
+              "type_": {"source": "Stdlib_C4", "name": "Container"}
+            },
+            {
+              "alias": "containerTechnDescrSprite",
+              "techn": "Container::techn",
+              "descr": "Container::descr",
+              "label": "Container::label",
+              "sprite": "Container::sprite",
+              "type_": {"source": "Stdlib_C4", "name": "Container"}
+            },
+            {
+              "alias": "containerTechnDescrSpriteTags",
+              "techn": "Container::techn",
+              "descr": "Container::descr",
+              "label": "Container::label",
+              "sprite": "Container::sprite",
+              "tags": "Container::tags",
+              "type_": {"source": "Stdlib_C4", "name": "Container"}
+            },
+            {
+              "alias": "containerTechnDescrSpriteTagsLink",
+              "techn": "Container::techn",
+              "descr": "Container::descr",
+              "label": "Container::label",
+              "sprite": "Container::sprite",
+              "tags": "Container::tags",
+              "link": "Container::link",
+              "type_": {"source": "Stdlib_C4", "name": "Container"}
             }
           ]
         }

@@ -199,9 +199,15 @@ export class Stdlib_C4_Container_Component {
     public label: string,
     public techn: string = '',
     public descr: string = '',
+    public sprite: string = '',
+    public tags: string = '',
+    public link: string = '',
   ) {
     this.techn = techn || undefined;
     this.descr = descr || undefined;
+    this.sprite = sprite || undefined;
+    this.tags = tags || undefined;
+    this.link = link || undefined;
   }
 }
 

@@ -18,5 +18,14 @@ Component_Ext(component_Ext, "Component_Ext::label", "Component_Ext::techn", "Co
 ComponentQueue_Ext(componentQueue_Ext, "ComponentQueue_Ext::label", "ComponentQueue_Ext::techn", "ComponentQueue_Ext::descr")
 ComponentDb_Ext(componentDb_Ext, "ComponentDb_Ext::label", "ComponentDb_Ext::techn", "ComponentDb_Ext::descr")
 
+Container(containerTechn, "Container::label", "Container::techn")
+
+Container(containerTechnDescr, "Container::label", "Container::techn", "Container::descr")
+
+Container(containerTechnDescrSprite, "Container::label", "Container::techn", "Container::descr", "Container::sprite")
+
+Container(containerTechnDescrSpriteTags, "Container::label", "Container::techn", "Container::descr", "Container::sprite", "Container::tags")
+
+Container(containerTechnDescrSpriteTagsLink, "Container::label", "Container::techn", "Container::descr", "Container::sprite", "Container::tags", "Container::link")
 
 @enduml
