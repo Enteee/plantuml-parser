@@ -235,7 +235,7 @@ export class Stdlib_C4_Boundary {
 export type Stdlib_C4_Dynamic_Rel_Type = ('Rel' | 'BiRel' | 'Rel_Back' | 'Rel_Neighbor' | 'BiRel_Neighbor' | 'Rel_Back_Neighbor' | 'Rel_D' | 'Rel_Down' | 'BiRel_D' | 'BiRel_Down' | 'Rel_U' | 'Rel_Up' | 'BiRel_U' | 'BiRel_Up' | 'Rel_L' | 'Rel_Left' | 'BiRel_L' | 'BiRel_Left' | 'Rel_R' | 'Rel_Right' | 'BiRel_R' | 'BiRel_Right');
 export class Stdlib_C4_Dynamic_Rel {
   constructor (
-    public type_: { source: string, name: Stdlib_C4_Boundary_Type },
+    public type_: { source: string, name: Stdlib_C4_Dynamic_Rel_Type },
     public from: string,
     public to: string,
     public label: string,
@@ -253,6 +253,27 @@ export class Stdlib_C4_Dynamic_Rel {
   }
 }
 
+export type Stdlib_C4_Deployment_Type = ('Deployment_Node' | 'Deployment_Node_L' | 'Deployment_Node_R' | 'Node_L' | 'Node_R' | 'Node');
+export class Stdlib_C4_Deployment {
+  constructor (
+    public type_: { source: string, name: Stdlib_C4_Deployment_Type },
+    public alias: string,
+    public label: string,
+    public type: string = '',
+    public descr: string = '',
+    public sprite: string = '',
+    public tags: string = '',
+    public link: string = '',
+  ) {
+    this.type = type || undefined;
+    this.descr = descr || undefined;
+    this.sprite = sprite || undefined;
+    this.tags = tags || undefined;
+    this.link = link || undefined;
+  }
+}
+
+
 export type UMLElement = (
   | Note
   | Component
@@ -266,6 +287,7 @@ export type UMLElement = (
   | Stdlib_C4_Container_Component
   | Stdlib_C4_Boundary
   | Stdlib_C4_Dynamic_Rel
+  | Stdlib_C4_Deployment
 );
 export class UML {
   constructor (

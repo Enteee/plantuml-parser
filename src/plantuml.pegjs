@@ -92,6 +92,7 @@ UMLElement
  / Stdlib_C4_Container_Component
  / Stdlib_C4_Boundary
  / Stdlib_C4_Dynamic_Rel
+ / Stdlib_C4_Deployment
  / NotImplementedBlock
  / (!(
       _ "@enduml"
@@ -854,3 +855,29 @@ Stdlib_C4_Dynamic_Rel_Type = "Rel_Neighbor"i
   / "BiRel_Right"i
   / "BiRel_R"i
   / "BiRel"i
+
+//
+// Stdlib C4 Deployment
+//
+
+Stdlib_C4_Deployment
+  = _ type_:Stdlib_C4_Deployment_Type _ "(" _ alias:ElementName _ "," _ label:ElementName ","? _ type:ElementName? ","? _ descr:ElementName? ","? _ sprite:ElementName? ","? _ tags:ElementName? ","? _ link:ElementName? ")" EndLine
+  {
+    return new types.Stdlib_C4_Deployment(
+      { source: 'Stdlib_C4', name: type_ },
+      alias.name,
+      label.name,
+      type ? type.name : '',
+      descr ? descr.name : '',
+      sprite ? sprite.name : '',
+      tags ? tags.name : '',
+      link ? link.name : '',
+    );
+  }
+
+Stdlib_C4_Deployment_Type = "Deployment_Node_L"i
+  / "Deployment_Node_R"i
+  / "Deployment_Node"i
+  / "Node_L"
+  / "Node_R"
+  / "Node"

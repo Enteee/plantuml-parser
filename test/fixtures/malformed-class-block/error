@@ -1,5 +1,5 @@
 {
-  "message": "Expected \"'\", \"(\", \"/'\", \"BiRel\", \"BiRel_D\", \"BiRel_Down\", \"BiRel_L\", \"BiRel_Left\", \"BiRel_Neighbor\", \"BiRel_R\", \"BiRel_Right\", \"BiRel_U\", \"BiRel_Up\", \"Boundary\", \"Component\", \"ComponentDb\", \"ComponentDb_Ext\", \"ComponentQueue\", \"ComponentQueue_Ext\", \"Component_Ext\", \"Container\", \"ContainerDb\", \"ContainerDb_Ext\", \"ContainerQueue\", \"ContainerQueue_Ext\", \"Container_Boundary\", \"Container_Ext\", \"Enterprise_Boundary\", \"Person\", \"Person_Ext\", \"Rel\", \"Rel_Back\", \"Rel_Back_Neighbor\", \"Rel_D\", \"Rel_Down\", \"Rel_L\", \"Rel_Left\", \"Rel_Neighbor\", \"Rel_R\", \"Rel_Right\", \"Rel_U\", \"Rel_Up\", \"System\", \"SystemDb\", \"SystemDb_Ext\", \"SystemQueue\", \"SystemQueue_Ext\", \"System_Boundary\", \"System_Ext\", \"[\", \"abstract \", \"class \", \"cloud\", \"component \", \"database\", \"digraph\", \"enum \", \"folder\", \"frame\", \"interface \", \"namespace\", \"node\", \"note \", \"package\", \"rectangle\", \"skinparam \", \"state\", \"together \", \"usecase \", [ ,\\t], or [A-Z,a-z,0-9,.,_] but \"}\" found.",
+  "message": "Expected \"'\", \"(\", \"/'\", \"BiRel\", \"BiRel_D\", \"BiRel_Down\", \"BiRel_L\", \"BiRel_Left\", \"BiRel_Neighbor\", \"BiRel_R\", \"BiRel_Right\", \"BiRel_U\", \"BiRel_Up\", \"Boundary\", \"Component\", \"ComponentDb\", \"ComponentDb_Ext\", \"ComponentQueue\", \"ComponentQueue_Ext\", \"Component_Ext\", \"Container\", \"ContainerDb\", \"ContainerDb_Ext\", \"ContainerQueue\", \"ContainerQueue_Ext\", \"Container_Boundary\", \"Container_Ext\", \"Deployment_Node\", \"Deployment_Node_L\", \"Deployment_Node_R\", \"Enterprise_Boundary\", \"Node\", \"Node_L\", \"Node_R\", \"Person\", \"Person_Ext\", \"Rel\", \"Rel_Back\", \"Rel_Back_Neighbor\", \"Rel_D\", \"Rel_Down\", \"Rel_L\", \"Rel_Left\", \"Rel_Neighbor\", \"Rel_R\", \"Rel_Right\", \"Rel_U\", \"Rel_Up\", \"System\", \"SystemDb\", \"SystemDb_Ext\", \"SystemQueue\", \"SystemQueue_Ext\", \"System_Boundary\", \"System_Ext\", \"[\", \"abstract \", \"class \", \"cloud\", \"component \", \"database\", \"digraph\", \"enum \", \"folder\", \"frame\", \"interface \", \"namespace\", \"node\", \"note \", \"package\", \"rectangle\", \"skinparam \", \"state\", \"together \", \"usecase \", [ ,\\t], or [A-Z,a-z,0-9,.,_] but \"}\" found.",
   "expected": [
     {
       "type": "class",
@@ -727,6 +727,45 @@
     {
       "ignoreCase": true,
       "text": "BiRel",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": false,
+      "inverted": false,
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "type": "class"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Deployment_Node_L",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Deployment_Node_R",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Deployment_Node",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": false,
+      "text": "Node_L",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": false,
+      "text": "Node_R",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": false,
+      "text": "Node",
       "type": "literal"
     },
     {
