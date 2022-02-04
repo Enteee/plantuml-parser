@@ -91,6 +91,7 @@ UMLElement
  / Stdlib_C4_Context
  / Stdlib_C4_Container_Component
  / Stdlib_C4_Boundary
+ / Stdlib_C4_Dynamic_Rel
  / NotImplementedBlock
  / (!(
       _ "@enduml"
@@ -810,3 +811,46 @@ Stdlib_C4_Boundary
 Stdlib_C4_Boundary_Type = "Enterprise_Boundary"i
   / "System_Boundary"i
   / "Container_Boundary"i
+
+//
+// Stdlib C4 Dynamic
+//
+
+Stdlib_C4_Dynamic_Rel
+  = _ type:Stdlib_C4_Dynamic_Rel_Type _ "(" _ from:ElementName _ ","  _ to:ElementName _ "," _ label:ElementName ","? _ techn:ElementName? ","? _ descr:ElementName? ","? _ sprite:ElementName? ","? _ tags:ElementName? ","? _ link:ElementName? ")" EndLine
+  {
+    return new types.Stdlib_C4_Dynamic_Rel(
+      { source: 'Stdlib_C4', name: type },
+      from.name,
+      to.name,
+      label.name,
+      techn ? techn.name : '',
+      descr ? descr.name : '',
+      sprite ? sprite.name : '',
+      tags ? tags.name : '',
+      link ? link.name : '',
+    );
+  }
+
+Stdlib_C4_Dynamic_Rel_Type = "Rel_Neighbor"i
+  / "Rel_Back_Neighbor"i
+  / "Rel_Back"i
+  / "Rel_Down"i
+  / "Rel_D"i
+  / "Rel_Up"i
+  / "Rel_U"i
+  / "Rel_Left"i
+  / "Rel_L"i
+  / "Rel_Right"i
+  / "Rel_R"i
+  / "Rel"i
+  / "BiRel_Neighbor"i
+  / "BiRel_Down"i
+  / "BiRel_D"i
+  / "BiRel_Up"i
+  / "BiRel_U"i
+  / "BiRel_Left"i
+  / "BiRel_L"i
+  / "BiRel_Right"i
+  / "BiRel_R"i
+  / "BiRel"i

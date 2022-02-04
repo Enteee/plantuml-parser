@@ -1,5 +1,5 @@
 {
-  "message": "Expected \"'\", \"(\", \"/'\", \"Boundary\", \"Component\", \"ComponentDb\", \"ComponentDb_Ext\", \"ComponentQueue\", \"ComponentQueue_Ext\", \"Component_Ext\", \"Container\", \"ContainerDb\", \"ContainerDb_Ext\", \"ContainerQueue\", \"ContainerQueue_Ext\", \"Container_Boundary\", \"Container_Ext\", \"Enterprise_Boundary\", \"Person\", \"Person_Ext\", \"System\", \"SystemDb\", \"SystemDb_Ext\", \"SystemQueue\", \"SystemQueue_Ext\", \"System_Boundary\", \"System_Ext\", \"[\", \"abstract \", \"class \", \"cloud\", \"component \", \"database\", \"digraph\", \"enum \", \"folder\", \"frame\", \"interface \", \"namespace\", \"node\", \"note \", \"package\", \"rectangle\", \"skinparam \", \"state\", \"together \", \"usecase \", [ ,\\t], or [A-Z,a-z,0-9,.,_] but \"}\" found.",
+  "message": "Expected \"'\", \"(\", \"/'\", \"BiRel\", \"BiRel_D\", \"BiRel_Down\", \"BiRel_L\", \"BiRel_Left\", \"BiRel_Neighbor\", \"BiRel_R\", \"BiRel_Right\", \"BiRel_U\", \"BiRel_Up\", \"Boundary\", \"Component\", \"ComponentDb\", \"ComponentDb_Ext\", \"ComponentQueue\", \"ComponentQueue_Ext\", \"Component_Ext\", \"Container\", \"ContainerDb\", \"ContainerDb_Ext\", \"ContainerQueue\", \"ContainerQueue_Ext\", \"Container_Boundary\", \"Container_Ext\", \"Enterprise_Boundary\", \"Person\", \"Person_Ext\", \"Rel\", \"Rel_Back\", \"Rel_Back_Neighbor\", \"Rel_D\", \"Rel_Down\", \"Rel_L\", \"Rel_Left\", \"Rel_Neighbor\", \"Rel_R\", \"Rel_Right\", \"Rel_U\", \"Rel_Up\", \"System\", \"SystemDb\", \"SystemDb_Ext\", \"SystemQueue\", \"SystemQueue_Ext\", \"System_Boundary\", \"System_Ext\", \"[\", \"abstract \", \"class \", \"cloud\", \"component \", \"database\", \"digraph\", \"enum \", \"folder\", \"frame\", \"interface \", \"namespace\", \"node\", \"note \", \"package\", \"rectangle\", \"skinparam \", \"state\", \"together \", \"usecase \", [ ,\\t], or [A-Z,a-z,0-9,.,_] but \"}\" found.",
   "expected": [
     {
       "type": "class",
@@ -608,6 +608,125 @@
     {
       "ignoreCase": true,
       "text": "Container_Boundary",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": false,
+      "inverted": false,
+      "parts": [
+        " ",
+        "\t"
+      ],
+      "type": "class"
+    },
+    {
+      "ignoreCase": true,
+       "text": "Rel_Neighbor",
+       "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Rel_Back_Neighbor",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Rel_Back",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Rel_Down",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Rel_D",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Rel_Up",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Rel_U",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Rel_Left",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Rel_L",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Rel_Right",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Rel_R",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "Rel",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "BiRel_Neighbor",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "BiRel_Down",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "BiRel_D",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "BiRel_Up",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "BiRel_U",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "BiRel_Left",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "BiRel_L",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "BiRel_Right",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "BiRel_R",
+      "type": "literal"
+    },
+    {
+      "ignoreCase": true,
+      "text": "BiRel",
       "type": "literal"
     },
     {
