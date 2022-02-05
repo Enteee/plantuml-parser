@@ -1,0 +1,30 @@
+[
+  {
+    "name": "test/fixtures/stdlib_c4_Rel/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "\"C4 - Rel\"",
+            "title": "\"C4 - Rel\""
+          },
+          {
+            "alias1": "alias1",
+            "alias2": "alias2",
+            "label": "Rel_::label",
+            "direction": "Rel_::direction",
+            "type_": {"source": "Stdlib_C4", "name": "Rel_"}
+          },
+          {
+            "alias1": "alias1",
+            "alias2": "alias2",
+            "label": "Rel_::label",
+            "techn": "Rel_::techn",
+            "direction": "Rel_::direction",
+            "type_": {"source": "Stdlib_C4", "name": "Rel_"}
+          }
+        ]
+      }
+    ]
+  }
+]

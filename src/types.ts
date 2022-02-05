@@ -273,6 +273,18 @@ export class Stdlib_C4_Deployment {
   }
 }
 
+export class Stdlib_C4_Rel {
+  constructor (
+    public type_: { source: string, name: string },
+    public alias1: string,
+    public alias2: string,
+    public label: string,
+    public direction: string,
+    public techn: string = '',
+  ) {
+    this.techn = techn || undefined;
+  }
+}
 
 export type UMLElement = (
   | Note
@@ -288,6 +300,7 @@ export type UMLElement = (
   | Stdlib_C4_Boundary
   | Stdlib_C4_Dynamic_Rel
   | Stdlib_C4_Deployment
+  | Stdlib_C4_Rel
 );
 export class UML {
   constructor (

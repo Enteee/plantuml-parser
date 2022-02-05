@@ -93,6 +93,7 @@ UMLElement
  / Stdlib_C4_Boundary
  / Stdlib_C4_Dynamic_Rel
  / Stdlib_C4_Deployment
+ / Stdlib_C4_Rel
  / NotImplementedBlock
  / (!(
       _ "@enduml"
@@ -881,3 +882,31 @@ Stdlib_C4_Deployment_Type = "Deployment_Node_L"i
   / "Node_L"
   / "Node_R"
   / "Node"
+
+//
+// Stdlib C4 Rel
+//
+
+Stdlib_C4_Rel
+  = _ "Rel_" _ "(" _ alias1:ElementName _ "," _ alias2:ElementName "," _ label:ElementName "," _ direction:ElementName ")" EndLine
+  {
+    return new types.Stdlib_C4_Rel(
+      { source: 'Stdlib_C4', name: 'Rel_' },
+      alias1.name,
+      alias2.name,
+      label.name,
+      direction.name,
+      undefined,
+    );
+  }
+  / _ "Rel_" _ "(" _ alias1:ElementName _ "," _ alias2:ElementName "," _ label:ElementName "," _ techn:ElementName "," _ direction:ElementName ")" EndLine
+  {
+    return new types.Stdlib_C4_Rel(
+      { source: 'Stdlib_C4', name: 'Rel_' },
+      alias1.name,
+      alias2.name,
+      label.name,
+      direction.name,
+      techn.name,
+    );
+  }

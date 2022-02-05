@@ -1,0 +1,8 @@
+@startuml
+
+("C4 - Rel")
+
+Rel_(alias1, alias2, "Rel_::label", "Rel_::direction")
+Rel_(alias1, alias2, "Rel_::label", "Rel_::techn", "Rel_::direction")
+
+@enduml
