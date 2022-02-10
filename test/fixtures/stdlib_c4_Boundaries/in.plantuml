@@ -26,4 +26,5 @@ Enterprise_Boundary(enterprise_boundary_tags, "Enterprise_Boundary::label", "Ent
 
 Enterprise_Boundary(enterprise_boundary_tags_link, "Enterprise_Boundary::label", "Enterprise_Boundary::tags", "Enterprise_Boundary::link") {
 }
+
 @enduml
