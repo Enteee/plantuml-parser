@@ -158,6 +158,8 @@ Options:
   - [ ] Object
   - [ ] Deployment
   - [ ] Timing
+- Support for StdLibs:
+  - [x] C4 (v2.4.0)
 - Formatters:
   - [x] JSON
   - [x] Graph

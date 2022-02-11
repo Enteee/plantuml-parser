@@ -1,0 +1,19 @@
+@startuml
+
+("C4 - Deployment")
+
+Deployment_Node(deploymentNode, "Deployment_Node::label")
+Deployment_Node_L(deploymentNodeL, "Deployment_Node_L::label")
+Deployment_Node_R(deploymentNodeR, "Deployment_Node_R::label")
+
+Node(node, "Node::label")
+Node_L(nodeL, "Node_L::label")
+Node_R(nodeR, "Node_R::label")
+
+Node(node, "Node::label", "Node::type")
+Node(node, "Node::label", "Node::type", "Node::descr")
+Node(node, "Node::label", "Node::type", "Node::descr", "Node::sprite")
+Node(node, "Node::label", "Node::type", "Node::descr", "Node::sprite", "Node::tags")
+Node(node, "Node::label", "Node::type", "Node::descr", "Node::sprite", "Node::tags", "Node::link")
+
+@enduml

@@ -1,0 +1,34 @@
+@startuml
+
+("C4 - Dynamic")
+
+Rel(from, to, "Rel::label")
+BiRel(from, to, "BiRel::label")
+Rel_Back(from, to, "Rel_Back::label")
+Rel_Neighbor(from, to, "Rel_Neighbor::label")
+BiRel_Neighbor(from, to, "BiRel_Neighbor::label")
+Rel_Back_Neighbor(from, to, "Rel_Back_Neighbor::label")
+Rel_D(from, to, "Rel_D::label")
+Rel_Down(from, to, "Rel_Down::label")
+BiRel_D(from, to, "BiRel_D::label")
+BiRel_Down(from, to, "BiRel_Down::label")
+Rel_U(from, to, "Rel_U::label")
+Rel_Up(from, to, "Rel_Up::label")
+BiRel_U(from, to, "BiRel_U::label")
+BiRel_Up(from, to, "BiRel_Up::label")
+Rel_L(from, to, "Rel_L::label")
+Rel_Left(from, to, "Rel_Left::label")
+BiRel_L(from, to, "BiRel_L::label")
+BiRel_Left(from, to, "BiRel_Left::label")
+Rel_R(from, to, "Rel_R::label")
+Rel_Right(from, to, "Rel_Right::label")
+BiRel_R(from, to, "BiRel_R::label")
+BiRel_Right(from, to, "BiRel_Right::label")
+
+Rel(from, to, "Rel::label", "Rel::techn")
+Rel(from, to, "Rel::label", "Rel::techn", "Rel::descr")
+Rel(from, to, "Rel::label", "Rel::techn", "Rel::descr", "Rel::sprite")
+Rel(from, to, "Rel::label", "Rel::techn", "Rel::descr", "Rel::sprite", "Rel::tags")
+Rel(from, to, "Rel::label", "Rel::techn", "Rel::descr", "Rel::sprite", "Rel::tags", "Rel::link")
+
+@enduml
