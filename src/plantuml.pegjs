@@ -91,6 +91,9 @@ UMLElement
  / Stdlib_C4_Context
  / Stdlib_C4_Container_Component
  / Stdlib_C4_Boundary
+ / Stdlib_C4_Dynamic_Rel
+ / Stdlib_C4_Deployment
+ / Stdlib_C4_Rel
  / NotImplementedBlock
  / (!(
       _ "@enduml"
@@ -723,19 +726,20 @@ EndLine
 //
 
 Stdlib_C4_Context
-  = _ type:Stdlib_C4_Context_Types _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ descr_:ElementName? ")" EndLine
+  = _ type:Stdlib_C4_Context_Types _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ descr:ElementName? _ ","? _ sprite:ElementName? _ ","? _ tags:ElementName? _ ","? _ link:ElementName? ")" EndLine
   {
     return new types.Stdlib_C4_Context(
+      { source: 'Stdlib_C4', name: type },
       alias.name,
       label.name,
-      "",
-      descr_,
-      type,
-      undefined,
+      descr ? descr.name : '',
+      sprite ? sprite.name : '',
+      tags ? tags.name : '',
+      link ? link.name : '',
     );
   }
 
-// Order matters - currently unclear to me why
+// Order matters
 Stdlib_C4_Context_Types = "Person_Ext"i
   / "SystemDb_Ext"i
   / "SystemQueue_Ext"i
@@ -750,43 +754,17 @@ Stdlib_C4_Context_Types = "Person_Ext"i
 //
 
 Stdlib_C4_Container_Component
-  = _ type:Stdlib_C4_Container_Component_Type _ "(" _ alias:ElementName _ "," _ label:ElementName ")" EndLine
+  = _ type:Stdlib_C4_Container_Component_Type _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ techn:ElementName? _ ","? _ descr:ElementName? _ ","? _ sprite:ElementName? _ ","? _ tags:ElementName? _ ","? _ link:ElementName? ")" EndLine
   {
     return new types.Stdlib_C4_Container_Component(
+      { source: 'Stdlib_C4', name: type },
       alias.name,
       label.name,
-      "",
-      undefined,
-      "",
-      undefined,
-      type,
-      undefined,
-    );
-  }
-  / _ type:Stdlib_C4_Container_Component_Type _ "(" _ alias:ElementName _ "," _ label:ElementName _ "," _ techn_:ElementName ")" EndLine
-  {
-    return new types.Stdlib_C4_Container_Component(
-      alias.name,
-      label.name,
-      "",
-      techn_,
-      "",
-      undefined,
-      type,
-      undefined,
-    );
-  }
-  / _ type:Stdlib_C4_Container_Component_Type _ "(" _ alias:ElementName _ "," _ label:ElementName _ "," _ techn_:ElementName _ "," _ descr_:ElementName ")" EndLine
-  {
-    return new types.Stdlib_C4_Container_Component(
-      alias.name,
-      label.name,
-      "",
-      techn_,
-      "",
-      descr_,
-      type,
-      undefined,
+      techn ? techn.name : '',
+      descr ? descr.name : '',
+      sprite ? sprite.name : '',
+      tags ? tags.name : '',
+      link ? link.name : '',
     );
   }
 
@@ -809,17 +787,126 @@ Stdlib_C4_Container_Component_Type = "ContainerQueue_Ext"i
 //
 
 Stdlib_C4_Boundary
-  = _ type:Stdlib_C4_Boundary_Type _ "(" _ alias:ElementName _ "," _ label:ElementName ")" _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
+  = _ "Boundary" _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ type:ElementName? _ ","? _ tags:ElementName? _ ","? _ link:ElementName? ")" _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
     return new types.Stdlib_C4_Boundary(
+      { source: 'Stdlib_C4', name: type ? type.name : 'Boundary' },
       alias.name,
       label.name,
-      removeUndefined(elements),
-      type,
-      undefined,
+      tags ? tags.name : '',
+      link ? link.name : '',
+      removeUndefined(elements)
+    );
+  }
+  / _ type:Stdlib_C4_Boundary_Type _ "(" _ alias:ElementName _ "," _ label:ElementName _ ","? _ tags:ElementName? _ ","? _ link:ElementName? ")" _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
+  {
+    return new types.Stdlib_C4_Boundary(
+      { source: 'Stdlib_C4', name: type },
+      alias.name,
+      label.name,
+      tags ? tags.name : '',
+      link ? link.name : '',
+      removeUndefined(elements)
     );
   }
 
 Stdlib_C4_Boundary_Type = "Enterprise_Boundary"i
   / "System_Boundary"i
   / "Container_Boundary"i
+
+//
+// Stdlib C4 Dynamic
+//
+
+Stdlib_C4_Dynamic_Rel
+  = _ type:Stdlib_C4_Dynamic_Rel_Type _ "(" _ from:ElementName _ ","  _ to:ElementName _ "," _ label:ElementName ","? _ techn:ElementName? ","? _ descr:ElementName? ","? _ sprite:ElementName? ","? _ tags:ElementName? ","? _ link:ElementName? ")" EndLine
+  {
+    return new types.Stdlib_C4_Dynamic_Rel(
+      { source: 'Stdlib_C4', name: type },
+      from.name,
+      to.name,
+      label.name,
+      techn ? techn.name : '',
+      descr ? descr.name : '',
+      sprite ? sprite.name : '',
+      tags ? tags.name : '',
+      link ? link.name : '',
+    );
+  }
+
+Stdlib_C4_Dynamic_Rel_Type = "Rel_Neighbor"i
+  / "Rel_Back_Neighbor"i
+  / "Rel_Back"i
+  / "Rel_Down"i
+  / "Rel_D"i
+  / "Rel_Up"i
+  / "Rel_U"i
+  / "Rel_Left"i
+  / "Rel_L"i
+  / "Rel_Right"i
+  / "Rel_R"i
+  / "Rel"i
+  / "BiRel_Neighbor"i
+  / "BiRel_Down"i
+  / "BiRel_D"i
+  / "BiRel_Up"i
+  / "BiRel_U"i
+  / "BiRel_Left"i
+  / "BiRel_L"i
+  / "BiRel_Right"i
+  / "BiRel_R"i
+  / "BiRel"i
+
+//
+// Stdlib C4 Deployment
+//
+
+Stdlib_C4_Deployment
+  = _ type_:Stdlib_C4_Deployment_Type _ "(" _ alias:ElementName _ "," _ label:ElementName ","? _ type:ElementName? ","? _ descr:ElementName? ","? _ sprite:ElementName? ","? _ tags:ElementName? ","? _ link:ElementName? ")" EndLine
+  {
+    return new types.Stdlib_C4_Deployment(
+      { source: 'Stdlib_C4', name: type_ },
+      alias.name,
+      label.name,
+      type ? type.name : '',
+      descr ? descr.name : '',
+      sprite ? sprite.name : '',
+      tags ? tags.name : '',
+      link ? link.name : '',
+    );
+  }
+
+Stdlib_C4_Deployment_Type = "Deployment_Node_L"i
+  / "Deployment_Node_R"i
+  / "Deployment_Node"i
+  / "Node_L"
+  / "Node_R"
+  / "Node"
+
+//
+// Stdlib C4 Rel
+//
+
+Stdlib_C4_Rel
+  = _ "Rel_" _ "(" _ alias1:ElementName _ "," _ alias2:ElementName "," _ label:ElementName "," _ direction:ElementName ")" EndLine
+  {
+    return new types.Stdlib_C4_Rel(
+      { source: 'Stdlib_C4', name: 'Rel_' },
+      alias1.name,
+      alias2.name,
+      label.name,
+      direction.name,
+      undefined,
+    );
+  }
+  / _ "Rel_" _ "(" _ alias1:ElementName _ "," _ alias2:ElementName "," _ label:ElementName "," _ techn:ElementName "," _ direction:ElementName ")" EndLine
+  {
+    return new types.Stdlib_C4_Rel(
+      { source: 'Stdlib_C4', name: 'Rel_' },
+      alias1.name,
+      alias2.name,
+      label.name,
+      direction.name,
+      techn.name,
+    );
+  }

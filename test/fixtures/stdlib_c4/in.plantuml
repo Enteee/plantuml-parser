@@ -14,6 +14,14 @@ SystemDb_Ext (systemDb_ext, "SystemDb_Ext::label", "SystemDb_Ext::descr")
 SystemQueue (systemQueue, "SystemQueue::label", "SystemQueue::descr")
 SystemQueue_Ext (systemQueue_ext, "SystemQueue_Ext::label", "SystemQueue_Ext::descr")
 
-System (system_no_descr, "system_no_descr::label")
+System (system, "System::label")
+
+System (systemDescr, "System::label", "System::descr")
+
+System (systemDescrSprite, "System::label", "System::descr", "System::sprite")
+
+System (systemDescrSpriteTags, "System::label", "System::descr", "System::sprite", "System::tags")
+
+System (systemDescrSpriteTagsLink, "System::label", "System::descr", "System::sprite", "System::tags", "System::link")
 
 @enduml
