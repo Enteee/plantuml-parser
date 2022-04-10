@@ -6,162 +6,254 @@
         "title": "\"C4 - Dynamic\""
       },
       {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "Rel::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "BiRel"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "BiRel::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel_Back"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "Rel_Back::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel_Neighbor"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "Rel_Neighbor::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "BiRel_Neighbor"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "BiRel_Neighbor::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel_Back_Neighbor"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "Rel_Back_Neighbor::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel_D"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "Rel_D::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel_Down"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "Rel_Down::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "BiRel_D"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "BiRel_D::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "BiRel_Down"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "BiRel_Down::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel_U"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "Rel_U::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel_Up"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "Rel_Up::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "BiRel_U"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "BiRel_U::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "BiRel_Up"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "BiRel_Up::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel_L"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "Rel_L::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel_Left"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "Rel_Left::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "BiRel_L"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "BiRel_L::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "BiRel_Left"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "BiRel_Left::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel_R"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "Rel_R::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel_Right"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "Rel_Right::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "BiRel_R"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "BiRel_R::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "BiRel_Right"
+        },
+        "from": "from",
+        "to": "to",
+        "label": "BiRel_Right::label"
+      },
+      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel"
+        },
         "from": "from",
         "to": "to",
         "label": "Rel::label",
-        "type_": {"source": "Stdlib_C4", "name": "Rel"}
+        "techn": "Rel::techn"
       },
       {
-        "from": "from",
-        "to": "to",
-        "label": "BiRel::label",
-        "type_": {"source": "Stdlib_C4", "name": "BiRel"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "Rel_Back::label",
-        "type_": {"source": "Stdlib_C4", "name": "Rel_Back"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "Rel_Neighbor::label",
-        "type_": {"source": "Stdlib_C4", "name": "Rel_Neighbor"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "BiRel_Neighbor::label",
-        "type_": {"source": "Stdlib_C4", "name": "BiRel_Neighbor"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "Rel_Back_Neighbor::label",
-        "type_": {"source": "Stdlib_C4", "name": "Rel_Back_Neighbor"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "Rel_D::label",
-        "type_": {"source": "Stdlib_C4", "name": "Rel_D"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "Rel_Down::label",
-        "type_": {"source": "Stdlib_C4", "name": "Rel_Down"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "BiRel_D::label",
-        "type_": {"source": "Stdlib_C4", "name": "BiRel_D"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "BiRel_Down::label",
-        "type_": {"source": "Stdlib_C4", "name": "BiRel_Down"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "Rel_U::label",
-        "type_": {"source": "Stdlib_C4", "name": "Rel_U"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "Rel_Up::label",
-        "type_": {"source": "Stdlib_C4", "name": "Rel_Up"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "BiRel_U::label",
-        "type_": {"source": "Stdlib_C4", "name": "BiRel_U"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "BiRel_Up::label",
-        "type_": {"source": "Stdlib_C4", "name": "BiRel_Up"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "Rel_L::label",
-        "type_": {"source": "Stdlib_C4", "name": "Rel_L"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "Rel_Left::label",
-        "type_": {"source": "Stdlib_C4", "name": "Rel_Left"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "BiRel_L::label",
-        "type_": {"source": "Stdlib_C4", "name": "BiRel_L"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "BiRel_Left::label",
-        "type_": {"source": "Stdlib_C4", "name": "BiRel_Left"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "Rel_R::label",
-        "type_": {"source": "Stdlib_C4", "name": "Rel_R"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "Rel_Right::label",
-        "type_": {"source": "Stdlib_C4", "name": "Rel_Right"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "BiRel_R::label",
-        "type_": {"source": "Stdlib_C4", "name": "BiRel_R"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "BiRel_Right::label",
-        "type_": {"source": "Stdlib_C4", "name": "BiRel_Right"}
-      },
-      {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel"
+        },
         "from": "from",
         "to": "to",
         "label": "Rel::label",
         "techn": "Rel::techn",
-        "type_": {"source": "Stdlib_C4", "name": "Rel"}
+        "descr": "Rel::descr"
       },
       {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel"
+        },
         "from": "from",
         "to": "to",
         "label": "Rel::label",
         "techn": "Rel::techn",
         "descr": "Rel::descr",
-        "type_": {"source": "Stdlib_C4", "name": "Rel"}
+        "sprite": "Rel::sprite"
       },
       {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel"
+        },
         "from": "from",
         "to": "to",
         "label": "Rel::label",
         "techn": "Rel::techn",
         "descr": "Rel::descr",
         "sprite": "Rel::sprite",
-        "type_": {"source": "Stdlib_C4", "name": "Rel"}
+        "tags": "Rel::tags"
       },
       {
+        "type_": {
+          "source": "Stdlib_C4",
+          "name": "Rel"
+        },
         "from": "from",
         "to": "to",
         "label": "Rel::label",
@@ -169,18 +261,7 @@
         "descr": "Rel::descr",
         "sprite": "Rel::sprite",
         "tags": "Rel::tags",
-        "type_": {"source": "Stdlib_C4", "name": "Rel"}
-      },
-      {
-        "from": "from",
-        "to": "to",
-        "label": "Rel::label",
-        "techn": "Rel::techn",
-        "descr": "Rel::descr",
-        "sprite": "Rel::sprite",
-        "tags": "Rel::tags",
-        "link": "Rel::link",
-        "type_": {"source": "Stdlib_C4", "name": "Rel"}
+        "link": "Rel::link"
       }
     ]
   }
