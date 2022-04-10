@@ -1,0 +1,6 @@
+@startuml
+!theme plain
+class Publication {
+  title : String
+}
+@enduml

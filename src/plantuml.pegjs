@@ -297,6 +297,15 @@ MemberVariable
       type,
     );
   }
+  / _ isStatic:"static "i? _ accessor:Accessor? _ name:Name _ ":"i? _ type:Name EndLine
+  {
+    return new types.MemberVariable(
+      name,
+      !!isStatic,
+      accessor,
+      type,
+    );
+  }
   / _ isStatic:"static "i? _ accessor:Accessor? _ name:Name EndLine
   {
     return new types.MemberVariable(
