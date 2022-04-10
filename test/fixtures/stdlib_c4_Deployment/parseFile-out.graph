@@ -10,74 +10,107 @@
               "title": "\"C4 - Deployment\""
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Deployment_Node"
+              },
               "alias": "deploymentNode",
-              "label": "Deployment_Node::label",
-              "type_": {"source": "Stdlib_C4", "name": "Deployment_Node"}
+              "label": "Deployment_Node::label"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Deployment_Node_L"
+              },
               "alias": "deploymentNodeL",
-              "label": "Deployment_Node_L::label",
-              "type_": {"source": "Stdlib_C4", "name": "Deployment_Node_L"}
+              "label": "Deployment_Node_L::label"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Deployment_Node_R"
+              },
               "alias": "deploymentNodeR",
-              "label": "Deployment_Node_R::label",
-              "type_": {"source": "Stdlib_C4", "name": "Deployment_Node_R"}
+              "label": "Deployment_Node_R::label"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Node"
+              },
               "alias": "node",
-              "label": "Node::label",
-              "type_": {"source": "Stdlib_C4", "name": "Node"}
+              "label": "Node::label"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Node_L"
+              },
               "alias": "nodeL",
-              "label": "Node_L::label",
-              "type_": {"source": "Stdlib_C4", "name": "Node_L"}
+              "label": "Node_L::label"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Node_R"
+              },
               "alias": "nodeR",
-              "label": "Node_R::label",
-              "type_": {"source": "Stdlib_C4", "name": "Node_R"}
+              "label": "Node_R::label"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Node"
+              },
+              "alias": "node",
+              "label": "Node::label",
+              "type": "Node::type"
+            },
+            {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Node"
+              },
               "alias": "node",
               "label": "Node::label",
               "type": "Node::type",
-              "type_": {"source": "Stdlib_C4", "name": "Node"}
+              "descr": "Node::descr"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Node"
+              },
               "alias": "node",
               "label": "Node::label",
               "type": "Node::type",
               "descr": "Node::descr",
-              "type_": {"source": "Stdlib_C4", "name": "Node"}
+              "sprite": "Node::sprite"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Node"
+              },
               "alias": "node",
               "label": "Node::label",
               "type": "Node::type",
               "descr": "Node::descr",
               "sprite": "Node::sprite",
-              "type_": {"source": "Stdlib_C4", "name": "Node"}
+              "tags": "Node::tags"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Node"
+              },
               "alias": "node",
               "label": "Node::label",
               "type": "Node::type",
               "descr": "Node::descr",
               "sprite": "Node::sprite",
               "tags": "Node::tags",
-              "type_": {"source": "Stdlib_C4", "name": "Node"}
-            },
-            {
-              "alias": "node",
-              "label": "Node::label",
-              "type": "Node::type",
-              "descr": "Node::descr",
-              "sprite": "Node::sprite",
-              "tags": "Node::tags",
-              "link": "Node::link",
-              "type_": {"source": "Stdlib_C4", "name": "Node"}
+              "link": "Node::link"
             }
           ]
         }

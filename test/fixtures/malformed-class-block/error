@@ -464,347 +464,346 @@
       "ignoreCase": false
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Person_Ext",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "SystemDb_Ext",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "SystemQueue_Ext",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Person",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "System_Ext",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "SystemDb",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "SystemQueue",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "System",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": false,
-      "inverted": false,
+      "type": "class",
       "parts": [
         " ",
         "\t"
       ],
-      "type": "class"
+      "inverted": false,
+      "ignoreCase": false
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "ContainerQueue_Ext",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "ContainerQueue",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "ContainerDb_Ext",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "ContainerDb",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Container_Ext",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Container",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "ComponentQueue_Ext",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "ComponentQueue",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "ComponentDb_Ext",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "ComponentDb",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Component_Ext",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Component",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": false,
-      "inverted": false,
+      "type": "class",
       "parts": [
         " ",
         "\t"
       ],
-      "type": "class"
+      "inverted": false,
+      "ignoreCase": false
     },
     {
-      "ignoreCase": false,
+      "type": "literal",
       "text": "Boundary",
-      "type": "literal"
+      "ignoreCase": false
     },
     {
-      "ignoreCase": false,
-      "inverted": false,
+      "type": "class",
       "parts": [
         " ",
         "\t"
       ],
-      "type": "class"
+      "inverted": false,
+      "ignoreCase": false
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Enterprise_Boundary",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "System_Boundary",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Container_Boundary",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": false,
-      "inverted": false,
+      "type": "class",
       "parts": [
         " ",
         "\t"
       ],
-      "type": "class"
+      "inverted": false,
+      "ignoreCase": false
     },
     {
-      "ignoreCase": true,
-       "text": "Rel_Neighbor",
-       "type": "literal"
+      "type": "literal",
+      "text": "Rel_Neighbor",
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Rel_Back_Neighbor",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Rel_Back",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Rel_Down",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Rel_D",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Rel_Up",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Rel_U",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Rel_Left",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Rel_L",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Rel_Right",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Rel_R",
-
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Rel",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "BiRel_Neighbor",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "BiRel_Down",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "BiRel_D",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "BiRel_Up",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "BiRel_U",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "BiRel_Left",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "BiRel_L",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "BiRel_Right",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "BiRel_R",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "BiRel",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": false,
-      "inverted": false,
+      "type": "class",
       "parts": [
         " ",
         "\t"
       ],
-      "type": "class"
+      "inverted": false,
+      "ignoreCase": false
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Deployment_Node_L",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Deployment_Node_R",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": true,
+      "type": "literal",
       "text": "Deployment_Node",
-      "type": "literal"
+      "ignoreCase": true
     },
     {
-      "ignoreCase": false,
+      "type": "literal",
       "text": "Node_L",
-      "type": "literal"
+      "ignoreCase": false
     },
     {
-      "ignoreCase": false,
+      "type": "literal",
       "text": "Node_R",
-      "type": "literal"
+      "ignoreCase": false
     },
     {
-      "ignoreCase": false,
+      "type": "literal",
       "text": "Node",
-      "type": "literal"
+      "ignoreCase": false
     },
     {
-      "ignoreCase": false,
-      "inverted": false,
+      "type": "class",
       "parts": [
         " ",
         "\t"
       ],
-      "type": "class"
+      "inverted": false,
+      "ignoreCase": false
     },
     {
-      "ignoreCase": false,
+      "type": "literal",
       "text": "Rel_",
-      "type": "literal"
+      "ignoreCase": false
     },
     {
-      "ignoreCase": false,
-      "inverted": false,
+      "type": "class",
       "parts": [
         " ",
         "\t"
       ],
-      "type": "class"
+      "inverted": false,
+      "ignoreCase": false
     },
     {
-      "ignoreCase": false,
+      "type": "literal",
       "text": "Rel_",
-      "type": "literal"
+      "ignoreCase": false
     },
     {
-      "ignoreCase": false,
-      "inverted": false,
+      "type": "class",
       "parts": [
         " ",
         "\t"
       ],
-      "type": "class"
+      "inverted": false,
+      "ignoreCase": false
     },
     {
       "type": "literal",

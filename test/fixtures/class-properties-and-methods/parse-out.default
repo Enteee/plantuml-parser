@@ -10,25 +10,25 @@
             "name": "Name",
             "isStatic": false,
             "accessor": "-",
-            "type": ""
+            "type": "Type"
           },
           {
             "name": "Name",
             "isStatic": false,
             "accessor": "+",
-            "type": ""
+            "type": "Type"
           },
           {
             "name": "Name",
             "isStatic": false,
             "accessor": "#",
-            "type": ""
+            "type": "Type"
           },
           {
             "name": "Name",
             "isStatic": false,
             "accessor": "~",
-            "type": ""
+            "type": "Type"
           },
           {
             "name": "Name",

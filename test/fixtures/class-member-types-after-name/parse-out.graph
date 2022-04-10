@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "name": "Publication",
+      "title": "Publication",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "title",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "String"
+        }
+      ],
+      "extends_": [],
+      "implements_": [],
+      "generics": [],
+      "stereotypes": [],
+      "id": "Publication",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "title",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "title",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "Publication",
+      "to": "title",
+      "name": "has",
+      "hidden": true
+    }
+  ]
+}

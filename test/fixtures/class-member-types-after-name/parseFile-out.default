@@ -1,0 +1,28 @@
+[
+  {
+    "name": "test/fixtures/class-member-types-after-name/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "Publication",
+            "title": "Publication",
+            "isAbstract": false,
+            "members": [
+              {
+                "name": "title",
+                "isStatic": false,
+                "accessor": "+",
+                "type": "String"
+              }
+            ],
+            "extends_": [],
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
+          }
+        ]
+      }
+    ]
+  }
+]

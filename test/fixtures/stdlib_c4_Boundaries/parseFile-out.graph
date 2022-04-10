@@ -10,75 +10,105 @@
               "title": "\"C4 - Boundaries\""
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Boundary"
+              },
               "alias": "boundary",
               "label": "Boundary::label",
               "elements": [
                 {
+                  "type_": {
+                    "source": "Stdlib_C4",
+                    "name": "Enterprise_Boundary"
+                  },
                   "alias": "enterprise_boundary",
                   "label": "Enterprise_Boundary::label",
                   "elements": [
                     {
+                      "type_": {
+                        "source": "Stdlib_C4",
+                        "name": "System_Boundary"
+                      },
                       "alias": "system_boundary",
+                      "label": "System_Boundary::label",
                       "elements": [
                         {
+                          "type_": {
+                            "source": "Stdlib_C4",
+                            "name": "Container_Boundary"
+                          },
                           "alias": "container_boundary",
+                          "label": "Container_Boundary::label",
                           "elements": [
                             {
+                              "type_": {
+                                "source": "Stdlib_C4",
+                                "name": "Component"
+                              },
                               "alias": "component",
-                              "techn": "Component::techn",
-                              "descr": "Component::descr",
                               "label": "Component::label",
-                              "type_": {"source": "Stdlib_C4", "name": "Component"}
+                              "techn": "Component::techn",
+                              "descr": "Component::descr"
                             }
-                          ],
-                        "label": "Container_Boundary::label",
-                        "type_": {"source": "Stdlib_C4", "name": "Container_Boundary"}
+                          ]
                         }
-                      ],
-                      "label": "System_Boundary::label",
-                      "type_": {"source": "Stdlib_C4", "name": "System_Boundary"}
+                      ]
                     }
-                  ],
-                  "type_": {"source": "Stdlib_C4", "name": "Enterprise_Boundary"}
+                  ]
                 }
-              ],
-              "type_": {"source": "Stdlib_C4", "name": "Boundary"}
+              ]
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "named"
+              },
               "alias": "namedBoundary",
               "label": "Boundary::label",
-              "elements": [],
-              "type_": {"source": "Stdlib_C4", "name": "named"}
+              "elements": []
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "named-tagged"
+              },
               "alias": "namedTaggedBoundary",
               "label": "Boundary::label",
               "tags": "Boundary::tags",
-              "elements": [],
-              "type_": {"source": "Stdlib_C4", "name": "named-tagged"}
+              "elements": []
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "named-tagged-link"
+              },
               "alias": "namedTaggedLinkBoundary",
               "label": "Boundary::label",
               "tags": "Boundary::tags",
               "link": "Boundary::link",
-              "elements": [],
-              "type_": {"source": "Stdlib_C4", "name": "named-tagged-link"}
+              "elements": []
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Enterprise_Boundary"
+              },
               "alias": "enterprise_boundary_tags",
               "label": "Enterprise_Boundary::label",
               "tags": "Enterprise_Boundary::tags",
-              "elements": [],
-              "type_": {"source": "Stdlib_C4", "name": "Enterprise_Boundary"}
+              "elements": []
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Enterprise_Boundary"
+              },
               "alias": "enterprise_boundary_tags_link",
               "label": "Enterprise_Boundary::label",
               "tags": "Enterprise_Boundary::tags",
               "link": "Enterprise_Boundary::link",
-              "elements": [],
-              "type_": {"source": "Stdlib_C4", "name": "Enterprise_Boundary"}
+              "elements": []
             }
           ]
         }

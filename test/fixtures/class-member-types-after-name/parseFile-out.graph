@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/class-member-types-after-name/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "Publication",
+              "title": "Publication",
+              "isAbstract": false,
+              "members": [
+                {
+                  "name": "title",
+                  "isStatic": false,
+                  "accessor": "+",
+                  "type": "String"
+                }
+              ],
+              "extends_": [],
+              "implements_": [],
+              "generics": [],
+              "stereotypes": []
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/class-member-types-after-name/in.plantuml",
+      "type": "File",
+      "hidden": true
+    },
+    {
+      "name": "Publication",
+      "title": "Publication",
+      "isAbstract": false,
+      "members": [
+        {
+          "name": "title",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "String"
+        }
+      ],
+      "extends_": [],
+      "implements_": [],
+      "generics": [],
+      "stereotypes": [],
+      "id": "Publication",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "title",
+      "isStatic": false,
+      "accessor": "+",
+      "type": "Attribute",
+      "id": "title",
+      "hidden": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "test/fixtures/class-member-types-after-name/in.plantuml",
+      "to": "Publication",
+      "name": "contains",
+      "hidden": true
+    },
+    {
+      "from": "Publication",
+      "to": "title",
+      "name": "has",
+      "hidden": true
+    },
+    {
+      "from": "test/fixtures/class-member-types-after-name/in.plantuml",
+      "to": "title",
+      "name": "contains",
+      "hidden": true
+    }
+  ]
+}

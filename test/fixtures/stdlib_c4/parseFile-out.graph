@@ -10,87 +10,126 @@
               "title": "\"C4 - Person & System\""
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Person"
+              },
               "alias": "person",
-              "descr": "Person::descr",
               "label": "Person::label",
-              "type_": {"source": "Stdlib_C4", "name": "Person"}
+              "descr": "Person::descr"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "Person_Ext"
+              },
               "alias": "person_ext",
-              "descr": "Person_Ext::descr",
               "label": "Person_Ext::label",
-              "type_": {"source": "Stdlib_C4", "name": "Person_Ext"}
+              "descr": "Person_Ext::descr"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "System"
+              },
               "alias": "system",
-              "descr": "System::descr",
               "label": "System::label",
-              "type_": {"source": "Stdlib_C4", "name": "System"}
+              "descr": "System::descr"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "System_Ext"
+              },
               "alias": "system_ext",
-              "descr": "System_Ext::descr",
               "label": "System_Ext::label",
-              "type_": {"source": "Stdlib_C4", "name": "System_Ext"}
+              "descr": "System_Ext::descr"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "SystemDb"
+              },
               "alias": "systemDb",
-              "descr": "SystemDb::descr",
               "label": "SystemDb::label",
-              "type_": {"source": "Stdlib_C4", "name": "SystemDb"}
+              "descr": "SystemDb::descr"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "SystemDb_Ext"
+              },
               "alias": "systemDb_ext",
-              "descr": "SystemDb_Ext::descr",
               "label": "SystemDb_Ext::label",
-              "type_": {"source": "Stdlib_C4", "name": "SystemDb_Ext"}
+              "descr": "SystemDb_Ext::descr"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "SystemQueue"
+              },
               "alias": "systemQueue",
-              "descr": "SystemQueue::descr",
               "label": "SystemQueue::label",
-              "type_": {"source": "Stdlib_C4", "name": "SystemQueue"}
+              "descr": "SystemQueue::descr"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "SystemQueue_Ext"
+              },
               "alias": "systemQueue_ext",
-              "descr": "SystemQueue_Ext::descr",
               "label": "SystemQueue_Ext::label",
-              "type_": {"source": "Stdlib_C4", "name": "SystemQueue_Ext"}
+              "descr": "SystemQueue_Ext::descr"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "System"
+              },
               "alias": "system",
-              "label": "System::label",
-              "type_": {"source": "Stdlib_C4", "name": "System"}
+              "label": "System::label"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "System"
+              },
               "alias": "systemDescr",
-              "descr": "System::descr",
               "label": "System::label",
-              "type_": {"source": "Stdlib_C4", "name": "System"}
+              "descr": "System::descr"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "System"
+              },
               "alias": "systemDescrSprite",
-              "descr": "System::descr",
               "label": "System::label",
-              "sprite": "System::sprite",
-              "type_": {"source": "Stdlib_C4", "name": "System"}
+              "descr": "System::descr",
+              "sprite": "System::sprite"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "System"
+              },
               "alias": "systemDescrSpriteTags",
-              "descr": "System::descr",
               "label": "System::label",
+              "descr": "System::descr",
               "sprite": "System::sprite",
-              "tags": "System::tags",
-              "type_": {"source": "Stdlib_C4", "name": "System"}
+              "tags": "System::tags"
             },
             {
+              "type_": {
+                "source": "Stdlib_C4",
+                "name": "System"
+              },
               "alias": "systemDescrSpriteTagsLink",
-              "descr": "System::descr",
               "label": "System::label",
+              "descr": "System::descr",
               "sprite": "System::sprite",
               "tags": "System::tags",
-              "link": "System::link",
-              "type_": {"source": "Stdlib_C4", "name": "System"}
+              "link": "System::link"
             }
           ]
         }
