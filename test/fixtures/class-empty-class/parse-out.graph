@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "name": "C1",
+      "title": "C1",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": [],
+      "stereotypes": [],
+      "id": "C1",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "C2",
+      "title": "C2",
+      "isAbstract": false,
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": [],
+      "stereotypes": [],
+      "id": "C2",
+      "type": "Class",
+      "hidden": true
+    },
+    {
+      "name": "I1",
+      "title": "I1",
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": [],
+      "stereotypes": [],
+      "id": "I1",
+      "type": "Interface",
+      "hidden": true
+    },
+    {
+      "name": "I2",
+      "title": "I2",
+      "members": [],
+      "extends_": [],
+      "implements_": [],
+      "generics": [],
+      "stereotypes": [],
+      "id": "I2",
+      "type": "Interface",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}

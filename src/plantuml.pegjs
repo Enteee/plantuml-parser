@@ -153,7 +153,7 @@ Together
 //
 
 Group
-  = _ type:GroupType " " _ name:ElementName _ Stereotypes? _ Color? _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
+  = _ type:GroupType " " _ name:ElementName _ Stereotypes? _ Color? _ NewLine? _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
     return new types.Group(
       name.name,
@@ -221,7 +221,7 @@ NoteOf
 //
 
 Class
-  = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotypes:Stereotypes? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ isAbstract:"abstract "i? _ "class " _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotypes:Stereotypes? _ NewLine? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Class(
       name.name,
@@ -320,7 +320,7 @@ MemberVariable
 //
 
 Interface
-  = _ "interface "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotypes:Stereotypes? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "interface "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotypes:Stereotypes? _ NewLine? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Interface(
       name.name,
@@ -350,7 +350,7 @@ Interface
 //
 
 Enum
-  = _ "enum "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotypes:Stereotypes? _ "{" _ NewLine members:Member* _ "}" EndLine
+  = _ "enum "i _ name:ElementName _ generics:Generics? _ extends_:Extends? _ implements_:Implements? _ stereotypes:Stereotypes? _ NewLine? _ "{" _ NewLine members:Member* _ "}" EndLine
   {
     return new types.Enum(
       name.name,
