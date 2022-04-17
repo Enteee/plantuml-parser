@@ -1,0 +1,54 @@
+[
+  {
+    "elements": [
+      {
+        "name": "",
+        "title": "",
+        "type": "package",
+        "elements": []
+      },
+      {
+        "name": "",
+        "title": "",
+        "type": "namespace",
+        "elements": []
+      },
+      {
+        "name": "",
+        "title": "",
+        "type": "node",
+        "elements": []
+      },
+      {
+        "name": "",
+        "title": "",
+        "type": "folder",
+        "elements": []
+      },
+      {
+        "name": "",
+        "title": "",
+        "type": "frame",
+        "elements": []
+      },
+      {
+        "name": "",
+        "title": "",
+        "type": "cloud",
+        "elements": []
+      },
+      {
+        "name": "",
+        "title": "",
+        "type": "database",
+        "elements": []
+      },
+      {
+        "name": "",
+        "title": "",
+        "type": "rectangle",
+        "elements": []
+      }
+    ]
+  }
+]

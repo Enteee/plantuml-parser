@@ -1,0 +1,19 @@
+@startuml
+package {
+}
+// note: unnamed namespaces are not supported in platuml.
+namespace {
+}
+node {
+}
+folder {
+}
+frame {
+}
+cloud {
+}
+database {
+}
+rectangle {
+}
+@enduml
