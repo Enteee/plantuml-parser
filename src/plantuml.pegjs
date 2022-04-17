@@ -153,11 +153,11 @@ Together
 //
 
 Group
-  = _ type:GroupType " " _ name:ElementName _ Stereotypes? _ Color? _ NewLine? _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
+  = _ type:GroupType " " _ name:ElementName? _ Stereotypes? _ Color? _ NewLine? _ "{" _ NewLine elements:UMLElement* _ "}" EndLine
   {
     return new types.Group(
-      name.name,
-      name.title,
+      name?.name || "",
+      name?.title || "",
       type,
       removeUndefined(elements),
     );

@@ -118,7 +118,7 @@ export class Class {
   }
 }
 
-export type GroupType = ('package' | 'node' | 'folder' | 'frame' | 'cloud' | 'database')
+export type GroupType = ('package' | 'namespace' | 'node' | 'folder' | 'frame' | 'cloud' | 'database' | 'rectangle' )
 export class Group {
   constructor (
     public name: string,

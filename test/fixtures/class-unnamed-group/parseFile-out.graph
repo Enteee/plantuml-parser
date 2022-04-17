@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "name": "test/fixtures/class-unnamed-group/in.plantuml",
+      "diagrams": [
+        {
+          "elements": [
+            {
+              "name": "",
+              "title": "",
+              "type": "package",
+              "elements": []
+            },
+            {
+              "name": "",
+              "title": "",
+              "type": "namespace",
+              "elements": []
+            },
+            {
+              "name": "",
+              "title": "",
+              "type": "node",
+              "elements": []
+            },
+            {
+              "name": "",
+              "title": "",
+              "type": "folder",
+              "elements": []
+            },
+            {
+              "name": "",
+              "title": "",
+              "type": "frame",
+              "elements": []
+            },
+            {
+              "name": "",
+              "title": "",
+              "type": "cloud",
+              "elements": []
+            },
+            {
+              "name": "",
+              "title": "",
+              "type": "database",
+              "elements": []
+            },
+            {
+              "name": "",
+              "title": "",
+              "type": "rectangle",
+              "elements": []
+            }
+          ]
+        }
+      ],
+      "id": "test/fixtures/class-unnamed-group/in.plantuml",
+      "type": "File",
+      "hidden": true
+    }
+  ],
+  "edges": []
+}
