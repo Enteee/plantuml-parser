@@ -1,0 +1,79 @@
+[
+  {
+    "name": "test/fixtures/class-empty-class/in.plantuml",
+    "diagrams": [
+      {
+        "elements": [
+          {
+            "name": "P1",
+            "title": "P1",
+            "type": "package",
+            "elements": []
+          },
+          {
+            "name": "P2",
+            "title": "P2",
+            "type": "package",
+            "elements": []
+          },
+          {
+            "name": "C1",
+            "title": "C1",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [],
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
+          },
+          {
+            "name": "C2",
+            "title": "C2",
+            "isAbstract": false,
+            "members": [],
+            "extends_": [],
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
+          },
+          {
+            "name": "I1",
+            "title": "I1",
+            "members": [],
+            "extends_": [],
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
+          },
+          {
+            "name": "I2",
+            "title": "I2",
+            "members": [],
+            "extends_": [],
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
+          },
+          {
+            "name": "E1",
+            "title": "E1",
+            "members": [],
+            "extends_": [],
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
+          },
+          {
+            "name": "E2",
+            "title": "E2",
+            "members": [],
+            "extends_": [],
+            "implements_": [],
+            "generics": [],
+            "stereotypes": []
+          }
+        ]
+      }
+    ]
+  }
+]
