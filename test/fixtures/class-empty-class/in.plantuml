@@ -1,0 +1,26 @@
+@startuml
+
+package P1
+{
+}
+package P2 {
+}
+
+class C1
+{
+}
+class C2 {
+}
+
+interface I1
+{
+}
+interface I2 {
+}
+
+enum E1
+{
+}
+enum E2 {
+}
+@enduml
