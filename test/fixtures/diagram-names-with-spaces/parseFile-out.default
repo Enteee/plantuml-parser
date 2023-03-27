@@ -1,0 +1,10 @@
+[
+  {
+    "name": "test/fixtures/diagram-names-with-spaces/in.plantuml",
+    "diagrams": [
+      {
+        "elements": []
+      }
+    ]
+  }
+]

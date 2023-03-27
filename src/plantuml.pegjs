@@ -56,7 +56,7 @@ PlantUMLFile
 Diagrams
   = diagrams:(
     (!"@startuml" .)*
-    "@startuml" _ DiagramId? _ NewLine
+    "@startuml" DiagramId? (" " _ DiagramName)? _ NewLine
       uml:UML
     "@enduml" _ NewLine?
     (!"@startuml" .)*
@@ -67,6 +67,9 @@ Diagrams
 
 DiagramId
   = "(" _ "id" _ "=" Name ")"
+
+DiagramName
+  = (!NewLine .)+
 
 UML
   = elements:UMLElement*
