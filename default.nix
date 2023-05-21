@@ -8,7 +8,7 @@ in stdenv.mkDerivation {
   src = null;
 
   buildInputs = [
-    nodejs
+    nodejs-16_x
   ];
 
   shellHook = ''
