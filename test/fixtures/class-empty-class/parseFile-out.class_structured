@@ -1,0 +1,77 @@
+{
+  "classes": [
+    {
+      "name": "C1",
+      "title": "C1",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "C2",
+      "title": "C2",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "I1",
+      "title": "I1",
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "I2",
+      "title": "I2",
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "enums": [
+    {
+      "name": "E1",
+      "title": "E1",
+      "attributes": [],
+      "methods": [],
+      "stereotypes": []
+    },
+    {
+      "name": "E2",
+      "title": "E2",
+      "attributes": [],
+      "methods": [],
+      "stereotypes": []
+    }
+  ],
+  "packages": [
+    {
+      "name": "P1",
+      "title": "P1",
+      "type": "package",
+      "elements": []
+    },
+    {
+      "name": "P2",
+      "title": "P2",
+      "type": "package",
+      "elements": []
+    }
+  ],
+  "relationships": []
+}

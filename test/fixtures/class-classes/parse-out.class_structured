@@ -1,0 +1,67 @@
+{
+  "classes": [
+    {
+      "name": "Dwelling",
+      "title": "Dwelling",
+      "isAbstract": false,
+      "attributes": [
+        {
+          "name": "Windows",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "Int"
+        }
+      ],
+      "methods": [
+        {
+          "name": "Lock",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "arguments": ""
+        }
+      ],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Apartment",
+      "title": "Apartment",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "House",
+      "title": "House",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Commune",
+      "title": "Commune",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": []
+}

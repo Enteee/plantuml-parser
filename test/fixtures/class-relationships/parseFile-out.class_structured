@@ -1,0 +1,165 @@
+{
+  "classes": [
+    {
+      "name": "Dwelling",
+      "title": "Dwelling",
+      "isAbstract": false,
+      "attributes": [
+        {
+          "name": "Windows",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "Int"
+        }
+      ],
+      "methods": [
+        {
+          "name": "LockTheDoor",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "arguments": ""
+        }
+      ],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Apartment",
+      "title": "Apartment",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "House",
+      "title": "House",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Commune",
+      "title": "Commune",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Window",
+      "title": "Window",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Door",
+      "title": "Door",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": [
+    {
+      "source": "Dwelling",
+      "target": "Apartment",
+      "sourceType": "Class",
+      "targetType": "Class",
+      "relationshipType": "inheritance",
+      "label": "Inheritance",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "<|",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Dwelling",
+      "target": "Commune",
+      "sourceType": "Class",
+      "targetType": "Class",
+      "relationshipType": "inheritance",
+      "label": "Inheritance",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "<|",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Dwelling",
+      "target": "House",
+      "sourceType": "Class",
+      "targetType": "Class",
+      "relationshipType": "inheritance",
+      "label": "Inheritance",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "<|",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Dwelling",
+      "target": "Window",
+      "sourceType": "Class",
+      "targetType": "Class",
+      "relationshipType": "composition",
+      "label": "Composition",
+      "sourceCardinality": "1",
+      "targetCardinality": "many",
+      "sourceArrowHead": "*",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Dwelling",
+      "target": "Door",
+      "sourceType": "Class",
+      "targetType": "Class",
+      "relationshipType": "composition",
+      "label": "Composition",
+      "sourceCardinality": "1",
+      "targetCardinality": "many",
+      "sourceArrowHead": "*",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    }
+  ]
+}

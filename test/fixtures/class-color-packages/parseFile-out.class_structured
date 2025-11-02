@@ -1,0 +1,33 @@
+{
+  "classes": [
+    {
+      "name": "Worker1",
+      "title": "Worker1",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [],
+  "enums": [],
+  "packages": [
+    {
+      "name": "Node",
+      "title": "Node",
+      "type": "package",
+      "elements": [
+        {
+          "type": "Class",
+          "name": "Worker1",
+          "title": "Worker1",
+          "isAbstract": false
+        }
+      ]
+    }
+  ],
+  "relationships": []
+}

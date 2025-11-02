@@ -1,0 +1,23 @@
+{
+  "classes": [],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": [
+    {
+      "source": "*",
+      "target": "InDanger",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    }
+  ]
+}

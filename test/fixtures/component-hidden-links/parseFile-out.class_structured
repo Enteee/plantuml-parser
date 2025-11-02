@@ -1,0 +1,68 @@
+{
+  "classes": [],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": [
+    {
+      "source": "x",
+      "target": "down",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": true
+    },
+    {
+      "source": "x",
+      "target": "up",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": true
+    },
+    {
+      "source": "x",
+      "target": "left",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": true
+    },
+    {
+      "source": "x",
+      "target": "right",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": true
+    }
+  ]
+}

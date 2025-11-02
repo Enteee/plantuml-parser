@@ -1,0 +1,105 @@
+{
+  "classes": [],
+  "interfaces": [],
+  "enums": [],
+  "packages": [
+    {
+      "name": "Front End",
+      "title": "Front End",
+      "type": "package",
+      "elements": []
+    }
+  ],
+  "relationships": [
+    {
+      "source": "GUI",
+      "target": "Internet",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Internet",
+      "target": "Math",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "unknown",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "(",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Business Logic",
+      "target": "Math",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "DA",
+      "target": "Items",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Business Logic",
+      "target": "Items",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "unknown",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "(",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "DA",
+      "target": "Stored Procs",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "dependency",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "",
+      "sourceArrowBody": ".",
+      "targetArrowBody": ".",
+      "hidden": false
+    }
+  ]
+}

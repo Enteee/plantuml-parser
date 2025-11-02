@@ -1,0 +1,60 @@
+{
+  "classes": [
+    {
+      "name": "Dwelling",
+      "title": "Dwelling",
+      "isAbstract": false,
+      "attributes": [
+        {
+          "name": "Windows",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "Int"
+        }
+      ],
+      "methods": [
+        {
+          "name": "Lock",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "arguments": ""
+        }
+      ],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Dwelling",
+      "title": "Dwelling",
+      "isAbstract": false,
+      "attributes": [
+        {
+          "name": "Windows",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "Int"
+        }
+      ],
+      "methods": [
+        {
+          "name": "Lock",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "arguments": ""
+        }
+      ],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": []
+}

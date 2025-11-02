@@ -188,12 +188,13 @@
               "rightType": "Unknown",
               "leftArrowHead": "",
               "rightArrowHead": "|>",
-              "leftArrowBody": "-",
-              "rightArrowBody": "-",
+              "leftArrowBody": "--",
+              "rightArrowBody": "--",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": false,
+              "relationshipType": "generalization"
             },
             [
               {
@@ -213,12 +214,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "CCTV",
@@ -237,12 +239,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "MultiFunctionPeripheral",
@@ -265,12 +268,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               }
             ]
           ],
@@ -302,12 +306,13 @@
               "rightType": "Unknown",
               "leftArrowHead": "",
               "rightArrowHead": "|>",
-              "leftArrowBody": "-",
-              "rightArrowBody": "-",
+              "leftArrowBody": "--",
+              "rightArrowBody": "--",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": false,
+              "relationshipType": "generalization"
             },
             {
               "name": "Switch",
@@ -326,12 +331,13 @@
               "rightType": "Unknown",
               "leftArrowHead": "",
               "rightArrowHead": "|>",
-              "leftArrowBody": "-",
-              "rightArrowBody": "-",
+              "leftArrowBody": "--",
+              "rightArrowBody": "--",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": false,
+              "relationshipType": "generalization"
             },
             {
               "name": "Router",
@@ -350,12 +356,13 @@
               "rightType": "Unknown",
               "leftArrowHead": "",
               "rightArrowHead": "|>",
-              "leftArrowBody": "-",
-              "rightArrowBody": "-",
+              "leftArrowBody": "--",
+              "rightArrowBody": "--",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": false,
+              "relationshipType": "generalization"
             },
             {
               "name": "Firewall",
@@ -374,12 +381,13 @@
               "rightType": "Unknown",
               "leftArrowHead": "",
               "rightArrowHead": "|>",
-              "leftArrowBody": "-",
-              "rightArrowBody": "-",
+              "leftArrowBody": "--",
+              "rightArrowBody": "--",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": false,
+              "relationshipType": "generalization"
             },
             {
               "name": "Proxy",
@@ -402,12 +410,13 @@
               "rightType": "Unknown",
               "leftArrowHead": "",
               "rightArrowHead": "|>",
-              "leftArrowBody": "-",
-              "rightArrowBody": "-",
+              "leftArrowBody": "--",
+              "rightArrowBody": "--",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": false,
+              "relationshipType": "generalization"
             },
             {
               "name": "LoadBalancer",
@@ -426,12 +435,13 @@
               "rightType": "Unknown",
               "leftArrowHead": "",
               "rightArrowHead": "|>",
-              "leftArrowBody": "-",
-              "rightArrowBody": "-",
+              "leftArrowBody": "--",
+              "rightArrowBody": "--",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": false,
+              "relationshipType": "generalization"
             },
             {
               "name": "NetworkManagement",
@@ -454,12 +464,13 @@
               "rightType": "Unknown",
               "leftArrowHead": "",
               "rightArrowHead": "|>",
-              "leftArrowBody": "-",
-              "rightArrowBody": "-",
+              "leftArrowBody": "--",
+              "rightArrowBody": "--",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": false,
+              "relationshipType": "generalization"
             }
           ],
           [
@@ -490,12 +501,13 @@
               "rightType": "Unknown",
               "leftArrowHead": "",
               "rightArrowHead": "|>",
-              "leftArrowBody": "-",
-              "rightArrowBody": "-",
+              "leftArrowBody": "--",
+              "rightArrowBody": "--",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": false,
+              "relationshipType": "generalization"
             },
             [
               {
@@ -519,12 +531,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "KVM",
@@ -547,12 +560,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "PDU",
@@ -575,12 +589,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "UPS",
@@ -603,12 +618,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "HSM",
@@ -631,12 +647,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "AccessControl",
@@ -659,12 +676,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               }
             ]
           ],
@@ -696,12 +714,13 @@
               "rightType": "Unknown",
               "leftArrowHead": "",
               "rightArrowHead": "|>",
-              "leftArrowBody": "-",
-              "rightArrowBody": "-",
+              "leftArrowBody": "--",
+              "rightArrowBody": "--",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": false,
+              "relationshipType": "generalization"
             },
             [
               {
@@ -721,12 +740,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "Voice",
@@ -749,12 +769,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "Video",
@@ -773,12 +794,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               }
             ]
           ],
@@ -822,12 +844,13 @@
               "rightType": "Unknown",
               "leftArrowHead": "",
               "rightArrowHead": "|>",
-              "leftArrowBody": "-",
-              "rightArrowBody": "-",
+              "leftArrowBody": "--",
+              "rightArrowBody": "--",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": false,
+              "relationshipType": "generalization"
             },
             {
               "comment": "Cluster --> PhysicalServer: dependsOn"
@@ -854,12 +877,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "ContainerCluster",
@@ -886,12 +910,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "VMCluster",
@@ -918,12 +943,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "StorageCluster",
@@ -946,12 +972,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "comment": "StorageCluster --> Storage: dependsOn"
@@ -986,12 +1013,13 @@
               "rightType": "Unknown",
               "leftArrowHead": "",
               "rightArrowHead": "|>",
-              "leftArrowBody": "-",
-              "rightArrowBody": "-",
+              "leftArrowBody": "--",
+              "rightArrowBody": "--",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": false,
+              "relationshipType": "generalization"
             },
             [
               {
@@ -1011,12 +1039,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "NAS",
@@ -1039,12 +1068,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "SAN",
@@ -1067,12 +1097,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "StorageSwitch",
@@ -1091,12 +1122,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               },
               {
                 "name": "StorageController",
@@ -1115,12 +1147,13 @@
                 "rightType": "Unknown",
                 "leftArrowHead": "",
                 "rightArrowHead": "|>",
-                "leftArrowBody": "-",
-                "rightArrowBody": "-",
+                "leftArrowBody": "--",
+                "rightArrowBody": "--",
                 "leftCardinality": "",
                 "rightCardinality": "",
                 "label": "",
-                "hidden": false
+                "hidden": false,
+                "relationshipType": "generalization"
               }
             ]
           ],
@@ -1194,12 +1227,13 @@
               "rightType": "Unknown",
               "leftArrowHead": "",
               "rightArrowHead": "|>",
-              "leftArrowBody": "-",
-              "rightArrowBody": "-",
+              "leftArrowBody": "--",
+              "rightArrowBody": "--",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": false,
+              "relationshipType": "generalization"
             }
           ],
           [
@@ -1219,12 +1253,13 @@
               "rightType": "Unknown",
               "leftArrowHead": "",
               "rightArrowHead": "|>",
-              "leftArrowBody": "-",
-              "rightArrowBody": "-",
+              "leftArrowBody": "--",
+              "rightArrowBody": "--",
               "leftCardinality": "",
               "rightCardinality": "",
               "label": "",
-              "hidden": false
+              "hidden": false,
+              "relationshipType": "generalization"
             }
           ],
           {

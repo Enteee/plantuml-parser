@@ -1,0 +1,108 @@
+{
+  "classes": [],
+  "interfaces": [
+    {
+      "name": "I",
+      "title": "I",
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "enums": [],
+  "packages": [],
+  "relationships": [
+    {
+      "source": "C",
+      "target": "I",
+      "sourceType": "Unknown",
+      "targetType": "Interface",
+      "relationshipType": "association",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "C",
+      "target": "I",
+      "sourceType": "Unknown",
+      "targetType": "Interface",
+      "relationshipType": "association_directed",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": ".",
+      "targetArrowBody": ".",
+      "hidden": false
+    },
+    {
+      "source": "C",
+      "target": "I",
+      "sourceType": "Unknown",
+      "targetType": "Interface",
+      "relationshipType": "association_directed",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "<",
+      "targetArrowHead": "",
+      "sourceArrowBody": ".",
+      "targetArrowBody": ".",
+      "hidden": false
+    },
+    {
+      "source": "I",
+      "target": "C",
+      "sourceType": "Interface",
+      "targetType": "Unknown",
+      "relationshipType": "association",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "I",
+      "target": "C",
+      "sourceType": "Interface",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": ".",
+      "targetArrowBody": ".",
+      "hidden": false
+    },
+    {
+      "source": "I",
+      "target": "C",
+      "sourceType": "Interface",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "<",
+      "targetArrowHead": "",
+      "sourceArrowBody": ".",
+      "targetArrowBody": ".",
+      "hidden": false
+    }
+  ]
+}

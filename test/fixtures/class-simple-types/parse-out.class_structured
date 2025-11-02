@@ -1,0 +1,48 @@
+{
+  "classes": [
+    {
+      "name": "C",
+      "title": "C",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "AC",
+      "title": "AC",
+      "isAbstract": true,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "I",
+      "title": "I",
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "enums": [
+    {
+      "name": "E",
+      "title": "E",
+      "attributes": [],
+      "methods": [],
+      "stereotypes": []
+    }
+  ],
+  "packages": [],
+  "relationships": []
+}

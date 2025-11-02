@@ -1,0 +1,68 @@
+{
+  "classes": [],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": [
+    {
+      "source": "Germany",
+      "target": "France",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "inheritance",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "<|",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Spain",
+      "target": "USA",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "composition",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "*",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Mexico",
+      "target": "Russia",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "aggregation",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "o",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Canada",
+      "target": "Japan",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "dependency",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "",
+      "sourceArrowBody": ".",
+      "targetArrowBody": ".",
+      "hidden": false
+    }
+  ]
+}

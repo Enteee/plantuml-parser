@@ -1,0 +1,68 @@
+{
+  "classes": [],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": [
+    {
+      "source": "User",
+      "target": "GUI",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "To boundary",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "GUI",
+      "target": "SC",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "To control",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "SC",
+      "target": "Widget",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "To entity",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Widget",
+      "target": "Widgets",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "To database",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    }
+  ]
+}

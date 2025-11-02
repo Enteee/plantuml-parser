@@ -1,0 +1,57 @@
+{
+  "classes": [],
+  "interfaces": [
+    {
+      "name": "Math",
+      "title": "IMath",
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Items",
+      "title": "IItems",
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "enums": [],
+  "packages": [],
+  "relationships": [
+    {
+      "source": "Business Logic",
+      "target": "Math",
+      "sourceType": "Unknown",
+      "targetType": "Interface",
+      "relationshipType": "association",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "DA",
+      "target": "Items",
+      "sourceType": "Unknown",
+      "targetType": "Interface",
+      "relationshipType": "dependency",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "",
+      "sourceArrowBody": ".",
+      "targetArrowBody": ".",
+      "hidden": false
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "classes": [
+    {
+      "name": "Dummy",
+      "title": "Dummy",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [
+        {
+          "name": "method1",
+          "isStatic": false,
+          "accessor": "~",
+          "returnType": "void",
+          "arguments": "int i, boolean b, char c"
+        },
+        {
+          "name": "method2",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "arguments": "int i, boolean b, char c"
+        }
+      ],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": []
+}

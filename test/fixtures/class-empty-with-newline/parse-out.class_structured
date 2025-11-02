@@ -1,0 +1,19 @@
+{
+  "classes": [
+    {
+      "name": "AbstractList",
+      "title": "AbstractList",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": []
+}

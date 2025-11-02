@@ -1,0 +1,153 @@
+{
+  "classes": [
+    {
+      "name": "Worker1",
+      "title": "Worker1",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Worker2",
+      "title": "Worker2",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Worker3",
+      "title": "Worker3",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Worker4",
+      "title": "Worker4",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Worker5",
+      "title": "Worker5",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Worker6",
+      "title": "Worker6",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [],
+  "enums": [],
+  "packages": [
+    {
+      "name": "Node",
+      "title": "Node",
+      "type": "package",
+      "elements": [
+        {
+          "type": "Class",
+          "name": "Worker1",
+          "title": "Worker1",
+          "isAbstract": false
+        }
+      ]
+    },
+    {
+      "name": "Rectangle",
+      "title": "Rectangle",
+      "type": "package",
+      "elements": [
+        {
+          "type": "Class",
+          "name": "Worker2",
+          "title": "Worker2",
+          "isAbstract": false
+        }
+      ]
+    },
+    {
+      "name": "Folder",
+      "title": "Folder",
+      "type": "package",
+      "elements": [
+        {
+          "type": "Class",
+          "name": "Worker3",
+          "title": "Worker3",
+          "isAbstract": false
+        }
+      ]
+    },
+    {
+      "name": "Frame",
+      "title": "Frame",
+      "type": "package",
+      "elements": [
+        {
+          "type": "Class",
+          "name": "Worker4",
+          "title": "Worker4",
+          "isAbstract": false
+        }
+      ]
+    },
+    {
+      "name": "Internet",
+      "title": "Internet",
+      "type": "package",
+      "elements": [
+        {
+          "type": "Class",
+          "name": "Worker5",
+          "title": "Worker5",
+          "isAbstract": false
+        }
+      ]
+    },
+    {
+      "name": "Database",
+      "title": "Database",
+      "type": "package",
+      "elements": [
+        {
+          "type": "Class",
+          "name": "Worker6",
+          "title": "Worker6",
+          "isAbstract": false
+        }
+      ]
+    }
+  ],
+  "relationships": []
+}

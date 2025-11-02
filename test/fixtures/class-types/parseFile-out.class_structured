@@ -1,0 +1,219 @@
+{
+  "classes": [
+    {
+      "name": "AbstractList",
+      "title": "AbstractList",
+      "isAbstract": true,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "System",
+      "title": "System",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": [
+        "(S,#FF7700) Singleton"
+      ]
+    },
+    {
+      "name": "Date",
+      "title": "Date",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": [
+        "(D,orchid)"
+      ]
+    },
+    {
+      "name": "Foo1",
+      "title": "Foo1",
+      "isAbstract": false,
+      "attributes": [
+        {
+          "name": "can",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "You"
+        },
+        {
+          "name": "lines",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "several"
+        },
+        {
+          "name": "you",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "as"
+        },
+        {
+          "name": "group",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "and"
+        },
+        {
+          "name": "together.",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "things"
+        },
+        {
+          "name": "can",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "You"
+        },
+        {
+          "name": "you",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "as"
+        },
+        {
+          "name": "of",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "End"
+        }
+      ],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [
+        "Generics tag"
+      ],
+      "stereotypes": []
+    },
+    {
+      "name": "User",
+      "title": "User",
+      "isAbstract": false,
+      "attributes": [
+        {
+          "name": "age",
+          "isStatic": false,
+          "accessor": "-",
+          "type": "int"
+        },
+        {
+          "name": "password",
+          "isStatic": false,
+          "accessor": "-",
+          "type": "String"
+        }
+      ],
+      "methods": [
+        {
+          "name": "getName",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "arguments": ""
+        },
+        {
+          "name": "getAddress",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "arguments": ""
+        },
+        {
+          "name": "setName",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "arguments": ""
+        }
+      ],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Object",
+      "title": "Object",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": [
+        "general"
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "List",
+      "title": "List",
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "enums": [
+    {
+      "name": "TimeUnit",
+      "title": "TimeUnit",
+      "attributes": [
+        {
+          "name": "DAYS",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "HOURS",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        },
+        {
+          "name": "MINUTES",
+          "isStatic": false,
+          "accessor": "+",
+          "type": ""
+        }
+      ],
+      "methods": [],
+      "stereotypes": []
+    }
+  ],
+  "packages": [],
+  "relationships": [
+    {
+      "source": "Object",
+      "target": "ArrayList",
+      "sourceType": "Class",
+      "targetType": "Unknown",
+      "relationshipType": "inheritance",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "<|",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    }
+  ]
+}

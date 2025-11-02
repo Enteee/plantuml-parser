@@ -1,0 +1,68 @@
+{
+  "classes": [],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": [
+    {
+      "source": "*",
+      "target": "GlassEmpty",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "GlassEmpty",
+      "target": "*",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "GlassEmpty",
+      "target": "GlassFull",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "GlassFull",
+      "target": "*",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    }
+  ]
+}

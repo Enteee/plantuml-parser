@@ -1,0 +1,26 @@
+{
+  "classes": [
+    {
+      "name": "Publication",
+      "title": "Publication",
+      "isAbstract": false,
+      "attributes": [
+        {
+          "name": "title",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "String"
+        }
+      ],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": []
+}

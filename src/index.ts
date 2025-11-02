@@ -5,6 +5,7 @@ import defaultFormatter from './formatters/default';
 import graphFormatter from './formatters/graph';
 import structuredFormatter from './formatters/structured';
 import useCaseStructuredFormatter from './formatters/usecase_structured';
+import classStructuredFormatter from './formatters/class_structured';
 
 /* eslint-disable @typescript-eslint/no-var-requires */
 //TODO : use import here
@@ -126,11 +127,13 @@ type Formatters = {
   graph: Formatter;
   structured: Formatter;
   usecase_structured: Formatter;
+  class_structured: Formatter;
 }
 
 export const formatters: Formatters = {
   default: defaultFormatter,
   graph: graphFormatter,
   structured: structuredFormatter,
-  usecase_structured: useCaseStructuredFormatter
+  usecase_structured: useCaseStructuredFormatter,
+  class_structured: classStructuredFormatter
 };

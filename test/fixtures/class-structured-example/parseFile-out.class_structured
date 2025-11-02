@@ -1,0 +1,189 @@
+{
+  "classes": [
+    {
+      "name": "Animal",
+      "title": "Animal",
+      "isAbstract": false,
+      "attributes": [
+        {
+          "name": "name",
+          "isStatic": false,
+          "accessor": "-",
+          "type": "String"
+        },
+        {
+          "name": "age",
+          "isStatic": false,
+          "accessor": "-",
+          "type": "int"
+        }
+      ],
+      "methods": [
+        {
+          "name": "getName",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "arguments": ""
+        },
+        {
+          "name": "setName",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "arguments": "name: String"
+        }
+      ],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Mammal",
+      "title": "Mammal",
+      "isAbstract": true,
+      "attributes": [
+        {
+          "name": "furColor",
+          "isStatic": false,
+          "accessor": "-",
+          "type": "String"
+        }
+      ],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Dog",
+      "title": "Dog",
+      "isAbstract": false,
+      "attributes": [
+        {
+          "name": "breed",
+          "isStatic": false,
+          "accessor": "-",
+          "type": "String"
+        }
+      ],
+      "methods": [
+        {
+          "name": "bark",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "arguments": ""
+        }
+      ],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Cat",
+      "title": "Cat",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [
+        {
+          "name": "meow",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "arguments": ""
+        }
+      ],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "Flyable",
+      "title": "Flyable",
+      "attributes": [],
+      "methods": [
+        {
+          "name": "fly",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "arguments": ""
+        }
+      ],
+      "extends": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "enums": [],
+  "packages": [],
+  "relationships": [
+    {
+      "source": "Animal",
+      "target": "Mammal",
+      "sourceType": "Class",
+      "targetType": "Class",
+      "relationshipType": "inheritance",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "<|",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Mammal",
+      "target": "Dog",
+      "sourceType": "Class",
+      "targetType": "Class",
+      "relationshipType": "inheritance",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "<|",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Mammal",
+      "target": "Cat",
+      "sourceType": "Class",
+      "targetType": "Class",
+      "relationshipType": "inheritance",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "<|",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Dog",
+      "target": "Flyable",
+      "sourceType": "Class",
+      "targetType": "Interface",
+      "relationshipType": "inheritance",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "|>",
+      "sourceArrowBody": ".",
+      "targetArrowBody": ".",
+      "hidden": false
+    }
+  ]
+}

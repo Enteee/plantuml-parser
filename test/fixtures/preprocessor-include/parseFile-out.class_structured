@@ -1,0 +1,23 @@
+{
+  "classes": [],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": [
+    {
+      "source": "List",
+      "target": "ArrayList",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "inheritance",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "<|",
+      "targetArrowHead": "",
+      "sourceArrowBody": ".",
+      "targetArrowBody": ".",
+      "hidden": false
+    }
+  ]
+}

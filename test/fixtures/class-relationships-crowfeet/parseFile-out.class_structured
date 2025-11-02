@@ -1,0 +1,61 @@
+{
+  "classes": [
+    {
+      "name": "A",
+      "title": "A",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "B",
+      "title": "B",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": [
+    {
+      "source": "A",
+      "target": "B",
+      "sourceType": "Class",
+      "targetType": "Class",
+      "relationshipType": "unknown",
+      "label": "Crowfeet left",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "}",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "A",
+      "target": "B",
+      "sourceType": "Class",
+      "targetType": "Class",
+      "relationshipType": "unknown",
+      "label": "Crowfeet right",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "{",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    }
+  ]
+}

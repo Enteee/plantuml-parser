@@ -1,0 +1,123 @@
+{
+  "classes": [
+    {
+      "name": "ParentClass",
+      "title": "ParentClass",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "ExtendsClass",
+      "title": "ExtendsClass",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [
+        "ParentClass"
+      ],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "ImplementsClass",
+      "title": "ImplementsClass",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [
+        "ParentInterface"
+      ],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "ExtendsImplementsClass",
+      "title": "ExtendsImplementsClass",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [
+        "ParentClass"
+      ],
+      "implements": [
+        "ParentInterface"
+      ],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "ParentInterface",
+      "title": "ParentInterface",
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "OnlyExtendsInterface",
+      "title": "OnlyExtendsInterface",
+      "attributes": [],
+      "methods": [],
+      "extends": [
+        "ParentClass"
+      ],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "OnlyImplementsInterface",
+      "title": "OnlyImplementsInterface",
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "ExtendsImplementsInterface",
+      "title": "ExtendsImplementsInterface",
+      "attributes": [],
+      "methods": [],
+      "extends": [
+        "ParentClass"
+      ],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "enums": [
+    {
+      "name": "OnlyExtendsEnum",
+      "title": "OnlyExtendsEnum",
+      "attributes": [],
+      "methods": [],
+      "stereotypes": []
+    },
+    {
+      "name": "OnlyImplementsEnum",
+      "title": "OnlyImplementsEnum",
+      "attributes": [],
+      "methods": [],
+      "stereotypes": []
+    },
+    {
+      "name": "ExtendsImplementsEnum",
+      "title": "ExtendsImplementsEnum",
+      "attributes": [],
+      "methods": [],
+      "stereotypes": []
+    }
+  ],
+  "packages": [],
+  "relationships": []
+}

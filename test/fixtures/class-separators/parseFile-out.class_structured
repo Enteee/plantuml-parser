@@ -1,0 +1,19 @@
+{
+  "classes": [
+    {
+      "name": "Separators",
+      "title": "Separators",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": []
+}

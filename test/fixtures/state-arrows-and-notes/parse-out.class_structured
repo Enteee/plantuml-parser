@@ -1,0 +1,68 @@
+{
+  "classes": [],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": [
+    {
+      "source": "Hungry",
+      "target": "EatingBurrito",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "EatingBurrito",
+      "target": "Full",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Full",
+      "target": "Sleeping",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Sleeping",
+      "target": "Hungry",
+      "sourceType": "Unknown",
+      "targetType": "Unknown",
+      "relationshipType": "association_directed",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": ">",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    }
+  ]
+}

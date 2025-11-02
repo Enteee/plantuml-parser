@@ -1,0 +1,130 @@
+{
+  "classes": [
+    {
+      "name": "Car",
+      "title": "Car",
+      "isAbstract": false,
+      "attributes": [
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "-",
+          "type": "Type"
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "+",
+          "type": "Type"
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "#",
+          "type": "Type"
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "~",
+          "type": "Type"
+        }
+      ],
+      "methods": [
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "-",
+          "returnType": "void",
+          "arguments": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "arguments": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "#",
+          "returnType": "void",
+          "arguments": ""
+        },
+        {
+          "name": "Name",
+          "isStatic": false,
+          "accessor": "~",
+          "returnType": "void",
+          "arguments": ""
+        }
+      ],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "Car",
+      "title": "Car",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": [
+    {
+      "source": "ICar",
+      "target": "Car",
+      "sourceType": "Unknown",
+      "targetType": "Class",
+      "relationshipType": "unknown",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "()",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "ICar2",
+      "target": "Car",
+      "sourceType": "Unknown",
+      "targetType": "Class",
+      "relationshipType": "unknown",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "()",
+      "targetArrowHead": "",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    },
+    {
+      "source": "Car",
+      "target": "ICar3",
+      "sourceType": "Class",
+      "targetType": "Unknown",
+      "relationshipType": "unknown",
+      "label": "",
+      "sourceCardinality": "",
+      "targetCardinality": "",
+      "sourceArrowHead": "",
+      "targetArrowHead": "()",
+      "sourceArrowBody": "--",
+      "targetArrowBody": "--",
+      "hidden": false
+    }
+  ]
+}

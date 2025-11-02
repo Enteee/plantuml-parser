@@ -1,0 +1,149 @@
+{
+  "classes": [
+    {
+      "name": "ParentClass",
+      "title": "ParentClass",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "OtherParentClass",
+      "title": "OtherParentClass",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "ExtendsClass",
+      "title": "ExtendsClass",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [
+        "ParentClass",
+        "OtherParentClass"
+      ],
+      "implements": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "ImplementsClass",
+      "title": "ImplementsClass",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "implements": [
+        "ParentInterface",
+        "OtherParentInterface"
+      ],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "ExtendsImplementsClass",
+      "title": "ExtendsImplementsClass",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [],
+      "extends": [
+        "ParentClass",
+        "OtherParentClass"
+      ],
+      "implements": [
+        "ParentInterface",
+        "OtherParentInterface"
+      ],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "ParentInterface",
+      "title": "ParentInterface",
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "OtherParentInterface",
+      "title": "OtherParentInterface",
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "ExtendsInterface",
+      "title": "ExtendsInterface",
+      "attributes": [],
+      "methods": [],
+      "extends": [
+        "ParentClass",
+        "OtherParentClass"
+      ],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "ImplementsInterface",
+      "title": "ImplementsInterface",
+      "attributes": [],
+      "methods": [],
+      "extends": [],
+      "generics": [],
+      "stereotypes": []
+    },
+    {
+      "name": "ExtendsImplementsInterface",
+      "title": "ExtendsImplementsInterface",
+      "attributes": [],
+      "methods": [],
+      "extends": [
+        "ParentClass",
+        "OtherParentClass"
+      ],
+      "generics": [],
+      "stereotypes": []
+    }
+  ],
+  "enums": [
+    {
+      "name": "ExtendsEnum",
+      "title": "ExtendsEnum",
+      "attributes": [],
+      "methods": [],
+      "stereotypes": []
+    },
+    {
+      "name": "ImplementsEnum",
+      "title": "ImplementsEnum",
+      "attributes": [],
+      "methods": [],
+      "stereotypes": []
+    },
+    {
+      "name": "ExtendsImplementsEnum",
+      "title": "ExtendsImplementsEnum",
+      "attributes": [],
+      "methods": [],
+      "stereotypes": []
+    }
+  ],
+  "packages": [],
+  "relationships": []
+}

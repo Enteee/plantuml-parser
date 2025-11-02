@@ -1,0 +1,29 @@
+{
+  "classes": [
+    {
+      "name": "Alice",
+      "title": "Alice",
+      "isAbstract": false,
+      "attributes": [],
+      "methods": [
+        {
+          "name": "cry",
+          "isStatic": false,
+          "accessor": "+",
+          "returnType": "void",
+          "arguments": ""
+        }
+      ],
+      "extends": [],
+      "implements": [],
+      "generics": [],
+      "stereotypes": [
+        "single"
+      ]
+    }
+  ],
+  "interfaces": [],
+  "enums": [],
+  "packages": [],
+  "relationships": []
+}
